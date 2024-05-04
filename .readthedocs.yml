@@ -33,5 +33,4 @@ python:
 # (Track https://github.com/readthedocs/readthedocs.org/issues/3242)
 formats:
   - htmlzip
-  - epub
   - pdf

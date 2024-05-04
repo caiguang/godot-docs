@@ -291,6 +291,15 @@ sphinx.util.i18n.get_image_filename_for_language = godot_get_image_filename_for_
 # Similar story for the localized class reference, it's out of tree and there doesn't
 # seem to be an easy way for us to tweak the toctree to take this into account.
 # So we're deleting the existing class reference and adding a symlink instead...
+if is_i18n and os.path.exists("../classes/" + language):
+    import shutil
+
+    if os.path.islink("classes"):  # Previously made symlink.
+        os.unlink("classes")
+    else:
+        shutil.rmtree("classes")
+
+    os.symlink("../classes/" + language, "classes")
 
 # Couldn't find a way to retrieve variables nor do advanced string
 # concat from reST, so had to hardcode this in the "epilog" added to
