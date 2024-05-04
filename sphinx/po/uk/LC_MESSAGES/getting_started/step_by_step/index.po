@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Step by step"
+msgstr "Крок-за-кроком"
+
+msgid ""
+"This series builds upon the :ref:`Introduction to Godot <toc-learn-"
+"introduction>` and will get you started with the editor and the engine. You "
+"will learn more about nodes and scenes, code your first classes with "
+"GDScript, use signals to make nodes communicate with one another, and more."
+msgstr ""
+"Цей розділ базується на :ref:`Вступ у Godot <toc-learn-introduction>`і "
+"допоможе вам почати роботу з редактором і рушієм. Ви дізнаєтеся більше про "
+"вузли та сцени, створите свої перші класи за допомогою GDScript, "
+"використаєте сигнали, щоб змусити вузли комунікувати один з одним, і багато "
+"іншого."
+
+msgid ""
+"The following lessons are here to prepare you for :ref:"
+"`doc_your_first_2d_game`, a step-by-step tutorial where you will code a game "
+"from scratch. By the end of it, you will have the necessary foundations to "
+"explore more features in other sections. We also included links to pages "
+"that cover a given topic in-depth where appropriate."
+msgstr ""
+"Нижче наведені уроки, щоб підготувати вас до покрокового посібника :ref:"
+"`doc_your_first_2d_game`, де ви будете кодувати гру з нуля. Наприкінці цього "
+"ви отримаєте необхідну основу для вивчення додаткових функцій в інших "
+"розділах. Ми також включили посилання на сторінки, які детально охоплюють "
+"певну тему, де це доречно."
+
+msgid "Translation status"
+msgstr "Стан перекладу"

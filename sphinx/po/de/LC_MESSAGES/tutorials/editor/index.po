@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Editor introduction"
+msgstr "Einführung in den Editor"
+
+msgid ""
+"In this section, we cover the Godot editor in general, from its interface to "
+"using it with the command line."
+msgstr ""
+"In diesem Abschnitt wird der Godot-Editor allgemein behandelt, von seiner "
+"Benutzeroberfläche bis zur Verwendung mit der Kommandozeile."
+
+msgid "Editor's interface"
+msgstr "Benutzeroberfläche des Editors"
+
+msgid ""
+"The following pages explain how to use the various windows, workspaces, and "
+"docks that make up the Godot editor. We cover some specific editors' "
+"interface in other sections where appropriate. For example, the :ref:"
+"`animation editor <doc_introduction_animation>`."
+msgstr ""
+"Die folgenden Seiten erklären die Benutzung der verschiedenen Fenster, "
+"Arbeitsumgebungen und Docks, die den Godot-Editor ausmachen. Einige "
+"spezifische Benutzeroberflächen werden in anderen Abschnitten behandelt, "
+"wenn es sich anbietet. Zum Beispiel der :ref:`Animations-Editor "
+"<doc_introduction_animation>`."
+
+msgid "Android editor"
+msgstr "Android-Editor"
+
+msgid ""
+"Godot offers a native port of the editor running entirely on Android "
+"devices. The Android port can be downloaded from the `Android Downloads page "
+"<https://godotengine.org/download/android/>`__. While we strive for feature "
+"parity with the Desktop version of the editor, the Android port has a "
+"certain amount of caveats you should be aware of."
+msgstr ""
+"Godot bietet einen komplett nativen Port des Editors für Android-Geräte an. "
+"Der Android-Port kann von der `Android Download-Seite <https://godotengine."
+"org/download/android/>`__ heruntergeladen werden. Wir bemühen uns zwar um "
+"Featuregleichheit mit der Desktop-Version des Editors, aber der Android-Port "
+"hat eine Reihe von Einschränkungen, die Sie beachten sollten."
+
+msgid "Web editor"
+msgstr "Web-Editor"
+
+msgid ""
+"Godot offers an HTML5 version of the editor running entirely in your "
+"browser. No download is required to use it, but it has a certain amount of "
+"caveats you should be aware of."
+msgstr ""
+"Godot bietet eine HTML5-Version des Editors, die vollständig in Ihrem "
+"Browser läuft. Für die Nutzung ist kein Download erforderlich, aber es gibt "
+"eine Reihe von Einschränkungen, die Sie beachten sollten."
+
+msgid "Advanced features"
+msgstr "Erweiterte Features"
+
+msgid ""
+"The articles below focus on advanced features useful for experienced "
+"developers, such as calling Godot from the command line and using an "
+"external text editor like Visual Studio Code or Emacs."
+msgstr ""
+"Die folgenden Artikel beschäfigen sich mit erweiterten Features, die für "
+"erfahrene Entwickler hilfreich sein können. Zum Beispiel das Ausführen von "
+"Godot über die Kommandozeile oder die Benutzung von externen Texteditoren, "
+"wie Visual Studio Code oder Emacs."
+
+msgid "Managing editor features"
+msgstr "Editor-Features verwalten"
+
+msgid ""
+"Godot allows you to remove features from the editor. This may be useful if "
+"you're an educator trying to ease students into the editor slowly, or if "
+"you're working on a project that's only 2D or only 3D and don't want to see "
+"what you don't need."
+msgstr ""
+"Godot erlaubt Ihnen, Features aus dem Editor zu entfernen. Dies kann "
+"nützlich sein, wenn Sie als Lehrkraft versuchen, Ihre Schüler langsam an den "
+"Editor heranzuführen, oder wenn Sie an einem Projekt arbeiten, das nur 2D "
+"oder nur 3D verwendet, und nicht sehen wollen, was Sie nicht brauchen."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

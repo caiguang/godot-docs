@@ -1,0 +1,338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Running code in the editor"
+msgstr "エディタでコードを実行する"
+
+#, fuzzy
+msgid "What is ``@tool``?"
+msgstr "``tool`` とは何ですか？"
+
+#, fuzzy
+msgid ""
+"``@tool`` is a powerful line of code that, when added at the top of your "
+"script, makes it execute in the editor. You can also decide which parts of "
+"the script execute in the editor, which in game, and which in both."
+msgstr ""
+"`` tool``は強力なコード行で、スクリプトの先頭に追加すると、エディタで実行でき"
+"るようになります。スクリプトのどの部分をエディタで実行し、どの部分をゲームで"
+"実行するか、または両方で実行するかを決定することもできます。"
+
+msgid ""
+"You can use it for doing many things, but it is mostly useful in level "
+"design for visually presenting things that are hard to predict ourselves. "
+"Here are some use cases:"
+msgstr ""
+"多くの目的のためにそれを使用できますが、レベル設計をするときに、予測が難しい"
+"ものを視覚的に提示するためにとても役立ちます。使用例は次のとおりです:"
+
+#, fuzzy
+msgid ""
+"If you have a cannon that shoots cannonballs affected by physics (gravity), "
+"you can draw the cannonball's trajectory in the editor, making level design "
+"a lot easier."
+msgstr ""
+"物理演算(重力)の影響を受ける砲弾を発射する大砲を持っている場合、エディタで砲"
+"弾の軌跡を描くことができ、レベル設計がはるかに簡単になります。"
+
+msgid ""
+"If you have jumppads with varying jump heights, you can draw the maximum "
+"jump height a player would reach if it jumped on one, also making level "
+"design easier."
+msgstr ""
+"ジャンプの高さが異なるジャンプパッドがある場合、プレイヤーがジャンプした場合"
+"に到達する最大ジャンプ高を描画でき、レベル設計も容易になります。"
+
+msgid ""
+"If your player doesn't use a sprite, but draws itself using code, you can "
+"make that drawing code execute in the editor to see your player."
+msgstr ""
+"プレイヤーがスプライトを使用せず、コードを使用して描画を行う場合に、エディタ"
+"でその描画コードを実行してプレイヤーを表示できます。"
+
+#, fuzzy
+msgid ""
+"``@tool`` scripts run inside the editor, and let you access the scene tree "
+"of the currently edited scene. This is a powerful feature which also comes "
+"with caveats, as the editor does not include protections for potential "
+"misuse of ``@tool`` scripts. Be **extremely** cautious when manipulating the "
+"scene tree, especially via :ref:`Node."
+"queue_free<class_Node_method_queue_free>`, as it can cause crashes if you "
+"free a node while the editor runs logic involving it."
+msgstr ""
+"``tool`` スクリプトはエディタ内で実行され、現在編集されているシーンのシーンツ"
+"リーにアクセスできます。エディタには ``tool`` スクリプトの潜在的な誤用に対す"
+"る保護が含まれていないため、これは警告も伴う強力な機能です。特に :ref:`Node."
+"queue_free <class_Node_method_queue_free>` を介してシーンツリーを操作するとき"
+"は、エディタがそれに関連するロジックを実行している間にノードを解放するとク"
+"ラッシュする可能性があるため、\\ **非常に**\\ 注意してください。"
+
+#, fuzzy
+msgid "How to use ``@tool``"
+msgstr "使用方法"
+
+#, fuzzy
+msgid ""
+"To turn a script into a tool, add the ``@tool`` annotation at the top of "
+"your code."
+msgstr ""
+"スクリプトをツールにするには、コードの先頭に ``tool`` キーワードを追加しま"
+"す。"
+
+#, fuzzy
+msgid ""
+"To check if you are currently in the editor, use: ``Engine."
+"is_editor_hint()``."
+msgstr ""
+"現在エディタで実行されているかどうかを確認するには、\\ ``Engine."
+"editor_hint`` を使用します。"
+
+#, fuzzy
+msgid "For example, if you want to execute some code only in the editor, use:"
+msgstr "たとえば、エディタでのみコードを実行する場合は、次を使用します:"
+
+#, fuzzy
+msgid ""
+"On the other hand, if you want to execute code only in game, simply negate "
+"the same statement:"
+msgstr "一方、ゲームでのみコードを実行する場合は、前の表現を単純に否定します:"
+
+#, fuzzy
+msgid ""
+"Pieces of code that do not have either of the 2 conditions above will run "
+"both in-editor and in-game."
+msgstr ""
+"上記の2つの条件のいずれにも該当しないコードは、エディタとゲームの両方で実行さ"
+"れます。"
+
+#, fuzzy
+msgid "Here is how a ``_process()`` function might look for you:"
+msgstr "以下は ``_process()`` 関数がどのように見えるかです:"
+
+#, fuzzy
+msgid ""
+"Modifications in the editor are permanent. For example, in the following "
+"case, when we remove the script, the node will keep its rotation. Be careful "
+"to avoid making unwanted modifications."
+msgstr ""
+"エディタでの変更は永続的です。この場合、スクリプトを削除すると、ノードは回転"
+"方向を維持します。不要な変更を加えないように注意してください。"
+
+msgid ""
+"Extending a ``@tool`` script does not automatically make the extending "
+"script a ``@tool``. Omitting ``@tool`` from the extending script will "
+"disable tool behavior from the super class. Therefore the extending script "
+"should also specify the ``@tool`` annotation."
+msgstr ""
+
+#, fuzzy
+msgid "Try ``@tool`` out"
+msgstr "やってみましょう"
+
+#, fuzzy
+msgid ""
+"Add a ``Sprite2D`` node to your scene and set the texture to Godot icon. "
+"Attach and open a script, and change it to this:"
+msgstr ""
+"シーンに ``Sprite`` ノードを追加し、テクスチャをGodotアイコンに設定します。ス"
+"クリプトをアタッチして開き、次の手順に変更します:"
+
+msgid ""
+"Save the script and return to the editor. You should now see your object "
+"rotate. If you run the game, it will also rotate."
+msgstr ""
+"スクリプトを保存して、エディタに戻ります。これで、オブジェクトが回転するのが"
+"見えるはずです。ゲームを実行すると、ゲームも回転します。"
+
+msgid ""
+"If you don't see the changes, reload the scene (close it and open it again)."
+msgstr ""
+"変更が表示されない場合は、シーンをリロードします(閉じてからもう一度開きま"
+"す)。"
+
+msgid ""
+"Now let's choose which code runs when. Modify your ``_process()`` function "
+"to look like this:"
+msgstr ""
+"次に、どのコードがいつ実行されるのかを選択しましょう。\\ ``_process()`` 関数"
+"を次のように変更します:"
+
+msgid ""
+"Save the script. Now the object will spin clockwise in the editor, but if "
+"you run the game, it will spin counter-clockwise."
+msgstr ""
+"スクリプトを保存します。これで、オブジェクトはエディタでは時計回りに回転しま"
+"すが、ゲームを実行すると、反時計回りに回転します。"
+
+#, fuzzy
+msgid "Editing variables"
+msgstr "インスタンスの編集"
+
+msgid ""
+"Add and export a variable speed to the script. To update the speed and also "
+"reset the rotation angle add a setter ``set(new_speed)`` which is executed "
+"with the input from the inspector. Modify ``_process()`` to include the "
+"rotation speed."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Code from other nodes doesn't run in the editor. Your access to other nodes "
+"is limited. You can access the tree and nodes, and their default properties, "
+"but you can't access user variables. If you want to do so, other nodes have "
+"to run in the editor too. Autoload nodes cannot be accessed in the editor at "
+"all."
+msgstr ""
+"他のノードからのコードはエディタで実行されません。他のノードへのアクセスは制"
+"限されています。ツリーとノード、およびそれらのデフォルトのプロパティにはアク"
+"セスできますが、ユーザー変数にはアクセスできません。そうしたい場合は、他の"
+"ノードもエディタで実行する必要があります。 AutoLoadノードにはエディタではまっ"
+"たくアクセスできません。"
+
+#, fuzzy
+msgid "Reporting node configuration warnings"
+msgstr "構成の実行:"
+
+msgid ""
+"Godot uses a *node configuration warning* system to warn users about "
+"incorrectly configured nodes. When a node isn't configured correctly, a "
+"yellow warning sign appears next to the node's name in the Scene dock. When "
+"you hover or click on the icon, a warning message pops up. You can use this "
+"feature in your scripts to help you and your team avoid mistakes when "
+"setting up scenes."
+msgstr ""
+
+msgid ""
+"When using node configuration warnings, when any value that should affect or "
+"remove the warning changes, you need to call :ref:"
+"`update_configuration_warnings<class_Node_method_update_configuration_warnings>` . "
+"By default, the warning only updates when closing and reopening the scene."
+msgstr ""
+
+msgid "Running one-off scripts using EditorScript"
+msgstr ""
+
+msgid ""
+"Sometimes, you need to run code just one time to automate a certain task "
+"that is not available in the editor out of the box. Some examples might be:"
+msgstr ""
+
+msgid ""
+"Use as a playground for GDScript or C# scripting without having to run a "
+"project. ``print()`` output is displayed in the editor Output panel."
+msgstr ""
+
+msgid ""
+"Scale all light nodes in the currently edited scene, as you noticed your "
+"level ends up looking too dark or too bright after placing lights where "
+"desired."
+msgstr ""
+
+msgid ""
+"Replace nodes that were copy-pasted with scene instances to make them easier "
+"to modify later."
+msgstr ""
+
+msgid ""
+"This is available in Godot by extending :ref:`class_EditorScript` in a "
+"script. This provides a way to run individual scripts in the editor without "
+"having to create an editor plugin."
+msgstr ""
+
+msgid ""
+"To create an EditorScript, right-click a folder or empty space in the "
+"FileSystem dock then choose **New > Script...**. In the script creation "
+"dialog, click the tree icon to choose an object to extend from (or enter "
+"``EditorScript`` directly in the field on the left, though note this is case-"
+"sensitive):"
+msgstr ""
+
+#, fuzzy
+msgid "Creating an editor script in the script editor creation dialog"
+msgstr "ライトとの相互作用"
+
+msgid ""
+"This will automatically select a script template that is suited for "
+"EditorScripts, with a ``_run()`` method already inserted:"
+msgstr ""
+
+msgid ""
+"This ``_run()`` method is executed when you use **File > Run** or the "
+"keyboard shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the "
+"currently open script in the script editor. This keyboard shortcut is only "
+"effective when currently focused on the script editor."
+msgstr ""
+
+msgid "Scripts that extend EditorScript must be ``@tool`` scripts to function."
+msgstr ""
+
+msgid ""
+"EditorScripts have no undo/redo functionality, so **make sure to save your "
+"scene before running one** if the script is designed to modify any data."
+msgstr ""
+
+msgid ""
+"To access nodes in the currently edited scene, use the :ref:`EditorScript."
+"get_scene <class_EditorScript_method_get_scene>` method which returns the "
+"root Node of the currently edited scene. Here's an example that recursively "
+"gets all nodes in the currently edited scene and doubles the range of all "
+"OmniLight3D nodes:"
+msgstr ""
+
+msgid ""
+"You can change the currently edited scene at the top of the editor even "
+"while the Script view is open. This will affect the return value of :ref:"
+"`EditorScript.get_scene <class_EditorScript_method_get_scene>`, so make sure "
+"you've selected the scene you intend to iterate upon before running the "
+"script."
+msgstr ""
+
+msgid "Instancing scenes"
+msgstr "シーンのインスタンス化"
+
+msgid ""
+"You can instantiate packed scenes normally and add them to the scene "
+"currently opened in the editor. By default, nodes or scenes added with :ref:"
+"`Node.add_child(node) <class_Node_method_add_child>` are **not** visible in "
+"the Scene tree dock and are **not** persisted to disk. If you wish the node "
+"or scene to be visible in the scene tree dock and persisted to disk when "
+"saving the scene, you need to set the child node's :ref:`owner "
+"<class_Node_property_owner>` property to the currently edited scene root."
+msgstr ""
+
+msgid "If you are using ``@tool``:"
+msgstr ""
+
+msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Using ``@tool`` improperly can yield many errors. It is advised to first "
+"write the code how you want it, and only then add the ``@tool`` annotation "
+"to the top. Also, make sure to separate code that runs in-editor from code "
+"that runs in-game. This way, you can find bugs more easily."
+msgstr ""
+"``tool`` を不適切に使用すると、多くのエラーが発生する可能性があります。最初に"
+"あなたが望むようにコードを書き、次に ``tool`` キーワードを追加することをお勧"
+"めします。また、エディタで実行する部分とゲームで実行する部分にコードを分割し"
+"てください。これにより、バグを簡単に見つけることができます。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

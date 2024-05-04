@@ -1,0 +1,562 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Spawning monsters"
+msgstr "Monster spawnen"
+
+msgid ""
+"In this part, we're going to spawn monsters along a path randomly. By the "
+"end, you will have monsters roaming the game board."
+msgstr ""
+"In diesem Teil werden wir Monster nach dem zufällig entlang eines Pfades "
+"spawnen. Am Ende werden Monster auf dem Spielfeld herumlaufen."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"Double-click on ``main.tscn`` in the *FileSystem* dock to open the ``Main`` "
+"scene."
+msgstr ""
+"Doppelklicken Sie auf ``main.tscn`` im *Dateisystem*-Dock, um die Szene "
+"``Main`` zu öffnen."
+
+msgid ""
+"Before drawing the path, we're going to change the game resolution. Our game "
+"has a default window size of ``1152x648``. We're going to set it to "
+"``720x540``, a nice little box."
+msgstr ""
+"Bevor wir den Pfad zeichnen, werden wir die Auflösung des Spiels ändern. "
+"Unser Spiel hat eine Default-Fenstergröße von ``1152x648``. Wir werden es "
+"auf ``720x540`` einstellen, eine nette kleine Box."
+
+msgid "Go to *Project -> Project Settings*."
+msgstr "Gehen Sie zu *Projekt -> Projekteinstellungen*."
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid "image1"
+msgstr "image1"
+
+msgid ""
+"In the left menu, navigate down to *Display -> Window*. On the right, set "
+"the *Width* to ``720`` and the *Height* to ``540``."
+msgstr ""
+"Navigieren Sie im linken Menü nach unten zu *Anzeige -> Fenster*. Auf der "
+"rechten Seite setzen Sie die *Breite* auf ``720`` und die *Höhe* auf ``540``."
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "image2"
+msgstr "image2"
+
+msgid "Creating the spawn path"
+msgstr "Erstellen des Spawn-Pfads"
+
+msgid ""
+"Like you did in the 2D game tutorial, you're going to design a path and use "
+"a :ref:`PathFollow3D <class_PathFollow3D>` node to sample random locations "
+"on it."
+msgstr ""
+"Wie im 2D-Spiel-Tutorial entwerfen Sie einen Pfad und verwenden einen :ref:"
+"`PathFollow3D <class_PathFollow3D>`-Node, um zufällige Stellen auf diesem "
+"Pfad zu markieren."
+
+msgid ""
+"In 3D though, it's a bit more complicated to draw the path. We want it to be "
+"around the game view so monsters appear right outside the screen. But if we "
+"draw a path, we won't see it from the camera preview."
+msgstr ""
+"In 3D ist es allerdings etwas komplizierter, den Pfad zu zeichnen. Wir "
+"wollen, dass er um die Spielansicht herum verläuft, damit die Monster direkt "
+"außerhalb des Bildschirms erscheinen. Aber wenn wir einen Pfad zeichnen, "
+"werden wir ihn in der Kameravorschau nicht sehen."
+
+msgid ""
+"To find the view's limits, we can use some placeholder meshes. Your viewport "
+"should still be split into two parts, with the camera preview at the bottom. "
+"If that isn't the case, press :kbd:`Ctrl + 2` (:kbd:`Cmd + 2` on macOS) to "
+"split the view into two. Select the :ref:`Camera3D <class_Camera3D>` node "
+"and click the *Preview* checkbox in the bottom viewport."
+msgstr ""
+"Um die Grenzen des Views zu finden, können wir einige Platzhalter-Meshes "
+"verwenden. Ihr Viewport sollte immer noch in zwei Teile geteilt sein, mit "
+"der Kameravorschau am unteren Rand. Wenn das nicht der Fall ist, drücken "
+"Sie :kbd:`Strg + 2` (:kbd:`Cmd + 2` unter macOS), um die Ansicht in zwei "
+"Teile zu teilen. Wählen Sie den :ref:`Camera3D <class_Camera3D>`-Node und "
+"klicken Sie auf das Kontrollkästchen *Vorschau* im unteren Viewport."
+
+msgid "|image3|"
+msgstr "|image3|"
+
+msgid "image3"
+msgstr "image3"
+
+msgid "Adding placeholder cylinders"
+msgstr "Hinzufügen von Platzhalterzylindern"
+
+msgid ""
+"Let's add the placeholder meshes. Add a new :ref:`Node3D <class_Node3D>` as "
+"a child of the ``Main`` node and name it ``Cylinders``. We'll use it to "
+"group the cylinders. Select ``Cylinders`` and add a child node :ref:"
+"`MeshInstance3D <class_MeshInstance3D>`"
+msgstr ""
+"Fügen wir die Platzhalter-Meshes hinzu. Fügen Sie einen neuen :ref:`Node3D "
+"<class_Node3D>` als Child des ``Main``-Nodes hinzu und nennen Sie ihn "
+"``Cylinders``. Wir werden ihn benutzen, um die Zylinder zu gruppieren. "
+"Wählen Sie ``Cylinders`` und fügen Sie einen untergeordneten Node :ref:"
+"`MeshInstance3D <class_MeshInstance3D>` hinzu"
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "image4"
+msgstr "image4"
+
+msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
+msgstr ""
+"Weisen Sie im *Inspektor* der Eigenschaft *Mesh* ein *CylinderMesh* zu."
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid "image5"
+msgstr "image5"
+
+msgid ""
+"Set the top viewport to the top orthogonal view using the menu in the "
+"viewport's top-left corner. Alternatively, you can press the keypad's 7 key."
+msgstr ""
+"Stellen Sie den oberen Viewport auf die orthogonale Ansicht ein von oben, "
+"indem Sie das Menü in der oberen linken Ecke des Viewports verwenden. "
+"Alternativ können Sie auch die Taste 7 auf dem Numpad drücken."
+
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "|image6|"
+
+msgid ""
+"The grid may be distracting. You can toggle it by going to the *View* menu "
+"in the toolbar and clicking *View Grid*."
+msgstr ""
+"Das Raster kann manchmal stören. Sie können es ein- und ausschalten, indem "
+"Sie das Menü *Ansicht* in der Toolbar aufrufen und auf *Raster anzeigen* "
+"klicken."
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
+msgstr "|image7|"
+
+msgid ""
+"You now want to move the cylinder along the ground plane, looking at the "
+"camera preview in the bottom viewport. I recommend using grid snap to do so. "
+"You can toggle it by clicking the magnet icon in the toolbar or pressing Y."
+msgstr ""
+"Bewegen Sie nun den Zylinder entlang der Bodenebene, indem Sie die "
+"Kameravorschau im unteren Viewport betrachten. Ich empfehle, dazu die Gitter-"
+"Einrastfunktion zu verwenden. Sie können sie ein- und ausschalten, indem Sie "
+"auf das Magnet-Icon in der Toolbar klicken oder Y drücken."
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
+msgstr "|image8|"
+
+msgid ""
+"Move the cylinder so it's right outside the camera's view in the top-left "
+"corner."
+msgstr ""
+"Verschieben Sie den Zylinder so, dass er sich in der linken oberen Ecke "
+"außerhalb des Blickfelds der Kamera befindet."
+
+msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
+msgstr "|image9|"
+
+msgid ""
+"We're going to create copies of the mesh and place them around the game "
+"area. Press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate the node. "
+"You can also right-click the node in the *Scene* dock and select "
+"*Duplicate*. Move the copy down along the blue Z axis until it's right "
+"outside the camera's preview."
+msgstr ""
+"Wir werden Kopien des Mesh erstellen und um das Spielfeld herum platzieren. "
+"Drücken sie :kbd:`Strg + D` (:kbd:`Cmd + D` unter macOS), um den Node zu "
+"duplizieren. Sie können auch im \"Szene\"-Dock den Node mit der rechten "
+"Maustaste anklicken und *Duplizieren* auswählen. Bewegen sie die Kopie "
+"entlang der blauen Z-Achse bis sie sich gerade außerhalb der Kameravorschau "
+"befindet."
+
+msgid ""
+"Select both cylinders by pressing the :kbd:`Shift` key and clicking on the "
+"unselected one and duplicate them."
+msgstr ""
+"Wählen sie beide Zylinder aus, indem sie die :kbd:`Umschalt`-Taste drücken "
+"und auf den nicht ausgewählten Zylinder klicken, und duplizieren Sie beide."
+
+msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
+msgstr "|image10|"
+
+msgid "Move them to the right by dragging the red X axis."
+msgstr "Bewegen sie diese nach rechts, indem sie die rote X-Achse bewegen."
+
+msgid "|image11|"
+msgstr "|image11|"
+
+msgid "image11"
+msgstr "|image11|"
+
+msgid ""
+"They're a bit hard to see in white, aren't they? Let's make them stand out "
+"by giving them a new material."
+msgstr ""
+"Sie sind ein bisschen schwer zu sehen, wenn sie weiß sind, oder? Wir werden "
+"sie hervorheben, indem wir ihnen ein neues Material geben."
+
+msgid ""
+"In 3D, materials define a surface's visual properties like its color, how it "
+"reflects light, and more. We can use them to change the color of a mesh."
+msgstr ""
+"In 3D definieren Materialien die visuellen Eigenschaften einer Oberfläche; "
+"wie etwa ihre Farbe, wie sie das Licht reflektiert, und so weiter. Wir "
+"können Materialien benutzen, um die Farbe des Mesh zu ändern."
+
+msgid ""
+"We can update all four cylinders at once. Select all the mesh instances in "
+"the *Scene* dock. To do so, you can click on the first one and Shift click "
+"on the last one."
+msgstr ""
+"Wir können alle vier Zylinder auf einmal aktualisieren. Wählen Sie alle Mesh-"
+"Instanzen im *Szene*-Dock aus. Klicken Sie dazu auf die erste Instanz und "
+"mit gedrückter Umschalttaste auf die Letzte."
+
+msgid "|image12|"
+msgstr "|image12|"
+
+msgid "image12"
+msgstr "|image12|"
+
+msgid ""
+"In the *Inspector*, expand the *Material* section and assign a :ref:"
+"`StandardMaterial3D <class_StandardMaterial3D>` to slot *0*."
+msgstr ""
+"Erweitern Sie im *Inspektor* den Abschnitt *Material* und weisen Sie dem "
+"Slot *0* ein :ref:`StandardMaterial3D <class_StandardMaterial3D>` zu."
+
+msgid "|image13|"
+msgstr "|image13|"
+
+msgid "image13"
+msgstr "|image13|"
+
+msgid ""
+"Click the sphere icon to open the material resource. You get a preview of "
+"the material and a long list of sections filled with properties. You can use "
+"these to create all sorts of surfaces, from metal to rock or water."
+msgstr ""
+"Klicken sie auf das Kugel-Icon, um die Material-Resource zu öffnen. Es wird "
+"eine Vorschau des Materials angezeigt, gefolgt von einer langen Liste von "
+"Abschnitten, die mit Eigenschaften gefüllt sind. Diese können benutzt "
+"werden, um alle möglichen Arten von Oberflächen zu erschaffen, von Metall "
+"über Stein bis hin zu Wasser."
+
+msgid "Expand the *Albedo* section."
+msgstr "Erweitern Sie den Abschnitt *Albedo*."
+
+msgid ""
+"Set the color to something that contrasts with the background, like a bright "
+"orange."
+msgstr ""
+"Wählen Sie eine Farbe, die sich vom Hintergrund abhebt, z.B. ein leuchtendes "
+"Orange."
+
+msgid "|image14|"
+msgstr "|image14|"
+
+msgid "image14"
+msgstr "|image14|"
+
+msgid ""
+"We can now use the cylinders as guides. Fold them in the *Scene* dock by "
+"clicking the grey arrow next to them. Moving forward, you can also toggle "
+"their visibility by clicking the eye icon next to *Cylinders*."
+msgstr ""
+"Wir können nun die Zylinder als Hilfslinien verwenden. Klappen Sie diese im "
+"*Szene*-Dock ein, indem Sie auf den grauen Pfeil neben dem *Cylinders*-Node "
+"klicken. In Zukunft können Sie auch ihre Sichtbarkeit ein- und ausschalten, "
+"indem Sie auf das Augen-Icon neben *Cylinders* klicken."
+
+msgid "|image15|"
+msgstr "|image15|"
+
+msgid "image15"
+msgstr "|image15|"
+
+msgid ""
+"Add a child node :ref:`Path3D <class_Path3D>` to ``Main`` node. In the "
+"toolbar, four icons appear. Click the *Add Point* tool, the icon with the "
+"green \"+\" sign."
+msgstr ""
+"Fügen Sie einen Child-Node :ref:`Path3D <class_Path3D>` zum ``Main``-Node "
+"hinzu. In der Toolbar erscheinen vier Icons. Klicken Sie auf das Tool *Punkt "
+"hinzufügen*, das Icon mit dem grünen \"+\"-Zeichen."
+
+msgid "|image16|"
+msgstr "|image16|"
+
+msgid "image16"
+msgstr "|image16|"
+
+msgid "You can hover any icon to see a tooltip describing the tool."
+msgstr ""
+"Es kann zu jedem Tool ein Tooltip mit der Beschreibung des Tools angezeigt "
+"werden, indem man den Mauszeiger über das Icon bewegt."
+
+msgid ""
+"Click in the center of each cylinder to create a point. Then, click the "
+"*Close Curve* icon in the toolbar to close the path. If any point is a bit "
+"off, you can click and drag on it to reposition it."
+msgstr ""
+"Klicken Sie in die Mitte jedes Zylinders, um einen Punkt zu erstellen. "
+"Klicken Sie dann auf das Icon *Kurve schließen* in der Toolbar, um den Pfad "
+"zu schließen. Wenn ein Punkt etwas abweicht, können Sie darauf klicken und "
+"ihn bewegen, um ihn neu zu positionieren."
+
+msgid "|image17|"
+msgstr "|image17|"
+
+msgid "image17"
+msgstr "|image17|"
+
+msgid "Your path should look like this."
+msgstr "Ihr Pfad sollte folgendermaßen aussehen."
+
+msgid "|image18|"
+msgstr "|image18|"
+
+msgid "image18"
+msgstr "|image18|"
+
+#, fuzzy
+msgid ""
+"To sample random positions on it, we need a :ref:`PathFollow3D "
+"<class_PathFollow3D>` node. Add a :ref:`PathFollow3D <class_PathFollow3D>` "
+"as a child of the ``Path3D``. Rename the two nodes to ``SpawnLocation`` and "
+"``SpawnPath``, respectively. It's more descriptive of what we'll use them "
+"for."
+msgstr ""
+"Um zufällige Positionen auf dem Pfad zu bestimmen, brauchen wir einen :ref:"
+"`PathFollow3D <class_PathFollow3D>`-Node. Fügen Sie einen :ref:`PathFollow3D "
+"<class_PathFollow3D>` als Child des ``Path3D`` hinzu. Benennen Sie die "
+"beiden Nodes in ``SpawnPath`` und ``SpawnLocation`` um. Das ist "
+"beschreibender für das, wofür wir sie verwenden werden."
+
+msgid "|image19|"
+msgstr "|image19|"
+
+msgid "image19"
+msgstr "image19"
+
+msgid "With that, we're ready to code the spawn mechanism."
+msgstr "Damit sind wir bereit, den Spawn-Mechanismus zu programmieren."
+
+msgid "Spawning monsters randomly"
+msgstr "Mobs zufällig spawnen"
+
+msgid "Right-click on the ``Main`` node and attach a new script to it."
+msgstr ""
+"Klicken Sie mit der rechten Maustaste auf den ``Main``-Node und fügen Sie "
+"ihm ein neues Skript hinzu."
+
+msgid ""
+"We first export a variable to the *Inspector* so that we can assign ``mob."
+"tscn`` or any other monster to it."
+msgstr ""
+"Zuerst exportieren wir eine Variable in den *Inspektor*, damit wir ihr ``mob."
+"tscn`` oder ein anderes Monster zuweisen können."
+
+msgid ""
+"We want to spawn mobs at regular time intervals. To do this, we need to go "
+"back to the scene and add a timer. Before that, though, we need to assign "
+"the ``mob.tscn`` file to the ``mob_scene`` property above (otherwise it's "
+"null!)"
+msgstr ""
+"Wir wollen Mobs in regelmäßigen Zeitabständen spawnen lassen. Um das zu tun, "
+"müssen wir zurück zur Szene gehen und einen Timer hinzufügen. Zuvor müssen "
+"wir jedoch die Datei ``mob.tscn`` der obigen Eigenschaft ``mob_scene`` "
+"zuweisen (sonst ist sie null!)"
+
+msgid ""
+"Head back to the 3D screen and select the ``Main`` node. Drag ``mob.tscn`` "
+"from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
+msgstr ""
+"Gehen Sie zurück zum 3D-Bildschirm und wählen Sie den ``Main``-Node. Ziehen "
+"Sie die Datei ``mob.tscn`` aus dem *Dateisystem*-Dock auf den *Mob Scene*-"
+"Slot im *Inspektor*."
+
+msgid "|image20|"
+msgstr "|image20|"
+
+msgid "image20"
+msgstr "image20"
+
+msgid ""
+"Add a new :ref:`Timer <class_Timer>` node as a child of ``Main``. Name it "
+"``MobTimer``."
+msgstr ""
+"Fügen Sie einen neuen :ref:`Timer <class_Timer>`-Node als Child von ``Main`` "
+"hinzu. Nennen Sie ihn ``MobTimer``."
+
+msgid "|image21|"
+msgstr "|image21|"
+
+msgid "image21"
+msgstr "image21"
+
+msgid ""
+"In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
+"*Autostart* so it automatically starts when we run the game."
+msgstr ""
+"Legen sie im *Inspektor* seine *Wartezeit* auf ``0.5`` Sekunden fest und "
+"aktivieren sie *Autostart*, sodass er automatisch startet, wenn wir das "
+"Spiel starten."
+
+msgid "|image22|"
+msgstr "|image22|"
+
+msgid "image22"
+msgstr "image22"
+
+msgid ""
+"Timers emit a ``timeout`` signal every time they reach the end of their "
+"*Wait Time*. By default, they restart automatically, emitting the signal in "
+"a cycle. We can connect to this signal from the *Main* node to spawn "
+"monsters every ``0.5`` seconds."
+msgstr ""
+"Timer senden immer dann ein ``timeout``-Signal aus, wenn sie das Ende ihrer "
+"*Wartezeit* erreichen. Standardmäßig starten sie dann automatisch neu, "
+"wodurch sie das Signal in einem Zyklus aussenden. Wir können uns mit diesem "
+"Signal vom *Main*-Node verbinden, um alle ``0.5`` Sekunden Monster zu "
+"spawnen."
+
+msgid ""
+"With the *MobTimer* still selected, head to the *Node* dock on the right, "
+"and double-click the ``timeout`` signal."
+msgstr ""
+"Wenn der *MobTimer* immer noch ausgewählt ist, gehen Sie zum *Node*-Dock auf "
+"der rechten Seite und doppelklicken Sie auf das Signal ``timeout``."
+
+msgid "|image23|"
+msgstr "|image23|"
+
+msgid "image23"
+msgstr "image23"
+
+msgid "Connect it to the *Main* node."
+msgstr "Verbinden Sie es mit dem *Main*-Node."
+
+msgid "|image24|"
+msgstr "|image24|"
+
+msgid "image24"
+msgstr "image24"
+
+msgid ""
+"This will take you back to the script, with a new empty "
+"``_on_mob_timer_timeout()`` function."
+msgstr ""
+"Dies bringt Sie zurück zum Skript, mit einer neuen leeren "
+"``_on_mob_timer_timeout()`` Funktion."
+
+msgid "Let's code the mob spawning logic. We're going to:"
+msgstr ""
+"Jetzt programmieren wir die Spawn-Logik des Mobs. Das werden wir machen:"
+
+msgid "Instantiate the mob scene."
+msgstr "die Mob-Szene instanziieren."
+
+msgid "Sample a random position on the spawn path."
+msgstr "eine zufällige Position auf dem Spawnpfad wählen."
+
+msgid "Get the player's position."
+msgstr "die Position des Spielers ermitteln."
+
+msgid ""
+"Call the mob's ``initialize()`` method, passing it the random position and "
+"the player's position."
+msgstr ""
+"die ``initialize()``-Methode des Mobs aufrufen und ihr die zufällige "
+"Position und die Position des Spielers übergeben."
+
+msgid "Add the mob as a child of the *Main* node."
+msgstr "den Mob als Child des *Main*-Nodes hinzufügen."
+
+msgid ""
+"Above, ``randf()`` produces a random value between ``0`` and ``1``, which is "
+"what the *PathFollow* node's ``progress_ratio`` expects: 0 is the start of "
+"the path, 1 is the end of the path. The path we have set is around the "
+"camera's viewport, so any random value between 0 and 1 is a random position "
+"alongside the edges of the viewport!"
+msgstr ""
+"Oben erzeugt ``randf()`` einen Zufallswert zwischen ``0`` und ``1``, was vom "
+"``progress_ratio``-Attribut des *PathFollow*-Nodes erwartet wird: 0 ist der "
+"Anfang des Pfades, 1 ist das Ende des Pfades. Der Pfad, den wir gesetzt "
+"haben, verläuft um den Viewport der Kamera herum, also ist jeder zufällige "
+"Wert zwischen 0 und 1 eine zufällige Position entlang des Viewport-Randes!"
+
+msgid "Here is the complete ``main.gd`` script so far, for reference."
+msgstr "Hier ist das komplette ``main.gd`` Skript, als Referenz."
+
+msgid ""
+"You can test the scene by pressing :kbd:`F6`. You should see the monsters "
+"spawn and move in a straight line."
+msgstr ""
+"Sie können die Szene durch das Drücken von :kbd:`F6` testen. Ein Monster "
+"sollte nun spawnen und sich in einer geraden Linie bewegen."
+
+msgid "|image25|"
+msgstr "|image25|"
+
+msgid "image25"
+msgstr "image25"
+
+msgid ""
+"For now, they bump and slide against one another when their paths cross. "
+"We'll address this in the next part."
+msgstr ""
+"Noch stoßen sie in einander, wenn sich ihre Wege kreuzen. Wir werden dieses "
+"Problem im nächsten Teil angehen."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

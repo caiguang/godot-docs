@@ -1,0 +1,2886 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDScript reference"
+msgstr "현재 씬 변경하기"
+
+#, fuzzy
+msgid ""
+":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
+"wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
+"wikipedia.org/wiki/Imperative_programming>`_, and `gradually typed <https://"
+"en.wikipedia.org/wiki/Gradual_typing>`_ programming language built for "
+"Godot. It uses an indentation-based syntax similar to languages like `Python "
+"<https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_. Its "
+"goal is to be optimized for and tightly integrated with Godot Engine, "
+"allowing great flexibility for content creation and integration."
+msgstr ""
+"*GDScript*\\ 는 콘텐츠를 만드는 데 사용되는 동적 타입 고급 프로그래밍 언어입"
+"니다. `Python <https://ko.wikipedia.org/wiki/"
+"%ED%8C%8C%EC%9D%B4%EC%8D%AC>`_\\ 과 비슷한 문법을 사용합니다(블록이 들여쓰기 "
+"기반이고, 많은 키워드가 비슷합니다). 이 언어의 목적은 Godot 엔진에 최적화되"
+"고 긴밀하게 통합되어 컨텐츠 생성 및 통합을 위한 뛰어난 유연성을 제공하는 것입"
+"니다."
+
+msgid "GDScript is entirely independent from Python and is not based on it."
+msgstr ""
+
+msgid "History"
+msgstr "작업 내역"
+
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"GDScript의 역사에 대한 문서는 :ref:`자주 묻는 질문 "
+"<doc_faq_what_is_gdscript>`\\ 으로 이동되었습니다."
+
+msgid "Example of GDScript"
+msgstr "GDScript 예제"
+
+#, fuzzy
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's an "
+"example of how GDScript looks."
+msgstr ""
+"어떤 사람들은 구문을 살펴봄으로써 더 잘 배울 수 있습니다. 그래서 여기에 간단"
+"한 GDScript 예제가 있습니다."
+
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"이전에 C, C++, C#과 같은 정적 타입 언어에 대한 경험이 있지만 한 번도 동적 타"
+"입 언어를 써 본 적이 없다면, 이 튜토리얼을 읽는 것이 좋습니다: :ref:"
+"`doc_gdscript_more_efficiently`."
+
+msgid "Language"
+msgstr "언어"
+
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"여기서부터 GDScript의 개요입니다. 어떤 메서드가 배열 혹은 다른 오브젝트에 이"
+"용할 수 있는지와 같은 세부 사항은 링크된 클래스 설명을 확인해주세요."
+
+msgid "Identifiers"
+msgstr "식별자(Identifier)"
+
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"알파벳 문자로 제한되는 문자열 (``a``\\ 부터 ``z``, ``A``\\ 부터 ``Z``), 숫자 "
+"(``0``\\ 부터 ``9``), ``_``\\ 는 식별자입니다. 추가로 식별자는 숫자로 시작할 "
+"수 없습니다. 식별자는 대소문자를 구분합니다 (``foo``\\ 는 ``FOO``\\ 와 다릅니"
+"다)."
+
+msgid ""
+"Identifiers may also contain most Unicode characters part of `UAX#31 "
+"<https://www.unicode.org/reports/tr31/>`__. This allows you to use "
+"identifier names written in languages other than English. Unicode characters "
+"that are considered \"confusable\" for ASCII characters and emoji are not "
+"allowed in identifiers."
+msgstr ""
+
+msgid "Keywords"
+msgstr "키워드(Keyword)"
+
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"다음은 언어에서 지원하는 키워드 목록입니다. 키워드는 예약된 단어(토큰)이기 때"
+"문에, 식별자로 사용할 수 없습니다. 다음 섹션에 나열된 (``in``, ``not``, "
+"``and`` 혹은 ``or`` 와 같은) 연산자와 내장 타입 이름 역시 예약된 단어입니다."
+
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"키워드는 `GDScript tokenizer <https://github.com/godotengine/godot/blob/"
+"master/modules/gdscript/gdscript_tokenizer.cpp>`_\\ 에 정의되어 있습니다. 정"
+"체가 궁금하다면 확인해보세요."
+
+msgid "Keyword"
+msgstr "키워드"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "if"
+msgstr "if"
+
+msgid "See `if/else/elif`_."
+msgstr "`if/else/elif`_\\ 를 참고하세요."
+
+msgid "elif"
+msgstr "elif"
+
+msgid "else"
+msgstr "else"
+
+msgid "for"
+msgstr "for"
+
+msgid "See for_."
+msgstr "for_\\ 를 참고하세요."
+
+msgid "while"
+msgstr "while"
+
+msgid "See while_."
+msgstr "while_\\ 을 참고하세요."
+
+msgid "match"
+msgstr "match"
+
+msgid "See match_."
+msgstr "match_\\ 를 참고하세요."
+
+msgid "break"
+msgstr "break"
+
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "현재의 ``for`` 또는 ``while`` 루프 실행을 끝냅니다."
+
+msgid "continue"
+msgstr "continue"
+
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "즉시 ``for`` 또는 ``while`` 루프의 다음 반복으로 건너뜁니다."
+
+msgid "pass"
+msgstr "pass"
+
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr ""
+"명령문이 문법적으로는 필요하지만 실행할 만한 코드가 마땅치 않을 때 사용됩니"
+"다. 예: 빈 함수."
+
+msgid "return"
+msgstr "return"
+
+msgid "Returns a value from a function."
+msgstr "함수에서 값을 반환합니다."
+
+msgid "class"
+msgstr "클래스"
+
+#, fuzzy
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "다른 클래스 파일의 내부 클래스."
+
+msgid "class_name"
+msgstr "class_name"
+
+msgid ""
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
+msgstr ""
+
+msgid "extends"
+msgstr "extends"
+
+msgid "Defines what class to extend with the current class."
+msgstr "현재 클래스로 확장할 클래스를 정의합니다."
+
+msgid "is"
+msgstr "is"
+
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr ""
+"변수가 주어진 클래스를 확장하는지, 혹은 변수가 주어진 내장 유형인지 여부를 테"
+"스트합니다."
+
+msgid "in"
+msgstr ""
+
+msgid ""
+"Tests whether a value is within a string, array, range, dictionary, or node. "
+"When used with ``for``, it iterates through them instead of testing."
+msgstr ""
+
+msgid "as"
+msgstr "as"
+
+msgid "Cast the value to a given type if possible."
+msgstr "가능하다면 주어진 타입으로 값을 캐스트합니다."
+
+msgid "self"
+msgstr "self"
+
+msgid "Refers to current class instance."
+msgstr "현재 클래스 인스턴스를 참조합니다."
+
+msgid "signal"
+msgstr "signal"
+
+msgid "Defines a signal."
+msgstr "시그널을 정의합니다."
+
+msgid "func"
+msgstr "func"
+
+msgid "Defines a function."
+msgstr "함수를 정의합니다."
+
+msgid "static"
+msgstr "static"
+
+#, fuzzy
+msgid "Defines a static function or a static member variable."
+msgstr "정적 함수를 정의합니다. 정적 멤버 변수를 허용하지 않습니다."
+
+msgid "const"
+msgstr "const"
+
+msgid "Defines a constant."
+msgstr "상수를 정의합니다."
+
+msgid "enum"
+msgstr "enum"
+
+msgid "Defines an enum."
+msgstr "열거형을 정의합니다."
+
+msgid "var"
+msgstr "var"
+
+msgid "Defines a variable."
+msgstr "변수를 정의합니다."
+
+msgid "breakpoint"
+msgstr "breakpoint"
+
+msgid ""
+"Editor helper for debugger breakpoints. Unlike breakpoints created by "
+"clicking in the gutter, ``breakpoint`` is stored in the script itself. This "
+"makes it persistent across different machines when using version control."
+msgstr ""
+
+msgid "preload"
+msgstr "preload"
+
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr ""
+"클래스나 변수를 미리 불러옵니다(Preload). `리소스로 취급되는 클래스`_\\ 를 참"
+"고하세요."
+
+msgid "await"
+msgstr ""
+
+msgid ""
+"Waits for a signal or a coroutine to finish. See `Awaiting for signals or "
+"coroutines`_."
+msgstr ""
+
+msgid "yield"
+msgstr "yield"
+
+msgid "Previously used for coroutines. Kept as keyword for transition."
+msgstr ""
+
+msgid "assert"
+msgstr "assert"
+
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"조건을 가정(Assert)하고 실패 시 오류를 기록합니다. 디버그가 아닌 빌드에서는 "
+"무시됩니다. `Assert 키워드`_\\ 를 참고하세요."
+
+msgid "void"
+msgstr ""
+
+msgid "Used to represent that a function does not return any value."
+msgstr ""
+
+msgid "PI"
+msgstr "PI"
+
+msgid "PI constant."
+msgstr "PI 상수."
+
+msgid "TAU"
+msgstr "TAU"
+
+msgid "TAU constant."
+msgstr "TAU 상수."
+
+msgid "INF"
+msgstr "INF"
+
+#, fuzzy
+msgid "Infinity constant. Used for comparisons and as result of calculations."
+msgstr "무한대 상수. 비교할 때 사용됩니다."
+
+msgid "NAN"
+msgstr "NAN"
+
+#, fuzzy
+msgid ""
+"NAN (not a number) constant. Used as impossible result from calculations."
+msgstr "NAN (Not A Number, 숫자 아님) 상수. 비교할 때 사용됩니다."
+
+msgid "Operators"
+msgstr "연산자"
+
+msgid "The following is the list of supported operators and their precedence."
+msgstr "다음은 지원하는 연산자 목록과 우선 순위입니다."
+
+msgid "**Operator**"
+msgstr "**연산자**"
+
+msgid "**Description**"
+msgstr "**설명**"
+
+#, fuzzy
+msgid "``(`` ``)``"
+msgstr "``<<`` ``>>``"
+
+#, fuzzy
+msgid "Grouping (highest priority)"
+msgstr "구독(Subscription) (가장 높은 우선 순위)"
+
+msgid ""
+"Parentheses are not really an operator, but allow you to explicitly specify "
+"the precedence of an operation."
+msgstr ""
+
+msgid "``x[index]``"
+msgstr "``x[index]``"
+
+#, fuzzy
+msgid "Subscription"
+msgstr "설명"
+
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+msgid "Attribute reference"
+msgstr "속성 참조"
+
+msgid "``foo()``"
+msgstr "``foo()``"
+
+msgid "Function call"
+msgstr "함수 호출"
+
+msgid "``await x``"
+msgstr ""
+
+msgid "`Awaiting for signals or coroutines`_"
+msgstr ""
+
+#, fuzzy
+msgid "``x is Node``"
+msgstr "``그룹 노드``"
+
+#, fuzzy
+msgid "Type checking"
+msgstr "타입 캐스팅"
+
+msgid ""
+"See also :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` "
+"function."
+msgstr ""
+
+msgid "``x ** y``"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid ""
+"Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
+"<class_@GlobalScope_method_pow>` function."
+msgstr ""
+
+msgid ""
+"**Note:** In GDScript, the ``**`` operator is `left-associative <https://en."
+"wikipedia.org/wiki/Operator_associativity>`_. See a detailed note after the "
+"table."
+msgstr ""
+
+msgid "``~x``"
+msgstr ""
+
+msgid "Bitwise NOT"
+msgstr "비트 단위 NOT"
+
+msgid "``+x``"
+msgstr ""
+
+msgid "``-x``"
+msgstr "``-x``"
+
+#, fuzzy
+msgid "Identity / Negation"
+msgstr "들여쓰기"
+
+msgid "``x * y``"
+msgstr ""
+
+msgid "``x / y``"
+msgstr ""
+
+msgid "``x % y``"
+msgstr ""
+
+msgid "Multiplication / Division / Remainder"
+msgstr "곱하기 / 나누기 / 나머지"
+
+msgid ""
+"The ``%`` operator is additionally used for :ref:`format strings "
+"<doc_gdscript_printf>`."
+msgstr ""
+
+msgid ""
+"**Note:** These operators have the same behavior as C++, which may be "
+"unexpected for users coming from Python, JavaScript, etc. See a detailed "
+"note after the table."
+msgstr ""
+
+msgid "``x + y``"
+msgstr ""
+
+msgid "``x - y``"
+msgstr ""
+
+#, fuzzy
+msgid "Addition (or Concatenation) / Subtraction"
+msgstr "더하기 / 배열의 연결"
+
+msgid "``x << y``"
+msgstr ""
+
+msgid "``x >> y``"
+msgstr ""
+
+msgid "Bit shifting"
+msgstr "비트 시프트"
+
+msgid "``x & y``"
+msgstr ""
+
+msgid "Bitwise AND"
+msgstr "비트 단위 AND"
+
+msgid "``x ^ y``"
+msgstr ""
+
+msgid "Bitwise XOR"
+msgstr "비트 단위 XOR"
+
+msgid "``x | y``"
+msgstr ""
+
+msgid "Bitwise OR"
+msgstr "비트 단위 OR"
+
+msgid "``x == y``"
+msgstr ""
+
+msgid "``x != y``"
+msgstr ""
+
+msgid "``x < y``"
+msgstr ""
+
+msgid "``x > y``"
+msgstr ""
+
+msgid "``x <= y``"
+msgstr ""
+
+msgid "``x >= y``"
+msgstr ""
+
+#, fuzzy
+msgid "Comparison"
+msgstr "비교"
+
+msgid "See a detailed note after the table."
+msgstr ""
+
+msgid "``x in y``"
+msgstr ""
+
+msgid "``x not in y``"
+msgstr ""
+
+#, fuzzy
+msgid "Inclusion checking"
+msgstr "결론"
+
+msgid "``in`` is also used with the for_ keyword as part of the syntax."
+msgstr ""
+
+#, fuzzy
+msgid "``not x``"
+msgstr "``그룹 노드``"
+
+msgid "``!x``"
+msgstr ""
+
+msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x and y``"
+msgstr ""
+
+msgid "``x && y``"
+msgstr ""
+
+msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x or y``"
+msgstr ""
+
+msgid "``x || y``"
+msgstr ""
+
+msgid "Boolean OR and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``true_expr if cond else false_expr``"
+msgstr ""
+
+msgid "Ternary if/else"
+msgstr "삼항 if/else"
+
+#, fuzzy
+msgid "``x as Node``"
+msgstr "``그룹 노드``"
+
+#, fuzzy
+msgid "`Type casting <casting_>`_"
+msgstr "형 변환(Type conversion)과 캐스팅(casting)"
+
+msgid "``x = y``"
+msgstr ""
+
+msgid "``x += y``"
+msgstr ""
+
+msgid "``x -= y``"
+msgstr ""
+
+msgid "``x *= y``"
+msgstr ""
+
+msgid "``x /= y``"
+msgstr ""
+
+msgid "``x **= y``"
+msgstr ""
+
+msgid "``x %= y``"
+msgstr ""
+
+msgid "``x &= y``"
+msgstr ""
+
+msgid "``x |= y``"
+msgstr ""
+
+msgid "``x ^= y``"
+msgstr ""
+
+msgid "``x <<= y``"
+msgstr ""
+
+msgid "``x >>= y``"
+msgstr ""
+
+msgid "Assignment (lowest priority)"
+msgstr "할당 (가장 낮은 우선 순위)"
+
+msgid "You cannot use an assignment operator inside an expression."
+msgstr ""
+
+msgid "The behavior of some operators may differ from what you expect:"
+msgstr ""
+
+msgid ""
+"If both operands of the ``/`` operator are :ref:`int <class_int>`, then "
+"integer division is performed instead of fractional. For example ``5 / 2 == "
+"2``, not ``2.5``. If this is not desired, use at least one :ref:`float "
+"<class_float>` literal (``x / 2.0``), cast (``float(x) / y``), or multiply "
+"by ``1.0`` (``x * 1.0 / y``)."
+msgstr ""
+
+msgid ""
+"The ``%`` operator is only available for ints, for floats use the :ref:"
+"`fmod() <class_@GlobalScope_method_fmod>` function."
+msgstr ""
+
+msgid ""
+"For negative values, the ``%`` operator and ``fmod()`` use `truncation "
+"<https://en.wikipedia.org/wiki/Truncation>`_ instead of rounding towards "
+"negative infinity. This means that the remainder has a sign. If you need the "
+"remainder in a mathematical sense, use the :ref:`posmod() "
+"<class_@GlobalScope_method_posmod>` and :ref:`fposmod() "
+"<class_@GlobalScope_method_fposmod>` functions instead."
+msgstr ""
+
+msgid ""
+"The ``**`` operator is `left-associative <https://en.wikipedia.org/wiki/"
+"Operator_associativity>`_. This means that ``2 ** 2 ** 3`` is equal to ``(2 "
+"** 2) ** 3``. Use parentheses to explicitly specify precedence you need, for "
+"example ``2 ** (2 ** 3)``."
+msgstr ""
+
+msgid ""
+"The ``==`` and ``!=`` operators sometimes allow you to compare values of "
+"different types (for example, ``1 == 1.0`` is true), but in other cases it "
+"can cause a runtime error. If you're not sure about the types of the "
+"operands, you can safely use the :ref:`is_same() "
+"<class_@GlobalScope_method_is_same>` function (but note that it is more "
+"strict about types and references). To compare floats, use the :ref:"
+"`is_equal_approx() <class_@GlobalScope_method_is_equal_approx>` and :ref:"
+"`is_zero_approx() <class_@GlobalScope_method_is_zero_approx>` functions "
+"instead."
+msgstr ""
+
+msgid "Literals"
+msgstr "리터럴(Literal)"
+
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**예제**"
+
+#, fuzzy
+msgid "``null``"
+msgstr "null"
+
+#, fuzzy
+msgid "Null value"
+msgstr "값"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "불 방식 OR"
+
+msgid "``45``"
+msgstr "``45``"
+
+msgid "Base 10 integer"
+msgstr "기본 10진법 정수"
+
+msgid "``0x8f51``"
+msgstr "``0x8f51``"
+
+msgid "Base 16 (hexadecimal) integer"
+msgstr "기본 16진법 정수"
+
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+msgid "Base 2 (binary) integer"
+msgstr "기본 2진법 정수"
+
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14``, ``58.1e-10``"
+
+msgid "Floating-point number (real)"
+msgstr "부동 소수점 숫자 (실수)"
+
+#, fuzzy
+msgid "``\"Hello\"``, ``'Hi'``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+#, fuzzy
+msgid "Regular strings"
+msgstr "조명 굽기"
+
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "문자열"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "GDScript 형식 문자열(format strings)"
+
+msgid "``&\"name\"``"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`StringName <class_StringName>`"
+msgstr ":ref:`String <class_String>`"
+
+#, fuzzy
+msgid "``^\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**예제**"
+
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "``get_node(\"NodePath\")``\\ 의 짧은 표현"
+
+#, fuzzy
+msgid "``%UniqueNode``"
+msgstr "``그룹 노드``"
+
+#, fuzzy
+msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
+msgstr "``get_node(\"NodePath\")``\\ 의 짧은 표현"
+
+msgid ""
+"Integers and floats can have their numbers separated with ``_`` to make them "
+"more readable. The following ways to write numbers are all valid::"
+msgstr ""
+"정수와 부동 소수점 수는 가독성을 높이기 위해 숫자를 ``_``\\ 로 구분할 수 있습"
+"니다. 숫자를 쓰는 다음 방법은 모두 유효합니다:"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+#, fuzzy
+msgid "**Escape sequence**"
+msgstr "이스케이프 시퀀스"
+
+msgid "**Expands to**"
+msgstr "**설명**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "줄 바꿈(라인 피드)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "수평 탭 문자"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "캐리지 리턴"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "경고(비프/벨 음)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "백스페이스"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "폼 피드(페이지 나누기)"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "수직 탭 문자"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "큰 따옴표"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "작은 따옴표"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "백슬래시"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "서버로 프로젝트를 내보낼 수 있는 방법이 두 가지 있습니다:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript는 :ref:`doc_gdscript_printf`\\ 도 지원합니다."
+
+#, fuzzy
+msgid "Annotations"
+msgstr "들여쓰기"
+
+msgid ""
+"There are some special tokens in GDScript that act like keywords but are "
+"not, they are *annotations* instead. Every annotation start with the ``@`` "
+"character and is specified by a name. A detailed description and example for "
+"each annotation can be found inside the :ref:`GDScript class reference "
+"<class_@GDScript>`."
+msgstr ""
+
+msgid ""
+"Annotations affect how the script is treated by external tools and usually "
+"don't change the behavior."
+msgstr ""
+
+msgid "For instance, you can use it to export a value to the editor::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For more information about exporting properties, read the :ref:`GDScript "
+"exports <doc_gdscript_exports>` article."
+msgstr "내보내기에 관한 서술은 :ref:`doc_gdscript_exports`\\ 로 옮겨졌습니다."
+
+msgid ""
+"Any constant expression compatible with the required argument type can be "
+"passed as an annotation argument value::"
+msgstr ""
+
+msgid ""
+"Annotations can be specified one per line or all in the same line. They "
+"affect the next statement that isn't an annotation. Annotations can have "
+"arguments sent between parentheses and separated by commas."
+msgstr ""
+
+msgid "Both of these are the same::"
+msgstr ""
+
+msgid "``@onready`` annotation"
+msgstr ""
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"노드를 사용할 때, 씬의 일부를 변수로 참조하는 것이 일반적입니다. 씬은 활성 "
+"씬 트리에 들어갈 때만 구성되기 때문에 하위 노드는 ``Node._ready()`` 호출이 있"
+"을 때만 가져올 수 있습니다."
+
+#, fuzzy
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``@onready`` annotation, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"이 작업은 특히 노드와 외부 참조가 쌓이다 보면 번거로워질 수 있습니다. 이를 위"
+"해 GDScript에는 ``_ready()``\\ 가 호출될 때까지 멤버 변수의 초기화를 지연시키"
+"는 ``onready`` 키워드가 있습니다. 위의 코드는 한 줄로 대체 가능합니다::"
+
+msgid ""
+"Applying ``@onready`` and any ``@export`` annotation to the same variable "
+"doesn't work as you might expect. The ``@onready`` annotation will cause the "
+"default value to be set after the ``@export`` takes effect and will override "
+"it::"
+msgstr ""
+
+msgid ""
+"Therefore, the ``ONREADY_WITH_EXPORT`` warning is generated, which is "
+"treated as an error by default. We do not recommend disabling or ignoring it."
+msgstr ""
+
+msgid "Comments"
+msgstr "주석"
+
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr "``#``\\ 부터 줄 끝까지는 주석으로 간주되어 무시됩니다."
+
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Godot 버전 관리"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "본 텍스트는 다음과 같습니다:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "어떻게 작동하는 지의 예제입니다:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
+#, fuzzy
+msgid "Line continuation"
+msgstr "엔진 싱글톤(Engine Singleton)"
+
+msgid ""
+"A line of code in GDScript can be continued on the next line by using a "
+"backslash (``\\``). Add one at the end of a line and the code on the next "
+"line will act like it's where the backslash is. Here is an example:"
+msgstr ""
+
+msgid "A line can be continued multiple times like this:"
+msgstr ""
+
+msgid "Built-in types"
+msgstr "내장 타입(Built-in type)"
+
+#, fuzzy
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The exceptions are ``Object``, ``Array``, ``Dictionary``, and "
+"packed arrays (such as ``PackedByteArray``), which are passed by reference "
+"so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
+"``Resource``) have a ``duplicate()`` method that allows you to make a copy."
+msgstr ""
+"내장 타입은 스택에 할당됩니다. 이들은 값으로 전달됩니다. 즉, 복사본은 각 할당"
+"에서, 혹은 타입이 인수로서 함수로 전달될 때 만들어집니다. 유일한 예외 사항은 "
+"``배열(Array)``\\ 과 ``딕셔너리(Dictionary)``\\ 로, 이 때는 참조로 전달되기 "
+"때문에 공유됩니다. (``PoolByteArray``\\ 와 같은 풀 배열(pooled array)은 여전"
+"히 값으로 전달됩니다.)"
+
+msgid "Basic built-in types"
+msgstr "기본 내장 타입"
+
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "GDScript의 변수에는 여러 내장 타입을 할당할 수 있습니다."
+
+msgid "null"
+msgstr "null"
+
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr ""
+"``null``\\ 은 정보를 가지지 않는 빈 데이터 타입으로 어떤 값도 할당할 수 없습"
+"니다."
+
+msgid ":ref:`bool <class_bool>`"
+msgstr ":ref:`bool <class_bool>`"
+
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr ""
+"\"불리언(Boolean)\"의 약자로, 오직 ``true`` 또는 ``false``\\ 값만 가집니다."
+
+msgid ":ref:`int <class_int>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to ``int64_t`` in C++."
+msgstr ""
+"\"정수(Integer)\"의 약자로, 모든 숫자 (양수와 음수)를 저장합니다. 64비트 값으"
+"로 저장하며, 이는 C++에서 \"int64_t\"와 같습니다."
+
+msgid ":ref:`float <class_float>`"
+msgstr ":ref:`float <class_float>`"
+
+#, fuzzy
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to ``double`` in C++. Note: Currently, "
+"data structures such as ``Vector2``, ``Vector3``, and ``PackedFloat32Array`` "
+"store 32-bit single-precision ``float`` values."
+msgstr ""
+"부동 소수점 값을 사용해 소수를 포함하는 실수를 저장합니다. C++의 "
+"\"double\"에 해당하는 64비트 값으로 저장됩니다. 참고: 현재 Vector2, Vector3, "
+"PoolRealArray와 같은 데이터 구조는 32비트 단정도(Single-precision) \"float\" "
+"값을 저장합니다."
+
+msgid ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`"
+
+#, fuzzy
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
+msgstr ""
+"`유니코드 형식 <https://en.wikipedia.org/wiki/Unicode>`_\\ 의 문자열입니다. "
+"문자열에는 다음과 같은 이스케이프 시퀀스가 포함될 수 있습니다."
+
+msgid ""
+"An immutable string that allows only one instance of each name. They are "
+"slower to create and may result in waiting for locks when multithreading. In "
+"exchange, they're very fast to compare, which makes them good candidates for "
+"dictionary keys."
+msgstr ""
+
+msgid ""
+"A pre-parsed path to a node or a node property.  It can be easily assigned "
+"to, and from, a String. They are useful to interact with the tree to get a "
+"node, or affecting properties like with :ref:`Tweens <class_Tween>`."
+msgstr ""
+
+msgid "Vector built-in types"
+msgstr "벡터 내장 타입"
+
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr ""
+"2D 벡터 타입으로 ``x``, ``y`` 필드를 가집니다. 배열로 접근할 수도 있습니다."
+
+#, fuzzy
+msgid ":ref:`Vector2i <class_Vector2i>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"Same as a Vector2 but the components are integers. Useful for representing "
+"items in a 2D grid."
+msgstr ""
+
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"2D 사각형 타입으로 두 개의 벡터 필드 ``position``, ``size``\\ 를 가집니다. 또"
+"한 ``position + size``\\ 값인 ``end`` 필드를 가집니다."
+
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr ""
+"3D 벡터 타입으로 ``x``, ``y``, ``z`` 필드를 가집니다. 배열로 접근할 수도 있습"
+"니다."
+
+#, fuzzy
+msgid ":ref:`Vector3i <class_Vector3i>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"Same as Vector3 but the components are integers. Can be use for indexing "
+"items in a 3D grid."
+msgstr ""
+
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid "3×2 matrix used for 2D transforms."
+msgstr "3x2 행렬(Matrix)로 2D 변형에 사용됩니다."
+
+msgid ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr ""
+"표준화된 형태의 3D 평면(Plane) 타입으로 ``normal`` 벡터와 ``d`` 스칼라 거리 "
+"필드를 가집니다."
+
+#, fuzzy
+msgid ":ref:`Quaternion <class_Quaternion>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr ""
+"사원수(Quaternion)는 3D 회전을 표현하기 위해 사용되는 데이터 타입입니다. 회"
+"전 값을 보간하는 용도로 사용됩니다."
+
+msgid ":ref:`AABB <class_AABB>`"
+msgstr ":ref:`AABB <class_AABB>`"
+
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"축이 정렬된 경계 사각형(또는 3D 상자)로 두 개의 벡터 필드 ``position``, "
+"``size``\\ 를 가집니다. 또한 ``position + size``\\ 값인 ``end`` 필드를 가집니"
+"다."
+
+msgid ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"3x3 행렬로 3D 회전과 크기 조정에 사용됩니다. 3개의 벡터 필드(``x``, ``y``, "
+"``z``)를 가집니다. 3D 벡터의 배열로 접근할 수도 있습니다."
+
+#, fuzzy
+msgid ":ref:`Transform3D <class_Transform3D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3D 변형(Transform)으로, Basis 필드 ``basis``, Vector3 필드 ``origin``\\ 을 가"
+"집니다."
+
+msgid "Engine built-in types"
+msgstr "엔진 내장 타입"
+
+msgid ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color <class_Color>`"
+
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"색상(Color) 데이터 타입으로 ``r``, ``g``, ``b``, ``a`` 필드를 가집니다. 색조/"
+"채도/명도 값을 ``h``, ``s``, ``v``\\ 로 접근할 수도 있습니다."
+
+msgid ":ref:`RID <class_RID>`"
+msgstr ":ref:`RID <class_RID>`"
+
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr ""
+"리소스 ID (RID). 서버는 불투명한 데이터를 참조하기 위해 제네릭 RID를 사용합니"
+"다."
+
+msgid ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid "Base class for anything that is not a built-in type."
+msgstr "내장 타입이 아닌 모든 것의 기본 클래스."
+
+msgid "Container built-in types"
+msgstr "컨테이너(Container) 내장 타입"
+
+msgid ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"다른 배열(Array)이나 딕셔너리(Dictionary)를 포함한 임의 오브젝트 타입의 일반"
+"적인 시퀀스(Sequence)입니다(아래를 참고하세요). 배열의 크기는 동적으로 조절"
+"할 수 있습니다. 배열은 인덱스 ``0``\\ 부터 번호를 매깁니다. 번호를 음수로 하"
+"면 배열의 끝부터 셉니다."
+
+#, fuzzy
+msgid "Typed arrays"
+msgstr "TypeCast(타입캐스트)"
+
+msgid ""
+"Godot 4.0 added support for typed arrays. On write operations, Godot checks "
+"that element values match the specified type, so the array cannot contain "
+"invalid values. The GDScript static analyzer takes typed arrays into "
+"account, however array methods like ``front()`` and ``back()`` still have "
+"the ``Variant`` return type."
+msgstr ""
+
+msgid ""
+"Typed arrays have the syntax ``Array[Type]``, where ``Type`` can be any "
+"``Variant`` type, native or user class, or enum. Nested array types (like "
+"``Array[Array[int]]``) are not supported."
+msgstr ""
+
+msgid "``Array`` and ``Array[Variant]`` are the same thing."
+msgstr ""
+
+msgid ""
+"Arrays are passed by reference, so the array element type is also an "
+"attribute of the in-memory structure referenced by a variable in runtime. "
+"The static type of a variable restricts the structures that it can reference "
+"to. Therefore, you **cannot** assign an array with a different element type, "
+"even if the type is a subtype of the required type."
+msgstr ""
+
+msgid ""
+"If you want to *convert* a typed array, you can create a new array and use "
+"the :ref:`Array.assign() <class_Array_method_assign>` method::"
+msgstr ""
+
+msgid ""
+"The only exception was made for the ``Array`` (``Array[Variant]``) type, for "
+"user convenience and compatibility with old code. However, operations on "
+"untyped arrays are considered unsafe."
+msgstr ""
+
+#, fuzzy
+msgid "Packed arrays"
+msgstr "지역 변수(Local Variables)"
+
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"GDScript 배열은 속도를 위해 선형적으로 메모리에 할당됩니다. (원소가 수만 개 "
+"이상인) 큰 배열은 메모리 단편화를 발생시킬 수 있습니다. 이것이 염려된다면 특"
+"수 타입 배열을 사용할 수 있습니다. 이 배열에는 하나의 데이터 타입만 들어갈 "
+"수 있습니다. 메모리 단편화를 방지할 뿐더러, 더 적은 메모리를 사용하지만 원자"
+"적이고 기본 배열보다 더 느리게 실행됩니다. 따라서 큰 데이터 집합을 사용할 때"
+"만 추천합니다:"
+
+#, fuzzy
+msgid ""
+":ref:`PackedByteArray <class_PackedByteArray>`: An array of bytes (integers "
+"from 0 to 255)."
+msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: 바이트의 배열 (0부터 255까지의 정"
+"수)."
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt32Array <class_PackedInt32Array>`: An array of 32-bit "
+"integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: 정수의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt64Array <class_PackedInt64Array>`: An array of 64-bit "
+"integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: 정수의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>`: An array of 32-bit "
+"floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: 실수의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat64Array <class_PackedFloat64Array>`: An array of 64-bit "
+"floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: 실수의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedStringArray <class_PackedStringArray>`: An array of strings."
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: 문자열의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector2Array <class_PackedVector2Array>`: An array of :ref:"
+"`Vector2 <class_Vector2>` values."
+msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: :ref:`Vector2 "
+"<class_Vector2>` 오브젝트의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector3Array <class_PackedVector3Array>`: An array of :ref:"
+"`Vector3 <class_Vector3>` values."
+msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: :ref:`Vector3 "
+"<class_Vector3>` 오브젝트의 배열."
+
+#, fuzzy
+msgid ""
+":ref:`PackedColorArray <class_PackedColorArray>`: An array of :ref:`Color "
+"<class_Color>` values."
+msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: :ref:`Color <class_Color>` 오브"
+"젝트의 배열."
+
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Dictionary <class_Dictionary>`"
+
+msgid "Associative container which contains values referenced by unique keys."
+msgstr "고유 키로 참조되는 값들을 가지는 연관 컨테이너입니다."
+
+#, fuzzy
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier), and must be string literals."
+msgstr ""
+"Lua 스타일의 테이블 구문도 지원됩니다. Lua 스타일은 ``:`` 대신 ``=``\\ 을 사"
+"용하고 문자열 키를 표시하기 위해 따옴표를 사용하지 않습니다(쓸 문자가 약간 줄"
+"어듭니다). 그러나 이 형식으로 작성된 키 이름은 (다른 모든 GDScript 식별자와 "
+"마찬가지로) 숫자로 시작할 수 없습니다."
+
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr ""
+"존재하는 딕셔너리에 키를 추가하려면, 기존 키와 같은 방식으로 접근한 뒤 할당해"
+"야 합니다::"
+
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"대괄호 구문은 사전뿐만 아니라 모든 :ref:`class_Object`\\ 의 속성에 접근하는 "
+"데 사용할 수 있습니다. 존재하지 않는 속성을 인덱싱하려고 할 때 스크립트 오류"
+"가 발생한다는 점에 유의하세요. 이를 방지하려면 :ref:`Object.get() "
+"<class_Object_method_get>` 및 :ref:`Object.set() <class_Object_method_set>` "
+"메서드를 대신 사용하세요."
+
+#, fuzzy
+msgid ":ref:`Signal <class_Signal>`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ""
+"A signal is a message that can be emitted by an object to those who want to "
+"listen to it. The Signal type can be used for passing the emitter around."
+msgstr ""
+
+msgid ""
+"Signals are better used by getting them from actual objects, e.g. ``$Button."
+"button_up``."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Callable <class_Callable>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"Contains an object and a function, which is useful for passing functions as "
+"values (e.g. when connecting to signals)."
+msgstr ""
+
+msgid ""
+"Getting a method as a member returns a callable. ``var x = $Sprite2D."
+"rotate`` will set the value of ``x`` to a callable with ``$Sprite2D`` as the "
+"object and ``rotate`` as the method."
+msgstr ""
+
+msgid "You can call it using the ``call`` method: ``x.call(PI)``."
+msgstr ""
+
+msgid "Data"
+msgstr "데이터"
+
+msgid "Variables"
+msgstr "변수(Variable)"
+
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"변수는 클래스 멤버로 존재할 수도 있고 함수에 지역적으로 존재할 수도 있습니"
+"다. 이들은 ``var`` 키워드로 생성되며 초기화할 때 값을 할당받을 수도 있습니다."
+
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"변수는 타입을 지정할 수도 있습니다. 타입을 지정하면 항상 같은 타입을 가지도"
+"록 강제되며, 호환되지 않는 값을 할당하려고 하면 오류가 발생합니다."
+
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr ""
+"타입은 변수 선언 시 변수 이름 뒤에 ``:``\\ (콜론) 기호를 사용해 지정하고 그 "
+"뒤에 타입을 지정합니다."
+
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr ""
+"변수가 선언과 동시에 초기화되면 타입을 유추할 수 있으므로 타입 이름을 생략할 "
+"수 있습니다::"
+
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr ""
+"타입 유추는 할당된 값에 정의된 타입이 있는 경우에만 가능하며, 그렇지 않으면 "
+"오류가 발생합니다."
+
+msgid "Valid types are:"
+msgstr "올바른 타입은 다음과 같습니다:"
+
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "내장 타입(Array, Vector2, int, String 등)."
+
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "엔진 클래스 (Node, Resource, Reference 등)."
+
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"스크립트 리소스가 포함된 상수 이름(``const MyScript = preload(\"res://"
+"my_script.gd\")``\\ 를 선언한 경우에 ``MyScript``\\ 가 여기에 속합니다)."
+
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"같은 스크립트의 스코프 안에 있는 다른 클래스들(같은 스코프에서 ``class "
+"InnerClass`` 안에 ``class NestedClass``\\ 를 선언한 경우 ``InnerClass."
+"NestedClass``\\ 가 여기에 속합니다)."
+
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "``class_name`` 키워드로 선언된 스크립트 클래스."
+
+msgid "Autoloads registered as singletons."
+msgstr ""
+
+msgid ""
+"While ``Variant`` is a valid type specification, it's not an actual type. It "
+"only means there's no set type and is equivalent to not having a static type "
+"at all. Therefore, inference is not allowed by default for ``Variant``, "
+"since it's likely a mistake."
+msgstr ""
+
+msgid ""
+"You can turn off this check, or make it only a warning, by changing it in "
+"the project settings. See :ref:`doc_gdscript_warning_system` for details."
+msgstr ""
+
+#, fuzzy
+msgid "Initialization order"
+msgstr "다음 예제에서:"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Will print::"
+msgstr "이렇게 프린트 될 것입니다:"
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
+#, fuzzy
+msgid "Static variables"
+msgstr "인스턴스 편집하기"
+
+msgid "A class member variable can be declared static::"
+msgstr ""
+
+msgid ""
+"Static variables belong to the class, not instances. This means that static "
+"variables share values between multiple instances, unlike regular member "
+"variables."
+msgstr ""
+
+msgid ""
+"From inside a class, you can access static variables from any function, both "
+"static and non-static. From outside the class, you can access static "
+"variables using the class or an instance (the second is not recommended as "
+"it is less readable)."
+msgstr ""
+
+msgid ""
+"The ``@export`` and ``@onready`` annotations cannot be applied to a static "
+"variable. Local variables cannot be static."
+msgstr ""
+
+msgid ""
+"The following example defines a ``Person`` class with a static variable "
+"named ``max_id``. We increment the ``max_id`` in the ``_init()`` function. "
+"This makes it easy to keep track of the number of ``Person`` instances in "
+"our game."
+msgstr ""
+
+msgid ""
+"In this code, we create two instances of our ``Person`` class and check that "
+"the class and every instance have the same ``max_id`` value, because the "
+"variable is static and accessible to every instance."
+msgstr ""
+
+msgid "Static variables can have type hints, setters and getters::"
+msgstr ""
+
+msgid "A base class static variable can also be accessed via a child class::"
+msgstr ""
+
+msgid "``@static_unload`` annotation"
+msgstr ""
+
+msgid ""
+"Since GDScript classes are resources, having static variables in a script "
+"prevents it from being unloaded even if there are no more instances of that "
+"class and no other references left. This can be important if static "
+"variables store large amounts of data or hold references to other project "
+"resources, such as scenes. You should clean up this data manually, or use "
+"the :ref:`@static_unload <class_@GDScript_annotation_@static_unload>` "
+"annotation if static variables don't store important data and can be reset."
+msgstr ""
+
+msgid ""
+"Currently, due to a bug, scripts are never freed, even if ``@static_unload`` "
+"annotation is used."
+msgstr ""
+
+msgid ""
+"Note that ``@static_unload`` applies to the entire script (including inner "
+"classes) and must be placed at the top of the script, before ``class_name`` "
+"and ``extends``::"
+msgstr ""
+
+msgid "See also `Static functions`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Casting"
+msgstr "캐스팅(Casting)"
+
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"타입이 지정된 변수에는 호환 가능한 타입의 값을 할당해야 합니다. 값을 특정 타"
+"입으로 강제 변환해야 하는 경우, 특히 객체 타입의 경우 캐스팅 연산자 ``as``\\ "
+"를 사용할 수 있습니다."
+
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"오브젝트 타입 간 캐스팅에서 오브젝트의 값 타입이 캐스팅할 타입과 같거나 캐스"
+"팅할 타입의 서브타입인 경우 캐스팅하면 동일한 오브젝트가 생성됩니다."
+
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr ""
+"값이 캐스팅 타입의 서브타입이 아니라면 캐스팅 연산 결과값은 ``null``\\ 이 됩"
+"니다."
+
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr ""
+"내장 타입의 경우 가능하다면 강제로 타입을 변환하지만, 불가능하다면 오류를 발"
+"생합니다."
+
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr ""
+"캐스팅은 씬 트리와 상호 작용할 때 더 나은 타입 안전한 변수를 만드는 데 유용합"
+"니다::"
+
+msgid "Constants"
+msgstr "상수"
+
+msgid ""
+"Constants are values you cannot change when the game is running. Their value "
+"must be known at compile-time. Using the ``const`` keyword allows you to "
+"give a constant value a name. Trying to assign a value to a constant after "
+"it's declared will give you an error."
+msgstr ""
+"상수는 게임이 실행 중일 때 변경할 수 없는 값입니다. 상수 값은 컴파일 시간에 "
+"정해져야 합니다. ``const`` 키워드를 사용하면 상수 값에 이름을 지정할 수 있습"
+"니다. 선언된 상수에 값을 할당하려고 하면 오류가 발생합니다."
+
+msgid "We recommend using constants whenever a value is not meant to change."
+msgstr "값이 변경되지 않는다면 상수를 사용하는 것이 좋습니다."
+
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr ""
+"상수의 타입은 할당되는 값에서 유추할 수 있지만 명시적으로 지정할 수도 있습니"
+"다::"
+
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "호환되지 않는 타입의 값을 할당하면 오류가 발생합니다."
+
+msgid ""
+"You can also create constants inside a function, which is useful to name "
+"local magic values."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since objects, arrays and dictionaries are passed by reference, constants "
+"are \"flat\". This means that if you declare a constant array or dictionary, "
+"it can still be modified afterwards. They can't be reassigned with another "
+"value though."
+msgstr ""
+"배열과 딕셔너리는 참조로 전달되기 때문에 상수는 \"평평\"합니다. 즉, 상수 배열"
+"이나 딕셔너리를 선언하면 나중에 수정할 수 있습니다. 그러나 다른 값으로 재할당"
+"할 수 없습니다."
+
+msgid "Enums"
+msgstr "열거형(Enum)"
+
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr ""
+"열거형은 기본적으로 상수의 축약형으로, 연속적인 정수를 일부 상수에 할당할 때 "
+"꽤 유용합니다."
+
+#, fuzzy
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant :"
+"ref:`Dictionary <class_Dictionary>` of that name. This means all constant "
+"methods of a dictionary can also be used with a named enum."
+msgstr ""
+"열거형에 이름을 전달하면 모든 키를 해당 이름의 상수 딕셔너리 안에 넣습니다."
+
+#, fuzzy
+msgid ""
+"Keys in a named enum are not registered as global constants. They should be "
+"accessed prefixed by the enum's name (``Name.KEY``)."
+msgstr ""
+"Godot 3.1부터는, 이름있는 열거형의 키(Key)들은 전역 상수로 등록되지 않습니"
+"다. 키에 접근하려면 열거형의 이름이 앞에 있어야합니다(``이름.KEY``). 아래의 "
+"예제를 참고하세요."
+
+msgid "Functions"
+msgstr "함수(Function)"
+
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"함수는 항상 `클래스 <Classes_>`_\\ 에 속합니다. 변수 조회 범위 우선 순위는 지"
+"역(local) → 클래스 멤버 → 전역 순입니다. ``self`` 변수는 항상 사용할 수 있고 "
+"클래스 멤버에 접근할 수 있는 옵션으로 제공되지만 항상 필수적이지는 않습니다"
+"(Python과 달리 함수의 첫 번째 인수로 보내면 *안* 됩니다)."
+
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr ""
+"함수는 언제든지 ``반환(return)``\\ 할 수 있습니다. 기본 반환 값은 ``null``\\ "
+"입니다."
+
+msgid ""
+"If a function contains only one line of code, it can be written on one line::"
+msgstr ""
+
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr ""
+"그리고 함수는 인수와 반환 값의 타입을 지정할 수 있습니다. 인수의 타입은 변수"
+"와 비슷한 방식으로 추가할 수 있습니다::"
+
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr "함수 인수가 기본 값을 가진다면 타입을 유추할 수 있습니다::"
+
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr ""
+"함수의 반환 타입은 화살표 토큰 (``->``)을 사용헤 인수 목록 뒤에 지정할 수 있"
+"습니다::"
+
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"반환 타입이 있는 함수는 **반드시** 그에 맞는 값을 반환해야 합니다. 타입을 "
+"``void``\\ 로 설정하면 함수는 아무 것도 반환하면 안 됩니다. Void 함수는 "
+"``return`` 키워드로 함수에서 일찍 반환할 수 있지만, 값을 반환하면 안 됩니다."
+
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"void가 아닌 함수는 **항상** 값을 반환해야 하므로 코드에 분기 문이 있는 경우"
+"(예: ``if``/``else`` 구조) 가능한 모든 경로에서 반환해야 합니다. 예를 들어, "
+"``if`` 블록 안에 ``return``\\ 이 있지만 그 이후에는 없는 경우 블록이 실행되"
+"지 않으면 함수가 반환할 유효한 값을 가지지 않기 때문에 에디터에서 오류가 발생"
+"합니다."
+
+msgid "Referencing functions"
+msgstr "함수 참조하기(Referencing functions)"
+
+msgid ""
+"Functions are first-class items in terms of the :ref:`Callable "
+"<class_Callable>` object. Referencing a function by name without calling it "
+"will automatically generate the proper callable. This can be used to pass "
+"functions as arguments."
+msgstr ""
+
+msgid ""
+"Callables **must** be called with the ``call`` method. You cannot use the "
+"``()`` operator directly. This behavior is implemented to avoid performance "
+"issues on direct function calls."
+msgstr ""
+
+#, fuzzy
+msgid "Lambda functions"
+msgstr "랜덤 함수"
+
+msgid ""
+"Lambda functions allow you to declare functions that do not belong to a "
+"class. Instead a :ref:`Callable <class_Callable>` object is created and "
+"assigned to a variable directly. This can be useful to create Callables to "
+"pass around without polluting the class scope."
+msgstr ""
+
+msgid "Lambda functions can be named for debugging purposes::"
+msgstr ""
+
+msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
+
+msgid ""
+"Lambda functions capture the local environment. Local variables are passed "
+"by value, so they won't be updated in the lambda if changed in the local "
+"function::"
+msgstr ""
+
+msgid ""
+"The values of the outer scope behave like constants. Therefore, if you "
+"declare an array or dictionary, it can still be modified afterwards."
+msgstr ""
+
+msgid "Static functions"
+msgstr "정적 함수(Static functions)"
+
+#, fuzzy
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. A static function has "
+"access to static variables. Also static functions are useful to make "
+"libraries of helper functions::"
+msgstr ""
+"함수를 정적으로 선언할 수 있습니다. 함수가 정적이면 인스턴스 멤버 변수나 "
+"``self``\\ 로 접근할 수 없습니다. 주로 도우미 함수 라이브러리를 만드는 데 유"
+"용합니다::"
+
+msgid "Lambdas cannot be declared static."
+msgstr ""
+
+msgid "See also `Static variables`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Statements and control flow"
+msgstr "명령문(Statement)과 제어 흐름(Control Flow)"
+
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"명령문은 표준으로 할당(Assignment), 함수 호출(Function Call), 제어 흐름 "
+"(Control Flow) 구조 등이 될 수 있습니다. 명령문 구분 기호인 ``;``\\ 의 사용"
+"은 자유입니다."
+
+#, fuzzy
+msgid "Expressions"
+msgstr "Expression Node(표현식 노드)"
+
+msgid ""
+"Expressions are sequences of operators and their operands in orderly "
+"fashion. An expression by itself can be a statement too, though only calls "
+"are reasonable to use as statements since other expressions don't have side "
+"effects."
+msgstr ""
+
+msgid ""
+"Expressions return values that can be assigned to valid targets. Operands to "
+"some operator can be another expression. An assignment is not an expression "
+"and thus does not return any value."
+msgstr ""
+
+#, fuzzy
+msgid "Here are some examples of expressions::"
+msgstr "어떻게 작동하는 지의 예제입니다:"
+
+msgid ""
+"Identifiers, attributes, and subscripts are valid assignment targets. Other "
+"expressions cannot be on the left side of an assignment."
+msgstr ""
+
+msgid "if/else/elif"
+msgstr "if/else/elif"
+
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"간단한 조건은 ``if``/``else``/``elif`` 구문을 사용해 만들 수 있습니다. 조건"
+"문 주변에 괄호를 씌워도 되지만 필수는 아닙니다. 탭 기반 들여쓰기의 특성을 감"
+"안하면 ``else``/``if`` 대신 ``elif``\\ 를 사용해서 들여쓰기 수준을 유지할 수 "
+"있습니다."
+
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "간단한 명령문은 조건처럼 같은 줄에 적을 수 있습니다::"
+
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"때로는 불리언(Boolean) 표현식을 기반으로 초기 값을 다르게 할당해야 하는 경우"
+"가 있습니다. 이 경우에는 삼항 표현식을 쓰면 됩니다::"
+
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+"삼항 if 표현식은 2개 이상의 분기를 처리하기 위해 중첩될 수 있습니다. 삼항 if "
+"표현식을 중첩할 때 가독성을 유지하기 위해 전체 표현식을 여러 줄로 감싸는 것"
+"이 좋습니다::"
+
+msgid ""
+"You may also wish to check if a value is contained within something. You can "
+"use an ``if`` statement combined with the ``in`` operator to accomplish "
+"this::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue`` (which skips to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
+msgstr ""
+"간단한 루프는 ``while`` 구문으로 만들 수 있습니다. 루프는 ``break``\\ 를 사용"
+"해서 끊거나 ``continue``\\ 를 사용해서 계속할 수 있습니다:"
+
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"배열이나 테이블과 같은 범위의 반복에는 *for* 루프가 사용됩니다. 배열을 반복"
+"할 때 현재 배열 요소는 루프 변수에 저장됩니다. 딕셔너리를 반복할 때 *key*\\ "
+"는 루프 변수에 저장됩니다."
+
+msgid ""
+"If you want to assign values on an array as it is being iterated through, it "
+"is best to use ``for i in array.size()``."
+msgstr ""
+
+msgid ""
+"The loop variable is local to the for-loop and assigning to it will not "
+"change the value on the array. Objects passed by reference (such as nodes) "
+"can still be manipulated by calling methods on the loop variable."
+msgstr ""
+
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"``match`` 명령문은 프로그램의 실행을 분기하는 데 사용됩니다. 다른 많은 언어에"
+"서 볼 수 있는 ``switch`` 명령문과 유사하지만 몇 가지 추가 기능을 제공합니다."
+
+msgid ""
+"``match`` is more type strict than the ``==`` operator. For example ``1`` "
+"will **not** match ``1.0``. The only exception is ``String`` vs "
+"``StringName`` matching: for example, the String ``\"hello\"`` is considered "
+"equal to the StringName ``&\"hello\"``."
+msgstr ""
+
+#, fuzzy
+msgid "Basic syntax"
+msgstr "기본 문법::"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
+msgstr "**switch 명령문에 익숙한 사람들을 위한 집중 강좌**:"
+
+msgid "Replace ``switch`` with ``match``."
+msgstr "``switch``\\ 를 ``match``\\ 로 바꾸세요."
+
+msgid "Remove ``case``."
+msgstr "``case``\\ 를 제거하세요."
+
+#, fuzzy
+msgid "Remove any ``break``\\ s."
+msgstr "``case``\\ 를 제거하세요."
+
+msgid "Change ``default`` to a single underscore."
+msgstr "``default``\\ 를 하나의 밑줄로 변경하세요."
+
+#, fuzzy
+msgid "Control flow"
+msgstr "**제어 흐름(Control flow)**:"
+
+#, fuzzy
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement."
+msgstr ""
+"패턴은 위에서 아래로 매치됩니다. 패턴이 첫 번째로 일치하는 블록이 실행됩니"
+"다. 그 후, ``match`` 문 아래에서 계속 실행됩니다. ``continue``\\ 를 사용해 현"
+"재 블록에서 실행을 중지하고 그 아래 패턴에서 추가로 패턴 일치 여부를 확인할 "
+"수 있습니다."
+
+msgid ""
+"The special ``continue`` behavior in ``match`` supported in 3.x was removed "
+"in Godot 4.0."
+msgstr ""
+
+msgid "The following pattern types are available:"
+msgstr ""
+
+#, fuzzy
+msgid "Literal pattern"
+msgstr "배열 패턴(Array pattern)"
+
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
+
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Expression Node(표현식 노드)"
+
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
+
+msgid "Wildcard pattern"
+msgstr "와일드카드 패턴(Wildcard pattern)"
+
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr "이 패턴은 모든 것에 매치됩니다. 하나의 밑줄로 쓸 수 있습니다."
+
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr ""
+"다른 언어의 ``switch`` 명령문의 ``default``\\ 와 같은 의미로 쓰입니다::"
+
+msgid "Binding pattern"
+msgstr "바인딩 패턴(Binding pattern)"
+
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"바인딩 패턴은 새 변수를 도입합니다. 와일드카드 패턴과 마찬가지로 모든 것에 매"
+"치됩니다. 그리고 값에 이름을 부여합니다. 이는 특히 배열 패턴과 딕셔너리 패턴"
+"에 유용합니다::"
+
+msgid "Array pattern"
+msgstr "배열 패턴(Array pattern)"
+
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr ""
+"배열을 비교합니다. 배열 패턴의 각 단일 요소도 패턴이므로, 패턴을 중첩할 수 있"
+"습니다."
+
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr ""
+"배열의 길이가 패턴과 같은지 테스트하고, 같지 않다면 패턴이 일치하지 않습니다."
+
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr ""
+"**개방형 배열(Open-ended array)**: 배열의 마지막 서브패턴을 ``..``\\ 으로 만"
+"들어서 패턴보다 배열이 더 커질 수 있습니다."
+
+msgid "Every subpattern has to be comma-separated."
+msgstr "각 서브패턴은 쉼표로 구분해야 합니다."
+
+msgid "Dictionary pattern"
+msgstr "딕셔너리 패턴(Dictionary pattern)"
+
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr ""
+"배열 패턴과 같은 방식으로 작동합니다. 모든 키는 일정한 패턴이어야 합니다."
+
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr ""
+"딕셔너리의 길이가 패턴과 같은지 테스트하고, 같지 않다면 패턴이 일치하지 않습"
+"니다."
+
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr ""
+"**개방형 딕셔너리(Open-ended dictionary)**: 딕셔너리의 마지막 서브패턴을 ``.."
+"``\\ 으로 만들어서 패턴보다 딕셔너리가 더 커질 수 있습니다."
+
+msgid "Every subpattern has to be comma separated."
+msgstr "모든 서브패턴은 쉼표로 구분되어야 합니다."
+
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "값을 지정하지 않으면, 키의 존재 여부만 확인됩니다."
+
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "값 패턴과 키 패턴은 ``:``\\ 로 분리됩니다."
+
+msgid "Multiple patterns"
+msgstr "다중 패턴(Multiple patterns)"
+
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr ""
+"여러 패턴을 쉼표로 구분해서 지정할 수 있습니다. 이 패턴들 사이에서 바인딩은 "
+"허용되지 않습니다."
+
+msgid "Pattern guards"
+msgstr ""
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "값을 지정하지 않으면, 키의 존재 여부만 확인됩니다."
+
+msgid "Classes"
+msgstr "클래스"
+
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"기본적으로 모든 스크립트 파일은 이름 없는 클래스입니다. 이 경우 상대 경로나 "
+"절대 경로를 사용한 파일 경로를 통해서만 참조할 수 있습니다. 예를 들어 스크립"
+"트 파일의 이름을 ``characrer.gd``\\ 로 지은 경우 다음과 같이 참조합니다::"
+
+#, fuzzy
+msgid "Registering named classes"
+msgstr "스크립트를 클래스로 등록하기"
+
+#, fuzzy
+msgid ""
+"You can give your class a name to register it as a new type in Godot's "
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"대신, Godot 에디터에서 클래스 이름을 지정해서 새로운 타입으로 등록할 수 있습"
+"니다. 이를 위해 ``class_name`` 키워드를 사용합니다. 추가로 쉼표 뒤에 이미지 "
+"경로를 추가해서 이미지를 클래스 아이콘으로 사용할 수 있습니다. 그러면 클래스"
+"가 에디터에 새 아이콘과 함께 나타납니다::"
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
+
+msgid "Here's a class file example:"
+msgstr "클래스 파일 예제입니다:"
+
+msgid ""
+"If you want to use ``extends`` too, you can keep both on the same line::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot initializes non-static variables every time you create an instance, "
+"and this includes arrays and dictionaries. This is in the spirit of thread "
+"safety, since scripts can be initialized in separate threads without the "
+"user knowing."
+msgstr ""
+"Godot의 클래스 구문은 간결합니다. 멤버 변수나 함수만 포함할 수 있습니다. 정"
+"적 함수를 사용할 수 있지만 정적 멤버 변수는 사용할 수 없습니다. 같은 방식으"
+"로, 엔진은 인스턴스를 생성할 때마다 변수를 초기화하며 여기에는 배열과 딕셔너"
+"리가 포함됩니다. 사용자가 알지 못하는 사이에 별도의 스레드에서 스크립트를 초"
+"기화할 수 있기 때문에 스레드 안전 정신이 적용되었습니다."
+
+msgid "Inheritance"
+msgstr "상속(Inheritance)"
+
+msgid "A class (stored as a file) can inherit from:"
+msgstr "(파일로 저장한) 클래스는 여기서 상속될 수 있습니다:"
+
+msgid "A global class."
+msgstr "전역 클래스(Global class)."
+
+msgid "Another class file."
+msgstr "다른 클래스 파일."
+
+msgid "An inner class inside another class file."
+msgstr "다른 클래스 파일의 내부 클래스."
+
+msgid "Multiple inheritance is not allowed."
+msgstr "다중 상속은 허용되지 않습니다."
+
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "``extends`` 키워드를 사용해 상속합니다::"
+
+msgid ""
+"If inheritance is not explicitly defined, the class will default to "
+"inheriting :ref:`class_RefCounted`."
+msgstr ""
+
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr ""
+"주어진 인스턴스가 주어진 클래스로부터 상속받았는지 확인하려면, ``is`` 키워드"
+"를 사용할 수 있습니다::"
+
+#, fuzzy
+msgid ""
+"To call a function in a *super class* (i.e. one ``extend``-ed in your "
+"current class), use the ``super`` keyword::"
+msgstr ""
+"*부모 클래스*\\ (즉, 현재 클래스에서 ``extend``\\ 한 클래스)에서 함수를 호출"
+"하려면 함수 이름 앞에 ``.``\\ 을 추가하세요::"
+
+#, fuzzy
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their super classes. If you still want to "
+"call them, you can use ``super``::"
+msgstr ""
+"이는 확장하는 클래스의 함수가 부모 클래스에서 같은 이름을 가진 함수를 대체하"
+"기 때문에 특히 유용합니다. 여전히 부모 클래스의 함수를 호출하고 싶다면 앞에 "
+"``.``\\ 를 붙일 수 있습니다(다른 언어의 ``super`` 키워드같이요)::"
+
+msgid ""
+"If you need to call a different function from the super class, you can "
+"specify the function name with the attribute operator::"
+msgstr ""
+
+msgid ""
+"One of the common misconceptions is trying to override *non-virtual* engine "
+"methods such as ``get_class()``, ``queue_free()``, etc. This is not "
+"supported for technical reasons."
+msgstr ""
+
+msgid ""
+"In Godot 3, you can *shadow* engine methods in GDScript, and it will work if "
+"you call this method in GDScript. However, the engine will **not** execute "
+"your code if the method is called inside the engine on some event."
+msgstr ""
+
+msgid ""
+"In Godot 4, even shadowing may not always work, as GDScript optimizes native "
+"method calls. Therefore, we added the ``NATIVE_METHOD_OVERRIDE`` warning, "
+"which is treated as an error by default. We strongly advise against "
+"disabling or ignoring the warning."
+msgstr ""
+
+msgid ""
+"Note that this does not apply to virtual methods such as ``_ready()``, "
+"``_process()`` and others (marked with the ``virtual`` qualifier in the "
+"documentation and the names start with an underscore). These methods are "
+"specifically for customizing engine behavior and can be overridden in "
+"GDScript. Signals and notifications can also be useful for these purposes."
+msgstr ""
+
+msgid "Class constructor"
+msgstr "클래스 생성자(Class Constructor)"
+
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. If "
+"you want to call the base class constructor, you can also use the ``super`` "
+"syntax. Note that every class has an implicit constructor that it's always "
+"called (defining the default values of class variables). ``super`` is used "
+"to call the explicit constructor::"
+msgstr ""
+
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr ""
+"예제를 통해서 더 쉽게 설명해 보겠습니다. 다음 시나리오를 생각해보세요::"
+
+msgid "There are a few things to keep in mind here:"
+msgstr "유의해야 할 몇 가지 사항이 있습니다:"
+
+#, fuzzy
+msgid ""
+"If the inherited class (``state.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``state.gd``."
+msgstr ""
+"상속하는 클래스(``State.gd``)가 인수(이 경우 ``e``)를 가지는 ``_init`` 생성자"
+"를 정의하는 경우 상속받는 클래스(``Idle.gd``)는 *반드시* ``_init``\\ 을 정의"
+"해야 하고, ``State.gd``\\ 에서 ``_init``\\ 로 적절한 매개변수를 전달해야 합니"
+"다."
+
+#, fuzzy
+msgid ""
+"``idle.gd`` can have a different number of arguments than the base class "
+"``state.gd``."
+msgstr ""
+"``idle.gd``\\ 는 부모 클래스 ``State.gd``\\ 와 다른 개수의 인수를 가질 수 있"
+"습니다."
+
+#, fuzzy
+msgid ""
+"In the example above, ``e`` passed to the ``state.gd`` constructor is the "
+"same ``e`` passed in to ``idle.gd``."
+msgstr ""
+"위의 예제에서 ``State.gd`` 생성자로 전달된 ``e``\\ 는 ``Idle.gd``\\ 로 전달"
+"된 ``e``\\ 와 같습니다."
+
+#, fuzzy
+msgid ""
+"If ``idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``state.gd`` base class, even if it does nothing. "
+"This brings us to the fact that you can pass expressions to the base "
+"constructor as well, not just variables, e.g.::"
+msgstr ""
+"``Idle.gd``\\ 의 ``_init`` 생성자가 0개의 인수를 가지고 아무것도 하지 않더라"
+"도 부모 클래스 ``State.gd``\\ 에 값을 전달해야 합니다. 이는 변수뿐만 아니라 "
+"기본 생성자에서도 리터럴을 전달할 수 있다는 사실을 알려줍니다. 예시::"
+
+#, fuzzy
+msgid "Static constructor"
+msgstr "클래스 생성자(Class Constructor)"
+
+msgid ""
+"A static constructor is a static function ``_static_init`` that is called "
+"automatically when the class is loaded, after the static variables have been "
+"initialized::"
+msgstr ""
+
+msgid ""
+"A static constructor cannot take arguments and must not return any value."
+msgstr ""
+
+msgid "Inner classes"
+msgstr "내부 클래스(Inner Class)"
+
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"클래스 파일은 내부 클래스를 가질 수 있습니다. 내부 클래스는 ``class`` 키워드"
+"로 정의합니다. 내부 클래스는 ``ClassName.new()`` 함수로 인스턴스화 될 수 있습"
+"니다."
+
+msgid "Classes as resources"
+msgstr "리소스로 취급되는 클래스"
+
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"파일로 저장된 클래스는 :ref:`리소스 <class_GDScript>`\\ 로 취급됩니다. 다른 "
+"클래스에서 접근하려면 반드시 디스크에서 불러와야 합니다. 불러오려면 "
+"``load``\\ 나 ``preload`` 함수를 사용할 수 있습니다 (아래를 참고하세요). 불러"
+"온 클래스 리소스를 인스턴스화 하려면 클래스 오브젝트에 ``new`` 함수를 호출해"
+"야 합니다::"
+
+msgid "Exports"
+msgstr "내보내기(Export)"
+
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr "내보내기에 관한 서술은 :ref:`doc_gdscript_exports`\\ 로 옮겨졌습니다."
+
+msgid "Properties (setters and getters)"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Sometimes, you want a class' member variable to do more than just hold data "
+"and actually perform some validation or computation whenever its value "
+"changes. It may also be desired to encapsulate its access in some way."
+msgstr ""
+"어떤 이유에서든 클래스 멤버 변수가 언제 변경되는지 아는 것은 자주 유용합니"
+"다. 어떤 방식으로든 접근을 캡슐화하는 것이 바람직할 수도 있습니다."
+
+msgid ""
+"For this, GDScript provides a special syntax to define properties using the "
+"``set`` and ``get`` keywords after a variable declaration. Then you can "
+"define a code block that will be executed when the variable is accessed or "
+"assigned."
+msgstr ""
+
+#, fuzzy
+msgid "Example::"
+msgstr "예시:"
+
+msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "외부 파일"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
+"Using the variable's name to set it inside its own setter or to get it "
+"inside its own getter will directly access the underlying member, so it "
+"won't generate infinite recursion and saves you from explicitly declaring "
+"another variable::"
+msgstr ""
+
+#, fuzzy
+msgid "This also applies to the alternative syntax::"
+msgstr "최종 결과물입니다:"
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
+
+msgid "Tool mode"
+msgstr "툴 모드(Tool mode)"
+
+#, fuzzy
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``@tool`` annotation exists and must be placed at "
+"the top of the file::"
+msgstr ""
+"기본적으로 스크립트는 에디터 내에서 실행되지 않으며, 오직 내보낸 속성만 에디"
+"터에서 변경할 수 있습니다. 어떤 경우에는 (에디터가 게임 코드를 실행하지 않거"
+"나 수동으로 실행하지 않는 한) 에디터 내에서 실행하는 것이 바람직합니다. 이를 "
+"위해 ``tool`` 키워드가 존재하며, 파일 맨 위에 위치해야 합니다::"
+
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr "자세한 설명은 :ref:`doc_running_code_in_the_editor`\\ 를 참고하세요."
+
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"Tool 스크립트에서 ``queue_free()`` 또는 ``free()``\\ 로 노드를 해제할 때 (특"
+"히 해제할 노드가 스크립트 소유자 자체일 때) 주의하세요. Tool 스크립트는 에디"
+"터에서 코드를 실행하기 때문에 잘못 사용하면 에디터가 고장날 수 있습니다."
+
+msgid "Memory management"
+msgstr "메모리 관리"
+
+msgid ""
+"Godot implements reference counting to free certain instances that are no "
+"longer used, instead of a garbage collector, or requiring purely manual "
+"management. Any instance of the :ref:`class_RefCounted` class (or any class "
+"that inherits it, such as :ref:`class_Resource`) will be freed automatically "
+"when no longer in use. For an instance of any class that is not a :ref:"
+"`class_RefCounted` (such as :ref:`class_Node` or the base :ref:"
+"`class_Object` type), it will remain in memory until it is deleted with "
+"``free()`` (or ``queue_free()`` for Nodes)."
+msgstr ""
+
+msgid ""
+"If a :ref:`class_Node` is deleted via ``free()`` or ``queue_free()``, all of "
+"its children will also recursively be deleted."
+msgstr ""
+
+msgid ""
+"To avoid reference cycles that can't be freed, a :ref:`class_WeakRef` "
+"function is provided for creating weak references, which allow access to the "
+"object without preventing a :ref:`class_RefCounted` from freeing. Here is an "
+"example:"
+msgstr ""
+
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"또는, 참조를 사용하지 않을 때 ``is_instance_valid(instance)``\\ 를 사용해서 "
+"오브젝트가 해제되었는지 확인할 수 있습니다."
+
+msgid "Signals"
+msgstr "시그널"
+
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"시그널은 한 오브젝트에서 반응할 수 있는 다른 오브젝트로 메시지를 방출하는 도"
+"구입니다. 클래스에 대한 커스텀 시그널을 생성하려면 ``signal`` 키워드를 사용하"
+"세요."
+
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"시그널은 `콜백 <https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1>`_ 메커니즘"
+"입니다. 그리고 일반적인 프로그래밍 패턴인 옵저버(Observer)의 역할도 합니다. "
+"자세한 정보는 Game Programming Patterns의 전자책, `Observer tutorial "
+"<https://gameprogrammingpatterns.com/observer.html>`_\\ 을 참고하세요."
+
+#, fuzzy
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody3D`."
+msgstr ""
+"커스텀 시그널도 :ref:`class_Button`, :ref:`class_RigidBody` 같은 노드에 내장"
+"된 시그널을 연결하는 방법과 같은 방식으로 메서드에 연결할 수 있습니다."
+
+#, fuzzy
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_character_health_depleted`` is called::"
+msgstr ""
+"아래 예제에서 ``Character`` 노드의 ``health_depleted`` 시그널을 ``Game`` 노드"
+"로 연결합니다. ``Character`` 노드가 시그널을 방출하면 Game 노드의 "
+"``_on_Character_health_depleted``\\ 가 호출됩니다::"
+
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "하나의 시그널에 원하는 만큼 많은 인수를 함께 방출할 수 있습니다."
+
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"위가 유용한 예입니다. 화면의 체력 바가 애니메이션이 적용되며 체력 변화에 반응"
+"하기를 원하지만 유저 인터페이스를 씬 트리의 플레이어와 분리하려고 한다고 가정"
+"해 보겠습니다."
+
+#, fuzzy
+msgid ""
+"In our ``character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Signal.emit() <class_Signal_method_emit>`, and from a "
+"``Game`` node higher up our scene tree, we connect it to the ``Lifebar`` "
+"using the :ref:`Signal.connect() <class_Signal_method_connect>` method::"
+msgstr ""
+"``Character.gd`` 스크립트에서 ``health_changed`` 시그널을 정의하고 :ref:"
+"`Object.emit_signal() <class_Object_method_emit_signal>`\\ 로 방출합니다. 그"
+"런 다음 씬 트리의 맨 위에 있는 ``Game`` 노드에서 :ref:`Object.connect() "
+"<class_Object_method_connect>` 메서드를 사용해 시그널을 ``Lifebar``\\ 에 연결"
+"합니다::"
+
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"``Game`` 노드에서는 ``Character``\\ 와 ``Lifebar`` 노드를 가져와서 시그널을 "
+"방출하는 캐릭터를 수신기인 ``Lifebar`` 노드에 연결합니다."
+
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"이를 통해 ``Lifebar``\\ 를 ``Character`` 노드에 연결하지 않고도 체력 변화에 "
+"반응할 수 있습니다."
+
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr ""
+"시그널을 정의한 뒤에 개별적으로 괄호 안에 인수 이름을 적을 수 있습니다::"
+
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"인수는 에디터의 노드(Node) 독에 표시되며 Godot는 이 인수로 콜백 함수를 생성"
+"할 수 있습니다. 시그널을 방출할 때 여전히 많은 수의 인수를 방출할 수 있으므"
+"로, 다시 말해 올바른 값을 방출하는 일은 여러분에게 달려 있습니다."
+
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"GDScript는 시그널과 메서드 간의 연결에 값 배열을 바인딩할 수 있습니다. 시그널"
+"이 방출되면 콜백 메서드는 바인딩된 값들을 받습니다. 이러한 바인딩된 인수는 "
+"각 연결에서 고유하며, 값들은 똑같이 유지됩니다."
+
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"방출된 시그널이 여러분이 필요한 데이터에 대한 접근을 제공하지 않는다면 이 배"
+"열의 값들로 연결에 여분의 상수 정보를 추가할 수 있습니다."
+
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"위의 예를 바탕으로 ``Player1이 데미지를 22 입었습니다.``\\ 와 같이 각 캐릭터"
+"가 입은 데미지 로그를 화면에 표시하고 싶다고 가정해 보겠습니다. "
+"``health_changed`` 시그널은 피해를 입은 캐릭터의 이름을 알려주지 않습니다. 따"
+"라서 게임 내 콘솔에 시그널을 연결할 때 바인딩 배열 인수에 캐릭터 이름을 추가"
+"할 수 있습니다::"
+
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr "``BattleLog`` 노드는 바인딩 배열의 각 요소를 추가 인수로 받습니다::"
+
+#, fuzzy
+msgid "Awaiting for signals or coroutines"
+msgstr "3D 내용물 만들기"
+
+msgid ""
+"The ``await`` keyword can be used to create `coroutines <https://en."
+"wikipedia.org/wiki/Coroutine>`_ which wait until a signal is emitted before "
+"continuing execution. Using the ``await`` keyword with a signal or a call to "
+"a function that is also a coroutine will immediately return the control to "
+"the caller. When the signal is emitted (or the called coroutine finishes), "
+"it will resume execution from the point on where it stopped."
+msgstr ""
+
+msgid ""
+"For example, to stop execution until the user presses a button, you can do "
+"something like this::"
+msgstr ""
+
+msgid ""
+"In this case, the ``wait_confirmation`` becomes a coroutine, which means "
+"that the caller also needs to await for it::"
+msgstr ""
+
+msgid ""
+"Note that requesting a coroutine's return value without ``await`` will "
+"trigger an error::"
+msgstr ""
+
+msgid ""
+"However, if you don't depend on the result, you can just call it "
+"asynchronously, which won't stop execution and won't make the current "
+"function a coroutine::"
+msgstr ""
+
+msgid ""
+"If you use await with an expression that isn't a signal nor a coroutine, the "
+"value will be returned immediately and the function won't give the control "
+"back to the caller::"
+msgstr ""
+
+msgid ""
+"This also means that returning a signal from a function that isn't a "
+"coroutine will make the caller await on that signal::"
+msgstr ""
+
+msgid ""
+"Unlike ``yield`` in previous Godot versions, you cannot obtain the function "
+"state object. This is done to ensure type safety. With this type safety in "
+"place, a function cannot say that it returns an ``int`` while it actually "
+"returns a function state object during runtime."
+msgstr ""
+
+msgid "Assert keyword"
+msgstr "Assert 키워드"
+
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"``assert`` 키워드는 디버그 빌드에서 조건을 확인하는 데 사용할 수 있습니다. "
+"assert는 디버그 빌드가 아니면 무시됩니다. 즉, 인수로 전달된 표현식은 릴리스 "
+"모드로 내보낸 프로젝트에서 평가되지 않습니다. 이 때문에 assert에는 부작용이 "
+"있는 표현식이 포함되어서는 **안 됩니다**. 그렇지 않으면 스크립트는 프로젝트"
+"가 디버그 빌드인지 여부에 따라 매우 다르게 동작할 것입니다."
+
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr ""
+"에디터에서 프로젝트를 실행할 때 assert 오류가 발생하면 프로젝트가 일시 정지됩"
+"니다."
+
+msgid ""
+"You can optionally pass a custom error message to be shown if the assertion "
+"fails::"
+msgstr ""
+
+msgid "Translation status"
+msgstr "번역 상태"

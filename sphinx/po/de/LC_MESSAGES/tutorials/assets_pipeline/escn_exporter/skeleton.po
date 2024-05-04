@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Skeleton"
+msgstr "Skelett"
+
+msgid "Rest Bone"
+msgstr "Knochen-Ruhepose"
+
+msgid ""
+"Armature object in Blender is exported as a Skeleton node along with rest "
+"position (transform in Godot) of bones."
+msgstr ""
+"Das Armature-Objekt in Blender wird zusammen mit der Standard-Position "
+"(Transformation in Godot) der Knochen als Skelett-Node exportiert."
+
+msgid ""
+"The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
+"`Local Location` (colored in red) must be ticked when building armature in "
+"Blender, so that the exported bone transform be consistent between Blender "
+"and Godot"
+msgstr ""
+"Die drei Checkboxes :code:`Rotation erben`, :code:`Skalierung erben`, :code:"
+"`Lokaler Ort` (rot gefärbt) müssen beim Aufbau einer Armature in Blender "
+"aktiviert sein, damit die exportierte Knochentransformation zwischen Blender "
+"und Godot konsistent ist"
+
+msgid ""
+"It is important that the mesh is not deformed by bones when exporting in "
+"Blender. Make sure that the skeleton is reset to its T-pose or default rest "
+"pose."
+msgstr ""
+"Es ist wichtig, dass das Mesh beim Exportieren in Blender nicht durch "
+"Knochen verformt wird. Stellen Sie sicher, dass das Skelett auf seine T-Pose "
+"oder Default-Standard-Pose zurückgesetzt ist."
+
+msgid "Bone Weights"
+msgstr "Knochengewichte"
+
+msgid ""
+"Blender put rigged mesh vertices which has no bone weights at its original "
+"position, but these vertices would be placed at (0, 0, 0) in Godot, making "
+"the mesh deformed. Therefore, the exporter would raise an error for any "
+"vertex with no bone weights detected in a rigged mesh."
+msgstr ""
+"Blender setzt geriggte Mesh-Vertices, die an ihrer ursprünglichen Position "
+"keine Knochengewichte aufweisen. Diese Vertices werden jedoch in Godot bei "
+"(0, 0, 0) platziert, wodurch das Mesh deformiert wird. Daher würde der "
+"Exporter einen Fehler für jeden Vertex auslösen, ohne dass in einem "
+"manipulierten Mesh Knochengewichte erkannt werden."
+
+msgid "Non-Deform Bone"
+msgstr "Nicht deformierte Knochen"
+
+msgid ""
+"Note that the non-deform bone can be configured as not exported by enabling "
+"the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
+"picture."
+msgstr ""
+"Beachten Sie, dass der nicht deformierte Knochen als nicht exportiert "
+"konfiguriert werden kann, indem :code:`Control-Knochen ausschließen` "
+"aktiviert wird; Die Checkbox \"Knochen deformieren\" ist im Bild dargestellt."
+
+msgid "Bone Attachment"
+msgstr "Bone-Attachment"
+
+msgid ""
+"A bone can be the parent of an object in Blender; this relation is exported "
+"as a BoneAttachment node in the Godot scene."
+msgstr ""
+"Ein Knochen kann das Parent-Element eines Objekts in Blender sein. Diese "
+"Beziehung wird als BoneAttachment-Node in der Godot-Szene exportiert."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

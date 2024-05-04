@@ -1,0 +1,336 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Creating script templates"
+msgstr "建立腳本樣板"
+
+msgid ""
+"Godot provides a way to use script templates as seen in the ``Script Create "
+"Dialog`` while creating a new script:"
+msgstr ""
+"Godot 中能使用腳本樣板，該功能可以在建立新腳本的 ``[腳本建立視窗]`` 中看到："
+
+msgid ""
+"A set of built-in script templates are provided with the editor, but it is "
+"also possible to create new ones and set them by default, both per project "
+"and at editor scope."
+msgstr ""
+"預設有提供一系列的預設腳本樣板，但也可以修改現有樣板或建立新的樣板。設定樣板"
+"時可以只為單一專案設定或為編輯器設定。"
+
+msgid ""
+"Templates are linked to a specific node type, so when you create a script "
+"you will only see the templates corresponding to that particular node, or "
+"one of its parent types. For example, if you are creating a script for a "
+"CharacterBody3D, you will only see templates defined for CharacterBody3Ds, "
+"Node3Ds or Nodes."
+msgstr ""
+"範本連結到特定的節點型別，因此當您建立腳本時，您只會看到與該特定節點或其父型"
+"別之一對應的範本。例如，如果您正在為CharacterBody3D 建立腳本，您將只能看到為"
+"CharacterBody3D、Node3D 或節點定義的範本。"
+
+msgid "Locating the templates"
+msgstr "放置樣板"
+
+msgid "There are two places where templates can be managed."
+msgstr "有兩個地方可以管理樣板。"
+
+msgid "Editor-defined templates"
+msgstr "編輯器中定義的樣板"
+
+msgid ""
+"These are available globally throughout any project. The location of these "
+"templates are determined per each OS:"
+msgstr "這些樣板可以在所有專案中使用。樣板的位置根據各個作業系統而不同："
+
+msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows：``%APPDATA%\\Godot\\script_templates\\``"
+
+msgid "Linux: ``$HOME/.config/godot/script_templates/``"
+msgstr "Linux：``$HOME/.local/share/godot/script_templates/``"
+
+msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
+
+msgid ""
+"If no ``script_templates`` is detected, Godot will create a default set of "
+"built-in templates automatically, so this logic can be used to reset the "
+"default templates in case you've accidentally overwritten them."
+msgstr ""
+"若未偵測到 ``script_templates``，則 Godot 會自動建立一系列預設的內建樣板。所"
+"以可以藉此方法來在不小心覆蓋掉預設樣板時重設。"
+
+msgid "Project-defined templates"
+msgstr "各專案定義的樣板"
+
+msgid ""
+"The default path to search for templates is the ``res://script_templates/`` "
+"directory. The path can be changed by configuring the ``editor/"
+"script_templates_search_path`` setting in the :ref:`ProjectSettings "
+"<class_ProjectSettings>`, both via code and the editor."
+msgstr ""
+"搜尋樣板的預設路徑是 ``res://script_templates/`` 目錄。該路徑可以通過程式碼或"
+"編輯器在 :ref:`專案設定 <class_ProjectSettings>` 中的 ``editor/"
+"script_templates_search_path`` 設定更改。"
+
+msgid ""
+"If no ``script_templates`` directory is found within a project, it is simply "
+"ignored."
+msgstr "若在專案中未找到 ``script_templates`` 資料夾，則會直接忽略。"
+
+msgid "Template organization and naming"
+msgstr "型別轉換"
+
+msgid ""
+"Both editor and project defined templates are organized in the following way:"
+msgstr "編輯器和專案定義的範本都以以下方式組織："
+
+msgid "where:"
+msgstr "位置:"
+
+msgid ""
+"``template_path`` is one of the 2 locations discussed in the previous two "
+"sections"
+msgstr "「template_path」 是前兩節討論的 2 個位置之一"
+
+msgid ""
+"``node_type`` is the node it will apply to (for example, :ref:`Node "
+"<class_Node>`, or :ref:`CharacterBody3D <class_CharacterBody3D>`)"
+msgstr ""
+"``node_type`` 是將其套用到的節點（例如，:ref:`Node <class_Node>` 或:ref:"
+"`CharacterBody3D <class_CharacterBody3D>`）"
+
+msgid ""
+"``file`` is the custom name you can chose for the template (for example: "
+"``platformer_movement`` or ``smooth_camera``)"
+msgstr ""
+"``file`` 是您可以為模板選擇的自訂名稱（例如：``platformer_movement`` 或"
+"``smooth_camera``）"
+
+msgid ""
+"``extension``: will indicate which language the template will apply to (it "
+"should be ``gd`` for GDScript or ``cs`` for C#)"
+msgstr ""
+"``extension``：將指示模板將應用於哪種語言（對於 GDScript 應該是 ``gd`` ，對"
+"於 C# 應該是 ``cs`` ）"
+
+msgid "For example:"
+msgstr "如："
+
+msgid "``template_scripts/Node/smooth_camera.gd``"
+msgstr "``template_scripts/Node/smooth_camera.gd``"
+
+msgid "``template_scripts/CharacterBody3D/platformer_movement.gd``"
+msgstr "``template_scripts/CharacterBody3D/platformer_movement.gd``"
+
+msgid "Default behaviour and overriding it"
+msgstr "預設行為與覆蓋"
+
+msgid "By default:"
+msgstr "預設"
+
+msgid ""
+"the template's name is the same as the file name (minus the extension, "
+"prettyfied)"
+msgstr "模板的名稱與檔案名稱相同（減去副檔名，prettyfied）"
+
+msgid "the description is empty"
+msgstr "下面是這些選項的說明"
+
+msgid "the space indent is set to 4"
+msgstr "空格縮排設定為 4"
+
+msgid "the template will not be set as the default for the given node"
+msgstr "在本示範專案中，可將所有選項保留為預設值。"
+
+msgid ""
+"It is possible to customize this behaviour by adding meta headers at the "
+"start of your file, like this:"
+msgstr "可以透過在檔案開頭新增元標頭來自訂此行為，如下所示："
+
+msgid ""
+"In this case, the name will be set to \"Platformer movement\", with the "
+"given custom description, and it will be set as the default template for the "
+"node in which directory it has been saved."
+msgstr ""
+"在這種情況下，名稱將設定為“平台移動”，並帶有給定的自訂描述，並且它將設定為保"
+"存該節點的目錄的預設範本。"
+
+msgid ""
+"This is an example of utilizing custom templates at editor and project level:"
+msgstr "這是在編輯器和專案層級使用自訂範本的範例："
+
+msgid ""
+"The script templates have the same extension as the regular script files. "
+"This may lead to an issue of a script parser treating those templates as "
+"actual scripts within a project. To avoid this, make sure to ignore the "
+"directory containing them by creating an empty ``.gdignore`` file. The "
+"directory won't be visible throughout the project's filesystem anymore, yet "
+"the templates can be modified by an external text editor anytime."
+msgstr ""
+"腳本樣板與一般腳本檔的副檔名相同。這可能會讓腳本解析器把專案中的腳本當成是實"
+"際腳本。為了避免這種情況，請確保在包含樣板腳本的資料夾內建立一個 ``."
+"gdignore`` 檔案。該資料夾將不再顯示於專案的檔案系統中，但樣板依然可以使用外部"
+"文字編輯器來開啟。"
+
+msgid ""
+"By default, every C# file inside the project directory is included in the "
+"compilation. Script templates must be manually excluded from the C# project "
+"to avoid build errors. See `Exclude files from the build <https://learn."
+"microsoft.com/en-us/visualstudio/msbuild/how-to-exclude-files-from-the-"
+"build>`_ in the Microsoft documentation."
+msgstr ""
+"預設情況下，專案目錄中的每個 C# 檔案都會包含在編譯中。必須從 C# 專案中手動排"
+"除腳本範本以避免產生錯誤。請參閱 Microsoft 檔案中的「從建置中排除檔案 "
+"<https://learn.microsoft.com/en-us/visualstudio/msbuild/how-to-exclude-files-"
+"from-the-build>」。"
+
+msgid ""
+"It is possible to create editor-level templates that have the same level as "
+"a project-specific templates, and also that have the same name as a built-in "
+"one, all will be shown on the new script dialog."
+msgstr ""
+"可以建立與專案特定模板具有相同等級的編輯器級模板，並且也可以與內建模板具有相"
+"同的名稱，所有這些都會顯示在新腳本對話方塊中。"
+
+msgid "Default template"
+msgstr "預設樣板"
+
+msgid ""
+"To override the default template, create a custom template at editor or "
+"project level inside a ``Node`` directory (or a more specific type, if only "
+"a subtype wants to be overridden) and start the file with the ``meta-"
+"default: true`` header."
+msgstr ""
+"若要覆寫預設模板，請在「Node」目錄（或更具體的型別，如果只想覆寫子型別）內的"
+"編輯器或專案層級建立自訂模板，並使用「meta-default」啟動檔案: true``標題。"
+
+msgid ""
+"Only one template can be set as default at the same time for the same node "
+"type."
+msgstr "同一節點型別只能同時設定一個預設模板。"
+
+msgid ""
+"The ``Default`` templates for basic Nodes, for both GDScript and C#, are "
+"shown here so you can use these as the base for creating other templates:"
+msgstr ""
+"``Default`` 預設樣板會依各語言自動產生，且無法設定或覆寫。但這些樣板可以用來"
+"當作建立其他樣板的基底。"
+
+msgid ""
+"The Godot editor provides a set of useful built-in node-specific templates, "
+"such as ``basic_movement`` for both :ref:`CharacterBody2D "
+"<class_CharacterBody2D>` and :ref:`CharacterBody3D <class_CharacterBody3D>` "
+"and ``plugin`` for :ref:`EditorPlugin <class_EditorPlugin>`."
+msgstr ""
+"Godot 編輯器提供了一組有用的內建節點特定模板，例如用於 CharacterBody2D "
+"<class_CharacterBody2D> 和 CharacterBody3D <class_CharacterBody3D> 的 "
+"``basic_movement`` 和 ``plugin``對於:ref:`itorPlugin <class_itor。"
+
+msgid "List of template placeholders"
+msgstr "樣板預留位置列表"
+
+msgid ""
+"The following describes the complete list of built-in template placeholders "
+"which are currently implemented."
+msgstr "下表列出了所有目前有實作的內建樣板預留位置。"
+
+msgid "Base placeholders"
+msgstr "基礎預留位置"
+
+msgid "Placeholder"
+msgstr "預留位置"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "``_BINDINGS_NAMESPACE_``"
+msgstr "``_BINDINGS_NAMESPACE_``"
+
+msgid "The name of the Godot namespace (used in C# only)."
+msgstr "新類別的名稱 (僅於 C# 中使用)。"
+
+msgid "``_CLASS_``"
+msgstr "``%CLASS%``"
+
+msgid "The name of the new class (used in C# only)."
+msgstr "新類別的名稱 (僅於 C# 中使用)。"
+
+msgid "``_BASE_``"
+msgstr "``%BASE%``"
+
+msgid "The base type a new script inherits from."
+msgstr "新腳本所繼承的基礎型別。"
+
+msgid "``_TS_``"
+msgstr "``_TS_``"
+
+msgid ""
+"Indentation placeholder. The exact type and number of whitespace characters "
+"used for indentation is determined by the ``text_editor/indent/type`` and "
+"``text_editor/indent/size`` settings in the :ref:`EditorSettings "
+"<class_EditorSettings>` respectively. Can be overridden by the ``meta-space-"
+"indent`` header on the template."
+msgstr ""
+"縮排預留位置。依據 :ref:`編輯器設定 <class_EditorSettings>` 中 ``text_editor/"
+"indent/type`` 與 ``text_editor/indent/size`` 判斷的正確縮排，會依據設定來使用"
+"正確的形式以及正確數量的空白字元。"
+
+msgid "Type placeholders"
+msgstr "型別預留位置"
+
+msgid ""
+"There used to be, in Godot 3.x, placeholders for GDScript type hints that "
+"would get replaced whenever a template was used to create a new script, such "
+"as: ``%INT_TYPE%``, ``%STRING_TYPE%``, ``%FLOAT_TYPE%`` or ``%VOID_RETURN%``."
+msgstr ""
+"在Godot 3.x 中，曾經有GDScript 型別提示的佔位符，每當使用模板建立新腳本時，這"
+"些佔位符就會被替換，例如：``%INT_TYPE%``、``%STRING_TYPE% ``、 "
+"``%FLOAT_TYPE%`` 或 ``%VOID_RETURN%``。"
+
+msgid ""
+"The placeholders no longer work for Godot 4.x, but if the setting "
+"``text_editor/completion/add_type_hints`` from :ref:`EditorSettings "
+"<class_EditorSettings>` is disabled, type hints for parameters and return "
+"types will be automatically removed for a few base types:"
+msgstr ""
+"佔位符不再適用於 Godot 4.x，但如果停用 EditorSettings <class_EditorSettings> "
+"中的設定 ``text_editor/completion/add_type_hints`` ，參數和傳回型別的型別提示"
+"將自動刪除幾種基本型別："
+
+msgid "``int``"
+msgstr "``in``"
+
+msgid "``String``"
+msgstr "``String[]``"
+
+msgid "``Array[String]``"
+msgstr "``String[]``"
+
+msgid "``float``"
+msgstr "``float[]``"
+
+msgid "``void``"
+msgstr "``-> void``"
+
+msgid "``:=`` will be transformed into ``=``"
+msgstr "``:=`` 將被轉換為 ``=``"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

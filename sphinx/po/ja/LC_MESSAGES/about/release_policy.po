@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Godot release policy"
+msgstr "Godotリリースポリシー"
+
+#, fuzzy
+msgid ""
+"Godot's release policy is in constant evolution. The description below "
+"provides a general idea of what to expect, but what will actually happen "
+"depends on the choices of core contributors and the needs of the community "
+"at a given time."
+msgstr ""
+"Godotのリリースポリシーは常に進化しています。以下の説明は、期待される基本的な"
+"考えを示すためにありますが、実際にどうなるかは、コア貢献者たちによる選択と、"
+"その時点でのコミュニティのニーズに依存します。"
+
+msgid "Godot versioning"
+msgstr "Godotのバージョン管理"
+
+msgid ""
+"Godot loosely follows `Semantic Versioning <https://semver.org/>`__ with a "
+"``major.minor.patch`` versioning system, albeit with an interpretation of "
+"each term adapted to the complexity of a game engine:"
+msgstr ""
+"Godotは、\\ `セマンティック・バージョニング方式 <https://semver.org/>`__ をゆ"
+"るやかに踏襲した、 ``major.minor.patch`` バージョニング方式を採用しています。"
+"ただし、各項目はゲームエンジンの複雑さに合わせて解釈しています:"
+
+msgid ""
+"The ``major`` version is incremented when major compatibility breakages "
+"happen which imply significant porting work to move projects from one major "
+"version to another."
+msgstr ""
+"``major`` バージョンは、大きな互換性の破壊が発生し、プロジェクトをあるメ"
+"ジャーバージョンから別のメジャーバージョンに移すために多くの移植作業が必要に"
+"なるときに増やされます。"
+
+#, fuzzy
+msgid ""
+"For example, porting Godot projects from Godot 3.x to Godot 4.x requires "
+"running the project through a conversion tool, and then performing a number "
+"of further adjustments manually for what the tool could not do automatically."
+msgstr ""
+"例えば、GodotプロジェクトをGodot 2.1からGodot 3.0に移植するには、変換ツールを"
+"使ってプロジェクトを実行した後、ツールが自動的にできない部分を手動で調整する"
+"必要がありました。"
+
+#, fuzzy
+msgid ""
+"The ``minor`` version is incremented for feature releases that do not break "
+"compatibility in a major way. Minor compatibility breakage in very specific "
+"areas *may* happen in minor versions, but the vast majority of projects "
+"should not be affected or require significant porting work."
+msgstr ""
+"``minor`` バージョンは、大きな互換性の破壊を伴わない機能のリリースに対して増"
+"加されます。マイナーバージョンでは、非常に限られた部分でマイナーな互換性の破"
+"壊が起こる *かも* しれませんが、大多数のプロジェクトでは影響を受けず、大幅な"
+"移植作業も必要ありません。"
+
+#, fuzzy
+msgid ""
+"This is because Godot, as a game engine, covers many areas like rendering, "
+"physics, and scripting. Fixing bugs or implementing new features in one area "
+"might sometimes require changing a feature's behavior or modifying a class's "
+"interface, even if the rest of the engine API remains backwards compatible."
+msgstr ""
+"その理由として、ゲームエンジンであるGodotは、レンダリング、物理、スクリプトな"
+"ど様々な分野をカバーしており、ある部分のバグ修正や新機能の実装には、他のエン"
+"ジンAPIが後方互換性を保っていても、ある機能の動作を変更したり、あるクラスのイ"
+"ンターフェースを変更したりする必要がある場合があるからです。"
+
+#, fuzzy
+msgid ""
+"Upgrading to a new minor version is recommended for all users, but some "
+"testing is necessary to ensure that your project still behaves as expected."
+msgstr ""
+"そのため、新しいマイナーバージョンへのアップグレードはすべてのユーザーに推奨"
+"されますが、プロジェクトが新しいマイナーバージョンでも期待通りに動作すること"
+"を確認するためには、いくつかのテストが必要です。"
+
+msgid ""
+"The ``patch`` version is incremented for maintenance releases which focus on "
+"fixing bugs and security issues, implementing new requirements for platform "
+"support, and backporting safe usability enhancements. Patch releases are "
+"backwards compatible."
+msgstr ""
+"``patch`` バージョンは、メンテナンスリリースにおいて増加します。バグやセキュ"
+"リティ問題の修正、プラットフォーム対応のための新しい要件の実装、安全な使い勝"
+"手向上のバックポートなどが中心になります。パッチリリースには後方互換性があり"
+"ます。"
+
+msgid ""
+"Patch versions may include minor new features which do not impact the "
+"existing API, and thus have no risk of impacting existing projects."
+msgstr ""
+"パッチ版にはマイナーな新機能が含まれている場合がありますが、既存のAPIに影響を"
+"与えないため、既存のプロジェクトに影響を与えるリスクはありません。"
+
+msgid ""
+"Updating to new patch versions is therefore considered safe and strongly "
+"recommended to all users of a given stable branch."
+msgstr ""
+"したがって、新しいパッチバージョンへのアップデートは安全であるとみなされ、い"
+"ずれの安定版ブランチにおける全ユーザーに強く推奨されます。"
+
+#, fuzzy
+msgid ""
+"We call ``major.minor`` combinations *stable branches*. Each stable branch "
+"starts with a ``major.minor`` release (without the ``0`` for ``patch``) and "
+"is further developed for maintenance releases in a Git branch of the same "
+"name (for example patch updates for the 4.0 stable branch are developed in "
+"the ``4.0`` Git branch)."
+msgstr ""
+"私たちは ``major.minor`` の組み合わせを *安定版(stable) ブランチ* と呼んでい"
+"ます。それぞれの安定版ブランチは、 ``major.minor`` のリリース ( ``patch`` の "
+"``0`` を除いたもの) から始まり、同じ名前の Git ブランチでメンテナンスリリース"
+"のための開発が進められます (例えば、3.3 stableブランチのパッチアップデートは "
+"``3.3`` の Git ブランチで開発されます)。"
+
+msgid "Release support timeline"
+msgstr "リリースサポートのタイムライン"
+
+#, fuzzy
+msgid ""
+"Stable branches are supported *at least* until the next stable branch is "
+"released and has received its first patch update. In practice, we support "
+"stable branches on a *best effort* basis for as long as they have active "
+"users who need maintenance updates."
+msgstr ""
+"安定版ブランチは、次の安定版ブランチがリリースされ、最初のパッチアップデート"
+"を受けるまで、 *最低限* サポートされます。実際には、メンテナンスアップデート"
+"を必要とするアクティブユーザーがいる限り、 *最善の努力* で安定版ブランチをサ"
+"ポートします。"
+
+#, fuzzy
+msgid ""
+"Whenever a new major version is released, we make the previous stable branch "
+"a long-term supported release, and do our best to provide fixes for issues "
+"encountered by users of that branch who cannot port complex projects to the "
+"new major version. This was the case for the 2.1 branch, and is the case for "
+"the 3.6 branch."
+msgstr ""
+"新しいメジャーバージョンがリリースされるたびに、私たちは以前の安定したブラン"
+"チを長期サポートするリリースとし、そのブランチのユーザーが複雑なプロジェクト"
+"を新しいメジャーバージョンに移植できない場合には、できる限り発生した問題の修"
+"正を提供しています。私たちは2.1ブランチにそういう対応していて、Godot 4.0がリ"
+"リースされる頃には最新の3.x安定ブランチも同様ことになります。"
+
+msgid ""
+"In a given minor release series, only the latest patch release receives "
+"support. If you experience an issue using an older patch release, please "
+"upgrade to the latest patch release of that series and test again before "
+"reporting an issue on GitHub."
+msgstr ""
+"提供されているマイナーリリースシリーズでは、最新のバージョンのみがサポートを"
+"受けています。以前のバージョンで問題が発生した場合、githubで問題を報告する前"
+"に、最新のバージョンにアップグレードしてもう一度テストしてください。"
+
+msgid "**Version**"
+msgstr "**Version**"
+
+msgid "**Release date**"
+msgstr "**リリース日**"
+
+msgid "**Support level**"
+msgstr "**サポートレベル**"
+
+msgid "Godot 4.3 (`master`)"
+msgstr ""
+
+#, fuzzy
+msgid "April 2024 (estimate)"
+msgstr "2023年 第1四半期 (予定)"
+
+#, fuzzy
+msgid ""
+"|unstable| *Development.* Receives new features, usability and performance "
+"improvements, as well as bug fixes, while under development."
+msgstr ""
+"|supported| *Beta.* 新機能の追加やバグフィックスを行いながら開発中です。4.0 *"
+"以降* にリリースされる予定です。"
+
+msgid "unstable"
+msgstr "不安定"
+
+#, fuzzy
+msgid "Godot 4.2"
+msgstr "Godot 4.0"
+
+#, fuzzy
+msgid "November 2023"
+msgstr "2021年11月"
+
+#, fuzzy
+msgid ""
+"|supported| Receives fixes for bugs and security issues, as well as patches "
+"that enable platform support."
+msgstr ""
+"|supported| バグ、セキュリティ、プラットフォームサポートの修正、および後方互"
+"換性のある使いやすさの向上が行われます。"
+
+msgid "supported"
+msgstr "サポート"
+
+#, fuzzy
+msgid "Godot 4.1"
+msgstr "Godot 4.0"
+
+#, fuzzy
+msgid "July 2023"
+msgstr "2016年7月"
+
+msgid "Godot 4.0"
+msgstr "Godot 4.0"
+
+#, fuzzy
+msgid "March 2023"
+msgstr "2019年3月"
+
+#, fuzzy
+msgid "|eol| No longer supported (last update: 4.0.4)."
+msgstr "|eol| サポート終了 (最後のアップデート: 2.0.4.1)。"
+
+msgid "eol"
+msgstr "サポート終了"
+
+#, fuzzy
+msgid "Godot 3.6 (`3.x`, LTS)"
+msgstr "Godot 3.6 （LTS）"
+
+#, fuzzy
+msgid "Q1 2024 (estimate)"
+msgstr "2023年 第1四半期 (予定)"
+
+#, fuzzy
+msgid ""
+"|supported| *Beta.* Receives new features, usability and performance "
+"improvements, as well as bug fixes, while under development."
+msgstr ""
+"|supported| *Beta.* 新機能の追加やバグフィックスを行いながら開発中です。4.0 *"
+"以降* にリリースされる予定です。"
+
+msgid "Godot 3.5"
+msgstr "Godot 3.5"
+
+msgid "August 2022"
+msgstr "2022年8月"
+
+msgid "Godot 3.4"
+msgstr "Godot 3.4"
+
+msgid "November 2021"
+msgstr "2021年11月"
+
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.4.5)."
+msgstr "|eol| サポート終了 (最後のアップデート: 3.2.3)。"
+
+msgid "Godot 3.3"
+msgstr "Godot 3.3"
+
+msgid "April 2021"
+msgstr "2021年 4月"
+
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.3.4)."
+msgstr "|eol| サポート終了 (最後のアップデート: 3.2.3)。"
+
+msgid "Godot 3.2"
+msgstr "Godot 3.2"
+
+msgid "January 2020"
+msgstr "2020年1月"
+
+msgid "|eol| No longer supported (last update: 3.2.3)."
+msgstr "|eol| サポート終了 (最後のアップデート: 3.2.3)。"
+
+msgid "Godot 3.1"
+msgstr "Godot 3.1"
+
+msgid "March 2019"
+msgstr "2019年3月"
+
+msgid "|eol| No longer supported (last update: 3.1.2)."
+msgstr "|eol| サポート終了 (最後のアップデート: 3.1.2)。"
+
+msgid "Godot 3.0"
+msgstr "Godot 3.0"
+
+msgid "January 2018"
+msgstr "2018年1月"
+
+msgid "|eol| No longer supported (last update: 3.0.6)."
+msgstr "|eol| サポート終了 (最後のアップデート: 3.0.6)。"
+
+msgid "Godot 2.1"
+msgstr "Godot 2.1"
+
+msgid "July 2016"
+msgstr "2016年7月"
+
+msgid "|eol| No longer supported (last update: 2.1.6)."
+msgstr "|eol| サポート終了 (最後のアップデート: 2.1.6)。"
+
+msgid "Godot 2.0"
+msgstr "Godot 2.0"
+
+msgid "February 2016"
+msgstr "2016年2月"
+
+msgid "|eol| No longer supported (last update: 2.0.4.1)."
+msgstr "|eol| サポート終了 (最後のアップデート: 2.0.4.1)。"
+
+msgid "Godot 1.1"
+msgstr "Godot 1.1"
+
+msgid "May 2015"
+msgstr "2015年5月"
+
+msgid "|eol| No longer supported."
+msgstr "|eol| サポート終了。"
+
+msgid "Godot 1.0"
+msgstr "Godot 1.0"
+
+msgid "December 2014"
+msgstr "2014年12月"
+
+msgid "partial"
+msgstr "一部サポート"
+
+msgid ""
+"**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
+"support (end of life) – |unstable| Development version"
+msgstr ""
+"**印:** |supported| 完全サポート - |partial| 一部サポート - |eol| サポートな"
+"し(終了) - |unstable| 開発版"
+
+msgid ""
+"Pre-release Godot versions aren't intended to be used in production and are "
+"provided for testing purposes only."
+msgstr ""
+"Godotのプレリリース版は、実務に使用されることを意図したものではなく、ベストエ"
+"フォートで提供されています。"
+
+msgid ""
+"See :ref:`doc_upgrading_to_godot_4` for instructions on migrating a project "
+"from Godot 3.x to 4.x."
+msgstr ""
+
+#, fuzzy
+msgid "Which version should I use for a new project?"
+msgstr "どちらを使うべきですか？"
+
+msgid ""
+"We recommend using Godot 4.x for new projects, as the Godot 4.x series will "
+"be supported long after 3.x stops receiving updates in the future. One "
+"caveat is that a lot of third-party documentation hasn't been updated for "
+"Godot 4.x yet. If you have to follow a tutorial designed for Godot 3.x, we "
+"recommend keeping :ref:`doc_upgrading_to_godot_4` open in a separate tab to "
+"check which methods have been renamed (if you get a script error while "
+"trying to use a specific node or method that was renamed in Godot 4.x)."
+msgstr ""
+
+msgid ""
+"If your project requires a feature that is missing in 4.x (such as GLES2/"
+"WebGL 1.0), you should use Godot 3.x for a new project instead."
+msgstr ""
+
+msgid "Should I upgrade my project to use new engine versions?"
+msgstr ""
+
+msgid ""
+"Upgrading software while working on a project is inherently risky, so "
+"consider whether it's a good idea for your project before attempting an "
+"upgrade. Also, make backups of your project or use version control to "
+"prevent losing data in case the upgrade goes wrong."
+msgstr ""
+
+msgid ""
+"That said, we do our best to keep minor and especially patch releases "
+"compatible with existing projects."
+msgstr ""
+
+msgid ""
+"The general recommendation is to upgrade your project to follow new *patch* "
+"releases, such as upgrading from 4.0.2 to 4.0.3. This ensures you get bug "
+"fixes, security updates and platform support updates (which is especially "
+"important for mobile platforms). You also get continued support, as only the "
+"last patch release receives support on official community platforms."
+msgstr ""
+
+msgid ""
+"For *minor* releases, you should determine whether it's a good idea to "
+"upgrade on a case-by-case basis. We've made a lot of effort in making the "
+"upgrade process as seamless as possible, but some breaking changes may be "
+"present in minor releases, along with a greater risk of regressions. Some "
+"fixes included in minor releases may also change a class' expected behavior "
+"as required to fix some bugs. This is especially the case in classes marked "
+"as *experimental* in the documentation."
+msgstr ""
+
+msgid ""
+"*Major* releases bring a lot of new functionality, but they also remove "
+"previously existing functionality and may raise hardware requirements. They "
+"also require much more work to upgrade to compared to minor releases. As a "
+"result, we recommend sticking with the major release you've started your "
+"project with if you are happy with how your project currently works. For "
+"example, if your project was started with 3.5, we recommend upgrading to "
+"3.5.2 and possibly 3.6 in the future, but not to 4.0+, unless your project "
+"really needs the new features that come with 4.0+."
+msgstr ""
+
+msgid "When is the next release out?"
+msgstr "次のリリースはいつ？"
+
+#, fuzzy
+msgid ""
+"While Godot contributors aren't working under any deadlines, we strive to "
+"publish minor releases relatively frequently."
+msgstr ""
+"Godotの貢献者は特に期限を設けずに仕事をしていますが、比較的頻繁にマイナーリ"
+"リースを行うように努めており、Godot 3.3 以降は年に平均2回の 3.x マイナーリ"
+"リースを行ってきました。"
+
+msgid ""
+"In particular, after the very length release cycle for 4.0, we are pivoting "
+"to a faster paced development workflow, with the 4.1 release expected within "
+"late Q2 / early Q3 2023."
+msgstr ""
+
+msgid ""
+"Frequent minor releases will enable us to ship new features faster (possibly "
+"as experimental), get user feedback quickly, and iterate to improve those "
+"features and their usability. Likewise, the general user experience will be "
+"improved more steadily with a faster path to the end users."
+msgstr ""
+
+msgid ""
+"Maintenance (patch) releases are released as needed with potentially very "
+"short development cycles, to provide users of the current stable branch with "
+"the latest bug fixes for their production needs."
+msgstr ""
+"メンテナンス (パッチ) リリースは、非常に短い開発サイクルで必要に応じてリリー"
+"スされ、現在の安定版ブランチのユーザーに、実際の現場で必要とされる最新のバグ"
+"フィックスを提供します。"
+
+msgid ""
+"The 3.6 release is still planned and should be the last stable branch of "
+"Godot 3.x. It will be a Long-Term Support (LTS) release, which we plan to "
+"support for as long as users still need it (due to missing features in Godot "
+"4.x, or having published games which they need to keep updating for platform "
+"requirements)."
+msgstr ""
+
+msgid "What are the criteria for compatibility across engine versions?"
+msgstr ""
+
+msgid ""
+"This section is intended to be used by contributors to determine which "
+"changes are safe for a given release. The list is not exhaustive; it only "
+"outlines the most common situations encountered during Godot's development."
+msgstr ""
+
+#, fuzzy
+msgid "The following changes are acceptable in patch releases:"
+msgstr "現在、Godotリポジトリでは以下のラベルが定義されています:"
+
+msgid ""
+"Fixing a bug in a way that has no major negative impact on most projects, "
+"such as a visual or physics bug. Godot's physics engine is not "
+"deterministic, so physics bug fixes are not considered to break "
+"compatibility. If fixing a bug has a negative impact that could impact a lot "
+"of projects, it should be made optional (e.g. using a project setting or "
+"separate method)."
+msgstr ""
+
+msgid "Adding a new optional parameter to a method."
+msgstr ""
+
+msgid "Small-scale editor usability tweaks."
+msgstr ""
+
+msgid ""
+"Note that we tend to be more conservative with the fixes we allow in each "
+"subsequent patch release. For instance, 4.0.1 may receive more impactful "
+"fixes than 4.0.4 would."
+msgstr ""
+
+msgid ""
+"The following changes are acceptable in minor releases, but not patch "
+"releases:"
+msgstr ""
+
+#, fuzzy
+msgid "Significant new features."
+msgstr "新しい機能を学ぶには"
+
+msgid ""
+"Renaming a method parameter. In C#, method parameters can be passed by name "
+"(but not in GDScript). As a result, this can break some projects that use C#."
+msgstr ""
+
+msgid ""
+"Deprecating a method, member variable, or class. This is done by adding a "
+"deprecated flag to its class reference, which will show up in the editor. "
+"When a method is marked as deprecated, it's slated to be removed in the next "
+"*major* release."
+msgstr ""
+
+msgid "Changes that affect the default project theme's visuals."
+msgstr ""
+
+msgid ""
+"Bug fixes which significantly change the behavior or the output, with the "
+"aim to meet user expectations better. In comparison, in patch releases, we "
+"may favor keeping a buggy behavior so we don't break existing projects which "
+"likely already rely on the bug or use a workaround."
+msgstr ""
+
+msgid "Performance optimizations that result in visual changes."
+msgstr ""
+
+msgid ""
+"The following changes are considered **compatibility-breaking** and can only "
+"be performed in a new major release:"
+msgstr ""
+
+msgid "Renaming or removing a method, member variable, or class."
+msgstr ""
+
+msgid ""
+"Modifying a node's inheritance tree by making it inherit from a different "
+"class."
+msgstr ""
+
+msgid ""
+"Changing the default value of a project setting value in a way that affects "
+"existing projects. To only affect new projects, the project manager should "
+"write a modified ``project.godot`` instead."
+msgstr ""
+
+msgid ""
+"Since Godot 5.0 hasn't been branched off yet, we currently discourage making "
+"compatibility-breaking changes of this kind."
+msgstr ""
+
+msgid ""
+"When modifying a method's signature in any fashion (including adding an "
+"optional parameter), a GDExtension compatibility method must be created. "
+"This ensures that existing GDExtensions continue to work across patch and "
+"minor releases, so that users don't have to recompile them. See `pull "
+"request #76446 <https://github.com/godotengine/godot/pull/76446>`_ for more "
+"information."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

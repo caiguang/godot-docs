@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Making trees"
+msgstr "Creando árboles"
+
+msgid ""
+"This is a short tutorial on how to make trees and other types of vegetation "
+"from scratch."
+msgstr ""
+"Este es un breve tutorial sobre cómo crear árboles y otros tipos de "
+"vegetación desde cero."
+
+#, fuzzy
+msgid ""
+"The aim is to not focus on the modeling techniques (there are plenty of "
+"tutorials about that), but how to make them look good in Godot."
+msgstr ""
+"El objetivo es no centrarse en las técnicas de modelado (hay muchos "
+"tutoriales sobre eso), sino en cómo hacer que se vean bien en Godot."
+
+msgid "Start with a tree"
+msgstr "Empieza con un árbol"
+
+msgid "I took this tree from SketchFab:"
+msgstr "Tomé este árbol de SketchFab:"
+
+msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
+
+msgid "and opened it in Blender."
+msgstr "y lo abrí en Blender."
+
+msgid "Paint with vertex colors"
+msgstr "Pintar con Vertex Colors"
+
+#, fuzzy
+msgid ""
+"The first thing you may want to do is to use the vertex colors to paint how "
+"much the tree will sway when there is wind. Just use the vertex color "
+"painting tool of your favorite 3D modeling program and paint something like "
+"this:"
+msgstr ""
+"Lo primero que puedes hacer es usar los colores de vértice para pintar "
+"cuánto se moverá el árbol cuando haya viento. Simplemente utiliza la "
+"herramienta de pintura de colores de vértice de tu programa de modelado 3D "
+"favorito y pinta algo como esto:"
+
+msgid ""
+"This is a bit exaggerated, but the idea is that color indicates how much "
+"sway affects every part of the tree. This scale here represents it better:"
+msgstr ""
+"Está un poco exagerado, pero la idea es que el color indica cuánto afecta el "
+"movimiento al viento a cada parte del árbol. Esta escala representa mejor "
+"esa relación:"
+
+msgid "Write a custom shader for the leaves"
+msgstr "Escribe un shader personalizado para las hojas"
+
+#, fuzzy
+msgid "This is an example of a shader for leaves:"
+msgstr "Este es un ejemplo simple de un shader para follajes:"
+
+msgid ""
+"This is a spatial shader. There is no front/back culling (so leaves can be "
+"seen from both sides), and alpha prepass is used, so there are less depth "
+"artifacts that result from using transparency (and leaves cast shadow). "
+"Finally, for the sway effect, world coordinates are recommended, so the tree "
+"can be duplicated, moved, etc. and it will still work together with other "
+"trees."
+msgstr ""
+"Este es un shader espacial. No hay eliminación de caras delanteras o "
+"traseras (por lo que las hojas se pueden ver desde ambos lados), y se "
+"utiliza un pase de alfa previo para reducir los artefactos de profundidad "
+"que resultan del uso de transparencia (y las hojas proyectan sombras). Por "
+"último, para el efecto de balanceo, se recomienda utilizar coordenadas "
+"mundiales, de modo que el árbol se pueda duplicar, mover, etc. y seguirá "
+"funcionando junto con otros árboles."
+
+msgid ""
+"Here, the texture is read, as well as a transmission color, which is used to "
+"add some back-lighting to the leaves, simulating subsurface scattering."
+msgstr ""
+"Aquí, se lee la textura, así como un color de transmisión que se utiliza "
+"para agregar un poco de retroiluminación a las hojas, simulando el efecto de "
+"dispersión subsuperficial."
+
+msgid ""
+"This is the code to create the sway of the leaves. It's basic (just uses a "
+"sinewave multiplying by the time and axis position, but works well). Notice "
+"that the strength is multiplied by the color. Every axis uses a different "
+"small near 1.0 multiplication factor so axes don't appear in sync."
+msgstr ""
+"Este es el código para crear el movimiento de las hojas. Es básico "
+"(simplemente usa una onda sinusoidal multiplicada por el tiempo y la "
+"posición del eje, pero funciona bien). Observa que la intensidad se "
+"multiplica por el color. Cada eje utiliza un pequeño factor de "
+"multiplicación cercano a 1.0 diferente para que los ejes no aparezcan "
+"sincronizados."
+
+msgid "Finally, all that's left is the fragment shader:"
+msgstr "Finalmente todo lo que queda es el fragment shader:"
+
+msgid "And this is pretty much it."
+msgstr "Y eso es prácticamente todo."
+
+msgid ""
+"The trunk shader is similar, except it does not write to the alpha channel "
+"(thus no alpha prepass is needed) and does not require transmission to work. "
+"Both shaders can be improved by adding normal mapping, AO and other maps."
+msgstr ""
+"El shader del tronco es similar, excepto que no escribe en el canal alfa "
+"(por lo tanto, no se necesita un preprocesamiento alfa) y no requiere la "
+"transmisión para funcionar. Ambos shaders pueden mejorarse agregando mapeo "
+"de normales, AO y otros mapas."
+
+msgid "Improving the shader"
+msgstr "Mejorando el shader"
+
+msgid ""
+"There are many more resources on how to do this that you can read. Now that "
+"you know the basics, a recommended read is the chapter from GPU Gems3 about "
+"how Crysis does this (focus mostly on the sway code, as many other "
+"techniques shown there are obsolete):"
+msgstr ""
+"Hay muchos más recursos que puedes leer sobre cómo hacer esto. Ahora que "
+"conoces los conceptos básicos, te recomiendo leer el capítulo de GPU Gems3 "
+"sobre cómo Crysis hace esto (concéntrate principalmente en el código de "
+"movimiento, ya que muchas otras técnicas mostradas allí están obsoletas):"
+
+msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
+
+msgid "Translation status"
+msgstr "Estado de traducción"

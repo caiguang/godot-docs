@@ -1,0 +1,982 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Command line tutorial"
+msgstr "Kurz příkazového řádku"
+
+msgid ""
+"Some developers like using the command line extensively. Godot is designed "
+"to be friendly to them, so here are the steps for working entirely from the "
+"command line. Given the engine relies on almost no external libraries, "
+"initialization times are pretty fast, making it suitable for this workflow."
+msgstr ""
+"Někteří vývojáři rádi často používají příkazový řádek . Godot je navržen "
+"tak, aby jim vyhovoval, a proto zde uvádíme postup pro práci výhradně z "
+"příkazového řádku. Vzhledem k tomu, že engine nespoléhá téměř na žádné "
+"externí knihovny, jsou inicializační časy poměrně rychlé, takže je pro tento "
+"pracovní postup vhodný."
+
+msgid ""
+"On Windows and Linux, you can run a Godot binary in a terminal by specifying "
+"its relative or absolute path."
+msgstr ""
+
+msgid ""
+"On macOS, the process is different due to Godot being contained within an ``."
+"app`` bundle (which is a *folder*, not a file). To run a Godot binary from a "
+"terminal on macOS, you have to ``cd`` to the folder where the Godot "
+"application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` "
+"followed by any command line arguments. If you've renamed the application "
+"bundle from ``Godot`` to another name, make sure to edit this command line "
+"accordingly."
+msgstr ""
+
+msgid "Command line reference"
+msgstr "Reference pro příkazový řádek"
+
+#, fuzzy
+msgid "release"
+msgstr "**uvolnění**"
+
+#, fuzzy
+msgid "debug"
+msgstr "Debug"
+
+#, fuzzy
+msgid "editor"
+msgstr "Editor"
+
+msgid "**Legend**"
+msgstr ""
+
+msgid ""
+"|release| Available in editor builds, debug export templates and release "
+"export templates."
+msgstr ""
+
+msgid "|debug| Available in editor builds and debug export templates only."
+msgstr ""
+
+msgid "|editor| Only available in editor builds."
+msgstr ""
+
+msgid ""
+"Note that unknown command line arguments have no effect whatsoever. The "
+"engine will **not** warn you when using a command line argument that doesn't "
+"exist with a given build type."
+msgstr ""
+
+msgid "**General options**"
+msgstr "**Obecné možnosti**"
+
+#, fuzzy
+msgid "Command"
+msgstr "Příkaz"
+
+msgid "Description"
+msgstr "Popis"
+
+#, fuzzy
+msgid "``-h``, ``--help``"
+msgstr "``-h``, ``--help``, ``/?``"
+
+#, fuzzy
+msgid "|release| Display the list of command line options."
+msgstr "Zobrazí seznam možností příkazového řádku."
+
+msgid "``--version``"
+msgstr "``--version``"
+
+#, fuzzy
+msgid "|release| Display the version string."
+msgstr "Zobrazí řetězec verze."
+
+msgid "``-v``, ``--verbose``"
+msgstr "``-v``, ``--verbose``"
+
+#, fuzzy
+msgid "|release| Use verbose stdout mode."
+msgstr "Použijte podrobný režim stdout."
+
+#, fuzzy
+msgid "``-q``, ``--quiet``"
+msgstr "``-q``, ``--quit``"
+
+#, fuzzy
+msgid ""
+"|release| Quiet mode, silences stdout messages. Errors are still displayed."
+msgstr "Tichý režim, umlčí zprávy stdout. Chyby se stále zobrazují."
+
+msgid "**Run options**"
+msgstr "**Možnosti spuštění**"
+
+#, fuzzy
+msgid "``--``, ``++``"
+msgstr "``-q``, ``--quit``"
+
+msgid ""
+"|release| Separator for user-provided arguments. Following arguments are not "
+"used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
+msgstr ""
+
+msgid "``-e``, ``--editor``"
+msgstr "``-e``, ``--editor``"
+
+msgid "|editor| Start the editor instead of running the scene."
+msgstr ""
+
+msgid "``-p``, ``--project-manager``"
+msgstr "``-p``, ``--project-manager``"
+
+msgid "|editor| Start the Project Manager, even if a project is auto-detected."
+msgstr ""
+
+#, fuzzy
+msgid "``--debug-server <uri>``"
+msgstr "``--video-driver <driver>``"
+
+msgid ""
+"|editor| Start the editor debug server (``<protocol>://<host/IP>[:<port>]``, "
+"e.g. ``tcp://127.0.0.1:6007``)"
+msgstr ""
+
+#, fuzzy
+msgid "``--quit``"
+msgstr "``--quiet``"
+
+#, fuzzy
+msgid "|release| Quit after the first iteration."
+msgstr "Konec po první iteraci."
+
+#, fuzzy
+msgid "``--quit-after``"
+msgstr "``--quiet``"
+
+msgid ""
+"|release| Quit after the given number of iterations. Set to 0 to disable."
+msgstr ""
+
+#, fuzzy
+msgid "``-l``, ``--language <locale>``"
+msgstr "``-l <locale>``, ``--language <locale>``"
+
+msgid ""
+"|release| Use a specific locale. ``<locale>`` follows the format "
+"``language_Script_COUNTRY_VARIANT`` where language is a 2 or 3-letter "
+"language code in lowercase and the rest is optional. See :ref:`doc_locales` "
+"for more details."
+msgstr ""
+
+msgid "``--path <directory>``"
+msgstr "``--path <directory>``"
+
+#, fuzzy
+msgid ""
+"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
+"file)."
+msgstr "Cesta k projektu (<adresář> musí obsahovat soubor 'project.godot')."
+
+msgid "``-u``, ``--upwards``"
+msgstr "``-u``, ``--upwards``"
+
+#, fuzzy
+msgid "|release| Scan folders upwards for 'project.godot' file."
+msgstr "Prohledat složky nahoru pro soubor project.godot."
+
+msgid "``--main-pack <file>``"
+msgstr "``--main-pack <file>``"
+
+#, fuzzy
+msgid "|release| Path to a pack (.pck) file to load."
+msgstr "Cesta k souboru balíčku (.pck), který se má načíst."
+
+msgid "``--render-thread <mode>``"
+msgstr "``--render-thread <mode>``"
+
+#, fuzzy
+msgid ""
+"|release| Render thread mode ('unsafe', 'safe', 'separate'). See :ref:"
+"`Thread Model <class_ProjectSettings_property_rendering/driver/threads/"
+"thread_model>` for more details."
+msgstr ""
+"Režim vykreslovacího vlákna (\"unsafe\", \"safe\", \"separate\"). Další "
+"podrobnosti viz :ref:`Thread Model <class_ProjectSettings_property_rendering/"
+"threads/thread_model>` ."
+
+msgid "``--remote-fs <address>``"
+msgstr "``--remote-fs <address>``"
+
+#, fuzzy
+msgid "|release| Remote filesystem (``<host/IP>[:<port>]`` address)."
+msgstr "Vzdálený souborový systém (adresa ``<host/IP>[:<port>]`` )."
+
+#, fuzzy
+msgid "``--remote-fs-password <password>``"
+msgstr "``--remote-fs <address>``"
+
+msgid "|release| Password for remote filesystem."
+msgstr ""
+
+msgid "``--audio-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+#, fuzzy
+msgid ""
+"|release| Audio driver. Use ``--help`` first to display the list of "
+"available drivers."
+msgstr ""
+"Ovladač zvuku. Pro zobrazení seznamu dostupných ovladačů použijte nejprve "
+"``--help`` ."
+
+#, fuzzy
+msgid "``--display-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+#, fuzzy
+msgid ""
+"|release| Display driver (and rendering driver). Use ``--help`` first to "
+"display the list of available drivers."
+msgstr ""
+"Ovladač videa. Pro zobrazení seznamu dostupných ovladačů použijte nejprve "
+"``--help``."
+
+#, fuzzy
+msgid "``--rendering-method <renderer>``"
+msgstr "``--render-thread <mode>``"
+
+msgid "|release| Renderer name. Requires driver support."
+msgstr ""
+
+#, fuzzy
+msgid "``--rendering-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+#, fuzzy
+msgid ""
+"|release| Rendering driver (depends on display driver). Use ``--help`` first "
+"to display the list of available drivers."
+msgstr ""
+"Ovladač videa. Pro zobrazení seznamu dostupných ovladačů použijte nejprve "
+"``--help``."
+
+msgid "``--gpu-index <device_index>``"
+msgstr ""
+
+msgid ""
+"|release| Use a specific GPU (run with ``--verbose`` to get available device "
+"list)."
+msgstr ""
+
+#, fuzzy
+msgid "``--text-driver <driver>``"
+msgstr "``--video-driver <driver>``"
+
+msgid "|release| Text driver (Fonts, BiDi, shaping)."
+msgstr ""
+
+#, fuzzy
+msgid "``--tablet-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+msgid "|release| Pen tablet input driver."
+msgstr ""
+
+#, fuzzy
+msgid "``--headless``"
+msgstr "``--remote-fs <address>``"
+
+msgid ""
+"|release| Enable headless mode (``--display-driver headless --audio-driver "
+"Dummy``). Useful for servers and with ``--script``."
+msgstr ""
+
+#, fuzzy
+msgid "``--write-movie <file>``"
+msgstr "``--main-pack <file>``"
+
+msgid ""
+"|release| Run the engine in a way that a movie is written (usually with .avi "
+"or .png extension). ``--fixed-fps`` is forced when enabled, but can be used "
+"to change movie FPS. ``--disable-vsync`` can speed up movie writing but "
+"makes interaction more difficult. ``--quit-after`` can be used to specify "
+"the number of frames to write."
+msgstr ""
+
+msgid "**Display options**"
+msgstr "**Volby zobrazení**"
+
+msgid "``-f``, ``--fullscreen``"
+msgstr "``-f``, ``--fullscreen``"
+
+#, fuzzy
+msgid "|release| Request fullscreen mode."
+msgstr "Vyžádá si celoobrazovkový režim."
+
+msgid "``-m``, ``--maximized``"
+msgstr "``-m``, ``--maximized``"
+
+#, fuzzy
+msgid "|release| Request a maximized window."
+msgstr "Požadavek na maximalizované okno."
+
+msgid "``-w``, ``--windowed``"
+msgstr "``-w``, ``--windowed``"
+
+#, fuzzy
+msgid "|release| Request windowed mode."
+msgstr "Požadavek na okenní režim."
+
+msgid "``-t``, ``--always-on-top``"
+msgstr "``-t``, ``--always-on-top``"
+
+#, fuzzy
+msgid "|release| Request an always-on-top window."
+msgstr "Vyžádá si okno vždy nahoře."
+
+msgid "``--resolution <W>x<H>``"
+msgstr "``--resolution <W>x<H>``"
+
+#, fuzzy
+msgid "|release| Request window resolution."
+msgstr "Vyžádá si rozlišení okna."
+
+msgid "``--position <X>,<Y>``"
+msgstr "``--position <X>,<Y>``"
+
+#, fuzzy
+msgid "|release| Request window position."
+msgstr "Požadavek na polohu okna."
+
+#, fuzzy
+msgid "``--screen <N>``"
+msgstr "``--frame-delay <ms>``"
+
+#, fuzzy
+msgid "|release| Request window screen."
+msgstr "Vyžádá si rozlišení okna."
+
+#, fuzzy
+msgid "``--single-window``"
+msgstr "``--no-window``"
+
+msgid "|release| Use a single window (no separate subwindows)."
+msgstr ""
+
+#, fuzzy
+msgid "``--xr-mode <mode>``"
+msgstr "``--render-thread <mode>``"
+
+msgid "|release| Select XR mode ('default', 'off', 'on')."
+msgstr ""
+
+msgid "**Debug options**"
+msgstr "**Možnosti ladění**"
+
+msgid "``-d``, ``--debug``"
+msgstr "``-d``, ``--debug``"
+
+#, fuzzy
+msgid "|release| Debug (local stdout debugger)."
+msgstr "Ladění (místní ladicí program stdout)."
+
+msgid "``-b``, ``--breakpoints``"
+msgstr "``-b``, ``--breakpoints``"
+
+#, fuzzy
+msgid ""
+"|release| Breakpoint list as source::line comma-separated pairs, no spaces "
+"(use ``%20`` instead)."
+msgstr ""
+"Seznam bodů přerušení jako dvojice source::line oddělené čárkami, bez mezer "
+"(místo toho použijte %%20)."
+
+msgid "``--profiling``"
+msgstr "``--profiling``"
+
+#, fuzzy
+msgid "|release| Enable profiling in the script debugger."
+msgstr "Povolení profilování v ladicím programu skriptu."
+
+#, fuzzy
+msgid "``--gpu-profile``"
+msgstr "``--profiling``"
+
+msgid ""
+"|release| Show a GPU profile of the tasks that took the most time during "
+"frame rendering."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-validation``"
+msgstr "``--debug-navigation``"
+
+msgid ""
+"|release| Enable graphics API :ref:`validation layers "
+"<doc_vulkan_validation_layers>` for debugging."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-abort``"
+msgstr "``--quiet``"
+
+msgid ""
+"|debug| Abort on GPU errors (usually validation layer errors), may help see "
+"the problem if your system freezes."
+msgstr ""
+
+#, fuzzy
+msgid "``--remote-debug <uri>``"
+msgstr "``--remote-debug <address>``"
+
+msgid ""
+"|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. "
+"``tcp://127.0.0.1:6007``)."
+msgstr ""
+
+#, fuzzy
+msgid "``--single-threaded-scene``"
+msgstr "``--render-thread <mode>``"
+
+msgid ""
+"|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
+"disabled and run on the main thread."
+msgstr ""
+
+msgid "``--debug-collisions``"
+msgstr "``--debug-collisions``"
+
+#, fuzzy
+msgid "|debug| Show collision shapes when running the scene."
+msgstr "Zobrazení kolizních tvarů při spuštění scény."
+
+#, fuzzy
+msgid "``--debug-paths``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show path lines when running the scene."
+msgstr "Zobrazení kolizních tvarů při spuštění scény."
+
+msgid "``--debug-navigation``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show navigation polygons when running the scene."
+msgstr "Zobrazení navigačních polygonů při spuštění scény."
+
+#, fuzzy
+msgid "``--debug-avoidance``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show navigation avoidance debug visuals when running the scene."
+msgstr "Zobrazení navigačních polygonů při spuštění scény."
+
+#, fuzzy
+msgid "``--debug-stringnames``"
+msgstr "``--debug-collisions``"
+
+msgid ""
+"|debug| Print all StringName allocations to stdout when the engine quits."
+msgstr ""
+
+msgid "``--frame-delay <ms>``"
+msgstr "``--frame-delay <ms>``"
+
+#, fuzzy
+msgid ""
+"|release| Simulate high CPU load (delay each frame by <ms> milliseconds)."
+msgstr ""
+"Simulujte vysoké zatížení procesoru (zpoždění každého snímku o <ms> "
+"milisekund)."
+
+msgid "``--time-scale <scale>``"
+msgstr "``--time-scale <scale>``"
+
+#, fuzzy
+msgid ""
+"|release| Force time scale (higher values are faster, 1.0 is normal speed)."
+msgstr ""
+"Změna rychlosti času (vyšší hodnoty jsou rychlejší, 1,0 je normální "
+"rychlost)."
+
+#, fuzzy
+msgid "``--disable-vsync``"
+msgstr "``--disable-crash-handler``"
+
+msgid ""
+"|release| Forces disabling of vertical synchronization, even if enabled in "
+"the project settings. Does not override driver-level V-Sync enforcement."
+msgstr ""
+
+msgid "``--disable-render-loop``"
+msgstr "``--disable-render-loop``"
+
+#, fuzzy
+msgid ""
+"|release| Disable render loop so rendering only occurs when called "
+"explicitly from script."
+msgstr ""
+"Zakažte smyčku vykreslení, takže k vykreslování dochází pouze při výslovném "
+"volání ze skriptu."
+
+msgid "``--disable-crash-handler``"
+msgstr "``--disable-crash-handler``"
+
+#, fuzzy
+msgid "|release| Disable crash handler when supported by the platform code."
+msgstr "Zakázat obslužnou rutinu selhání, pokud to podporuje kód platformy."
+
+msgid "``--fixed-fps <fps>``"
+msgstr "``--fixed-fps <fps>``"
+
+#, fuzzy
+msgid ""
+"|release| Force a fixed number of frames per second. This setting disables "
+"real-time synchronization."
+msgstr ""
+"Vynutit pevný počet snímků za sekundu. Toto nastavení zakáže synchronizaci v "
+"reálném čase."
+
+msgid "``--delta-smoothing <enable>``"
+msgstr ""
+
+msgid ""
+"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
+msgstr ""
+
+msgid "``--print-fps``"
+msgstr "``--print-fps``"
+
+#, fuzzy
+msgid "|release| Print the frames per second to the stdout."
+msgstr "Vypíše snímky za sekundu na výstup stdout."
+
+msgid "**Standalone tools**"
+msgstr "**Samostatné nástroje**"
+
+#, fuzzy
+msgid "``-s``, ``--script <script>``"
+msgstr "``-s <script>``, ``--script <script>``"
+
+#, fuzzy
+msgid "|release| Run a script."
+msgstr "Spustit skript."
+
+msgid "``--check-only``"
+msgstr "``--check-only``"
+
+#, fuzzy
+msgid "|release| Only parse for errors and quit (use with ``--script``)."
+msgstr "Pouze analyzuje chyby a ukončí práci (použijte s ``--script``)."
+
+#, fuzzy
+msgid "``--export-release <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+msgid ""
+"|editor| Export the project using the given preset and matching release "
+"template. The preset name should match one defined in export_presets.cfg. "
+"``<path>`` should be absolute or relative to the project directory, and "
+"include the filename for the binary (e.g. 'builds/game.exe'). The target "
+"directory should exist."
+msgstr ""
+
+#, fuzzy
+msgid "``--export-debug <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+msgid "|editor| Like ``--export-release``, but use debug template."
+msgstr ""
+
+msgid "``--export-pack <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+#, fuzzy
+msgid ""
+"|editor| Like ``--export-release``, but only export the game pack for the "
+"given preset. The ``<path>`` extension determines whether it will be in PCK "
+"or ZIP format."
+msgstr ""
+"Stejně jako ``--export``, ale exportuje pouze herní balíček pro danou "
+"předvolbu. Přípona <cesta> určuje, zda bude ve formátu PCK nebo ZIP. (:ref:"
+"`nástroje <doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
+
+msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
+
+msgid "|editor| Convert project from Godot 3.x to Godot 4.x."
+msgstr ""
+
+msgid "``--validate-conversion-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
+
+msgid ""
+"|editor| Show what elements will be renamed when converting project from "
+"Godot 3.x to Godot 4.x."
+msgstr ""
+
+#, fuzzy
+msgid "``--doctool [<path>]``"
+msgstr "``--doctool <path>``"
+
+#, fuzzy
+msgid ""
+"|editor| Dump the engine API reference to the given ``<path>`` in XML "
+"format, merging if existing files are found."
+msgstr ""
+"Vypíše odkaz na API enginu do zadané <cesty> ve formátu XML a sloučí, pokud "
+"jsou nalezeny existující soubory (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
+
+msgid "``--no-docbase``"
+msgstr "``--no-docbase``"
+
+msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
+msgstr ""
+
+#, fuzzy
+msgid "``--gdscript-docs <path>``"
+msgstr "``--doctool <path>``"
+
+msgid ""
+"|editor| Rather than dumping the engine API, generate API reference from the "
+"inline documentation in the GDScript files found in <path> (used with ``--"
+"doctool``)."
+msgstr ""
+
+msgid "``--build-solutions``"
+msgstr "``--build-solutions``"
+
+msgid ""
+"|editor| Build the scripting solutions (e.g. for C# projects). Implies ``--"
+"editor`` and requires a valid project to edit."
+msgstr ""
+
+msgid "``--dump-gdextension-interface``"
+msgstr ""
+
+msgid ""
+"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
+"current folder. This file is the base file required to implement a "
+"GDExtension."
+msgstr ""
+
+#, fuzzy
+msgid "``--dump-extension-api``"
+msgstr "``--gdnative-generate-json-api``"
+
+msgid ""
+"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
+"'extension_api.json' in the current folder."
+msgstr ""
+
+#, fuzzy
+msgid "``--validate-extension-api <path>``"
+msgstr "``--gdnative-generate-json-api``"
+
+msgid ""
+"|editor| Validate an extension API file dumped (with the option above) from "
+"a previous version of the engine to ensure API compatibility. If "
+"incompatibilities or errors are detected, the return code will be non-zero."
+msgstr ""
+
+msgid "``--benchmark``"
+msgstr ""
+
+msgid "|editor| Benchmark the run time and print it to console."
+msgstr ""
+
+#, fuzzy
+msgid "``--benchmark-file <path>``"
+msgstr "``--doctool <path>``"
+
+msgid ""
+"|editor| Benchmark the run time and save it to a given file in JSON format. "
+"The path should be absolute."
+msgstr ""
+
+msgid "Path"
+msgstr "Cesta"
+
+#, fuzzy
+msgid ""
+"It is recommended to place your Godot editor binary in your ``PATH`` "
+"environment variable, so it can be executed easily from any place by typing "
+"``godot``. You can do so on Linux by placing the Godot binary in ``/usr/"
+"local/bin`` and making sure it is called ``godot`` (case-sensitive)."
+msgstr ""
+"Doporučujeme, aby cesta ke spouštěcímu souboru Godota byla v proměnné "
+"prostředí PATH, tak jej bude možné snadno spustit z libovolného místa "
+"zadáním ``godot``. V Linuxu tak můžete učinit tak, že spuštěcí soubor Godot "
+"umístíte do adresáře ``/usr/local/bin`` a ujistíte se, že se jmenuje "
+"``godot``."
+
+msgid ""
+"To achieve this on Windows or macOS easily, you can install Godot using "
+"`Scoop <https://scoop.sh>`__ (on Windows) or `Homebrew <https://brew.sh>`__ "
+"(on macOS). This will automatically make the copy of Godot installed "
+"available in the ``PATH``:"
+msgstr ""
+
+msgid "Setting the project path"
+msgstr "Nastavení cesty k projektu"
+
+msgid ""
+"Depending on where your Godot binary is located and what your current "
+"working directory is, you may need to set the path to your project for any "
+"of the following commands to work correctly."
+msgstr ""
+"V závislosti na tom, kde se nachází spustitelný soubor Godot a jaký je váš "
+"aktuální pracovní adresář, může být pro správnou funkci následujících "
+"příkazu nezbytné nastavit cestu k vašemu projektu."
+
+#, fuzzy
+msgid ""
+"When running the editor, this can be done by giving the path to the "
+"``project.godot`` file of your project as either the first argument, like "
+"this:"
+msgstr ""
+"To lze provést buď zadáním cesty k souboru ``project.godot`` vašeho projektu "
+"jako prvního argumentu, například takto:"
+
+#, fuzzy
+msgid "For all commands, this can be done by using the ``--path`` argument:"
+msgstr "Nebo pomocí argumentu ``--path``:"
+
+msgid ""
+"For example, the full command for exporting your game (as explained below) "
+"might look like this:"
+msgstr ""
+"Úplný příkaz pro export hry (jak je vysvětleno níže) může vypadat například "
+"takto:"
+
+msgid ""
+"When starting from a subdirectory of your project, use the ``--upwards`` "
+"argument for Godot to automatically find the ``project.godot`` file by "
+"recursively searching the parent directories."
+msgstr ""
+
+msgid ""
+"For example, running a scene (as explained below) nested in a subdirectory "
+"might look like this when your working directory is in the same path:"
+msgstr ""
+
+msgid "Creating a project"
+msgstr "Vytvoření projektu"
+
+#, fuzzy
+msgid ""
+"Creating a project from the command line can be done by navigating the shell "
+"to the desired place and making a ``project.godot`` file."
+msgstr ""
+"Vytvoření projektu z příkazového řádku lze provést tak, že v shellu přejdete "
+"na požadované místo a vytvoříte soubor project.godot."
+
+msgid "The project can now be opened with Godot."
+msgstr "Projekt lze nyní otevřít pomocí programu Godot."
+
+msgid "Running the editor"
+msgstr "Spuštění editoru"
+
+#, fuzzy
+msgid ""
+"Running the editor is done by executing Godot with the ``-e`` flag. This "
+"must be done from within the project directory or by setting the project "
+"path as explained above, otherwise the command is ignored and the Project "
+"Manager appears."
+msgstr ""
+"Spouštění editoru se provádí spuštěním Godota s příznakem ``-e``. Toto musí "
+"být provedeno z adresáře nebo podadresáře projektu, jinak je příkaz "
+"ignorován a zobrazí se pouze správce projektu."
+
+msgid ""
+"When passing in the full path to the ``project.godot`` file, the ``-e`` flag "
+"may be omitted."
+msgstr ""
+
+msgid ""
+"If a scene has been created and saved, it can be edited later by running the "
+"same code with that scene as argument."
+msgstr ""
+"Pokud byla scéna vytvořena a uložena, lze ji později upravit spuštěním "
+"stejného příkazu s touto scénou jako dalším argumentem."
+
+msgid "Erasing a scene"
+msgstr "Vymazání scény"
+
+#, fuzzy
+msgid ""
+"Godot is friends with your filesystem and will not create extra metadata "
+"files. Use ``rm`` to erase a scene file. Make sure nothing references that "
+"scene. Otherwise, an error will be thrown upon opening the project."
+msgstr ""
+"Godot se přátelí s vaším souborovým systémem a nevytváří další soubory "
+"metadat. Pro vymazání souboru scény použijte ``rm``. Ujistěte se, že na tuto "
+"scénu nic neodkazuje, jinak bude při otevření následovat chyba."
+
+msgid "Running the game"
+msgstr "Spuštění hry"
+
+#, fuzzy
+msgid ""
+"To run the game, execute Godot within the project directory or with the "
+"project path as explained above."
+msgstr ""
+"Chcete-li hru spustit, jednoduše spusťte Godot v adresáři nebo podadresáři "
+"projektu."
+
+msgid ""
+"Note that passing in the ``project.godot`` file will always run the editor "
+"instead of running the game."
+msgstr ""
+
+msgid ""
+"When a specific scene needs to be tested, pass that scene to the command "
+"line."
+msgstr ""
+"Pokud je třeba otestovat konkrétní scénu, předejte ji do příkazového řádku."
+
+msgid "Debugging"
+msgstr "Ladění"
+
+#, fuzzy
+msgid ""
+"Catching errors in the command line can be a difficult task because they "
+"scroll quickly. For this, a command line debugger is provided by adding ``-"
+"d``. It works for running either the game or a single scene."
+msgstr ""
+"Zachycení chyb v příkazovém řádku může být obtížný úkol, protože prostě "
+"proletí kolem. K tomu slouží ladicí program příkazového řádku, který se "
+"iniciuje pomocí ``-d``. Funguje jak pro spouštění hry tak pro dílčí scény."
+
+msgid "Exporting"
+msgstr "Exportování"
+
+#, fuzzy
+msgid ""
+"Exporting the project from the command line is also supported. This is "
+"especially useful for continuous integration setups."
+msgstr ""
+"Podporován je také export projektu z příkazového řádku. To je užitečné "
+"zejména pro nastavení kontinuální integrace (CI). Verze Godotu, která je "
+"headless (sestavení na serveru, bez videa), je pro to ideální."
+
+msgid ""
+"Using the ``--headless`` command line argument is **required** on platforms "
+"that do not have GPU access (such as continuous integration). On platforms "
+"with GPU access, ``--headless`` prevents a window from spawning while the "
+"project is exporting."
+msgstr ""
+
+msgid ""
+"The preset name must match the name of an export preset defined in the "
+"project's ``export_presets.cfg`` file. If the preset name contains spaces or "
+"special characters (such as \"Windows Desktop\"), it must be surrounded with "
+"quotes."
+msgstr ""
+"Název předvolby musí odpovídat názvu předvolby exportu definované v souboru "
+"``export_presets.cfg`` projektu. Pokud název předvolby obsahuje mezery nebo "
+"speciální znaky (například \"Windows Desktop\"), musí být obklopen "
+"uvozovkami."
+
+#, fuzzy
+msgid ""
+"To export a debug version of the game, use the ``--export-debug`` switch "
+"instead of ``--export-release``. Their parameters and usage are the same."
+msgstr ""
+"Chcete-li exportovat odladěnou verzi hry, použijte místo přepínače ``--"
+"export-debug`` přepínač ``--export``. Parametry a použití jsou stejné v obou "
+"případech."
+
+#, fuzzy
+msgid ""
+"To export only a PCK file, use the ``--export-pack`` option followed by the "
+"preset name and output path, with the file extension, instead of ``--export-"
+"release`` or ``--export-debug``. The output path extension determines the "
+"package's format, either PCK or ZIP."
+msgstr ""
+"Chcete-li exportovat pouze soubor PCK, použijte místo příkazu ``--export-"
+"pack`` možnost ``--export-pack``, za kterou následuje název předvolby a "
+"výstupní cesta s příponou souboru. Přípona výstupní cesty určuje formát "
+"balíčku, buď PCK, nebo ZIP."
+
+#, fuzzy
+msgid ""
+"When specifying a relative path as the path for ``--export-release``, ``--"
+"export-debug`` or ``--export-pack``, the path will be relative to the "
+"directory containing the ``project.godot`` file, **not** relative to the "
+"current working directory."
+msgstr ""
+"Při zadání relativní cesty jako cesty pro `--export`, `--export-debug` nebo "
+"`--export-pack` bude cesta relativní k adresáři obsahujícímu soubor "
+"``project.godot``, **ne** relativní k aktuálnímu pracovnímu adresáři."
+
+msgid "Running a script"
+msgstr "Spuštění skriptu"
+
+#, fuzzy
+msgid ""
+"It is possible to run a ``.gd`` script from the command line. This feature "
+"is especially useful in large projects, e.g. for batch conversion of assets "
+"or custom import/export."
+msgstr ""
+"Z příkazového řádku je možné spustit jednoduchý skript ``.gd``. Tato "
+"vlastnost je užitečná zejména u velkých projektů, např. pro dávkový převod "
+"zdrojů nebo vlastní import/export."
+
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
+msgstr "Skript musí dědit od ``SceneTree`` nebo ``MainLoop``."
+
+#, fuzzy
+msgid "Here is an example ``sayhello.gd``, showing how it works:"
+msgstr "Zde je jednoduchý příklad ``sayhello.gd``, jak to funguje:"
+
+msgid "And how to run it:"
+msgstr "A jak jej spustit:"
+
+msgid ""
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
+msgstr ""
+"Pokud v cestě neexistuje žádný ``project.godot``, předpokládá se, že "
+"aktuální cesta je aktuální pracovní adresář (pokud není zadána ``--path``)."
+
+msgid ""
+"The first line of ``sayhello.gd`` above is commonly referred to as a "
+"*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
+"you to run the script as follows in modern Linux distributions, as well as "
+"macOS:"
+msgstr ""
+"První řádek souboru ``sayhello.gd`` se běžně označuje jako *shebang*. Pokud "
+"je spustitelný soubor Godot ve vaší ``PATH`` jako ``godot``, umožní vám to "
+"spustit skript následujícím způsobem v moderních distribucích Linuxu a také "
+"v systému MacOS:"
+
+msgid ""
+"If the above doesn't work in your current version of Linux or macOS, you can "
+"always have the shebang run Godot straight from where it is located as "
+"follows:"
+msgstr ""
+"Pokud výše uvedený postup nefunguje ve vaší aktuální verzi Linuxu nebo "
+"macOS, můžete vždy nechat spustit Godot přímo z místa, kde se nachází, "
+"následujícím způsobem:"
+
+msgid "Translation status"
+msgstr "Stav překladu"

@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Android in-app purchases"
+msgstr "Achats intégrés à l’application Android"
+
+#, fuzzy
+msgid ""
+"Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin "
+"compatible with Godot 4 which uses the `Google Play Billing library <https://"
+"developer.android.com/google/play/billing>`_."
+msgstr ""
+"Depuis la version 3.2.2, Godot propose un plugin Android "
+"``GodotGooglePlayBilling``. Le nouveau plugin utilise la bibliothèque "
+"`Google Play Billing library <https://developer.android.com/google/play/"
+"billing>`__ au lieu de l'implémentation AIDL IAP qui est maintenant obsolète."
+
+msgid "Usage"
+msgstr "Utilisation"
+
+msgid "Getting started"
+msgstr "Pour commencer"
+
+#, fuzzy
+msgid ""
+"Make sure you have enabled and successfully set up :ref:`Android Gradle "
+"Builds <doc_android_gradle_build>`. Follow the compiling instructions on the "
+"``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/"
+"godot-google-play-billing>`__."
+msgstr ""
+"Si ce n'est pas déjà fait, assurez-vous que vous avez activé et configuré "
+"avec succès :ref:`Android Custom Builds <doc_android_custom_build>`. Prenez "
+"le binaire et la configuration du plugin ``GodotGooglePlayBilling`` sur la "
+"`page des versions <https://github.com/godotengine/godot-google-play-billing/"
+"releases>`__ et mettez les deux dans `res://android/plugins`. Le plugin "
+"devrait maintenant apparaître dans les paramètres d'exportation d'Android, "
+"où vous pouvez l'activer."
+
+msgid ""
+"Then put the files `./godot-google-play-billing/build/outputs/aar/"
+"GodotGooglePlayBilling.***.release.aar` and `./GodotGooglePlayBilling.gdap` "
+"into your project in the `res://android/plugins` folder."
+msgstr ""
+
+msgid ""
+"The plugin should now show up in the Android export settings, where you can "
+"enable it."
+msgstr ""
+
+#, fuzzy
+msgid "Initialize the plugin"
+msgstr "Initialisation du plugin"
+
+msgid "To use the ``GodotGooglePlayBilling`` API:"
+msgstr ""
+
+msgid "Obtain a reference to the ``GodotGooglePlayBilling`` singleton"
+msgstr ""
+
+msgid "Connect handlers for the plugin signals"
+msgstr ""
+
+#, fuzzy
+msgid "Call ``startConnection``"
+msgstr "``connection``"
+
+msgid "Initialization example:"
+msgstr "Exemple d'initialisation :"
+
+msgid ""
+"The API must be in a connected state prior to use. The ``connected`` signal "
+"is sent when the connection process succeeds. You can also use ``isReady()`` "
+"to determine if the plugin is ready for use. The ``getConnectionState()`` "
+"function returns the current connection state of the plugin."
+msgstr ""
+
+msgid "Return values for ``getConnectionState()``:"
+msgstr ""
+
+#, fuzzy
+msgid "Query available items"
+msgstr "Recherche d'articles disponibles"
+
+msgid ""
+"Once the API has connected, query SKUs using ``querySkuDetails()``. You must "
+"successfully complete a SKU query before calling the ``purchase()`` or "
+"``queryPurchases()`` functions, or they will return an error. "
+"``querySkuDetails()`` takes two parameters: an array of SKU name strings, "
+"and a string specifying the type of SKU being queried. The SKU type string "
+"should be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for "
+"subscriptions. The name strings in the array should match the SKU product "
+"ids defined in the Google Play Console entry for your app."
+msgstr ""
+
+#, fuzzy
+msgid "Example use of ``querySkuDetails()``:"
+msgstr "Exemples d'utilisation de ``StaticBody2D`` :"
+
+msgid "Query user purchases"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To retrieve a user's purchases, call the ``queryPurchases()`` function "
+"passing a string with the type of SKU to query. The SKU type string should "
+"be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for "
+"subscriptions. The ``query_purchases_response`` signal is sent with the "
+"result. The signal has a single parameter: a :ref:`Dictionary "
+"<class_Dictionary>` with a status code and either an array of purchases or "
+"an error message. Only active subscriptions and non-consumed one-time "
+"purchases are included in the purchase array."
+msgstr ""
+"Pour obtenir tous les achats, appelez ``queryPurchases``. Contrairement à la "
+"plupart des autres fonctions, ``queryPurchases`` est une opération synchrone "
+"et retourne un :ref:`Dictionary <class_Dictionary>` avec un code de statut "
+"et soit un tableau d'achats soit un message d'erreur. Seuls les abonnements "
+"actifs et les achats uniques(one-time purchases) non consommés sont "
+"retournés."
+
+msgid "Example use of ``queryPurchases()``:"
+msgstr ""
+
+msgid ""
+"You should query purchases during startup after successfully retrieving SKU "
+"details. Since the user may make a purchase or resolve a pending transaction "
+"from outside your app, you should recheck for purchases when resuming from "
+"the background. To accomplish this, you can use the ``billing_resume`` "
+"signal."
+msgstr ""
+
+msgid "Example use of ``billing_resume``:"
+msgstr ""
+
+msgid ""
+"For more information on processing the purchase items returned by "
+"``queryPurchases()``, see `Processing a purchase item`_"
+msgstr ""
+
+msgid "Purchase an item"
+msgstr "Acheter un article"
+
+#, fuzzy
+msgid ""
+"To initiate the purchase flow for an item, call ``purchase()`` passing the "
+"product id string of the SKU you wish to purchase. Reminder: you **must** "
+"query the SKU details for an item before you can pass it to ``purchase()``."
+msgstr ""
+"Pour lancer le flux d'achat d'un article, appelez ``purchase``. Vous "
+"**devez** demander les détails du SKU d'un article avant de pouvoir lancer "
+"le processus d'achat."
+
+#, fuzzy
+msgid "Example use of ``purchase()``:"
+msgstr "Exemples d'utilisation de ``StaticBody2D`` :"
+
+msgid ""
+"The payment flow will send a ``purchases_updated`` signal on success or a "
+"``purchase_error`` signal on failure."
+msgstr ""
+
+#, fuzzy
+msgid "Processing a purchase item"
+msgstr "Ordre de traitement"
+
+msgid ""
+"The ``query_purchases_response`` and ``purchases_updated`` signals provide "
+"an array of purchases in :ref:`Dictionary <class_Dictionary>` format. The "
+"purchase Dictionary includes keys that map to values of the Google Play "
+"Billing `Purchase <https://developer.android.com/reference/com/android/"
+"billingclient/api/Purchase>`_ class."
+msgstr ""
+
+msgid "Purchase fields:"
+msgstr "Champs d'achat :"
+
+#, fuzzy
+msgid "Check purchase state"
+msgstr "Vérifier si l'utilisateur a acheté un article"
+
+msgid ""
+"Check the ``purchase_state`` value of a purchase to determine if a purchase "
+"was completed or is still pending."
+msgstr ""
+
+msgid "PurchaseState values:"
+msgstr ""
+
+msgid ""
+"If a purchase is in a ``PENDING`` state, you should not award the contents "
+"of the purchase or do any further processing of the purchase until it "
+"reaches the ``PURCHASED`` state. If you have a store interface, you may wish "
+"to display information about pending purchases needing to be completed in "
+"the Google Play Store. For more details on pending purchases, see `Handling "
+"pending transactions <https://developer.android.com/google/play/billing/"
+"integrate#pending>`_ in the Google Play Billing Library documentation."
+msgstr ""
+
+msgid "Consumables"
+msgstr "Consommables"
+
+#, fuzzy
+msgid ""
+"If your in-app item is not a one-time purchase but a consumable item (e.g. "
+"coins) which can be purchased multiple times, you can consume an item by "
+"calling ``consumePurchase()`` passing the ``purchase_token`` value from the "
+"purchase dictionary. Calling ``consumePurchase()`` automatically "
+"acknowledges a purchase. Consuming a product allows the user to purchase it "
+"again, it will no longer appear in subsequent ``queryPurchases()`` calls "
+"unless it is repurchased."
+msgstr ""
+"Si votre article intégré à l'application n'est pas un achat unique mais un "
+"article consommable (par exemple des pièces de monnaie) qui peut être acheté "
+"plusieurs fois, vous pouvez consommer un article en appelant "
+"``consumePurchase`` avec un jeton d'achat. Appelez ``queryPurchases`` pour "
+"obtenir le jeton d'achat. Le fait d'appeler ``consumePurchase`` confirme "
+"automatiquement l'achat."
+
+msgid "Example use of ``consumePurchase()``:"
+msgstr ""
+
+#, fuzzy
+msgid "Acknowledging purchases"
+msgstr "Achats intégrés à l’application Android"
+
+msgid ""
+"If your in-app item is a one-time purchase, you must acknowledge the "
+"purchase by calling the ``acknowledgePurchase()`` function, passing the "
+"``purchase_token`` value from the purchase dictionary. If you do not "
+"acknowledge a purchase within three days, the user automatically receives a "
+"refund, and Google Play revokes the purchase. If you are calling "
+"``comsumePurchase()`` it automatically acknowledges the purchase and you do "
+"not need to call ``acknowledgePurchase()``."
+msgstr ""
+
+#, fuzzy
+msgid "Example use of ``acknowledgePurchase()``:"
+msgstr "Exemples d'utilisation de ``StaticBody2D`` :"
+
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#, fuzzy
+msgid ""
+"Subscriptions work mostly like regular in-app items. Use ``\"subs\"`` as the "
+"second argument to ``querySkuDetails()`` to get subscription details. Pass "
+"``\"subs\"`` to ``queryPurchases()`` to get subscription purchase details."
+msgstr ""
+"Les abonnements ne sont pas très différents des articles intégrés à "
+"l'application. Il suffit d'utiliser ``\"subs\"`` comme deuxième argument à "
+"``querySkuDetails`` pour obtenir les détails de l'abonnement. Vérifiez "
+"``is_auto_renewing`` dans les résultats de ``queryPurchases()`` pour voir si "
+"un utilisateur a annulé un abonnement à renouvellement automatique"
+
+msgid ""
+"You can check ``is_auto_renewing`` in the a subscription purchase returned "
+"from ``queryPurchases()`` to see if a user has cancelled an auto-renewing "
+"subscription."
+msgstr ""
+
+msgid ""
+"You need to acknowledge new subscription purchases, but not automatic "
+"subscription renewals."
+msgstr ""
+
+msgid ""
+"If you support upgrading or downgrading between different subscription "
+"levels, you should use ``updateSubscription()`` to use the subscription "
+"update flow to change an active subscription. Like ``purchase()``, results "
+"are returned by the ``purchases_updated`` and ``purchase_error`` signals. "
+"There are three parameters to ``updateSubscription()``:"
+msgstr ""
+
+msgid "The purchase token of the currently active subscription"
+msgstr ""
+
+msgid "The product id string of the subscription SKU to change to"
+msgstr ""
+
+msgid "The proration mode to apply to the subscription."
+msgstr ""
+
+msgid "The proration values are defined as:"
+msgstr ""
+
+msgid "Default behavior is ``IMMEDIATE_WITH_TIME_PRORATION``."
+msgstr ""
+
+#, fuzzy
+msgid "Example use of ``updateSubscription``:"
+msgstr "Exemples d'utilisation de ``StaticBody2D`` :"
+
+msgid ""
+"The ``confirmPriceChange()`` function can be used to launch price change "
+"confirmation flow for a subscription. Pass the product id of the "
+"subscription SKU subject to the price change. The result will be sent by the "
+"``price_change_acknowledged`` signal."
+msgstr ""
+
+msgid "Example use of ``confirmPriceChange()``:"
+msgstr ""
+
+msgid "Translation status"
+msgstr "État de la traduction"

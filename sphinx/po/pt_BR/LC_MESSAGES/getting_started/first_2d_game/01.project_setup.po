@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Setting up the project"
+msgstr "Configurando o projeto"
+
+msgid "In this short first part, we'll set up and organize the project."
+msgstr "Nesta primeira parte, vamos configurar e organizar o projeto."
+
+msgid "Launch Godot and create a new project."
+msgstr "Inicie o Godot e crie um novo projeto."
+
+msgid ""
+"When creating the new project, you only need to choose a valid *Project "
+"Path*. You can leave the other default settings alone."
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript"
+
+#, fuzzy
+msgid ""
+"Download `dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/"
+"godot-docs-project-starters/releases/download/latest-4.x/"
+"dodge_the_creeps_2d_assets.zip>`_. The archive contains the images and "
+"sounds you'll be using to make the game. Extract the archive and move the "
+"``art/`` and ``fonts/`` directories to your project's directory."
+msgstr ""
+"Baixe :download:`dodge_assets.zip <files/dodge_assets.zip>`. Este arquivo "
+"contém as imagens e os sons que você usará para fazer o jogo. Descompacte "
+"esses arquivos e mova as pastas ``art/`` e ``fonts/`` para a pasta do seu "
+"projeto."
+
+msgid "C#"
+msgstr "C#"
+
+#, fuzzy
+msgid ""
+"Ensure that you have the required dependencies to use C# in Godot. You need "
+"the latest stable .NET SDK, and an editor such as VS Code. See :ref:"
+"`doc_c_sharp_setup`."
+msgstr ""
+"Assegure-se de que você tem as dependências obrigatórias para usar C# no "
+"Godot. Você precisa do .NET Core 3.1 SDK e de um editor como o VS Code. "
+"Veja :ref:`doc_c_sharp_setup`."
+
+msgid "C++"
+msgstr "C++"
+
+msgid ""
+"The C++ part of this tutorial wasn't rewritten for the new GDExtension "
+"system yet."
+msgstr ""
+
+msgid "Your project folder should look like this."
+msgstr "Sua pasta de projeto deve se parecer com isto."
+
+#, fuzzy
+msgid ""
+"This game is designed for portrait mode, so we need to adjust the size of "
+"the game window. Click on *Project -> Project Settings* to open the project "
+"settings window, in the left column open the *Display -> Window* tab. There, "
+"set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``."
+msgstr ""
+"Este jogo usará o modo retrato, então precisamos ajustar as dimensões da "
+"janela de jogo. Clique em *Projeto -> Configurações do Projeto* para abrir "
+"as configurações do projeto e, na coluna esquerda, abra a aba *Exibição -> "
+"Janela*. Ali, configure \"Width\" (Largura) para ``480`` e "
+"\"Height\" (Altura) para ``720``."
+
+#, fuzzy
+msgid ""
+"Also, under the **Stretch** options, set **Mode** to ``canvas_items`` and "
+"**Aspect** to ``keep``. This ensures that the game scales consistently on "
+"different sized screens."
+msgstr ""
+"Além disso, role para o fim desta seção e, nas opções "
+"\"Stretch\" (Alongamento), defina ``Mode`` (Modo) para \"2d\" e ``Aspect`` "
+"(Aspecto) para \"keep\" (manter). Isso garante que o jogo seja escalado "
+"consistentemente em telas de tamanhos diferentes."
+
+msgid "Organizing the project"
+msgstr "Organizando o projeto"
+
+msgid ""
+"In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
+"``HUD``, which we will combine into the game's ``Main`` scene."
+msgstr ""
+"Neste projeto, faremos 3 cenas independentes: ``Player``, ``Mob`` e ``HUD``, "
+"que combinaremos dentro da cena ``Main`` do jogo."
+
+msgid ""
+"In a larger project, it might be useful to create folders to hold the "
+"various scenes and their scripts, but for this relatively small game, you "
+"can save your scenes and scripts in the project's root folder, identified by "
+"``res://``. You can see your project folders in the FileSystem dock in the "
+"lower left corner:"
+msgstr ""
+"Em um projeto maior, pode ser útil criar pastas para armazenar as várias "
+"cenas e seus scripts, mas, para este jogo relativamente pequeno, você pode "
+"salvar suas cenas e scripts na pasta raiz do projeto, referenciada como "
+"``res://``. Você pode ver as pastas do seu projeto no painel Arquivos no "
+"canto inferior esquerdo:"
+
+msgid ""
+"With the project in place, we're ready to design the player scene in the "
+"next lesson."
+msgstr ""
+"Com o projeto em seu devido lugar, estamos prontos para conceber a cena do "
+"jogador na próxima lição."
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

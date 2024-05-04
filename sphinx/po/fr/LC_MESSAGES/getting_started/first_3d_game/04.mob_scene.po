@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Designing the mob scene"
+msgstr "Conception de la scène du mob"
+
+msgid ""
+"In this part, you're going to code the monsters, which we'll call mobs. In "
+"the next lesson, we'll spawn them randomly around the playable area."
+msgstr ""
+"Dans cette partie, vous allez coder les monstres, que nous appellerons mobs. "
+"Dans la prochaine leçon, nous les ferons apparaître aléatoirement autour de "
+"la zone de jeu."
+
+#, fuzzy
+msgid ""
+"Let's design the monsters themselves in a new scene. The node structure is "
+"going to be similar to the ``player.tscn`` scene."
+msgstr ""
+"Concevons les monstres eux-mêmes dans une nouvelle scène. La structure du "
+"nœud sera similaire à celle de la scène *Player*."
+
+#, fuzzy
+msgid ""
+"Create a scene with, once again, a :ref:`CharacterBody3D "
+"<class_CharacterBody3D>` node as its root. Name it ``Mob``. Add a child "
+"node :ref:`Node3D <class_Node3D>`, name it ``Pivot``. And drag and drop the "
+"file ``mob.glb`` from the *FileSystem* dock onto the ``Pivot`` to add the "
+"monster's 3D model to the scene."
+msgstr ""
+"Créez une scène avec, encore une fois, un nœud *KinematicBody* comme racine. "
+"Nommez-la *Mob*. Ajoutez-lui un nœud *Spatial* comme enfant, nommez-le "
+"*Pivot*. Puis faîtes glisser le fichier ``mob.glb`` depuis le dock *Système "
+"de fichiers* sur le *Pivot* pour ajouter le modèle 3D du monstre à la scène. "
+"Vous pouvez renommer le nœud *mob* nouvellement créé en *Character*."
+
+msgid "You can rename the newly created ``mob`` node into ``Character``."
+msgstr ""
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+#, fuzzy
+msgid ""
+"We need a collision shape for our body to work. Right-click on the ``Mob`` "
+"node, the scene's root, and click *Add Child Node*."
+msgstr ""
+"Nous avons besoin d'une forme de collision pour que le corps fonctionne. "
+"Faîtes un clic droit sur le nœud *Mob*, la racine de la scène, et cliquez "
+"sur *Ajoutez un nœud enfant*."
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid "image1"
+msgstr "image1"
+
+#, fuzzy
+msgid "Add a :ref:`CollisionShape3D <class_CollisionShape3D>`."
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "image2"
+msgstr "image2"
+
+#, fuzzy
+msgid "In the *Inspector*, assign a *BoxShape3D* to the *Shape* property."
+msgstr "Dans l'*Inspecteur*, assignez une *BoxShape* à la propriété *Shape*."
+
+msgid ""
+"We should change its size to fit the 3D model better. You can do so "
+"interactively by clicking and dragging on the orange dots."
+msgstr ""
+"Nous devons changer sa taille pour mieux s'adapter au modèle 3D. Vous pouvez "
+"le faire interactivement en faisant glisser les points orange."
+
+msgid ""
+"The box should touch the floor and be a little thinner than the model. "
+"Physics engines work in such a way that if the player's sphere touches even "
+"the box's corner, a collision will occur. If the box is a little too big "
+"compared to the 3D model, you may die at a distance from the monster, and "
+"the game will feel unfair to the players."
+msgstr ""
+"La boîte devrait toucher le sol et être un peu plus fine que le modèle. Les "
+"moteurs physiques fonctionnent de telle sorte que si la sphère du joueur "
+"touche ne serait-ce que le coin de la boîte, une collision se produira. Si "
+"la boîte est un petit peu trop large par rapport au modèle 3D, vous risquez "
+"de mourir à une certaine distance du monstre, et le jeu semblera injuste "
+"pour les joueurs."
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "image4"
+msgstr "image4"
+
+msgid ""
+"Notice that my box is taller than the monster. It is okay in this game "
+"because we're looking at the scene from above and using a fixed perspective. "
+"Collision shapes don't have to match the model exactly. It's the way the "
+"game feels when you test it that should dictate their form and size."
+msgstr ""
+"Remarquez que ma boîte est plus grande que le monstre. Ce n'est pas grave "
+"dans ce jeu car nous regardons la scène d'en haut et utilisons une "
+"perspective fixe. Les formes de collision n'ont pas besoin de correspondre "
+"exactement au modèle. C'est votre ressenti quand vous testez le jeu qui doit "
+"dicter leur forme et leur taille."
+
+msgid "Removing monsters off-screen"
+msgstr "Suppression des monstres hors écran"
+
+#, fuzzy
+msgid ""
+"We're going to spawn monsters at regular time intervals in the game level. "
+"If we're not careful, their count could increase to infinity, and we don't "
+"want that. Each mob instance has both a memory and a processing cost, and we "
+"don't want to pay for it when the mob is outside the screen."
+msgstr ""
+"Nous allons faire apparaître des monstres à des intervalles réguliers dans "
+"le niveau de jeu. Si nous ne faisons pas attention, leur nombre pourrait "
+"augmenter à l'infini, et nous ne voulons pas cela. Chaque instance de mob a "
+"un coût en mémoire et un coût de traitement, et nous ne voulons pas le payer "
+"lorsque le mob est en dehors de l'écran."
+
+#, fuzzy
+msgid ""
+"Once a monster leaves the screen, we don't need it anymore, so we should "
+"delete it. Godot has a node that detects when objects leave the screen, :ref:"
+"`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>`, and we're "
+"going to use it to destroy our mobs."
+msgstr ""
+"Une fois qu'un monstre quitte l'écran, nous n'en avons plus besoin, donc "
+"nous pouvons le supprimer. Godot a un nœud qui détecte lorsque des objets "
+"quittent l'écran, *VisibleNotifier*, et nous allons l'utiliser pour détruire "
+"nos mobs."
+
+#, fuzzy
+msgid ""
+"When you keep instancing an object, there's a technique you can use to avoid "
+"the cost of creating and destroying instances all the time called pooling. "
+"It consists of pre-creating an array of objects and reusing them over and "
+"over."
+msgstr ""
+"Lorsque vous intanciez continuellement un objet dans un jeu, il y a une "
+"technique qui vous permet d'éviter le coût de la création et la destruction "
+"constante d'instances : le pooling. Ça consiste à pré-créer un tableau "
+"d'objets et de les réutiliser encore et encore."
+
+#, fuzzy
+msgid ""
+"When working with GDScript, you don't need to worry about this. The main "
+"reason to use pools is to avoid freezes with garbage-collected languages "
+"like C# or Lua. GDScript uses a different technique to manage memory, "
+"reference counting, which doesn't have that caveat. You can learn more about "
+"that here: :ref:`doc_gdscript_basics_memory_management`."
+msgstr ""
+"Lorsque vous travaillez avec GDScript, vous n'avez pas à vous soucier de "
+"cela. La principale raison d'utiliser les pools est pour éviter les freezes "
+"avec les langages à ramasse-miettes comme le C# ou le Lua. GDScript utilise "
+"une technique différente pour gérer la mémoire, le comptage de références, "
+"qui ne présente pas cet inconvénient. Vous pouvez en apprendre plus à ce "
+"sujet ici :ref:`doc_gdscript_basics_memory_management`."
+
+#, fuzzy
+msgid ""
+"Select the ``Mob`` node and add a child node :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>`. Another box, pink this time, appears. "
+"When this box completely leaves the screen, the node will emit a signal."
+msgstr ""
+"Sélectionnez le nœud *Mob* et ajoutez-lui un *VisibilityNotifier* comme "
+"enfant. Une autre boîte, rose cette fois, apparaît. Quand cette boîte quitte "
+"complètement l'écran, le nœud émettra un signal."
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid "image5"
+msgstr "image5"
+
+msgid "Resize it using the orange dots until it covers the entire 3D model."
+msgstr ""
+"Redimensionnez-la en utilisant les points orange jusqu'à ce qu'elle couvre "
+"l'ensemble du modèle 3D."
+
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "image6"
+
+msgid "Coding the mob's movement"
+msgstr "Coder le mouvement du mob"
+
+#, fuzzy
+msgid ""
+"Let's implement the monster's motion. We're going to do this in two steps. "
+"First, we'll write a script on the ``Mob`` that defines a function to "
+"initialize the monster. We'll then code the randomized spawn mechanism in "
+"the ``main.tscn`` scene and call the function from there."
+msgstr ""
+"Implémentons le déplacement du monstre. Nous allons faire ça en deux étapes. "
+"D'abord, nous allons écrire un script sur le *Mob* qui définit une fonction "
+"pour initialiser le monstre. Nous allons ensuite coder le mécanisme "
+"d'apparition aléatoire dans la scène *Main* et appellerons la fonction à "
+"partir de là."
+
+#, fuzzy
+msgid "Attach a script to the ``Mob``."
+msgstr "Attachez un script au *Mob*."
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
+msgstr "image7"
+
+#, fuzzy
+msgid ""
+"Here's the movement code to start with. We define two properties, "
+"``min_speed`` and ``max_speed``, to define a random speed range, which we "
+"will later use to define ``CharacterBody3D.velocity``."
+msgstr ""
+"Voici le code du mouvement pour commencer. Nous définissons deux propriétés, "
+"``min_speed`` et ``max_speed``, pour définir une plage de vitesse aléatoire. "
+"Nous définissons et initialisons ensuite la ``velocity``."
+
+#, fuzzy
+msgid ""
+"Similarly to the player, we move the mob every frame by calling the function "
+"``CharacterBody3D.move_and_slide()``. This time, we don't update the "
+"``velocity`` every frame; we want the monster to move at a constant speed "
+"and leave the screen, even if it were to hit an obstacle."
+msgstr ""
+"Come pour le joueur, nous déplaçons le mob à chaque image en appelant la "
+"méthode ``move_and_slide()`` du ``KinematicBody``. Cette fois, nous ne "
+"voulons pas mettre à jour la ``velocity`` à chaque frame : nous voulons que "
+"le monstre se déplace à une vitesse constante jusqu'à quitter l'écran, même "
+"s'il venait à rencontrer un obstacle."
+
+#, fuzzy
+msgid ""
+"We need to define another function to calculate the ``CharacterBody3D."
+"velocity``. This function will turn the monster towards the player and "
+"randomize both its angle of motion and its velocity."
+msgstr ""
+"Nous devons définir une autre fonction pour calculer la vélocité de départ. "
+"Cette fonction va tourner le monstre vers le joueur et rendra aléatoire son "
+"angle de déplacement et sa velocité."
+
+#, fuzzy
+msgid ""
+"The function will take a ``start_position``,the mob's spawn position, and "
+"the ``player_position`` as its arguments."
+msgstr ""
+"La fonction prendra une ``start_position``, la position d'apparition du mob, "
+"et la ``player_position`` comme arguments."
+
+#, fuzzy
+msgid ""
+"We position the mob at ``start_position`` and turn it towards the player "
+"using the ``look_at_from_position()`` method, and randomize the angle by "
+"rotating a random amount around the Y axis. Below, ``randf_range()`` outputs "
+"a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
+msgstr ""
+"Nous positionnons le monstre à ``start_position`` puis nous le tournons vers "
+"le joueur en utilisant la méthode ``look_at()`` et rendons l'angle aléatoire "
+"en effectuant une rotation d'un montant aléatoire autour de l'axe Y. Ci-"
+"dessous, ``rand_range()`` produit une valeur aléatoire entre ``-PI / 4`` "
+"radians et ``PI / 4`` radians."
+
+msgid ""
+"We got a random position, now we need a ``random_speed``. ``randi_range()`` "
+"will be useful as it gives random int values, and we will use ``min_speed`` "
+"and ``max_speed``. ``random_speed`` is just an integer, and we just use it "
+"to multiply our ``CharacterBody3D.velocity``. After ``random_speed`` is "
+"applied, we rotate ``CharacterBody3D.velocity`` Vector3 towards the player."
+msgstr ""
+
+msgid "Leaving the screen"
+msgstr "Quitter l'écran"
+
+#, fuzzy
+msgid ""
+"We still have to destroy the mobs when they leave the screen. To do so, "
+"we'll connect our :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` node's ``screen_exited`` signal to the "
+"``Mob``."
+msgstr ""
+"Il nous reste à détruire les mobs lorsqu'ils quittent l'écran. Pour ce "
+"faire, nous connectons le signal ``screen_exited`` de notre nœud "
+"*VisibilityNotifier* au *Mob*."
+
+msgid ""
+"Head back to the 3D viewport by clicking on the *3D* label at the top of the "
+"editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
+msgstr ""
+"Revenez à la fenêtre d'affichage 3D en cliquant sur le bouton *3D* en haut "
+"de l'éditeur. Vous pouvez également appuyer sur :kbd:`Ctrl + F2` (:kbd:`Alt "
+"+ 2` sur macOS)."
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
+msgstr "image8"
+
+#, fuzzy
+msgid ""
+"Select the :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` node and on the right side of the "
+"interface, navigate to the *Node* dock. Double-click the ``screen_exited()`` "
+"signal."
+msgstr ""
+"Sélectionnez le nœud *VisibilityNotifier* et, sur le côté droit de "
+"l'interface, naviguez vers le dock *Nœud*. Double-cliquez sur le signal "
+"*screen_exited()*."
+
+msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
+msgstr "image9"
+
+#, fuzzy
+msgid "Connect the signal to the ``Mob``"
+msgstr "Connectez le signal au *Mob*."
+
+msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
+msgstr "image10"
+
+#, fuzzy
+msgid ""
+"This will take you back to the script editor and add a new function for you, "
+"``_on_visible_on_screen_notifier_3d_screen_exited()``. From it, call the "
+"``queue_free()`` method. This function destroy the instance it's called on."
+msgstr ""
+"Cela vous ramènera à l'éditeur de script et ajoutera une nouvelle fonction "
+"pour vous, ``_on_VisibilityNotifier_screen_exited()``. Depuis cette "
+"dernière, appelez la méthode ``queue_free()``. Cela détruira l'instance du "
+"mob lorsque la boîte du *VisibilityNotifier* quittera l'écran."
+
+msgid ""
+"Our monster is ready to enter the game! In the next part, you will spawn "
+"monsters in the game level."
+msgstr ""
+"Notre monstre est prêt à entrer dans le jeu ! Dans la partie suivante, nous "
+"ferons apparaître des monstres dans le niveau de jeu."
+
+msgid "Here is the complete ``Mob.gd`` script for reference."
+msgstr "Voici le script complet ``Mob.gd`` pour référence."
+
+msgid "Translation status"
+msgstr "État de la traduction"

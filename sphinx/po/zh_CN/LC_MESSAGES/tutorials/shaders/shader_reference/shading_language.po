@@ -1,0 +1,2166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Shading language"
+msgstr "着色语言"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid ""
+"Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and "
+"functions are supported, and the few remaining ones will likely be added "
+"over time."
+msgstr ""
+"Godot 使用类似于 GLSL ES 3.0 的着色语言。支持大多数数据类型和函数，并且可能会"
+"随着时间的推移添加剩余的几种类型和函数。"
+
+msgid ""
+"If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
+"Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
+"you transition from regular GLSL to Godot's shading language."
+msgstr ""
+"如果你已经熟悉 GLSL，\\ :ref:`Godot 着色器迁移指南 "
+"<doc_converting_glsl_to_godot_shaders>`\\ 是一个帮助你从常规 GLSL 转换到 "
+"Godot 着色语言的资源。"
+
+msgid "Data types"
+msgstr "数据类型"
+
+msgid "Most GLSL ES 3.0 datatypes are supported:"
+msgstr "支持大多数GLSL ES 3.0数据类型:"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "**void**"
+msgstr "**void**"
+
+msgid "Void datatype, useful only for functions that return nothing."
+msgstr "Void数据类型, 只对不返回任何内容的函数有用."
+
+msgid "**bool**"
+msgstr "**bool**"
+
+msgid "Boolean datatype, can only contain ``true`` or ``false``."
+msgstr "布尔数据类型，只能包含 ``true`` 或 ``false``\\ 。"
+
+msgid "**bvec2**"
+msgstr "**bvec2**"
+
+msgid "Two-component vector of booleans."
+msgstr "布尔值的两个分量向量."
+
+msgid "**bvec3**"
+msgstr "**bvec3**"
+
+msgid "Three-component vector of booleans."
+msgstr "布尔值的三分量向量."
+
+msgid "**bvec4**"
+msgstr "**bvec4**"
+
+msgid "Four-component vector of booleans."
+msgstr "布尔值的四分量向量."
+
+msgid "**int**"
+msgstr "**int**"
+
+msgid "Signed scalar integer."
+msgstr "带正负的符号标量整数."
+
+msgid "**ivec2**"
+msgstr "**ivec2**"
+
+msgid "Two-component vector of signed integers."
+msgstr "有符号整数的双分量向量."
+
+msgid "**ivec3**"
+msgstr "**ivec3**"
+
+msgid "Three-component vector of signed integers."
+msgstr "有符号整数的三分量向量."
+
+msgid "**ivec4**"
+msgstr "**ivec4**"
+
+msgid "Four-component vector of signed integers."
+msgstr "有符号整数的四分量向量."
+
+msgid "**uint**"
+msgstr "**uint**"
+
+msgid "Unsigned scalar integer; can't contain negative numbers."
+msgstr "无符号标量整数, 不能包含负数."
+
+msgid "**uvec2**"
+msgstr "**uvec2**"
+
+msgid "Two-component vector of unsigned integers."
+msgstr "无符号整数的两分量向量."
+
+msgid "**uvec3**"
+msgstr "**uvec3**"
+
+msgid "Three-component vector of unsigned integers."
+msgstr "无符号整数的三分量向量."
+
+msgid "**uvec4**"
+msgstr "**uvec4**"
+
+msgid "Four-component vector of unsigned integers."
+msgstr "无符号整数的四分量向量."
+
+msgid "**float**"
+msgstr "**float**"
+
+msgid "Floating-point scalar."
+msgstr "浮点标量."
+
+msgid "**vec2**"
+msgstr "**vec2**"
+
+msgid "Two-component vector of floating-point values."
+msgstr "浮点值的两分量向量."
+
+msgid "**vec3**"
+msgstr "**vec3**"
+
+msgid "Three-component vector of floating-point values."
+msgstr "浮点值的三分量向量."
+
+msgid "**vec4**"
+msgstr "**vec4**"
+
+msgid "Four-component vector of floating-point values."
+msgstr "浮点值的四分量向量."
+
+msgid "**mat2**"
+msgstr "**mat2**"
+
+msgid "2x2 matrix, in column major order."
+msgstr "2x2矩阵, 按主要顺序排列."
+
+msgid "**mat3**"
+msgstr "**mat3**"
+
+msgid "3x3 matrix, in column major order."
+msgstr "3x3矩阵, 在列的主要顺序."
+
+msgid "**mat4**"
+msgstr "**mat4**"
+
+msgid "4x4 matrix, in column major order."
+msgstr "4x4矩阵, 按主要顺序排列."
+
+msgid "**sampler2D**"
+msgstr "**sampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as float."
+msgstr "用于绑定2D纹理的采样器类型, 以浮点形式读取."
+
+msgid "**isampler2D**"
+msgstr "**isampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as signed integer."
+msgstr "用于绑定2D纹理的采样器类型, 它们被读取为有符号整数."
+
+msgid "**usampler2D**"
+msgstr "**usampler2D**"
+
+msgid ""
+"Sampler type for binding 2D textures, which are read as unsigned integer."
+msgstr "用于绑定2D纹理的采样器类型, 读取为无符号整数."
+
+msgid "**sampler2DArray**"
+msgstr "**sampler2DArray**"
+
+msgid "Sampler type for binding 2D texture arrays, which are read as float."
+msgstr "用于绑定2D纹理数组的采样器类型, 以浮点数形式读取."
+
+msgid "**isampler2DArray**"
+msgstr "**isampler2DArray**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as signed integer."
+msgstr "用于绑定2D纹理数组的采样器类型, 以有符号整数形式读取."
+
+msgid "**usampler2DArray**"
+msgstr "**usampler2DArray**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as unsigned "
+"integer."
+msgstr "用于绑定2D纹理数组的采样器类型, 以无符号整数形式读取."
+
+msgid "**sampler3D**"
+msgstr "**sampler3D**"
+
+msgid "Sampler type for binding 3D textures, which are read as float."
+msgstr "用于绑定3D纹理的采样器类型, 以浮点形式读取."
+
+msgid "**isampler3D**"
+msgstr "**isampler3D**"
+
+msgid "Sampler type for binding 3D textures, which are read as signed integer."
+msgstr "用于绑定3D纹理的采样器类型, 以有符号整数形式读取."
+
+msgid "**usampler3D**"
+msgstr "**usampler3D**"
+
+msgid ""
+"Sampler type for binding 3D textures, which are read as unsigned integer."
+msgstr "用于绑定3D纹理的采样器类型, 以无符号整数形式读取."
+
+msgid "**samplerCube**"
+msgstr "**samplerCube**"
+
+msgid "Sampler type for binding Cubemaps, which are read as float."
+msgstr "用于绑定立方体贴图的采样器类型，作为 float 读取。"
+
+msgid "**samplerCubeArray**"
+msgstr "**samplerCubeArray**"
+
+msgid "Sampler type for binding Cubemap arrays, which are read as float."
+msgstr "用于绑定立方体贴图数组的采样器类型，作为 float 读取。"
+
+msgid "Casting"
+msgstr "类型转换"
+
+msgid ""
+"Just like GLSL ES 3.0, implicit casting between scalars and vectors of the "
+"same size but different type is not allowed. Casting of types of different "
+"size is also not allowed. Conversion must be done explicitly via "
+"constructors."
+msgstr ""
+"就像GLSL ES 3.0一样, 不允许在标量和相同大小但不同类型的向量之间进行隐式转换. "
+"也不允许铸造不同大小的类型. 转换必须通过构造函数明确完成."
+
+msgid "Example:"
+msgstr "示例："
+
+msgid ""
+"Default integer constants are signed, so casting is always needed to convert "
+"to unsigned:"
+msgstr "默认整数常量是有符号的, 所以转换为无符号总是需要强制类型转换:"
+
+msgid "Members"
+msgstr "成员"
+
+msgid ""
+"Individual scalar members of vector types are accessed via the \"x\", \"y\", "
+"\"z\" and \"w\" members. Alternatively, using \"r\", \"g\", \"b\" and \"a\" "
+"also works and is equivalent. Use whatever fits best for your needs."
+msgstr ""
+"向量类型的单个标量成员通过 \"x\" , \"y\" , \"z\" 和 \"w\" 成员访问. 另外, 使"
+"用 \"r\" , \"g\" , \"b\" 和 \"a\" 也可以, 而且是等效的. 使用最适合你的需求的"
+"方法."
+
+msgid ""
+"For matrices, use the ``m[column][row]`` indexing syntax to access each "
+"scalar, or ``m[idx]`` to access a vector by row index. For example, for "
+"accessing the y position of an object in a mat4 you use ``m[3][1]``."
+msgstr ""
+"对于矩阵，使用 ``m[column][row]`` 索引语法来访问每个标量，或者 ``m[idx]`` 按"
+"行索引来访问一个向量。例如，为了访问 mat4 中一个对象的 y 位置，使用 ``m[3]"
+"[1]``\\ 。"
+
+msgid "Constructing"
+msgstr "构建"
+
+msgid "Construction of vector types must always pass:"
+msgstr "向量类型的构造必须始终通过:"
+
+msgid ""
+"Construction of matrix types requires vectors of the same dimension as the "
+"matrix. You can also build a diagonal matrix using ``matx(float)`` syntax. "
+"Accordingly, ``mat4(1.0)`` is an identity matrix."
+msgstr ""
+"构建矩阵类型需要与矩阵相同维度的向量. 你也可以使用 ``matx(float)`` 语法构建一"
+"个对角矩阵. 相应地, ``mat4(1.0)`` 是一个单位矩阵."
+
+msgid ""
+"Matrices can also be built from a matrix of another dimension. There are two "
+"rules:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"1. If a larger matrix is constructed from a smaller matrix, the additional "
+"rows and columns are set to the values they would have in an identity "
+"matrix. 2. If a smaller matrix is constructed from a larger matrix, the top, "
+"left submatrix of the larger matrix is used."
+msgstr ""
+"矩阵也可以由另一维的矩阵建立. 有两条规则. 如果一个较大的矩阵是由一个较小的矩"
+"阵构建的, 那么额外的行和列将被设置为它们在同一矩阵中的值. 如果一个较小的矩阵"
+"是由一个较大的矩阵构建的, 则使用较大矩阵的顶部和左矩阵."
+
+msgid "Swizzling"
+msgstr "混写Swizzling"
+
+msgid ""
+"It is possible to obtain any combination of components in any order, as long "
+"as the result is another vector type (or scalar). This is easier shown than "
+"explained:"
+msgstr ""
+"只要结果是另一种向量类型(或标量), 就可以以任何顺序获得组件的组合. 这一点展示"
+"起来比解释起来容易:"
+
+msgid "Precision"
+msgstr "精度"
+
+msgid ""
+"It is possible to add precision modifiers to datatypes; use them for "
+"uniforms, variables, arguments and varyings:"
+msgstr ""
+"可以为数据类型添加精度修饰符；将它们用于 uniform、变量、参数、varying："
+
+msgid ""
+"Using lower precision for some operations can speed up the math involved (at "
+"the cost of less precision). This is rarely needed in the vertex processor "
+"function (where full precision is needed most of the time), but is often "
+"useful in the fragment processor."
+msgstr ""
+"对某些操作使用较低的精度可以加快相关的数学运算(以较低的精度为代价). 这在顶点"
+"处理器功能中很少需要(大部分时间都需要全精度), 但在片段处理器中经常需要."
+
+msgid ""
+"Some architectures (mainly mobile) can benefit significantly from this, but "
+"there are downsides such as the additional overhead of conversion between "
+"precisions. Refer to the documentation of the target architecture for "
+"further information. In many cases, mobile drivers cause inconsistent or "
+"unexpected behavior and it is best to avoid specifying precision unless "
+"necessary."
+msgstr ""
+"一些架构(主要是移动架构)可以从中受益匪浅, 但也有缺点, 比如在不同精度之间转换"
+"的额外开销. 请参考目标架构的文档以获得更多信息. 在许多情况下, 移动驱动会导致"
+"不一致或意外的行为, 除非有必要, 最好避免指定精度."
+
+msgid "Arrays"
+msgstr "数组"
+
+#, fuzzy
+msgid "Arrays are containers for multiple variables of a similar type."
+msgstr ""
+"数组是存放多个相似类型变量的容器. 注意: 从godot3.2开始, 只实现了局部数组和可"
+"变数组."
+
+msgid "Local arrays"
+msgstr "局部数组"
+
+msgid ""
+"Local arrays are declared in functions. They can use all of the allowed "
+"datatypes, except samplers. The array declaration follows a C-style syntax: "
+"``[const] + [precision] + typename + identifier + [array size]``."
+msgstr ""
+"局部数组在函数中声明. 它们可以使用所有允许的数据类型, 但采样器除外. 数组声明"
+"遵循C-style的语法. ``[const] + [precision] + typename + identifier + [array "
+"size]``."
+
+msgid "They can be initialized at the beginning like:"
+msgstr "它们可以在开始时进行初始化, 例如:"
+
+msgid ""
+"You can declare multiple arrays (even with different sizes) in one "
+"expression:"
+msgstr "你可以在一个表达式中声明多个数组(即使大小不同):"
+
+msgid "To access an array element, use the indexing syntax:"
+msgstr "要访问一个数组元素, 请使用索引语法:"
+
+msgid ""
+"Arrays also have a built-in function ``.length()`` (not to be confused with "
+"the built-in ``length()`` function). It doesn't accept any parameters and "
+"will return the array's size."
+msgstr ""
+"数组有一个内置函数 ``.length()``(不要与内置的 ``length()`` 函数混淆). 它不接"
+"受任何参数, 作用是返回数组的大小."
+
+#, fuzzy
+msgid ""
+"If you use an index either below 0 or greater than array size - the shader "
+"will crash and break rendering. To prevent this, use ``length()``, ``if``, "
+"or ``clamp()`` functions to ensure the index is between 0 and the array's "
+"length. Always carefully test and check your code. If you pass a constant "
+"expression or a number, the editor will check its bounds to prevent this "
+"crash."
+msgstr ""
+"如果你使用一个低于0或大于数组大小的索引--着色器将崩溃并中断渲染. 为了防止这种"
+"情况, 请使用 ``length()``, ``if`` 或 ``clamp()`` 函数来确保索引在0和数组的长"
+"度之间. 总是仔细测试和检查你的代码. 如果你传递了一个常量表达式或一个简单的数"
+"字, 编辑器会检查它的边界以防止这种崩溃."
+
+#, fuzzy
+msgid "Global arrays"
+msgstr "局部数组"
+
+msgid "You can declare arrays at global space like:"
+msgstr ""
+
+msgid ""
+"Global arrays have to be declared as global constants, otherwise they can be "
+"declared the same as local arrays."
+msgstr ""
+
+msgid "Constants"
+msgstr "常量"
+
+msgid ""
+"Use the ``const`` keyword before the variable declaration to make that "
+"variable immutable, which means that it cannot be modified. All basic types, "
+"except samplers can be declared as constants. Accessing and using a constant "
+"value is slightly faster than using a uniform. Constants must be initialized "
+"at their declaration."
+msgstr ""
+"在变量声明前使用 ``const`` 关键字, 可以使该变量成为不可变的, 这意味着它不能被"
+"修改. 所有的基本类型, 除了采样器, 都可以被声明为常量. 访问和使用常量值的速度"
+"比使用uniform的速度略快. 常量必须在其声明时被初始化."
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression e.g"
+msgstr ""
+"常量不能被修改, 另外也不能有提示, 但可以在一个表达式中声明多个常量(如果它们具"
+"有相同的类型), 如"
+
+msgid "Similar to variables, arrays can also be declared with ``const``."
+msgstr "与变量类似, 数组也可以用 ``const`` 来声明."
+
+msgid ""
+"Constants can be declared both globally (outside of any function) or locally "
+"(inside a function). Global constants are useful when you want to have "
+"access to a value throughout your shader that does not need to be modified. "
+"Like uniforms, global constants are shared between all shader stages, but "
+"they are not accessible outside of the shader."
+msgstr ""
+"常量可以在全局(在任何函数之外)或局部(在一个函数之内)进行声明. 当你想在整个着"
+"色器中访问一个不需要修改的值时, 全局常量很有用. 像uniform一样, 全局常量在所有"
+"着色器阶段之间共享, 但它们在着色器之外是不可访问的."
+
+msgid ""
+"Constants of the ``float`` type must be initialized using ``.`` notation "
+"after the decimal part or by using the scientific notation. The optional "
+"``f`` post-suffix is also supported."
+msgstr ""
+
+msgid ""
+"Constants of the ``uint`` (unsigned int) type must have a ``u`` suffix to "
+"differentiate them from signed integers. Alternatively, this can be done by "
+"using the ``uint(x)`` built-in conversion function."
+msgstr ""
+
+msgid "Structs"
+msgstr "结构体"
+
+msgid ""
+"Structs are compound types which can be used for better abstraction of "
+"shader code. You can declare them at the global scope like:"
+msgstr ""
+"结构体是一种复合类型，可以对着色器代码进行更好的抽象。你可以像这样在全局作用"
+"域进行声明："
+
+msgid "After declaration, you can instantiate and initialize them like:"
+msgstr "声明后可以这样进行实例化和初始化："
+
+msgid "Or use struct constructor for same purpose:"
+msgstr "或者使用结构体的构造函数达到同样的效果："
+
+msgid ""
+"Structs may contain other struct or array, you can also instance them as "
+"global constant:"
+msgstr "结构体中可以包含其他结构体或者数组，你还可以把它们作为全局常量实例化："
+
+msgid "You can also pass them to functions:"
+msgstr "你还可以把它们传递给函数："
+
+msgid "Operators"
+msgstr "运算符"
+
+msgid ""
+"Godot shading language supports the same set of operators as GLSL ES 3.0. "
+"Below is the list of them in precedence order:"
+msgstr ""
+"Godot 着色器语言支持与GLSL ES 3.0相同的操作符集. 下面是它们的优先级列表:"
+
+msgid "Precedence"
+msgstr "优先级"
+
+msgid "Class"
+msgstr "类"
+
+msgid "Operator"
+msgstr "操作符"
+
+msgid "1 (highest)"
+msgstr "1（最高）"
+
+msgid "parenthetical grouping"
+msgstr "括号分组"
+
+msgid "**()**"
+msgstr "**()**"
+
+msgid "2"
+msgstr "2"
+
+msgid "unary"
+msgstr "单目"
+
+msgid "**+, -, !, ~**"
+msgstr "**+, -, !, ~**"
+
+msgid "3"
+msgstr "3"
+
+msgid "multiplicative"
+msgstr "乘除法"
+
+msgid "**/, \\*, %**"
+msgstr "**/, \\*, %**"
+
+msgid "4"
+msgstr "4"
+
+msgid "additive"
+msgstr "加减法"
+
+msgid "**+, -**"
+msgstr "**+, -**"
+
+msgid "5"
+msgstr "5"
+
+msgid "bit-wise shift"
+msgstr "移位"
+
+msgid "**<<, >>**"
+msgstr "**<<, >>**"
+
+msgid "6"
+msgstr "6"
+
+msgid "relational"
+msgstr "关系比较"
+
+msgid "**<, >, <=, >=**"
+msgstr "**<, >, <=, >=**"
+
+msgid "7"
+msgstr "7"
+
+msgid "equality"
+msgstr "相等比较"
+
+msgid "**==, !=**"
+msgstr "**==, !=**"
+
+msgid "8"
+msgstr "8"
+
+msgid "bit-wise AND"
+msgstr "按位与"
+
+msgid "**&**"
+msgstr "**&**"
+
+msgid "9"
+msgstr "9"
+
+msgid "bit-wise exclusive OR"
+msgstr "按位异或"
+
+msgid "**^**"
+msgstr "**^**"
+
+msgid "10"
+msgstr "10"
+
+msgid "bit-wise inclusive OR"
+msgstr "按位或"
+
+msgid "**|**"
+msgstr "**|**"
+
+msgid "11"
+msgstr "11"
+
+msgid "logical AND"
+msgstr "逻辑与"
+
+msgid "**&&**"
+msgstr "**&&**"
+
+msgid "12 (lowest)"
+msgstr "12（最低）"
+
+msgid "logical inclusive OR"
+msgstr "逻辑或"
+
+msgid "**||**"
+msgstr "**||**"
+
+msgid "Flow control"
+msgstr "流控制"
+
+msgid "Godot Shading language supports the most common types of flow control:"
+msgstr "Godot 着色器语言支持最常见的控制流类型："
+
+#, fuzzy
+msgid ""
+"Keep in mind that in modern GPUs, an infinite loop can exist and can freeze "
+"your application (including editor). Godot can't protect you from this, so "
+"be careful not to make this mistake!"
+msgstr ""
+"请记住, 在现代GPU中, 无限循环可能存在, 并可能冻结你的应用程序(包括编辑器)."
+"Godot不能保护你不受影响, 所以要小心不要犯这个错误!"
+
+msgid ""
+"Also, when comparing floating-point values against a number, make sure to "
+"compare them against a *range* instead of an exact number."
+msgstr ""
+
+msgid ""
+"A comparison like ``if (value == 0.3)`` may not evaluate to ``true``. "
+"Floating-point math is often approximate and can defy expectations. It can "
+"also behave differently depending on the hardware."
+msgstr ""
+
+msgid "**Don't** do this."
+msgstr "**不要** 写 \"of the X\"。"
+
+msgid ""
+"Instead, always perform a range comparison with an epsilon value. The larger "
+"the floating-point number (and the less precise the floating-point number), "
+"the larger the epsilon value should be."
+msgstr ""
+
+msgid ""
+"See `floating-point-gui.de <https://floating-point-gui.de/>`__ for more "
+"information."
+msgstr ""
+
+msgid "Discarding"
+msgstr "丢弃"
+
+#, fuzzy
+msgid ""
+"Fragment and light functions can use the ``discard`` keyword. If used, the "
+"fragment is discarded and nothing is written."
+msgstr ""
+"片段和灯光功能可以使用 **discard** 关键字. 如果使用, 则丢弃该片段并且不写入任"
+"何内容."
+
+msgid ""
+"Beware that ``discard`` has a performance cost when used, as it will prevent "
+"the depth prepass from being effective on any surfaces using the shader. "
+"Also, a discarded pixel still needs to be rendered in the vertex shader, "
+"which means a shader that uses ``discard`` on all of its pixels is still "
+"more expensive to render compared to not rendering any object in the first "
+"place."
+msgstr ""
+
+msgid "Functions"
+msgstr "函数"
+
+msgid ""
+"It is possible to define functions in a Godot shader. They use the following "
+"syntax:"
+msgstr "可以在Godot着色器中定义函数. 它们使用以下语法:"
+
+#, fuzzy
+msgid ""
+"You can only use functions that have been defined above (higher in the "
+"editor) the function from which you are calling them. Redefining a function "
+"that has already been defined above (or is a built-in function name) will "
+"cause an error."
+msgstr "您只能使用上面定义的函数(编辑器中的较高位置)调用它们的函数."
+
+msgid "Function arguments can have special qualifiers:"
+msgstr "函数参数可以有特殊的限定符:"
+
+msgid "**in**: Means the argument is only for reading (default)."
+msgstr "**in** : 表示参数仅用于读取(默认)."
+
+msgid "**out**: Means the argument is only for writing."
+msgstr "**out** : 表示该参数只用于写入."
+
+msgid "**inout**: Means the argument is fully passed via reference."
+msgstr "**inout** : 表示该参数以引用传递."
+
+msgid ""
+"**const**: Means the argument is a constant and cannot be changed, may be "
+"combined with **in** qualifier."
+msgstr ""
+
+msgid "Example below:"
+msgstr "示例:"
+
+msgid ""
+"Unlike GLSL, Godot's shader language does **not** support function "
+"overloading. This means that a function cannot be defined several times with "
+"different argument types or numbers of arguments. As a workaround, use "
+"different names for functions that accept a different number of arguments or "
+"arguments of different types."
+msgstr ""
+
+msgid "Varyings"
+msgstr "Varying"
+
+msgid ""
+"To send data from the vertex to the fragment (or light) processor function, "
+"*varyings* are used. They are set for every primitive vertex in the *vertex "
+"processor*, and the value is interpolated for every pixel in the *fragment "
+"processor*."
+msgstr ""
+"要从顶点处理器函数往片段（或者灯光）处理器函数里发送数据，可以使用 "
+"*varying*\\ 。\\ *顶点处理器*\\ 中的每一个图元顶点都是 varying 的，会为\\ *片"
+"段处理器*\\ 中的每一个像素做插值。"
+
+msgid "Varying can also be an array:"
+msgstr "Varying 也可以是数组："
+
+msgid ""
+"It's also possible to send data from *fragment* to *light* processors using "
+"*varying* keyword. To do so you can assign it in the *fragment* and later "
+"use it in the *light* function."
+msgstr ""
+"也可以使用 *varying* 关键字将数据从\\ *片段*\\ 处理器送往\\ *灯光*\\ 处理器。"
+"在 *fragment* 函数中赋值，然后在 *light* 函数中使用即可。"
+
+msgid ""
+"Note that varying may not be assigned in custom functions or a *light "
+"processor* function like:"
+msgstr "注意，在自定义函数或\\ *灯光处理器*\\ 中是不能为 varying 赋值的："
+
+msgid ""
+"This limitation was introduced to prevent incorrect usage before "
+"initialization."
+msgstr "加入这一限制的目的是为了防止在初始化前进行错误的使用。"
+
+msgid "Interpolation qualifiers"
+msgstr "插值限定符"
+
+msgid ""
+"Certain values are interpolated during the shading pipeline. You can modify "
+"how these interpolations are done by using *interpolation qualifiers*."
+msgstr ""
+"在着色管线期间内插某些值. 你可以使用 *插值限定符* 修改这些插值的完成方式."
+
+msgid "There are two possible interpolation qualifiers:"
+msgstr "有两种可能的插值限定符:"
+
+msgid "Qualifier"
+msgstr "限定符"
+
+msgid "**flat**"
+msgstr "**flat**"
+
+msgid "The value is not interpolated."
+msgstr "该值未插值."
+
+msgid "**smooth**"
+msgstr "**smooth**"
+
+msgid ""
+"The value is interpolated in a perspective-correct fashion. This is the "
+"default."
+msgstr "该值以透视正确的方式进行插值. 这是默认值."
+
+msgid "Uniforms"
+msgstr "Uniform"
+
+msgid ""
+"Passing values to shaders is possible. These are global to the whole shader "
+"and are called *uniforms*. When a shader is later assigned to a material, "
+"the uniforms will appear as editable parameters in it. Uniforms can't be "
+"written from within the shader."
+msgstr ""
+"可以将值传递给着色器。这些值对整个着色器来说是全局的，被称为 *uniform*\\ 。当"
+"一个着色器后来被分配给一个材质时，uniform 将作为可编辑的参数出现在其中。"
+"uniform 不能从着色器内部写入。"
+
+msgid ""
+"You can set uniforms in the editor in the material. Or you can set them "
+"through GDScript:"
+msgstr ""
+"你可以在编辑器中设置材质中的 uniform。或者你可以通过 GDScript 来设置它们："
+
+#, fuzzy
+msgid ""
+"The first argument to ``set_shader_parameter`` is the name of the uniform in "
+"the shader. It must match *exactly* to the name of the uniform in the shader "
+"or else it will not be recognized."
+msgstr ""
+"``set_shader_param`` 的第一个参数是着色器中的 uniform 名称。它必须与着色器中"
+"的 uniform 名称\\ *完全*\\ 一致，否则将无法被识别。"
+
+msgid ""
+"Any GLSL type except for *void* can be a uniform. Additionally, Godot "
+"provides optional shader hints to make the compiler understand for what the "
+"uniform is used, and how the editor should allow users to modify it."
+msgstr ""
+"除了 *void* 之外，任何 GLSL 类型都可以成为 uniform。此外，Godot 还提供了可选"
+"的着色器提示，以使编译器了解 uniform 是用来干什么的，以及编辑器应该让用户进行"
+"何种修改。"
+
+#, fuzzy
+msgid ""
+"It's important to understand that textures *that are supplied as color* "
+"require hints for proper sRGB -> linear conversion (i.e. ``source_color``), "
+"as Godot's 3D engine renders in linear color space. If this is not done, the "
+"texture will appear washed out."
+msgstr ""
+"重要的是要明白，以颜色形式提供的纹理需要适当的 sRGB->线性转换的提示（即 "
+"``hint_albedo``\\ ），因为 Godot 的 3D 引擎在线性颜色空间中渲染。"
+
+msgid ""
+"The 2D renderer also renders in linear color space if the **Rendering > "
+"Viewport > HDR 2D** project setting is enabled, so ``source_color`` must "
+"also be used in ``canvas_item`` shaders. If 2D HDR is disabled, "
+"``source_color`` will keep working correctly in ``canvas_item`` shaders, so "
+"it's recommend to use it either way."
+msgstr ""
+
+msgid "Full list of hints below:"
+msgstr "以下是完整的提示列表："
+
+msgid "Hint"
+msgstr "提示"
+
+#, fuzzy
+msgid "**vec3, vec4**"
+msgstr "**vec4**"
+
+msgid "source_color"
+msgstr "source_color"
+
+msgid "Used as color."
+msgstr "用作颜色。"
+
+msgid "**int, float**"
+msgstr "**int、float**"
+
+msgid "hint_range(min, max[, step])"
+msgstr "hint_range(min,max [,step] )"
+
+msgid "Restricted to values in a range (with min/max/step)."
+msgstr "限制取值范围（最小值/最大值/步长）。"
+
+#, fuzzy
+msgid "Used as albedo color."
+msgstr "用作颜色。"
+
+msgid "hint_normal"
+msgstr "hint_normal"
+
+msgid "Used as normalmap."
+msgstr "用作法线贴图。"
+
+msgid "hint_default_white"
+msgstr "hint_default_white"
+
+#, fuzzy
+msgid "As value or albedo color, default to opaque white."
+msgstr "用作反照率颜色，默认为白色。"
+
+msgid "hint_default_black"
+msgstr "hint_default_black"
+
+#, fuzzy
+msgid "As value or albedo color, default to opaque black."
+msgstr "用作反照率颜色，默认为黑色。"
+
+msgid "hint_default_transparent"
+msgstr "hint_default_transparent"
+
+#, fuzzy
+msgid "As value or albedo color, default to transparent black."
+msgstr "用作反照率颜色，默认为黑色。"
+
+msgid "hint_anisotropy"
+msgstr "hint_anisotropy"
+
+msgid "As flowmap, default to right."
+msgstr "作为 FlowMap，默认为右。"
+
+msgid "hint_roughness[_r, _g, _b, _a, _normal, _gray]"
+msgstr ""
+
+msgid ""
+"Used for roughness limiter on import (attempts reducing specular aliasing). "
+"``_normal`` is a normal map that guides the roughness limiter, with "
+"roughness increasing in areas that have high-frequency detail."
+msgstr ""
+
+msgid "filter[_nearest, _linear][_mipmap][_anisotropic]"
+msgstr ""
+
+msgid "Enabled specified texture filtering."
+msgstr ""
+
+msgid "repeat[_enable, _disable]"
+msgstr "repeat[_enable, _disable]"
+
+msgid "Enabled texture repeating."
+msgstr "启用纹理重复。"
+
+msgid "hint_screen_texture"
+msgstr "hint_screen_texture"
+
+msgid "Texture is the screen texture."
+msgstr "纹理是屏幕纹理。"
+
+msgid "hint_depth_texture"
+msgstr "hint_depth_texture"
+
+msgid "Texture is the depth texture."
+msgstr "纹理是深度纹理。"
+
+msgid "hint_normal_roughness_texture"
+msgstr "hint_normal_roughness_texture"
+
+msgid "Texture is the normal roughness texture (only supported in Forward+)."
+msgstr ""
+
+msgid ""
+"GDScript uses different variable types than GLSL does, so when passing "
+"variables from GDScript to shaders, Godot converts the type automatically. "
+"Below is a table of the corresponding types:"
+msgstr ""
+"GDScript 使用的变量类型与 GLSL 不同，所以当把变量从 GDScript 传递到着色器时，"
+"Godot 会自动转换类型。以下是相应类型的表格："
+
+msgid "GLSL type"
+msgstr "GLSL 类型"
+
+msgid "GDScript type"
+msgstr "GDScript 类型"
+
+msgid "Notes"
+msgstr "注意"
+
+msgid "Bitwise packed int where bit 0 (LSB) corresponds to x."
+msgstr ""
+
+msgid "For example, a bvec2 of (bx, by) could be created in the following way:"
+msgstr ""
+
+msgid "**Vector2i**"
+msgstr "**Vector2i**"
+
+msgid "**Vector3i**"
+msgstr "**Vector3i**"
+
+msgid "**Vector4i**"
+msgstr "**Vector4i**"
+
+msgid "**Vector2**"
+msgstr "**Vector2**"
+
+#, fuzzy
+msgid "**Vector3**, **Color**"
+msgstr "**Vector3**"
+
+msgid "When Color is used, it will be interpreted as (r, g, b)."
+msgstr ""
+
+msgid "**Vector4**, **Color**, **Rect2**, **Plane**, **Quaternion**"
+msgstr ""
+
+msgid "When Color is used, it will be interpreted as (r, g, b, a)."
+msgstr ""
+
+msgid ""
+"When Rect2 is used, it will be interpreted as (position.x, position.y, size."
+"x, size.y)."
+msgstr ""
+
+msgid ""
+"When Plane is used it will be interpreted as (normal.x, normal.y, normal.z, "
+"d)."
+msgstr ""
+
+msgid "**Transform2D**"
+msgstr "**Transform2D**"
+
+msgid "**Basis**"
+msgstr "**Basis**"
+
+#, fuzzy
+msgid "**mat4** **mat4**"
+msgstr "**mat4**"
+
+#, fuzzy
+msgid "**Projection**, **Transform3D**"
+msgstr "**Transform2D**"
+
+msgid "When a Transform3D is used, the w Vector is set to the identity."
+msgstr ""
+
+msgid "**Texture2D**"
+msgstr "**Texture2D**"
+
+msgid "**Texture2DArray**"
+msgstr "**Texture2DArray**"
+
+msgid "**Texture3D**"
+msgstr "**Texture3D**"
+
+msgid "**Cubemap**"
+msgstr "**Cubemap**"
+
+msgid "**CubemapArray**"
+msgstr "**CubemapArray**"
+
+msgid ""
+"Be careful when setting shader uniforms from GDScript, no error will be "
+"thrown if the type does not match. Your shader will just exhibit undefined "
+"behavior."
+msgstr ""
+"当从 GDScript 中设置着色器 uniform 时要小心，如果类型不匹配，不会产生错误。你"
+"的着色器只会表现出未定义的行为。"
+
+msgid "Uniforms can also be assigned default values:"
+msgstr "Uniform 也可以分配默认值："
+
+msgid ""
+"Note that when adding a default value and a hint, the default value goes "
+"after the hint."
+msgstr ""
+
+msgid ""
+"If you need to make multiple uniforms to be grouped in the specific category "
+"of an inspector, you can use a `group_uniform` keyword like:"
+msgstr ""
+
+#, fuzzy
+msgid "You can close the group by using:"
+msgstr "你也可以通过代码来修改该属性："
+
+msgid ""
+"The syntax also supports subgroups (it's not mandatory to declare the base "
+"group before this):"
+msgstr ""
+
+msgid "Global uniforms"
+msgstr "全局 Uniform"
+
+msgid ""
+"Sometimes, you want to modify a parameter in many different shaders at once. "
+"With a regular uniform, this takes a lot of work as all these shaders need "
+"to be tracked and the uniform needs to be set for each of them. Global "
+"uniforms allow you to create and update uniforms that will be available in "
+"all shaders, in every shader type (``canvas_item``, ``spatial``, "
+"``particles``, ``sky`` and ``fog``)."
+msgstr ""
+
+msgid ""
+"Global uniforms are especially useful for environmental effects that affect "
+"many objects in a scene, like having foliage bend when the player is nearby, "
+"or having objects move with the wind."
+msgstr ""
+
+msgid ""
+"To create a global uniform, open the **Project Settings** then go to the "
+"**Shader Globals** tab. Specify a name for the uniform (case-sensitive) and "
+"a type, then click **Add** in the top-right corner of the dialog. You can "
+"then edit the value assigned to the uniform by clicking the value in the "
+"list of uniforms:"
+msgstr ""
+
+msgid ""
+"Adding a global uniform in the Shader Globals tab of the Project Settings"
+msgstr "在“项目设置”的“着色器全局量”中添加全局 uniform"
+
+msgid "After creating a global uniform, you can use it in a shader as follows:"
+msgstr "创建全局 uniform 之后，在着色器中的使用方法如下："
+
+msgid ""
+"Note that the global uniform *must* exist in the Project Settings at the "
+"time the shader is saved, or compilation will fail. While you can assign a "
+"default value using ``global uniform vec4 my_color = ...`` in the shader "
+"code, it will be ignored as the global uniform must always be defined in the "
+"Project Settings anyway."
+msgstr ""
+"请注意，保存着色器的时候该全局 uniform *必须*\\ 在“项目设置”中存在，否则编译"
+"就会失败。虽然可以在着色器代码中使用 ``global uniform vec4 my_color = ...`` "
+"赋默认值，但是这个默认值会被忽略，因为全局 uniform 必须在“项目设置”中定义。"
+
+msgid ""
+"To change the value of a global uniform at run-time, use the :ref:"
+"`RenderingServer.global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` method in a "
+"script:"
+msgstr ""
+"要在运行时修改全局 uniform 的值，请在脚本中使用 :ref:`RenderingServer."
+"global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` 方法："
+
+msgid ""
+"Assigning global uniform values can be done as many times as desired without "
+"impacting performance, as setting data doesn't require synchronization "
+"between the CPU and GPU."
+msgstr ""
+"全局 uniform 可以重复赋值，不会影响性能，因为设置数据不需要在 CPU 和 GPU 之间"
+"进行同步。"
+
+msgid "You can also add or remove global uniforms at run-time:"
+msgstr "你还可以在运行时添加和移除全局 uniform："
+
+msgid ""
+"Adding or removing global uniforms at run-time has a performance cost, "
+"although it's not as pronounced compared to getting global uniform values "
+"from a script (see the warning below)."
+msgstr ""
+"在运行时添加和移除全局 uniform 存在一定的性能开销，但是不会像从脚本中获取全"
+"局 uniform 值的开销一样大（见下面的警告）。"
+
+msgid ""
+"While you *can* query the value of a global uniform at run-time in a script "
+"using ``RenderingServer.global_shader_parameter_get(\"uniform_name\")``, "
+"this has a large performance penalty as the rendering thread needs to "
+"synchronize with the calling thread."
+msgstr ""
+"运行时，虽然\\ *可以*\\ 在脚本中使用 ``RenderingServer."
+"global_shader_parameter_get(\"uniform_name\")`` 来查询全局 uniform 的取值，但"
+"是这样做有很大的性能开销，因为需要进行调用线程与渲染线程的同步。"
+
+msgid ""
+"Therefore, it's not recommended to read global shader uniform values "
+"continuously in a script. If you need to read values in a script after "
+"setting them, consider creating an :ref:`autoload <doc_singletons_autoload>` "
+"where you store the values you need to query at the same time you're setting "
+"them as global uniforms."
+msgstr ""
+"因此，不建议在脚本中频繁读取全局着色器 uniform 的取值。如果你需要在设值之后用"
+"脚本读取，请考虑创建一个\\ :ref:`自动加载 <doc_singletons_autoload>`\\ ，在设"
+"置需要查询的全局 uniform 的同时保存对应的值。"
+
+msgid "Per-instance uniforms"
+msgstr "单实例 uniform"
+
+msgid "Per-instance uniforms are only available in ``spatial`` (3D) shaders."
+msgstr "只有 ``spatial``\\ （3D）着色器中才可以使用单实例 uniform。"
+
+msgid ""
+"Sometimes, you want to modify a parameter on each node using the material. "
+"As an example, in a forest full of trees, when you want each tree to have a "
+"slightly different color that is editable by hand. Without per-instance "
+"uniforms, this requires creating a unique material for each tree (each with "
+"a slightly different hue). This makes material management more complex, and "
+"also has a performance overhead due to the scene requiring more unique "
+"material instances. Vertex colors could also be used here, but they'd "
+"require creating unique copies of the mesh for each different color, which "
+"also has a performance overhead."
+msgstr ""
+
+msgid ""
+"Per-instance uniforms are set on each GeometryInstance3D, rather than on "
+"each Material instance. Take this into account when working with meshes that "
+"have multiple materials assigned to them, or MultiMesh setups."
+msgstr ""
+
+msgid ""
+"After saving the shader, you can change the per-instance uniform's value "
+"using the inspector:"
+msgstr ""
+
+msgid ""
+"Setting a per-instance uniform's value in the GeometryInstance3D section of "
+"the inspector"
+msgstr ""
+
+msgid ""
+"Per-instance uniform values can also be set at run-time using :ref:"
+"`set_instance_shader_parameter "
+"<class_GeometryInstance3D_method_set_instance_shader_parameter>` method on a "
+"node that inherits from :ref:`class_GeometryInstance3D`:"
+msgstr ""
+
+msgid ""
+"When using per-instance uniforms, there are some restrictions you should be "
+"aware of:"
+msgstr ""
+
+msgid ""
+"**Per-instance uniforms do not support textures**, only regular scalar and "
+"vector types. As a workaround, you can pass a texture array as a regular "
+"uniform, then pass the index of the texture to be drawn using a per-instance "
+"uniform."
+msgstr ""
+
+msgid "There is a practical maximum limit of 16 instance uniforms per shader."
+msgstr ""
+
+msgid ""
+"If your mesh uses multiple materials, the parameters for the first mesh "
+"material found will \"win\" over the subsequent ones, unless they have the "
+"same name, index *and* type. In this case, all parameters are affected "
+"correctly."
+msgstr ""
+
+msgid ""
+"If you run into the above situation, you can avoid clashes by manually "
+"specifying the index (0-15) of the instance uniform by using the "
+"``instance_index`` hint:"
+msgstr ""
+
+msgid "Built-in variables"
+msgstr "内置变量"
+
+#, fuzzy
+msgid ""
+"A large number of built-in variables are available, like ``UV``, ``COLOR`` "
+"and ``VERTEX``. What variables are available depends on the type of shader "
+"(``spatial``, ``canvas_item`` or ``particle``) and the function used "
+"(``vertex``, ``fragment`` or ``light``). For a list of the built-in "
+"variables that are available, please see the corresponding pages:"
+msgstr ""
+"有大量类似 ``UV`` 、 ``COLOR`` 、 ``VERTEX`` 的内置变量可用。具体有哪些变量可"
+"用取决于着色器的类型（ ``spatial`` 、 ``canvas_item`` 以及 ``particle`` ）和"
+"所在的函数（ ``vertex`` 、 ``fragment`` 以及 ``light`` ）。可用的内置变量列表"
+"见对应的页面："
+
+msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
+
+msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`画布物品着色器 <doc_canvas_item_shader>`"
+
+msgid ":ref:`Particle shaders <doc_particle_shader>`"
+msgstr ":ref:`粒子着色器 <doc_particle_shader>`"
+
+#, fuzzy
+msgid ":ref:`Sky shaders <doc_sky_shader>`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
+
+#, fuzzy
+msgid ":ref:`Fog shaders <doc_fog_shader>`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
+
+msgid "Built-in functions"
+msgstr "内置函数"
+
+msgid ""
+"A large number of built-in functions are supported, conforming to GLSL ES "
+"3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
+"nomenclature is used, it can be scalar or vector."
+msgstr ""
+"支持大量的内置函数, 符合GLSL ES 3.0. 当使用 vec_type (float), vec_int_type, "
+"vec_uint_type, vec_bool_type 命名法时, 它可以是标量或向量."
+
+msgid "Function"
+msgstr "函数"
+
+msgid "Description / Return value"
+msgstr ""
+
+msgid "vec_type **radians** (vec_type degrees)"
+msgstr "vec_type **radians** (vec_type degrees度)"
+
+msgid "Convert degrees to radians."
+msgstr "将度数转换为弧度。"
+
+msgid "vec_type **degrees** (vec_type radians)"
+msgstr "vec_type **degrees** ( vec_type radians弧度)"
+
+msgid "Convert radians to degrees."
+msgstr "将弧度转换为度数。"
+
+msgid "vec_type **sin** (vec_type x)"
+msgstr "vec_type **sin** (vec_type x)"
+
+msgid "Sine."
+msgstr "正弦。"
+
+msgid "vec_type **cos** (vec_type x)"
+msgstr "vec_type **cos** (vec_type x)"
+
+msgid "Cosine."
+msgstr "余弦。"
+
+msgid "vec_type **tan** (vec_type x)"
+msgstr "vec_type **tan** (vec_type x)"
+
+msgid "Tangent."
+msgstr "正切。"
+
+msgid "vec_type **asin** (vec_type x)"
+msgstr "vec_type **asin** (vec_type x)"
+
+msgid "Arcsine."
+msgstr "反正弦。"
+
+msgid "vec_type **acos** (vec_type x)"
+msgstr "vec_type **acos** (vec_type x)"
+
+msgid "Arccosine."
+msgstr "反余弦。"
+
+msgid "vec_type **atan** (vec_type y_over_x)"
+msgstr "vec_type **atan** (vec_type y_over_x)"
+
+msgid "Arctangent."
+msgstr "反正切。"
+
+msgid "vec_type **atan** (vec_type y, vec_type x)"
+msgstr "vec_type **atan** (vec_type y, vec_type x)"
+
+msgid "vec_type **sinh** (vec_type x)"
+msgstr "vec_type **sinh** (vec_type x)"
+
+msgid "Hyperbolic sine."
+msgstr "双曲正弦。"
+
+msgid "vec_type **cosh** (vec_type x)"
+msgstr "vec_type **cosh** (vec_type x)"
+
+msgid "Hyperbolic cosine."
+msgstr "双曲余弦。"
+
+msgid "vec_type **tanh** (vec_type x)"
+msgstr "vec_type **tanh** (vec_type x)"
+
+msgid "Hyperbolic tangent."
+msgstr "双曲正切。"
+
+msgid "vec_type **asinh** (vec_type x)"
+msgstr "vec_type **asinh** (vec_type x)"
+
+msgid "Inverse hyperbolic sine."
+msgstr "反双曲正弦。"
+
+msgid "vec_type **acosh** (vec_type x)"
+msgstr "vec_type **acosh** (vec_type x)"
+
+msgid "Inverse hyperbolic cosine."
+msgstr "反双曲余弦。"
+
+msgid "vec_type **atanh** (vec_type x)"
+msgstr "vec_type **atanh** (vec_type x)"
+
+msgid "Inverse hyperbolic tangent."
+msgstr "反双曲正切。"
+
+msgid "vec_type **pow** (vec_type x, vec_type y)"
+msgstr "vec_type **pow** (vec_type x, vec_type y)"
+
+msgid "Power (undefined if ``x`` < 0 or if ``x`` == 0 and ``y`` <= 0)."
+msgstr "幂（\\ ``x`` < 0 或 ``x`` = 0 且 ``y`` <= 0 时未定义）。"
+
+msgid "vec_type **exp** (vec_type x)"
+msgstr "vec_type **exp** (vec_type x)"
+
+msgid "Base-e exponential."
+msgstr "基数 e 的指数。"
+
+msgid "vec_type **exp2** (vec_type x)"
+msgstr "vec_type **exp2** (vec_type x)"
+
+msgid "Base-2 exponential."
+msgstr "基数 2 的指数。"
+
+msgid "vec_type **log** (vec_type x)"
+msgstr "vec_type **log** (vec_type x)"
+
+msgid "Natural logarithm."
+msgstr "自然对数。"
+
+msgid "vec_type **log2** (vec_type x)"
+msgstr "vec_type **log2** (vec_type x)"
+
+msgid "Base-2 logarithm."
+msgstr "基数 2 的对数。"
+
+msgid "vec_type **sqrt** (vec_type x)"
+msgstr "vec_type **sqrt** (vec_type x)"
+
+msgid "Square root."
+msgstr "平方根。"
+
+msgid "vec_type **inversesqrt** (vec_type x)"
+msgstr "vec_type **inversesqrt** (vec_type x)"
+
+msgid "Inverse square root."
+msgstr "反平方根。"
+
+msgid "vec_type **abs** (vec_type x)"
+msgstr "vec_type **abs** (vec_type x)"
+
+msgid "ivec_type **abs** (ivec_type x)"
+msgstr "ivec_type **abs** (ivec_type x)"
+
+msgid "Absolute value (returns positive value if negative)."
+msgstr ""
+
+msgid "vec_type **sign** (vec_type x)"
+msgstr "vec_type **sign** ( vec_type )"
+
+msgid "ivec_type **sign** (ivec_type x)"
+msgstr "ivec_type **sign** (ivec_type x)"
+
+msgid ""
+"Sign (returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` if zero)."
+msgstr ""
+
+msgid "vec_type **floor** (vec_type x)"
+msgstr "vec_type **floor** (vec_type x)"
+
+msgid "Round to the integer below."
+msgstr "向下舍入为整数。"
+
+msgid "vec_type **round** (vec_type x)"
+msgstr "vec_type **round** (vec_type x)"
+
+msgid "Round to the nearest integer."
+msgstr "舍入到最接近的整数。"
+
+msgid "vec_type **roundEven** (vec_type x)"
+msgstr "vec_type **roundEven** (vec_type x)"
+
+msgid "Round to the nearest even integer."
+msgstr "舍入到最接近的偶数。"
+
+msgid "vec_type **trunc** (vec_type x)"
+msgstr "vec_type **trunc** (vec_type x)"
+
+msgid "Truncation."
+msgstr "截断。"
+
+msgid "vec_type **ceil** (vec_type x)"
+msgstr "vec_type **ceil** (vec_type x)"
+
+msgid "Round to the integer above."
+msgstr "向上舍入为整数。"
+
+msgid "vec_type **fract** (vec_type x)"
+msgstr "vec_type **fract** (vec_type x)"
+
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr ""
+
+msgid "vec_type **mod** (vec_type x, vec_type y)"
+msgstr "vec_type **mod** (vec_type x, vec_type y)"
+
+msgid "vec_type **mod** (vec_type x, float y)"
+msgstr "vec_type **mod** (vec_type x, float y)"
+
+msgid "Modulo (division remainder)."
+msgstr "模（除法余数）。"
+
+msgid "vec_type **modf** (vec_type x, out vec_type i)"
+msgstr "vec_type **modf** (vec_type x, out vec_type i)"
+
+msgid "Fractional of ``x``, with ``i`` as integer part."
+msgstr "``x`` 的小数部分，\\ ``i`` 为整数部分。"
+
+msgid "vec_type  **min** (vec_type a, vec_type b)"
+msgstr "vec_type **min** (vec_type a, vec_type b)"
+
+msgid "Lowest value between ``a`` and ``b``."
+msgstr "``a`` 和 ``b`` 之间的较小值。"
+
+msgid "vec_type  **max** (vec_type a, vec_type b)"
+msgstr "vec_type **max** (vec_type a, vec_type b)"
+
+msgid "Highest value between ``a`` and ``b``."
+msgstr "``a`` 和 ``b`` 之间的较大值。"
+
+msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
+msgstr "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
+
+msgid "Clamp ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr ""
+
+msgid "float **mix** (float a, float b, float c)"
+msgstr "float **mix** (float a, float b, float c)"
+
+msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
+msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
+
+msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
+msgstr "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
+
+msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
+msgstr "根据 ``c`` 在 ``a`` 和 ``b`` 之间进行线性插值。"
+
+msgid "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
+msgstr "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
+
+msgid ""
+"Performs a fused multiply-add operation: ``(a * b + c)`` (faster than doing "
+"it manually)."
+msgstr ""
+
+msgid "vec_type **step** (vec_type a, vec_type b)"
+msgstr "vec_type **step** (vec_type a, vec_type b)"
+
+msgid "``b[i] < a[i] ? 0.0 : 1.0``."
+msgstr "``b[i] < a[i] ? 0.0 : 1.0``\\ 。"
+
+msgid "vec_type **step** (float a, vec_type b)"
+msgstr "vec_type **step** (float a, vec_type b)"
+
+msgid "``b[i] < a ? 0.0 : 1.0``."
+msgstr "``b[i] < a ? 0.0 : 1.0``\\ 。"
+
+msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
+msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
+
+msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
+msgstr "vec_type **smoothstep** (float a, float b, vec_type c)"
+
+msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
+msgstr ""
+
+msgid "bvec_type **isnan** (vec_type x)"
+msgstr "bvec_type **isnan** (vec_type x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``NaN``."
+msgstr "如果标量或向量分量是 ``NaN`` 则返回 ``true``。"
+
+msgid "bvec_type **isinf** (vec_type x)"
+msgstr "bvec_type **isinf** (vec_type x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``INF``."
+msgstr "如果标量或向量分量是 ``INF`` , 则返回 ``true``。"
+
+msgid "ivec_type **floatBitsToInt** (vec_type x)"
+msgstr "ivec_type **floatBitsToInt** (vec_type x)"
+
+msgid "Float->Int bit copying, no conversion."
+msgstr "Float->Int 位复制，无转换。"
+
+msgid "uvec_type **floatBitsToUint** (vec_type x)"
+msgstr "uvec_type **floatBitsToUint** (vec_type x)"
+
+msgid "Float->UInt bit copying, no conversion."
+msgstr "Float->UInt 位复制，无转换。"
+
+msgid "vec_type **intBitsToFloat** (ivec_type x)"
+msgstr "vec_type **intBitsToFloat** (ivec_type x)"
+
+msgid "Int->Float bit copying, no conversion."
+msgstr "Int-> Float 位复制，无转换。"
+
+msgid "vec_type **uintBitsToFloat** (uvec_type x)"
+msgstr "vec_type **uintBitsToFloat** (uvec_type x)"
+
+msgid "UInt->Float bit copying, no conversion."
+msgstr "UInt->Float 位复制，无转换。"
+
+msgid "float **length** (vec_type x)"
+msgstr "float **length** (vec_type x)"
+
+msgid "Vector length."
+msgstr "向量长度。"
+
+msgid "float **distance** (vec_type a, vec_type b)"
+msgstr "float **distance** (vec_type a, vec_type b)"
+
+msgid "Distance between vectors i.e ``length(a - b)``."
+msgstr "向量间距，即 ``length(a - b)``。"
+
+msgid "float **dot** (vec_type a, vec_type b)"
+msgstr "float **dot** (vec_type a, vec_type b)"
+
+msgid "Dot product."
+msgstr "点积。"
+
+msgid "vec3 **cross** (vec3 a, vec3 b)"
+msgstr "vec3 **cross** (vec3 a, vec3 b)"
+
+msgid "Cross product."
+msgstr "叉积。"
+
+msgid "vec_type **normalize** (vec_type x)"
+msgstr "vec_type **normalize** (vec_type x)"
+
+msgid "Normalize to unit length."
+msgstr "标准化为单位长度。"
+
+msgid "vec3 **reflect** (vec3 I, vec3 N)"
+msgstr "vec3 **reflect** (vec3 I, vec3 N)"
+
+msgid "Reflect."
+msgstr "反射。"
+
+msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
+msgstr "vec3 **refract** (vec3 I, vec3 N, float eta)"
+
+msgid "Refract."
+msgstr "折射。"
+
+msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
+msgstr "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
+
+msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
+msgstr "如果 ``dot(Nref, I)`` <0, 则返回N, 否则返回-N。"
+
+msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
+msgstr "mat_type **matrixCompMult** (mat_type x, mat_type y)"
+
+msgid "Matrix component multiplication."
+msgstr "矩阵分量乘法。"
+
+msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
+msgstr "mat_type **outerProduct** (vec_type column, vec_type row)"
+
+msgid "Matrix outer product."
+msgstr "矩阵外积。"
+
+msgid "mat_type **transpose** (mat_type m)"
+msgstr "mat_type **transpose** (mat_type m)"
+
+msgid "Transpose matrix."
+msgstr "转置矩阵。"
+
+msgid "float **determinant** (mat_type m)"
+msgstr "float **determinant** (mat_type m)"
+
+msgid "Matrix determinant."
+msgstr "矩阵行列式。"
+
+msgid "mat_type **inverse** (mat_type m)"
+msgstr "mat_type **inverse** (mat_type m)"
+
+msgid "Inverse matrix."
+msgstr "逆矩阵。"
+
+msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
+msgstr "bvec_type **lessThan** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on < int/uint/float vectors."
+msgstr "Bool vector 对比 < int/uint/float vectors。"
+
+msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
+msgstr "bvec_type **greaterThan** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on > int/uint/float vectors."
+msgstr "Bool vector 对比 > int/uint/float vectors。"
+
+msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
+msgstr "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on <= int/uint/float vectors."
+msgstr "Bool vector 对比 <= int/uint/float vectors。"
+
+msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
+msgstr "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on >= int/uint/float vectors."
+msgstr "Bool vector 对比 >= int/uint/float vectors。"
+
+msgid "bvec_type **equal** (vec_type x, vec_type y)"
+msgstr "bvec_type **equal** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on == int/uint/float vectors."
+msgstr "Bool vector 对比 == int/uint/float vectors。"
+
+msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
+msgstr "bvec_type **notEqual** (vec_type x, vec_type y)"
+
+msgid "Bool vector comparison on != int/uint/float vectors."
+msgstr "Bool vector 对比 != int/uint/float vectors。"
+
+msgid "bool **any** (bvec_type x)"
+msgstr "bool **any** (bvec_type x)"
+
+msgid "``true`` if any component is ``true``, ``false`` otherwise."
+msgstr ""
+
+msgid "bool **all** (bvec_type x)"
+msgstr "bool **all** (bvec_type x)"
+
+msgid "``true`` if all components are ``true``, ``false`` otherwise."
+msgstr ""
+
+msgid "bvec_type **not** (bvec_type x)"
+msgstr "bvec_type **not** (bvec_type x)"
+
+msgid "Invert boolean vector."
+msgstr "反转布尔向量。"
+
+msgid "ivec2 **textureSize** (gsampler2D s, int lod)"
+msgstr "ivec2 **textureSize** (gsampler2D s, int lod)"
+
+msgid "ivec3 **textureSize** (gsampler2DArray s, int lod)"
+msgstr "ivec3 **textureSize** (gsampler2DArray s, int lod)"
+
+msgid "ivec3 **textureSize** (gsampler3D s, int lod)"
+msgstr "ivec3 **textureSize** (gsampler3D s, int lod)"
+
+msgid "ivec2 **textureSize** (samplerCube s, int lod)"
+msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
+
+msgid "ivec2 **textureSize** (samplerCubeArray s, int lod)"
+msgstr "ivec2 **textureSize** (samplerCubeArray s, int lod)"
+
+msgid "Get the size of a texture."
+msgstr "获取纹理的大小。"
+
+msgid ""
+"The LOD defines which mipmap level is used. An LOD value of ``0`` will use "
+"the full resolution texture."
+msgstr ""
+
+msgid "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
+msgstr "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
+
+msgid "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
+msgstr "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
+
+msgid "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
+msgstr "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
+
+msgid "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
+msgstr "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
+
+msgid ""
+"Compute the level-of-detail that would be used to sample from a texture. The "
+"``x`` component of the resulted value is the mipmap array that would be "
+"accessed. The ``y`` component is computed level-of-detail relative to the "
+"base level (regardless of the mipmap levels of the texture)."
+msgstr ""
+
+msgid "int **textureQueryLevels** (gsampler2D s)"
+msgstr "int **textureQueryLevels** (gsampler2D s)"
+
+msgid "int **textureQueryLevels** (gsampler2DArray s)"
+msgstr "int **textureQueryLevels** (gsampler2DArray s)"
+
+msgid "int **textureQueryLevels** (gsampler3D s)"
+msgstr "int **textureQueryLevels** (gsampler3D s)"
+
+msgid "int **textureQueryLevels** (samplerCube s)"
+msgstr "int **textureQueryLevels** (samplerCube s)"
+
+msgid "Get the number of accessible mipmap levels of a texture."
+msgstr "获取cubemap纹理的大小。"
+
+msgid ""
+"If the texture is unassigned to a sampler, ``1`` is returned (Godot always "
+"internally assigns a texture even to an empty sampler)."
+msgstr ""
+
+msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
+msgstr "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
+
+msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
+msgstr "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
+
+msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
+msgstr "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
+
+msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
+msgstr "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
+
+msgid "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
+msgstr "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
+
+msgid "Perform a texture read."
+msgstr "执行纹理读取。"
+
+msgid "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
+
+msgid "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
+
+msgid "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
+
+msgid "Perform a texture read with projection."
+msgstr "执行带投影的纹理读取。"
+
+msgid "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
+
+msgid "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
+
+msgid "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
+
+msgid "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
+msgstr "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
+
+msgid "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
+msgstr "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
+
+msgid "Perform a texture read at custom mipmap."
+msgstr "在自定义 mipmap 上执行纹理读取。"
+
+msgid ""
+"The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
+"the full resolution texture. If the texture lacks mipmaps, all LOD values "
+"will act like ``0.0``."
+msgstr ""
+
+msgid "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
+
+msgid "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
+
+msgid "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
+
+msgid "Performs a texture read with projection/LOD."
+msgstr "执行带投影/LOD的2D纹理读取。"
+
+msgid "gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+"gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid "gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
+
+msgid "vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+"vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with explicit gradients."
+msgstr "执行带显式渐变的纹理读取。"
+
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+"gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
+
+#, fuzzy
+msgid ""
+"Performs a texture read with projection/LOD and with explicit gradients."
+msgstr "执行带投影/LOD、带显式渐变的纹理读取。"
+
+msgid "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
+
+msgid "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
+
+msgid "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
+
+msgid "Fetches a single texel using integer coordinates."
+msgstr "使用整数坐标获取单个纹素。"
+
+msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
+msgstr "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
+
+msgid "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
+msgstr "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
+
+msgid "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
+msgstr "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
+
+msgid ""
+"Gathers four texels from a texture. Use ``comps`` within range of 0..3 to "
+"define which component (x, y, z, w) is returned. If ``comps`` is not "
+"provided: 0 (or x-component) is used."
+msgstr ""
+
+msgid "vec_type **dFdx** (vec_type p)"
+msgstr "vec_type **dFdx** (vec_type p)"
+
+msgid ""
+"Derivative in ``x`` using local differencing. Internally, can use either "
+"``dFdxCoarse`` or ``dFdxFine``, but the decision for which to use is made by "
+"the GPU driver."
+msgstr ""
+
+msgid "vec_type **dFdxCoarse** (vec_type p)"
+msgstr "vec_type **dFdxCoarse** (vec_type p)"
+
+msgid ""
+"Calculates derivative with respect to ``x`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment "
+"neighbour(s), and will possibly, but not necessarily, include the value for "
+"the current fragment. This function is not available on ``gl_compatibility`` "
+"profile."
+msgstr ""
+
+msgid "vec_type **dFdxFine** (vec_type p)"
+msgstr "vec_type **dFdxFine** (vec_type p)"
+
+msgid ""
+"Calculates derivative with respect to ``x`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment and its "
+"immediate neighbour(s). This function is not available on "
+"``gl_compatibility`` profile."
+msgstr ""
+
+msgid "vec_type **dFdy** (vec_type p)"
+msgstr "vec_type **dFdy** (vec_type p)"
+
+msgid ""
+"Derivative in ``y`` using local differencing. Internally, can use either "
+"``dFdyCoarse`` or ``dFdyFine``, but the decision for which to use is made by "
+"the GPU driver."
+msgstr ""
+
+msgid "vec_type **dFdyCoarse** (vec_type p)"
+msgstr "vec_type **dFdyCoarse** (vec_type p)"
+
+msgid ""
+"Calculates derivative with respect to ``y`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment "
+"neighbour(s), and will possibly, but not necessarily, include the value for "
+"the current fragment. This function is not available on ``gl_compatibility`` "
+"profile."
+msgstr ""
+
+msgid "vec_type **dFdyFine** (vec_type p)"
+msgstr "vec_type **dFdyFine** (vec_type p)"
+
+msgid ""
+"Calculates derivative with respect to ``y`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment and its "
+"immediate neighbour(s). This function is not available on "
+"``gl_compatibility`` profile."
+msgstr ""
+
+msgid "vec_type **fwidth** (vec_type p)"
+msgstr "vec_type **fwidth** (vec_type p)"
+
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdx(p)) + abs(dFdy(p))``."
+msgstr ""
+
+msgid "vec_type **fwidthCoarse** (vec_type p)"
+msgstr "vec_type **fwidthCoarse** (vec_type p)"
+
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``. This function is not "
+"available on ``gl_compatibility`` profile."
+msgstr ""
+
+msgid "vec_type **fwidthFine** (vec_type p)"
+msgstr "vec_type **fwidthFine** (vec_type p)"
+
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdxFine(p)) + abs(dFdyFine(p))``. This function is not "
+"available on ``gl_compatibility`` profile."
+msgstr ""
+
+msgid "uint **packHalf2x16** (vec2 v)"
+msgstr "uint **packHalf2x16** (vec2 v)"
+
+msgid "vec2 **unpackHalf2x16** (uint v)"
+msgstr "vec2 **unpackHalf2x16** (uint v)"
+
+msgid ""
+"Convert two 32-bit floating-point numbers into 16-bit and pack them into a "
+"32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packUnorm2x16** (vec2 v)"
+msgstr "uint **packUnorm2x16** (vec2 v)"
+
+msgid "vec2 **unpackUnorm2x16** (uint v)"
+msgstr "vec2 **unpackUnorm2x16** (uint v)"
+
+msgid ""
+"Convert two 32-bit floating-point numbers (clamped within 0..1 range) into "
+"16-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packSnorm2x16** (vec2 v)"
+msgstr "uint **packSnorm2x16** (vec2 v)"
+
+msgid "vec2 **unpackSnorm2x16** (uint v)"
+msgstr "vec2 **unpackSnorm2x16** (uint v)"
+
+msgid ""
+"Convert two 32-bit floating-point numbers (clamped within -1..1 range) into "
+"16-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packUnorm4x8** (vec4 v)"
+msgstr "uint **packUnorm4x8** (vec4 v)"
+
+msgid "vec4 **unpackUnorm4x8** (uint v)"
+msgstr "vec4 **unpackUnorm4x8** (uint v)"
+
+msgid ""
+"Convert four 32-bit floating-point numbers (clamped within 0..1 range) into "
+"8-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packSnorm4x8** (vec4 v)"
+msgstr "uint **packSnorm4x8** (vec4 v)"
+
+msgid "vec4 **unpackSnorm4x8** (uint v)"
+msgstr "vec4 **unpackSnorm4x8** (uint v)"
+
+msgid ""
+"Convert four 32-bit floating-point numbers (clamped within -1..1 range) into "
+"8-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
+msgstr "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
+
+msgid "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
+msgstr "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
+
+msgid "Extracts a range of bits from an integer."
+msgstr ""
+
+msgid ""
+"ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
+"int bits)"
+msgstr ""
+"ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
+"int bits)"
+
+msgid ""
+"uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
+"int bits)"
+msgstr ""
+"uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
+"int bits)"
+
+msgid "Insert a range of bits into an integer."
+msgstr ""
+
+msgid "ivec_type **bitfieldReverse** (ivec_type value)"
+msgstr "ivec_type **bitfieldReverse** (ivec_type value)"
+
+msgid "uvec_type **bitfieldReverse** (uvec_type value)"
+msgstr "uvec_type **bitfieldReverse** (uvec_type value)"
+
+#, fuzzy
+msgid "Reverse the order of bits in an integer."
+msgstr "返回整数除法的余数。"
+
+msgid "ivec_type **bitCount** (ivec_type value)"
+msgstr "ivec_type **bitCount** (ivec_type value)"
+
+msgid "uvec_type **bitCount** (uvec_type value)"
+msgstr "uvec_type **bitCount** (uvec_type value)"
+
+msgid "Counts the number of 1 bits in an integer."
+msgstr ""
+
+msgid "ivec_type **findLSB** (ivec_type value)"
+msgstr "ivec_type **findLSB** (ivec_type value)"
+
+msgid "uvec_type **findLSB** (uvec_type value)"
+msgstr "uvec_type **findLSB** (uvec_type value)"
+
+msgid "Find the index of the least significant bit set to 1 in an integer."
+msgstr ""
+
+msgid "ivec_type **findMSB** (ivec_type value)"
+msgstr "ivec_type **findMSB** (ivec_type value)"
+
+msgid "uvec_type **findMSB** (uvec_type value)"
+msgstr "uvec_type **findMSB** (uvec_type value)"
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr ""
+
+msgid ""
+"void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
+"ivec_type lsb)"
+msgstr ""
+"void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
+"ivec_type lsb)"
+
+msgid ""
+"void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
+"uvec_type lsb)"
+msgstr ""
+"void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
+"uvec_type lsb)"
+
+msgid ""
+"Multiplies two 32-bit numbers and produce a 64-bit result. ``x`` - the first "
+"number. ``y`` - the second number. ``msb`` - will contain the most "
+"significant bits. ``lsb`` - will contain the least significant bits."
+msgstr ""
+
+msgid "uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
+msgstr ""
+"uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
+
+msgid "Adds two unsigned integers and generates carry."
+msgstr ""
+
+msgid ""
+"uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
+msgstr ""
+"uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
+
+msgid "Subtracts two unsigned integers and generates borrow."
+msgstr ""
+
+msgid "vec_type **ldexp** (vec_type x, out ivec_type exp)"
+msgstr "vec_type **ldexp** (vec_type x, out ivec_type exp)"
+
+msgid "Assemble a floating-point number from a value and exponent."
+msgstr ""
+
+msgid ""
+"If this product is too large to be represented in the floating-point type "
+"the result is undefined."
+msgstr ""
+
+msgid "vec_type **frexp** (vec_type x, out ivec_type exp)"
+msgstr "vec_type **frexp** (vec_type x, out ivec_type exp)"
+
+msgid ""
+"Splits a floating-point number(``x``) into significand (in the range of "
+"[0.5, 1.0]) and an integral exponent."
+msgstr ""
+
+msgid ""
+"For ``x`` equals zero the significand and exponent are both zero. For ``x`` "
+"of infinity or NaN, the results are undefined."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:4
+msgid "Handling quit requests"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:7
+msgid "Quitting"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:9
+msgid "Most platforms have the option to request the application to quit. On desktops, this is usually done with the \"x\" icon on the window title bar. On Android, the back button is used to quit when on the main screen (and to go back otherwise)."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:15
+msgid "Handling the notification"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:17
+msgid "On desktop and web platforms, :ref:`Node <class_Node>` receives a special ``NOTIFICATION_WM_CLOSE_REQUEST`` notification when quitting is requested from the window manager."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:21
+msgid "On Android, ``NOTIFICATION_WM_GO_BACK_REQUEST`` is sent instead. Pressing the Back button will exit the application if **Application > Config > Quit On Go Back** is checked in the Project Settings (which is the default)."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:28
+msgid "``NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS devices don't have a physical Back button."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:31
+msgid "Handling the notification is done as follows (on any node):"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:48
+msgid "When developing mobile apps, quitting is not desired unless the user is on the main screen, so the behavior can be changed."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:51
+msgid "It is important to note that by default, Godot apps have the built-in behavior to quit when quit is requested from the window manager. This can be changed, so that the user can take care of the complete quitting procedure:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:66
+msgid "Sending your own quit notification"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:68
+msgid "While forcing the application to close can be done by calling :ref:`SceneTree.quit <class_SceneTree_method_quit>`, doing so will not send the ``NOTIFICATION_WM_CLOSE_REQUEST`` to the nodes in the scene tree. Quitting by calling :ref:`SceneTree.quit <class_SceneTree_method_quit>` will not allow custom actions to complete (such as saving, confirming the quit, or debugging), even if you try to delay the line that forces the quit."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:75
+msgid "Instead, if you want to notify the nodes in the scene tree about the upcoming program termination, you should send the notification yourself:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/handling_quit_requests.rst:87
+msgid "Sending this notification will inform all nodes about the program termination, but will not terminate the program itself *unlike in 3.X*. In order to achieve the previous behavior, :ref:`SceneTree.quit <class_SceneTree_method_quit>` should be called after the notification."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using MultiMeshInstance3D"
+msgstr "Verwenden von MultiMeshInstance3D"
+
+msgid "Introduction"
+msgstr "Einführung"
+
+msgid ""
+"In a normal scenario, you would use a :ref:`MeshInstance3D "
+"<class_MeshInstance3D>` node to display a 3D mesh like a human model for the "
+"main character, but in some cases, you would like to create multiple "
+"instances of the same mesh in a scene. You *could* duplicate the same node "
+"multiple times and adjust the transforms manually. This may be a tedious "
+"process and the result may look mechanical. Also, this method is not "
+"conducive to rapid iterations. :ref:`MultiMeshInstance3D "
+"<class_MultiMeshInstance3D>` is one of the possible solutions to this "
+"problem."
+msgstr ""
+"In einem normalen Szenario würden Sie einen :ref:`MeshInstance3D "
+"<class_MeshInstance3D>`-Node verwenden, um ein 3D-Mesh wie ein menschliches "
+"Modell für den Hauptcharakter darzustellen, aber in manchen Fällen möchten "
+"Sie mehrere Instanzen desselben Mesh in einer Szene erstellen. Sie *könnten* "
+"denselben Node mehrfach duplizieren und die Transformationen manuell "
+"anpassen. Dies kann ein langwieriger Prozess sein und das Ergebnis kann "
+"mechanisch aussehen. Außerdem ist diese Methode für schnelle Iterationen "
+"nicht förderlich. :ref:`MultiMeshInstance3D <class_MultiMeshInstance3D>` ist "
+"eine der möglichen Lösungen für dieses Problem."
+
+msgid ""
+"MultiMeshInstance3D, as the name suggests, creates multiple copies of a "
+"MeshInstance over a surface of a specific mesh. An example would be having a "
+"tree mesh populate a landscape mesh with trees of random scales and "
+"orientations."
+msgstr ""
+"MultiMeshInstance3D erstellt, wie der Name schon sagt, mehrere Kopien einer "
+"MeshInstance über einer Oberfläche eines bestimmten Mesh. Ein Beispiel wäre "
+"ein Baum-Mesh, das ein Landschafts-Mesh mit Bäumen in zufälligen "
+"Größenordnungen und Ausrichtungen bevölkert."
+
+msgid "Setting up the nodes"
+msgstr "Einrichten der Nodes"
+
+msgid ""
+"The basic setup requires three nodes: the MultiMeshInstance3D node and two "
+"MeshInstance3D nodes."
+msgstr ""
+"Die Grundeinstellung erfordert drei Nodes: den MultiMeshInstance3D-Node und "
+"zwei MeshInstance3D-Nodes."
+
+msgid ""
+"One node is used as the target, the surface mesh that you want to place "
+"multiple meshes on. In the tree example, this would be the landscape."
+msgstr ""
+"Ein Node wird als Ziel verwendet, das Oberflächen-Mesh, auf dem Sie mehrere "
+"Meshes platzieren möchten. Im Beispiel des Baums wäre dies die Landschaft."
+
+msgid ""
+"The other node is used as the source, the mesh that you want to have "
+"duplicated. In the tree case, this would be the tree itself."
+msgstr ""
+"Der andere Node wird als Quelle verwendet, also das Mesh, das dupliziert "
+"werden soll. Im Fall des Baums wäre dies der Baum selbst."
+
+msgid ""
+"In our example, we would use a :ref:`Node3D <class_Node3D>` node as the root "
+"node of the scene. Your scene tree would look like this:"
+msgstr ""
+"In unserem Beispiel würden wir einen :ref:`Node3D <class_Node3D>` Node als "
+"Root-Node der Szene verwenden. Ihr Szenenbaum würde wie folgt aussehen:"
+
+msgid "For simplicity's sake, this tutorial uses built-in primitives."
+msgstr ""
+"Der Einfachheit halber werden in diesem Tutorial Built-in-Primitive "
+"verwendet."
+
+msgid ""
+"Now you have everything ready. Select the MultiMeshInstance3D node and look "
+"at the toolbar, you should see an extra button called ``MultiMesh`` next to "
+"``View``. Click it and select *Populate surface* in the dropdown menu. A new "
+"window titled *Populate MultiMesh* will pop up."
+msgstr ""
+"Nun haben Sie alles vorbereitet. Wählen Sie den MultiMeshInstance3D-Node und "
+"schauen Sie sich die Toolbar an, Sie sollten einen zusätzlichen Button "
+"namens ``MultiMesh`` neben ``Ansicht`` sehen. Klicken Sie darauf und wählen "
+"Sie *Oberfläche füllen* im Dropdown-Menü. Es öffnet sich ein neues Fenster "
+"mit dem Titel *MultiMesh füllen*."
+
+msgid "MultiMesh settings"
+msgstr "MultiMesh-Einstellungen"
+
+msgid "Below are descriptions of the options."
+msgstr "Nachfolgend finden Sie Beschreibungen der Optionen."
+
+msgid "Target Surface"
+msgstr "Ziel-Oberfläche"
+
+msgid ""
+"The mesh used as the target surface on which to place copies of your source "
+"mesh."
+msgstr ""
+"Das Mesh, das als Ziel-Oberfläche für das Platzieren von Kopien Ihres Quell-"
+"Meshs verwendet wird."
+
+msgid "Source Mesh"
+msgstr "Quell-Mesh"
+
+msgid "The mesh you want duplicated on the target surface."
+msgstr "Das Mesh, das Sie auf der Ziel-Oberfläche duplizieren möchten."
+
+msgid "Mesh Up Axis"
+msgstr "Aufwärts-Achse des Meshs"
+
+msgid "The axis used as the up axis of the source mesh."
+msgstr "Die Achse, die als Aufwärts-Achse des Quell-Meshes verwendet wird."
+
+msgid "Random Rotation"
+msgstr "Zufällige Rotation"
+
+msgid "Randomizing the rotation around the up axis of the source mesh."
+msgstr "Zufällige Rotation um die Aufwärts-Achse des Quell-Meshes."
+
+msgid "Random Tilt"
+msgstr "Zufälliges Kippen"
+
+msgid "Randomizing the overall rotation of the source mesh."
+msgstr "Zufällige Gesamtrotation des Quell-Meshes."
+
+msgid "Random Scale"
+msgstr "Zufälliges Skalieren"
+
+msgid "Randomizing the scale of the source mesh."
+msgstr "Zufällige Skalierung des Quell-Meshes."
+
+msgid "Scale"
+msgstr "Skalierung"
+
+msgid ""
+"The scale of the source mesh that will be placed over the target surface."
+msgstr ""
+"Die Skalierung des Quell-Meshes, das auf der Ziel-Oberfläche platziert wird."
+
+msgid "Amount"
+msgstr "Menge"
+
+msgid "The amount of mesh instances placed over the target surface."
+msgstr "Die Menge der auf der Ziel-Oberfläche platzierten Mesh-Instanzen."
+
+msgid ""
+"Select the target surface. In the tree case, this should be the landscape "
+"node. The source mesh should be the tree node. Adjust the other parameters "
+"according to your preference. Press ``Populate`` and multiple copies of the "
+"source mesh will be placed over the target mesh. If you are satisfied with "
+"the result, you can delete the mesh instance used as the source mesh."
+msgstr ""
+"Wählen Sie die Zielfläche aus. Im Fall der Bäume sollte dies der Landschafts-"
+"Node sein. Das Quell-Mesh sollte der Baum-Node sein. Passen Sie die anderen "
+"Parameter nach Ihren Wünschen an. Drücken Sie ``Füllen`` und mehrere Kopien "
+"des Quell-Mesh werden auf dem Ziel-Mesh platziert. Wenn Sie mit dem Ergebnis "
+"zufrieden sind, können Sie die als Quell-Mesh verwendete Mesh-Instanz "
+"löschen."
+
+msgid "The end result should look like this:"
+msgstr "Das Endergebnis sollte folgendermaßen aussehen:"
+
+msgid ""
+"To change the result, repeat the previous steps with different parameters."
+msgstr ""
+"Um das Ergebnis zu ändern, wiederholen Sie die vorherigen Schritte mit "
+"verschiedenen Parametern."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for iOS"
+msgstr "Kompilieren für iOS"
+
+msgid ""
+"This page describes how to compile iOS export template binaries from source. "
+"If you're looking to export your project to iOS instead, read :ref:"
+"`doc_exporting_for_ios`."
+msgstr ""
+"Diese Seite beschreibt, wie man iOS-Exportvorlagen-Binärdateien aus dem "
+"Quellcode kompiliert. Wenn Sie Ihr Projekt stattdessen für iOS exportieren "
+"möchten, lesen Sie :ref:`doc_exporting_for_ios`."
+
+msgid "Requirements"
+msgstr "Anforderungen"
+
+msgid "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
+
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_-Buildsystem."
+
+#, fuzzy
+msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
+msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (oder die "
+"leichtgewichtigeren Kommandozeilentools für Xcode)."
+
+msgid "If you are building the ``master`` branch:"
+msgstr "Wenn Sie den ``master``-Branch kompilieren:"
+
+msgid ""
+"Download and follow README instructions to build a static ``.xcframework`` "
+"from the `MoltenVK SDK <https://github.com/KhronosGroup/MoltenVK#fetching-"
+"moltenvk-source-code>`__."
+msgstr ""
+"Laden Sie ein statisches ``.xcframework`` aus dem `MoltenVK SDK <https://"
+"github.com/KhronosGroup/MoltenVK#fetching-moltenvk-source-code>`__ herunter "
+"und folgen Sie den README-Anweisungen, um es zu bauen."
+
+msgid ""
+"If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
+"SCons using the following command::"
+msgstr ""
+"Wenn Sie `Homebrew <https://brew.sh/>`_ installiert haben, können Sie SCons "
+"einfach mit dem folgenden Befehl installieren::"
+
+msgid ""
+"Installing Homebrew will also fetch the Command Line Tools for Xcode "
+"automatically if you don't have them already."
+msgstr ""
+"Bei der Installation von Homebrew werden auch automatisch die Kommandozeilen-"
+"Tools für Xcode installiert, falls Sie diese noch nicht haben."
+
+msgid ""
+"Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
+"you can easily install SCons using the following command::"
+msgstr ""
+"Wenn Sie `MacPorts <https://www.macports.org/>`_ installiert haben, können "
+"Sie SCons einfach mit dem folgenden Befehl installieren::"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+"Um den Godot-Quellcode zum Kompilieren zu erhalten, siehe :ref:"
+"`doc_getting_source`."
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"Eine allgemeine Übersicht über die Verwendung von SCons für Godot finden Sie "
+"unter :ref:`doc_introduction_to_the_buildsystem`."
+
+msgid "Compiling"
+msgstr "Kompilieren"
+
+msgid "Open a Terminal, go to the root dir of the engine source code and type:"
+msgstr ""
+"Öffnen Sie ein Terminal, wechseln in das Stammverzeichnis des Engine-"
+"Quellcodes und geben Folgendes ein:"
+
+msgid "for a debug build, or:"
+msgstr "... für einen Debug-Build, oder:"
+
+msgid ""
+"for a release build (check ``platform/ios/detect.py`` for the compiler flags "
+"used for each configuration)."
+msgstr ""
+"... für einen Release-Build (siehe ``platform/ios/detect.py`` für die "
+"Compiler-Flags, die für jede Konfiguration verwendet werden)."
+
+msgid "Alternatively, you can run"
+msgstr "Alternativ können Sie"
+
+msgid "for a Simulator libraries."
+msgstr "... für eine Simulator-Bibliothek ausführen."
+
+msgid ""
+"To create an Xcode project like in the official builds, you need to use the "
+"template located in ``misc/dist/ios_xcode``. The release and debug libraries "
+"should be placed in ``libgodot.ios.debug.xcframework`` and ``libgodot.ios."
+"release.xcframework`` respectively."
+msgstr ""
+"Um ein Xcode-Projekt wie in den offiziellen Builds zu erstellen, müssen Sie "
+"die Vorlage verwenden, die sich in ``misc/dist/ios_xcode`` befindet. Die "
+"Release- und Debug-Bibliotheken sollten in ``libgodot.ios.debug."
+"xcframework`` bzw. ``libgodot.ios.release.xcframework`` abgelegt werden."
+
+msgid ""
+"The MoltenVK static ``.xcframework`` folder must also be placed in the "
+"``ios_xcode`` folder once it has been created."
+msgstr ""
+"Der statische MoltenVK-Ordner ``.xcframework`` muss ebenfalls in den "
+"``ios_xcode``-Ordner gelegt werden, sobald er erstellt wurde."
+
+msgid "Run"
+msgstr "Ausführen"
+
+msgid ""
+"To run on a device or simulator, follow these instructions: :ref:"
+"`doc_exporting_for_ios`."
+msgstr ""
+"Um auf einem Gerät oder Simulator ausgeführt zu werden, befolgen Sie die "
+"folgenden Anweisungen: :ref:`doc_exporting_for_ios`."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

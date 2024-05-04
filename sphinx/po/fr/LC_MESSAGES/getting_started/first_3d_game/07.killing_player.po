@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Killing the player"
+msgstr "Tuer le joueur"
+
+msgid ""
+"We can kill enemies by jumping on them, but the player still can't die. "
+"Let's fix this."
+msgstr ""
+"Nous pouvons tuer les ennemis en leur sautant dessus, mais le joueur ne peut "
+"pas encore mourir. Réglons ça."
+
+#, fuzzy
+msgid ""
+"We want to detect being hit by an enemy differently from squashing them. We "
+"want the player to die when they're moving on the floor, but not if they're "
+"in the air. We could use vector math to distinguish the two kinds of "
+"collisions. Instead, though, we will use an :ref:`Area3D <class_Area3D>` "
+"node, which works well for hitboxes."
+msgstr ""
+"Nous voulons que le fait d'être touché par un ennemi soit détecté "
+"différemment de l'écrasement. Nous voulons que le joueur meure quand il se "
+"déplace sur le sol, mais pas quand il est dans les airs. Nous pourrions "
+"utiliser des maths vectorielles pour distinguer les deux types de "
+"collisions. Mais à la place, nous utiliserons un nœud *Area*, qui fonctionne "
+"bien pour les hitboxes."
+
+msgid "Hitbox with the Area node"
+msgstr "Hitbox avec le nœud Area"
+
+#, fuzzy
+msgid ""
+"Head back to the ``player.tscn`` scene and add a new child node :ref:`Area3D "
+"<class_Area3D>`. Name it ``MobDetector`` Add a :ref:`CollisionShape3D "
+"<class_CollisionShape3D>` node as a child of it."
+msgstr ""
+"Retournez dans la scène *Player* et ajoutez un nouveau nœud *Area*. Nommez-"
+"le *MobDetector*. Ajoutez-lui un nœud *CollisionShape* comme enfant."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid "In the *Inspector*, assign a cylinder shape to it."
+msgstr "Dans l'*Inspecteur*, assignez-lui une forme de cylindre."
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid "image1"
+msgstr "image1"
+
+msgid ""
+"Here is a trick you can use to make the collisions only happen when the "
+"player is on the ground or close to it. You can reduce the cylinder's height "
+"and move it up to the top of the character. This way, when the player jumps, "
+"the shape will be too high up for the enemies to collide with it."
+msgstr ""
+"Voici une astuce que vous pouvez utiliser pour que les collisions ne se "
+"produisent que lorsque le joueur est au sol ou à proximité. Vous pouvez "
+"réduire la hauteur du cylindre et le déplacer en haut du personnage. De "
+"cette façon, quand le joueur saute, la forme sera trop haute pour que les "
+"ennemis puissent entrer en collision avec elle."
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "image2"
+msgstr "image2"
+
+msgid ""
+"You also want the cylinder to be wider than the sphere. This way, the player "
+"gets hit before colliding and being pushed on top of the monster's collision "
+"box."
+msgstr ""
+"Vous voulez également que le cylindre soit plus large que la sphère. De "
+"cette façon, le joueur se fera toucher avant d'entrer en collision et d'être "
+"poussé au-dessus de la boîte de collision du monstre."
+
+msgid "The wider the cylinder, the more easily the player will get killed."
+msgstr "Plus le cylindre est large, plus le joueur se fera tuer facilement."
+
+#, fuzzy
+msgid ""
+"Next, select the ``MobDetector`` node again, and in the *Inspector*, turn "
+"**off** its *Monitorable* property. This makes it so other physics nodes "
+"cannot detect the area. The complementary *Monitoring* property allows it to "
+"detect collisions. Then, remove the *Collision -> Layer* and set the mask to "
+"the \"enemies\" layer."
+msgstr ""
+"Ensuite, sélectionnez à nouveau le nœud *MobDetector*, et dans "
+"l'*Inspecteur*, désactivez sa propriété *Monitorable*. Ainsi, les autres "
+"nœuds physiques ne pourront pas détecter la zone. La propriété "
+"complémentaire *Monitoring* lui permet de détecter les collisions. Ensuite, "
+"enlevez le *Collision -> Layer* et définissez le masque sur le calque "
+"\"enemies\"."
+
+msgid "|image3|"
+msgstr "|image3|"
+
+msgid "image3"
+msgstr "image3"
+
+msgid ""
+"When areas detect a collision, they emit signals. We're going to connect one "
+"to the ``Player`` node. Select ``MobDetector`` and go to *Inspector*'s "
+"*Node* tab, double-click the ``body_entered`` signal and connect it to the "
+"``Player``"
+msgstr ""
+"Quand les zones détectent une collision, elles émettent des signaux. Nous en "
+"connecterons un au nœud *Player*. Sélectionnez *MobDetector* et allez dans "
+"l'onglet *Nœud* de l'*Inspecteur*, double-cliquez sur le signal "
+"``body_entered`` et connectez-le au *Player*"
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "image4"
+msgstr "image4"
+
+#, fuzzy
+msgid ""
+"The *MobDetector* will emit ``body_entered`` when a :ref:`CharacterBody3D "
+"<class_CharacterBody3D>` or a :ref:`RigidBody3D <class_RigidBody3D>` node "
+"enters it. As it only masks the \"enemies\" physics layers, it will only "
+"detect the ``Mob`` nodes."
+msgstr ""
+"Le *MobDetector* émettera ``body_entered`` quand un nœud *KinematicBody* ou "
+"*RigidBody* entrera dans la zone. Comme le masque ne contient que les "
+"calques physiques des \"enemies\", il détectera seulement les nœuds *Mob*."
+
+msgid ""
+"Code-wise, we're going to do two things: emit a signal we'll later use to "
+"end the game and destroy the player. We can wrap these operations in a "
+"``die()`` function that helps us put a descriptive label on the code."
+msgstr ""
+"Au niveau du code, nous allons faire deux choses : émettre un signal que "
+"nous utiliserons plus tard pour mettre fin au jeu et détruire le joueur. "
+"Nous pouvons envelopper ces opérations dans une fonction ``die()`` qui nous "
+"aide à mettre un terme descriptif sur le code."
+
+#, fuzzy
+msgid ""
+"Try the game again by pressing :kbd:`F5`. If everything is set up correctly, "
+"the character should die when an enemy runs into the collider. Note that "
+"without a ``Player``, the following line"
+msgstr ""
+"Essayez le jeu à nouveau en appuyant sur :kbd:`F5`. Si tout est configuré "
+"correctement, le personnage devrait mourir quand un ennemi lui fonce dessus."
+
+msgid "gives error because there is no $Player!"
+msgstr "donne une erreur car il n'y a pas de $Player !"
+
+#, fuzzy
+msgid ""
+"Also note that the enemy colliding with the player and dying depends on the "
+"size and position of the ``Player`` and the ``Mob``\\ 's collision shapes. "
+"You may need to move them and resize them to achieve a tight game feel."
+msgstr ""
+"Cependant, notez que cela dépend entièrement de la taille et de la position "
+"des formes de collision du *Player* et du *Mob*. Vous devrez peut-être les "
+"déplacer et les redimensionner pour obtenir une meilleure sensation de jeu."
+
+msgid "Ending the game"
+msgstr "Arrêter le jeu"
+
+#, fuzzy
+msgid ""
+"We can use the ``Player``\\ 's ``hit`` signal to end the game. All we need "
+"to do is connect it to the ``Main`` node and stop the ``MobTimer`` in "
+"reaction."
+msgstr ""
+"Nous pouvons utiliser le signal ``hit`` du *Player* pour mettre fin à la "
+"partie. Tout ce que nous avons à faire est de le connecter au nœud *Main* et "
+"d'arrêter le *MobTimer* en réaction."
+
+#, fuzzy
+msgid ""
+"Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, "
+"connect its ``hit`` signal to the ``Main`` node."
+msgstr ""
+"Ouvrez ``Main.tscn``, sélectionnez le nœud *Player*, et dans le dock *Nœud*, "
+"connectez son signal ``hit`` au nœud *Main*."
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid "image5"
+msgstr "image5"
+
+#, fuzzy
+msgid "Get the timer, and stop it, in the ``_on_player_hit()`` function."
+msgstr "Récupérez et arrêtez le timer dans la fonction ``_on_Player_hit()``."
+
+msgid ""
+"If you try the game now, the monsters will stop spawning when you die, and "
+"the remaining ones will leave the screen."
+msgstr ""
+"Si vous essayez le jeu maintenant, les monstres cesseront d'apparaître "
+"lorsque vous mourrez, et ceux qui restent quitteront l'écran."
+
+msgid ""
+"You can pat yourself in the back: you prototyped a complete 3D game, even if "
+"it's still a bit rough."
+msgstr ""
+"Vous pouvez vous féliciter : vous avez réalisé le prototype d'un jeu 3D "
+"complet, même si il est encore un peu brouillon."
+
+msgid ""
+"From there, we'll add a score, the option to retry the game, and you'll see "
+"how you can make the game feel much more alive with minimalistic animations."
+msgstr ""
+"À partir de là, nous ajouterons un score, l'option de réessayer la partie, "
+"et vous verrez comment rendre le jeu beaucoup plus vivant grâce à des "
+"animations minimalistes."
+
+msgid "Code checkpoint"
+msgstr "Point de contrôle du code"
+
+#, fuzzy
+msgid ""
+"Here are the complete scripts for the ``Main``, ``Mob``, and ``Player`` "
+"nodes, for reference. You can use them to compare and check your code."
+msgstr ""
+"Voici les scripts complets pour les nœuds *Main*, *Mob*, et *Player*, pour "
+"référence. Vous pouvez les utiliser pour comparer et vérifier votre code."
+
+#, fuzzy
+msgid "Starting with ``main.gd``."
+msgstr "En commençant par ``Main.gd``."
+
+msgid "Next is ``Mob.gd``."
+msgstr "Le suivant est ``Mob.gd``."
+
+msgid "Finally, the longest script, ``Player.gd``:"
+msgstr "Finalement, le script le plus long, ``Player.gd`` :"
+
+msgid "See you in the next lesson to add the score and the retry option."
+msgstr ""
+"Rendez-vous dans la prochaine leçon pour ajouter le score et l'option pour "
+"rejouer."
+
+msgid "Translation status"
+msgstr "État de la traduction"

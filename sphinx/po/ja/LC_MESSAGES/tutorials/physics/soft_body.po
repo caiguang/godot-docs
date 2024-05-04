@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using SoftBody"
+msgstr "\\ SoftBody"
+
+msgid ""
+"Soft bodies (or *soft-body dynamics*) simulate movement, changing shape and "
+"other physical properties of deformable objects. This can for example be "
+"used to simulate cloth or to create more realistic characters."
+msgstr ""
+"Soft Body(または\\ *Soft Bodyダイナミクス* )は、変形可能なオブジェクトの動"
+"き、形状の変化、その他の物理的特性をシミュレートします。 これは、たとえば、布"
+"をシミュレートしたり、よりリアルなキャラクターを作成するために使用できます。"
+
+msgid "Basic set-up"
+msgstr "基本的なセットアップ"
+
+#, fuzzy
+msgid ""
+"A :ref:`SoftBody3D <class_SoftBody3D>` node is used for soft body "
+"simulations."
+msgstr ""
+":ref:`SoftBody <class_SoftBody>` ノードは、ソフトボディのシミュレーションに使"
+"用されます。"
+
+msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
+msgstr "弾力のある立方体を作成して、ソフトボディのセットアップを示します。"
+
+#, fuzzy
+msgid ""
+"Create a new scene with a ``Node3D`` node as root. Then, create a "
+"``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
+"in the inspector and increase the subdivision of the mesh for simulation."
+msgstr ""
+"ルートとして ``Spatial`` ノードを持つ新しいシーンを作成します。 次に、\\ "
+"``Softbody`` ノードを作成します。 インスペクタのノードの ``mesh`` プロパティ"
+"に ``CubeMesh`` を追加し、シミュレーションのためにメッシュの細分割を増やしま"
+"す。"
+
+msgid ""
+"Set the parameters to obtain the type of soft body you aim for. Try to keep "
+"the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
+msgstr ""
+"パラメーターを設定して、目的のソフトボディのタイプを取得します。``Simulation "
+"Precision`` を5以上に維持してください。そうしないと、ソフトボディが破たんする"
+"可能性があります。"
+
+msgid ""
+"Handle some parameters with care, as some value can lead to strange results. "
+"For example, if the shape is not completely closed and you set pressure to "
+"more than 0, the softbody will fly around like a plastic bag under strong "
+"wind."
+msgstr ""
+"一部の値は奇妙な結果につながる可能性があるため、一部のパラメーターは注意して"
+"処理してください。 たとえば、シェイプが完全に閉じられておらず、pressureを0よ"
+"り大きい値に設定すると、ソフトボディは強風の下でビニール袋のように飛び回りま"
+"す。"
+
+msgid "Play the scene to view the simulation."
+msgstr "シーンを再生してシミュレーションを表示します。"
+
+msgid ""
+"To improve the simulation's result, increase the ``Simulation Precision``, "
+"this will give significant improvement at the cost of performance."
+msgstr ""
+"シミュレーションの結果を改善するために、\\ ``Simulation Precision`` を上げる"
+"と、パフォーマンスを犠牲にして大幅に改善されます。"
+
+msgid "Cloak simulation"
+msgstr "マントのシミュレーション"
+
+msgid "Let's make a cloak in the Platformer3D demo."
+msgstr "Platformer3Dのデモでマントを作りましょう。"
+
+#, fuzzy
+msgid ""
+"You can download the Platformer3D demo on `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or `the Asset "
+"Library <https://godotengine.org/asset-library/asset/125>`_."
+msgstr ""
+"Platformer3Dデモは `GitHub <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/platformer>` または `アセットライブラリ <https://"
+"godotengine.org/asset-library/asset/125>`_ でダウンロードできます。"
+
+msgid ""
+"Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
+"``PlaneMesh`` to it."
+msgstr ""
+"``Player`` シーンを開き、\\ ``SoftBody`` ノードを追加して ``PlaneMesh`` を割"
+"り当てます。"
+
+msgid ""
+"Open the ``PlaneMesh`` properties and set the size(x: 0.5 y: 1) then set "
+"``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
+"position. You should end up with something like this:"
+msgstr ""
+"``PlaneMesh`` プロパティを開き、size(x: 0.5 y: 1)を設定し、\\ ``Subdivide "
+"Width`` と``Subdivide Depth`` を5に設定します。\\ ``SoftBody`` の位置を調整し"
+"ます。次のようなことが起きてしまいます:"
+
+msgid "Subdivision generates a more tessellated mesh for better simulations."
+msgstr ""
+"サブディビジョンでは、より優れたシミュレーションのために、よりテッセレーショ"
+"ンされたメッシュが生成されます。"
+
+#, fuzzy
+msgid ""
+"Add a :ref:`BoneAttachment3D <class_BoneAttachment3D>` node under the "
+"skeleton node and select the Neck bone to attach the cloak to the character "
+"skeleton."
+msgstr ""
+"スケルトンノードの下に :ref:`BoneAttachment <class_BoneAttachment>` ノードを"
+"追加し、Neckボーンを選択してマントをキャラクタースケルトンにアタッチします。"
+
+#, fuzzy
+msgid ""
+"``BoneAttachment3D`` node is to attach objects to a bone of a armature. The "
+"attached object will follow the bone's movement, weapon of a character can "
+"be attached this way."
+msgstr ""
+"``BoneAttachment`` ノードは、オブジェクトをアーマチュアのボーンにアタッチしま"
+"す。 アタッチされたオブジェクトはボーンの動きに追従します。キャラクターの武器"
+"はこの方法でアタッチできます。"
+
+msgid ""
+"To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
+msgstr ""
+"ピンジョイントを作成するには、\\ ``SoftBody`` ノードの上の頂点を選択します:"
+
+#, fuzzy
+msgid ""
+"The pinned joints can be found in ``SoftBody``'s ``Attachments`` property, "
+"choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
+"joints, the pinned joints are now attached to the neck."
+msgstr ""
+"ピン留めされたジョイントは ``SoftBody`` の ``Attachments`` プロパティで見つけ"
+"ることができ、ピン留めされた各ジョイントの ``SpatialAttachment`` として "
+"``BoneAttachment`` を選択すると、ピン留めされたジョイントが首(neck)に取り付け"
+"られます。"
+
+msgid ""
+"Last step is to avoid clipping by adding the Kinematic Body `Player` to "
+"``Parent Collision Ignore`` of the ``SoftBody``."
+msgstr ""
+"最後のステップは、\\ ``SoftBody`` の ``Parent Collision Ignore`` にキネマ"
+"ティックボディ ``Player`` を追加して、クリッピングを回避することです。"
+
+msgid "Play the scene and the cloak should simulate correctly."
+msgstr "シーンを再生すると、マントは正しくシミュレートされます。"
+
+msgid ""
+"This covers the basic settings of softbody, experiment with the parameters "
+"to achieve the effect you are aiming for when making your game."
+msgstr ""
+"これは、ソフトボディの基本設定をカバーし、ゲームを作成するときに目標とする効"
+"果を達成するためのパラメーターを実験できます。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

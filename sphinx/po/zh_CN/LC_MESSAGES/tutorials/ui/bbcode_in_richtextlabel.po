@@ -1,0 +1,1340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "BBCode in RichTextLabel"
+msgstr "RichTextLabel 中的 BBCode"
+
+msgid "Introduction"
+msgstr "前言"
+
+#, fuzzy
+msgid ""
+":ref:`class_Label` nodes are great for displaying basic text, but they have "
+"limitations. If you want to change the color of the text, or its alignment, "
+"you can only do that to the entire label. You can't make a part of the text "
+"have another color, or have a part of the text centered. To get around these "
+"limitations, you would use a :ref:`class_RichTextLabel`."
+msgstr ""
+"Label 节点非常适合显示基本文本，但它们有局限性。如果更改文本的颜色或对齐方"
+"式，则该更改会影响标签节点中的所有文本。没法只让一部分文本用一种颜色，或者只"
+"居中一部分文本。要绕过此限制，可以使用 :ref:`class_RichTextLabel` 。"
+
+msgid ""
+":ref:`class_RichTextLabel` allows for complex formatting of text using a "
+"markup syntax or the built-in API. It uses BBCodes for the markup syntax, a "
+"system of tags that designate formatting rules for a part of the text. You "
+"may be familiar with them if you ever used forums (also known as `bulletin "
+"boards`, hence the \"BB\" in \"BBCode\")."
+msgstr ""
+
+msgid ""
+"Unlike Label, RichTextLabel also comes with its own vertical scrollbar. This "
+"scrollbar is automatically displayed if the text does not fit within the "
+"control's size. The scrollbar can be disabled by unchecking the **Scroll "
+"Active** property in the RichTextLabel inspector."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Note that the BBCode tags can also be used to some extent in the XML source "
+"of the class reference. For more information, see :ref:"
+"`doc_class_reference_primer`."
+msgstr ""
+"大部分BBCode标签也可以用在 :ref:`XML 格式的类参考文档 "
+"<doc_updating_the_class_reference>` ."
+
+#, fuzzy
+msgid ""
+"You can see how BBCode in RichTextLabel works in action using the `Rich Text "
+"Label with BBCode demo project <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/gui/rich_text_bbcode>`__."
+msgstr ""
+"如果您更善于通过查看示例学习，可以在\\ `这里 <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
+
+msgid "Using BBCode"
+msgstr "使用 BBCode"
+
+msgid ""
+"By default, :ref:`class_RichTextLabel` functions like a normal :ref:"
+"`class_Label`. It has the :ref:`property_text "
+"<class_RichTextLabel_property_text>` property, which you can edit to have "
+"uniformly formatted text. To be able to use BBCode for rich text formatting, "
+"you need to turn on the BBCode mode by setting :ref:`bbcode_enabled "
+"<class_RichTextLabel_property_bbcode_enabled>`. After that, you can edit "
+"the :ref:`text <class_RichTextLabel_property_text>` property using available "
+"tags. Both properties are located at the top of the inspector after "
+"selecting a RichTextLabel node."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For example, ``BBCode [color=green]test[/color]`` would render the word "
+"\"test\" with a green color."
+msgstr "例如， ``BBCode [color=blue]blue[/color]`` 将会出现蓝色的单词“blue”。"
+
+msgid ""
+"Most BBCodes consist of 3 parts: the opening tag, the content and the "
+"closing tag. The opening tag delimits the start of the formatted part, and "
+"can also carry some configuration options. Some opening tags, like the "
+"``color`` one shown above, also require a value to work. Other opening tags "
+"may accept multiple options (separated by spaces within the opening tag). "
+"The closing tag delimits the end of the formatted part. In some cases, both "
+"the closing tag and the content can be omitted."
+msgstr ""
+
+msgid ""
+"Unlike BBCode in HTML, leading/trailing whitespace is not removed by a "
+"RichTextLabel upon display. Duplicate spaces are also displayed as-is in the "
+"final output. This means that when displaying a code block in a "
+"RichTextLabel, you don't need to use a preformatted text tag."
+msgstr ""
+
+msgid ""
+"RichTextLabel doesn't support entangled BBCode tags. For example, instead of "
+"using:"
+msgstr ""
+
+msgid "Use:"
+msgstr "请使用："
+
+msgid "Handling user input safely"
+msgstr "安全地处理用户输入"
+
+msgid ""
+"In a scenario where users may freely input text (such as chat in a "
+"multiplayer game), you should make sure users cannot use arbitrary BBCode "
+"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
+"use of formatting, which can be problematic if ``[url]`` tags are handled by "
+"your RichTextLabel (as players may be able to create clickable links to "
+"phishing sites or similar)."
+msgstr ""
+
+msgid ""
+"Using RichTextLabel's ``[lb]`` and/or ``[rb]`` tags, we can replace the "
+"opening and/or closing brackets of any BBCode tag in a message with those "
+"escaped tags. This prevents users from using BBCode that will be parsed as "
+"tags – instead, the BBCode will be displayed as text."
+msgstr ""
+
+msgid ""
+"Example of unescaped user input resulting in BBCode injection (2nd line) and "
+"escaped user input (3rd line)"
+msgstr ""
+
+msgid "The above image was created using the following script:"
+msgstr "创建一个 Node 节点并附加下面的脚本："
+
+msgid "Stripping BBCode tags"
+msgstr "剥离 BBCode 标签"
+
+msgid ""
+"For certain use cases, it can be desired to remove BBCode tags from the "
+"string. This is useful when displaying the RichTextLabel's text in another "
+"Control that does not support BBCode (such as a tooltip):"
+msgstr ""
+
+msgid ""
+"Removing BBCode tags entirely isn't advised for user input, as it can modify "
+"the displayed text without users understanding why part of their message was "
+"removed. :ref:`Escaping user input "
+"<doc_bbcode_in_richtextlabel_handling_user_input_safely>` should be "
+"preferred instead."
+msgstr ""
+
+msgid "Performance"
+msgstr "性能"
+
+msgid ""
+"In most cases, you can use BBCode directly as-is since text formatting is "
+"rarely a heavy task. However, with particularly large RichTextLabels (such "
+"as console logs spanning thousands of lines), you may encounter stuttering "
+"during gameplay when the RichTextLabel's text is updated."
+msgstr ""
+
+#, fuzzy
+msgid "There are several ways to alleviate this:"
+msgstr "有两个主要的方法来缓解条带:"
+
+msgid ""
+"Use the ``append_text()`` function instead of appending to the ``text`` "
+"property. This function will only parse BBCode for the added text, rather "
+"than parsing BBCode from the entire ``text`` property."
+msgstr ""
+
+msgid ""
+"Use ``push_[tag]()`` and ``pop()`` functions to add tags to RichTextLabel "
+"instead of using BBCode."
+msgstr ""
+
+msgid ""
+"Enable the **Threading > Threaded** property in RichTextLabel. This won't "
+"speed up processing, but it will prevent the main thread from blocking, "
+"which avoids stuttering during gameplay. Only enable threading if it's "
+"actually needed in your project, as threading has some overhead."
+msgstr ""
+
+msgid "Using push_[tag]() and pop() functions instead of BBCode"
+msgstr "使用 push_[标签]() 和 pop() 函数代替 BBCode"
+
+msgid ""
+"If you don't want to use BBCode for performance reasons, you can use "
+"functions provided by RichTextLabel to create formatting tags without "
+"writing BBCode in the text."
+msgstr ""
+
+msgid ""
+"Every BBCode tag (including effects) has a ``push_[tag]()`` function (where "
+"``[tag]`` is the tag's name). There are also a few convenience functions "
+"available, such as ``push_bold_italics()`` that combines both "
+"``push_bold()`` and ``push_italics()`` into a single tag. See the :ref:"
+"`RichTextLabel class reference <class_RichTextLabel>` for a complete list of "
+"``push_[tag]()`` functions."
+msgstr ""
+
+msgid ""
+"The ``pop()`` function is used to end *any* tag. Since BBCode is a tag "
+"*stack*, using ``pop()`` will close the most recently started tags first."
+msgstr ""
+
+msgid ""
+"The following script will result in the same visual output as using ``BBCode "
+"[color=green]test [i]example[/i][/color]``:"
+msgstr ""
+
+msgid ""
+"Do **not** set the ``text`` property directly when using formatting "
+"functions. Appending to the ``text`` property will erase all modifications "
+"made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
+"``pop()`` functions."
+msgstr ""
+
+msgid "Reference"
+msgstr "参考"
+
+msgid "Tag"
+msgstr "标签"
+
+msgid "Example"
+msgstr "示例"
+
+msgid "**b**"
+msgstr ""
+
+msgid ""
+"Makes ``{text}`` use the bold (or bold italics) font of ``RichTextLabel``."
+msgstr ""
+
+msgid "``[b]{text}[/b]``"
+msgstr "``[b]{text}[/b]``"
+
+msgid "**i**"
+msgstr ""
+
+msgid ""
+"Makes ``{text}`` use the italics (or bold italics) font of ``RichTextLabel``."
+msgstr ""
+
+msgid "``[i]{text}[/i]``"
+msgstr "``[i]{text}[/i]``"
+
+msgid "**u**"
+msgstr "**u**"
+
+msgid "Makes ``{text}`` underlined."
+msgstr "在 ``{text}`` 上显示下划线。"
+
+msgid "``[u]{text}[/u]``"
+msgstr "``[u]{text}[/u]``"
+
+msgid "**s**"
+msgstr "**s**"
+
+msgid "Makes ``{text}`` strikethrough."
+msgstr "在 ``{text}`` 上显示删除线。"
+
+msgid "``[s]{text}[/s]``"
+msgstr "``[s]{text}[/s]``"
+
+msgid "**code**"
+msgstr "**code**"
+
+msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
+msgstr "让 ``{text}`` 使用 ``RichTextLabel`` 的等宽字体。"
+
+msgid "``[code]{text}[/code]``"
+msgstr "``[code]{text}[/code]``"
+
+msgid "**p**"
+msgstr "**p**"
+
+msgid ""
+"Adds new paragraph with ``{text}``. Supports configuration options, see :ref:"
+"`doc_bbcode_in_richtextlabel_paragraph_options`."
+msgstr ""
+
+msgid "``[p]{text}[/p]``"
+msgstr "``[p]{text}[/p]``"
+
+#, fuzzy
+msgid "``[p {options}]{text}[/p]``"
+msgstr "``[i]{text}[/i]``"
+
+msgid "**center**"
+msgstr "**center**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally centered."
+msgstr "使得 {text} 水平居中."
+
+msgid "Same as ``[p align=center]``."
+msgstr ""
+
+msgid "``[center]{text}[/center]``"
+msgstr "``[center]{text}[/center]``"
+
+msgid "**left**"
+msgstr "**left**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally left-aligned."
+msgstr "使得 {text} 右对齐."
+
+msgid "Same as ``[p align=left]``."
+msgstr ""
+
+msgid "``[left]{text}[/left]``"
+msgstr "``[left]{text}[/left]``"
+
+msgid "**right**"
+msgstr "**right**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally right-aligned."
+msgstr "使得 {text} 右对齐."
+
+msgid "Same as ``[p align=right]``."
+msgstr ""
+
+msgid "``[right]{text}[/right]``"
+msgstr "``[right]{text}[/right]``"
+
+msgid "**fill**"
+msgstr "**fill**"
+
+#, fuzzy
+msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
+msgstr "使{text}填充RichTextLabel的宽度."
+
+msgid "Same as ``[p align=fill]``."
+msgstr ""
+
+msgid "``[fill]{text}[/fill]``"
+msgstr "``[fill]{text}[/fill]``"
+
+msgid "**indent**"
+msgstr "**indent**"
+
+msgid ""
+"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
+"or ``[ol]``, but without a bullet point."
+msgstr ""
+
+msgid "``[indent]{text}[/indent]``"
+msgstr "``[indent]{text}[/indent]``"
+
+msgid "**url**"
+msgstr "**url**"
+
+msgid ""
+"Creates a hyperlink (underlined and clickable text). Can contain optional "
+"``{text}`` or display ``{link}`` as is."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"**Must be handled with the \"meta_clicked\" signal to have an effect,** see :"
+"ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
+msgstr ""
+"显示 {url}，文字带有下划线并且可以点击。\\ **必须在“meta_clicked”信号中处理，"
+"点击才会生效。**\\ 参阅 :ref:"
+"`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`\\ 。"
+
+#, fuzzy
+msgid "``[url]{link}[/url]``"
+msgstr "``[url]{url}[/url]``"
+
+#, fuzzy
+msgid "``[url={link}]{text}[/url]``"
+msgstr "``[url=<url>]{text}[/url]``"
+
+msgid "**hint**"
+msgstr "**hint**"
+
+msgid ""
+"Creates a tooltip hint that is displayed when hovering the text with the "
+"mouse. Tooltip text should not be quoted (quotes will appear as-is in the "
+"tooltip otherwise)."
+msgstr ""
+
+msgid "``[hint={tooltip text displayed on hover}]{text}[/hint]``"
+msgstr ""
+
+msgid "**img**"
+msgstr "**img**"
+
+msgid ""
+"Inserts an image from the ``{path}`` (can be any valid :ref:"
+"`class_Texture2D` resource)."
+msgstr ""
+
+msgid ""
+"If ``{width}`` is provided, the image will try to fit that width maintaining "
+"the aspect ratio."
+msgstr ""
+
+msgid ""
+"If both ``{width}`` and ``{height}`` are provided, the image will be scaled "
+"to that size."
+msgstr ""
+
+msgid ""
+"If ``{valign}`` configuration is provided, the image will try to align to "
+"the surrounding text, see :ref:`doc_bbcode_in_richtextlabel_image_alignment`."
+msgstr ""
+
+msgid ""
+"Supports configuration options, see :ref:"
+"`doc_bbcode_in_richtextlabel_image_options`."
+msgstr ""
+
+msgid "``[img]{path}[/img]``"
+msgstr "``[img]{path}[/img]``"
+
+#, fuzzy
+msgid "``[img={width}]{path}[/img]``"
+msgstr "``[img=<width>]{path}[/img]``"
+
+#, fuzzy
+msgid "``[img={width}x{height}]{path}[/img]``"
+msgstr "``[img=<width>x<height>]{path}[/img]``"
+
+#, fuzzy
+msgid "``[img={valign}]{path}[/img]``"
+msgstr "``[img]{path}[/img]``"
+
+#, fuzzy
+msgid "``[img {options}]{path}[/img]``"
+msgstr "``[img]{path}[/img]``"
+
+msgid "**font**"
+msgstr "**font**"
+
+msgid "Makes ``{text}`` use a font resource from the ``{path}``."
+msgstr ""
+
+msgid ""
+"Supports configuration options, see :ref:"
+"`doc_bbcode_in_richtextlabel_font_options`."
+msgstr ""
+
+#, fuzzy
+msgid "``[font={path}]{text}[/font]``"
+msgstr "``[font=<path>]{text}[/font]``"
+
+#, fuzzy
+msgid "``[font {options}]{text}[/font]``"
+msgstr "``[font=<path>]{text}[/font]``"
+
+msgid "**font_size**"
+msgstr "**font_size**"
+
+#, fuzzy
+msgid "Use custom font size for ``{text}``."
+msgstr "为 {text} 内容设置自定义字体, 字体由 <path> 指定."
+
+msgid "``[font_size={size}]{text}[/font_size]``"
+msgstr "``[font_size={size}]{text}[/font_size]``"
+
+msgid "**dropcap**"
+msgstr "**dropcap**"
+
+msgid ""
+"Use a different font size and color for ``{text}``, while making the tag's "
+"contents span multiple lines if it's large enough."
+msgstr ""
+
+msgid ""
+"A `drop cap <https://www.computerhope.com/jargon/d/dropcap.htm>`__ is "
+"typically one uppercase character, but ``[dropcap]`` supports containing "
+"multiple characters. ``margins`` values are comma-separated and can be "
+"positive, zero or negative. Negative top and bottom margins are particularly "
+"useful to allow the rest of the paragraph to display below the dropcap."
+msgstr ""
+
+msgid ""
+"``[dropcap font_size={size} color={color} margins={left},{top},{right},"
+"{bottom}]{text}[/dropcap]``"
+msgstr ""
+"``[dropcap font_size={size} color={color} margins={left},{top},{right},"
+"{bottom}]{text}[/dropcap]``"
+
+msgid "**opentype_features**"
+msgstr "**opentype_features**"
+
+msgid ""
+"Enables custom OpenType font features for ``{text}``. Features must be "
+"provided as a comma-separated ``{list}``."
+msgstr ""
+"为 ``{text}`` 启用自定义 OpenType 字体特性。\\ ``{list}`` 中的特性必须以英文"
+"逗号分隔。"
+
+msgid "``[opentype_features={list}]``"
+msgstr "``[opentype_features={list}]``"
+
+msgid "``{text}``"
+msgstr "``{text}``"
+
+msgid "``[/opentype_features]``"
+msgstr "``[/opentype_features]``"
+
+msgid "**lang**"
+msgstr "**lang**"
+
+msgid ""
+"Overrides the language for ``{text}`` that is set by the **BiDi > Language** "
+"property in :ref:`class_RichTextLabel`. ``{code}`` must be an ISO :ref:"
+"`language code <doc_locales>`. This can be used to enforce the use of a "
+"specific script for a language without starting a new paragraph. Some font "
+"files may contain script-specific substitutes, in which case they will be "
+"used."
+msgstr ""
+
+#, fuzzy
+msgid "``[lang={code}]{text}[/lang]``"
+msgstr "``[lang={code}]{text}[/color]``"
+
+msgid "**color**"
+msgstr "**color**"
+
+msgid ""
+"Changes the color of ``{text}``. Color must be provided by a common name "
+"(see :ref:`doc_bbcode_in_richtextlabel_named_colors`) or using the HEX "
+"format (e.g. ``#ff00ff``, see :ref:`doc_bbcode_in_richtextlabel_hex_colors`)."
+msgstr ""
+"修改 ``{text}`` 的颜色。设置的颜色必须使用通用名称（见 :ref:"
+"`doc_bbcode_in_richtextlabel_named_colors`\\ ）或十六进制格式（例如 "
+"``#ff00ff``\\ ，见 :ref:`doc_bbcode_in_richtextlabel_hex_colors`\\ ）。"
+
+msgid "``[color={code/name}]{text}[/color]``"
+msgstr "``[color={code/name}]{text}[/color]``"
+
+msgid "**bgcolor**"
+msgstr "**bgcolor**"
+
+msgid ""
+"Draws the color behind ``{text}``. This can be used to highlight text. "
+"Accepts same values as the ``color`` tag."
+msgstr ""
+"在 ``{text}`` 背后绘制的颜色。可以用来高亮文本。接受的值和 ``color`` 标签一"
+"致。"
+
+msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
+msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
+
+msgid "**fgcolor**"
+msgstr "**fgcolor**"
+
+msgid ""
+"Draws the color in front of ``{text}``. This can be used to \"redact\" text "
+"by using an opaque foreground color. Accepts same values as the ``color`` "
+"tag."
+msgstr ""
+"在 ``{text}`` 前方绘制的颜色。使用不透明的前景色可以“遮盖”文本。接受的值和 "
+"``color`` 标签一致。"
+
+msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
+msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
+
+msgid "**outline_size**"
+msgstr "**outline_size**"
+
+msgid "Use custom font outline size for ``{text}``."
+msgstr "为 ``{text}`` 使用自定义字体轮廓大小。"
+
+msgid "``[outline_size={size}]``"
+msgstr "``[outline_size={size}]``"
+
+msgid "``[/outline_size]``"
+msgstr "``[/outline_size]``"
+
+msgid "**outline_color**"
+msgstr "**outline_color**"
+
+msgid ""
+"Use custom outline color for ``{text}``. Accepts same values as the "
+"``color`` tag."
+msgstr "为 ``{text}`` 使用自定义轮廓颜色。接受的值和 ``color`` 标签一致。"
+
+msgid "``[outline_color={code/name}]``"
+msgstr "``[outline_color={code/name}]``"
+
+msgid "``[/outline_color]``"
+msgstr "``[/outline_color]``"
+
+msgid "**table**"
+msgstr "**table**"
+
+msgid ""
+"Creates a table with the ``{number}`` of columns. Use the ``cell`` tag to "
+"define table cells."
+msgstr ""
+"创建列数为 ``{number}`` 的表格。定义表格中的单元格请使用 ``cell`` 标签。"
+
+msgid "``[table={number}]{cells}[/table]``"
+msgstr "``[table={number}]{cells}[/table]``"
+
+msgid "**cell**"
+msgstr "**cell**"
+
+msgid "Adds a cell with ``{text}`` to the table."
+msgstr "向表格中添加一个文本为 ``{text}`` 的单元格。"
+
+msgid ""
+"If ``{ratio}`` is provided, the cell will try to expand to that value "
+"proportionally to other cells and their ratio values."
+msgstr ""
+
+msgid ""
+"Supports configuration options, see :ref:"
+"`doc_bbcode_in_richtextlabel_cell_options`."
+msgstr ""
+
+msgid "``[cell]{text}[/cell]``"
+msgstr "``[cell]{text}[/cell]``"
+
+msgid "``[cell={ratio}]{text}[/cell]``"
+msgstr "``[cell={ratio}]{text}[/cell]``"
+
+msgid "``[cell {options}]{text}[/cell]``"
+msgstr "``[cell {options}]{text}[/cell]``"
+
+msgid "**ul**"
+msgstr "**ul**"
+
+msgid ""
+"Adds an unordered list. List ``{items}`` must be provided by putting one "
+"item per line of text."
+msgstr "添加无序列表。列表项 ``{item}`` 必须以一行一个的形式提供。"
+
+msgid ""
+"The bullet point can be customized using the ``{bullet}`` parameter, see :"
+"ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`."
+msgstr ""
+"项目符号可以使用 ``{bullet}`` 参数自定义，见 :ref:"
+"`doc_bbcode_in_richtextlabel_unordered_list_bullet`\\ 。"
+
+msgid "``[ul]{items}[/ul]``"
+msgstr "``[ul]{items}[/ul]``"
+
+msgid "``[ul bullet={bullet}]{items}[/ul]``"
+msgstr "``[ul bullet={bullet}]{items}[/ul]``"
+
+msgid "**ol**"
+msgstr "**ol**"
+
+msgid ""
+"Adds an ordered (numbered) list of the given ``{type}`` (see :ref:"
+"`doc_bbcode_in_richtextlabel_list_types`). List ``{items}`` must be provided "
+"by putting one item per line of text."
+msgstr ""
+"添加有序（编号）列表，类型由 ``{type}`` 给定（见 :ref:"
+"`doc_bbcode_in_richtextlabel_list_types`\\ ）。列表项 ``{items}`` 必须以一行"
+"一个的形式提供。"
+
+msgid "``[ol type={type}]{items}[/ol]``"
+msgstr "``[ol type={type}]{items}[/ol]``"
+
+msgid "**lb**, **rb**"
+msgstr "**lb**\\ 、\\ **rb**"
+
+msgid "Adds ``[`` and ``]`` respectively. Allows escaping BBCode markup."
+msgstr "分别添加 ``[`` 和 ``]``\\ 。用于转义 BBCode 标记。"
+
+msgid ""
+"These are self-closing tags, which means you do not need to close them (and "
+"there is no ``[/lb]`` or ``[/rb]`` closing tag)."
+msgstr ""
+"这些是自闭合标签，不需要手动关闭（不存在 ``[/lb]`` 和 ``[/rb]`` 这种关闭标"
+"签）。"
+
+msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
+msgstr "``[lb]b[rb]text[lb]/b[rb]`` 会被显示为 ``[b]text[/b]``\\ 。"
+
+msgid ""
+"Several Unicode control characters can be added using their own self-closing "
+"tags."
+msgstr "部分 Unicode 控制字符可以使用对应的自闭合标签添加。"
+
+msgid "This can result in easier maintenance compared to pasting those"
+msgstr "相比于直接在文本中粘贴这些控制字符，"
+
+msgid "control characters directly in the text."
+msgstr "这种方法更方便维护。"
+
+msgid ""
+"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
+"(left-to-right embedding),"
+msgstr ""
+
+msgid ""
+"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
+"``[rlo]`` (right-to-left override),"
+msgstr ""
+
+msgid ""
+"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
+"``[lri]`` (left-to-right isolate),"
+msgstr ""
+
+msgid ""
+"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
+"``[pdi]`` (pop directional isolate),"
+msgstr ""
+
+msgid ""
+"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
+"(word joiner),"
+msgstr ""
+
+msgid "``[shy]`` (soft hyphen)"
+msgstr ""
+
+msgid ""
+"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
+"appropriate custom fonts are set up in the RichTextLabelNode's theme "
+"overrides. If no custom bold or italic fonts are defined, `faux bold and "
+"italic fonts <https://fonts.google.com/knowledge/glossary/"
+"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
+"rarely look good in comparison to hand-made bold/italic font variants."
+msgstr ""
+
+msgid ""
+"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
+"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
+"use the regular font."
+msgstr ""
+
+msgid "There are no BBCode tags to control vertical centering of text yet."
+msgstr "目前还没有用于控制文本垂直居中的BBCode标签."
+
+msgid "Options can be skipped for all tags."
+msgstr ""
+
+msgid "Paragraph options"
+msgstr "段落选项"
+
+msgid "**align**"
+msgstr "**align**"
+
+msgid "`Values`"
+msgstr "`值`"
+
+msgid "``left``, ``center``, ``right``, ``fill``"
+msgstr "``left``\\ 、\\ ``center``\\ 、\\ ``right``\\ 、\\ ``fill``"
+
+msgid "`Default`"
+msgstr "`默认`"
+
+msgid "``left``"
+msgstr "``left``"
+
+msgid "Text horizontal alignment."
+msgstr "文本水平对齐。"
+
+msgid "**bidi_override**, **st**"
+msgstr "**bidi_override**\\ 、\\ **st**"
+
+msgid ""
+"``default``, ``uri``, ``file``, ``email``, ``list``, ``none``, ``custom``"
+msgstr ""
+"``default``\\ 、\\ ``uri``\\ 、\\ ``file``\\ 、\\ ``email``\\ 、\\ "
+"``list``\\ 、\\ ``none``\\ 、\\ ``custom``"
+
+msgid "``default``"
+msgstr "``default``"
+
+msgid "Structured text override."
+msgstr ""
+
+msgid "**direction**, **dir**"
+msgstr "**direction**\\ 、\\ **dir**"
+
+msgid "``ltr``, ``rtl``, ``auto``"
+msgstr "``ltr``\\ 、\\ ``rtl``\\ 、\\ ``auto``"
+
+msgid "Inherit"
+msgstr "继承"
+
+#, fuzzy
+msgid "Base BiDi direction."
+msgstr "沿给定方向移动。"
+
+msgid "**language**, **lang**"
+msgstr "**language**\\ 、\\ **lang**"
+
+msgid "ISO language codes. See :ref:`doc_locales`"
+msgstr "ISO 语言代码。见 :ref:`doc_locales`"
+
+msgid ""
+"Locale override. Some font files may contain script-specific substitutes, in "
+"which case they will be used."
+msgstr ""
+
+#, fuzzy
+msgid "**tab_stops**"
+msgstr "**table**"
+
+msgid "List of floating-point numbers, e.g. ``10.0,30.0``"
+msgstr ""
+
+msgid "Width of the space character in the font"
+msgstr ""
+
+msgid ""
+"Overrides the horizontal offsets for each tab character. When the end of the "
+"list is reached, the tab stops will loop over. For example, if you set "
+"``tab_stops`` to ``10.0,30.0``, the first tab will be at ``10`` pixels, the "
+"second tab will be at ``10 + 30 = 40`` pixels, and the third tab will be at "
+"``10 + 30 + 10 = 50`` pixels from the origin of the RichTextLabel."
+msgstr ""
+
+msgid "Handling ``[url]`` tag clicks"
+msgstr "处理 ``[url]`` 标签点击"
+
+msgid ""
+"By default, ``[url]`` tags do nothing when clicked. This is to allow "
+"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
+"a web browser."
+msgstr ""
+"默认情况下， ``[url]`` 标签在单击时不执行任何操作.这是为了允许灵活使用 "
+"``[url]`` 标签，而不是限制它们在Web浏览器中打开URL."
+
+#, fuzzy
+msgid ""
+"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` node's :ref:"
+"`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal to a script "
+"function."
+msgstr ""
+"要对点击``[url]`` 标签进行处理，请将该 RichTextLabel 节点的 :ref:"
+"`meta_clicked <class_RichTextLabel_signal_meta_clicked>` 信号连接到一个脚本函"
+"数上。"
+
+msgid ""
+"For example, the following method can be connected to ``meta_clicked`` to "
+"open clicked URLs using the user's default web browser::"
+msgstr ""
+"例如，将如下方法连接到 ``meta_clicked`` 上即可在用户的默认网页浏览器中打开被"
+"点击的 URL： ::"
+
+msgid ""
+"For more advanced use cases, it's also possible to store JSON in an "
+"``[url]`` tag's option and parse it in the function that handles the "
+"``meta_clicked`` signal. For example:"
+msgstr ""
+"要支持更高级的用法，也可以在 ``[url]`` 标签的选项中存储 JSON，然后在处理 "
+"``meta_clicked`` 信号的函数中解析。例如："
+
+msgid "Image options"
+msgstr "图像选项"
+
+msgid "Color name or color in HEX format"
+msgstr "颜色名称或十六进制格式的颜色"
+
+msgid "Color tint of the image (modulation)."
+msgstr "图像的着色颜色（调制）。"
+
+msgid "**height**"
+msgstr "**height**"
+
+msgid "Number in pixels"
+msgstr "数字，单位为像素"
+
+msgid "Target height of the image."
+msgstr "图像的目标高度。"
+
+msgid "**width**"
+msgstr "**width**"
+
+msgid "Target width of the image."
+msgstr "图像的目标宽度。"
+
+msgid "**region**"
+msgstr "**region**"
+
+msgid "x,y,width,height in pixels"
+msgstr ""
+
+msgid ""
+"Region rect of the image. This can be used to display a single image from a "
+"spritesheet."
+msgstr "图像的区域框。可用于显示精灵表中的单个图像。"
+
+msgid "Image vertical alignment"
+msgstr "图像的垂直对齐"
+
+msgid ""
+"When a vertical alignment value is provided with the ``[img]`` tag the image "
+"will try to align itself against the surrounding text. Alignment is "
+"performed using a vertical point of the image and a vertical point of the "
+"text. There are 3 possible points on the image (``top``, ``center``, and "
+"``bottom``) and 4 possible points on the text (``top``, ``center``, "
+"``baseline``, and ``bottom``), which can be used in any combination."
+msgstr ""
+
+msgid ""
+"To specify both points, use their full or short names as a value of the "
+"image tag:"
+msgstr ""
+
+msgid ""
+"You can also specify just one value (``top``, ``center``, or ``bottom``) to "
+"make use of a corresponding preset (``top-top``, ``center-center``, and "
+"``bottom-bottom`` respectively)."
+msgstr ""
+
+msgid ""
+"Short names for the values are ``t`` (``top``), ``c`` (``center``), ``l`` "
+"(``baseline``), and ``b`` (``bottom``)."
+msgstr ""
+
+msgid "Font options"
+msgstr "字体选项"
+
+msgid "**name**, **n**"
+msgstr "**name**\\ 、\\ **n**"
+
+msgid "A valid Font resource path."
+msgstr "有效的 Font 资源路径。"
+
+msgid "Font resource path."
+msgstr "字体资源路径。"
+
+msgid "**size**, **s**"
+msgstr "**size**\\ 、\\ **s**"
+
+msgid "Number in pixels."
+msgstr "数字，单位为像素。"
+
+msgid "Custom font size."
+msgstr "自定义字体大小。"
+
+msgid "Named colors"
+msgstr "具名颜色"
+
+msgid ""
+"For tags that allow specifying a color by name you can use names of the "
+"constants from the built-in :ref:`class_Color` class. Named classes can be "
+"specified in a number of styles using different casings: ``DARK_RED``, "
+"``DarkRed``, and ``darkred`` will give the same exact result."
+msgstr ""
+
+msgid "Hexadecimal color codes"
+msgstr "十六进制颜色代码"
+
+#, fuzzy
+msgid ""
+"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
+"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
+"(equivalent to ``#66ff22``) are also supported."
+msgstr ""
+"不透明的 RGB 颜色支持使用任何有效的 6 位十六进制数，例如 ``[color=#ffffff]白"
+"色[/color]``\\ 。也支持短的 RGB 颜色码，比如 ``#6f2``\\ （等价于 "
+"`#66ff22`\\ ）。"
+
+#, fuzzy
+msgid ""
+"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, e."
+"g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
+"channel is the **last** component of the color code, not the first one. "
+"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
+"supported as well."
+msgstr ""
+"透明的 RGB 颜色可以使用任意 8 位十六进制数，例如 ``[color=#88ffffff]半透明白"
+"色[/color]``\\ 。请注意这里的 alpha 通道是颜色码中的\\ **第一个**\\ 分量，不"
+"是最后一个。也支持短的 RGBA 颜色码，比如 `#86f2`\\ （等价于 "
+"`#8866ff22`\\ ）。"
+
+msgid "Cell options"
+msgstr "单元格选项"
+
+msgid "**expand**"
+msgstr "**expand**"
+
+msgid "Integer number"
+msgstr "整数"
+
+msgid "1"
+msgstr "1"
+
+msgid ""
+"Cell expansion ratio. This defines which cells will try to expand to "
+"proportionally to other cells and their expansion ratios."
+msgstr ""
+
+msgid "**border**"
+msgstr "**border**"
+
+msgid "Cell border color."
+msgstr "单元格边框颜色。"
+
+msgid "**bg**"
+msgstr "**bg**"
+
+msgid ""
+"Cell background color. For alternating odd/even row backgrounds, you can use "
+"``bg=odd_color,even_color``."
+msgstr ""
+
+msgid "Unordered list bullet"
+msgstr "无序列表项目符号"
+
+msgid ""
+"By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
+"the bullet character. This behavior is similar to web browsers. The bullet "
+"character can be customized using ``[ul bullet={bullet}]``. If provided, "
+"this ``{bullet}`` parameter must be a *single* character with no enclosing "
+"quotes (for example, ``[bullet=*]``). Additional characters are ignored. The "
+"bullet character's width does not affect the list's formatting."
+msgstr ""
+
+msgid ""
+"See `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
+"Bullet_(typography)>`__ for a list of common bullet characters that you can "
+"paste directly in the ``bullet`` parameter."
+msgstr ""
+
+msgid "Ordered list types"
+msgstr "有序列表类型"
+
+msgid ""
+"Ordered lists can be used to automatically mark items with numbers or "
+"letters in ascending order. This tag supports the following type options:"
+msgstr ""
+
+msgid "``1`` - Numbers, using language specific numbering system if possible."
+msgstr ""
+
+msgid "``a``, ``A`` - Lower and upper case Latin letters."
+msgstr ""
+
+msgid "``i``, ``I`` - Lower and upper case Roman numerals."
+msgstr ""
+
+msgid "Text effects"
+msgstr "文本效果"
+
+msgid ""
+"BBCode can also be used to create different text effects that can optionally "
+"be animated. Five customizable effects are provided out of the box, and you "
+"can easily create your own. By default, animated effects will pause :ref:"
+"`when the SceneTree is paused <doc_pausing_games>`. You can change this "
+"behavior by adjusting the RichTextLabel's **Process > Mode** property."
+msgstr ""
+
+msgid ""
+"All examples below mention the default values for options in the listed tag "
+"format."
+msgstr ""
+
+msgid ""
+"Text effects that move characters' position may result in characters being "
+"clipped by the RichTextLabel node bounds."
+msgstr ""
+
+msgid ""
+"You can resolve this by disabling **Control > Layout > Clip Contents** in "
+"the inspector after selecting the RichTextLabel node, or ensuring there is "
+"enough margin added around the text by using line breaks above and below the "
+"line using the effect."
+msgstr ""
+
+msgid "Pulse"
+msgstr "脉冲"
+
+msgid ""
+"Pulse creates an animated pulsing effect that multiplies each character's "
+"opacity and color. It can be used to bring attention to specific text. Its "
+"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
+msgstr ""
+
+msgid ""
+"``freq`` controls the frequency of the half-pulsing cycle (higher is "
+"faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
+"is the target color multiplier for blinking. The default mostly fades out "
+"text, but not entirely. ``ease`` is the easing function exponent to use. "
+"Negative values provide in-out easing, which is why the default is ``-2.0``."
+msgstr ""
+
+msgid "Wave"
+msgstr "波浪"
+
+#, fuzzy
+msgid ""
+"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
+"freq=5.0 connected=1]{text}[/wave]``."
+msgstr ""
+"波浪会使文字上下波动。其标签格式是 ``[wave amp=50 freq=2][/wave]``\\ 。\\ "
+"``amp`` 控制特效高低，\\ ``freq`` 控制文字上下移动的速度。"
+
+msgid ""
+"``amp`` controls how high and low the effect goes, and ``freq`` controls how "
+"fast the text goes up and down. A ``freq`` value of ``0`` will result in no "
+"visible waves, and negative ``freq`` values won't display any waves either. "
+"If ``connected`` is ``1`` (default), glyphs with ligatures will be moved "
+"together. If ``connected`` is ``0``, each glyph is moved individually even "
+"if they are joined by ligatures. This can work around certain rendering "
+"issues with font ligatures."
+msgstr ""
+
+msgid "Tornado"
+msgstr "旋风"
+
+#, fuzzy
+msgid ""
+"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
+"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
+msgstr ""
+"龙卷风使文字在圆圈内移动, 它的标签格式是 ``[tornado radius=5 freq=2][/"
+"tornado]`` . ``radius`` 是控制偏移的圆半径, ``freq`` 是文字在圆中移动的速度."
+
+msgid ""
+"``radius`` is the radius of the circle that controls the offset, ``freq`` is "
+"how fast the text moves in a circle. A ``freq`` value of ``0`` will pause "
+"the animation, while negative ``freq`` will play the animation backwards. If "
+"``connected`` is ``1`` (default), glyphs with ligatures will be moved "
+"together. If ``connected`` is ``0``, each glyph is moved individually even "
+"if they are joined by ligatures. This can work around certain rendering "
+"issues with font ligatures."
+msgstr ""
+
+msgid "Shake"
+msgstr "抖动"
+
+msgid ""
+"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
+"connected=1]{text}[/shake]``."
+msgstr ""
+
+msgid ""
+"``rate`` controls how fast the text shakes, ``level`` controls how far the "
+"text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
+"with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
+"is moved individually even if they are joined by ligatures. This can work "
+"around certain rendering issues with font ligatures."
+msgstr ""
+
+msgid "Fade"
+msgstr "渐隐"
+
+msgid ""
+"Fade creates a static fade effect that multiplies each character's opacity. "
+"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"``start`` controls the starting position of the falloff relative to where "
+"the fade command is inserted, ``length`` controls over how many characters "
+"should the fade out take place."
+msgstr ""
+"渐变在没有动画的文本上创建一个渐变效果, 它的标签格式是 ``[fade start=4 "
+"length=14][/fade]`` . ``start`` 控制相对于插值淡入命令的起始位置, ``length`` "
+"控制淡出应该发生多少个字符."
+
+msgid "Rainbow"
+msgstr "彩虹"
+
+#, fuzzy
+msgid ""
+"Rainbow gives the text a rainbow color that changes over time. Its tag "
+"format is ``[rainbow freq=1.0 sat=0.8 val=0.8]{text}[/rainbow]``."
+msgstr ""
+"彩虹让文字呈现出随时间变化的彩虹色, 它的标签格式是 ``[rainbow freq=0.2 "
+"sat=10 val=20][/rainbow]`` . ``freq`` 是每秒完整的彩虹周期数, ``sat`` 是彩虹"
+"的饱和度, ``val`` 是彩虹的数值."
+
+msgid ""
+"``freq`` is the number of full rainbow cycles per second, ``sat`` is the "
+"saturation of the rainbow, ``val`` is the value of the rainbow. A ``freq`` "
+"value of ``0`` will pause the animation, while negative ``freq`` will play "
+"the animation backwards."
+msgstr ""
+
+msgid ""
+"Font outlines are *not* affected by the rainbow effect (they keep their "
+"original color). Existing font colors are overridden by the rainbow effect. "
+"However, CanvasItem's **Modulate** and **Self Modulate** properties will "
+"affect how the rainbow effect looks, as modulation multiplies its final "
+"colors."
+msgstr ""
+
+msgid "Custom BBCode tags and text effects"
+msgstr "自定义 BBCode 标签和文本效果"
+
+msgid ""
+"You can extend the :ref:`class_RichTextEffect` resource type to create your "
+"own custom BBCode tags. Create a new script file that extends the :ref:"
+"`class_RichTextEffect` resource type and give the script a ``class_name`` so "
+"that the effect can be selected in the inspector. Add the ``@tool`` "
+"annotation to your GDScript file if you wish to have these custom effects "
+"run within the editor itself. The RichTextLabel does not need to have a "
+"script attached, nor does it need to be running in ``tool`` mode. The new "
+"effect can be registered in the Inspector by adding it to the **Markup > "
+"Custom Effects** array, or in code with the :ref:`install_effect() "
+"<class_RichTextLabel_method_install_effect>` method:"
+msgstr ""
+"可以通过扩展 :ref:`class_RichTextEffect` 资源类型来创建自己的 BBCode 标签。首"
+"先扩展 :ref:`class_RichTextEffect` 资源类型并为脚本提供 ``class_name``\\ ，这"
+"样就能够在检查器中选择该效果。如果想在编辑器中运行这些自定义效果，请在 "
+"GDScript 文件中添加 ``@tool`` 注解。RichTextLabel 不需要附加脚本，也不需要在 "
+"``tool`` 模式下运行。注册效果的方法是将这个新建的效果在检查器中加入到 "
+"**Markup > Custom Effects** 数组中，或者在代码中使用 :ref:`install_effect() "
+"<class_RichTextLabel_method_install_effect>` 方法："
+
+msgid ""
+"Selecting a custom RichTextEffect after saving a script that extends "
+"RichTextEffect with a ``class_name``"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If the custom effect is not registered within the RichTextLabel's **Markup > "
+"Custom Effects** property, no effect will be visible and the original tag "
+"will be left as-is."
+msgstr ""
+"如果自定义效果没有注册到 RichTextLabel 的 **Custom Effects** 属性中，就不会有"
+"可见的效果，保留原始的标签。"
+
+msgid ""
+"There is only one function that you need to extend: "
+"``_process_custom_fx(char_fx)``. Optionally, you can also provide a custom "
+"BBCode identifier simply by adding a member name ``bbcode``. The code will "
+"check the ``bbcode`` property automatically or will use the name of the file "
+"to determine what the BBCode tag should be."
+msgstr ""
+"只需要扩展一个函数: ``_process_custom_fx(char_fx)`` , 或者可以通过添加成员名"
+"称 ``bbcode`` 来提供自定义BBCode标识符, 该代码将自动检查bbcode属性, 或使用文"
+"件名来决定BBCode标签应该是什么."
+
+msgid "``_process_custom_fx``"
+msgstr "``_process_custom_fx``"
+
+#, fuzzy
+msgid ""
+"This is where the logic of each effect takes place and is called once per "
+"glyph during the draw phase of text rendering. This passes in a :ref:"
+"`class_CharFXTransform` object, which holds a few variables to control how "
+"the associated glyph is rendered:"
+msgstr ""
+"这是每个效果的逻辑生效的地方, 在文本渲染绘制阶段, 每个字符被调用一次, 将传入"
+"一个 :ref:`class_CharFXTransform` 对象, 该对象拥有一些变量来控制相关字符的渲"
+"染方式:"
+
+msgid ""
+"``identity`` specifies which custom effect is being processed. You should "
+"use that for code flow control."
+msgstr "``identity身份`` 指定正在处理哪个自定义效果, 应该用它来控制代码流程."
+
+msgid "``outline`` is ``true`` if effect is called for drawing text outline."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"``range`` tells you how far into a given custom effect block you are in as "
+"an index."
+msgstr "``relative_index`` 告诉你在一个给定的自定义效果区块中的索引有多远."
+
+msgid ""
+"``elapsed_time`` is the total amount of time the text effect has been "
+"running."
+msgstr "``elapsed_time`` 是文本效果运行的总时间."
+
+#, fuzzy
+msgid ""
+"``visible`` will tell you whether the glyph is visible or not and will also "
+"allow you to hide a given portion of text."
+msgstr "``visible`` 将告诉你这个字符是否可见, 也允许你隐藏文本的某个部分."
+
+#, fuzzy
+msgid ""
+"``offset`` is an offset position relative to where the given glyph should "
+"render under normal circumstances."
+msgstr "``offset`` 是相对于给定字符在正常情况下应该呈现的位置的偏移位置."
+
+#, fuzzy
+msgid "``color`` is the color of a given glyph."
+msgstr "``color`` 是一种预先规定的字符颜色."
+
+msgid ""
+"``glyph_index`` and ``font`` is glyph being drawn and font data resource "
+"used to draw it."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
+"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
+"with an optional default value to retrieve each parameter, if specified by "
+"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
+"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
+"its ``env`` Dictionary. See below for more usage examples."
+msgstr ""
+"最后, ``env`` 是一个指定自定义效果的参数 :ref:`class_Dictionary` . 如果用户指"
+"定, 您可以使用 :ref:`Get()<CLASS_Dictionary_Method_Get>` 和可选默认值来检索每"
+"个参数. 例如, ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` 在其 "
+"``env`` 字典中将有一个浮动 ``spread`` 和颜色 ``color`` 参数. 有关更多的实例用"
+"法, 请参阅下面的内容."
+
+#, fuzzy
+msgid ""
+"The last thing to note about this function is that it is necessary to return "
+"a boolean ``true`` value to verify that the effect processed correctly. This "
+"way, if there's a problem with rendering a given glyph, it will back out of "
+"rendering custom effects entirely until the user fixes whatever error "
+"cropped up in their custom effect logic."
+msgstr ""
+"最后需要注意的关于此函数, 必须返回一个布尔值 ``true`` , 以验证结果处理正确, "
+"这样一来, 如果这个预先规定的字符渲染出现问题, 它将完全退出自定义渲染的效果, "
+"直到用户修复自定义渲染出现的任何错误."
+
+msgid "Here are some examples of custom effects:"
+msgstr "以下是一些自定义效果的示例:"
+
+msgid "Ghost"
+msgstr "幽灵"
+
+msgid "Matrix"
+msgstr "矩阵"
+
+msgid "This will add a few new BBCode commands, which can be used like so:"
+msgstr "这将增加一些新的BBCode命令, 可以像这样使用:"
+
+msgid "Translation status"
+msgstr "翻译状态"

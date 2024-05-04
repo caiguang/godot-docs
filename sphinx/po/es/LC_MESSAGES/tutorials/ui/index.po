@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "User interface (UI)"
+msgstr "Interfaz de Usuario (UI)"
+
+msgid ""
+"In this section of the tutorial we explain the basics of creating a "
+"graphical user interface (GUI) in Godot."
+msgstr ""
+
+msgid "UI building blocks"
+msgstr ""
+
+msgid ""
+"Like everything else in Godot the user interface is built using nodes, "
+"specifically :ref:`Control <class_Control>` nodes. There are many different "
+"types of controls which are useful for creating specific types of GUIs. For "
+"simplicity we can separate them into two groups: content and layout."
+msgstr ""
+
+msgid "Typical content controls include:"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Buttons <class_Button>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+#, fuzzy
+msgid ":ref:`Labels <class_Label>`"
+msgstr ":ref:`bool <class_bool>`"
+
+msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
+msgstr ""
+
+msgid "Typical layout controls include:"
+msgstr ""
+
+msgid ":ref:`BoxContainers <class_BoxContainer>`"
+msgstr ":ref:`BoxContainers <class_BoxContainer>`"
+
+#, fuzzy
+msgid ":ref:`MarginContainers <class_MarginContainer>`"
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+
+#, fuzzy
+msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+
+#, fuzzy
+msgid ":ref:`TabContainers <class_TabContainer>`"
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+
+#, fuzzy
+msgid ":ref:`Popups <class_Popup>`"
+msgstr ":ref:`CSGTorus <class_CSGTorus>`"
+
+#, fuzzy
+msgid "The following pages explain the basics of using such controls."
+msgstr ""
+"Los siguientes artículos cubren detalles específicos sobre cómo utilizar "
+"nodos de control particulares."
+
+msgid "GUI skinning and themes"
+msgstr "GUI skinning y temas"
+
+msgid ""
+"Godot features an in-depth skinning/theming system for control nodes. The "
+"pages in this section explain the benefits of that system and how to set it "
+"up in your projects."
+msgstr ""
+"Godot cuenta con un sistema completo de personalización de interfaz gráfica "
+"(skinning) y temas para nodos de control. Las páginas en esta sección "
+"explican los beneficios de este sistema y cómo configurarlo en tus proyectos."
+
+msgid "Control node tutorials"
+msgstr "Tutorial de nodos de control"
+
+msgid ""
+"The following articles cover specific details of using particular control "
+"nodes."
+msgstr ""
+"Los siguientes artículos cubren detalles específicos sobre cómo utilizar "
+"nodos de control particulares."
+
+msgid "Translation status"
+msgstr "Estado de traducción"

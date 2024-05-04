@@ -1,0 +1,2023 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "List of features"
+msgstr "Список особливостей"
+
+msgid "This page aims to list **all** features currently supported by Godot."
+msgstr ""
+"Ця сторінка має на меті перелічити **всі** можливості, які наразі "
+"підтримуються у Godot."
+
+msgid ""
+"This page lists features supported by the current stable version of Godot. "
+"Some of these features may not be available in the `LTS release series (3.x) "
+"<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
+msgstr ""
+"На цій сторінці перелічено можливості, які підтримуються поточною стабільною "
+"версією Godot. Деякі з цих можливостей можуть бути відсутніми у `LTS "
+"випусках (3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features."
+"html>`__."
+
+msgid "Platforms"
+msgstr "Платформи"
+
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
+msgid "**Can run both the editor and exported projects:**"
+msgstr "**Можливо запустити як редактор так і експортовані проєкти :**"
+
+#, fuzzy
+msgid "Windows (x86, 64-bit and 32-bit)."
+msgstr "Windows 7 або новіша (64-біт або 32-біт)."
+
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
+
+#, fuzzy
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7 або новіша (64-біт або 32-біт)."
+
+msgid ""
+"Binaries are statically linked and can run on any distribution if compiled "
+"on an old enough base distribution."
+msgstr ""
+"Бінарні файли статично пов’язані і можуть працювати на будь-якому "
+"дистрибутиві, якщо вони складені на досить старій базі."
+
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
+msgstr ""
+
+#, fuzzy
+msgid "Android (editor support is experimental)."
+msgstr "Android 6.0 і новіше (підтримка редактора є експериментальна)."
+
+msgid ""
+":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
+"Godot 3.x is recommended instead when targeting HTML5."
+msgstr ""
+":ref:`Web браузери <doc_using_the_web_editor>`. Експериментальна в 4.0, "
+"рекомендується використовувати Godot 3.x для HTML5."
+
+msgid "**Runs exported projects:**"
+msgstr "**Запускає експортовані проєкти:**"
+
+msgid "iOS."
+msgstr ""
+
+msgid ":ref:`Consoles <doc_consoles>`."
+msgstr ":ref:`Консолі <doc_consoles>`."
+
+msgid ""
+"Godot aims to be as platform-independent as possible and can be :ref:`ported "
+"to new platforms <doc_custom_platform_ports>` with relative ease."
+msgstr ""
+"Godot прагне бути максимально незалежним від платформи і може бути відносно "
+"легко :ref:`перенесений на нові платформи <doc_custom_platform_ports>`."
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to the web "
+"platform. To use C# on that platform, consider Godot 3 instead. Android and "
+"iOS platform support is available as of Godot 4.2, but is experimental and :"
+"ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
+"Проекти, написані на C# для Godot 4, наразі не можна експортувати на веб-"
+"платформу. Щоб використовувати C# на цій платформі, розгляньте Godot 3. "
+"Підтримка платформ Android та iOS доступна з Godot 4.2, але є "
+"експериментальною та :ref:`застосовуванням деяких обмежень "
+"<doc_c_sharp_platforms>`."
+
+msgid "Editor"
+msgstr "Редактор"
+
+msgid "**Features:**"
+msgstr "**Особливості:**"
+
+msgid "Scene tree editor."
+msgstr "Дерево сцени."
+
+msgid "Built-in script editor."
+msgstr "Вбудований редактор скриптів."
+
+msgid ""
+"Support for :ref:`external script editors <doc_external_editor>` such as "
+"Visual Studio Code or Vim."
+msgstr ""
+"Підтримка :ref:`зовнішніх редакторів скриптів <doc_external_editor>` таких "
+"як Visual Studio Code або Vim."
+
+msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
+msgstr "GDScript :ref:`зневаджувач <doc_debugger_panel>`."
+
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
+msgstr "Поки без підтримки дебагінгу в потоках."
+
+msgid ""
+"Visual profiler with CPU and GPU time indications for each step of the "
+"rendering pipeline."
+msgstr ""
+"Візуальний профайлер із індикацією часу CPU та GPU для кожного кроку шкали "
+"візуалізації."
+
+msgid ""
+"Performance monitoring tools, including :ref:`custom performance monitors "
+"<doc_custom_performance_monitors>`."
+msgstr ""
+"Інструменти моніторингу продуктивності, включаючи :ref:`користувацькі "
+"монітори продуктивності <doc_custom_performance_monitors>`."
+
+msgid "Live script reloading."
+msgstr "Миттєве перезавантаженя скриптів."
+
+msgid "Live scene editing."
+msgstr "Редагування сцени в реальному часі."
+
+msgid ""
+"Changes will reflect in the editor and will be kept after closing the "
+"running project."
+msgstr ""
+"Зміни одразу відобразяться в редакторі і збережуться після закриття проєкту."
+
+msgid "Remote inspector."
+msgstr "Дистанційний інспектор."
+
+msgid ""
+"Changes won't reflect in the editor and won't be kept after closing the "
+"running project."
+msgstr ""
+"Зміни не відобразяться в редакторі і не збережуться після закриття робочого "
+"проєкту."
+
+msgid "Live camera replication."
+msgstr "Реплікація камери в реальному часі."
+
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr ""
+"Перемістіть камеру в редакторі та перегляньте зміни в робочому проєкті."
+
+msgid "Built-in offline class reference documentation."
+msgstr "Вбудована довідка для класів."
+
+msgid "Use the editor in dozens of languages contributed by the community."
+msgstr "Використовуйте редактор на десятках мов, що надаються спільнотою."
+
+msgid "**Plugins:**"
+msgstr "**Плагіни (додатки):**"
+
+msgid ""
+"Editor plugins can be downloaded from the :ref:`asset library "
+"<doc_what_is_assetlib>` to extend editor functionality."
+msgstr ""
+"З :ref:`бібліотеки активів <doc_what_is_assetlib>` можна завантажити плагіни "
+"для розширення функціональності редактора."
+
+msgid ""
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
+msgstr ""
+":ref:`Створюйте власні плагіни<doc_making_plugins>` за допомогою GDScript, "
+"щоб додати нові функції, чи прискорити свою роботу."
+
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+":ref:`Звантажуйте проекти з бібліотеки ресурсів <doc_using_assetlib_editor>` "
+"у Диспетчері проектів та імпортуйте їх напряму."
+
+msgid "Rendering"
+msgstr "Рендеринг"
+
+msgid ""
+"3 rendering *methods* (running over 2 rendering *drivers*) are available:"
+msgstr ""
+"Доступні 3 *методи* рендеринга (працюючі на двох візуалізуючих *драйверах*):"
+
+msgid ""
+"**Forward+**, running over Vulkan 1.0 (with optional Vulkan 1.1 and 1.2 "
+"features). The most advanced graphics backend, suited for desktop platforms "
+"only. Used by default on desktop platforms."
+msgstr ""
+"**Forward+**, працює на Vulkan 1.0 (з додатковими Vulkan 1.1 та 1.2). "
+"Найдосконаліший графічний сервер, який підходить лише для настільних "
+"платформ. Використовується за замовчуванням на настільних платформах."
+
+msgid ""
+"**Forward Mobile**, running over Vulkan 1.0 (with optional Vulkan 1.1 and "
+"1.2 features). Less features, but renders simple scenes faster. Suited for "
+"mobile and desktop platforms. Used by default on mobile platforms."
+msgstr ""
+"**Forward Mobile**,працює на Vulkan 1.0 (з додатковими Vulkan 1.1 та 1.2 "
+"features). Менше функцій, але швидше рендерить прості сцени. Підходить для "
+"мобільних і настільних платформ. Використовується за замовчуванням на "
+"мобільних платформах."
+
+msgid ""
+"**Compatibility**, running over OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. The "
+"least advanced graphics backend, suited for low-end desktop and mobile "
+"platforms. Used by default on the web platform."
+msgstr ""
+"**Compatibility**, працює на OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. Найменш "
+"просунутий графічний сервер, який підходить для настільних і мобільних "
+"платформ низького класу. Використовується за замовчуванням на веб-платформі."
+
+msgid "2D graphics"
+msgstr "2D графіка"
+
+msgid "Sprite, polygon and line rendering."
+msgstr "Рендер спрайтів, полігонів і ліній."
+
+msgid ""
+"High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
+"and :ref:`class_Line2D`, with support for texturing."
+msgstr ""
+"Високорівневі інструменти для малювання ліній та полігонів, такі як :ref:"
+"`class_Polygon2D` та :ref:`class_Line2D`, з підтримкою текстурування."
+
+msgid "AnimatedSprite2D as a helper for creating animated sprites."
+msgstr "AnimatedSprite2D як помічник для створення анімованих спрайтів."
+
+msgid "Parallax layers."
+msgstr "Шари паралакса."
+
+msgid "Pseudo-3D support including preview in the editor."
+msgstr "Підтримка псевдо-3D, з попереднім переглядом у редакторі."
+
+msgid ""
+":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
+"maps."
+msgstr ""
+":ref:`2D освітлення <doc_2d_lights_and_shadows>`з картами нормалей та "
+"картами відображень."
+
+msgid "Point (omni/spot) and directional 2D lights."
+msgstr "Точкове (омні/спот) і спрямоване 2D світло."
+
+msgid "Hard or soft shadows (adjustable on a per-light basis)."
+msgstr "Жорсткі або м'які тіні (регулюються для кожного світла окремо)."
+
+msgid ""
+"Custom shaders can access a real-time :abbr:`SDF (Signed Distance Field)` "
+"representation of the 2D scene based on :ref:`class_LightOccluder2D` nodes, "
+"which can be used for improved 2D lighting effects including 2D global "
+"illumination."
+msgstr ""
+"Користувацькі шейдери можуть в реальному часі до :abbr:`SDF (Signed Distance "
+"Field)` зображення 2D-сцени на основі вузлів :ref:`class_LightOccluder2D`, "
+"які можна використовувати для покращення ефектів 2D освітлення, включаючи 2D "
+"глобальне освітлення."
+
+msgid ""
+":ref:`Font rendering <doc_gui_using_fonts>` using bitmaps, rasterization "
+"using FreeType or multi-channel signed distance fields (MSDF)."
+msgstr ""
+":ref:`Вимальовування шрифтів <doc_gui_using_fonts>` за допомогою растрових "
+"зображень, растеризація за допомогою FreeType або багатоканальних знакових "
+"полів відстані (MSDF)."
+
+msgid ""
+"Bitmap fonts can be exported using tools like BMFont, or imported from "
+"images (for fixed-width fonts only)."
+msgstr ""
+"Растрові шрифти можна експортувати за допомогою таких інструментів, як "
+"BMFont, або імпортувати із зображень (лише для шрифтів фіксованої ширини)."
+
+msgid ""
+"Dynamic fonts support monochrome fonts as well as colored fonts (e.g. for "
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
+msgstr ""
+"DynamicFont підтримує монохромні шрифти, а також кольорові шрифти "
+"(наприклад, емодзі). Підтримувані формати: TTF, OTF, WOFF1 та WOFF2."
+
+msgid ""
+"Dynamic fonts support optional font outlines with adjustable width and color."
+msgstr ""
+"Динамічні шрифти підтримують додаткові контури шрифту з регульованою шириною "
+"та кольором."
+
+msgid ""
+"Dynamic fonts support variable fonts and OpenType features including "
+"ligatures."
+msgstr ""
+"Динамічні шрифти підтримують змінні шрифти та функції OpenType, включаючи "
+"лігатури."
+
+msgid ""
+"Dynamic fonts support simulated bold and italic when the font file lacks "
+"those styles."
+msgstr ""
+"Динамічні шрифти підтримують імітацію напівжирного та курсиву, якщо у файлі "
+"шрифту відсутні ці стилі."
+
+msgid ""
+"Dynamic fonts support oversampling to keep fonts sharp at higher resolutions."
+msgstr ""
+"Динамічні шрифти підтримують передискретизацію, щоб зберегти чіткість "
+"шрифтів при високій роздільній здатності."
+
+msgid ""
+"Dynamic fonts support subpixel positioning to make fonts crisper at low "
+"sizes."
+msgstr ""
+"Динамічні шрифти підтримують субпіксельне позиціонування, щоб зробити шрифти "
+"чіткішими при малих розмірах."
+
+msgid ""
+"Dynamic fonts support LCD subpixel optimizations to make fonts even crisper "
+"at low sizes."
+msgstr ""
+"Динамічні шрифти підтримують LCD-субпіксельну оптимізацію, щоб зробити "
+"шрифти ще чіткішими за малих розмірів."
+
+msgid ""
+"Signed distance field fonts can be scaled at any resolution without "
+"requiring re-rasterization. Multi-channel usage makes SDF fonts scale down "
+"to lower sizes better compared to monochrome SDF fonts."
+msgstr ""
+"Шрифти підписаних відстаней поля (SDF) можна масштабувати з будь-якою "
+"роздільною здатністю без необхідності повторної растеризації. Завдяки "
+"багатоканальному використанню шрифти SDF краще зменшуються до менших "
+"розмірів, ніж монохромні шрифти SDF."
+
+msgid ""
+"GPU-based :ref:`particles <doc_particle_systems_2d>` with support for :ref:"
+"`custom particle shaders <doc_particle_shader>`."
+msgstr ""
+"Графічні :ref:`частинки <doc_article_systems_2d>` з підтримкою :ref:"
+"`кастомних шейдерів частинок <doc_article_shader>`."
+
+msgid "CPU-based particles."
+msgstr "Частинки, що оброблюються CPU."
+
+msgid ""
+"Optional :ref:`2D HDR rendering "
+"<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
+"capabilities."
+msgstr ""
+"За бажання :ref:`2D HDR рендеринг "
+"<doc_environment_and_post_processing_using_glow_in_2d>` для кращого світіння."
+
+msgid "2D tools"
+msgstr "2D інструменти"
+
+msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
+msgstr ""
+":ref:`Карти плиток <doc_using_tilemaps>` для проектування 2D рівнів з плиток."
+
+msgid "2D camera with built-in smoothing and drag margins."
+msgstr "2D-камера з вбудованими функціями згладжування та перетягування країв."
+
+msgid "Path2D node to represent a path in 2D space."
+msgstr "Path2D вузол для малювання шляху у 2d просторі."
+
+msgid "Can be drawn in the editor or generated procedurally."
+msgstr "Може бути намальовано в редакторі або згенеровано процедурно."
+
+msgid "PathFollow2D node to make nodes follow a Path2D."
+msgstr "Вузол PathFollow2D, щоб змусити вузли рухатися по Path2D."
+
+msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
+msgstr ":ref:`2D геометрія допоміжний клас <class_Geometry2D>`."
+
+msgid "2D physics"
+msgstr "2D фізика"
+
+msgid "**Physics bodies:**"
+msgstr "**Фізичні тіла:**"
+
+msgid "Static bodies."
+msgstr "Статичні тіла."
+
+msgid ""
+"Animatable bodies (for objects moving only by script or animation, such as "
+"doors and platforms)."
+msgstr ""
+"Тіла, які можна анімувати (для об’єктів, що рухаються лише за скриптом або "
+"анімацією, як-от двері та платформи)."
+
+msgid "Rigid bodies."
+msgstr "Тверді тіла."
+
+msgid "Character bodies."
+msgstr "Тіла персонажів."
+
+msgid "Joints."
+msgstr "Суглоби."
+
+msgid "Areas to detect bodies entering or leaving it."
+msgstr ""
+"Області для виявлення тіл, що входять в них, або виходять за межі цих "
+"областей."
+
+msgid "**Collision detection:**"
+msgstr "**Виявлення зіткнень:**"
+
+msgid ""
+"Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
+msgstr ""
+"Вбудовані форми: лінія, коробка, коло, капсула, межа світу (нескінченна "
+"площина)."
+
+msgid ""
+"Collision polygons (can be drawn manually or generated from a sprite in the "
+"editor)."
+msgstr ""
+"Полігони зіткнення (можна намалювати вручну або нагенерувати з спрайта в "
+"редакторі)."
+
+msgid "3D graphics"
+msgstr "3D графіка"
+
+msgid "HDR rendering with sRGB."
+msgstr "HDR-рендеринг з sRGB."
+
+msgid "Perspective, orthographic and frustum-offset cameras."
+msgstr "Перспективні, ортографічні та фрустум-офсетні камери."
+
+msgid ""
+"When using the Forward+ backend, a depth prepass is used to improve "
+"performance in complex scenes by reducing the cost of overdraw."
+msgstr ""
+"Під час використанні режиму Forward+, для покращення продуктивності, в "
+"складних сценах для зменшення вартості перемальовування використовується "
+"попередній прохід глибини."
+
+msgid ""
+":ref:`doc_variable_rate_shading` on supported GPUs in Forward+ and Forward "
+"Mobile."
+msgstr ""
+":ref:`doc_variable_rate_shading` на підтримуваних в Forward+та Forward "
+"Mobile GPU-ах."
+
+msgid "**Physically-based rendering (built-in material features):**"
+msgstr "**Фізично достовірний рендеринг (вбудовані особливості матеріалів):**"
+
+msgid "Follows the Disney PBR model."
+msgstr "Наслідує модель Disney PBR."
+
+msgid ""
+"Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
+"shading modes."
+msgstr ""
+"Підтримує режими розсіяного затінення Burley, Lambert, Lambert Wrap (half-"
+"Lambert) і Toon."
+
+msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
+msgstr "Підтримує режими дзеркального затінення Schlick-GGX, Toon та Disabled."
+
+msgid "Uses a roughness-metallic workflow with support for ORM textures."
+msgstr ""
+"Використовує шорстко-металевий робочий процес із підтримкою ORM-текстур."
+
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance."
+msgstr ""
+"Використовує дзеркальну оклюзію горизонту (модель Filament) для покращення "
+"зовнішнього вигляду матеріалу."
+
+msgid "Normal mapping."
+msgstr "Normal Map (Карта нормалей)."
+
+msgid ""
+"Parallax/relief mapping with automatic level of detail based on distance."
+msgstr ""
+"Мапування паралаксу/рельєфу з автоматичним рівнем деталізації залежно від "
+"відстані."
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr "Детальне відображення альбедо і карт нормалей."
+
+msgid "Sub-surface scattering and transmittance."
+msgstr "Підповерхневе розсіювання та пропускання."
+
+msgid ""
+"Screen-space refraction with support for material roughness (resulting in "
+"blurry refraction)."
+msgstr ""
+"Екранно-просторове заломлення з підтримкою шорсткості матеріалу (що "
+"призводить до розмитого заломлення)."
+
+msgid "Proximity fade (soft particles) and distance fade."
+msgstr "Згасання поблизу (м'які частинки) і згасання на відстані."
+
+msgid ""
+"Distance fade can use alpha blending or dithering to avoid going through the "
+"transparent pipeline."
+msgstr ""
+"Для згладжування відстані можна використовувати альфа-змішування або "
+"згладжування, щоб уникнути проходження через прозорий контур."
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
+
+msgid "**Real-time lighting:**"
+msgstr "**Освітлення в режимі реального часу:**"
+
+msgid "Directional lights (sun/moon). Up to 4 per scene."
+msgstr "Спрямовувані джерела світла (сонце/місяць). До 4 на сцену."
+
+msgid "Omnidirectional lights."
+msgstr "Всебічне світло."
+
+msgid "Spot lights with adjustable cone angle and attenuation."
+msgstr "Точкове світло з регульованим кутом конуса і загасанням."
+
+msgid ""
+"Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
+"light basis."
+msgstr ""
+"Енергію дзеркального, непрямого світла та об'ємного туману можна регулювати "
+"окремо для кожного джерела світла."
+
+msgid ""
+"Adjustable light \"size\" for fake area lights (will also make shadows "
+"blurrier)."
+msgstr ""
+"Регульований \"розмір\" світла для штучного освітлення області (також "
+"зробить тіні більш розмитими)."
+
+msgid ""
+"Optional distance fade system to fade distant lights and their shadows, "
+"improving performance."
+msgstr ""
+"Додаткова система згасання віддаленого світла та тіней від нього, покращує "
+"продуктивність."
+
+msgid ""
+"When using the Forward+ backend (default on desktop), lights are rendered "
+"with clustered forward optimizations to decrease their individual cost. "
+"Clustered rendering also lifts any limits on the number of lights that can "
+"be used on a mesh."
+msgstr ""
+"При використання режиму Forward+ (за умовчанням на настільних комп’ютерах) "
+"світло візуалізується з кластерною попередньою оптимізацією, щоб зменшити "
+"його окрему вартість. Кластерний рендеринг також скасовує будь-які обмеження "
+"на кількість джерел світла, які можна використовувати в меші."
+
+msgid ""
+"When using the Forward Mobile backend, up to 8 omni lights and 8 spot lights "
+"can be displayed per mesh resource. Baked lighting can be used to overcome "
+"this limit if needed."
+msgstr ""
+"При використанні режиму Forward Mobile можна відображати до 8 універсальних "
+"і 8 точкових джерел світла на ресурсі меша. Щоб подолати цю межу, якщо "
+"необхідно, можна використовувати запечене освітлення."
+
+msgid "**Shadow mapping:**"
+msgstr "**Карта затінень:**"
+
+msgid ""
+"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
+"blending between splits."
+msgstr ""
+"*DirectionalLight (Спрямовуване світло):* Ортогональний (найшвидший), PSSM 2-"
+"split та 4-split. Підтримується змішування між розщепленнями."
+
+msgid ""
+"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
+"Supports colored projector textures in the form of panoramas."
+msgstr ""
+"*OmniLight (Всебічне світло):* Подвійний параболід (швидкий), або кубічна "
+"карта (повільніша, але точніша). Підтримує кольорові текстури проєктора у "
+"вигляді панорам."
+
+msgid "*SpotLight:* Single texture. Supports colored projector textures."
+msgstr "*SpotLight:* Окрема текстура. Підтримує кольорові текстури проектора."
+
+#, fuzzy
+msgid ""
+"Shadow normal offset bias and shadow pancaking to decrease the amount of "
+"visible shadow acne and peter-panning."
+msgstr ""
+"Нормальне зміщення тіні та розбивання тіні, щоб зменшити кількість видимих "
+"тіньових дефектів і панорамування."
+
+msgid ""
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on."
+msgstr ""
+":abbr:`PCSS (Percentage Closer Soft Shadows)`- схоже на розмиття тіні на "
+"основі розміру світла та відстані до поверхні, на яку відкидається тінь."
+
+msgid "Adjustable shadow blur on a per-light basis."
+msgstr "Регульоване розмиття тіней на основі кожного світла."
+
+msgid "**Global illumination with indirect lighting:**"
+msgstr "** Глобальне освітлення з непрямим світлом: **"
+
+msgid ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
+"at run-time)."
+msgstr ""
+":ref:`Запечені світлові карти <doc_using_lightmap_gi>` (швидко, але не може "
+"бути оновлена під час виконання)."
+
+msgid ""
+"Supports baking indirect light only or baking both direct and indirect "
+"lighting. The bake mode can be adjusted on a per-light basis to allow for "
+"hybrid light baking setups."
+msgstr ""
+"Підтримує запікання лише непрямого освітлення або запікання як прямого, так "
+"і непрямого освітлення. Режим запікання можна налаштувати залежно від "
+"світла, щоб забезпечити гібридні налаштування запікання."
+
+msgid ""
+"Supports lighting dynamic objects using automatic and manually placed probes."
+msgstr ""
+"Підтримує освітлення динамічних об'єктів за допомогою автоматичних і ручних "
+"зондів."
+
+msgid ""
+"Optionally supports directional lighting and rough reflections based on "
+"spherical harmonics."
+msgstr ""
+"Додатково підтримує спрямоване освітлення та грубі відбиття на основі "
+"сферичних обертонів."
+
+msgid ""
+"Lightmaps are baked on the GPU using compute shaders (much faster compared "
+"to CPU lightmapping). Baking can only be performed from the editor, not in "
+"exported projects."
+msgstr ""
+"Карти світла запікаються на GPU за допомогою обчислювальних шейдерів "
+"(набагато швидше порівняно з картою освітлення CPU). Запікання можна "
+"виконувати лише з редактора, а не в експортованих проектах."
+
+msgid ""
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM, or CPU/GPU-based denoising with OIDN."
+msgstr ""
+"Підтримує :ref:`усунення шумів<doc_using_lightmap_gi_denoising>` на основі "
+"GPU за допомогою JNLM або на основі CPU/GPU за допомогою OIDN."
+
+msgid ""
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
+"*and* dynamic occluders, while also supporting reflections. Requires a fast "
+"baking step which can be performed in the editor or at run-time (including "
+"from an exported project)."
+msgstr ""
+":ref:`GI зонди на основі вокселів<doc_using_voxel_gi>`. Підтримує динамічне "
+"світло та динамічні оклюдери, а також підтримує відображення. Потрібен "
+"швидкий етап запікання, який можна виконати в редакторі або під час "
+"виконання (зокрема з експортованого проекту)."
+
+#, fuzzy
+msgid ""
+":ref:`Signed-distance field GI <doc_using_sdfgi>` designed for large open "
+"worlds. Supports dynamic lights, but not dynamic occluders. Supports "
+"reflections. No baking required."
+msgstr ""
+":ref:`Поле відстаней зі знаком GI<doc_using_sdfgi>`, розроблене для великих "
+"відкритих світів. Підтримує динамічне світло, але не динамічні оклюдери. "
+"Підтримує відображення. Запікання не потрібне."
+
+msgid ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` at half or full resolution. "
+"Fully real-time and supports any kind of emissive light source (including "
+"decals)."
+msgstr ""
+":ref:`Непряме освітлення екранного простору (Screen-space indirect lighting "
+"(SSIL))<doc_environment_and_post_processing_ssil>` із половинною або повною "
+"роздільною здатністю. Повністю в реальному часі та підтримує будь-які "
+"джерела випромінюваного світла (включаючи декалі)."
+
+msgid ""
+"VoxelGI and SDFGI use a deferred pass to allow for rendering GI at half "
+"resolution to improve performance (while still having functional MSAA "
+"support)."
+msgstr ""
+"VoxelGI та SDFGI використовують відкладений прохід, щоб дозволити "
+"візуалізацію GI з половинною роздільною здатністю для покращення "
+"продуктивності (продовжуючи функціональну підтримку MSAA)."
+
+msgid "**Reflections:**"
+msgstr "**Відображення:**"
+
+msgid ""
+"Voxel-based reflections (when using GI probes) and SDF-based reflections "
+"(when using signed distance field GI). Voxel-based reflections are visible "
+"on transparent surfaces, while rough SDF-based reflections are visible on "
+"transparent surfaces."
+msgstr ""
+"Відбиття на основі вокселів (при використанні зондів GI) і відбиття на "
+"основі SDF (при використанні SDF GI). Відображення на основі вокселів видно "
+"на прозорих поверхнях, тоді як грубі відображення на основі SDF видно на "
+"прозорих поверхнях."
+
+msgid ""
+"Fast baked reflections or slow real-time reflections using ReflectionProbe. "
+"Parallax box correction can optionally be enabled."
+msgstr ""
+"Швидке запечене відображення, або повільне в реальному часі з використанням "
+"ReflectionProbe (Зонда Відображення). За бажання можна увімкнути параллаксну "
+"коробку корекції."
+
+msgid "Screen-space reflections with support for material roughness."
+msgstr "Відображення екранного простору з підтримкою шорсткості матеріалу."
+
+msgid ""
+"Reflection techniques can be mixed together for greater accuracy or "
+"scalability."
+msgstr ""
+"Техніки відображення можна змішувати для більшої точності або "
+"масштабованості."
+
+msgid ""
+"When using the Forward+ backend (default on desktop), reflection probes are "
+"rendered with clustered forward optimizations to decrease their individual "
+"cost. Clustered rendering also lifts any limits on the number of reflection "
+"probes that can be used on a mesh."
+msgstr ""
+"При використанні режиму Forward+ (за замовчуванням на настільному "
+"комп’ютері) зонди відображення візуалізуються з кластерною оптимізацією "
+"вперед, щоб зменшити їх окрему вартість. Кластерний рендеринг також скасовує "
+"будь-які обмеження на кількість зондів відбиття, які можна використовувати "
+"на сітці."
+
+msgid ""
+"When using the Forward Mobile backend, up to 8 reflection probes can be "
+"displayed per mesh resource."
+msgstr ""
+"При використанні режиму Forward Mobile можна відображати до 8 зондів "
+"відбиття на один ресурс сітки."
+
+msgid "**Decals:**"
+msgstr "**Наклейки:**"
+
+msgid ""
+":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, and normal mapping."
+msgstr ""
+":ref:`Підтримує альбедо <doc_using_decals>`, емісію, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, і карти нормалей."
+
+msgid ""
+"Texture channels are smoothly overlaid on top of the underlying material, "
+"with support for normal/ORM-only decals."
+msgstr ""
+"Текстурні канали плавно накладаються на базовий матеріал із підтримкою "
+"звичайних/лише-ORM декалей."
+
+#, fuzzy
+msgid ""
+"Support for normal fade to fade the decal depending on its incidence angle."
+msgstr ""
+"Підтримка нормального вицвітання для вицвітання наклейки залежно від її кута "
+"падіння."
+
+msgid ""
+"Does not rely on run-time mesh generation. This means decals can be used on "
+"complex skinned meshes with no performance penalty, even if the decal moves "
+"every frame."
+msgstr ""
+"Не покладається на генерацію сітки під час виконання. Це означає, що "
+"наклейки можна використовувати на сітках зі складною оболонкою без "
+"погіршення продуктивності, навіть якщо наклейка пересувається в кожному "
+"кадрі."
+
+msgid ""
+"Support for nearest, bilinear, trilinear or anisotropic texture filtering "
+"(configured globally)."
+msgstr ""
+"Підтримка найближчої, білінійної, трилінійної або анізотропної фільтрації "
+"текстур (налаштовується глобально)."
+
+msgid ""
+"When using the Forward+ backend (default on desktop), decals are rendered "
+"with clustered forward optimizations to decrease their individual cost. "
+"Clustered rendering also lifts any limits on the number of decals that can "
+"be used on a mesh."
+msgstr ""
+"При використанні режиму Forward+ (за умовчанням на настільному комп’ютері) "
+"наклейки відображаються з кластерною оптимізацією вперед, щоб зменшити їх "
+"окрему вартість. Кластерний рендеринг також скасовує будь-які обмеження на "
+"кількість наклейок, які можна використовувати на сітці."
+
+msgid ""
+"When using the Forward Mobile backend, up to 8 decals can be displayed per "
+"mesh resource."
+msgstr ""
+"При використанні режиму Forward Mobile можна відображати до 8 наклейок на "
+"один ресурс сітки."
+
+msgid "**Sky:**"
+msgstr "**Небо:**"
+
+msgid "Panorama sky (using an HDRI)."
+msgstr "Панорамне небо (з використанням HDRI)."
+
+msgid ""
+"Procedural sky and Physically-based sky that respond to the "
+"DirectionalLights in the scene."
+msgstr ""
+"Процедурне небо та фізичне небо, які реагують на направлене світло в сцені."
+
+msgid ""
+"Support for :ref:`custom sky shaders <doc_sky_shader>`, which can be "
+"animated."
+msgstr ""
+"Підтримує :ref:`користувацькі шейдери неба <doc_sky_shader>`, які можна "
+"анімувати."
+
+msgid ""
+"The radiance map used for ambient and specular light can be updated in real-"
+"time depending on the quality settings chosen."
+msgstr ""
+"Карту яскравості, яка використовується для навколишнього та дзеркального "
+"світла, можна оновлювати в режимі реального часу залежно від вибраних "
+"параметрів якості."
+
+msgid "**Fog:**"
+msgstr "**Туман:**"
+
+msgid "Exponential depth fog."
+msgstr "Глибокий туман."
+
+msgid "Exponential height fog."
+msgstr "Високий туман."
+
+msgid ""
+"Support for automatic fog color depending on the sky color (aerial "
+"perspective)."
+msgstr ""
+"Підтримка автоматичного кольору туману залежно від кольору неба (повітряна "
+"перспектива)."
+
+msgid "Support for sun scattering in the fog."
+msgstr "Підтримка розсіювання сонця в тумані."
+
+msgid ""
+"Support for controlling how much fog rendering should affect the sky, with "
+"separate controls for traditional and volumetric fog."
+msgstr ""
+"Підтримка контролю того, наскільки візуалізація туману має впливати на небо, "
+"з окремими елементами керування для традиційного та об’ємного туману."
+
+msgid "Support for making specific materials ignore fog."
+msgstr "Підтримка ігнорування туману певними матеріалами."
+
+msgid "**Volumetric fog:**"
+msgstr "**Об'ємний туман:**"
+
+msgid ""
+"Global :ref:`volumetric fog <doc_volumetric_fog>` that reacts to lights and "
+"shadows."
+msgstr ""
+"Глобальний :ref:`об'ємний туман<doc_volumetric_fog>`, який реагує на світло "
+"і тіні."
+
+msgid ""
+"Volumetric fog can take indirect light into account when using VoxelGI or "
+"SDFGI."
+msgstr ""
+"Об’ємний туман може враховувати непряме світло при використанні VoxelGI або "
+"SDFGI."
+
+msgid ""
+"Fog volume nodes that can be placed to add fog to specific areas (or remove "
+"fog from specific areas). Supported shapes include box, ellipse, cone, "
+"cylinder, and 3D texture-based density maps."
+msgstr ""
+"Вузли об'ємного туману, які можна розмістити, щоб додати туман у певні "
+"області (або видалити туман із певних областей). Підтримувані форми "
+"включають коробку, еліпс, конус, циліндр і 3D-карти щільності на основі "
+"текстури."
+
+msgid "Each fog volume can have its own custom shader."
+msgstr "Кожен об'єм туману може мати свій власний шейдер."
+
+msgid "Can be used together with traditional fog."
+msgstr "Може бути використаний разом зі звичайним туманом."
+
+msgid "**Particles:**"
+msgstr "**Частинки:**"
+
+#, fuzzy
+msgid ""
+"GPU-based particles with support for subemitters (2D + 3D), trails (2D + "
+"3D), attractors (3D only) and collision (2D + 3D)."
+msgstr ""
+"GPU графічні частинки з підтримкою сабемітерів (2D + 3D), шляхів (2D + 3D), "
+"атракторів та колізій (2D + 3D)."
+
+msgid ""
+"3D particle attractor shapes supported: box, sphere and 3D vector fields."
+msgstr ""
+"Підтримуються форми аттракторів 3D-частинок: коробка, сфера і 3D-векторні "
+"поля."
+
+msgid ""
+"3D particle collision shapes supported: box, sphere, baked signed distance "
+"field and real-time heightmap (suited for open world weather effects)."
+msgstr ""
+"Підтримуються форми зіткнень 3D частинок: коробка, сфера, запечене підписане "
+"поле відстані і карта висот в реальному часі (підходить для ефектів погоди "
+"відкритого світу)."
+
+msgid ""
+"2D particle collision is handled using a signed distance field generated in "
+"real-time based on :ref:`class_LightOccluder2D` nodes in the scene."
+msgstr ""
+"Зіткнення 2D частинок опрацьовується за допомогою позначеного поля відстані "
+"згенерованого в реальному часі на основі вузлів :ref:`class_LightOccluder2D` "
+"в сцені."
+
+msgid ""
+"Trails can use the built-in ribbon trail and tube trail meshes, or custom "
+"meshes with skeletons."
+msgstr ""
+
+msgid "Support for custom particle shaders with manual emission."
+msgstr ""
+
+msgid "**Post-processing:**"
+msgstr "**Пост-обробка:**"
+
+msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
+msgstr "Замалювання (Linear, Reinhard, Filmic, ACES)."
+
+msgid ""
+"Automatic exposure adjustments based on viewport brightness (and manual "
+"exposure override)."
+msgstr ""
+"Автоматичне регулювання експозиції на основі яскравості видошукача (і ручне "
+"перевизначення експозиції)."
+
+msgid ""
+"Near and far depth of field with adjustable bokeh simulation (box, hexagon, "
+"circle)."
+msgstr ""
+
+msgid "Screen-space ambient occlusion (SSAO) at half or full resolution."
+msgstr ""
+"Екранно-просторова оклюзія навколишнього середовища (SSAO) при половинній "
+"або повній роздільній здатності."
+
+msgid ""
+"Glow/bloom with optional bicubic upscaling and several blend modes "
+"available: Screen, Soft Light, Add, Replace, Mix."
+msgstr ""
+"Сяйво/цвітіння з додатковим бікубічним масштабуванням і кількома режимами "
+"накладання: Екран, М'яке світло, Додати, Замінити, Змішати."
+
+msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
+msgstr ""
+
+msgid ""
+"Glow can be :ref:`used as a screen-space blur effect "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
+msgstr ""
+
+msgid "Color correction using a one-dimensional ramp or a 3D LUT texture."
+msgstr "Корекція кольору за допомогою одновимірної рампи або 3D LUT-текстури."
+
+msgid "Roughness limiter to reduce the impact of specular aliasing."
+msgstr ""
+
+msgid "Brightness, contrast and saturation adjustments."
+msgstr "Регулювання яскравості, контрасту та насиченості."
+
+msgid "**Texture filtering:**"
+msgstr "**Фільтрування текстур:**"
+
+msgid "Nearest, bilinear, trilinear or anisotropic filtering."
+msgstr "Найближнє, білінійне, трилінійне та анізотропне фільтрування."
+
+msgid ""
+"Filtering options are defined on a per-use basis, not a per-texture basis."
+msgstr ""
+"Параметри фільтрації визначаються на основі використання, а не на основі "
+"текстури."
+
+msgid "**Texture compression:**"
+msgstr "**Стиснення текстур:**"
+
+msgid "Basis Universal (slow, but results in smaller files)."
+msgstr ""
+
+msgid "BPTC for high-quality compression (not supported on macOS)."
+msgstr "BPTC для якісного стиснення (не підтримується на macOS)."
+
+msgid "ETC2 (not supported on macOS)."
+msgstr "ETC2 (не підтримується на macOS)."
+
+msgid "S3TC (not supported on mobile/Web platforms)."
+msgstr "S3TC (не підтримується на мобільних/веб-платформах)."
+
+msgid "**Anti-aliasing:**"
+msgstr "**Згладжування:**"
+
+msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
+msgstr ""
+
+msgid ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`antialiasing "
+"<doc_3d_antialiasing>` (FSR2), which can be used at native resolution as a "
+"form of high-quality temporal antialiasing."
+msgstr ""
+
+msgid ""
+"Multi-sample antialiasing (MSAA), for both :ref:`doc_2d_antialiasing` and :"
+"ref:`doc_3d_antialiasing`."
+msgstr ""
+
+msgid "Fast approximate antialiasing (FXAA)."
+msgstr "Швидке приблизне згладжування (FXAA)."
+
+msgid ""
+"Super-sample antialiasing (SSAA) using bilinear 3D scaling and a 3D "
+"resolution scale above 1.0."
+msgstr ""
+
+msgid ""
+"Alpha antialiasing, MSAA alpha to coverage and alpha hashing on a per-"
+"material basis."
+msgstr ""
+
+msgid "**Resolution scaling:**"
+msgstr "**Масштабування роздільної здатності:**"
+
+msgid ""
+"Support for :ref:`rendering 3D at a lower resolution "
+"<doc_resolution_scaling>` while keeping 2D rendering at the original scale. "
+"This can be used to improve performance on low-end systems or improve "
+"visuals on high-end systems."
+msgstr ""
+
+msgid ""
+"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
+"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
+msgstr ""
+
+msgid ""
+"Texture mipmap LOD bias is adjusted automatically to improve quality at "
+"lower resolution scales. It can also be modified with a manual offset."
+msgstr ""
+
+msgid ""
+"Most effects listed above can be adjusted for better performance or to "
+"further improve quality. This can be helpful when :ref:`using Godot for "
+"offline rendering <doc_creating_movies>`."
+msgstr ""
+"Більшість ефектів, перелічених вище, можна налаштувати для кращої "
+"продуктивності або для подальшого покращення якості. Це може бути корисним у "
+"випадку :ref:`використання Godot для автономного рендерингу "
+"<doc_creating_movies>`."
+
+msgid "3D tools"
+msgstr "3D інструменти"
+
+msgid ""
+"Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad, "
+"torus, ribbon, tube."
+msgstr ""
+"Вбудовані сітки: куб, циліндр/конус, (гемі)сфера, призма, площина, квадрат, "
+"тор, стрічка, труба."
+
+msgid ":ref:`GridMaps <doc_using_gridmaps>` for 3D tile-based level design."
+msgstr ""
+
+msgid ""
+":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
+"prototyping)."
+msgstr ""
+":ref:`Конструктивна геометрія твердого тіла <doc_csg_tools>` (призначена для "
+"прототипів)."
+
+msgid ""
+"Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
+msgstr ""
+"Інструменти для :ref:`генерації процедурної геометрії "
+"<doc_procedural_geometry>`."
+
+msgid "Path3D node to represent a path in 3D space."
+msgstr "Вузол Path3D для зображення шляху в 3D просторі."
+
+msgid "PathFollow3D node to make nodes follow a Path3D."
+msgstr "Вузол PathFollow3D, щоб заставити вузли рухатися по Path3D."
+
+msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
+msgstr ":ref:`3D геометрія допоміжного класу <class_Geometry3D>`."
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file, both from the "
+"editor and at run-time from an exported project."
+msgstr ""
+"Підтримка експорту поточної сцени у формат glTF 2.0 як з редактора, так і "
+"під час виконання з експортованого проекту."
+
+msgid "3D physics"
+msgstr "3D фізика"
+
+msgid "Vehicle bodies (intended for arcade physics, not simulation)."
+msgstr "Транспортні тіла (призначена для аркадної фізики, не симуляцій)."
+
+msgid "Soft bodies."
+msgstr "М'які тіла."
+
+msgid "Ragdolls."
+msgstr "Система Ragdolls (\"rag\" - ганчірка, \"doll\" - лялька)."
+
+msgid ""
+"Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
+"plane)."
+msgstr ""
+"Вбудовані форми: кубоїд, сфера, капсула, циліндр, межа світу (нескінченна "
+"площина)."
+
+msgid "Generate triangle collision shapes for any mesh from the editor."
+msgstr ""
+"Генерація трикутникових форм зіткнень для будь-якого меша (сітки) з "
+"редактора."
+
+msgid ""
+"Generate one or several convex collision shapes for any mesh from the editor."
+msgstr ""
+"Створення одної, або кількох, опуклих форм зіткнення для будь-якого меша "
+"(сітки) з редактора."
+
+msgid "Shaders"
+msgstr "Шейдери"
+
+msgid "*2D:* Custom vertex, fragment, and light shaders."
+msgstr "*2D:* Користувацькі вершинні, фрагментні та світлові шейдери."
+
+msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
+msgstr "*3D:* Користувацькі вершинні, фрагментні, світлові та шейдери неба."
+
+msgid ""
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
+"<doc_shading_language>`."
+msgstr ""
+"Текстові шейдери, що використовують :ref:`мову шейдерів, на зразок GLSL "
+"<doc_shading_language>`."
+
+msgid "Visual shader editor."
+msgstr "Візуальний редактор шейдерів."
+
+msgid "Support for visual shader plugins."
+msgstr "Підтримка плагінів візуальних шейдерів."
+
+msgid "Scripting"
+msgstr "Скриптинґ"
+
+msgid "**General:**"
+msgstr "**Загальне:**"
+
+msgid "Object-oriented design pattern with scripts extending nodes."
+msgstr ""
+"Об'єктно-орієнтований шаблон проєктування зі скриптами, що розширюють вузли."
+
+msgid "Signals and groups for communicating between scripts."
+msgstr "Сигнали та групи для обміну даними між скриптами."
+
+msgid ""
+"Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
+msgstr "Підтримка :ref:`багатомовних скриптів <doc_cross_language_scripting>`."
+
+msgid ""
+"Many 2D, 3D and 4D linear algebra data types such as vectors and transforms."
+msgstr ""
+"Багато типів даних 2D, 3D і 4D лінійної алгебри, таких як вектори і "
+"перетворення."
+
+msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
+
+msgid ""
+":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
+"static typing <doc_gdscript_static_typing>`."
+msgstr ""
+":ref:`Високорівнева інтерпретована мова <doc_gdscript>` з :ref:"
+"`необов'язковою статичною типізацією <doc_gdscript_static_typing>`."
+
+msgid ""
+"Syntax inspired by Python. However, GDScript is **not** based on Python."
+msgstr ""
+
+msgid "Syntax highlighting is provided on GitHub."
+msgstr "Підсвітка синтаксису передбачена на GitHub."
+
+msgid ""
+":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
+"actions or make use of multiple processor cores."
+msgstr ""
+":ref:`Використання потоків <doc_using_multiple_threads>` для виконання "
+"асинхронних дій, або використання декількох ядер процесора."
+
+msgid ":ref:`C#: <toc-learn-scripting-C#>`"
+msgstr ":ref:`C#: <toc-learn-scripting-C#>`"
+
+msgid "Packaged in a separate binary to keep file sizes and dependencies down."
+msgstr ""
+"Упаковано в окремий бінарний файл, щоб зменшити розміри файлів та залежності."
+
+msgid "Supports .NET 6 and higher."
+msgstr ""
+
+msgid "Full support for the C# 10.0 syntax and features."
+msgstr "Повна підтримка синтаксису та можливостей C# 10.0."
+
+msgid ""
+"Supports Windows, Linux, and macOS. As of 4.2 experimental support for "
+"Android and iOS is also available (requires a .NET 7.0 project for Android "
+"and 8.0 for iOS)."
+msgstr ""
+
+msgid ""
+"On the Android platform only some architectures are supported: ``arm64`` and "
+"``x64``."
+msgstr ""
+
+msgid "On the iOS platform only some architectures are supported: ``arm64``."
+msgstr ""
+
+msgid ""
+"The web platform is currently unsupported. To use C# on that platform, "
+"consider Godot 3 instead."
+msgstr ""
+
+msgid ""
+"Using an external editor is recommended to benefit from IDE functionality."
+msgstr ""
+"Рекомендується використовувати зовнішній редактор, щоб скористатися "
+"функціоналом IDE."
+
+msgid "**GDExtension (C, C++, Rust, D, ...):**"
+msgstr "**GDEрозширення (C, C++, Rust, D, ...):**"
+
+msgid ""
+"When you need it, link to native libraries for higher performance and third-"
+"party integrations."
+msgstr ""
+"Коли вам це потрібно, перейдіть за посиланням на власні бібліотеки для "
+"підвищення продуктивності та сторонніх інтеграцій."
+
+msgid ""
+"For scripting game logic, GDScript or C# are recommended if their "
+"performance is suitable."
+msgstr ""
+"Для написання скриптів ігрової логіки рекомендується GDScript, або C#, якщо "
+"їх продуктивність підходить."
+
+msgid ""
+"Official GDExtension bindings for `C <https://github.com/godotengine/godot-"
+"headers>`__ and `C++ <https://github.com/godotengine/godot-cpp>`__."
+msgstr ""
+
+msgid "Use any build system and language features you wish."
+msgstr ""
+"Використовуйте, за своїм бажанням, будь-яку систему побудови та мовні "
+"функції."
+
+msgid ""
+"Actively developed GDExtension bindings for `D <https://github.com/godot-"
+"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Swift "
+"<https://github.com/migueldeicaza/SwiftGodot>`__, and `Rust <https://github."
+"com/godot-rust/gdextension>`__ bindings provided by the community. (Some of "
+"these bindings may be experimental and not production-ready)."
+msgstr ""
+
+msgid "Audio"
+msgstr "Аудіо"
+
+msgid "Mono, stereo, 5.1 and 7.1 output."
+msgstr "Вихід моно, стерео, 5.1 та 7.1."
+
+msgid "Non-positional and positional playback in 2D and 3D."
+msgstr "Непозиційне та позиційне відтворення в 2D та 3D."
+
+msgid "Optional Doppler effect in 2D and 3D."
+msgstr "Необов'язковий ефект Доплера в 2D та 3D."
+
+msgid ""
+"Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
+"with dozens of effects included."
+msgstr ""
+"Підтримка перенаправлення :ref:`аудіо шин<doc_audio_buses>` і ефектів з "
+"десятками включених ефектів."
+
+msgid ""
+"Support for polyphony (playing several sounds from a single "
+"AudioStreamPlayer node)."
+msgstr ""
+
+msgid "Support for random volume and pitch."
+msgstr "Підтримка довільної гучності та висоти тону."
+
+msgid "Support for real-time pitch scaling."
+msgstr "Підтримка масштабування висоти тону в реальному часі."
+
+msgid ""
+"Support for sequential/random sample selection, including repetition "
+"prevention when using random sample selection."
+msgstr ""
+
+msgid ""
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
+msgstr ""
+"Вузли Listener2D та Listener3D для прослуховування з іншої позиції, ніж "
+"камера."
+
+msgid ""
+"Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
+msgstr ""
+"Підтримка :ref:`процедурної генерації звуку <клас_AudioStreamGenerator>`."
+
+msgid "Audio input to record microphones."
+msgstr ""
+
+msgid "MIDI input."
+msgstr "MIDI вхід."
+
+msgid "No support for MIDI output yet."
+msgstr "Ще не підтримується вихід MIDI."
+
+msgid "**APIs used:**"
+msgstr "**Використані API:**"
+
+msgid "*Windows:* WASAPI."
+msgstr "*Windows:* ВАСАПІ."
+
+msgid "*macOS:* CoreAudio."
+msgstr "*macOS:* Аудіо ядро."
+
+msgid "*Linux:* PulseAudio or ALSA."
+msgstr "*Linux:* PulseAudio чи ALSA."
+
+msgid "Import"
+msgstr "Імпорт"
+
+msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
+msgstr "Підтримка :ref:`користувацьких плагінів імпорту<doc_import_plugins>`."
+
+msgid "**Formats:**"
+msgstr "**Формати:**"
+
+msgid "*Images:* See :ref:`doc_importing_images`."
+msgstr "*Зображення:* Дивіться :ref:`doc_importing_images`."
+
+msgid "*Audio:*"
+msgstr "*Аудіо:*"
+
+msgid "WAV with optional IMA-ADPCM compression."
+msgstr "WAV з опціональним стисненням IMA-ADPCM."
+
+msgid "Ogg Vorbis."
+msgstr "Ogg Vorbis."
+
+msgid "MP3."
+msgstr "MP3."
+
+msgid "*3D scenes:* See :ref:`doc_importing_3d_scenes`."
+msgstr "*3D сцени:* Дивіться :ref:`doc_importing_3d_scenes`."
+
+msgid "glTF 2.0 *(recommended)*."
+msgstr "glTF 2.0 *(рекомендовано)*."
+
+msgid ""
+"``.blend`` (by calling Blender's glTF export functionality transparently)."
+msgstr ""
+
+msgid ""
+"FBX (by calling `FBX2glTF <https://github.com/godotengine/FBX2glTF>`__ "
+"transparently)."
+msgstr ""
+
+msgid "Collada (.dae)."
+msgstr "Коллада (.dae)."
+
+msgid ""
+"Wavefront OBJ (static scenes only, can be loaded directly as a mesh or "
+"imported as a 3D scene)."
+msgstr ""
+"Wavefront OBJ (тільки статичні сцени, можна завантажити безпосередньо як "
+"сітку або імпортувати як 3D-сцену)."
+
+msgid ""
+"Support for loading glTF 2.0 scenes at run-time, including from an exported "
+"project."
+msgstr ""
+"Підтримка завантаження сцен glTF 2.0 під час виконання, зокрема з "
+"експортованого проекту."
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
+"3D меші використовують `Mikktspace <http://www.mikktspace.com/>`__ для "
+"генерації дотичних при імпорті, що забезпечує узгодженість з іншими 3D-"
+"застосунками, такими як Blender."
+
+msgid "Input"
+msgstr "Введення"
+
+msgid ""
+":ref:`Input mapping system <doc_input_examples>` using hardcoded input "
+"events or remappable input actions."
+msgstr ""
+"ref:`Система відображення вводу <doc_input_examples>` з використанням "
+"жорстко закодованих подій вводу або дій вводу, які можна перерозподіляти."
+
+msgid ""
+"Axis values can be mapped to two different actions with a configurable "
+"deadzone."
+msgstr ""
+"Значення осей можуть бути зіставлені з двома різними діями з настроюваною "
+"мертвою зоною."
+
+msgid "Use the same code to support both keyboards and gamepads."
+msgstr ""
+"Використовуйте один і той же код для, як для клавіатур, так і для геймпадів."
+
+msgid "Keyboard input."
+msgstr "Ввід з клавіатури."
+
+msgid ""
+"Keys can be mapped in \"physical\" mode to be independent of the keyboard "
+"layout."
+msgstr ""
+"Клавіші можна призначити у \"фізичному\" режимі, щоб вони не залежали від "
+"розкладки клавіатури."
+
+msgid "Mouse input."
+msgstr "Ввід з мишки."
+
+msgid ""
+"The mouse cursor can be visible, hidden, captured or confined within the "
+"window."
+msgstr ""
+"Курсор миші може бути видимим, прихованим, захопленим або обмеженим у вікні."
+
+msgid ""
+"When captured, raw input will be used on Windows and Linux to sidestep the "
+"OS' mouse acceleration settings."
+msgstr ""
+"При захопленні необроблений ввід буде використовуватися в Windows і Linux "
+"для обходу налаштувань прискорення мишки ОС."
+
+msgid "Gamepad input (up to 8 simultaneous controllers)."
+msgstr "Ввід з геймпаду (до 8 одночасних контролерів)."
+
+msgid "Pen/tablet input with pressure support."
+msgstr "Ввід пера/планшета з підтримкою тиску."
+
+msgid "Navigation"
+msgstr "Навігація"
+
+msgid ""
+"A* algorithm in :ref:`2D <class_AStar2D>` and :ref:`3D <class_AStar3D>`."
+msgstr ""
+
+msgid ""
+"Navigation meshes with dynamic obstacle avoidance in :ref:`2D "
+"<doc_navigation_overview_2d>` and :ref:`3D <doc_navigation_overview_3d>`."
+msgstr ""
+
+msgid ""
+"Generate navigation meshes from the editor or at run-time (including from an "
+"exported project)."
+msgstr ""
+"Створення навігаційних мешів (сіток) в редакторі, чи під час виконання "
+"(включаючи з експортованого проекту)."
+
+msgid "Networking"
+msgstr "Робота у мережі"
+
+msgid ""
+"Low-level TCP networking using :ref:`class_StreamPeer` and :ref:"
+"`class_TCPServer`."
+msgstr ""
+"Низькорівнева TCP-мережа з використанням :ref:`class_StreamPeer` та :ref:"
+"`class_TCPServer`."
+
+msgid ""
+"Low-level UDP networking using :ref:`class_PacketPeer` and :ref:"
+"`class_UDPServer`."
+msgstr ""
+"Низькорівнева UDP-мережа з використанням :ref:`class_PacketPeer` та :ref:"
+"`class_UDPServer`."
+
+msgid "Low-level HTTP requests using :ref:`class_HTTPClient`."
+msgstr "Низькорівневі HTTP-запити з використанням :ref:`class_HTTPClient`."
+
+msgid "High-level HTTP requests using :ref:`class_HTTPRequest`."
+msgstr "Високорівневі HTTP-запити з використанням :ref:`class_HTTPRequest`."
+
+msgid "Supports HTTPS out of the box using bundled certificates."
+msgstr ""
+"Підтримка HTTPS прямо з коробки з використанням пов'язаних сертифікатів."
+
+msgid ""
+":ref:`High-level multiplayer <doc_high_level_multiplayer>` API using UDP and "
+"ENet."
+msgstr ""
+":ref:`Високорівневий багатокористувацький <doc_high_level_multiplayer>` API "
+"з використанням UDP та ENet."
+
+msgid "Automatic replication using remote procedure calls (RPCs)."
+msgstr ""
+"Автоматична реплікація за допомогою віддалених процедурних викликів (RPC)."
+
+msgid "Supports unreliable, reliable and ordered transfers."
+msgstr "Підтримує ненадійні, надійні та впорядковані трансфери."
+
+msgid ""
+":ref:`WebSocket <doc_websocket>` client and server, available on all "
+"platforms."
+msgstr ""
+":ref:`WebSocket <doc_websocket>` клієнт і сервер, доступний на всіх "
+"платформах."
+
+msgid ""
+":ref:`WebRTC <doc_webrtc>` client and server, available on all platforms."
+msgstr ""
+":ref:`WebRTC <doc_webrtc>` клієнт і сервер, доступний на всіх платформах."
+
+msgid ""
+"Support for :ref:`UPnP <class_UPNP>` to sidestep the requirement to forward "
+"ports when hosting a server behind a NAT."
+msgstr ""
+"Підтримка :ref:`UPnP <class_UPNP>`, щоб обійти вимогу переадресації портів "
+"при розміщенні сервера за NAT."
+
+msgid "Internationalization"
+msgstr "Інтернаціоналізація"
+
+msgid "Full support for Unicode including emoji."
+msgstr "Повна підтримка Unicode, включаючи емодзі."
+
+msgid ""
+"Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
+"or :ref:`gettext <doc_localization_using_gettext>`."
+msgstr ""
+"Збереження рядків локалізації за допомогою :ref:`CSV "
+"<doc_internationalizing_games>`, або :ref:`gettext "
+"<doc_localization_using_gettext>`."
+
+msgid "Support for generating gettext POT and PO files from the editor."
+msgstr "Підтримка генерації gettext POT та PO файлів з редактора."
+
+msgid ""
+"Use localized strings in your project automatically in GUI elements or by "
+"using the ``tr()`` function."
+msgstr ""
+"Використовуйте рядки локалізації у своєму проєкті автоматично в елементах "
+"графічного інтерфейсу, або за допомогою функції ``tr ()``."
+
+msgid ""
+"Support for pluralization and translation contexts when using gettext "
+"translations."
+msgstr ""
+
+msgid ""
+"Support for :ref:`bidirectional typesetting "
+"<doc_internationalizing_games_bidi>`, text shaping and OpenType localized "
+"forms."
+msgstr ""
+
+msgid "Automatic UI mirroring for right-to-left locales."
+msgstr ""
+
+msgid ""
+"Support for pseudolocalization to test your project for i18n-friendliness."
+msgstr ""
+
+msgid "Windowing and OS integration"
+msgstr "Робота з вікном та інтеграція ОС"
+
+msgid "Spawn multiple independent windows within a single process."
+msgstr ""
+
+msgid "Move, resize, minimize, and maximize windows spawned by the project."
+msgstr ""
+"Переміщення, зміна розміру, згортання та розгортання вікон, створених "
+"проектом."
+
+msgid "Change the window title and icon."
+msgstr "Зміна заголовку та значка вікна."
+
+msgid ""
+"Request attention (will cause the title bar to blink on most platforms)."
+msgstr ""
+"Запит уваги (на більшості платформ призведе до мерехтіння шкали заголовку)."
+
+msgid "Fullscreen mode."
+msgstr "Повноекранний режим."
+
+msgid ""
+"Uses borderless fullscreen by default on Windows for fast alt-tabbing, but "
+"can optionally use exclusive fullscreen to reduce input lag."
+msgstr ""
+
+msgid "Borderless windows (fullscreen or non-fullscreen)."
+msgstr "Вікна без меж (повноекранні або неповноекранні)."
+
+msgid "Ability to keep a window always on top."
+msgstr "Можливість тримати вікно завжди зверху."
+
+msgid "Global menu integration on macOS."
+msgstr "Інтеграція глобального меню на macOS."
+
+msgid ""
+"Execute commands in a blocking or non-blocking manner (including running "
+"multiple instances of the same project)."
+msgstr ""
+"Виконувати команди у блокуючий або неблокуючий спосіб (включаючи запуск "
+"декількох екземплярів одного проєкту)."
+
+msgid ""
+"Open file paths and URLs using default or custom protocol handlers (if "
+"registered on the system)."
+msgstr ""
+"Відкривання шляхів до файлів та URL-адрес за допомогою обробників протоколів "
+"за замовчуванням, або спеціальних (якщо вони зареєстровані в системі)."
+
+msgid "Parse custom command line arguments."
+msgstr "Аналіз користувацьких аргументів командного рядка."
+
+msgid ""
+"Any Godot binary (editor or exported project) can be :ref:`used as a "
+"headless server <doc_exporting_for_dedicated_servers>` by starting it with "
+"the ``--headless`` command line argument. This allows running the engine "
+"without a GPU or display server."
+msgstr ""
+
+msgid "Mobile"
+msgstr "Мобільний"
+
+msgid ""
+"In-app purchases on :ref:`Android <doc_android_in_app_purchases>` and :ref:"
+"`iOS <doc_plugins_for_ios>`."
+msgstr ""
+
+msgid "Support for advertisements using third-party modules."
+msgstr "Підтримка реклами з використанням сторонніх модулів."
+
+msgid "XR support (AR and VR)"
+msgstr "Підтримка XR (AR та VR)"
+
+msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
+msgstr ""
+
+msgid ""
+"Including support for popular desktop headsets like the Valve Index, WMR "
+"headsets, and Quest over Link."
+msgstr ""
+"Включаючи підтримку популярних настільних гарнітур, таких як Valve Index, "
+"гарнітури WMR та Quest over Link."
+
+msgid ""
+"Support for :ref:`Android based headsets <doc_deploying_to_android>` using "
+"OpenXR through a plugin."
+msgstr ""
+
+msgid ""
+"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
+"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
+msgstr ""
+"Включаючи підтримку популярних автономних гарнітур, таких як Meta Quest "
+"1/2/3 і Pro, Pico 4, Magic Leap 2 і Lynx R1."
+
+msgid "Other devices supported through an XR plugin structure."
+msgstr ""
+
+msgid ""
+"Various advanced toolkits are available that implement common features "
+"required by XR applications."
+msgstr ""
+
+msgid "GUI system"
+msgstr "Система GUI (графічного інтерфейсу)"
+
+msgid ""
+"Godot's GUI is built using the same Control nodes used to make games in "
+"Godot. The editor UI can easily be extended in many ways using add-ons."
+msgstr ""
+"Графічний інтерфейс Godot побудований за допомогою тих самих вузлів "
+"управління (Control), що використовуються для створення ігор у Godot. "
+"Інтерфейс редактора можна легко розширити багатьма способами за допомогою "
+"доповнень."
+
+msgid "**Nodes:**"
+msgstr "**Вузли:**"
+
+msgid "Buttons."
+msgstr "Кнопки."
+
+msgid "Checkboxes, check buttons, radio buttons."
+msgstr "Галочки (прапорці), перемикачі, радіокнопки."
+
+msgid ""
+"Text entry using :ref:`class_LineEdit` (single line) and :ref:"
+"`class_TextEdit` (multiple lines). TextEdit also supports code editing "
+"features such as displaying line numbers and syntax highlighting."
+msgstr ""
+
+msgid ""
+"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
+msgstr ""
+"Випадаючі меню з використанням :ref:`class_PopupMenu` та :ref:"
+"`class_OptionButton`."
+
+msgid "Scrollbars."
+msgstr "Полоси прокрутки."
+
+msgid "Labels."
+msgstr "Мітки."
+
+msgid ""
+"RichTextLabel for :ref:`text formatted using BBCode "
+"<doc_bbcode_in_richtextlabel>`, with support for animated custom effects."
+msgstr ""
+"RichTextLabel для :ref:`тексту, відформатованого за допомогою BBCode "
+"<doc_bbcode_in_richtextlabel>`, з підтримкою анімованих користувацьких "
+"ефектів."
+
+msgid "Trees (can also be used to represent tables)."
+msgstr "Дерева (також можуть використовуватися для створення таблиць)."
+
+msgid "Color picker with RGB and HSV modes."
+msgstr "Палітра кольорів з режимами RGB та HSV."
+
+msgid "Controls can be rotated and scaled."
+msgstr "Елементи контролю можна повертати та масштабувати."
+
+msgid "**Sizing:**"
+msgstr "**Розміри:**"
+
+msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
+msgstr ""
+"Якіри для утримування елементів графічного інтерфейсу в певному куті, краю, "
+"або по центру."
+
+msgid "Containers to place GUI elements automatically following certain rules."
+msgstr ""
+"Контейнери для автоматичного розміщення елементів інтерфейсу за визначеними "
+"правилами."
+
+msgid ":ref:`Stack <class_BoxContainer>` layouts."
+msgstr "Макети :ref:`Stack (Складання) <class_BoxContainer>`."
+
+msgid ":ref:`Grid <class_GridContainer>` layouts."
+msgstr "Макети :ref:`Grid (Сітки) <class_GridContainer>`."
+
+msgid ""
+":ref:`Flow <class_FlowContainer>` layouts (similar to autowrapping text)."
+msgstr ""
+":ref:`Flow <class_FlowContainer>` макетів (подібно до автообгортання тексту)."
+
+msgid ""
+":ref:`Margin <class_MarginContainer>`, :ref:`centered "
+"<class_CenterContainer>` and :ref:`aspect ratio "
+"<class_AspectRatioContainer>` layouts."
+msgstr ""
+":ref:`Margin <class_MarginContainer>`, :ref:`centered "
+"<class_CenterContainer>` та :ref:`aspect ratio <class_AspectRatioContainer>` "
+"макети."
+
+msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
+msgstr "Макети :ref:`Перетягуваного спліттера <class_SplitContainer>`."
+
+msgid ""
+"Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "
+"``canvas_items`` or ``viewport`` stretch modes."
+msgstr ""
+"Масштабуйте до :ref:`multiple resolutions <doc_multiple_resolutions>` за "
+"допомогою режимів розтягування ``canvas_items`` або ``viewport``."
+
+msgid ""
+"Support any aspect ratio using anchors and the ``expand`` stretch aspect."
+msgstr ""
+"Підтримка будь-якого співвідношення сторін за допомогою якорів та аспекту "
+"розтягування ``expand``."
+
+msgid "**Theming:**"
+msgstr "**Теми:**"
+
+msgid "Built-in theme editor."
+msgstr "Вбудований редактор тем."
+
+msgid "Generate a theme based on the current editor theme settings."
+msgstr "Створення тем на основі налаштувань поточної теми редактора."
+
+msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
+msgstr "Процедурні векторні теми за допомогою :ref:`class_StyleBoxFlat`."
+
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
+msgstr ""
+"Підтримка закруглених/скошених кутів, тіней та ширини меж та знебарвлення."
+
+msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
+msgstr "Теми на основі текстур за допомогою :ref:`class_StyleBoxTexture`."
+
+msgid ""
+"Godot's small distribution size can make it a suitable alternative to "
+"frameworks like Electron or Qt."
+msgstr ""
+"Невеликий розмір дистрибутиву Godot робить його непоганою альтернативою для "
+"таких фреймворків, як Electron, чи Qt."
+
+msgid "Animation"
+msgstr "Анімація"
+
+msgid "Direct kinematics and inverse kinematics."
+msgstr "Пряма кінематика та зворотна кінематика."
+
+msgid "Support for animating any property with customizable interpolation."
+msgstr ""
+"Підтримка будь-яких властивостей анімації із настроюваною інтерполяцією."
+
+msgid "Support for calling methods in animation tracks."
+msgstr "Підтримка методів виклику в анімаційних доріжках."
+
+msgid "Support for playing sounds in animation tracks."
+msgstr "Підтримка відтворення звуків в анімаційних доріжках."
+
+msgid "Support for Bézier curves in animation."
+msgstr "Підтримка кривих Безьє в анімації."
+
+msgid "File formats"
+msgstr "Формати файлів"
+
+msgid ""
+"Scenes and resources can be saved in :ref:`text-based "
+"<doc_tscn_file_format>` or binary formats."
+msgstr ""
+"Сцени і ресурси можуть бути збережені в :ref:`текстових "
+"<doc_tscn_file_format>`, або бінарних форматах."
+
+msgid ""
+"Text-based formats are human-readable and more friendly to version control."
+msgstr ""
+"Текстові формати зручні для читання та ще зручніші для контролю версій."
+
+msgid "Binary formats are faster to save/load for large scenes/resources."
+msgstr ""
+"Бінарні формати швидше зберігаються/завантажуються для великих сцен/ресурсів."
+
+msgid "Read and write text or binary files using :ref:`class_FileAccess`."
+msgstr ""
+"Читання та запис текстових або бінарних файлів з використанням :ref:"
+"`class_FileAccess`."
+
+msgid "Can optionally be compressed or encrypted."
+msgstr "За бажання можна стиснути, або зашифрувати."
+
+msgid "Read and write :ref:`class_JSON` files."
+msgstr "Читання і запис файлів :ref:`class_JSON`."
+
+msgid ""
+"Read and write INI-style configuration files using :ref:`class_ConfigFile`."
+msgstr ""
+"Читання і запис конфігураційних файлів INI-стилю з допомогою :ref:"
+"`class_ConfigFile`."
+
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
+msgstr ""
+"Можливість (де)серіалізувати будь-який тип даних Godot, включаючи Vector2/3, "
+"Color, ..."
+
+msgid "Read XML files using :ref:`class_XMLParser`."
+msgstr "Читання файлів XML з допомогою :ref:`class_XMLParser`."
+
+msgid ""
+":ref:`Load and save images, audio/video, fonts and ZIP archives "
+"<doc_runtime_loading_and_saving>` in an exported project without having to "
+"go through Godot's import system."
+msgstr ""
+
+msgid ""
+"Pack game data into a PCK file (custom format optimized for fast seeking), "
+"into a ZIP archive, or directly into the executable for single-file "
+"distribution."
+msgstr ""
+"Пакування ігрових даних у файл PCK (власний формат, оптимізований для "
+"швидкого пошуку), у ZIP-архів, або безпосередньо у виконуваний файл для "
+"розповсюдження одного файлу."
+
+msgid ""
+":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
+"the engine to support mods and DLCs."
+msgstr ""
+":ref:`Експорт додаткових файлів PCK<doc_exporting_pcks>`, що можуть читатися "
+"редактором для підтримки модів та доповнень (DLC)."
+
+msgid "Miscellaneous"
+msgstr "Різне"
+
+msgid ""
+":ref:`Video playback <doc_playing_videos>` with built-in support for Ogg "
+"Theora."
+msgstr ""
+
+msgid ""
+":ref:`Movie Maker mode <doc_creating_movies>` to record videos from a "
+"running project with synchronized audio and perfect frame pacing."
+msgstr ""
+
+msgid ""
+":ref:`Low-level access to servers <doc_using_servers>` which allows "
+"bypassing the scene tree's overhead when needed."
+msgstr ""
+":ref:`Низькорівневий доступ до серверів <doc_using_servers>`, що дозволяє "
+"обійти накладні витрати дерева сцени, коли це потрібно."
+
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
+msgstr ""
+":ref:`Інтерфейс командного рядка <doc_command_line_tutorial>` для "
+"автоматизації."
+
+msgid "Export and deploy projects using continuous integration platforms."
+msgstr ""
+"Експорт та розгортання проєктів за допомогою платформ безперервної "
+"інтеграції."
+
+msgid ""
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
+msgstr ""
+"`Скрипти завершення <https://github.com/godotengine/godot/tree/master/misc/"
+"dist/shell>`__ доступні для Bash, zsh і fish."
+
+msgid ""
+"Print colored text to standard output on all platforms using :ref:"
+"`print_rich <class_@GlobalScope_method_print_rich>`."
+msgstr ""
+
+msgid ""
+"Support for :ref:`C++ modules <doc_custom_modules_in_cpp>` statically linked "
+"into the engine binary."
+msgstr ""
+"Підтримка :ref:`C++ модулів <doc_custom_modules_in_cpp>`, статично "
+"прив'язаних до бінарного коду рушія."
+
+msgid "Engine and editor written in C++17."
+msgstr "Рушій та редактор написані на C++17."
+
+msgid ""
+"Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
+"Clang and MSVC. MinGW is also supported."
+msgstr ""
+"Може бути :ref:`скомпільований<doc_introduction_to_the_buildsystem>` з "
+"допомогою GCC, Clang і MSVC. Також підтримується MinGW."
+
+msgid ""
+"Friendly towards packagers. In most cases, system libraries can be used "
+"instead of the ones provided by Godot. The build system doesn't download "
+"anything. Builds can be fully reproducible."
+msgstr ""
+"Дружелюбний до упаковщиків. У більшості випадків можна використовувати "
+"системні бібліотеки замість тих, які надає Godot. Система збірки нічого не "
+"завантажує. Збірки можуть бути повністю відтворюваними."
+
+msgid "Licensed under the permissive MIT license."
+msgstr "Ліцензовано відповідно до дозволу MIT."
+
+msgid ""
+"Open development process with :ref:`contributions welcome "
+"<doc_ways_to_contribute>`."
+msgstr ""
+"Відкритий процес розробки з :ref:`внески вітаються <doc_ways_to_contribute>`."
+
+msgid ""
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
+msgstr ""
+"У `сховищі пропозицій Godot <https://github.com/godotengine/godot-"
+"proposals>`__ перелічено функції, які просить спільнота і які можуть бути "
+"реалізовані в майбутніх випусках Godot."
+
+msgid "Translation status"
+msgstr "Стан перекладу"

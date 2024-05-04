@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Debugger panel"
+msgstr "调试器面板"
+
+msgid ""
+"Many of Godot's debugging tools, including the debugger, can be found in the "
+"debugger panel at the bottom of the screen. Click on **Debugger** to open it."
+msgstr ""
+"在屏幕下方的调试器面板中, 可以找到包括调试器在内的许多Godot的调试工具. 点击 "
+"**调试器** 即可打开."
+
+msgid ""
+"The debugger panel is split into several tabs, each focusing on a specific "
+"task."
+msgstr "调试器面板被分成几个标签, 每个标签专注于一个特定的任务."
+
+msgid "Debugger"
+msgstr "调试器"
+
+msgid ""
+"The Debugger tab opens automatically when the GDScript compiler reaches a "
+"breakpoint in your code."
+msgstr ""
+"当 GDScript 编译器在你的代码中达到一个断点时，“调试器”选项卡会自动打开。"
+
+#, fuzzy
+msgid ""
+"It gives you a `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__, "
+"information about the state of the object, and buttons to control the "
+"program's execution. When the debugger breaks on a breakpoint, a green "
+"triangle arrow is visible in the script editor's gutter. This arrow "
+"indicates the line of code the debugger broke on."
+msgstr ""
+"它给你提供了一个 `栈跟踪 <https://en.wikipedia.org/wiki/Stack_trace>`__ , 对"
+"象的状态信息, 以及控制程序执行的按钮."
+
+msgid ""
+"You can create a breakpoint by clicking the gutter in the left of the script "
+"editor (on the left of the line numbers). When hovering this gutter, you "
+"will see a transparent red dot appearing, which turns into an opaque red dot "
+"after the breakpoint is placed by clicking. Click the red dot again to "
+"remove the breakpoint. Breakpoints created this way persist across editor "
+"restarts, even if the script wasn't saved when exiting the editor."
+msgstr ""
+
+msgid ""
+"You can also use the ``breakpoint`` keyword in GDScript to create a "
+"breakpoint that is stored in the script itself. Unlike breakpoints created "
+"by clicking in the gutter, this keyword-based breakpoint is persistent "
+"across different machines when using version control."
+msgstr ""
+
+msgid "You can use the buttons in the top-right corner to:"
+msgstr "你可以使用右上角的按钮来:"
+
+msgid ""
+"Skip all breakpoints. That way, you can save breakpoints for future "
+"debugging sessions."
+msgstr "跳过所有断点. 这样一来, 你就可以为将来的调试会话保存断点."
+
+msgid "Copy the current error message."
+msgstr "复制当前错误消息."
+
+msgid ""
+"**Step Into** the code. This button takes you to the next line of code, and "
+"if it's a function, it steps line-by-line through the function."
+msgstr ""
+"**步入** 代码. 这个按钮将带你进入下一行代码, 如果是函数, 它将逐行进入函数."
+
+msgid ""
+"**Step Over** the code. This button goes to the next line of code, but it "
+"doesn't step line-by-line through functions."
+msgstr "**步过** 的代码. 这个按钮会进入下一行代码, 但它不会逐行跳过函数."
+
+msgid "**Break**. This button pauses the game's execution."
+msgstr "**Break** . 这个按钮会暂停执行游戏."
+
+msgid "**Continue**. This button resumes the game after a breakpoint or pause."
+msgstr "**继续** . 该按钮在断点或暂停后恢复游戏."
+
+msgid "Errors"
+msgstr "错误"
+
+msgid ""
+"This is where error and warning messages are printed while running the game."
+msgstr "这是运行游戏时打印错误和警告信息的地方."
+
+msgid ""
+"You can disable specific warnings in **Project Settings > Debug > GDScript**."
+msgstr "你可以在 **项目设置>调试> GDScript** 中禁用特定的警告."
+
+msgid "Profiler"
+msgstr "分析器"
+
+msgid ""
+"The profiler is used to see what code is running while your project is in "
+"use, and how that effects performance."
+msgstr ""
+
+msgid ""
+"A detailed explanation of how to use the profiler can be found in the "
+"dedicated :ref:`doc_the_profiler` page."
+msgstr ""
+
+#, fuzzy
+msgid "Visual Profiler"
+msgstr "性能分析器"
+
+msgid ""
+"The Visual Profiler can be used to monitor what is taking the most time when "
+"rendering a frame on the CPU and GPU respectively. This allows tracking "
+"sources of potential CPU and GPU bottlenecks caused by rendering."
+msgstr ""
+
+msgid ""
+"The Visual Profiler only measures CPU time taken for rendering tasks, such "
+"as performing draw calls. The Visual Profiler does **not** include CPU time "
+"taken for other tasks such as scripting and physics. Use the standard "
+"Profiler tab to track non-rendering-related CPU tasks."
+msgstr ""
+
+msgid ""
+"To use the visual profiler, run the project, switch to the **Visual "
+"Profiler** tab within the Debugger bottom panel, then click **Start**:"
+msgstr ""
+
+msgid ""
+"Visual Profiler tab after clicking Start, waiting for a few seconds, then "
+"clicking Stop"
+msgstr ""
+
+msgid ""
+"Visual Profiler tab after clicking **Start**, waiting for a few seconds, "
+"then clicking **Stop**"
+msgstr ""
+
+msgid ""
+"You will see categories and results appearing as the profiler is running. "
+"Graph lines also appear, with the left side being a CPU framegraph and the "
+"right side being a GPU framegraph."
+msgstr ""
+
+msgid ""
+"Click **Stop** to finish profiling, which will keep the results visible but "
+"frozen in place. Results remain visible after stopping the running project, "
+"but not after exiting the editor."
+msgstr ""
+
+msgid ""
+"Click on result categories on the left to highlight them in the CPU and GPU "
+"graphs on the right. You can also click on the graph to move the cursor to a "
+"specific frame number and highlight the selected data type in the result "
+"categories on the left."
+msgstr ""
+
+msgid ""
+"You can switch the result display between a time value (in milliseconds per "
+"frame) or a percentage of the target frametime (which is currently hardcoded "
+"to 16.67 milliseconds, or 60 FPS)."
+msgstr ""
+
+msgid ""
+"If framerate spikes occur during profiling, this can cause the graph to be "
+"poorly scaled. Disable **Fit to Frame** so that the graph will zoom onto the "
+"60 FPS+ portion."
+msgstr ""
+
+msgid ""
+"Remember that Visual Profiler results can vary **heavily** based on viewport "
+"resolution, which is determined by the window size if using the ``disabled`` "
+"or ``canvas_items`` :ref:`stretch modes <doc_multiple_resolutions>`."
+msgstr ""
+
+msgid ""
+"When comparing results across different runs, make sure to use the same "
+"viewport size for all runs."
+msgstr ""
+
+msgid ""
+"Visual Profiler is supported when using any rendering method (Forward+, "
+"Mobile or Compatibility), but the reported categories will vary depending on "
+"the current rendering method as well as the enabled graphics features. For "
+"example, when using Forward+, a simple 2D scene with shadow-casting lights "
+"will result in the following categories appearing:"
+msgstr ""
+
+msgid "Example results from a 2D scene in the Visual Profiler"
+msgstr "例子结果来自Callgrind, 这是Valgrind的一部分"
+
+msgid ""
+"To give another example with Forward+, a 3D scene with shadow-casting lights "
+"and various effects enabled will result in the following categories enabled:"
+msgstr ""
+
+msgid "Example results from a 3D scene in the Visual Profiler"
+msgstr "可视分析器中 3D 场景的示例结果"
+
+msgid ""
+"Notice how in the 3D example, several of the categories have **(Parallel)** "
+"appended to their name. This hints that multiple tasks are being performed "
+"in parallel on the GPU. This generally means that disabling only one of the "
+"features involved won't improve performance as much as anticipated, as the "
+"other task still needs to be performed sequentially."
+msgstr ""
+
+msgid "Network Profiler"
+msgstr "网络分析器"
+
+msgid ""
+"The Network Profiler contains a list of all the nodes that communicate over "
+"the multiplayer API and, for each one, some counters on the amount of "
+"incoming and outgoing network interactions. It also features a bandwidth "
+"meter that displays the total bandwidth usage at any given moment."
+msgstr ""
+"网络剖析器包含了所有通过多人游戏API进行通信的节点列表, 对于每个节点, 还包含了"
+"一些传入和传出网络交互量的计数器. 它还具有一个带宽表, 可以显示任何特定时刻的"
+"总带宽使用情况."
+
+msgid ""
+"The bandwidth meter does **not** take the :ref:`doc_high_level_multiplayer` "
+"API's own compression system into account. This means that changing the "
+"compression algorithm used will not change the metrics reported by the "
+"bandwidth meter."
+msgstr ""
+
+msgid "Monitors"
+msgstr "监视"
+
+msgid ""
+"The monitors are graphs of several aspects of the game while its running "
+"such as FPS, memory usage, how many nodes are in a scene and more. All "
+"monitors keep track of stats automatically, so even if one monitor isn't "
+"open while the game is running, you can open it later and see how the values "
+"changed."
+msgstr ""
+"监视器是游戏运行时几个方面的图表, 如FPS, 内存使用情况, 场景中的节点数量等等. "
+"所有的监控器都会自动跟踪统计, 所以即使游戏运行时一个监控器没有打开, 你也可以"
+"在以后打开它, 查看数值的变化."
+
+msgid ""
+"In addition to the default performance monitors, you can also create :ref:"
+"`custom performance monitors <doc_custom_performance_monitors>` to track "
+"arbitrary values in your project."
+msgstr ""
+
+msgid "Video RAM"
+msgstr "显存"
+
+msgid ""
+"The **Video RAM** tab shows the video RAM usage of the game while it is "
+"running. It provides a list of every resource using video RAM by resource "
+"path, the type of resource it is, what format it is in, and how much Video "
+"RAM that resource is using. There is also a total video RAM usage number at "
+"the top right of the panel."
+msgstr ""
+"**显存**\\ 标签显示了游戏运行时的显存使用情况。它按资源路径提供了每一个使用显"
+"存的资源列表、资源的类型、资源的格式，以及该资源使用了多少显存。在面板的右上"
+"方还有一个显存占用总量的数字。"
+
+msgid "Misc"
+msgstr "其他"
+
+msgid ""
+"The **Misc** tab contains tools to identify the control nodes you are "
+"clicking at runtime:"
+msgstr "**其他**\\ 选项卡中的工具可以用来识别你在运行时点击了哪个控件节点："
+
+msgid ""
+"**Clicked Control** tells you where the clicked node is in the scene tree."
+msgstr "**点击的控件**\\ 显示的是被点击节点在场景树中的位置。"
+
+msgid "**Clicked Control Type** tells you the type of the node you clicked is."
+msgstr "**点击的控件类型**\\ 显示的是被点击节点的类型。"
+
+msgid "Translation status"
+msgstr "翻译状态"

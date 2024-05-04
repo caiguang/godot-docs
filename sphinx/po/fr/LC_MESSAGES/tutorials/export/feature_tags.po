@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Feature tags"
+msgstr "Tags de fonctionnalité"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+msgid ""
+"Godot has a special system to tag availability of features. Each *feature* "
+"is represented as a string, which can refer to many of the following:"
+msgstr ""
+"Godot a un système spécial pour marquer la disponibilité des "
+"fonctionnalités. Chaque *fonctionnalité* est représentée par une chaîne de "
+"caractères, qui peut se référer à plusieurs des éléments suivants :"
+
+msgid "Platform name."
+msgstr "Nom de la plate-forme."
+
+msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
+msgstr "Architecture de plate-forme (64 bits ou 32 bits, x86 ou ARM)."
+
+msgid "Platform type (desktop, mobile, Web)."
+msgstr "Type de plate-forme (bureau, mobile, Web)."
+
+msgid "Supported texture compression algorithms on the platform."
+msgstr "Algorithme de compression de texture supportée par la plateforme."
+
+msgid ""
+"Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
+msgstr ""
+"Qu'il s'agisse d'une compilation de débogage ``debug`` ou de production "
+"``release`` (``debug`` inclut l'éditeur)."
+
+msgid ""
+"Whether the project is running from the editor or a \"standalone\" binary."
+msgstr ""
+"Si le projet est exécuté à partir de l'éditeur ou d'un fichier binaire "
+"\"autonome\"."
+
+msgid "Many more things."
+msgstr "Et bien d'autres choses."
+
+msgid "Features can be queried at run-time from the singleton API by calling:"
+msgstr ""
+"Les fonctionnalités peuvent être interrogées à l’exécution auprès du "
+"singleton API en appelant :"
+
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+
+msgid "Default features"
+msgstr "Fonctionnalités par défaut"
+
+msgid ""
+"Here is a list of most feature tags in Godot. Keep in mind they are **case-"
+"sensitive**:"
+msgstr ""
+"Voici une liste de la plupart des tags de fonctionnalités de Godot. Gardez à "
+"l'esprit qu'ils sont *sensibles à la casse* :"
+
+msgid "**Feature tag**"
+msgstr "**Tag de fonctionnalité**"
+
+msgid "**Description**"
+msgstr "**Description**"
+
+#, fuzzy
+msgid "**android**"
+msgstr "**Android**"
+
+msgid "Running on Android (but not within a Web browser)"
+msgstr ""
+
+msgid "**bsd**"
+msgstr ""
+
+msgid "Running on \\*BSD (but not within a Web browser)"
+msgstr ""
+
+#, fuzzy
+msgid "**linux**"
+msgstr "**Alpine Linux**"
+
+msgid "Running on Linux (but not within a Web browser)"
+msgstr ""
+
+#, fuzzy
+msgid "**macos**"
+msgstr "**macOS**"
+
+msgid "Running on macOS (but not within a Web browser)"
+msgstr ""
+
+msgid "**ios**"
+msgstr ""
+
+msgid "Running on iOS (but not within a Web browser)"
+msgstr ""
+
+#, fuzzy
+msgid "**windows**"
+msgstr "**Windows**"
+
+msgid "Running on Windows"
+msgstr "Éxécution sur Windows"
+
+#, fuzzy
+msgid "**linuxbsd**"
+msgstr "**Alpine Linux**"
+
+#, fuzzy
+msgid "Running on Linux or \\*BSD"
+msgstr "Éxécution sur iOS"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "Running on a debug build (including the editor)"
+msgstr "Exécution sur un binaire de débogage"
+
+msgid "**release**"
+msgstr "**release**"
+
+msgid "Running on a release build"
+msgstr "Éxécution sur un binaire de déploiement"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Running on an editor build"
+msgstr "Exécuter sur une compilation éditeur"
+
+#, fuzzy
+msgid "**template**"
+msgstr "**Date de publication**"
+
+#, fuzzy
+msgid "Running on a non-editor (export template) build"
+msgstr "Exécuter sur une compilation non-éditeur"
+
+#, fuzzy
+msgid "**double**"
+msgstr "**mobile**"
+
+#, fuzzy
+msgid "Running on a double-precision build"
+msgstr "Exécuter sur une compilation non-éditeur"
+
+#, fuzzy
+msgid "**single**"
+msgstr "**mobile**"
+
+#, fuzzy
+msgid "Running on a single-precision build"
+msgstr "Exécuter sur une compilation non-éditeur"
+
+msgid "**64**"
+msgstr "**64**"
+
+msgid "Running on a 64-bit build (any architecture)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+msgid "**32**"
+msgstr "**32**"
+
+msgid "Running on a 32-bit build (any architecture)"
+msgstr "Éxécution sur une version 32-bits (toutes architectures)"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "Running on a 64-bit x86 build"
+msgstr "Exécution sur une compilation 64 bits x86"
+
+#, fuzzy
+msgid "**x86_32**"
+msgstr "**x86**"
+
+msgid "Running on a 32-bit x86 build"
+msgstr "Exécution sur une version 32 bits x86"
+
+msgid "**x86**"
+msgstr "**x86**"
+
+#, fuzzy
+msgid "Running on an x86 build (any bitness)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "Running on a 64-bit ARM build"
+msgstr "Exécution sur une compilation 64 bits d'ARM"
+
+#, fuzzy
+msgid "**arm32**"
+msgstr "**arm**"
+
+msgid "Running on a 32-bit ARM build"
+msgstr "Exécution sur une version 32 bits ARM"
+
+msgid "**arm**"
+msgstr "**arm**"
+
+#, fuzzy
+msgid "Running on an ARM build (any bitness)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+#, fuzzy
+msgid "**rv64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit RISC-V build"
+msgstr "Exécution sur une compilation 64 bits d'ARM"
+
+#, fuzzy
+msgid "**riscv**"
+msgstr "**droite**"
+
+#, fuzzy
+msgid "Running on a RISC-V build (any bitness)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+#, fuzzy
+msgid "**ppc64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit PowerPC build"
+msgstr "Exécution sur une compilation 64 bits x86"
+
+#, fuzzy
+msgid "**ppc32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit PowerPC build"
+msgstr "Exécution sur une version 32 bits x86"
+
+#, fuzzy
+msgid "**ppc**"
+msgstr "**pc**"
+
+#, fuzzy
+msgid "Running on a PowerPC build (any bitness)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+#, fuzzy
+msgid "**wasm64**"
+msgstr "**arm64**"
+
+#, fuzzy
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+#, fuzzy
+msgid "**wasm32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit WebAssembly build"
+msgstr "Exécution sur une version 32 bits ARM"
+
+msgid "**wasm**"
+msgstr ""
+
+#, fuzzy
+msgid "Running on a WebAssembly build (any bitness)"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
+
+msgid "**mobile**"
+msgstr "**mobile**"
+
+msgid "Host OS is a mobile platform"
+msgstr "L’OS hôte est une plateforme mobile"
+
+msgid "**pc**"
+msgstr "**pc**"
+
+msgid "Host OS is a PC platform (desktop/laptop)"
+msgstr "L’OS hôte est une plateforme PC (bureau/ordinateu portable)"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser"
+msgstr "L’OS hôte est un serveur web"
+
+#, fuzzy
+msgid "**web_android**"
+msgstr "**Android**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Android"
+msgstr "L’OS hôte est un serveur web"
+
+#, fuzzy
+msgid "**web_ios**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on iOS"
+msgstr "L’OS hôte est un serveur web"
+
+#, fuzzy
+msgid "**web_linuxbsd**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr "L’OS hôte est un serveur web"
+
+#, fuzzy
+msgid "**web_macos**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on macOS"
+msgstr "L’OS hôte est un serveur web"
+
+#, fuzzy
+msgid "**web_windows**"
+msgstr "**Windows**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Windows"
+msgstr "L’OS hôte est un serveur web"
+
+msgid "**etc**"
+msgstr "**etc**"
+
+msgid "Textures using ETC1 compression are supported"
+msgstr "Les textures utllisant une compression ETC1 sont supportées"
+
+msgid "**etc2**"
+msgstr "**etc2**"
+
+msgid "Textures using ETC2 compression are supported"
+msgstr "Les textures utllisant une compression ETC2 sont supportées"
+
+msgid "**s3tc**"
+msgstr "**s3tc**"
+
+msgid "Textures using S3TC (DXT/BC) compression are supported"
+msgstr "Les textures utllisant une compression S3TC (DXT/BC) sont supportées"
+
+#, fuzzy
+msgid "**movie**"
+msgstr "**mobile**"
+
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"With the exception of texture compression and ``movie`` feature tags, "
+"default feature tags are **immutable**. This means that they will *not* "
+"change depending on run-time conditions. For example, ``OS."
+"has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to HTML5 on a mobile device."
+msgstr ""
+"À l'exception des balises de caractéristiques de compression de texture, les "
+"balises de caractéristiques par défaut sont **immuables**. Cela signifie "
+"qu'elles ne changeront *pas* en fonction des conditions d'exécution. Par "
+"exemple, ``OS.has_feature(\"mobile\")`` renverra ``false`` lors de "
+"l'exécution d'un projet exporté en HTML5 sur un appareil mobile."
+
+msgid ""
+"To check whether a project exported to HTML5 is running on a mobile device, :"
+"ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
+"user agent."
+msgstr ""
+"Pour vérifier si un projet exporté en HTML5 s'exécute sur un appareil "
+"mobile, :ref:`appelle le code JavaScript <doc_javascript_eval>` qui lit "
+"l'agent utilisateur du navigateur."
+
+msgid "Custom features"
+msgstr "Fonctionnalités personnalisées"
+
+msgid ""
+"It is possible to add custom features to a build; use the relevant field in "
+"the *export preset* used to generate it:"
+msgstr ""
+"Il est possible d'ajouter des fonctionnalités personnalisées à une "
+"compilation, il suffit d'utiliser le champ correspondant dans le *préréglage "
+"d'exportation* utilisé pour le générer :"
+
+msgid ""
+"Custom feature tags are only used when running the exported project "
+"(including with :ref:`doc_one-click_deploy`). They are **not used** when "
+"running the project from the editor, even if the export preset marked as "
+"**Runnable** for your current platform has custom feature tags defined."
+msgstr ""
+"Les balises de fonctionnalité personnalisées sont uniquement utilisées lors "
+"de l'exécution du projet exporté (y compris avec :ref:`doc_one-"
+"click_deploy`). Ils ne sont **pas utilisés** lors de l'exécution du projet à "
+"partir de l'éditeur, même si le préréglage d'exportation marqué comme "
+"**Runnable** pour votre plate-forme actuelle a des balises de fonctionnalité "
+"personnalisées définies."
+
+msgid "Overriding project settings"
+msgstr "Écraser les paramètres du projet"
+
+msgid ""
+"Features can be used to override specific configuration values in the "
+"*Project Settings*. This allows you to better customize any configuration "
+"when doing a build."
+msgstr ""
+"Des fonctionnalités peuvent être utilisées pour remplacer des valeurs de "
+"configuration spécifiques dans les *paramètres du projet*. Cela permet de "
+"mieux personnaliser n'importe quelle configuration lors d'une compilation."
+
+msgid ""
+"In the following example, a different icon is added for the demo build of "
+"the game (which was customized in a special export preset, which, in turn, "
+"includes only demo levels)."
+msgstr ""
+"Dans l'exemple suivant, une icône différente est ajoutée pour la compilation "
+"de la démo du jeu (qui a été personnalisé dans un préréglage d'exportation "
+"spécial, qui, à son tour, n'inclut que des niveaux de démo)."
+
+msgid "After overriding, a new field is added for this specific configuration:"
+msgstr ""
+"Après écrasement, un nouveau champ est ajouté pour cette configuration "
+"spécifique :"
+
+msgid ""
+"When using the :ref:`project settings \"override.cfg\" functionality "
+"<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
+"feature tags still apply. Therefore, make sure to *also* override the "
+"setting with the desired feature tag(s) if you want them to override base "
+"project settings on all platforms and configurations."
+msgstr ""
+"Lorsque vous utilisez la :ref:`fonctionnalité paramètres de projet "
+"\"override.cfg\" <class_ProjectSettings>` (qui n'est pas liée aux balises de "
+"fonctionnalité), n'oubliez pas que les balises de fonctionnalité "
+"s'appliquent toujours. Par conséquent, veillez à *également* remplacer le "
+"paramètre par la ou les balises de fonctionnalité souhaitées si vous voulez "
+"qu'elles remplacent les paramètres de base du projet sur toutes les "
+"plateformes et configurations."
+
+msgid "Default overrides"
+msgstr "Écrasements par défaut"
+
+msgid ""
+"There are already a lot of settings that come with overrides by default; "
+"they can be found in many sections of the project settings."
+msgstr ""
+"Il y a déjà beaucoup de paramètres qui sont fournis avec des remplacements "
+"par défaut, ils peuvent être trouvés dans de nombreuses sections des "
+"paramètres du projet."
+
+msgid "Customizing the build"
+msgstr "Personnalisation de la compilation"
+
+#, fuzzy
+msgid ""
+"Feature tags can be used to customize a build process too, by writing a "
+"custom **ExportPlugin**. They are also used to specify which shared library "
+"is loaded and exported in **GDExtension**."
+msgstr ""
+"Les tags de fonctionnalité peuvent aussi être utilisés pour personnaliser un "
+"processus de compilation, en écrivant un fichier **ExportPlugin** "
+"personnalisé. Ils sont également utilisés pour spécifier quelle bibliothèque "
+"partagée est chargée et exportée dans **GDNative**."
+
+msgid "Translation status"
+msgstr "État de la traduction"

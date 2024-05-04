@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Writing documentation"
+msgstr "撰寫自定說明文件"
+
+msgid ""
+"We always need help to improve the documentation, be it the class reference "
+"or the manual. Below, you can find our content and writing guidelines and "
+"concrete guides to make changes to the documentation."
+msgstr ""
+"我們始終需要大家來説明優化文件，無論是類參考還是手冊。你可以在下面找到我們的"
+"內容與編寫規範，以及實際的文件修改指南。"
+
+msgid ""
+"Be sure to also check the :ref:`workflow guidelines "
+"<doc_contributing_workflow>`, especially if you're new to using Git or "
+"GitHub."
+msgstr ""
+"請務必檢查 :ref:`工作流程指南 <doc_contributing_workflow>`，特別是如果您不熟"
+"悉使用 Git 或 GitHub。"
+
+msgid "Guidelines"
+msgstr "參考線"
+
+msgid ""
+"Here are the principles and guidelines we strive to follow to write "
+"accessible documentation."
+msgstr "這些是我們為了編寫簡單易懂的文件而努力遵循的原則和規範。"
+
+msgid "Writing the manual"
+msgstr "編輯動畫"
+
+msgid ""
+"These articles explain how to contribute to this very documentation, and how "
+"to build the online version locally for testing."
+msgstr ""
+"本指南介紹的是如何向 Godot 的文件做出貢獻，無論是編寫頁面還是審核頁面。"
+
+msgid "Class reference guides"
+msgstr "類別參照手冊"
+
+msgid "The pages below focus on the class reference."
+msgstr "如何撰寫類別參照文件"
+
+msgid ""
+"As the reference is included in the Godot editor, its source files are part "
+"of the `godot repository <https://github.com/godotengine/godot>`_. We use "
+"XML files to write it, so the process to contribute to the class reference "
+"differs from writing the online manual."
+msgstr ""
+"因為參考是包含在 Godot 編輯器中的，它的原始檔案是 `Godot 倉庫 <https://"
+"github.com/godotengine/godot>`_的一部分。我們是用 XML 檔來編寫的，所以貢獻類"
+"參考的流程和編寫線上手冊的流程有所不同。"
+
+msgid "Translating the documentation"
+msgstr "說明文件架構"
+
+msgid ""
+"The community is always working hard on making Godot and its documentation "
+"available to more people. Localizing the documentation is a colossal and "
+"ongoing effort you can be part of."
+msgstr ""
+"社區始終在努力讓 Godot 及其文件能夠被更多人使用。你可以參與文件的當地語系化，"
+"這是一個正在進行的龐大工程。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

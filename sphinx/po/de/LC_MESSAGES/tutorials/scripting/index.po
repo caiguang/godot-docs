@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Scripting"
+msgstr "Skripting"
+
+msgid ""
+"This section covers programming languages and core features to code your "
+"games in Godot."
+msgstr ""
+"Dieser Abschnitt befasst sich mit den Programmiersprachen und den "
+"wichtigsten Funktionen für die Programmierung Ihrer Spiele in Godot."
+
+msgid ""
+"Here, you will find information that is not already covered in more specific "
+"sections. For instance, to learn about inputs, we recommend you to read :ref:"
+"`Inputs <toc-learn-features-inputs>`."
+msgstr ""
+"Hier finden Sie Informationen, die nicht bereits in spezifischeren "
+"Abschnitten behandelt werden. Um zum Beispiel etwas über Eingaben zu "
+"erfahren, empfehlen wir Ihnen, :ref:`Eingaben <toc-learn-features-inputs>` "
+"zu lesen."
+
+msgid "Programming languages"
+msgstr "Programmiersprachen"
+
+msgid "The sections below each focus on a given programming language."
+msgstr ""
+"Die folgenden Abschnitte befassen sich jeweils mit einer bestimmten "
+"Programmiersprache."
+
+msgid "Core features"
+msgstr "Kern-Features"
+
+msgid ""
+"Some features are specific to the engine and are available in all supported "
+"languages. Whether you code in GDScript, C#, or another language, the pages "
+"below will help you make the most of Godot."
+msgstr ""
+"Einige Features sind spezifisch für die Engine und sind in allen "
+"unterstützten Sprachen verfügbar. Egal, ob Sie in GDScript, C# oder einer "
+"anderen Sprache programmieren, die folgenden Seiten helfen Ihnen, Godot "
+"optimal zu nutzen."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

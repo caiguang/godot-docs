@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# language features"
+msgstr "Fonctionnalités C#"
+
+msgid ""
+"This page provides an overview of the commonly used features of both C# and "
+"Godot and how they are used together."
+msgstr ""
+"Cette page donne un aperçu des fonctionnalités couramment utilisées de C# et "
+"de Godot, et de la façon dont elles sont utilisées ensemble."
+
+msgid "Type conversion and casting"
+msgstr "Conversion de type et Casting"
+
+msgid ""
+"C# is a statically typed language. Therefore, you can't do the following:"
+msgstr ""
+"C# est un langage à typage statique. Par conséquent, vous ne pouvez pas "
+"faire ce qui suit :"
+
+#, fuzzy
+msgid ""
+"The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
+"convert it to the desired derived type, ``Sprite2D`` in this case."
+msgstr ""
+"La méthode ``GetNode()`` retourne une instance de ``Node``. Vous devez "
+"explicitement la convertir dans le type dérive que vous désirez. Dans cet "
+"exemple, il s'agit de ``Sprite``."
+
+msgid "For this, you have various options in C#."
+msgstr "Pour cela, en C#, vous disposez de plusieurs options."
+
+msgid "**Casting and Type Checking**"
+msgstr "**Casting et vérification de type**"
+
+#, fuzzy
+msgid ""
+"Throws ``InvalidCastException`` if the returned node cannot be cast to "
+"Sprite2D. You would use it instead of the ``as`` operator if you are pretty "
+"sure it won't fail."
+msgstr ""
+"Envoie ``InvalidCastException`` si le nœud retourné ne peut pas être "
+"converti en Sprite. Utilisez le à la place de l'opérateur ``as`` si vous "
+"êtes presque sûr qu'il n'échouera pas."
+
+msgid "**Using the AS operator**"
+msgstr "**Utilisation de l'opérateur AS**"
+
+#, fuzzy
+msgid ""
+"The ``as`` operator returns ``null`` if the node cannot be cast to Sprite2D, "
+"and for that reason, it cannot be used with value types."
+msgstr ""
+"L'opérateur ``as`` retourne ``null`` si le nœud ne peut pas être converti en "
+"Sprite, et pour cette raison il ne peut pas être utilisé avec les types de "
+"valeurs."
+
+msgid "**Using the generic methods**"
+msgstr "**Utilisation des méthodes génériques**"
+
+msgid ""
+"Generic methods are also provided to make this type conversion transparent."
+msgstr ""
+"Des méthodes génériques sont également fournies pour rendre ce type de "
+"conversion transparent."
+
+msgid ""
+"``GetNode<T>()`` casts the node before returning it. It will throw an "
+"``InvalidCastException`` if the node cannot be cast to the desired type."
+msgstr ""
+"``GetNode <T> ()`` convertit le nœud avant de le retourner. Il enverra une "
+"``InvalidCastException`` si le nœud ne peut pas être converti au type désiré."
+
+msgid ""
+"``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
+"the node cannot be cast to the desired type."
+msgstr ""
+"``GetNodeOrNull<T>()`` utilise l'opérateur ``as`` et retourne ``null`` si le "
+"nœud ne peut pas être converti au type désiré."
+
+msgid "**Type checking using the IS operator**"
+msgstr "**Vérification du type à l'aide de l'opérateur IS**"
+
+#, fuzzy
+msgid ""
+"To check if the node can be cast to Sprite2D, you can use the ``is`` "
+"operator. The ``is`` operator returns false if the node cannot be cast to "
+"Sprite2D, otherwise it returns true. Note that when the ``is`` operator is "
+"used against ``null`` the result is always going to be ``false``."
+msgstr ""
+"Pour vérifier si le nœud peut être convertit en Sprite, vous pouvez utiliser "
+"l'opérateur ``is``. L'opérateur ``is`` retourne false si le nœud ne peut pas "
+"être convertit en Sprite, sinon il retourne true."
+
+msgid ""
+"You can also declare a new variable to conditionally store the result of the "
+"cast if the ``is`` operator returns ``true``."
+msgstr ""
+
+msgid ""
+"For more advanced type checking, you can look into `Pattern Matching "
+"<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
+msgstr ""
+"Pour un contrôle de type plus avancé, vous pouvez regarder dans `Pattern "
+"Matching <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
+
+msgid "Preprocessor defines"
+msgstr "Définition Préprocesseur"
+
+msgid ""
+"Godot has a set of defines that allow you to change your C# code depending "
+"on the environment you are compiling to."
+msgstr ""
+"Godot a un jeu de \"defines\" permettant de changer de code C# selon "
+"l’environnement pour lequel vous compilez."
+
+msgid ""
+"If you created your project before Godot 3.2, you have to modify or "
+"regenerate your `csproj` file to use this feature (compare "
+"``<DefineConstants>`` with a new 3.2+ project)."
+msgstr ""
+"Si vous avez créé votre projet avant Godot 3.2, vous devez modifier ou re-"
+"générer votre fichier `csproj` pour utiliser cette fonctionnalité (comparez "
+"``<DefineConstants>`` avec un nouveau projet 3.2+)."
+
+msgid "Examples"
+msgstr "Exemples"
+
+msgid "For example, you can change code based on the platform:"
+msgstr "Par exemple, vous pouvez changer de code, selon la plateforme :"
+
+msgid ""
+"Or you can detect which engine your code is in, useful for making cross-"
+"engine libraries:"
+msgstr ""
+"Ou vous pouvez détecter quel moteur votre code utilise, utile pour créer des "
+"librairies cross-engine :"
+
+msgid ""
+"Or you can write scripts that target multiple Godot versions and take "
+"advantage of features that are only available on some of those versions:"
+msgstr ""
+
+msgid "Full list of defines"
+msgstr "Liste complète des définitions"
+
+msgid "``GODOT`` is always defined for Godot projects."
+msgstr "``GODOT`` est toujours défini dans un project Godot."
+
+msgid ""
+"``TOOLS`` is defined when building with the Debug configuration (editor and "
+"editor player)."
+msgstr ""
+
+msgid ""
+"``GODOT_REAL_T_IS_DOUBLE`` is defined when the ``GodotFloat64`` property is "
+"set to ``true``."
+msgstr ""
+
+msgid ""
+"One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
+"architecture is 64-bit or 32-bit."
+msgstr ""
+"``GODOT_64`` ou ``GODOT_32`` est défini selon que l'architecture est 64-bit "
+"ou 32-bit."
+
+#, fuzzy
+msgid ""
+"One of ``GODOT_LINUXBSD``, ``GODOT_WINDOWS``, ``GODOT_OSX``, "
+"``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` "
+"depending on the OS. These names may change in the future. These are created "
+"from the ``get_name()`` method of the :ref:`OS <class_OS>` singleton, but "
+"not every possible OS the method returns is an OS that Godot with .NET runs "
+"on."
+msgstr ""
+"``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
+"``GODOT_IOS``, ``GODOT_HTML5``, ou ``GODOT_SERVER`` est défini selon l'OS. "
+"Ces noms sont éventuellement amenés à changer dans le futur. Ils sont créer "
+"depuis la méthode ``get_name()`` du singleton :ref:``OS <class_OS>``, mais "
+"tous les OS potentiellement retournés ne sont pas des OS sur lesquels Godot "
+"peut fonctionner avec Mono."
+
+msgid ""
+"``GODOTX``, ``GODOTX_Y``, ``GODOTX_Y_Z``, ``GODOTx_OR_GREATER``, "
+"``GODOTX_y_OR_GREATER``, and ``GODOTX_Y_z_OR_GREATER``, where ``X``, ``Y``, "
+"and ``Z`` are replaced by the current major, minor and patch version of "
+"Godot. ``x``, ``y``, and ``z`` are replaced by all values from 0 to the "
+"current version number for that component."
+msgstr ""
+
+msgid ""
+"These defines were first added in Godot 4.0.4 and 4.1. Version defines for "
+"prior versions do not exist, regardless of the current Godot version."
+msgstr ""
+
+msgid ""
+"For example: Godot 4.0.5 defines ``GODOT4``, ``GODOT4_OR_GREATER``, "
+"``GODOT4_0``, ``GODOT4_0_OR_GREATER``, ``GODOT4_0_5``, "
+"``GODOT4_0_4_OR_GREATER``, and ``GODOT4_0_5_OR_GREATER``. Godot 4.3.2 "
+"defines ``GODOT4``, ``GODOT4_OR_GREATER``, ``GODOT4_3``, "
+"``GODOT4_0_OR_GREATER``, ``GODOT4_1_OR_GREATER``, ``GODOT4_2_OR_GREATER``, "
+"``GODOT4_3_OR_GREATER``, ``GODOT4_3_2``, ``GODOT4_3_0_OR_GREATER``, "
+"``GODOT4_3_1_OR_GREATER``, and ``GODOT4_3_2_OR_GREATER``."
+msgstr ""
+
+msgid ""
+"When **exporting**, the following may also be defined depending on the "
+"export features:"
+msgstr ""
+"Quand vous **exportez**, les choses suivantes peuvent également être "
+"définies selon les caractéristiques d'exportation :"
+
+msgid ""
+"One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
+"platform type."
+msgstr ""
+"Un des ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB`` selon le type de "
+"plateforme."
+
+#, fuzzy
+msgid ""
+"One of ``GODOT_WINDOWS``, ``GODOT_LINUXBSD``, ``GODOT_MACOS``, "
+"``GODOT_ANDROID``, ``GODOT_IOS``, or ``GODOT_WEB`` depending on the platform."
+msgstr ""
+"Un des ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB`` selon le type de "
+"plateforme."
+
+msgid ""
+"To see an example project, see the OS testing demo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
+msgstr ""
+"Pour voir un projet d’exemple, voyez la démo de système d’exploitation de "
+"test : https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"os_test"
+
+msgid "Translation status"
+msgstr "État de la traduction"

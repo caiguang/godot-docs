@@ -1,0 +1,6855 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Locale codes"
+msgstr "Локальные координаты"
+
+msgid ""
+"Locale code has the following format: ``language_Script_COUNTRY_VARIANT``, "
+"where:"
+msgstr ""
+
+msgid "``language`` - 2 or 3-letter language code, in lower case."
+msgstr ""
+
+msgid "``Script`` - optional, 4-letter script code, in title case."
+msgstr ""
+
+msgid "``COUNTRY`` - optional, 2-letter country code, in upper case."
+msgstr ""
+
+msgid ""
+"``VARIANT`` - optional, language variant, region and, sort order. A variant "
+"can have any number of underscored keywords."
+msgstr ""
+
+#, fuzzy
+msgid "List of supported language codes"
+msgstr "Поддерживаемые языки"
+
+#, fuzzy
+msgid "Language code"
+msgstr "Язык"
+
+#, fuzzy
+msgid "Name"
+msgstr "Имя ветви"
+
+msgid "aa"
+msgstr "aa"
+
+msgid "Afar"
+msgstr "Афарский"
+
+#, fuzzy
+msgid "ab"
+msgstr "аabb"
+
+msgid "Abkhazian"
+msgstr ""
+
+#, fuzzy
+msgid "ace"
+msgstr "Пространство"
+
+#, fuzzy
+msgid "Achinese"
+msgstr "Китайский"
+
+#, fuzzy
+msgid "ach"
+msgstr "mаtch"
+
+msgid "Acoli"
+msgstr ""
+
+#, fuzzy
+msgid "ada"
+msgstr "aa"
+
+msgid "Adangme"
+msgstr ""
+
+#, fuzzy
+msgid "ady"
+msgstr "и"
+
+msgid "Adyghe"
+msgstr ""
+
+#, fuzzy
+msgid "ae"
+msgstr "Сохранить"
+
+msgid "Avestan"
+msgstr ""
+
+#, fuzzy
+msgid "aeb"
+msgstr "Web"
+
+msgid "Tunisian Arabic"
+msgstr ""
+
+msgid "af"
+msgstr "af"
+
+msgid "Afrikaans"
+msgstr "Африкаанс"
+
+#, fuzzy
+msgid "afh"
+msgstr "af"
+
+msgid "Afrihili"
+msgstr ""
+
+#, fuzzy
+msgid "agq"
+msgstr "Тег"
+
+msgid "Aghem"
+msgstr ""
+
+#, fuzzy
+msgid "ain"
+msgstr "Главная"
+
+msgid "Ainu"
+msgstr ""
+
+#, fuzzy
+msgid "agr"
+msgstr "ar"
+
+msgid "Aguaruna"
+msgstr ""
+
+msgid "ak"
+msgstr ""
+
+msgid "Akan"
+msgstr ""
+
+msgid "akk"
+msgstr ""
+
+msgid "Akkadian"
+msgstr ""
+
+msgid "akz"
+msgstr ""
+
+msgid "Alabama"
+msgstr ""
+
+#, fuzzy
+msgid "ale"
+msgstr "Масштаб"
+
+msgid "Aleut"
+msgstr ""
+
+#, fuzzy
+msgid "aln"
+msgstr "и"
+
+#, fuzzy
+msgid "Gheg Albanian"
+msgstr "Албанский"
+
+#, fuzzy
+msgid "alt"
+msgstr "lt"
+
+msgid "Southern Altai"
+msgstr ""
+
+#, fuzzy
+msgid "am"
+msgstr "имя"
+
+msgid "Amharic"
+msgstr ""
+
+#, fuzzy
+msgid "an"
+msgstr "и"
+
+msgid "Aragonese"
+msgstr ""
+
+#, fuzzy
+msgid "ang"
+msgstr "и"
+
+#, fuzzy
+msgid "Old English"
+msgstr "Английский"
+
+#, fuzzy
+msgid "anp"
+msgstr "pаp"
+
+msgid "Angika"
+msgstr ""
+
+msgid "ar"
+msgstr "ar"
+
+msgid "Arabic"
+msgstr "Арабский"
+
+#, fuzzy
+msgid "arc"
+msgstr "ar"
+
+msgid "Aramaic"
+msgstr ""
+
+#, fuzzy
+msgid "arn"
+msgstr "ar"
+
+msgid "Mapudungun"
+msgstr ""
+
+#, fuzzy
+msgid "aro"
+msgstr "ar"
+
+msgid "Araona"
+msgstr ""
+
+#, fuzzy
+msgid "arp"
+msgstr "ar"
+
+msgid "Arapaho"
+msgstr ""
+
+#, fuzzy
+msgid "arq"
+msgstr "ar"
+
+msgid "Algerian Arabic"
+msgstr ""
+
+#, fuzzy
+msgid "ars"
+msgstr "ar"
+
+#, fuzzy
+msgid "Najdi Arabic"
+msgstr "Арабский"
+
+#, fuzzy
+msgid "arw"
+msgstr "ar"
+
+msgid "Arawak"
+msgstr ""
+
+#, fuzzy
+msgid "ary"
+msgstr "ar"
+
+msgid "Moroccan Arabic"
+msgstr ""
+
+#, fuzzy
+msgid "arz"
+msgstr "ar"
+
+msgid "Egyptian Arabic"
+msgstr ""
+
+msgid "as"
+msgstr "as"
+
+msgid "Assamese"
+msgstr ""
+
+#, fuzzy
+msgid "asa"
+msgstr "aa"
+
+#, fuzzy
+msgid "Asu"
+msgstr "Объявления"
+
+#, fuzzy
+msgid "ase"
+msgstr "as"
+
+#, fuzzy
+msgid "American Sign Language"
+msgstr "Добавление нового языка"
+
+#, fuzzy
+msgid "ast"
+msgstr "as"
+
+msgid "Asturian"
+msgstr ""
+
+#, fuzzy
+msgid "av"
+msgstr "Сохранить"
+
+msgid "Avaric"
+msgstr ""
+
+msgid "avk"
+msgstr ""
+
+msgid "Kotava"
+msgstr ""
+
+#, fuzzy
+msgid "awa"
+msgstr "aa"
+
+msgid "Awadhi"
+msgstr ""
+
+#, fuzzy
+msgid "ayc"
+msgstr "аyc_PE"
+
+msgid "Southern Aymara"
+msgstr ""
+
+#, fuzzy
+msgid "ay"
+msgstr "Запустить"
+
+msgid "Aymara"
+msgstr ""
+
+msgid "az"
+msgstr ""
+
+msgid "Azerbaijani"
+msgstr ""
+
+#, fuzzy
+msgid "ba"
+msgstr "и"
+
+msgid "Bashkir"
+msgstr ""
+
+#, fuzzy
+msgid "bal"
+msgstr "и"
+
+msgid "Baluchi"
+msgstr ""
+
+#, fuzzy
+msgid "ban"
+msgstr "bn"
+
+#, fuzzy
+msgid "Balinese"
+msgstr "Пустые строки"
+
+#, fuzzy
+msgid "bar"
+msgstr "ar"
+
+#, fuzzy
+msgid "Bavarian"
+msgstr "Болгарский"
+
+#, fuzzy
+msgid "bas"
+msgstr "as"
+
+msgid "Bassa"
+msgstr ""
+
+#, fuzzy
+msgid "bax"
+msgstr "и"
+
+msgid "Bamun"
+msgstr ""
+
+msgid "bbc"
+msgstr ""
+
+msgid "Batak Toba"
+msgstr ""
+
+msgid "bbj"
+msgstr ""
+
+#, fuzzy
+msgid "Ghomala"
+msgstr "Сомалийский"
+
+msgid "be"
+msgstr "be"
+
+msgid "Belarusian"
+msgstr "Belarusian"
+
+#, fuzzy
+msgid "bej"
+msgstr "be"
+
+msgid "Beja"
+msgstr ""
+
+#, fuzzy
+msgid "bem"
+msgstr "be"
+
+msgid "Bemba"
+msgstr ""
+
+#, fuzzy
+msgid "ber"
+msgstr "be"
+
+msgid "Berber"
+msgstr ""
+
+#, fuzzy
+msgid "bew"
+msgstr "be"
+
+msgid "Betawi"
+msgstr ""
+
+#, fuzzy
+msgid "bez"
+msgstr "be"
+
+msgid "Bena"
+msgstr ""
+
+#, fuzzy
+msgid "bfd"
+msgstr "и"
+
+msgid "Bafut"
+msgstr ""
+
+msgid "bfq"
+msgstr ""
+
+msgid "Badaga"
+msgstr ""
+
+msgid "bg"
+msgstr "bg"
+
+msgid "Bulgarian"
+msgstr "Болгарский"
+
+#, fuzzy
+msgid "bhb"
+msgstr "bhb_ІN"
+
+msgid "Bhili"
+msgstr ""
+
+#, fuzzy
+msgid "bgn"
+msgstr "bg"
+
+msgid "Western Balochi"
+msgstr ""
+
+#, fuzzy
+msgid "bho"
+msgstr "bo"
+
+msgid "Bhojpuri"
+msgstr ""
+
+msgid "bi"
+msgstr ""
+
+msgid "Bislama"
+msgstr ""
+
+msgid "bik"
+msgstr ""
+
+msgid "Bikol"
+msgstr ""
+
+#, fuzzy
+msgid "bin"
+msgstr "bn"
+
+msgid "Bini"
+msgstr ""
+
+#, fuzzy
+msgid "bjn"
+msgstr "bn"
+
+msgid "Banjar"
+msgstr ""
+
+msgid "bkm"
+msgstr ""
+
+#, fuzzy
+msgid "Kom"
+msgstr "om"
+
+#, fuzzy
+msgid "bla"
+msgstr "и"
+
+msgid "Siksika"
+msgstr ""
+
+msgid "bm"
+msgstr ""
+
+msgid "Bambara"
+msgstr ""
+
+msgid "bn"
+msgstr "bn"
+
+msgid "Bengali"
+msgstr "Бенгальский"
+
+msgid "bo"
+msgstr "bo"
+
+msgid "Tibetan"
+msgstr "Тибетский"
+
+msgid "bpy"
+msgstr ""
+
+msgid "Bishnupriya"
+msgstr ""
+
+msgid "bqi"
+msgstr ""
+
+msgid "Bakhtiari"
+msgstr ""
+
+msgid "br"
+msgstr ""
+
+msgid "Breton"
+msgstr ""
+
+msgid "brh"
+msgstr ""
+
+msgid "Brahui"
+msgstr ""
+
+#, fuzzy
+msgid "brx"
+msgstr "brх_IN"
+
+msgid "Bodo"
+msgstr ""
+
+msgid "bs"
+msgstr ""
+
+#, fuzzy
+msgid "Bosnian"
+msgstr "Эстонский"
+
+#, fuzzy
+msgid "bss"
+msgstr "bаsis"
+
+msgid "Akoose"
+msgstr ""
+
+#, fuzzy
+msgid "bua"
+msgstr "и"
+
+msgid "Buriat"
+msgstr ""
+
+#, fuzzy
+msgid "bug"
+msgstr "bg"
+
+#, fuzzy
+msgid "Buginese"
+msgstr "Китайский"
+
+msgid "bum"
+msgstr ""
+
+msgid "Bulu"
+msgstr ""
+
+#, fuzzy
+msgid "byn"
+msgstr "bn"
+
+msgid "Bilin"
+msgstr ""
+
+msgid "byv"
+msgstr ""
+
+msgid "Medumba"
+msgstr ""
+
+msgid "ca"
+msgstr "ca"
+
+msgid "Catalan"
+msgstr "Каталанский"
+
+#, fuzzy
+msgid "cad"
+msgstr "ca"
+
+msgid "Caddo"
+msgstr ""
+
+#, fuzzy
+msgid "car"
+msgstr "ar"
+
+msgid "Carib"
+msgstr ""
+
+#, fuzzy
+msgid "cay"
+msgstr "ca"
+
+msgid "Cayuga"
+msgstr ""
+
+msgid "cch"
+msgstr ""
+
+msgid "Atsam"
+msgstr ""
+
+msgid "ccp"
+msgstr ""
+
+msgid "Chakma"
+msgstr ""
+
+msgid "ce"
+msgstr ""
+
+msgid "Chechen"
+msgstr ""
+
+#, fuzzy
+msgid "ceb"
+msgstr "Web"
+
+msgid "Cebuano"
+msgstr ""
+
+msgid "cgg"
+msgstr ""
+
+msgid "Chiga"
+msgstr ""
+
+msgid "ch"
+msgstr ""
+
+msgid "Chamorro"
+msgstr ""
+
+msgid "chb"
+msgstr ""
+
+msgid "Chibcha"
+msgstr ""
+
+msgid "chg"
+msgstr ""
+
+msgid "Chagatai"
+msgstr ""
+
+msgid "chk"
+msgstr ""
+
+msgid "Chuukese"
+msgstr ""
+
+msgid "chm"
+msgstr ""
+
+msgid "Mari"
+msgstr ""
+
+msgid "chn"
+msgstr ""
+
+msgid "Chinook Jargon"
+msgstr ""
+
+#, fuzzy
+msgid "cho"
+msgstr "scо"
+
+msgid "Choctaw"
+msgstr ""
+
+msgid "chp"
+msgstr ""
+
+msgid "Chipewyan"
+msgstr ""
+
+#, fuzzy
+msgid "chr"
+msgstr "hr"
+
+msgid "Cherokee"
+msgstr ""
+
+msgid "chy"
+msgstr ""
+
+msgid "Cheyenne"
+msgstr ""
+
+msgid "cic"
+msgstr ""
+
+msgid "Chickasaw"
+msgstr ""
+
+msgid "ckb"
+msgstr ""
+
+#, fuzzy
+msgid "Central Kurdish"
+msgstr "Курдский"
+
+#, fuzzy
+msgid "csb"
+msgstr "cs"
+
+msgid "Kashubian"
+msgstr ""
+
+#, fuzzy
+msgid "cmn"
+msgstr "сmn_TW"
+
+#, fuzzy
+msgid "Mandarin Chinese"
+msgstr "Контейнеры"
+
+#, fuzzy
+msgid "co"
+msgstr "scо"
+
+msgid "Corsican"
+msgstr ""
+
+#, fuzzy
+msgid "cop"
+msgstr "scо"
+
+msgid "Coptic"
+msgstr ""
+
+#, fuzzy
+msgid "cps"
+msgstr "cs"
+
+msgid "Capiznon"
+msgstr ""
+
+msgid "cr"
+msgstr ""
+
+msgid "Cree"
+msgstr ""
+
+#, fuzzy
+msgid "crh"
+msgstr "сrh_UA"
+
+msgid "Crimean Tatar"
+msgstr ""
+
+#, fuzzy
+msgid "crs"
+msgstr "cs"
+
+msgid "Seselwa Creole French"
+msgstr ""
+
+msgid "cs"
+msgstr "cs"
+
+msgid "Czech"
+msgstr "Чешский"
+
+msgid "cu"
+msgstr ""
+
+msgid "Church Slavic"
+msgstr ""
+
+msgid "cv"
+msgstr ""
+
+msgid "Chuvash"
+msgstr ""
+
+msgid "cy"
+msgstr ""
+
+msgid "Welsh"
+msgstr ""
+
+msgid "da"
+msgstr "da"
+
+msgid "Danish"
+msgstr "Датский"
+
+#, fuzzy
+msgid "dak"
+msgstr "da"
+
+msgid "Dakota"
+msgstr ""
+
+#, fuzzy
+msgid "dar"
+msgstr "ar"
+
+msgid "Dargwa"
+msgstr ""
+
+#, fuzzy
+msgid "dav"
+msgstr "da"
+
+msgid "Taita"
+msgstr ""
+
+msgid "de"
+msgstr "de"
+
+msgid "German"
+msgstr "Немецкий"
+
+#, fuzzy
+msgid "del"
+msgstr "de"
+
+#, fuzzy
+msgid "Delaware"
+msgstr "Задержка"
+
+#, fuzzy
+msgid "den"
+msgstr "en"
+
+msgid "Slave"
+msgstr ""
+
+msgid "dgr"
+msgstr ""
+
+msgid "Dogrib"
+msgstr ""
+
+#, fuzzy
+msgid "din"
+msgstr "Шейдинг (Затенение)"
+
+msgid "Dinka"
+msgstr ""
+
+#, fuzzy
+msgid "dje"
+msgstr "de"
+
+msgid "Zarma"
+msgstr ""
+
+#, fuzzy
+msgid "doi"
+msgstr "dоi_IN"
+
+msgid "Dogri"
+msgstr ""
+
+#, fuzzy
+msgid "dsb"
+msgstr "Объявления"
+
+#, fuzzy
+msgid "Lower Sorbian"
+msgstr "Сербский"
+
+msgid "dtp"
+msgstr ""
+
+msgid "Central Dusun"
+msgstr ""
+
+#, fuzzy
+msgid "dua"
+msgstr "da"
+
+msgid "Duala"
+msgstr ""
+
+msgid "dum"
+msgstr ""
+
+msgid "Middle Dutch"
+msgstr ""
+
+msgid "dv"
+msgstr ""
+
+msgid "Dhivehi"
+msgstr ""
+
+msgid "dyo"
+msgstr ""
+
+msgid "Jola-Fonyi"
+msgstr ""
+
+msgid "dyu"
+msgstr ""
+
+msgid "Dyula"
+msgstr ""
+
+msgid "dz"
+msgstr ""
+
+msgid "Dzongkha"
+msgstr ""
+
+msgid "dzg"
+msgstr ""
+
+msgid "Dazaga"
+msgstr ""
+
+#, fuzzy
+msgid "ebu"
+msgstr "eu"
+
+msgid "Embu"
+msgstr ""
+
+#, fuzzy
+msgid "ee"
+msgstr "Искать"
+
+msgid "Ewe"
+msgstr ""
+
+#, fuzzy
+msgid "efi"
+msgstr "fi"
+
+msgid "Efik"
+msgstr ""
+
+#, fuzzy
+msgid "egl"
+msgstr "el"
+
+msgid "Emilian"
+msgstr ""
+
+#, fuzzy
+msgid "egy"
+msgstr "Ключ"
+
+msgid "Ancient Egyptian"
+msgstr ""
+
+#, fuzzy
+msgid "eka"
+msgstr "ka"
+
+msgid "Ekajuk"
+msgstr ""
+
+msgid "el"
+msgstr "el"
+
+msgid "Greek"
+msgstr "Греческий"
+
+#, fuzzy
+msgid "elx"
+msgstr "el"
+
+msgid "Elamite"
+msgstr ""
+
+msgid "en"
+msgstr "en"
+
+msgid "English"
+msgstr "Английский"
+
+#, fuzzy
+msgid "enm"
+msgstr "enum"
+
+#, fuzzy
+msgid "Middle English"
+msgstr "Английский"
+
+msgid "eo"
+msgstr "eo"
+
+msgid "Esperanto"
+msgstr "Эсперанто"
+
+msgid "es"
+msgstr "es"
+
+msgid "Spanish"
+msgstr "Испанский"
+
+#, fuzzy
+msgid "esu"
+msgstr "es"
+
+msgid "Central Yupik"
+msgstr ""
+
+msgid "et"
+msgstr "et"
+
+msgid "Estonian"
+msgstr "Эстонский"
+
+msgid "eu"
+msgstr "eu"
+
+msgid "Basque"
+msgstr "Баскский"
+
+#, fuzzy
+msgid "ewo"
+msgstr "eo"
+
+msgid "Ewondo"
+msgstr ""
+
+#, fuzzy
+msgid "ext"
+msgstr "et"
+
+msgid "Extremaduran"
+msgstr ""
+
+msgid "fa"
+msgstr "fa"
+
+msgid "Persian"
+msgstr "Персидский"
+
+#, fuzzy
+msgid "fan"
+msgstr "fa"
+
+msgid "Fang"
+msgstr ""
+
+#, fuzzy
+msgid "fat"
+msgstr "fa"
+
+msgid "Fanti"
+msgstr ""
+
+msgid "ff"
+msgstr ""
+
+msgid "Fulah"
+msgstr ""
+
+msgid "fi"
+msgstr "fi"
+
+msgid "Finnish"
+msgstr "Финский"
+
+#, fuzzy
+msgid "fil"
+msgstr "fi"
+
+msgid "Filipino"
+msgstr "филиппинский"
+
+#, fuzzy
+msgid "fit"
+msgstr "fi"
+
+msgid "Tornedalen Finnish"
+msgstr ""
+
+msgid "fj"
+msgstr ""
+
+msgid "Fijian"
+msgstr ""
+
+#, fuzzy
+msgid "fo"
+msgstr "for"
+
+msgid "Faroese"
+msgstr ""
+
+#, fuzzy
+msgid "fon"
+msgstr "for"
+
+#, fuzzy
+msgid "Fon"
+msgstr "Туман"
+
+msgid "fr"
+msgstr "fr"
+
+msgid "French"
+msgstr "Французский"
+
+#, fuzzy
+msgid "frc"
+msgstr "fr"
+
+#, fuzzy
+msgid "Cajun French"
+msgstr "Французский"
+
+#, fuzzy
+msgid "frm"
+msgstr "fr"
+
+#, fuzzy
+msgid "Middle French"
+msgstr "Французский"
+
+#, fuzzy
+msgid "fro"
+msgstr "fr"
+
+#, fuzzy
+msgid "Old French"
+msgstr "Французский"
+
+#, fuzzy
+msgid "frp"
+msgstr "fr"
+
+msgid "Arpitan"
+msgstr ""
+
+#, fuzzy
+msgid "frr"
+msgstr "fr"
+
+msgid "Northern Frisian"
+msgstr ""
+
+#, fuzzy
+msgid "frs"
+msgstr "fr"
+
+#, fuzzy
+msgid "Eastern Frisian"
+msgstr "Внесение файлов"
+
+#, fuzzy
+msgid "fur"
+msgstr "fr"
+
+msgid "Friulian"
+msgstr ""
+
+msgid "fy"
+msgstr ""
+
+msgid "Western Frisian"
+msgstr ""
+
+msgid "ga"
+msgstr "ga"
+
+msgid "Irish"
+msgstr "Ирландский"
+
+#, fuzzy
+msgid "gaa"
+msgstr "aa"
+
+msgid "Ga"
+msgstr ""
+
+#, fuzzy
+msgid "gag"
+msgstr "ga"
+
+msgid "Gagauz"
+msgstr ""
+
+#, fuzzy
+msgid "gan"
+msgstr "ga"
+
+#, fuzzy
+msgid "Gan Chinese"
+msgstr "Китайский"
+
+#, fuzzy
+msgid "gay"
+msgstr "ga"
+
+msgid "Gayo"
+msgstr ""
+
+#, fuzzy
+msgid "gba"
+msgstr "ga"
+
+msgid "Gbaya"
+msgstr ""
+
+msgid "gbz"
+msgstr ""
+
+msgid "Zoroastrian Dari"
+msgstr ""
+
+#, fuzzy
+msgid "gd"
+msgstr "хорошо"
+
+msgid "Scottish Gaelic"
+msgstr ""
+
+#, fuzzy
+msgid "gez"
+msgstr "gеz_ER"
+
+msgid "Geez"
+msgstr ""
+
+#, fuzzy
+msgid "gil"
+msgstr "fi"
+
+msgid "Gilbertese"
+msgstr ""
+
+msgid "gl"
+msgstr ""
+
+msgid "Galician"
+msgstr ""
+
+msgid "glk"
+msgstr ""
+
+msgid "Gilaki"
+msgstr ""
+
+msgid "gmh"
+msgstr ""
+
+msgid "Middle High German"
+msgstr ""
+
+#, fuzzy
+msgid "gn"
+msgstr "Знак"
+
+msgid "Guarani"
+msgstr ""
+
+msgid "goh"
+msgstr ""
+
+msgid "Old High German"
+msgstr ""
+
+#, fuzzy
+msgid "gom"
+msgstr "om"
+
+msgid "Goan Konkani"
+msgstr ""
+
+msgid "gon"
+msgstr ""
+
+msgid "Gondi"
+msgstr ""
+
+#, fuzzy
+msgid "gor"
+msgstr "for"
+
+msgid "Gorontalo"
+msgstr ""
+
+msgid "got"
+msgstr ""
+
+msgid "Gothic"
+msgstr ""
+
+msgid "grb"
+msgstr ""
+
+msgid "Grebo"
+msgstr ""
+
+msgid "grc"
+msgstr ""
+
+msgid "Ancient Greek"
+msgstr ""
+
+msgid "gsw"
+msgstr ""
+
+#, fuzzy
+msgid "Swiss German"
+msgstr "Немецкий"
+
+msgid "gu"
+msgstr ""
+
+msgid "Gujarati"
+msgstr ""
+
+msgid "guc"
+msgstr ""
+
+msgid "Wayuu"
+msgstr ""
+
+#, fuzzy
+msgid "gur"
+msgstr "ur"
+
+msgid "Frafra"
+msgstr ""
+
+#, fuzzy
+msgid "guz"
+msgstr "uz"
+
+msgid "Gusii"
+msgstr ""
+
+msgid "gv"
+msgstr ""
+
+msgid "Manx"
+msgstr ""
+
+msgid "gwi"
+msgstr ""
+
+msgid "Gwichʼin"
+msgstr ""
+
+#, fuzzy
+msgid "ha"
+msgstr "Тайский"
+
+msgid "Hausa"
+msgstr ""
+
+#, fuzzy
+msgid "hai"
+msgstr "Тайский"
+
+msgid "Haida"
+msgstr ""
+
+#, fuzzy
+msgid "hak"
+msgstr "hаk_TW"
+
+#, fuzzy
+msgid "Hakka Chinese"
+msgstr "Китайский"
+
+#, fuzzy
+msgid "haw"
+msgstr "Тени"
+
+msgid "Hawaiian"
+msgstr ""
+
+msgid "he, iw"
+msgstr ""
+
+msgid "Hebrew"
+msgstr "Иврит"
+
+msgid "hi"
+msgstr "hi"
+
+msgid "Hindi"
+msgstr "Хинди"
+
+#, fuzzy
+msgid "hif"
+msgstr "hi"
+
+#, fuzzy
+msgid "Fiji Hindi"
+msgstr "Хинди"
+
+#, fuzzy
+msgid "hil"
+msgstr "hi"
+
+msgid "Hiligaynon"
+msgstr ""
+
+#, fuzzy
+msgid "hit"
+msgstr "hi"
+
+msgid "Hittite"
+msgstr ""
+
+msgid "hmn"
+msgstr ""
+
+msgid "Hmong"
+msgstr ""
+
+msgid "ho"
+msgstr ""
+
+msgid "Hiri Motu"
+msgstr ""
+
+#, fuzzy
+msgid "hne"
+msgstr "he"
+
+msgid "Chhattisgarhi"
+msgstr ""
+
+msgid "hr"
+msgstr "hr"
+
+msgid "Croatian"
+msgstr "Хорватский"
+
+#, fuzzy
+msgid "hsb"
+msgstr "hsb_DЕ"
+
+#, fuzzy
+msgid "Upper Sorbian"
+msgstr "Сербский"
+
+msgid "hsn"
+msgstr ""
+
+#, fuzzy
+msgid "Xiang Chinese"
+msgstr "Китайский"
+
+msgid "ht"
+msgstr ""
+
+#, fuzzy
+msgid "Haitian"
+msgstr "Хорватский"
+
+msgid "hu"
+msgstr "hu"
+
+msgid "Hungarian"
+msgstr "Венгерский"
+
+#, fuzzy
+msgid "hup"
+msgstr "hu"
+
+msgid "Hupa"
+msgstr ""
+
+#, fuzzy
+msgid "hus"
+msgstr "hu"
+
+#, fuzzy
+msgid "Huastec"
+msgstr "Вставить"
+
+msgid "hy"
+msgstr ""
+
+#, fuzzy
+msgid "Armenian"
+msgstr "Румынский"
+
+msgid "hz"
+msgstr ""
+
+msgid "Herero"
+msgstr ""
+
+msgid "ia"
+msgstr ""
+
+#, fuzzy
+msgid "Interlingua"
+msgstr "Интерполяция"
+
+#, fuzzy
+msgid "iba"
+msgstr "и"
+
+msgid "Iban"
+msgstr ""
+
+msgid "ibb"
+msgstr ""
+
+msgid "Ibibio"
+msgstr ""
+
+msgid "id, in"
+msgstr ""
+
+msgid "Indonesian"
+msgstr "Индонезийский"
+
+#, fuzzy
+msgid "ie"
+msgstr "Синус"
+
+#, fuzzy
+msgid "Interlingue"
+msgstr "Интерполяция"
+
+#, fuzzy
+msgid "ig"
+msgstr "Знак"
+
+msgid "Igbo"
+msgstr ""
+
+msgid "ii"
+msgstr ""
+
+#, fuzzy
+msgid "Sichuan Yi"
+msgstr "Литовский"
+
+msgid "ik"
+msgstr ""
+
+msgid "Inupiaq"
+msgstr ""
+
+#, fuzzy
+msgid "ilo"
+msgstr "fi"
+
+msgid "Iloko"
+msgstr ""
+
+#, fuzzy
+msgid "inh"
+msgstr "Финский"
+
+msgid "Ingush"
+msgstr ""
+
+msgid "io"
+msgstr ""
+
+msgid "Ido"
+msgstr ""
+
+msgid "is"
+msgstr "is"
+
+msgid "Icelandic"
+msgstr "Исландский"
+
+msgid "it"
+msgstr "it"
+
+msgid "Italian"
+msgstr "Итальянский"
+
+msgid "iu"
+msgstr ""
+
+msgid "Inuktitut"
+msgstr ""
+
+#, fuzzy
+msgid "izh"
+msgstr "zh"
+
+#, fuzzy
+msgid "Ingrian"
+msgstr "Венгерский"
+
+msgid "ja"
+msgstr "ja"
+
+msgid "Japanese"
+msgstr "Японский"
+
+#, fuzzy
+msgid "jam"
+msgstr "ja"
+
+msgid "Jamaican Creole English"
+msgstr ""
+
+#, fuzzy
+msgid "jbo"
+msgstr "bo"
+
+msgid "Lojban"
+msgstr ""
+
+msgid "jgo"
+msgstr ""
+
+msgid "Ngomba"
+msgstr ""
+
+msgid "jmc"
+msgstr ""
+
+msgid "Machame"
+msgstr ""
+
+#, fuzzy
+msgid "jpr"
+msgstr "pr"
+
+#, fuzzy
+msgid "Judeo-Persian"
+msgstr "Персидский"
+
+msgid "jrb"
+msgstr ""
+
+#, fuzzy
+msgid "Judeo-Arabic"
+msgstr "Арабский"
+
+#, fuzzy
+msgid "jut"
+msgstr "просто"
+
+msgid "Jutish"
+msgstr ""
+
+msgid "jv"
+msgstr ""
+
+#, fuzzy
+msgid "Javanese"
+msgstr "Японский"
+
+msgid "ka"
+msgstr "ka"
+
+msgid "Georgian"
+msgstr "Грузинский"
+
+#, fuzzy
+msgid "kaa"
+msgstr "aa"
+
+msgid "Kara-Kalpak"
+msgstr ""
+
+#, fuzzy
+msgid "kab"
+msgstr "ka"
+
+msgid "Kabyle"
+msgstr ""
+
+#, fuzzy
+msgid "kac"
+msgstr "ka"
+
+#, fuzzy
+msgid "Kachin"
+msgstr "Ветвление"
+
+#, fuzzy
+msgid "kaj"
+msgstr "ka"
+
+msgid "Jju"
+msgstr ""
+
+#, fuzzy
+msgid "kam"
+msgstr "ka"
+
+msgid "Kamba"
+msgstr ""
+
+#, fuzzy
+msgid "kaw"
+msgstr "ka"
+
+msgid "Kawi"
+msgstr ""
+
+#, fuzzy
+msgid "kbd"
+msgstr "и"
+
+msgid "Kabardian"
+msgstr ""
+
+msgid "kbl"
+msgstr ""
+
+msgid "Kanembu"
+msgstr ""
+
+msgid "kcg"
+msgstr ""
+
+msgid "Tyap"
+msgstr ""
+
+#, fuzzy
+msgid "kde"
+msgstr "de"
+
+msgid "Makonde"
+msgstr ""
+
+#, fuzzy
+msgid "kea"
+msgstr "ka"
+
+msgid "Kabuverdianu"
+msgstr ""
+
+#, fuzzy
+msgid "ken"
+msgstr "en"
+
+msgid "Kenyang"
+msgstr ""
+
+#, fuzzy
+msgid "kfo"
+msgstr "ko"
+
+msgid "Koro"
+msgstr ""
+
+msgid "kg"
+msgstr ""
+
+msgid "Kongo"
+msgstr ""
+
+msgid "kgp"
+msgstr ""
+
+msgid "Kaingang"
+msgstr ""
+
+#, fuzzy
+msgid "kha"
+msgstr "ka"
+
+msgid "Khasi"
+msgstr ""
+
+#, fuzzy
+msgid "kho"
+msgstr "ko"
+
+#, fuzzy
+msgid "Khotanese"
+msgstr "Китайский"
+
+msgid "khq"
+msgstr ""
+
+msgid "Koyra Chiini"
+msgstr ""
+
+msgid "khw"
+msgstr ""
+
+msgid "Khowar"
+msgstr ""
+
+msgid "ki"
+msgstr ""
+
+msgid "Kikuyu"
+msgstr ""
+
+#, fuzzy
+msgid "kiu"
+msgstr "ku"
+
+msgid "Kirmanjki"
+msgstr ""
+
+msgid "kj"
+msgstr ""
+
+msgid "Kuanyama"
+msgstr ""
+
+msgid "kk"
+msgstr ""
+
+msgid "Kazakh"
+msgstr ""
+
+msgid "kkj"
+msgstr ""
+
+msgid "Kako"
+msgstr ""
+
+msgid "kl"
+msgstr ""
+
+msgid "Kalaallisut"
+msgstr ""
+
+msgid "kln"
+msgstr ""
+
+msgid "Kalenjin"
+msgstr ""
+
+msgid "km"
+msgstr ""
+
+msgid "Central Khmer"
+msgstr ""
+
+msgid "kmb"
+msgstr ""
+
+msgid "Kimbundu"
+msgstr ""
+
+msgid "kn"
+msgstr ""
+
+msgid "Kannada"
+msgstr ""
+
+msgid "ko"
+msgstr "ko"
+
+msgid "Korean"
+msgstr "Корейский"
+
+#, fuzzy
+msgid "koi"
+msgstr "ko"
+
+msgid "Komi-Permyak"
+msgstr ""
+
+#, fuzzy
+msgid "kok"
+msgstr "ko"
+
+msgid "Konkani"
+msgstr ""
+
+#, fuzzy
+msgid "kos"
+msgstr "ko"
+
+msgid "Kosraean"
+msgstr ""
+
+#, fuzzy
+msgid "kpe"
+msgstr "ключ"
+
+msgid "Kpelle"
+msgstr ""
+
+msgid "kr"
+msgstr ""
+
+msgid "Kanuri"
+msgstr ""
+
+msgid "krc"
+msgstr ""
+
+msgid "Karachay-Balkar"
+msgstr ""
+
+#, fuzzy
+msgid "kri"
+msgstr "rіd"
+
+msgid "Krio"
+msgstr ""
+
+msgid "krj"
+msgstr ""
+
+msgid "Kinaray-a"
+msgstr ""
+
+msgid "krl"
+msgstr ""
+
+#, fuzzy
+msgid "Karelian"
+msgstr "Итальянский"
+
+#, fuzzy
+msgid "kru"
+msgstr "ku"
+
+msgid "Kurukh"
+msgstr ""
+
+#, fuzzy
+msgid "ks"
+msgstr "ключи"
+
+#, fuzzy
+msgid "Kashmiri"
+msgstr "Кашмир (Индия)"
+
+msgid "ksb"
+msgstr ""
+
+msgid "Shambala"
+msgstr ""
+
+msgid "ksf"
+msgstr ""
+
+msgid "Bafia"
+msgstr ""
+
+#, fuzzy
+msgid "ksh"
+msgstr "Турецкий"
+
+#, fuzzy
+msgid "Colognian"
+msgstr "Словенский"
+
+msgid "ku"
+msgstr "ku"
+
+msgid "Kurdish"
+msgstr "Курдский"
+
+#, fuzzy
+msgid "kum"
+msgstr "ku"
+
+msgid "Kumyk"
+msgstr ""
+
+#, fuzzy
+msgid "kut"
+msgstr "ku"
+
+msgid "Kutenai"
+msgstr ""
+
+msgid "kv"
+msgstr ""
+
+msgid "Komi"
+msgstr ""
+
+msgid "kw"
+msgstr ""
+
+#, fuzzy
+msgid "Cornish"
+msgstr "Датский"
+
+#, fuzzy
+msgid "ky"
+msgstr "ключ"
+
+msgid "Kirghiz"
+msgstr ""
+
+#, fuzzy
+msgid "lag"
+msgstr "Флаги"
+
+#, fuzzy
+msgid "Langi"
+msgstr "Язык"
+
+#, fuzzy
+msgid "la"
+msgstr "Запустить"
+
+#, fuzzy
+msgid "Latin"
+msgstr "Обновление"
+
+#, fuzzy
+msgid "lad"
+msgstr "и"
+
+#, fuzzy
+msgid "Ladino"
+msgstr "Шейдинг (Затенение)"
+
+msgid "lah"
+msgstr ""
+
+msgid "Lahnda"
+msgstr ""
+
+#, fuzzy
+msgid "lam"
+msgstr "лампу,"
+
+msgid "Lamba"
+msgstr ""
+
+msgid "lb"
+msgstr ""
+
+#, fuzzy
+msgid "Luxembourgish"
+msgstr "Французский (Люксембург)"
+
+msgid "lez"
+msgstr ""
+
+msgid "Lezghian"
+msgstr ""
+
+msgid "lfn"
+msgstr ""
+
+msgid "Lingua Franca Nova"
+msgstr ""
+
+msgid "lg"
+msgstr ""
+
+msgid "Ganda"
+msgstr ""
+
+#, fuzzy
+msgid "li"
+msgstr "еlif"
+
+msgid "Limburgan"
+msgstr ""
+
+#, fuzzy
+msgid "lij"
+msgstr "lij_ІT"
+
+msgid "Ligurian"
+msgstr ""
+
+#, fuzzy
+msgid "liv"
+msgstr "lv"
+
+#, fuzzy
+msgid "Livonian"
+msgstr "Литовский"
+
+#, fuzzy
+msgid "lkt"
+msgstr "lt"
+
+msgid "Lakota"
+msgstr ""
+
+msgid "lmo"
+msgstr ""
+
+msgid "Lombard"
+msgstr ""
+
+msgid "ln"
+msgstr ""
+
+msgid "Lingala"
+msgstr ""
+
+#, fuzzy
+msgid "lo"
+msgstr "Свечение"
+
+msgid "Lao"
+msgstr ""
+
+#, fuzzy
+msgid "lol"
+msgstr "Конец поддержки"
+
+msgid "Mongo"
+msgstr ""
+
+msgid "lou"
+msgstr ""
+
+msgid "Louisiana Creole"
+msgstr ""
+
+msgid "loz"
+msgstr ""
+
+msgid "Lozi"
+msgstr ""
+
+msgid "lrc"
+msgstr ""
+
+msgid "Northern Luri"
+msgstr ""
+
+msgid "lt"
+msgstr "lt"
+
+msgid "Lithuanian"
+msgstr "Литовский"
+
+#, fuzzy
+msgid "ltg"
+msgstr "lt"
+
+#, fuzzy
+msgid "Latgalian"
+msgstr "Итальянский"
+
+msgid "lu"
+msgstr ""
+
+msgid "Luba-Katanga"
+msgstr ""
+
+msgid "lua"
+msgstr ""
+
+msgid "Luba-Lulua"
+msgstr ""
+
+#, fuzzy
+msgid "lui"
+msgstr "Плагины"
+
+msgid "Luiseno"
+msgstr ""
+
+#, fuzzy
+msgid "lun"
+msgstr "Запустить"
+
+msgid "Lunda"
+msgstr ""
+
+msgid "luo"
+msgstr ""
+
+msgid "Luo"
+msgstr ""
+
+#, fuzzy
+msgid "lus"
+msgstr "Плагины"
+
+msgid "Mizo"
+msgstr ""
+
+msgid "luy"
+msgstr ""
+
+msgid "Luyia"
+msgstr ""
+
+msgid "lv"
+msgstr "lv"
+
+msgid "Latvian"
+msgstr "Латвийский"
+
+#, fuzzy
+msgid "lzh"
+msgstr "zh"
+
+#, fuzzy
+msgid "Literary Chinese"
+msgstr "Тернарный оператор Если/Иначе (if/else)"
+
+msgid "lzz"
+msgstr ""
+
+msgid "Laz"
+msgstr ""
+
+#, fuzzy
+msgid "mad"
+msgstr "и"
+
+#, fuzzy
+msgid "Madurese"
+msgstr "Возможности"
+
+#, fuzzy
+msgid "maf"
+msgstr "af"
+
+msgid "Mafa"
+msgstr ""
+
+#, fuzzy
+msgid "mag"
+msgstr "max"
+
+msgid "Magahi"
+msgstr ""
+
+#, fuzzy
+msgid "mai"
+msgstr "Сочетание"
+
+msgid "Maithili"
+msgstr ""
+
+#, fuzzy
+msgid "mak"
+msgstr "mk"
+
+msgid "Makasar"
+msgstr ""
+
+#, fuzzy
+msgid "man"
+msgstr "max"
+
+#, fuzzy
+msgid "Mandingo"
+msgstr "Шейдинг (Затенение)"
+
+#, fuzzy
+msgid "mas"
+msgstr "мс"
+
+msgid "Masai"
+msgstr ""
+
+#, fuzzy
+msgid "mde"
+msgstr "de"
+
+msgid "Maba"
+msgstr ""
+
+msgid "mdf"
+msgstr ""
+
+msgid "Moksha"
+msgstr ""
+
+msgid "mdr"
+msgstr ""
+
+#, fuzzy
+msgid "Mandar"
+msgstr "Календари"
+
+#, fuzzy
+msgid "men"
+msgstr "en"
+
+msgid "Mende"
+msgstr ""
+
+#, fuzzy
+msgid "mer"
+msgstr "Камера"
+
+msgid "Meru"
+msgstr ""
+
+msgid "mfe"
+msgstr ""
+
+msgid "Morisyen"
+msgstr ""
+
+msgid "mg"
+msgstr ""
+
+#, fuzzy
+msgid "Malagasy"
+msgstr "Малайский"
+
+#, fuzzy
+msgid "mga"
+msgstr "ga"
+
+msgid "Middle Irish"
+msgstr ""
+
+msgid "mgh"
+msgstr ""
+
+msgid "Makhuwa-Meetto"
+msgstr ""
+
+msgid "mgo"
+msgstr ""
+
+msgid "Metaʼ"
+msgstr ""
+
+msgid "mh"
+msgstr ""
+
+msgid "Marshallese"
+msgstr ""
+
+#, fuzzy
+msgid "mhr"
+msgstr "hr"
+
+msgid "Eastern Mari"
+msgstr ""
+
+#, fuzzy
+msgid "mi"
+msgstr "Сочетание"
+
+msgid "Māori"
+msgstr ""
+
+#, fuzzy
+msgid "mic"
+msgstr "Сочетание"
+
+msgid "Mi'kmaq"
+msgstr ""
+
+#, fuzzy
+msgid "min"
+msgstr "Сочетание"
+
+msgid "Minangkabau"
+msgstr ""
+
+#, fuzzy
+msgid "miq"
+msgstr "Сочетание"
+
+msgid "Mískito"
+msgstr ""
+
+msgid "mjw"
+msgstr ""
+
+msgid "Karbi"
+msgstr ""
+
+msgid "mk"
+msgstr "mk"
+
+msgid "Macedonian"
+msgstr "Македонский"
+
+msgid "ml"
+msgstr "ml"
+
+#, fuzzy
+msgid "Malayalam"
+msgstr "Малайский"
+
+msgid "mn"
+msgstr ""
+
+msgid "Mongolian"
+msgstr ""
+
+msgid "mnc"
+msgstr ""
+
+msgid "Manchu"
+msgstr ""
+
+#, fuzzy
+msgid "mni"
+msgstr "Сочетание"
+
+msgid "Manipuri"
+msgstr ""
+
+msgid "mnw"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+#, fuzzy
+msgid "mos"
+msgstr "мс"
+
+msgid "Mossi"
+msgstr ""
+
+msgid "moh"
+msgstr ""
+
+msgid "Mohawk"
+msgstr ""
+
+msgid "mr"
+msgstr ""
+
+msgid "Marathi"
+msgstr ""
+
+msgid "mrj"
+msgstr ""
+
+msgid "Western Mari"
+msgstr ""
+
+msgid "ms"
+msgstr "мс"
+
+msgid "Malay"
+msgstr "Малайский"
+
+msgid "mt"
+msgstr "mt"
+
+msgid "Maltese"
+msgstr "Мальтийский"
+
+#, fuzzy
+msgid "mua"
+msgstr "max"
+
+msgid "Mundang"
+msgstr ""
+
+#, fuzzy
+msgid "mus"
+msgstr "мс"
+
+msgid "Muscogee"
+msgstr ""
+
+#, fuzzy
+msgid "mwl"
+msgstr "ml"
+
+msgid "Mirandese"
+msgstr ""
+
+msgid "mwr"
+msgstr ""
+
+msgid "Marwari"
+msgstr ""
+
+msgid "mwv"
+msgstr ""
+
+msgid "Mentawai"
+msgstr ""
+
+msgid "my"
+msgstr ""
+
+msgid "Burmese"
+msgstr ""
+
+msgid "mye"
+msgstr ""
+
+msgid "Myene"
+msgstr ""
+
+#, fuzzy
+msgid "myv"
+msgstr "mуv_RU"
+
+msgid "Erzya"
+msgstr ""
+
+msgid "mzn"
+msgstr ""
+
+msgid "Mazanderani"
+msgstr ""
+
+#, fuzzy
+msgid "na"
+msgstr "имя"
+
+msgid "Nauru"
+msgstr ""
+
+#, fuzzy
+msgid "nah"
+msgstr "nаh_MX"
+
+msgid "Nahuatl"
+msgstr ""
+
+#, fuzzy
+msgid "nan"
+msgstr "nn"
+
+#, fuzzy
+msgid "Min Nan Chinese"
+msgstr "Китайский"
+
+#, fuzzy
+msgid "nap"
+msgstr "pаp"
+
+msgid "Neapolitan"
+msgstr ""
+
+msgid "naq"
+msgstr ""
+
+msgid "Nama"
+msgstr ""
+
+msgid "nb, no"
+msgstr ""
+
+#, fuzzy
+msgid "Norwegian Bokmål"
+msgstr "Норвежский Букмол"
+
+#, fuzzy
+msgid "nd"
+msgstr "и"
+
+msgid "North Ndebele"
+msgstr ""
+
+#, fuzzy
+msgid "nds"
+msgstr "и"
+
+#, fuzzy
+msgid "Low German"
+msgstr "Немецкий"
+
+#, fuzzy
+msgid "ne"
+msgstr "имя"
+
+msgid "Nepali"
+msgstr ""
+
+msgid "new"
+msgstr ""
+
+msgid "Newari"
+msgstr ""
+
+#, fuzzy
+msgid "nhn"
+msgstr "nn"
+
+msgid "Central Nahuatl"
+msgstr ""
+
+msgid "ng"
+msgstr ""
+
+msgid "Ndonga"
+msgstr ""
+
+msgid "nia"
+msgstr ""
+
+msgid "Nias"
+msgstr ""
+
+#, fuzzy
+msgid "niu"
+msgstr "nіu_NU"
+
+msgid "Niuean"
+msgstr ""
+
+msgid "njo"
+msgstr ""
+
+msgid "Ao Naga"
+msgstr ""
+
+msgid "nl"
+msgstr "nl"
+
+msgid "Dutch"
+msgstr "Голландский"
+
+msgid "nmg"
+msgstr ""
+
+msgid "Kwasio"
+msgstr ""
+
+msgid "nn"
+msgstr "nn"
+
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+#, fuzzy
+msgid "nnh"
+msgstr "nn"
+
+msgid "Ngiemboon"
+msgstr ""
+
+#, fuzzy
+msgid "nog"
+msgstr "Туман"
+
+msgid "Nogai"
+msgstr ""
+
+#, fuzzy
+msgid "non"
+msgstr "nn"
+
+msgid "Old Norse"
+msgstr ""
+
+msgid "nov"
+msgstr ""
+
+msgid "Novial"
+msgstr ""
+
+msgid "nqo"
+msgstr ""
+
+msgid "N'ko"
+msgstr ""
+
+msgid "nr"
+msgstr ""
+
+msgid "South Ndebele"
+msgstr ""
+
+#, fuzzy
+msgid "nso"
+msgstr "so"
+
+msgid "Pedi"
+msgstr ""
+
+#, fuzzy
+msgid "nus"
+msgstr "Перечисления"
+
+msgid "Nuer"
+msgstr ""
+
+msgid "nv"
+msgstr ""
+
+msgid "Navajo"
+msgstr ""
+
+msgid "nwc"
+msgstr ""
+
+#, fuzzy
+msgid "Classical Newari"
+msgstr "Объявление класса"
+
+#, fuzzy
+msgid "ny"
+msgstr "Любой"
+
+msgid "Nyanja"
+msgstr ""
+
+#, fuzzy
+msgid "nym"
+msgstr "Любой"
+
+msgid "Nyamwezi"
+msgstr ""
+
+#, fuzzy
+msgid "nyn"
+msgstr "nn"
+
+msgid "Nyankole"
+msgstr ""
+
+#, fuzzy
+msgid "nyo"
+msgstr "Любой"
+
+msgid "Nyoro"
+msgstr ""
+
+msgid "nzi"
+msgstr ""
+
+msgid "Nzima"
+msgstr ""
+
+msgid "oc"
+msgstr ""
+
+msgid "Occitan"
+msgstr ""
+
+msgid "oj"
+msgstr ""
+
+msgid "Ojibwa"
+msgstr ""
+
+msgid "om"
+msgstr "om"
+
+msgid "Oromo"
+msgstr "Oromo"
+
+#, fuzzy
+msgid "or"
+msgstr "for"
+
+msgid "Odia"
+msgstr ""
+
+msgid "os"
+msgstr ""
+
+msgid "Ossetic"
+msgstr ""
+
+msgid "osa"
+msgstr ""
+
+#, fuzzy
+msgid "Osage"
+msgstr "Использует"
+
+#, fuzzy
+msgid "ota"
+msgstr "ta"
+
+#, fuzzy
+msgid "Ottoman Turkish"
+msgstr "Турецкий"
+
+#, fuzzy
+msgid "pa"
+msgstr "pаp"
+
+msgid "Panjabi"
+msgstr ""
+
+#, fuzzy
+msgid "pag"
+msgstr "pаp"
+
+msgid "Pangasinan"
+msgstr ""
+
+#, fuzzy
+msgid "pal"
+msgstr "pl"
+
+msgid "Pahlavi"
+msgstr ""
+
+#, fuzzy
+msgid "pam"
+msgstr "pаp"
+
+msgid "Pampanga"
+msgstr ""
+
+msgid "pap"
+msgstr "pаp"
+
+msgid "Papiamento"
+msgstr "Папьяменто"
+
+#, fuzzy
+msgid "pau"
+msgstr "pаp"
+
+msgid "Palauan"
+msgstr ""
+
+msgid "pcd"
+msgstr ""
+
+#, fuzzy
+msgid "Picard"
+msgstr "Шаблон подстановки"
+
+msgid "pcm"
+msgstr ""
+
+msgid "Nigerian Pidgin"
+msgstr ""
+
+msgid "pdc"
+msgstr ""
+
+msgid "Pennsylvania German"
+msgstr ""
+
+#, fuzzy
+msgid "pdt"
+msgstr "pt"
+
+msgid "Plautdietsch"
+msgstr ""
+
+#, fuzzy
+msgid "peo"
+msgstr "eo"
+
+#, fuzzy
+msgid "Old Persian"
+msgstr "Персидский"
+
+#, fuzzy
+msgid "pfl"
+msgstr "pl"
+
+#, fuzzy
+msgid "Palatine German"
+msgstr "Translation format (формат перевода)"
+
+msgid "phn"
+msgstr ""
+
+msgid "Phoenician"
+msgstr ""
+
+msgid "pi"
+msgstr ""
+
+msgid "Pali"
+msgstr ""
+
+msgid "pl"
+msgstr "pl"
+
+msgid "Polish"
+msgstr "Польский"
+
+#, fuzzy
+msgid "pms"
+msgstr "мс"
+
+msgid "Piedmontese"
+msgstr ""
+
+#, fuzzy
+msgid "pnt"
+msgstr "pt"
+
+msgid "Pontic"
+msgstr ""
+
+#, fuzzy
+msgid "pon"
+msgstr "Оптимизация"
+
+msgid "Pohnpeian"
+msgstr ""
+
+msgid "pr"
+msgstr "pr"
+
+msgid "Pirate"
+msgstr "Пиратский"
+
+#, fuzzy
+msgid "prg"
+msgstr "pr"
+
+#, fuzzy
+msgid "Prussian"
+msgstr "Русский"
+
+#, fuzzy
+msgid "pro"
+msgstr "pr"
+
+msgid "Old Provençal"
+msgstr ""
+
+#, fuzzy
+msgid "prs"
+msgstr "pr"
+
+msgid "Dari"
+msgstr ""
+
+#, fuzzy
+msgid "ps"
+msgstr "пропуск"
+
+msgid "Pushto"
+msgstr ""
+
+msgid "pt"
+msgstr "pt"
+
+msgid "Portuguese"
+msgstr "Португальский"
+
+#, fuzzy
+msgid "qu"
+msgstr "quаt"
+
+msgid "Quechua"
+msgstr ""
+
+msgid "quc"
+msgstr ""
+
+msgid "K'iche"
+msgstr ""
+
+msgid "qug"
+msgstr ""
+
+msgid "Chimborazo Highland Quichua"
+msgstr ""
+
+#, fuzzy
+msgid "quy"
+msgstr "quу_PE"
+
+msgid "Ayacucho Quechua"
+msgstr ""
+
+#, fuzzy
+msgid "quz"
+msgstr "uz"
+
+msgid "Cusco Quechua"
+msgstr ""
+
+#, fuzzy
+msgid "raj"
+msgstr "rаj_IN"
+
+msgid "Rajasthani"
+msgstr ""
+
+#, fuzzy
+msgid "rap"
+msgstr "pаp"
+
+msgid "Rapanui"
+msgstr ""
+
+#, fuzzy
+msgid "rar"
+msgstr "ar"
+
+msgid "Rarotongan"
+msgstr ""
+
+msgid "rgn"
+msgstr ""
+
+#, fuzzy
+msgid "Romagnol"
+msgstr "Румынский"
+
+#, fuzzy
+msgid "rif"
+msgstr "if"
+
+msgid "Riffian"
+msgstr ""
+
+msgid "rm"
+msgstr ""
+
+#, fuzzy
+msgid "Romansh"
+msgstr "Румынский"
+
+msgid "rn"
+msgstr ""
+
+msgid "Rundi"
+msgstr ""
+
+msgid "ro"
+msgstr "ro"
+
+msgid "Romanian"
+msgstr "Румынский"
+
+#, fuzzy
+msgid "rof"
+msgstr "ro"
+
+msgid "Rombo"
+msgstr ""
+
+#, fuzzy
+msgid "rom"
+msgstr "om"
+
+#, fuzzy
+msgid "Romany"
+msgstr "Румынский"
+
+msgid "rtm"
+msgstr ""
+
+msgid "Rotuman"
+msgstr ""
+
+msgid "ru"
+msgstr "ru"
+
+msgid "Russian"
+msgstr "Русский"
+
+#, fuzzy
+msgid "rue"
+msgstr "ru"
+
+msgid "Rusyn"
+msgstr ""
+
+#, fuzzy
+msgid "rug"
+msgstr "ru"
+
+msgid "Roviana"
+msgstr ""
+
+#, fuzzy
+msgid "rup"
+msgstr "ru"
+
+#, fuzzy
+msgid "Aromanian"
+msgstr "Румынский"
+
+#, fuzzy
+msgid "rw"
+msgstr "Расти"
+
+msgid "Kinyarwanda"
+msgstr ""
+
+msgid "rwk"
+msgstr ""
+
+msgid "Rwa"
+msgstr ""
+
+msgid "sa"
+msgstr ""
+
+msgid "Sanskrit"
+msgstr ""
+
+#, fuzzy
+msgid "sad"
+msgstr "и"
+
+msgid "Sandawe"
+msgstr ""
+
+msgid "sah"
+msgstr ""
+
+msgid "Sakha"
+msgstr ""
+
+msgid "sam"
+msgstr ""
+
+msgid "Samaritan Aramaic"
+msgstr ""
+
+#, fuzzy
+msgid "saq"
+msgstr "sq"
+
+msgid "Samburu"
+msgstr ""
+
+#, fuzzy
+msgid "sas"
+msgstr "as"
+
+msgid "Sasak"
+msgstr ""
+
+#, fuzzy
+msgid "sat"
+msgstr "sat_IN"
+
+#, fuzzy
+msgid "Santali"
+msgstr "Italic"
+
+msgid "saz"
+msgstr ""
+
+msgid "Saurashtra"
+msgstr ""
+
+#, fuzzy
+msgid "sba"
+msgstr "и"
+
+msgid "Ngambay"
+msgstr ""
+
+msgid "sbp"
+msgstr ""
+
+#, fuzzy
+msgid "Sangu"
+msgstr "Язык"
+
+#, fuzzy
+msgid "sc"
+msgstr "scо"
+
+#, fuzzy
+msgid "Sardinian"
+msgstr "Украинский"
+
+#, fuzzy
+msgid "scn"
+msgstr "scо"
+
+msgid "Sicilian"
+msgstr ""
+
+msgid "sco"
+msgstr "scо"
+
+msgid "Scots"
+msgstr "Шотландский"
+
+msgid "sd"
+msgstr ""
+
+msgid "Sindhi"
+msgstr ""
+
+#, fuzzy
+msgid "sdc"
+msgstr "scо"
+
+msgid "Sassarese Sardinian"
+msgstr ""
+
+msgid "sdh"
+msgstr ""
+
+#, fuzzy
+msgid "Southern Kurdish"
+msgstr "Курдский"
+
+#, fuzzy
+msgid "se"
+msgstr "elsе"
+
+msgid "Northern Sami"
+msgstr ""
+
+#, fuzzy
+msgid "see"
+msgstr "сцены"
+
+msgid "Seneca"
+msgstr ""
+
+msgid "seh"
+msgstr ""
+
+msgid "Sena"
+msgstr ""
+
+msgid "sei"
+msgstr ""
+
+msgid "Seri"
+msgstr ""
+
+#, fuzzy
+msgid "sel"
+msgstr "sеlf"
+
+msgid "Selkup"
+msgstr ""
+
+#, fuzzy
+msgid "ses"
+msgstr "es"
+
+msgid "Koyraboro Senni"
+msgstr ""
+
+msgid "sg"
+msgstr ""
+
+msgid "Sango"
+msgstr ""
+
+#, fuzzy
+msgid "sga"
+msgstr "ga"
+
+#, fuzzy
+msgid "Old Irish"
+msgstr "Ирландский"
+
+#, fuzzy
+msgid "sgs"
+msgstr "sgs_LТ"
+
+msgid "Samogitian"
+msgstr ""
+
+#, fuzzy
+msgid "sh"
+msgstr "Сетка"
+
+#, fuzzy
+msgid "Serbo-Croatian"
+msgstr "Хорватский"
+
+#, fuzzy
+msgid "shi"
+msgstr "hi"
+
+msgid "Tachelhit"
+msgstr ""
+
+msgid "shn"
+msgstr ""
+
+msgid "Shan"
+msgstr ""
+
+#, fuzzy
+msgid "shs"
+msgstr "Меши"
+
+msgid "Shuswap"
+msgstr ""
+
+#, fuzzy
+msgid "shu"
+msgstr "hu"
+
+#, fuzzy
+msgid "Chadian Arabic"
+msgstr "Арабский"
+
+msgid "si"
+msgstr "СИ"
+
+msgid "Sinhala"
+msgstr "сингальский"
+
+#, fuzzy
+msgid "sid"
+msgstr "id"
+
+msgid "Sidamo"
+msgstr ""
+
+msgid "sk"
+msgstr "sk"
+
+msgid "Slovak"
+msgstr "Словацкий"
+
+msgid "sl"
+msgstr "sl"
+
+msgid "Slovenian"
+msgstr "Словенский"
+
+#, fuzzy
+msgid "sli"
+msgstr "sl"
+
+msgid "Lower Silesian"
+msgstr ""
+
+#, fuzzy
+msgid "sly"
+msgstr "sl"
+
+#, fuzzy
+msgid "Selayar"
+msgstr "Задержка"
+
+msgid "sm"
+msgstr ""
+
+msgid "Samoan"
+msgstr ""
+
+#, fuzzy
+msgid "sma"
+msgstr "max"
+
+msgid "Southern Sami"
+msgstr ""
+
+msgid "smj"
+msgstr ""
+
+msgid "Lule Sami"
+msgstr ""
+
+msgid "smn"
+msgstr ""
+
+msgid "Inari Sami"
+msgstr ""
+
+#, fuzzy
+msgid "sms"
+msgstr "мс"
+
+msgid "Skolt Sami"
+msgstr ""
+
+msgid "sn"
+msgstr ""
+
+msgid "Shona"
+msgstr ""
+
+#, fuzzy
+msgid "snk"
+msgstr "sk"
+
+msgid "Soninke"
+msgstr ""
+
+msgid "so"
+msgstr "so"
+
+msgid "Somali"
+msgstr "Сомалийский"
+
+#, fuzzy
+msgid "sog"
+msgstr "so"
+
+msgid "Sogdien"
+msgstr ""
+
+#, fuzzy
+msgid "son"
+msgstr "so"
+
+msgid "Songhai"
+msgstr ""
+
+msgid "sq"
+msgstr "sq"
+
+msgid "Albanian"
+msgstr "Албанский"
+
+msgid "sr"
+msgstr "sr"
+
+msgid "Serbian"
+msgstr "Сербский"
+
+#, fuzzy
+msgid "srn"
+msgstr "sr"
+
+msgid "Sranan Tongo"
+msgstr ""
+
+#, fuzzy
+msgid "srr"
+msgstr "sr"
+
+msgid "Serer"
+msgstr ""
+
+#, fuzzy
+msgid "ss"
+msgstr "пропуск"
+
+msgid "Swati"
+msgstr ""
+
+msgid "ssy"
+msgstr ""
+
+msgid "Saho"
+msgstr ""
+
+#, fuzzy
+msgid "st"
+msgstr "Список"
+
+msgid "Southern Sotho"
+msgstr ""
+
+#, fuzzy
+msgid "stq"
+msgstr "sq"
+
+msgid "Saterland Frisian"
+msgstr ""
+
+msgid "su"
+msgstr ""
+
+msgid "Sundanese"
+msgstr ""
+
+#, fuzzy
+msgid "suk"
+msgstr "sk"
+
+msgid "Sukuma"
+msgstr ""
+
+msgid "sus"
+msgstr ""
+
+msgid "Susu"
+msgstr ""
+
+msgid "sux"
+msgstr ""
+
+#, fuzzy
+msgid "Sumerian"
+msgstr "Сериализация"
+
+msgid "sv"
+msgstr "sv"
+
+msgid "Swedish"
+msgstr "Шведский"
+
+msgid "sw"
+msgstr ""
+
+msgid "Swahili"
+msgstr ""
+
+msgid "swb"
+msgstr ""
+
+msgid "Comorian"
+msgstr ""
+
+#, fuzzy
+msgid "swc"
+msgstr "scо"
+
+msgid "Congo Swahili"
+msgstr ""
+
+#, fuzzy
+msgid "syc"
+msgstr "scо"
+
+msgid "Classical Syriac"
+msgstr ""
+
+#, fuzzy
+msgid "syr"
+msgstr "sr"
+
+msgid "Syriac"
+msgstr ""
+
+#, fuzzy
+msgid "szl"
+msgstr "sl"
+
+#, fuzzy
+msgid "Silesian"
+msgstr "Персидский"
+
+msgid "ta"
+msgstr "ta"
+
+msgid "Tamil"
+msgstr "Тамильский"
+
+#, fuzzy
+msgid "tcy"
+msgstr "tcу_IN"
+
+msgid "Tulu"
+msgstr ""
+
+#, fuzzy
+msgid "te"
+msgstr "Байт"
+
+msgid "Telugu"
+msgstr "телугу"
+
+#, fuzzy
+msgid "tem"
+msgstr "Байт"
+
+msgid "Timne"
+msgstr ""
+
+#, fuzzy
+msgid "teo"
+msgstr "eo"
+
+msgid "Teso"
+msgstr ""
+
+#, fuzzy
+msgid "ter"
+msgstr "Байт"
+
+msgid "Tereno"
+msgstr ""
+
+#, fuzzy
+msgid "tet"
+msgstr "et"
+
+msgid "Tetum"
+msgstr ""
+
+msgid "tg"
+msgstr ""
+
+msgid "Tajik"
+msgstr ""
+
+msgid "th"
+msgstr "th"
+
+msgid "Thai"
+msgstr "Тайский"
+
+#, fuzzy
+msgid "the"
+msgstr "he"
+
+msgid "Chitwania Tharu"
+msgstr ""
+
+msgid "ti"
+msgstr "ti"
+
+msgid "Tigrinya"
+msgstr "Тигринья"
+
+#, fuzzy
+msgid "tig"
+msgstr "ti"
+
+#, fuzzy
+msgid "Tigre"
+msgstr "Тигринья"
+
+#, fuzzy
+msgid "tiv"
+msgstr "ti"
+
+msgid "Tiv"
+msgstr ""
+
+msgid "tk"
+msgstr ""
+
+msgid "Turkmen"
+msgstr ""
+
+msgid "tkl"
+msgstr ""
+
+msgid "Tokelau"
+msgstr ""
+
+#, fuzzy
+msgid "tkr"
+msgstr "tr"
+
+msgid "Tsakhur"
+msgstr ""
+
+#, fuzzy
+msgid "tl"
+msgstr "toоl"
+
+msgid "Tagalog"
+msgstr ""
+
+#, fuzzy
+msgid "tlh"
+msgstr "th"
+
+msgid "Klingon"
+msgstr ""
+
+#, fuzzy
+msgid "tli"
+msgstr "ti"
+
+msgid "Tlingit"
+msgstr ""
+
+msgid "tly"
+msgstr ""
+
+msgid "Talysh"
+msgstr ""
+
+#, fuzzy
+msgid "tmh"
+msgstr "th"
+
+msgid "Tamashek"
+msgstr ""
+
+msgid "tn"
+msgstr ""
+
+msgid "Tswana"
+msgstr ""
+
+#, fuzzy
+msgid "to"
+msgstr "Остановить"
+
+msgid "Tongan"
+msgstr ""
+
+#, fuzzy
+msgid "tog"
+msgstr "Туман"
+
+msgid "Nyasa Tonga"
+msgstr ""
+
+#, fuzzy
+msgid "tpi"
+msgstr "ti"
+
+msgid "Tok Pisin"
+msgstr ""
+
+msgid "tr"
+msgstr "tr"
+
+msgid "Turkish"
+msgstr "Турецкий"
+
+#, fuzzy
+msgid "tru"
+msgstr "ru"
+
+msgid "Turoyo"
+msgstr ""
+
+#, fuzzy
+msgid "trv"
+msgstr "tr"
+
+msgid "Taroko"
+msgstr ""
+
+#, fuzzy
+msgid "ts"
+msgstr "Биты"
+
+msgid "Tsonga"
+msgstr ""
+
+msgid "tsd"
+msgstr ""
+
+#, fuzzy
+msgid "Tsakonian"
+msgstr "Эстонский"
+
+#, fuzzy
+msgid "tsi"
+msgstr "ti"
+
+msgid "Tsimshian"
+msgstr ""
+
+msgid "tt"
+msgstr ""
+
+msgid "Tatar"
+msgstr ""
+
+#, fuzzy
+msgid "ttt"
+msgstr "Задержка"
+
+msgid "Muslim Tat"
+msgstr ""
+
+msgid "tum"
+msgstr ""
+
+msgid "Tumbuka"
+msgstr ""
+
+msgid "tvl"
+msgstr ""
+
+#, fuzzy
+msgid "Tuvalu"
+msgstr "значение"
+
+msgid "tw"
+msgstr ""
+
+msgid "Twi"
+msgstr ""
+
+msgid "twq"
+msgstr ""
+
+msgid "Tasawaq"
+msgstr ""
+
+#, fuzzy
+msgid "ty"
+msgstr "тип"
+
+#, fuzzy
+msgid "Tahitian"
+msgstr "Хорватский"
+
+msgid "tyv"
+msgstr ""
+
+msgid "Tuvinian"
+msgstr ""
+
+msgid "tzm"
+msgstr ""
+
+msgid "Central Atlas Tamazight"
+msgstr ""
+
+msgid "udm"
+msgstr ""
+
+msgid "Udmurt"
+msgstr ""
+
+msgid "ug"
+msgstr ""
+
+msgid "Uyghur"
+msgstr ""
+
+#, fuzzy
+msgid "uga"
+msgstr "ga"
+
+msgid "Ugaritic"
+msgstr ""
+
+msgid "uk"
+msgstr "uk"
+
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#, fuzzy
+msgid "umb"
+msgstr "Номера"
+
+msgid "Umbundu"
+msgstr ""
+
+#, fuzzy
+msgid "unm"
+msgstr "Запустить"
+
+#, fuzzy
+msgid "Unami"
+msgstr "Динамическая типизация:"
+
+msgid "ur"
+msgstr "ur"
+
+msgid "Urdu"
+msgstr "Урду"
+
+msgid "uz"
+msgstr "uz"
+
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#, fuzzy
+msgid "vai"
+msgstr "vi"
+
+#, fuzzy
+msgid "Vai"
+msgstr "Вариант"
+
+#, fuzzy
+msgid "ve"
+msgstr "Сохранить"
+
+msgid "Venda"
+msgstr ""
+
+#, fuzzy
+msgid "vec"
+msgstr "vector2"
+
+msgid "Venetian"
+msgstr ""
+
+#, fuzzy
+msgid "vep"
+msgstr "Переместить вверх"
+
+msgid "Veps"
+msgstr ""
+
+msgid "vi"
+msgstr "vi"
+
+msgid "Vietnamese"
+msgstr "Вьетнамский"
+
+#, fuzzy
+msgid "vls"
+msgstr "Дневники разработчиков"
+
+msgid "West Flemish"
+msgstr ""
+
+msgid "vmf"
+msgstr ""
+
+#, fuzzy
+msgid "Main-Franconian"
+msgstr "Македонский"
+
+msgid "vo"
+msgstr ""
+
+msgid "Volapük"
+msgstr ""
+
+msgid "vot"
+msgstr ""
+
+msgid "Votic"
+msgstr ""
+
+#, fuzzy
+msgid "vro"
+msgstr "ro"
+
+msgid "Võro"
+msgstr ""
+
+#, fuzzy
+msgid "vun"
+msgstr "Запустить"
+
+msgid "Vunjo"
+msgstr ""
+
+msgid "wa"
+msgstr ""
+
+msgid "Walloon"
+msgstr ""
+
+#, fuzzy
+msgid "wae"
+msgstr "wae_CH"
+
+msgid "Walser"
+msgstr ""
+
+#, fuzzy
+msgid "wal"
+msgstr "wаl_ET"
+
+msgid "Wolaytta"
+msgstr ""
+
+#, fuzzy
+msgid "war"
+msgstr "ar"
+
+msgid "Waray"
+msgstr ""
+
+#, fuzzy
+msgid "was"
+msgstr "as"
+
+msgid "Washo"
+msgstr ""
+
+msgid "wbp"
+msgstr ""
+
+msgid "Warlpiri"
+msgstr ""
+
+msgid "wo"
+msgstr ""
+
+msgid "Wolof"
+msgstr ""
+
+msgid "wuu"
+msgstr ""
+
+#, fuzzy
+msgid "Wu Chinese"
+msgstr "Китайский"
+
+#, fuzzy
+msgid "xal"
+msgstr "Пример"
+
+msgid "Kalmyk"
+msgstr ""
+
+msgid "xh"
+msgstr ""
+
+msgid "Xhosa"
+msgstr ""
+
+msgid "xmf"
+msgstr ""
+
+msgid "Mingrelian"
+msgstr ""
+
+#, fuzzy
+msgid "xog"
+msgstr "Туман"
+
+msgid "Soga"
+msgstr ""
+
+msgid "yao"
+msgstr ""
+
+msgid "Yao"
+msgstr ""
+
+#, fuzzy
+msgid "yap"
+msgstr "pаp"
+
+msgid "Yapese"
+msgstr ""
+
+msgid "yav"
+msgstr ""
+
+msgid "Yangben"
+msgstr ""
+
+msgid "ybb"
+msgstr ""
+
+msgid "Yemba"
+msgstr ""
+
+msgid "yi"
+msgstr ""
+
+msgid "Yiddish"
+msgstr ""
+
+msgid "yo"
+msgstr ""
+
+msgid "Yoruba"
+msgstr ""
+
+#, fuzzy
+msgid "yrl"
+msgstr "sr_CS"
+
+msgid "Nheengatu"
+msgstr ""
+
+#, fuzzy
+msgid "yue"
+msgstr "yue_HK"
+
+#, fuzzy
+msgid "Yue Chinese"
+msgstr "Китайский"
+
+msgid "yuw"
+msgstr ""
+
+msgid "Papua New Guinea"
+msgstr ""
+
+msgid "za"
+msgstr ""
+
+msgid "Zhuang"
+msgstr ""
+
+#, fuzzy
+msgid "zap"
+msgstr "pаp"
+
+msgid "Zapotec"
+msgstr ""
+
+msgid "zbl"
+msgstr ""
+
+msgid "Blissymbols"
+msgstr ""
+
+msgid "zea"
+msgstr ""
+
+#, fuzzy
+msgid "Zeelandic"
+msgstr "Исландский"
+
+#, fuzzy
+msgid "zen"
+msgstr "en"
+
+msgid "Zenaga"
+msgstr ""
+
+#, fuzzy
+msgid "zgh"
+msgstr "zh"
+
+msgid "Standard Moroccan Tamazight"
+msgstr ""
+
+msgid "zh"
+msgstr "zh"
+
+msgid "Chinese"
+msgstr "Китайский"
+
+msgid "zu"
+msgstr ""
+
+msgid "Zulu"
+msgstr ""
+
+#, fuzzy
+msgid "zun"
+msgstr "Запустить"
+
+msgid "Zuni"
+msgstr ""
+
+msgid "zza"
+msgstr ""
+
+msgid "Zaza"
+msgstr ""
+
+#, fuzzy
+msgid "List of supported script codes"
+msgstr "Список заполнителей шаблонов"
+
+#, fuzzy
+msgid "Script code"
+msgstr "Редактор скриптов"
+
+msgid "Adlm"
+msgstr ""
+
+msgid "Adlam"
+msgstr ""
+
+msgid "Afak"
+msgstr ""
+
+msgid "Afaka"
+msgstr ""
+
+msgid "Aghb"
+msgstr ""
+
+#, fuzzy
+msgid "Caucasian Albanian"
+msgstr "Албанский"
+
+msgid "Ahom"
+msgstr ""
+
+#, fuzzy
+msgid "Arab"
+msgstr "Арабский"
+
+msgid "Armi"
+msgstr ""
+
+msgid "Imperial Aramaic"
+msgstr ""
+
+msgid "Armn"
+msgstr ""
+
+msgid "Avst"
+msgstr ""
+
+msgid "Bali"
+msgstr ""
+
+msgid "Bamu"
+msgstr ""
+
+msgid "Bamum"
+msgstr ""
+
+msgid "Bass"
+msgstr ""
+
+msgid "Bassa Vah"
+msgstr ""
+
+msgid "Batk"
+msgstr ""
+
+msgid "Batak"
+msgstr ""
+
+#, fuzzy
+msgid "Beng"
+msgstr "Бенгальский"
+
+msgid "Bhks"
+msgstr ""
+
+msgid "Bhaiksuki"
+msgstr ""
+
+msgid "Blis"
+msgstr ""
+
+msgid "Bopo"
+msgstr ""
+
+msgid "Bopomofo"
+msgstr ""
+
+msgid "Brah"
+msgstr ""
+
+msgid "Brahmi"
+msgstr ""
+
+msgid "Brai"
+msgstr ""
+
+msgid "Braille"
+msgstr ""
+
+msgid "Bugi"
+msgstr ""
+
+msgid "Buhd"
+msgstr ""
+
+msgid "Buhid"
+msgstr ""
+
+msgid "Cakm"
+msgstr ""
+
+msgid "Cans"
+msgstr ""
+
+msgid "Unified Canadian Aboriginal"
+msgstr ""
+
+msgid "Cari"
+msgstr ""
+
+#, fuzzy
+msgid "Carian"
+msgstr "Вариант"
+
+msgid "Cham"
+msgstr ""
+
+msgid "Cher"
+msgstr ""
+
+msgid "Chrs"
+msgstr ""
+
+#, fuzzy
+msgid "Chorasmian"
+msgstr "Хор"
+
+msgid "Cirt"
+msgstr ""
+
+msgid "Cirth"
+msgstr ""
+
+msgid "Copt"
+msgstr ""
+
+msgid "Cpmn"
+msgstr ""
+
+msgid "Cypro-Minoan"
+msgstr ""
+
+msgid "Cprt"
+msgstr ""
+
+msgid "Cypriot"
+msgstr ""
+
+#, fuzzy
+msgid "Cyrl"
+msgstr "sr_CS"
+
+msgid "Cyrillic"
+msgstr ""
+
+msgid "Deva"
+msgstr ""
+
+msgid "Devanagari"
+msgstr ""
+
+msgid "Diak"
+msgstr ""
+
+msgid "Dives Akuru"
+msgstr ""
+
+msgid "Dogr"
+msgstr ""
+
+msgid "Dogra"
+msgstr ""
+
+msgid "Dsrt"
+msgstr ""
+
+msgid "Deseret"
+msgstr ""
+
+#, fuzzy
+msgid "Dupl"
+msgstr "Дублировать"
+
+msgid "Duployan"
+msgstr ""
+
+msgid "Egyd"
+msgstr ""
+
+msgid "Egyptian demotic"
+msgstr ""
+
+msgid "Egyh"
+msgstr ""
+
+msgid "Egyptian hieratic"
+msgstr ""
+
+msgid "Egyp"
+msgstr ""
+
+msgid "Egyptian hieroglyphs"
+msgstr ""
+
+msgid "Elba"
+msgstr ""
+
+msgid "Elbasan"
+msgstr ""
+
+msgid "Elym"
+msgstr ""
+
+msgid "Elymaic"
+msgstr ""
+
+msgid "Ethi"
+msgstr ""
+
+msgid "Ethiopic"
+msgstr ""
+
+msgid "Geok"
+msgstr ""
+
+msgid "Khutsuri"
+msgstr ""
+
+#, fuzzy
+msgid "Geor"
+msgstr "Грузинский"
+
+msgid "Glag"
+msgstr ""
+
+msgid "Glagolitic"
+msgstr ""
+
+msgid "Gong"
+msgstr ""
+
+msgid "Gunjala Gondi"
+msgstr ""
+
+msgid "Gonm"
+msgstr ""
+
+msgid "Masaram Gondi"
+msgstr ""
+
+msgid "Goth"
+msgstr ""
+
+msgid "Gran"
+msgstr ""
+
+msgid "Grantha"
+msgstr ""
+
+msgid "Grek"
+msgstr ""
+
+msgid "Gujr"
+msgstr ""
+
+msgid "Guru"
+msgstr ""
+
+msgid "Gurmukhi"
+msgstr ""
+
+msgid "Hang"
+msgstr ""
+
+msgid "Hangul"
+msgstr ""
+
+msgid "Hani"
+msgstr ""
+
+#, fuzzy
+msgid "Han"
+msgstr "и"
+
+msgid "Hano"
+msgstr ""
+
+msgid "Hanunoo"
+msgstr ""
+
+msgid "Hans"
+msgstr ""
+
+#, fuzzy
+msgid "Simplified"
+msgstr "простой"
+
+msgid "Hant"
+msgstr ""
+
+#, fuzzy
+msgid "Traditional"
+msgstr "реляционный (relational)"
+
+msgid "Hatr"
+msgstr ""
+
+msgid "Hatran"
+msgstr ""
+
+#, fuzzy
+msgid "Hebr"
+msgstr "Иврит"
+
+msgid "Hira"
+msgstr ""
+
+msgid "Hiragana"
+msgstr ""
+
+msgid "Hluw"
+msgstr ""
+
+msgid "Anatolian Hieroglyphs"
+msgstr ""
+
+msgid "Hmng"
+msgstr ""
+
+msgid "Pahawh Hmong"
+msgstr ""
+
+msgid "Hmnp"
+msgstr ""
+
+msgid "Nyiakeng Puachue Hmong"
+msgstr ""
+
+#, fuzzy
+msgid "Hung"
+msgstr "Венгерский"
+
+#, fuzzy
+msgid "Old Hungarian"
+msgstr "Венгерский"
+
+msgid "Inds"
+msgstr ""
+
+msgid "Indus"
+msgstr ""
+
+#, fuzzy
+msgid "Ital"
+msgstr "Italic"
+
+#, fuzzy
+msgid "Old Italic"
+msgstr "Italic"
+
+msgid "Java"
+msgstr "Java"
+
+msgid "Jurc"
+msgstr ""
+
+msgid "Jurchen"
+msgstr ""
+
+msgid "Kali"
+msgstr ""
+
+msgid "Kayah Li"
+msgstr ""
+
+msgid "Kana"
+msgstr ""
+
+msgid "Katakana"
+msgstr ""
+
+msgid "Khar"
+msgstr ""
+
+msgid "Kharoshthi"
+msgstr ""
+
+msgid "Khmr"
+msgstr ""
+
+msgid "Khmer"
+msgstr ""
+
+msgid "Khoj"
+msgstr ""
+
+msgid "Khojki"
+msgstr ""
+
+msgid "Kitl"
+msgstr ""
+
+#, fuzzy
+msgid "Khitan large script"
+msgstr "Используя скрипт"
+
+msgid "Kits"
+msgstr ""
+
+#, fuzzy
+msgid "Khitan small script"
+msgstr "Используя скрипт"
+
+msgid "Knda"
+msgstr ""
+
+msgid "Kpel"
+msgstr ""
+
+msgid "Kthi"
+msgstr ""
+
+msgid "Kaithi"
+msgstr ""
+
+msgid "Lana"
+msgstr ""
+
+msgid "Tai Tham"
+msgstr ""
+
+msgid "Laoo"
+msgstr ""
+
+msgid "Latn"
+msgstr ""
+
+msgid "Leke"
+msgstr ""
+
+msgid "Lepc"
+msgstr ""
+
+msgid "Lepcha"
+msgstr ""
+
+msgid "Limb"
+msgstr ""
+
+msgid "Limbu"
+msgstr ""
+
+msgid "Lina"
+msgstr ""
+
+msgid "Linear A"
+msgstr ""
+
+msgid "Linb"
+msgstr ""
+
+msgid "Linear B"
+msgstr ""
+
+msgid "Lisu"
+msgstr ""
+
+msgid "Loma"
+msgstr ""
+
+msgid "Lyci"
+msgstr ""
+
+msgid "Lycian"
+msgstr ""
+
+msgid "Lydi"
+msgstr ""
+
+msgid "Lydian"
+msgstr ""
+
+msgid "Mahj"
+msgstr ""
+
+msgid "Mahajani"
+msgstr ""
+
+msgid "Maka"
+msgstr ""
+
+msgid "Mand"
+msgstr ""
+
+msgid "Mandaic"
+msgstr ""
+
+msgid "Mani"
+msgstr ""
+
+msgid "Manichaean"
+msgstr ""
+
+msgid "Marc"
+msgstr ""
+
+#, fuzzy
+msgid "Marchen"
+msgstr "Поиск"
+
+msgid "Maya"
+msgstr ""
+
+msgid "Mayan Hieroglyphs"
+msgstr ""
+
+msgid "Medf"
+msgstr ""
+
+msgid "Medefaidrin"
+msgstr ""
+
+msgid "Mend"
+msgstr ""
+
+msgid "Mende Kikakui"
+msgstr ""
+
+msgid "Merc"
+msgstr ""
+
+msgid "Meroitic Cursive"
+msgstr ""
+
+msgid "Mero"
+msgstr ""
+
+msgid "Meroitic Hieroglyphs"
+msgstr ""
+
+msgid "Mlym"
+msgstr ""
+
+#, fuzzy
+msgid "Modi"
+msgstr "Модификаторы"
+
+msgid "Mong"
+msgstr ""
+
+msgid "Moon"
+msgstr ""
+
+msgid "Mroo"
+msgstr ""
+
+#, fuzzy
+msgid "Mro"
+msgstr "ro"
+
+msgid "Mtei"
+msgstr ""
+
+msgid "Meitei Mayek"
+msgstr ""
+
+msgid "Mult"
+msgstr ""
+
+msgid "Multani"
+msgstr ""
+
+msgid "Mymr"
+msgstr ""
+
+msgid "Myanmar (Burmese)"
+msgstr ""
+
+msgid "Nand"
+msgstr ""
+
+msgid "Nandinagari"
+msgstr ""
+
+msgid "Narb"
+msgstr ""
+
+msgid "Old North Arabian"
+msgstr ""
+
+msgid "Nbat"
+msgstr ""
+
+msgid "Nabataean"
+msgstr ""
+
+msgid "Newa"
+msgstr ""
+
+msgid "Nkdb"
+msgstr ""
+
+msgid "Naxi Dongba"
+msgstr ""
+
+msgid "Nkgb"
+msgstr ""
+
+msgid "Nakhi Geba"
+msgstr ""
+
+msgid "Nkoo"
+msgstr ""
+
+msgid "Nshu"
+msgstr ""
+
+msgid "Nüshu"
+msgstr ""
+
+msgid "Ogam"
+msgstr ""
+
+msgid "Ogham"
+msgstr ""
+
+msgid "Olck"
+msgstr ""
+
+msgid "Ol Chiki"
+msgstr ""
+
+msgid "Orkh"
+msgstr ""
+
+msgid "Old Turkic"
+msgstr ""
+
+msgid "Orya"
+msgstr ""
+
+msgid "Oriya"
+msgstr ""
+
+msgid "Osge"
+msgstr ""
+
+msgid "Osma"
+msgstr ""
+
+msgid "Osmanya"
+msgstr ""
+
+msgid "Ougr"
+msgstr ""
+
+msgid "Old Uyghur"
+msgstr ""
+
+msgid "Palm"
+msgstr ""
+
+msgid "Palmyrene"
+msgstr ""
+
+msgid "Pauc"
+msgstr ""
+
+msgid "Pau Cin Hau"
+msgstr ""
+
+msgid "Pcun"
+msgstr ""
+
+msgid "Proto-Cuneiform"
+msgstr ""
+
+msgid "Pelm"
+msgstr ""
+
+msgid "Proto-Elamite"
+msgstr ""
+
+msgid "Perm"
+msgstr ""
+
+msgid "Old Permic"
+msgstr ""
+
+msgid "Phag"
+msgstr ""
+
+msgid "Phags-pa"
+msgstr ""
+
+msgid "Phli"
+msgstr ""
+
+msgid "Inscriptional Pahlavi"
+msgstr ""
+
+msgid "Phlp"
+msgstr ""
+
+msgid "Psalter Pahlavi"
+msgstr ""
+
+msgid "Phlv"
+msgstr ""
+
+msgid "Book Pahlavi"
+msgstr ""
+
+msgid "Phnx"
+msgstr ""
+
+msgid "Piqd"
+msgstr ""
+
+msgid "Plrd"
+msgstr ""
+
+msgid "Miao"
+msgstr ""
+
+msgid "Prti"
+msgstr ""
+
+#, fuzzy
+msgid "Inscriptional Parthian"
+msgstr "Интернационализация"
+
+msgid "Psin"
+msgstr ""
+
+msgid "Proto-Sinaitic"
+msgstr ""
+
+msgid "Ranj"
+msgstr ""
+
+msgid "Ranjana"
+msgstr ""
+
+msgid "Rjng"
+msgstr ""
+
+msgid "Rejang"
+msgstr ""
+
+msgid "Rohg"
+msgstr ""
+
+msgid "Hanifi Rohingya"
+msgstr ""
+
+msgid "Roro"
+msgstr ""
+
+msgid "Rongorongo"
+msgstr ""
+
+msgid "Runr"
+msgstr ""
+
+msgid "Runic"
+msgstr ""
+
+msgid "Samr"
+msgstr ""
+
+msgid "Samaritan"
+msgstr ""
+
+msgid "Sara"
+msgstr ""
+
+msgid "Sarati"
+msgstr ""
+
+msgid "Sarb"
+msgstr ""
+
+#, fuzzy
+msgid "Old South Arabian"
+msgstr "Зулу (Южная Африка)"
+
+msgid "Saur"
+msgstr ""
+
+msgid "Sgnw"
+msgstr ""
+
+#, fuzzy
+msgid "SignWriting"
+msgstr "Написание скриптов"
+
+msgid "Shaw"
+msgstr ""
+
+#, fuzzy
+msgid "Shavian"
+msgstr "Латвийский"
+
+msgid "Shrd"
+msgstr ""
+
+msgid "Sharada"
+msgstr ""
+
+msgid "Shui"
+msgstr ""
+
+msgid "Shuishu"
+msgstr ""
+
+msgid "Sidd"
+msgstr ""
+
+msgid "Siddham"
+msgstr ""
+
+msgid "Sind"
+msgstr ""
+
+msgid "Khudawadi"
+msgstr ""
+
+msgid "Sinh"
+msgstr ""
+
+msgid "Sogd"
+msgstr ""
+
+msgid "Sogdian"
+msgstr ""
+
+msgid "Sogo"
+msgstr ""
+
+msgid "Old Sogdian"
+msgstr ""
+
+msgid "Sora"
+msgstr ""
+
+msgid "Sora Sompeng"
+msgstr ""
+
+msgid "Soyo"
+msgstr ""
+
+msgid "Soyombo"
+msgstr ""
+
+msgid "Sund"
+msgstr ""
+
+msgid "Sylo"
+msgstr ""
+
+msgid "Syloti Nagri"
+msgstr ""
+
+msgid "Syrc"
+msgstr ""
+
+msgid "Tagb"
+msgstr ""
+
+msgid "Tagbanwa"
+msgstr ""
+
+msgid "Takr"
+msgstr ""
+
+msgid "Takri"
+msgstr ""
+
+msgid "Tale"
+msgstr ""
+
+msgid "Tai Le"
+msgstr ""
+
+msgid "Talu"
+msgstr ""
+
+msgid "New Tai Lue"
+msgstr ""
+
+msgid "Taml"
+msgstr ""
+
+#, fuzzy
+msgid "Tang"
+msgstr "Тангенс"
+
+#, fuzzy
+msgid "Tangut"
+msgstr "Тангенс"
+
+msgid "Tavt"
+msgstr ""
+
+#, fuzzy
+msgid "Tai Viet"
+msgstr "Панорамировать вид"
+
+msgid "Telu"
+msgstr ""
+
+msgid "Teng"
+msgstr ""
+
+msgid "Tengwar"
+msgstr ""
+
+msgid "Tfng"
+msgstr ""
+
+msgid "Tifinagh"
+msgstr ""
+
+msgid "Tglg"
+msgstr ""
+
+msgid "Thaa"
+msgstr ""
+
+msgid "Thaana"
+msgstr ""
+
+msgid "Tibt"
+msgstr ""
+
+msgid "Tirh"
+msgstr ""
+
+msgid "Tirhuta"
+msgstr ""
+
+msgid "Tnsa"
+msgstr ""
+
+#, fuzzy
+msgid "Tangsa"
+msgstr "Тангенс"
+
+msgid "Toto"
+msgstr ""
+
+msgid "Ugar"
+msgstr ""
+
+msgid "Vaii"
+msgstr ""
+
+msgid "Visp"
+msgstr ""
+
+#, fuzzy
+msgid "Visible Speech"
+msgstr "Видимый прямоугольник"
+
+msgid "Vith"
+msgstr ""
+
+msgid "Vithkuqi"
+msgstr ""
+
+msgid "Wara"
+msgstr ""
+
+msgid "Warang Citi"
+msgstr ""
+
+msgid "Wcho"
+msgstr ""
+
+msgid "Wancho"
+msgstr ""
+
+msgid "Wole"
+msgstr ""
+
+#, fuzzy
+msgid "Woleai"
+msgstr "bool"
+
+msgid "Xpeo"
+msgstr ""
+
+msgid "Xsux"
+msgstr ""
+
+msgid "Cuneiform"
+msgstr ""
+
+msgid "Yezi"
+msgstr ""
+
+msgid "Yezidi"
+msgstr ""
+
+msgid "Yiii"
+msgstr ""
+
+msgid "Yi"
+msgstr ""
+
+msgid "Zanb"
+msgstr ""
+
+msgid "Zanabazar Square"
+msgstr ""
+
+msgid "List of supported country codes"
+msgstr ""
+
+#, fuzzy
+msgid "Country code"
+msgstr "Участие в разработке"
+
+msgid "AC"
+msgstr ""
+
+msgid "Ascension Island"
+msgstr ""
+
+msgid "AD"
+msgstr ""
+
+msgid "Andorra"
+msgstr ""
+
+msgid "AE"
+msgstr ""
+
+msgid "United Arab Emirates"
+msgstr ""
+
+msgid "AF"
+msgstr ""
+
+msgid "Afghanistan"
+msgstr ""
+
+msgid "AG"
+msgstr ""
+
+msgid "Antigua and Barbuda"
+msgstr ""
+
+msgid "AI"
+msgstr ""
+
+msgid "Anguilla"
+msgstr ""
+
+msgid "AL"
+msgstr ""
+
+#, fuzzy
+msgid "Albania"
+msgstr "Албанский"
+
+msgid "AM"
+msgstr ""
+
+msgid "Armenia"
+msgstr ""
+
+#, fuzzy
+msgid "AN"
+msgstr "NAN"
+
+msgid "Netherlands Antilles"
+msgstr ""
+
+msgid "AO"
+msgstr ""
+
+msgid "Angola"
+msgstr ""
+
+#, fuzzy
+msgid "AQ"
+msgstr "Вопросы и ответы"
+
+msgid "Antarctica"
+msgstr ""
+
+msgid "AR"
+msgstr ""
+
+msgid "Argentina"
+msgstr ""
+
+#, fuzzy
+msgid "AS"
+msgstr "ASK"
+
+msgid "American Samoa"
+msgstr ""
+
+msgid "AT"
+msgstr ""
+
+#, fuzzy
+msgid "Austria"
+msgstr "string"
+
+#, fuzzy
+msgid "AU"
+msgstr "TAU"
+
+#, fuzzy
+msgid "Australia"
+msgstr "Итальянский"
+
+msgid "AW"
+msgstr ""
+
+msgid "Aruba"
+msgstr ""
+
+#, fuzzy
+msgid "AX"
+msgstr "X"
+
+#, fuzzy
+msgid "Åland Islands"
+msgstr "Исландский (Исландия)"
+
+msgid "AZ"
+msgstr ""
+
+msgid "Azerbaijan"
+msgstr ""
+
+msgid "BA"
+msgstr ""
+
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+msgid "BB"
+msgstr ""
+
+msgid "Barbados"
+msgstr ""
+
+msgid "BD"
+msgstr ""
+
+msgid "Bangladesh"
+msgstr ""
+
+#, fuzzy
+msgid "BE"
+msgstr "BYE"
+
+msgid "Belgium"
+msgstr ""
+
+msgid "BF"
+msgstr ""
+
+msgid "Burkina Faso"
+msgstr ""
+
+msgid "BG"
+msgstr ""
+
+#, fuzzy
+msgid "Bulgaria"
+msgstr "Болгарский"
+
+msgid "BH"
+msgstr ""
+
+msgid "Bahrain"
+msgstr ""
+
+msgid "BI"
+msgstr ""
+
+msgid "Burundi"
+msgstr ""
+
+msgid "BJ"
+msgstr ""
+
+msgid "Benin"
+msgstr ""
+
+msgid "BL"
+msgstr ""
+
+msgid "St. Barthélemy"
+msgstr ""
+
+msgid "BM"
+msgstr ""
+
+msgid "Bermuda"
+msgstr ""
+
+msgid "BN"
+msgstr ""
+
+msgid "Brunei"
+msgstr ""
+
+msgid "BO"
+msgstr ""
+
+msgid "Bolivia"
+msgstr ""
+
+msgid "BQ"
+msgstr ""
+
+msgid "Caribbean Netherlands"
+msgstr ""
+
+msgid "BR"
+msgstr ""
+
+msgid "Brazil"
+msgstr ""
+
+msgid "BS"
+msgstr ""
+
+msgid "Bahamas"
+msgstr ""
+
+msgid "BT"
+msgstr ""
+
+msgid "Bhutan"
+msgstr ""
+
+msgid "BV"
+msgstr ""
+
+msgid "Bouvet Island"
+msgstr ""
+
+msgid "BW"
+msgstr ""
+
+msgid "Botswana"
+msgstr ""
+
+#, fuzzy
+msgid "BY"
+msgstr "BYE"
+
+#, fuzzy
+msgid "Belarus"
+msgstr "Belarusian"
+
+msgid "BZ"
+msgstr ""
+
+msgid "Belize"
+msgstr ""
+
+msgid "CA"
+msgstr ""
+
+msgid "Canada"
+msgstr ""
+
+msgid "CC"
+msgstr ""
+
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+msgid "CD"
+msgstr ""
+
+msgid "Congo - Kinshasa"
+msgstr ""
+
+msgid "CF"
+msgstr ""
+
+msgid "Central African Republic"
+msgstr ""
+
+msgid "CG"
+msgstr ""
+
+msgid "Congo - Brazzaville"
+msgstr ""
+
+msgid "CH"
+msgstr ""
+
+#, fuzzy
+msgid "Switzerland"
+msgstr "Французский (Швейцария)"
+
+msgid "CI"
+msgstr ""
+
+msgid "Côte d'Ivoire"
+msgstr ""
+
+msgid "CK"
+msgstr ""
+
+msgid "Cook Islands"
+msgstr ""
+
+msgid "CL"
+msgstr ""
+
+#, fuzzy
+msgid "Chile"
+msgstr "whilе"
+
+msgid "CM"
+msgstr ""
+
+#, fuzzy
+msgid "Cameroon"
+msgstr "Камера"
+
+msgid "CN"
+msgstr ""
+
+#, fuzzy
+msgid "China"
+msgstr "Китайский"
+
+msgid "CO"
+msgstr ""
+
+#, fuzzy
+msgid "Colombia"
+msgstr "Цвет"
+
+#, fuzzy
+msgid "CP"
+msgstr "CPU"
+
+msgid "Clipperton Island"
+msgstr ""
+
+msgid "CR"
+msgstr ""
+
+msgid "Costa Rica"
+msgstr ""
+
+msgid "CQ"
+msgstr ""
+
+msgid "Island of Sark"
+msgstr ""
+
+#, fuzzy
+msgid "CU"
+msgstr "CPU"
+
+msgid "Cuba"
+msgstr ""
+
+msgid "CV"
+msgstr ""
+
+msgid "Cabo Verde"
+msgstr ""
+
+msgid "CW"
+msgstr ""
+
+msgid "Curaçao"
+msgstr ""
+
+#, fuzzy
+msgid "CX"
+msgstr "X"
+
+msgid "Christmas Island"
+msgstr ""
+
+msgid "CY"
+msgstr ""
+
+msgid "Cyprus"
+msgstr ""
+
+msgid "CZ"
+msgstr ""
+
+#, fuzzy
+msgid "Czechia"
+msgstr "Чешский"
+
+msgid "DE"
+msgstr ""
+
+#, fuzzy
+msgid "Germany"
+msgstr "Немецкий"
+
+msgid "DG"
+msgstr ""
+
+msgid "Diego Garcia"
+msgstr ""
+
+msgid "DJ"
+msgstr ""
+
+#, fuzzy
+msgid "Djibouti"
+msgstr "О Godot Engine"
+
+msgid "DK"
+msgstr ""
+
+msgid "Denmark"
+msgstr ""
+
+msgid "DM"
+msgstr ""
+
+msgid "Dominica"
+msgstr ""
+
+#, fuzzy
+msgid "DO"
+msgstr "TODO"
+
+msgid "Dominican Republic"
+msgstr ""
+
+msgid "DZ"
+msgstr ""
+
+msgid "Algeria"
+msgstr ""
+
+msgid "EA"
+msgstr ""
+
+msgid "Ceuta and Melilla"
+msgstr ""
+
+msgid "EC"
+msgstr ""
+
+msgid "Ecuador"
+msgstr ""
+
+msgid "EE"
+msgstr ""
+
+#, fuzzy
+msgid "Estonia"
+msgstr "Эстонский"
+
+msgid "EG"
+msgstr ""
+
+msgid "Egypt"
+msgstr ""
+
+msgid "EH"
+msgstr ""
+
+msgid "Western Sahara"
+msgstr ""
+
+msgid "ER"
+msgstr ""
+
+msgid "Eritrea"
+msgstr ""
+
+msgid "ES"
+msgstr ""
+
+msgid "Spain"
+msgstr ""
+
+msgid "ET"
+msgstr ""
+
+msgid "Ethiopia"
+msgstr ""
+
+msgid "EU"
+msgstr ""
+
+msgid "European Union"
+msgstr ""
+
+msgid "EZ"
+msgstr ""
+
+msgid "Eurozone"
+msgstr ""
+
+msgid "FI"
+msgstr ""
+
+msgid "Finland"
+msgstr ""
+
+msgid "FJ"
+msgstr ""
+
+msgid "Fiji"
+msgstr ""
+
+msgid "FK"
+msgstr ""
+
+msgid "Falkland Islands"
+msgstr ""
+
+msgid "FM"
+msgstr ""
+
+#, fuzzy
+msgid "Micronesia"
+msgstr "Индонезийский"
+
+msgid "FO"
+msgstr ""
+
+msgid "Faroe Islands"
+msgstr ""
+
+msgid "FR"
+msgstr ""
+
+msgid "France"
+msgstr ""
+
+#, fuzzy
+msgid "FX"
+msgstr "X"
+
+msgid "France, Metropolitan"
+msgstr ""
+
+msgid "GA"
+msgstr ""
+
+msgid "Gabon"
+msgstr ""
+
+msgid "GB, UK"
+msgstr ""
+
+msgid "United Kingdom"
+msgstr ""
+
+msgid "GD"
+msgstr ""
+
+msgid "Grenada"
+msgstr ""
+
+msgid "GE"
+msgstr ""
+
+#, fuzzy
+msgid "Georgia"
+msgstr "Грузинский"
+
+msgid "GF"
+msgstr ""
+
+#, fuzzy
+msgid "French Guiana"
+msgstr "Французский (Франция)"
+
+msgid "GG"
+msgstr ""
+
+msgid "Guernsey"
+msgstr ""
+
+msgid "GH"
+msgstr ""
+
+msgid "Ghana"
+msgstr ""
+
+#, fuzzy
+msgid "GI"
+msgstr "GUI (Графический интерфейс пользователя)"
+
+msgid "Gibraltar"
+msgstr ""
+
+msgid "GL"
+msgstr ""
+
+msgid "Greenland"
+msgstr ""
+
+msgid "GM"
+msgstr ""
+
+msgid "Gambia"
+msgstr ""
+
+msgid "GN"
+msgstr ""
+
+msgid "Guinea"
+msgstr ""
+
+#, fuzzy
+msgid "GP"
+msgstr "GPU"
+
+msgid "Guadeloupe"
+msgstr ""
+
+msgid "GQ"
+msgstr ""
+
+msgid "Equatorial Guinea"
+msgstr ""
+
+msgid "GR"
+msgstr ""
+
+#, fuzzy
+msgid "Greece"
+msgstr "Греческий"
+
+msgid "GS"
+msgstr ""
+
+msgid "South Georgia and South Sandwich Islands"
+msgstr ""
+
+msgid "GT"
+msgstr ""
+
+msgid "Guatemala"
+msgstr ""
+
+#, fuzzy
+msgid "GU"
+msgstr "GUI (Графический интерфейс пользователя)"
+
+msgid "Guam"
+msgstr ""
+
+msgid "GW"
+msgstr ""
+
+msgid "Guinea-Bissau"
+msgstr ""
+
+msgid "GY"
+msgstr ""
+
+msgid "Guyana"
+msgstr ""
+
+msgid "HK"
+msgstr ""
+
+msgid "Hong Kong"
+msgstr ""
+
+msgid "HM"
+msgstr ""
+
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+msgid "HN"
+msgstr ""
+
+msgid "Honduras"
+msgstr ""
+
+#, fuzzy
+msgid "HR"
+msgstr "HDR"
+
+#, fuzzy
+msgid "Croatia"
+msgstr "Хорватский"
+
+msgid "HT"
+msgstr ""
+
+msgid "Haiti"
+msgstr ""
+
+msgid "HU"
+msgstr ""
+
+#, fuzzy
+msgid "Hungary"
+msgstr "Венгерский"
+
+msgid "IC"
+msgstr ""
+
+msgid "Canary Islands"
+msgstr ""
+
+#, fuzzy
+msgid "ID"
+msgstr "RID"
+
+#, fuzzy
+msgid "Indonesia"
+msgstr "Индонезийский"
+
+msgid "IE"
+msgstr ""
+
+#, fuzzy
+msgid "Ireland"
+msgstr "Исландский"
+
+msgid "IL"
+msgstr ""
+
+msgid "Israel"
+msgstr ""
+
+msgid "IM"
+msgstr ""
+
+msgid "Isle of Man"
+msgstr ""
+
+#, fuzzy
+msgid "IN"
+msgstr "INF"
+
+#, fuzzy
+msgid "India"
+msgstr "Indirect (Непрямой)"
+
+msgid "IO"
+msgstr ""
+
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+msgid "IQ"
+msgstr ""
+
+msgid "Iraq"
+msgstr ""
+
+msgid "IR"
+msgstr ""
+
+msgid "Iran"
+msgstr ""
+
+msgid "IS"
+msgstr ""
+
+#, fuzzy
+msgid "Iceland"
+msgstr "Исландский"
+
+msgid "IT"
+msgstr ""
+
+#, fuzzy
+msgid "Italy"
+msgstr "Italic"
+
+msgid "JE"
+msgstr ""
+
+msgid "Jersey"
+msgstr ""
+
+msgid "JM"
+msgstr ""
+
+msgid "Jamaica"
+msgstr ""
+
+msgid "JO"
+msgstr ""
+
+msgid "Jordan"
+msgstr ""
+
+msgid "JP"
+msgstr ""
+
+#, fuzzy
+msgid "Japan"
+msgstr "Японский"
+
+#, fuzzy
+msgid "KE"
+msgstr "KEY"
+
+msgid "Kenya"
+msgstr ""
+
+msgid "KG"
+msgstr ""
+
+#, fuzzy
+msgid "Kyrgyzstan"
+msgstr "Киргизский (Кыргызстан)"
+
+msgid "KH"
+msgstr ""
+
+msgid "Cambodia"
+msgstr ""
+
+msgid "KI"
+msgstr ""
+
+msgid "Kiribati"
+msgstr ""
+
+msgid "KM"
+msgstr ""
+
+msgid "Comoros"
+msgstr ""
+
+#, fuzzy
+msgid "KN"
+msgstr "KEYN"
+
+msgid "St. Kitts and Nevis"
+msgstr ""
+
+msgid "KP"
+msgstr ""
+
+#, fuzzy
+msgid "North Korea"
+msgstr "Корейский (Южная Корея)"
+
+msgid "KR"
+msgstr ""
+
+#, fuzzy
+msgid "South Korea"
+msgstr "Корейский (Южная Корея)"
+
+msgid "KW"
+msgstr ""
+
+msgid "Kuwait"
+msgstr ""
+
+#, fuzzy
+msgid "KY"
+msgstr "KEY"
+
+msgid "Cayman Islands"
+msgstr ""
+
+msgid "KZ"
+msgstr ""
+
+#, fuzzy
+msgid "Kazakhstan"
+msgstr "Казахский (Казахстан)"
+
+msgid "LA"
+msgstr ""
+
+msgid "Laos"
+msgstr ""
+
+msgid "LB"
+msgstr ""
+
+msgid "Lebanon"
+msgstr ""
+
+msgid "LC"
+msgstr ""
+
+msgid "St. Lucia"
+msgstr ""
+
+msgid "LI"
+msgstr ""
+
+msgid "Liechtenstein"
+msgstr ""
+
+msgid "LK"
+msgstr ""
+
+msgid "Sri Lanka"
+msgstr ""
+
+msgid "LR"
+msgstr ""
+
+msgid "Liberia"
+msgstr ""
+
+msgid "LS"
+msgstr ""
+
+msgid "Lesotho"
+msgstr ""
+
+msgid "LT"
+msgstr ""
+
+#, fuzzy
+msgid "Lithuania"
+msgstr "Литовский"
+
+msgid "LU"
+msgstr ""
+
+#, fuzzy
+msgid "Luxembourg"
+msgstr "Французский (Люксембург)"
+
+msgid "LV"
+msgstr ""
+
+#, fuzzy
+msgid "Latvia"
+msgstr "Латвийский"
+
+msgid "LY"
+msgstr ""
+
+msgid "Libya"
+msgstr ""
+
+msgid "MA"
+msgstr ""
+
+msgid "Morocco"
+msgstr ""
+
+msgid "MC"
+msgstr ""
+
+msgid "Monaco"
+msgstr ""
+
+msgid "MD"
+msgstr ""
+
+msgid "Moldova"
+msgstr ""
+
+msgid "ME"
+msgstr ""
+
+msgid "Montenegro"
+msgstr ""
+
+msgid "MF"
+msgstr ""
+
+#, fuzzy
+msgid "St. Martin"
+msgstr "Запуск VR"
+
+msgid "MG"
+msgstr ""
+
+msgid "Madagascar"
+msgstr ""
+
+msgid "MH"
+msgstr ""
+
+msgid "Marshall Islands"
+msgstr ""
+
+msgid "MK"
+msgstr ""
+
+#, fuzzy
+msgid "North Macedonia"
+msgstr "Македонский"
+
+msgid "ML"
+msgstr ""
+
+msgid "Mali"
+msgstr ""
+
+msgid "MM, BU"
+msgstr ""
+
+msgid "Myanmar"
+msgstr ""
+
+msgid "MN"
+msgstr ""
+
+msgid "Mongolia"
+msgstr ""
+
+msgid "MO"
+msgstr ""
+
+msgid "Macao"
+msgstr ""
+
+#, fuzzy
+msgid "MP"
+msgstr "MP3."
+
+msgid "Northern Mariana Islands"
+msgstr ""
+
+msgid "MQ"
+msgstr ""
+
+msgid "Martinique"
+msgstr ""
+
+msgid "MR"
+msgstr ""
+
+#, fuzzy
+msgid "Mauritania"
+msgstr "Литовский"
+
+msgid "MS"
+msgstr ""
+
+msgid "Montserrat"
+msgstr ""
+
+msgid "MT"
+msgstr ""
+
+#, fuzzy
+msgid "Malta"
+msgstr "Мальтийский"
+
+msgid "MU"
+msgstr ""
+
+msgid "Mauritius"
+msgstr ""
+
+msgid "MV"
+msgstr ""
+
+msgid "Maldives"
+msgstr ""
+
+msgid "MW"
+msgstr ""
+
+#, fuzzy
+msgid "Malawi"
+msgstr "Малайский"
+
+#, fuzzy
+msgid "MX"
+msgstr "X"
+
+msgid "Mexico"
+msgstr ""
+
+msgid "MY"
+msgstr ""
+
+#, fuzzy
+msgid "Malaysia"
+msgstr "Малайский"
+
+msgid "MZ"
+msgstr ""
+
+msgid "Mozambique"
+msgstr ""
+
+#, fuzzy
+msgid "NA"
+msgstr "NAN"
+
+msgid "Namibia"
+msgstr ""
+
+msgid "NC"
+msgstr ""
+
+#, fuzzy
+msgid "New Caledonia"
+msgstr "Македонский"
+
+#, fuzzy
+msgid "NE"
+msgstr "NONE"
+
+msgid "Niger"
+msgstr ""
+
+#, fuzzy
+msgid "NF"
+msgstr "INF"
+
+msgid "Norfolk Island"
+msgstr ""
+
+msgid "NG"
+msgstr ""
+
+#, fuzzy
+msgid "Nigeria"
+msgstr "Хауса (Нигерия)"
+
+msgid "NI"
+msgstr ""
+
+msgid "Nicaragua"
+msgstr ""
+
+msgid "NL"
+msgstr ""
+
+#, fuzzy
+msgid "Netherlands"
+msgstr "Дизайн"
+
+#, fuzzy
+msgid "NO"
+msgstr "NONE"
+
+msgid "Norway"
+msgstr ""
+
+msgid "NP"
+msgstr ""
+
+msgid "Nepal"
+msgstr ""
+
+msgid "NR"
+msgstr ""
+
+msgid "NU"
+msgstr ""
+
+msgid "Niue"
+msgstr ""
+
+msgid "NZ"
+msgstr ""
+
+msgid "New Zealand"
+msgstr ""
+
+msgid "OM"
+msgstr ""
+
+msgid "Oman"
+msgstr ""
+
+msgid "PA"
+msgstr ""
+
+msgid "Panama"
+msgstr ""
+
+msgid "PE"
+msgstr ""
+
+msgid "Peru"
+msgstr ""
+
+msgid "PF"
+msgstr ""
+
+msgid "French Polynesia"
+msgstr ""
+
+msgid "PG"
+msgstr ""
+
+msgid "PH"
+msgstr ""
+
+#, fuzzy
+msgid "Philippines"
+msgstr "филиппинский"
+
+msgid "PK"
+msgstr ""
+
+#, fuzzy
+msgid "Pakistan"
+msgstr "Расстояние"
+
+msgid "PL"
+msgstr ""
+
+msgid "Poland"
+msgstr ""
+
+msgid "PM"
+msgstr ""
+
+msgid "St. Pierre and Miquelon"
+msgstr ""
+
+msgid "PN"
+msgstr ""
+
+msgid "Pitcairn Islands"
+msgstr ""
+
+msgid "PR"
+msgstr ""
+
+msgid "Puerto Rico"
+msgstr ""
+
+#, fuzzy
+msgid "PS"
+msgstr "FPS"
+
+#, fuzzy
+msgid "Palestine"
+msgstr "Основные этапы"
+
+msgid "PT"
+msgstr ""
+
+#, fuzzy
+msgid "Portugal"
+msgstr "Порталы"
+
+msgid "PW"
+msgstr ""
+
+msgid "Palau"
+msgstr ""
+
+msgid "PY"
+msgstr ""
+
+#, fuzzy
+msgid "Paraguay"
+msgstr "Испанский (Парагвай)"
+
+#, fuzzy
+msgid "QA"
+msgstr "Вопросы и ответы"
+
+msgid "Qatar"
+msgstr ""
+
+msgid "RE"
+msgstr ""
+
+msgid "Réunion"
+msgstr ""
+
+msgid "RO"
+msgstr ""
+
+#, fuzzy
+msgid "Romania"
+msgstr "Румынский"
+
+msgid "RS"
+msgstr ""
+
+#, fuzzy
+msgid "Serbia"
+msgstr "Сербский"
+
+msgid "RU"
+msgstr ""
+
+#, fuzzy
+msgid "Russia"
+msgstr "Русский"
+
+msgid "RW"
+msgstr ""
+
+msgid "Rwanda"
+msgstr ""
+
+msgid "SA"
+msgstr ""
+
+msgid "Saudi Arabia"
+msgstr ""
+
+msgid "SB"
+msgstr ""
+
+msgid "Solomon Islands"
+msgstr ""
+
+msgid "SC"
+msgstr ""
+
+msgid "Seychelles"
+msgstr ""
+
+msgid "SD"
+msgstr ""
+
+msgid "Sudan"
+msgstr ""
+
+msgid "SE"
+msgstr ""
+
+#, fuzzy
+msgid "Sweden"
+msgstr "Шведский"
+
+msgid "SG"
+msgstr ""
+
+msgid "Singapore"
+msgstr ""
+
+msgid "SH"
+msgstr ""
+
+msgid "St. Helena, Ascension and Tristan da Cunha"
+msgstr ""
+
+msgid "SI"
+msgstr ""
+
+#, fuzzy
+msgid "Slovenia"
+msgstr "Словенский"
+
+msgid "SJ"
+msgstr ""
+
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#, fuzzy
+msgid "SK"
+msgstr "ASK"
+
+#, fuzzy
+msgid "Slovakia"
+msgstr "Словацкий"
+
+msgid "SL"
+msgstr ""
+
+msgid "Sierra Leone"
+msgstr ""
+
+msgid "SM"
+msgstr ""
+
+msgid "San Marino"
+msgstr ""
+
+msgid "SN"
+msgstr ""
+
+#, fuzzy
+msgid "Senegal"
+msgstr "Правовые вопросы"
+
+msgid "SO"
+msgstr ""
+
+#, fuzzy
+msgid "Somalia"
+msgstr "Сомалийский"
+
+msgid "SR"
+msgstr ""
+
+#, fuzzy
+msgid "Suriname"
+msgstr "имя"
+
+msgid "SS"
+msgstr ""
+
+msgid "South Sudan"
+msgstr ""
+
+msgid "ST"
+msgstr ""
+
+msgid "Sao Tome and Principe"
+msgstr ""
+
+msgid "SV"
+msgstr ""
+
+#, fuzzy
+msgid "El Salvador"
+msgstr "Испанский (Эль-Сальвадор)"
+
+#, fuzzy
+msgid "SX"
+msgstr "X"
+
+msgid "Sint Maarten"
+msgstr ""
+
+msgid "SY"
+msgstr ""
+
+msgid "Syria"
+msgstr ""
+
+msgid "SZ"
+msgstr ""
+
+msgid "Eswatini"
+msgstr ""
+
+#, fuzzy
+msgid "TA"
+msgstr "TAU"
+
+msgid "Tristan da Cunha"
+msgstr ""
+
+msgid "TC"
+msgstr ""
+
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#, fuzzy
+msgid "TD"
+msgstr "TODO"
+
+msgid "Chad"
+msgstr ""
+
+msgid "TF"
+msgstr ""
+
+msgid "French Southern Territories"
+msgstr ""
+
+msgid "TG"
+msgstr ""
+
+msgid "Togo"
+msgstr ""
+
+msgid "TH"
+msgstr ""
+
+#, fuzzy
+msgid "Thailand"
+msgstr "Тайский"
+
+msgid "TJ"
+msgstr ""
+
+msgid "Tajikistan"
+msgstr ""
+
+msgid "TK"
+msgstr ""
+
+msgid "TL, TP"
+msgstr ""
+
+msgid "Timor-Leste"
+msgstr ""
+
+msgid "TM"
+msgstr ""
+
+#, fuzzy
+msgid "Turkmenistan"
+msgstr "Турецкий"
+
+msgid "TN"
+msgstr ""
+
+msgid "Tunisia"
+msgstr ""
+
+#, fuzzy
+msgid "TO"
+msgstr "TODO"
+
+msgid "Tonga"
+msgstr ""
+
+msgid "TR"
+msgstr ""
+
+#, fuzzy
+msgid "Turkey"
+msgstr "Турецкий"
+
+msgid "TT"
+msgstr ""
+
+msgid "Trinidad and Tobago"
+msgstr ""
+
+msgid "TV"
+msgstr ""
+
+msgid "TW"
+msgstr ""
+
+msgid "Taiwan"
+msgstr ""
+
+msgid "TZ"
+msgstr ""
+
+msgid "Tanzania"
+msgstr ""
+
+msgid "UA"
+msgstr ""
+
+#, fuzzy
+msgid "Ukraine"
+msgstr "Украинский"
+
+msgid "UG"
+msgstr ""
+
+msgid "Uganda"
+msgstr ""
+
+msgid "UM"
+msgstr ""
+
+msgid "U.S. Outlying Islands"
+msgstr ""
+
+msgid "US"
+msgstr ""
+
+msgid "United States of America"
+msgstr ""
+
+msgid "UY"
+msgstr ""
+
+msgid "Uruguay"
+msgstr ""
+
+msgid "UZ"
+msgstr ""
+
+#, fuzzy
+msgid "Uzbekistan"
+msgstr "Узбекский"
+
+msgid "VA"
+msgstr ""
+
+msgid "Holy See"
+msgstr ""
+
+msgid "VC"
+msgstr ""
+
+msgid "St. Vincent and the Grenadines"
+msgstr ""
+
+msgid "VE"
+msgstr ""
+
+msgid "Venezuela"
+msgstr ""
+
+msgid "VG"
+msgstr ""
+
+msgid "British Virgin Islands"
+msgstr ""
+
+msgid "VI"
+msgstr ""
+
+msgid "U.S. Virgin Islands"
+msgstr ""
+
+msgid "VN"
+msgstr ""
+
+#, fuzzy
+msgid "Viet Nam"
+msgstr "Вьетнамский"
+
+msgid "VU"
+msgstr ""
+
+#, fuzzy
+msgid "Vanuatu"
+msgstr "Ограничение инструкций"
+
+msgid "WF"
+msgstr ""
+
+msgid "Wallis and Futuna"
+msgstr ""
+
+msgid "WS"
+msgstr ""
+
+msgid "Samoa"
+msgstr ""
+
+msgid "XK, KV"
+msgstr ""
+
+msgid "Kosovo"
+msgstr ""
+
+#, fuzzy
+msgid "YE"
+msgstr "BYE"
+
+#, fuzzy
+msgid "Yemen"
+msgstr "Движение"
+
+msgid "YT"
+msgstr ""
+
+msgid "Mayotte"
+msgstr ""
+
+msgid "ZA"
+msgstr ""
+
+#, fuzzy
+msgid "South Africa"
+msgstr "Зулу (Южная Африка)"
+
+msgid "ZM"
+msgstr ""
+
+msgid "Zambia"
+msgstr ""
+
+msgid "ZW"
+msgstr ""
+
+msgid "Zimbabwe"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Статус перевода"

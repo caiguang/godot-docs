@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom post-processing"
+msgstr "Post procesado personalizado"
+
+msgid "Introduction"
+msgstr "Introducción"
+
+#, fuzzy
+msgid ""
+"Godot provides many post-processing effects out of the box, including Bloom, "
+"DOF, and SSAO, which are described in :ref:"
+"`doc_environment_and_post_processing`. However, advanced use cases may "
+"require custom effects. This article explains how to write your own custom "
+"effects."
+msgstr ""
+"Godot proporciona muchos efectos de post-procesamiento fuera del paquete, "
+"incluyendo Bloom, DOF, y SSAO. A veces quieres escribir tu propio efecto "
+"personalizado. Así es como puedes hacerlo."
+
+msgid ""
+"The easiest way to implement a custom post-processing shader is to use "
+"Godot's built-in ability to read from the screen texture. If you're not "
+"familiar with this, you should read the :ref:`Screen Reading Shaders "
+"Tutorial <doc_screen-reading_shaders>` first."
+msgstr ""
+"La forma más fácil de implementar un shader personalizado de post-"
+"procesamiento es usar la capacidad incorporada de Godot para leer la textura "
+"de la pantalla. Si no estás familiarizado con esto, deberías leer primero "
+"el :ref:`Screen Reading Shaders Tutorial <doc_screen-reading_shaders>`."
+
+msgid "Single pass post-processing"
+msgstr "Post procesado de paso simple"
+
+msgid ""
+"Post-processing effects are shaders applied to a frame after Godot has "
+"rendered it. To apply a shader to a frame, create a :ref:`CanvasLayer "
+"<class_CanvasLayer>`, and give it a :ref:`ColorRect <class_ColorRect>`. "
+"Assign a new :ref:`ShaderMaterial <class_ShaderMaterial>` to the newly "
+"created ``ColorRect``, and set the ``ColorRect``'s layout to \"Full Rect\"."
+msgstr ""
+
+#, fuzzy
+msgid "Your scene tree will look something like this:"
+msgstr "La escena final debería verse similar a esta:"
+
+msgid ""
+"Another more efficient method is to use a :ref:`BackBufferCopy "
+"<class_BackBufferCopy>` to copy a region of the screen to a buffer and to "
+"access it in a shader script through a ``sampler2D`` using "
+"``hint_screen_texture``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"As of the time of writing, Godot does not support rendering to multiple "
+"buffers at the same time. Your post-processing shader will not have access "
+"to other render passes and buffers not exposed by Godot (such as depth or "
+"normal/roughness). You only have access to the rendered frame and buffers "
+"exposed by Godot as samplers."
+msgstr ""
+"En el momento de escribir este artículo, Godot no soporta la renderización a "
+"múltiples buffers al mismo tiempo. Su shader de post-procesamiento no tendrá "
+"acceso a los normales u otros pases de renderización. Sólo tiene acceso al "
+"fotograma renderizado."
+
+msgid ""
+"For this demo, we will use this :ref:`Sprite <class_Sprite2D>` of a sheep."
+msgstr ""
+"Para esta demo, usaremos este :ref:`Sprite <class_Sprite2D>` de una oveja."
+
+msgid ""
+"Assign a new :ref:`Shader <class_Shader>` to the ``ColorRect``'s "
+"``ShaderMaterial``. You can access the frame's texture and UV with a "
+"``sampler2D`` using ``hint_screen_texture`` and the built in ``SCREEN_UV`` "
+"uniforms."
+msgstr ""
+
+msgid ""
+"Copy the following code to your shader. The code below is a hex pixelization "
+"shader by `arlez80 <https://bitbucket.org/arlez80/hex-mosaic/src/master/>`_,"
+msgstr ""
+"Copia el siguiente código en tu shader. El código debajo es shader de "
+"pixelación hexagonal hecho por `arlez80 <https://bitbucket.org/arlez80/hex-"
+"mosaic/src/master/>`_,"
+
+#, fuzzy
+msgid "The sheep will look something like this:"
+msgstr "La escena final debería verse similar a esta:"
+
+msgid "Multi-pass post-processing"
+msgstr "Post procesado de pasos múltiples"
+
+#, fuzzy
+msgid ""
+"Some post-processing effects like blurs are resource intensive. You can make "
+"them run a lot faster if you break them down in multiple passes. In a "
+"multipass material, each pass takes the result from the previous pass as an "
+"input and processes it."
+msgstr ""
+"Algunos efectos de post-procesamiento como el difuminado son intensivos en "
+"recursos. Sin embargo, si los descompones en múltiples pasadas, puedes hacer "
+"que se ejecuten mucho más rápido. En un material de múltiples pasadas, cada "
+"pasada toma el resultado de la pasada anterior como entrada y lo procesa."
+
+msgid ""
+"To produce a multi-pass post-processing shader, you stack ``CanvasLayer`` "
+"and ``ColorRect`` nodes. In the example above, you use a ``CanvasLayer`` "
+"object to render a shader using the frame on the layer below. Apart from the "
+"node structure, the steps are the same as with the single-pass post-"
+"processing shader."
+msgstr ""
+
+msgid ""
+"As an example, you could write a full screen Gaussian blur effect by "
+"attaching the following pieces of code to each of the ``ColorRect`` nodes. "
+"The order in which you apply the shaders depends on the position of the "
+"``CanvasLayer`` in the scene tree, higher means sooner. For this blur "
+"shader, the order does not matter."
+msgstr ""
+"Como ejemplo, podrías escribir un efecto de desenfoque gaussiano a pantalla "
+"completa adjuntando las siguientes piezas de código a cada uno de los nodos "
+"``ColorRect``. El orden en que se aplican los shaders depende de la posición "
+"del ``CanvasLayer`` en el árbol de escena, más arriba significa más "
+"temprano. Para este shader de desenfoque, el orden no importa."
+
+msgid ""
+"Using the above code, you should end up with a full screen blur effect like "
+"below."
+msgstr ""
+"Usando el código anterior, deberías terminar con un efecto de desenfoque en "
+"pantalla completa como el de abajo."
+
+msgid "Translation status"
+msgstr "Estado de traducción"

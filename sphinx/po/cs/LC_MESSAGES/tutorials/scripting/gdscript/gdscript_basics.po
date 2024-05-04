@@ -1,0 +1,2902 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDScript reference"
+msgstr "Odkaz na atribut"
+
+#, fuzzy
+msgid ""
+":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
+"wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
+"wikipedia.org/wiki/Imperative_programming>`_, and `gradually typed <https://"
+"en.wikipedia.org/wiki/Gradual_typing>`_ programming language built for "
+"Godot. It uses an indentation-based syntax similar to languages like `Python "
+"<https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_. Its "
+"goal is to be optimized for and tightly integrated with Godot Engine, "
+"allowing great flexibility for content creation and integration."
+msgstr ""
+"*GDScript* je vysokoúrovňový dynamicky typovaný programovací jazyk, který se "
+"používá k vytváření obsahu. Jeho syntaxe je podobná jazyku `Python <https://"
+"en.wikipedia.org/wiki/Python_%28programming_language%29>`_ (bloky jsou "
+"založeny na odsazení,mnoho klíčových slov je převzato). Cílem jazyka je "
+"optimalizace a úzká integrace s Godot Engine, což umožňuje velkou "
+"flexibilitu při vytváření obsahu a integraci."
+
+msgid "GDScript is entirely independent from Python and is not based on it."
+msgstr ""
+
+msgid "History"
+msgstr "Historie"
+
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"Dokumentace o historii GDScript byla přesunuta do :ref:`Často kladené otázky "
+"<doc_faq_what_is_gdscript>`."
+
+msgid "Example of GDScript"
+msgstr "Příklad GDScriptu"
+
+#, fuzzy
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's an "
+"example of how GDScript looks."
+msgstr ""
+"Někteří lidé se lépe naučí syntaxi, když ji před sebou vidí. Tady je malá "
+"ochutnávka GDSkriptu."
+
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"Pokud máte předchozí zkušenosti se staticky typovanými jazyky, jako C, C++ "
+"nebo C#, ale nikdy předtím jste dynamicky typovaný jazyk nepoužívali, "
+"doporučujeme vám přečíst si tento návod: :ref:"
+"`doc_gdscript_more_efficiently`."
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"V následujícím textu je uveden přehled GDScript. Podrobnosti, například jaké "
+"metody jsou dostupné pro pole čí jiné objekty, je třeba vyhledat pomocí "
+"přiložených odkazů na dokumentaci tříd."
+
+msgid "Identifiers"
+msgstr "Identifikátory"
+
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"Jako identifikátor lze použít jakýkoli řetězec, který se omezuje na znaky "
+"abecedy (``a`` až ``z`` a ``A`` až ``Z``), číslice (``0`` až ``9``) a ``_``. "
+"Identifikátory navíc nesmí začínat číslicí. U identifikátorů se rozlišují "
+"malá a velká písmena (``foo`` se liší od ``FOO``)."
+
+msgid ""
+"Identifiers may also contain most Unicode characters part of `UAX#31 "
+"<https://www.unicode.org/reports/tr31/>`__. This allows you to use "
+"identifier names written in languages other than English. Unicode characters "
+"that are considered \"confusable\" for ASCII characters and emoji are not "
+"allowed in identifiers."
+msgstr ""
+
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"Následuje seznam klíčových slov podporovaných tímto jazykem. Protože klíčová "
+"slova jsou rezervovaná slova (tokeny), nelze je používat jako "
+"identifikátory. Rezervované jsou také operátory (jako ``in``, ``not``, "
+"``and`` nebo ``or``) a názvy vestavěných typů uvedené v následujících "
+"kapitolách."
+
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"Klíčová slova jsou definována v `GDScript tokenizeru <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_, "
+"pokud se chcete podívat pod pokličku."
+
+msgid "Keyword"
+msgstr "Klíčové slovo"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "if"
+msgstr "if"
+
+msgid "See `if/else/elif`_."
+msgstr "Viz `if/else/elif`_."
+
+msgid "elif"
+msgstr "elif"
+
+msgid "else"
+msgstr "else"
+
+msgid "for"
+msgstr "for"
+
+msgid "See for_."
+msgstr "Viz for_."
+
+msgid "while"
+msgstr "while"
+
+msgid "See while_."
+msgstr "Viz while_."
+
+msgid "match"
+msgstr "match"
+
+msgid "See match_."
+msgstr "Viz match_."
+
+msgid "break"
+msgstr "break"
+
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "Ukončí provádění aktuální smyčky ``for`` nebo ``while``."
+
+msgid "continue"
+msgstr "continue"
+
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "Okamžitě přeskočí na další iteraci cyklu ``for`` nebo ``while``."
+
+msgid "pass"
+msgstr "pass"
+
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr ""
+"Používá se tam, kde je příkaz syntakticky vyžadován, ale provedení kódu je "
+"nežádoucí, např. v prázdných funkcích."
+
+msgid "return"
+msgstr "return"
+
+msgid "Returns a value from a function."
+msgstr "Vrací hodnotu z funkce."
+
+msgid "class"
+msgstr "class"
+
+#, fuzzy
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "Vnitřní třídy uvnitř jiného souboru třídy."
+
+msgid "class_name"
+msgstr "class_name"
+
+msgid ""
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
+msgstr ""
+
+msgid "extends"
+msgstr "extends"
+
+msgid "Defines what class to extend with the current class."
+msgstr "Definuje, jakou třídu chcete rozšířit o aktuální třídu."
+
+msgid "is"
+msgstr "is"
+
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr ""
+"Testuje, zda proměnná rozšiřuje danou třídu nebo zda je daného vestavěného "
+"typu."
+
+#, fuzzy
+msgid "in"
+msgstr "Najít"
+
+msgid ""
+"Tests whether a value is within a string, array, range, dictionary, or node. "
+"When used with ``for``, it iterates through them instead of testing."
+msgstr ""
+
+msgid "as"
+msgstr "as"
+
+msgid "Cast the value to a given type if possible."
+msgstr "Pokud je to možné, přetypujte hodnotu na daný typ."
+
+msgid "self"
+msgstr "self"
+
+msgid "Refers to current class instance."
+msgstr "Odkazuje na aktuální instanci třídy."
+
+msgid "signal"
+msgstr "signal"
+
+msgid "Defines a signal."
+msgstr "Definuje signál."
+
+msgid "func"
+msgstr "func"
+
+msgid "Defines a function."
+msgstr "Definuje funkci."
+
+msgid "static"
+msgstr "static"
+
+#, fuzzy
+msgid "Defines a static function or a static member variable."
+msgstr "Definuje statickou funkci. Statické členské proměnné nejsou povoleny."
+
+msgid "const"
+msgstr "const"
+
+msgid "Defines a constant."
+msgstr "Definuje konstantu."
+
+msgid "enum"
+msgstr "enum"
+
+msgid "Defines an enum."
+msgstr "Definuje enum."
+
+msgid "var"
+msgstr "var"
+
+msgid "Defines a variable."
+msgstr "Definuje proměnnou."
+
+msgid "breakpoint"
+msgstr "breakpoint"
+
+msgid ""
+"Editor helper for debugger breakpoints. Unlike breakpoints created by "
+"clicking in the gutter, ``breakpoint`` is stored in the script itself. This "
+"makes it persistent across different machines when using version control."
+msgstr ""
+
+msgid "preload"
+msgstr "preload"
+
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr "Předběžně načte třídu nebo proměnnou. Viz `Classes as resources`_."
+
+msgid "await"
+msgstr ""
+
+msgid ""
+"Waits for a signal or a coroutine to finish. See `Awaiting for signals or "
+"coroutines`_."
+msgstr ""
+
+msgid "yield"
+msgstr "yield"
+
+msgid "Previously used for coroutines. Kept as keyword for transition."
+msgstr ""
+
+msgid "assert"
+msgstr "assert"
+
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"Uplatní podmínku, při selhání zaznamená chybu. Ignorováno v sestaveních bez "
+"ladění. Viz klíčové slovo `Assert`_."
+
+msgid "void"
+msgstr ""
+
+msgid "Used to represent that a function does not return any value."
+msgstr ""
+
+msgid "PI"
+msgstr "PI"
+
+msgid "PI constant."
+msgstr "Konstanta PI."
+
+msgid "TAU"
+msgstr "TAU"
+
+msgid "TAU constant."
+msgstr "Konstanta TAU."
+
+msgid "INF"
+msgstr "INF"
+
+#, fuzzy
+msgid "Infinity constant. Used for comparisons and as result of calculations."
+msgstr "Konstanta nekonečna. Používá se pro porovnávání."
+
+msgid "NAN"
+msgstr "NAN"
+
+#, fuzzy
+msgid ""
+"NAN (not a number) constant. Used as impossible result from calculations."
+msgstr "NAN (not a number) konstanta. Používá se pro porovnávání."
+
+msgid "Operators"
+msgstr "Operátory"
+
+msgid "The following is the list of supported operators and their precedence."
+msgstr "Následuje seznam podporovaných operátorů a jejich priority."
+
+msgid "**Operator**"
+msgstr "**Operátor**"
+
+msgid "**Description**"
+msgstr "**Popis**"
+
+#, fuzzy
+msgid "``(`` ``)``"
+msgstr "``<<`` ``>>``"
+
+#, fuzzy
+msgid "Grouping (highest priority)"
+msgstr "Subskript (nejvyšší priorita)"
+
+msgid ""
+"Parentheses are not really an operator, but allow you to explicitly specify "
+"the precedence of an operation."
+msgstr ""
+
+msgid "``x[index]``"
+msgstr "``x[index]``"
+
+#, fuzzy
+msgid "Subscription"
+msgstr "Předplatné"
+
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+msgid "Attribute reference"
+msgstr "Odkaz na atribut"
+
+msgid "``foo()``"
+msgstr "``foo()``"
+
+msgid "Function call"
+msgstr "Volání funkce"
+
+msgid "``await x``"
+msgstr ""
+
+msgid "`Awaiting for signals or coroutines`_"
+msgstr ""
+
+#, fuzzy
+msgid "``x is Node``"
+msgstr "``$NodePath``"
+
+#, fuzzy
+msgid "Type checking"
+msgstr "Přetypování"
+
+msgid ""
+"See also :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` "
+"function."
+msgstr ""
+
+msgid "``x ** y``"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid ""
+"Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
+"<class_@GlobalScope_method_pow>` function."
+msgstr ""
+
+msgid ""
+"**Note:** In GDScript, the ``**`` operator is `left-associative <https://en."
+"wikipedia.org/wiki/Operator_associativity>`_. See a detailed note after the "
+"table."
+msgstr ""
+
+msgid "``~x``"
+msgstr ""
+
+msgid "Bitwise NOT"
+msgstr "Bitové NOT"
+
+msgid "``+x``"
+msgstr ""
+
+msgid "``-x``"
+msgstr "``-x``"
+
+#, fuzzy
+msgid "Identity / Negation"
+msgstr "Odsazení"
+
+msgid "``x * y``"
+msgstr ""
+
+msgid "``x / y``"
+msgstr ""
+
+msgid "``x % y``"
+msgstr ""
+
+msgid "Multiplication / Division / Remainder"
+msgstr "Násobení / dělení / zbytek"
+
+msgid ""
+"The ``%`` operator is additionally used for :ref:`format strings "
+"<doc_gdscript_printf>`."
+msgstr ""
+
+msgid ""
+"**Note:** These operators have the same behavior as C++, which may be "
+"unexpected for users coming from Python, JavaScript, etc. See a detailed "
+"note after the table."
+msgstr ""
+
+msgid "``x + y``"
+msgstr ""
+
+msgid "``x - y``"
+msgstr ""
+
+#, fuzzy
+msgid "Addition (or Concatenation) / Subtraction"
+msgstr "Sčítání / spojování polí"
+
+msgid "``x << y``"
+msgstr ""
+
+msgid "``x >> y``"
+msgstr ""
+
+msgid "Bit shifting"
+msgstr "Posouvání bitů"
+
+msgid "``x & y``"
+msgstr ""
+
+msgid "Bitwise AND"
+msgstr "Bitově AND"
+
+msgid "``x ^ y``"
+msgstr ""
+
+msgid "Bitwise XOR"
+msgstr "Bitový XOR"
+
+msgid "``x | y``"
+msgstr ""
+
+msgid "Bitwise OR"
+msgstr "Bitové OR"
+
+msgid "``x == y``"
+msgstr ""
+
+msgid "``x != y``"
+msgstr ""
+
+msgid "``x < y``"
+msgstr ""
+
+msgid "``x > y``"
+msgstr ""
+
+msgid "``x <= y``"
+msgstr ""
+
+msgid "``x >= y``"
+msgstr ""
+
+#, fuzzy
+msgid "Comparison"
+msgstr "Porovnání"
+
+msgid "See a detailed note after the table."
+msgstr ""
+
+msgid "``x in y``"
+msgstr ""
+
+msgid "``x not in y``"
+msgstr ""
+
+msgid "Inclusion checking"
+msgstr ""
+
+msgid "``in`` is also used with the for_ keyword as part of the syntax."
+msgstr ""
+
+#, fuzzy
+msgid "``not x``"
+msgstr "``!`` ``not``"
+
+msgid "``!x``"
+msgstr ""
+
+msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x and y``"
+msgstr ""
+
+msgid "``x && y``"
+msgstr ""
+
+msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x or y``"
+msgstr ""
+
+msgid "``x || y``"
+msgstr ""
+
+msgid "Boolean OR and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``true_expr if cond else false_expr``"
+msgstr ""
+
+msgid "Ternary if/else"
+msgstr "Ternární if/else"
+
+#, fuzzy
+msgid "``x as Node``"
+msgstr "``$NodePath``"
+
+#, fuzzy
+msgid "`Type casting <casting_>`_"
+msgstr "Přetypování"
+
+msgid "``x = y``"
+msgstr ""
+
+msgid "``x += y``"
+msgstr ""
+
+msgid "``x -= y``"
+msgstr ""
+
+msgid "``x *= y``"
+msgstr ""
+
+msgid "``x /= y``"
+msgstr ""
+
+msgid "``x **= y``"
+msgstr ""
+
+msgid "``x %= y``"
+msgstr ""
+
+msgid "``x &= y``"
+msgstr ""
+
+msgid "``x |= y``"
+msgstr ""
+
+msgid "``x ^= y``"
+msgstr ""
+
+msgid "``x <<= y``"
+msgstr ""
+
+msgid "``x >>= y``"
+msgstr ""
+
+msgid "Assignment (lowest priority)"
+msgstr "Přiřazení (nejnižší priorita)"
+
+msgid "You cannot use an assignment operator inside an expression."
+msgstr ""
+
+msgid "The behavior of some operators may differ from what you expect:"
+msgstr ""
+
+msgid ""
+"If both operands of the ``/`` operator are :ref:`int <class_int>`, then "
+"integer division is performed instead of fractional. For example ``5 / 2 == "
+"2``, not ``2.5``. If this is not desired, use at least one :ref:`float "
+"<class_float>` literal (``x / 2.0``), cast (``float(x) / y``), or multiply "
+"by ``1.0`` (``x * 1.0 / y``)."
+msgstr ""
+
+msgid ""
+"The ``%`` operator is only available for ints, for floats use the :ref:"
+"`fmod() <class_@GlobalScope_method_fmod>` function."
+msgstr ""
+
+msgid ""
+"For negative values, the ``%`` operator and ``fmod()`` use `truncation "
+"<https://en.wikipedia.org/wiki/Truncation>`_ instead of rounding towards "
+"negative infinity. This means that the remainder has a sign. If you need the "
+"remainder in a mathematical sense, use the :ref:`posmod() "
+"<class_@GlobalScope_method_posmod>` and :ref:`fposmod() "
+"<class_@GlobalScope_method_fposmod>` functions instead."
+msgstr ""
+
+msgid ""
+"The ``**`` operator is `left-associative <https://en.wikipedia.org/wiki/"
+"Operator_associativity>`_. This means that ``2 ** 2 ** 3`` is equal to ``(2 "
+"** 2) ** 3``. Use parentheses to explicitly specify precedence you need, for "
+"example ``2 ** (2 ** 3)``."
+msgstr ""
+
+msgid ""
+"The ``==`` and ``!=`` operators sometimes allow you to compare values of "
+"different types (for example, ``1 == 1.0`` is true), but in other cases it "
+"can cause a runtime error. If you're not sure about the types of the "
+"operands, you can safely use the :ref:`is_same() "
+"<class_@GlobalScope_method_is_same>` function (but note that it is more "
+"strict about types and references). To compare floats, use the :ref:"
+"`is_equal_approx() <class_@GlobalScope_method_is_equal_approx>` and :ref:"
+"`is_zero_approx() <class_@GlobalScope_method_is_zero_approx>` functions "
+"instead."
+msgstr ""
+
+msgid "Literals"
+msgstr "Literály"
+
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**Příklad**"
+
+msgid "``null``"
+msgstr ""
+
+#, fuzzy
+msgid "Null value"
+msgstr "hodnota"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "Logické operátory"
+
+msgid "``45``"
+msgstr "``45``"
+
+msgid "Base 10 integer"
+msgstr "Celé číslo základu 10"
+
+msgid "``0x8f51``"
+msgstr "``0x8f51``"
+
+msgid "Base 16 (hexadecimal) integer"
+msgstr "Celé číslo o základu 16 (hexadecimální)"
+
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+msgid "Base 2 (binary) integer"
+msgstr "Celé číslo základu 2 (binární)"
+
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14``, ``58.1e-10``"
+
+msgid "Floating-point number (real)"
+msgstr "Číslo s plovoucí desetinnou čárkou (reálné)"
+
+#, fuzzy
+msgid "``\"Hello\"``, ``'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Regular strings"
+msgstr "|retular| Mírná"
+
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "string"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "Formátovací řetězce GDScriptu"
+
+msgid "``&\"name\"``"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`StringName <class_StringName>`"
+msgstr ":ref:`String <class_String>`"
+
+#, fuzzy
+msgid "``^\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**Příklad**"
+
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "Zkratka pro ``get_node(\"NodePath\")``"
+
+msgid "``%UniqueNode``"
+msgstr ""
+
+#, fuzzy
+msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
+msgstr "Zkratka pro ``get_node(\"NodePath\")``"
+
+msgid ""
+"Integers and floats can have their numbers separated with ``_`` to make them "
+"more readable. The following ways to write numbers are all valid::"
+msgstr ""
+"Celá a pohyblivá čísla mohou být oddělena znakem ``_``, aby byla lépe "
+"čitelná. Všechny následující způsoby zápisu čísel jsou platné::"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "Escape sekvence"
+
+msgid "**Expands to**"
+msgstr "**Rozšiřuje se na**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "Nový řádek (line feed)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "Vodorovný znak tabulátoru"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "návrat vozíku"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "Výstraha (pípnutí / zvonek)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "Backspace"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "Přerušení stránky Formfeed"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "Svislý znak tabulátoru"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "Dvojitá uvozovka"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "Jednoduchá uvozovka"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "Zpětné lomítko"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "Zdroje lze ukládat dvěma způsoby. Mohou to být:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript také podporuje :ref:`doc_gdscript_printf`."
+
+#, fuzzy
+msgid "Annotations"
+msgstr "Odsazení"
+
+msgid ""
+"There are some special tokens in GDScript that act like keywords but are "
+"not, they are *annotations* instead. Every annotation start with the ``@`` "
+"character and is specified by a name. A detailed description and example for "
+"each annotation can be found inside the :ref:`GDScript class reference "
+"<class_@GDScript>`."
+msgstr ""
+
+msgid ""
+"Annotations affect how the script is treated by external tools and usually "
+"don't change the behavior."
+msgstr ""
+
+msgid "For instance, you can use it to export a value to the editor::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For more information about exporting properties, read the :ref:`GDScript "
+"exports <doc_gdscript_exports>` article."
+msgstr "Dokumentace o exportech byla přesunuta do :ref:`doc_gdscript_exports`."
+
+msgid ""
+"Any constant expression compatible with the required argument type can be "
+"passed as an annotation argument value::"
+msgstr ""
+
+msgid ""
+"Annotations can be specified one per line or all in the same line. They "
+"affect the next statement that isn't an annotation. Annotations can have "
+"arguments sent between parentheses and separated by commas."
+msgstr ""
+
+msgid "Both of these are the same::"
+msgstr ""
+
+msgid "``@onready`` annotation"
+msgstr ""
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"Při použití uzlů je běžné chtít uchovávat odkazy na části scény v proměnné. "
+"Jelikož u scén je zaručeno, že budou konfigurovány pouze při vstupu do "
+"aktivního stromu scén, dílčí uzly lze získat pouze při volání funkce ``Node."
+"ready ()``."
+
+#, fuzzy
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``@onready`` annotation, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"To může být poněkud těžkopádné, zejména když se hromadí uzly a externí "
+"odkazy. GDScript má proto klíčové slovo ``onready``, které odkládá "
+"inicializaci členské proměnné až do volání ``_ready()``. Lze jím nahradit "
+"výše uvedený kód jediným řádkem::"
+
+msgid ""
+"Applying ``@onready`` and any ``@export`` annotation to the same variable "
+"doesn't work as you might expect. The ``@onready`` annotation will cause the "
+"default value to be set after the ``@export`` takes effect and will override "
+"it::"
+msgstr ""
+
+msgid ""
+"Therefore, the ``ONREADY_WITH_EXPORT`` warning is generated, which is "
+"treated as an error by default. We do not recommend disabling or ignoring it."
+msgstr ""
+
+msgid "Comments"
+msgstr "Komentáře"
+
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr ""
+"Cokoli od ''#'' do konce řádku je ignorováno a je považováno za komentář."
+
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Godot verze"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "Nejčastější případy použití jsou následující:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "Existují dva hlavní způsoby, jak zmírnit páskování:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
+#, fuzzy
+msgid "Line continuation"
+msgstr "Lineární interpolací"
+
+msgid ""
+"A line of code in GDScript can be continued on the next line by using a "
+"backslash (``\\``). Add one at the end of a line and the code on the next "
+"line will act like it's where the backslash is. Here is an example:"
+msgstr ""
+
+msgid "A line can be continued multiple times like this:"
+msgstr ""
+
+msgid "Built-in types"
+msgstr "Vestavěné typy"
+
+#, fuzzy
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The exceptions are ``Object``, ``Array``, ``Dictionary``, and "
+"packed arrays (such as ``PackedByteArray``), which are passed by reference "
+"so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
+"``Resource``) have a ``duplicate()`` method that allows you to make a copy."
+msgstr ""
+"Vestavěné typy jsou alokovány na zásobníku. Jsou to hodnotové typy (value "
+"types). To znamená, že při každém přiřazení nebo při předání jako argumentu "
+"funkci se vytvoří jejich kopie. Jedinou výjimkou jsou ``Array`` a "
+"``Dictionary``, které se předávají jako reference, takže jsou sdílené. Jedna "
+"se o tzv. referenční typy, anglicky reference types.(Sdružená pole, jako je "
+"``PoolByteArray``, se stále předávají jako hodnoty.)"
+
+msgid "Basic built-in types"
+msgstr "Základní vestavěné typy"
+
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "Proměnné mouhou v jazyce GDScript nabývat několika vestavěných typů."
+
+msgid "null"
+msgstr "null"
+
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr ""
+"``null`` je prázdný datový typ, který neobsahuje žádné informace a nelze mu "
+"přiřadit žádnou jinou hodnotu."
+
+msgid ":ref:`bool <class_bool>`"
+msgstr ":ref:`bool <class_bool>`"
+
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr "Zkratka pro \"boolean\", může obsahovat pouze ``true`` nebo ``false``."
+
+msgid ":ref:`int <class_int>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to ``int64_t`` in C++."
+msgstr ""
+"Zkratka pro \"integer\" (celé číslo), uchovává celá čísla (kladná i "
+"záporná). Ukládá se jako 64bitová hodnota, což v jazyce C++ odpovídá "
+"\"int64_t\"."
+
+msgid ":ref:`float <class_float>`"
+msgstr ":ref:`float <class_float>`"
+
+#, fuzzy
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to ``double`` in C++. Note: Currently, "
+"data structures such as ``Vector2``, ``Vector3``, and ``PackedFloat32Array`` "
+"store 32-bit single-precision ``float`` values."
+msgstr ""
+"Uchovává reálná čísla včetně desetinných míst pomocí hodnot s pohyblivou "
+"řádovou čárkou. Ukládá se jako 64bitová hodnota, ekvivalentní \"double\" v C+"
+"+. Poznámka: V současné době datové struktury jako Vector2, Vector3 a "
+"PoolRealArray ukládají 32bitové hodnoty \"float\" se single přesností."
+
+msgid ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
+msgstr ""
+"Posloupnost znaků ve formátu `Unicode <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
+
+msgid ""
+"An immutable string that allows only one instance of each name. They are "
+"slower to create and may result in waiting for locks when multithreading. In "
+"exchange, they're very fast to compare, which makes them good candidates for "
+"dictionary keys."
+msgstr ""
+
+msgid ""
+"A pre-parsed path to a node or a node property.  It can be easily assigned "
+"to, and from, a String. They are useful to interact with the tree to get a "
+"node, or affecting properties like with :ref:`Tweens <class_Tween>`."
+msgstr ""
+
+msgid "Vector built-in types"
+msgstr "Vektorové vestavěné typy"
+
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr ""
+"2D vektorový typ obsahující pole ``x`` a ``y``. Lze k němu přistupovat také "
+"jako k poli."
+
+#, fuzzy
+msgid ":ref:`Vector2i <class_Vector2i>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"Same as a Vector2 but the components are integers. Useful for representing "
+"items in a 2D grid."
+msgstr ""
+
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"Typ 2D Obdélník obsahující dvě pole vektorů: ``position (pozic)`` a ``size "
+"(velikost)``. Obsahuje také pole ``end``, což je ``position + size``."
+
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr ""
+"3D vektorový typ obsahující pole ``x``, ``y`` a ``z``. Lze k němu "
+"přistupovat také jako k poli."
+
+#, fuzzy
+msgid ":ref:`Vector3i <class_Vector3i>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"Same as Vector3 but the components are integers. Can be use for indexing "
+"items in a 3D grid."
+msgstr ""
+
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid "3×2 matrix used for 2D transforms."
+msgstr "matice (matrix) 3×2 používaná pro 2D transformace."
+
+msgid ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr ""
+"Typ 3D roviny v normalizovaném tvaru, který obsahuje ``normál`` vektorové "
+"pole normály k rovině a skalární vzdálenost ``d``."
+
+#, fuzzy
+msgid ":ref:`Quaternion <class_Quaternion>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr ""
+"Kvaternion je datový typ používaný k reprezentaci 3D rotace. Je užitečný pro "
+"interpolaci rotací."
+
+msgid ":ref:`AABB <class_AABB>`"
+msgstr ":ref:`AABB <class_AABB>`"
+
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"Osově zarovnaný ohraničující box (nebo 3D box) obsahuje 2 pole vektorů: "
+"``position`` a ``size``. Obsahuje také pole ``end``, což je ``position + "
+"size``."
+
+msgid ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"matice 3x3 používaná pro 3D rotaci a měřítko. Obsahuje 3 vektorová pole "
+"(``x``, ``y`` a ``z``) a lze k ní přistupovat také jako k poli 3D vektorů."
+
+#, fuzzy
+msgid ":ref:`Transform3D <class_Transform3D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3D transformace obsahuje pole Basis ``basis`` a pole Vector3 ``origin``."
+
+msgid "Engine built-in types"
+msgstr "Vestavěné typy enginu"
+
+msgid ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color <class_Color>`"
+
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"Datový typ Color (barva) obsahuje pole ``r``, ``g``, ``b`` a ``a``. Lze k "
+"nim také přistupovat jako ``h``, ``s`` a ``v`` pro odstín/sytost/hodnotu."
+
+msgid ":ref:`RID <class_RID>`"
+msgstr ":ref:`RID <class_RID>`"
+
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr ""
+"ID zdroje (RID). Servery používají generické identifikátory RID k odkazování "
+"na neprůhledná data."
+
+msgid ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid "Base class for anything that is not a built-in type."
+msgstr "Základní třída pro cokoli, co není vestavěným typem."
+
+msgid "Container built-in types"
+msgstr "Kontejnerové vestavěné typy"
+
+msgid ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array (Pole) <class_Array>`"
+
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"Obecná posloupnost objektů libovolného typu, včetně jiných polí nebo "
+"slovníků (viz níže). Velikost pole se může dynamicky měnit. Pole jsou "
+"indexována od indexu ``0``. Záporné indexy se počítají od konce."
+
+msgid "Typed arrays"
+msgstr ""
+
+msgid ""
+"Godot 4.0 added support for typed arrays. On write operations, Godot checks "
+"that element values match the specified type, so the array cannot contain "
+"invalid values. The GDScript static analyzer takes typed arrays into "
+"account, however array methods like ``front()`` and ``back()`` still have "
+"the ``Variant`` return type."
+msgstr ""
+
+msgid ""
+"Typed arrays have the syntax ``Array[Type]``, where ``Type`` can be any "
+"``Variant`` type, native or user class, or enum. Nested array types (like "
+"``Array[Array[int]]``) are not supported."
+msgstr ""
+
+msgid "``Array`` and ``Array[Variant]`` are the same thing."
+msgstr ""
+
+msgid ""
+"Arrays are passed by reference, so the array element type is also an "
+"attribute of the in-memory structure referenced by a variable in runtime. "
+"The static type of a variable restricts the structures that it can reference "
+"to. Therefore, you **cannot** assign an array with a different element type, "
+"even if the type is a subtype of the required type."
+msgstr ""
+
+msgid ""
+"If you want to *convert* a typed array, you can create a new array and use "
+"the :ref:`Array.assign() <class_Array_method_assign>` method::"
+msgstr ""
+
+msgid ""
+"The only exception was made for the ``Array`` (``Array[Variant]``) type, for "
+"user convenience and compatibility with old code. However, operations on "
+"untyped arrays are considered unsafe."
+msgstr ""
+
+#, fuzzy
+msgid "Packed arrays"
+msgstr "Místní pole"
+
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"Pole jazyka GDScript jsou kvůli rychlosti alokována v paměti lineárně. Velká "
+"pole (více než desítky tisíc prvků) však mohou způsobit fragmentaci paměti, "
+"což může mít vliv na velikost dostupné paměti a rychlost její alokace. Pokud "
+"vám to vadí, jsou k dispozici speciální typy polí. Ty akceptují pouze jeden "
+"datový typ. Vyhnou se fragmentaci paměti, spotřebují paměti méně , ale jsou "
+"atomická a mají tendenci pracovat pomaleji než obecná pole. Doporučuje se je "
+"proto používat pouze pro velké objemy dat:"
+
+#, fuzzy
+msgid ""
+":ref:`PackedByteArray <class_PackedByteArray>`: An array of bytes (integers "
+"from 0 to 255)."
+msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>` : pole bajtů (celá čísla od 0 do "
+"255)."
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt32Array <class_PackedInt32Array>`: An array of 32-bit "
+"integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: pole celých čísel."
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt64Array <class_PackedInt64Array>`: An array of 64-bit "
+"integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: pole celých čísel."
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>`: An array of 32-bit "
+"floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: pole floatů."
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat64Array <class_PackedFloat64Array>`: An array of 64-bit "
+"floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: pole floatů."
+
+#, fuzzy
+msgid ""
+":ref:`PackedStringArray <class_PackedStringArray>`: An array of strings."
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: Pole řetězců."
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector2Array <class_PackedVector2Array>`: An array of :ref:"
+"`Vector2 <class_Vector2>` values."
+msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: <class_Vector2>``: pole "
+"objektů :ref:`Vector2 <class_Vector2>`."
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector3Array <class_PackedVector3Array>`: An array of :ref:"
+"`Vector3 <class_Vector3>` values."
+msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: <class_Vector3>``: pole "
+"objektů :ref:`Vector3 <class_Vector3>`."
+
+#, fuzzy
+msgid ""
+":ref:`PackedColorArray <class_PackedColorArray>`: An array of :ref:`Color "
+"<class_Color>` values."
+msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Pole objektů :ref:`Color "
+"<class_Color>`."
+
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Dictionary (Slovník) <class_Dictionary>`"
+
+msgid "Associative container which contains values referenced by unique keys."
+msgstr ""
+"Asociativní kontejner, který obsahuje hodnoty odkazované pomocí jedinečných "
+"klíčů."
+
+#, fuzzy
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier), and must be string literals."
+msgstr ""
+"Podporována je také syntaxe tabulek ve stylu jazyka Lua. Lua-style používá "
+"``=`` místo ``:`` a nepoužívá uvozovky pro označení řetězcových klíčů (což "
+"je o něco méně náročné na zápis). Klíče zapsané v tomto tvaru však nemohou "
+"začínat číslicí (jako jakýkoli identifikátor GDScript)."
+
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr ""
+"Chcete-li přidat klíč do existujícího slovníku, přistupujte k němu jako "
+"kdyby již existoval a přiřaďte do něho hodnotu ::"
+
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"Syntaxi závorek lze použít pro přístup k vlastnostem libovolného :ref:"
+"`class_Object`, nejen ke slovníkům. Mějte na paměti, že použití neexistující "
+"vlastnosti jako indexu způsobí chybu skriptu. Chcete-li se tomu vyhnout, "
+"použijte místo toho metody :ref:`Object.get() <class_Object_method_get>` a :"
+"ref:`Object.set() <class_Object_method_set>`, které v takovém případě vrátí "
+"null."
+
+#, fuzzy
+msgid ":ref:`Signal <class_Signal>`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ""
+"A signal is a message that can be emitted by an object to those who want to "
+"listen to it. The Signal type can be used for passing the emitter around."
+msgstr ""
+
+msgid ""
+"Signals are better used by getting them from actual objects, e.g. ``$Button."
+"button_up``."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Callable <class_Callable>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"Contains an object and a function, which is useful for passing functions as "
+"values (e.g. when connecting to signals)."
+msgstr ""
+
+msgid ""
+"Getting a method as a member returns a callable. ``var x = $Sprite2D."
+"rotate`` will set the value of ``x`` to a callable with ``$Sprite2D`` as the "
+"object and ``rotate`` as the method."
+msgstr ""
+
+msgid "You can call it using the ``call`` method: ``x.call(PI)``."
+msgstr ""
+
+msgid "Data"
+msgstr "Data"
+
+msgid "Variables"
+msgstr "Proměnné"
+
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"Proměnné mohou existovat jako členské proměnné třídy nebo jako lokální "
+"proměnné funkcí. Vytvářejí se pomocí klíčového slova ``var`` a při "
+"inicializaci jim může být volitelně přiřazena hodnota."
+
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"Proměnné mohou mít volitelně specifikaci typu. Pokud je typ specifikován, "
+"bude proměnná nucena mít vždy stejný typ a pokus o přiřazení nekompatibilní "
+"hodnoty vyvolá chybu."
+
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr ""
+"Typy se v deklaraci proměnné uvádějí pomocí symbolu ``:`` (dvojtečka) za "
+"názvem proměnné, za kterým následuje typ."
+
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr ""
+"Pokud je proměnná inicializována v rámci deklarace, lze typ odvodit, takže "
+"je možné název typu vynechat::"
+
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr ""
+"Odvození typu je možné pouze v případě, že přiřazovaná hodnota má definovaný "
+"typ, jinak dojde k chybě."
+
+msgid "Valid types are:"
+msgstr "Platné typy jsou:"
+
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "Vestavěné typy (Array, Vektor2, int, String, atd.)."
+
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "Třídy Engine (Node, Resource, Reference atd.)."
+
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"Názvy konstant, pokud obsahují zdroj skriptu (``MyScript``, pokud jste "
+"deklarovali ``const MyScript = preload(\"res://my_script.gd\")``)."
+
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"Ostatní třídy ve stejném skriptu, s respektováním rozsahu platnosti "
+"(``InnerClass.NestedClass``, pokud jste deklarovali ``class NestedClass`` "
+"uvnitř ``class InnerClass`` ve shodném rozsahu platnosti)."
+
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "Třídy skriptů deklarované pomocí klíčového slova ``class_name``."
+
+msgid "Autoloads registered as singletons."
+msgstr ""
+
+msgid ""
+"While ``Variant`` is a valid type specification, it's not an actual type. It "
+"only means there's no set type and is equivalent to not having a static type "
+"at all. Therefore, inference is not allowed by default for ``Variant``, "
+"since it's likely a mistake."
+msgstr ""
+
+msgid ""
+"You can turn off this check, or make it only a warning, by changing it in "
+"the project settings. See :ref:`doc_gdscript_warning_system` for details."
+msgstr ""
+
+#, fuzzy
+msgid "Initialization order"
+msgstr "Příklad inicializace:"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "Vyplňte formulář s následujícím nastavením:"
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+msgid "Will print::"
+msgstr ""
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
+#, fuzzy
+msgid "Static variables"
+msgstr "Úpravy proměnných"
+
+msgid "A class member variable can be declared static::"
+msgstr ""
+
+msgid ""
+"Static variables belong to the class, not instances. This means that static "
+"variables share values between multiple instances, unlike regular member "
+"variables."
+msgstr ""
+
+msgid ""
+"From inside a class, you can access static variables from any function, both "
+"static and non-static. From outside the class, you can access static "
+"variables using the class or an instance (the second is not recommended as "
+"it is less readable)."
+msgstr ""
+
+msgid ""
+"The ``@export`` and ``@onready`` annotations cannot be applied to a static "
+"variable. Local variables cannot be static."
+msgstr ""
+
+msgid ""
+"The following example defines a ``Person`` class with a static variable "
+"named ``max_id``. We increment the ``max_id`` in the ``_init()`` function. "
+"This makes it easy to keep track of the number of ``Person`` instances in "
+"our game."
+msgstr ""
+
+msgid ""
+"In this code, we create two instances of our ``Person`` class and check that "
+"the class and every instance have the same ``max_id`` value, because the "
+"variable is static and accessible to every instance."
+msgstr ""
+
+msgid "Static variables can have type hints, setters and getters::"
+msgstr ""
+
+msgid "A base class static variable can also be accessed via a child class::"
+msgstr ""
+
+msgid "``@static_unload`` annotation"
+msgstr ""
+
+msgid ""
+"Since GDScript classes are resources, having static variables in a script "
+"prevents it from being unloaded even if there are no more instances of that "
+"class and no other references left. This can be important if static "
+"variables store large amounts of data or hold references to other project "
+"resources, such as scenes. You should clean up this data manually, or use "
+"the :ref:`@static_unload <class_@GDScript_annotation_@static_unload>` "
+"annotation if static variables don't store important data and can be reset."
+msgstr ""
+
+msgid ""
+"Currently, due to a bug, scripts are never freed, even if ``@static_unload`` "
+"annotation is used."
+msgstr ""
+
+msgid ""
+"Note that ``@static_unload`` applies to the entire script (including inner "
+"classes) and must be placed at the top of the script, before ``class_name`` "
+"and ``extends``::"
+msgstr ""
+
+msgid "See also `Static functions`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Casting"
+msgstr "Přetypování"
+
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"Hodnoty přiřazené typovaným proměnným musí mít kompatibilní typ. Pokud je "
+"potřeba vynutit, aby hodnota byla určitého typu, zejména pro typy objektů, "
+"můžete použít operátor přetypování ``as``."
+
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"Přetypování mezi objektovými typy vrací stejný objekt, pokud je hodnota "
+"stejného typu jako je typ na který se přetypovává nebo je jeho potomkem."
+
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr ""
+"Pokud hodnota není potomkem (podtypem), výsledkem operace přetypování je "
+"hodnota ``null``."
+
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr ""
+"V případě vestavěných typů budou tyto typy, pokud to bude možné, násilně "
+"převedeny, jinak engine vyvolá chybu."
+
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr ""
+"Přetypování je také užitečné pro lepší typovou bezpečnost proměnných při "
+"interakci se stromem scény:"
+
+msgid "Constants"
+msgstr "Konstanty"
+
+msgid ""
+"Constants are values you cannot change when the game is running. Their value "
+"must be known at compile-time. Using the ``const`` keyword allows you to "
+"give a constant value a name. Trying to assign a value to a constant after "
+"it's declared will give you an error."
+msgstr ""
+"Konstanty jsou hodnoty, které nelze za běhu hry měnit. Jejich hodnota musí "
+"být známa při kompilaci. Použití klíčového slova ``const`` umožňuje dát "
+"konstantní hodnotě jméno. Při pokusu přiřadit hodnotu konstantě po její "
+"deklaraci dojde k chybě."
+
+msgid "We recommend using constants whenever a value is not meant to change."
+msgstr "Doporučujeme používat konstanty vždy, když se hodnota nemá měnit."
+
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr ""
+"Ačkoli typ konstanty je převedený z přiřazené hodnoty, je i možné daný typ "
+"specifikovat::"
+
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "Při priřazení hodnoty nekompatibilního typu bude výsledkem error."
+
+msgid ""
+"You can also create constants inside a function, which is useful to name "
+"local magic values."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since objects, arrays and dictionaries are passed by reference, constants "
+"are \"flat\". This means that if you declare a constant array or dictionary, "
+"it can still be modified afterwards. They can't be reassigned with another "
+"value though."
+msgstr ""
+"Protože pole a slovníky jsou předávány odkazem (referencí), kostanty jsou "
+"tzv \"mělké\". To znamená, že i když deklarujete pole nebo slovník jako "
+"konstantu , jejjí hodnoty můžou být následně měněny. Refrence na takový "
+"konstantní slovník či pole však změněna už být nemůže a to ani přiřazením."
+
+msgid "Enums"
+msgstr "Enums (Výčty)"
+
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr ""
+"Enumy jsou v podstatě zkratkou pro konstanty a jsou docela užitečné, pokud "
+"chcete nějaké konstantě přiřadit po sobě jdoucí celá čísla."
+
+#, fuzzy
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant :"
+"ref:`Dictionary <class_Dictionary>` of that name. This means all constant "
+"methods of a dictionary can also be used with a named enum."
+msgstr ""
+"Pokud výčtu dáte jméno, vloží všechny klíče do konstantního slovníku tohoto "
+"jména."
+
+#, fuzzy
+msgid ""
+"Keys in a named enum are not registered as global constants. They should be "
+"accessed prefixed by the enum's name (``Name.KEY``)."
+msgstr ""
+"V Godotu 3.1 a novějších verzích nejsou klíče pojmenovaného výčtu "
+"registrovány jako globální konstanty. Mělo by se k nim přistupovat s "
+"předponou názvu enumu (``Name.KEY``); viz příklad níže."
+
+msgid "Functions"
+msgstr "Funkce"
+
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"Funkce vždy patří do `třídy <Classes_>`_. Priorita rozsahu platnosti pro "
+"vyhledávání proměnných je: lokální → člen třídy → globální. Proměnná "
+"``self`` je vždy k dispozici a je poskytována jako možnost přístupu k členům "
+"třídy, ale není vždy vyžadována (a na rozdíl od Pythonu *není* posílána jako "
+"první argument funkce)."
+
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr ""
+"Funkce se může ``vrátit hodnotu`` v libovolném okamžiku. Výchozí návratová "
+"hodnota je ``null``."
+
+msgid ""
+"If a function contains only one line of code, it can be written on one line::"
+msgstr ""
+
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr ""
+"Funkce mohou mít také specifikaci typu pro argumenty a pro návratovou "
+"hodnotu. Typy pro argumenty lze přidat podobně jako u proměnných::"
+
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr "Pokud má argument funkce výchozí hodnotu, je možné typ odvodit::"
+
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr ""
+"Návratový typ funkce lze zadat za seznamem argumentů pomocí symbolu šipky "
+"(``->```)::"
+
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"Funkce s návratovým typem **musí** vracet správnou hodnotu. Nastavení typu "
+"``void`` znamená, že funkce nic nevrací. Void funkce mohou vracet dříve "
+"pomocí klíčového slova ``return``, ale nemohou vracet žádnou hodnotu."
+
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"Ne-void funkce musí **vždy** vracet hodnotu, takže pokud váš kód obsahuje "
+"příkazy větvení (například konstrukce ``if``/``else``), všechny možné cesty "
+"musí mít návratovou hodnotu. Např. pokud máte ``return`` uvnitř bloku "
+"``if``, ale ne za ním, editor zobrazí chybovou hlášku, protože pokud se blok "
+"neprovede, funkce nebude mít platnou hodnotu, kterou by mohla vrátit."
+
+msgid "Referencing functions"
+msgstr "Odkazování na funkce"
+
+msgid ""
+"Functions are first-class items in terms of the :ref:`Callable "
+"<class_Callable>` object. Referencing a function by name without calling it "
+"will automatically generate the proper callable. This can be used to pass "
+"functions as arguments."
+msgstr ""
+
+msgid ""
+"Callables **must** be called with the ``call`` method. You cannot use the "
+"``()`` operator directly. This behavior is implemented to avoid performance "
+"issues on direct function calls."
+msgstr ""
+
+#, fuzzy
+msgid "Lambda functions"
+msgstr "Statické funkce"
+
+msgid ""
+"Lambda functions allow you to declare functions that do not belong to a "
+"class. Instead a :ref:`Callable <class_Callable>` object is created and "
+"assigned to a variable directly. This can be useful to create Callables to "
+"pass around without polluting the class scope."
+msgstr ""
+
+msgid "Lambda functions can be named for debugging purposes::"
+msgstr ""
+
+msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
+
+msgid ""
+"Lambda functions capture the local environment. Local variables are passed "
+"by value, so they won't be updated in the lambda if changed in the local "
+"function::"
+msgstr ""
+
+msgid ""
+"The values of the outer scope behave like constants. Therefore, if you "
+"declare an array or dictionary, it can still be modified afterwards."
+msgstr ""
+
+msgid "Static functions"
+msgstr "Statické funkce"
+
+#, fuzzy
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. A static function has "
+"access to static variables. Also static functions are useful to make "
+"libraries of helper functions::"
+msgstr ""
+"Funkce může být deklarována jako statická. Pokud je funkce statická, nemá "
+"přístup k členským proměnným instance ani k ``self``. To je užitečné hlavně "
+"pro vytváření knihoven pomocných funkcí::"
+
+msgid "Lambdas cannot be declared static."
+msgstr ""
+
+msgid "See also `Static variables`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Statements and control flow"
+msgstr "Příkazy pro řízení běhu programu"
+
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"Příkazy jsou standardní a může to být přiřazení, volání funkce, struktury "
+"toku řízení atd. (viz níže). ``;`` jako oddělovač příkazů je zcela nepovinný."
+
+#, fuzzy
+msgid "Expressions"
+msgstr "Komprese"
+
+msgid ""
+"Expressions are sequences of operators and their operands in orderly "
+"fashion. An expression by itself can be a statement too, though only calls "
+"are reasonable to use as statements since other expressions don't have side "
+"effects."
+msgstr ""
+
+msgid ""
+"Expressions return values that can be assigned to valid targets. Operands to "
+"some operator can be another expression. An assignment is not an expression "
+"and thus does not return any value."
+msgstr ""
+
+#, fuzzy
+msgid "Here are some examples of expressions::"
+msgstr "Existují dva hlavní způsoby, jak zmírnit páskování:"
+
+msgid ""
+"Identifiers, attributes, and subscripts are valid assignment targets. Other "
+"expressions cannot be on the left side of an assignment."
+msgstr ""
+
+msgid "if/else/elif"
+msgstr "if/else/elif"
+
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"Jednoduché podmínky se vytvářejí pomocí syntaxe ``if``/``else``/`elif``. "
+"Závorky kolem podmínek jsou povoleny, ale nejsou povinné. Vzhledem k povaze "
+"odsazení na základě tabulátoru lze pro zachování úrovně odsazení použít "
+"místo ``else``/``if`` ``elif``."
+
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "Krátké příkazy lze psát na stejném řádku jako podmínku::"
+
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"Někdy můžete chtít přiřadit jinou počáteční hodnotu na základě logického "
+"výrazu. V takovém případě se hodí tzv. ternární if výrazy::"
+
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+
+msgid ""
+"You may also wish to check if a value is contained within something. You can "
+"use an ``if`` statement combined with the ``in`` operator to accomplish "
+"this::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue`` (which skips to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
+msgstr ""
+"Jednoduché cykly se vytvářejí pomocí syntaxe ``while``. Cykly lze přerušit "
+"pomocí ``break`` nebo v nich pokračovat pomocí ``continue``:"
+
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"Pro cykly s pevným počtem opakování, například průchod polem nebo tabulkou, "
+"se používá smyčka ``for``. Při průchodu polem je aktuální prvek pole uložen "
+"v proměnné cyklu. Při průchodu slovníkem je v proměnné cyklu uložen aktuální "
+"*klíč*."
+
+msgid ""
+"If you want to assign values on an array as it is being iterated through, it "
+"is best to use ``for i in array.size()``."
+msgstr ""
+
+msgid ""
+"The loop variable is local to the for-loop and assigning to it will not "
+"change the value on the array. Objects passed by reference (such as nodes) "
+"can still be manipulated by calling methods on the loop variable."
+msgstr ""
+
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"Příkaz ``match`` slouží k větvení provádění programu. Je to ekvivalent "
+"příkazu ``switch``, který se vyskytuje v mnoha jiných jazycích, ale nabízí "
+"některé další vlastnosti."
+
+msgid ""
+"``match`` is more type strict than the ``==`` operator. For example ``1`` "
+"will **not** match ``1.0``. The only exception is ``String`` vs "
+"``StringName`` matching: for example, the String ``\"hello\"`` is considered "
+"equal to the StringName ``&\"hello\"``."
+msgstr ""
+
+msgid "Basic syntax"
+msgstr "Základní syntaxe"
+
+msgid "Crash-course for people who are familiar with switch statements"
+msgstr "Crash Klkurz pro lidi, kteří jsou obeznámen s příkazy switch"
+
+msgid "Replace ``switch`` with ``match``."
+msgstr "Nahraďte ``switch`` příkazem ``match``."
+
+msgid "Remove ``case``."
+msgstr "Odstraňte ``case``."
+
+#, fuzzy
+msgid "Remove any ``break``\\ s."
+msgstr "Odstraňte ``case``."
+
+msgid "Change ``default`` to a single underscore."
+msgstr "Změňte ``default`` na jedno podtržítko."
+
+msgid "Control flow"
+msgstr "Kontrola toku"
+
+#, fuzzy
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement."
+msgstr ""
+"Vzory jsou vyhodnocovány shora dolů. Pokud vzor vyhovuje, provede se jemu "
+"odpovídající blok. Poté se pokračuje ve vykonávání pod příkazem ``match``. "
+"Pomocí příkazu ``continue`` můžete zastavit provádění v aktuálním bloku a "
+"kontrolovat další shodu ve vzorech pod aktuálním blokem."
+
+msgid ""
+"The special ``continue`` behavior in ``match`` supported in 3.x was removed "
+"in Godot 4.0."
+msgstr ""
+
+msgid "The following pattern types are available:"
+msgstr ""
+
+#, fuzzy
+msgid "Literal pattern"
+msgstr "Vzor pole"
+
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
+
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Komprese"
+
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
+
+msgid "Wildcard pattern"
+msgstr "Vzor zástupného znaku"
+
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr "Tento vzor vyhovuje všemu. Zapisuje se jedním podtržítkem."
+
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr ""
+"Lze jej použít jako ekvivalent ``default`` v příkaze ``switch`` z jiných "
+"jazyků::"
+
+msgid "Binding pattern"
+msgstr "Spojovací vzor"
+
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"Spojovací vzor zavádí novou proměnnou. Podobně jako vzor zástupného znaku "
+"vyhovuje všemu a navíc odpovídající hodnotu pojmenovává. Je to obzvláště "
+"důležité pro vzory pole a slovníku::"
+
+msgid "Array pattern"
+msgstr "Vzor pole"
+
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr ""
+"Porovnává pole. Každý jednotlivý prvek pole je sám o sobě vzorem takže je "
+"možné vzory vnořovat."
+
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr ""
+"Nejprve se testuje délka pole, která musí být stejná jako velikost vzoru, "
+"jinak vzor nevyhovuje."
+
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr ""
+"**Pole s otevřeným koncem**: Pole může být delší než vzor, když jako "
+"poslední dílčí vzor použijeme ``...``."
+
+msgid "Every subpattern has to be comma-separated."
+msgstr "Každý dílčí vzor musí být oddělen čárkou."
+
+msgid "Dictionary pattern"
+msgstr "Vzor slovníku"
+
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr "Funguje stejně jako vzor pole. Každý klíč musí být konstantní vzor."
+
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr ""
+"Nejprve se testuje velikost slovníku, která musí být stejná jako velikost "
+"vzoru, jinak vzor testování nevyhovuje."
+
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr ""
+"**Slovník s otevřeným koncem**: Slovník může být větší než vzor, když jako "
+"poslední dílčí vzor použijeme ``...``."
+
+msgid "Every subpattern has to be comma separated."
+msgstr "Každý dílčí vzor musí být oddělen čárkou."
+
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "Pokud hodnotu nezadáte, kontroluje se pouze existence klíče."
+
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "Vzor hodnoty je od vzoru klíče oddělen znakem ``:``."
+
+msgid "Multiple patterns"
+msgstr "Násobné vzory"
+
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr ""
+"Můžete zadat i více vzorů oddělených čárkou. Tyto vzory nesmějí obsahovat "
+"žádné spojovací vzory."
+
+msgid "Pattern guards"
+msgstr ""
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "Pokud hodnotu nezadáte, kontroluje se pouze existence klíče."
+
+msgid "Classes"
+msgstr "Třídy"
+
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"Ve výchozím nastavení jsou všechny soubory skriptů nepojmenovanými třídami. "
+"V takovém případě se na ně můžete odkazovat pouze pomocí cesty k souboru, a "
+"to buď pomocí relativní, nebo absolutní cesty. Pokud například pojmenujete "
+"soubor skriptu ``character.gd``::"
+
+msgid "Registering named classes"
+msgstr "Registrace pojmenovaných tříd"
+
+#, fuzzy
+msgid ""
+"You can give your class a name to register it as a new type in Godot's "
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"Místo toho můžete třídu pojmenovat a zaregistrovat ji jako nový typ v "
+"editoru Godot. K tomu slouží klíčové slovo ``class_name``. Můžete přidat "
+"volitelnou čárkou oddělenou cestou k obrázku, abyste ho mohli použít jako "
+"ikonu. Vaše třída se pak v editoru objeví s touto novou ikonou::"
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
+
+msgid "Here's a class file example:"
+msgstr "Zde je příklad souboru třídy:"
+
+msgid ""
+"If you want to use ``extends`` too, you can keep both on the same line::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot initializes non-static variables every time you create an instance, "
+"and this includes arrays and dictionaries. This is in the spirit of thread "
+"safety, since scripts can be initialized in separate threads without the "
+"user knowing."
+msgstr ""
+"Syntaxe třídy Godot je kompaktní: může obsahovat pouze členské proměnné nebo "
+"funkce. Můžete používat statické funkce, ale ne statické členské proměnné. "
+"Stejně tak engine inicializuje proměnné při každém vytvoření instance, a to "
+"včetně polí a slovníků. To je v duchu bezpečnosti vláken, protože skripty "
+"mohou být inicializovány v samostatných vláknech, aniž by o tom uživatel "
+"věděl."
+
+msgid "Inheritance"
+msgstr "Dědičnost"
+
+msgid "A class (stored as a file) can inherit from:"
+msgstr "Třída (uložená jako soubor) může dědit z:"
+
+msgid "A global class."
+msgstr "Globální třídy."
+
+msgid "Another class file."
+msgstr "Dalšího souboru třídy."
+
+msgid "An inner class inside another class file."
+msgstr "Vnitřní třídy uvnitř jiného souboru třídy."
+
+msgid "Multiple inheritance is not allowed."
+msgstr "Vícenásobné dědění není povoleno."
+
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "Dědičnost používá klíčové slovo ``extends``::"
+
+msgid ""
+"If inheritance is not explicitly defined, the class will default to "
+"inheriting :ref:`class_RefCounted`."
+msgstr ""
+
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr ""
+"Chcete-li zjistit, zda daná instance dědí z dané třídy, můžete použít "
+"klíčové slovo ``is``::"
+
+#, fuzzy
+msgid ""
+"To call a function in a *super class* (i.e. one ``extend``-ed in your "
+"current class), use the ``super`` keyword::"
+msgstr ""
+"Chcete-li zavolat funkci v *rodičovské třídě* (tj. ve třídě, kterou "
+"``extend``-ed (rozšířila) aktuální třída), přidejte k názvu funkce ``.``::"
+
+#, fuzzy
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their super classes. If you still want to "
+"call them, you can use ``super``::"
+msgstr ""
+"To je užitečné zejména proto, že funkce v rozšiřujících třídách nahrazují "
+"funkce se stejným názvem ve svých rodičovských třídách. Pokud je přesto "
+"chcete volat, můžete jim dát předponu ``.`` (podobně jako klíčové slovo "
+"``super`` v jiných jazycích)::"
+
+msgid ""
+"If you need to call a different function from the super class, you can "
+"specify the function name with the attribute operator::"
+msgstr ""
+
+msgid ""
+"One of the common misconceptions is trying to override *non-virtual* engine "
+"methods such as ``get_class()``, ``queue_free()``, etc. This is not "
+"supported for technical reasons."
+msgstr ""
+
+msgid ""
+"In Godot 3, you can *shadow* engine methods in GDScript, and it will work if "
+"you call this method in GDScript. However, the engine will **not** execute "
+"your code if the method is called inside the engine on some event."
+msgstr ""
+
+msgid ""
+"In Godot 4, even shadowing may not always work, as GDScript optimizes native "
+"method calls. Therefore, we added the ``NATIVE_METHOD_OVERRIDE`` warning, "
+"which is treated as an error by default. We strongly advise against "
+"disabling or ignoring the warning."
+msgstr ""
+
+msgid ""
+"Note that this does not apply to virtual methods such as ``_ready()``, "
+"``_process()`` and others (marked with the ``virtual`` qualifier in the "
+"documentation and the names start with an underscore). These methods are "
+"specifically for customizing engine behavior and can be overridden in "
+"GDScript. Signals and notifications can also be useful for these purposes."
+msgstr ""
+
+msgid "Class constructor"
+msgstr "Konstruktor třídy"
+
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. If "
+"you want to call the base class constructor, you can also use the ``super`` "
+"syntax. Note that every class has an implicit constructor that it's always "
+"called (defining the default values of class variables). ``super`` is used "
+"to call the explicit constructor::"
+msgstr ""
+
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr "To se lépe vysvětluje na příkladech. Vezměme si tento scénář:"
+
+msgid "There are a few things to keep in mind here:"
+msgstr "Je třeba mít na paměti několik věcí:"
+
+#, fuzzy
+msgid ""
+"If the inherited class (``state.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``state.gd``."
+msgstr ""
+"Pokud zděděná (rodičovská) třída (``State.gd``) definuje konstruktor "
+"``_init``, který přijímá argumenty (v tomto případě ``e``), pak dědící třída "
+"tj. potomek (``Idle.gd``) *musí* definovat také ``_init`` a předat příslušné "
+"parametry rodičovskému konstruktoru ``_init`` třídy ``State.gd``."
+
+#, fuzzy
+msgid ""
+"``idle.gd`` can have a different number of arguments than the base class "
+"``state.gd``."
+msgstr ""
+"``Idle.gd`` může mít jiný počet argumentů než rodičovská třída ``State.gd``."
+
+#, fuzzy
+msgid ""
+"In the example above, ``e`` passed to the ``state.gd`` constructor is the "
+"same ``e`` passed in to ``idle.gd``."
+msgstr ""
+"Ve výše uvedeném příkladu je ``e`` předané konstruktoru ``State.gd`` stejné "
+"``e`` předané konstruktoru ``Idle.gd``."
+
+#, fuzzy
+msgid ""
+"If ``idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``state.gd`` base class, even if it does nothing. "
+"This brings us to the fact that you can pass expressions to the base "
+"constructor as well, not just variables, e.g.::"
+msgstr ""
+"Pokud nemá konstruktor ``_init`` třídy ``Idle.gd`` žádné argumenty, musí "
+"stále předávat určitou hodnotu nadřazené třídě ``State.gd``, a to i když by "
+"nedělal nic jiného. Tím se dostáváme k faktu, že základnímu konstruktoru lze "
+"předávat i literály, nejen proměnné. např.::"
+
+#, fuzzy
+msgid "Static constructor"
+msgstr "Konstruktor třídy"
+
+msgid ""
+"A static constructor is a static function ``_static_init`` that is called "
+"automatically when the class is loaded, after the static variables have been "
+"initialized::"
+msgstr ""
+
+msgid ""
+"A static constructor cannot take arguments and must not return any value."
+msgstr ""
+
+msgid "Inner classes"
+msgstr "Vnitřní třídy"
+
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"Soubor třídy může obsahovat vnitřní třídy. Vnitřní třídy se definují pomocí "
+"klíčového slova ``class``. Jejich instance se vytváříí pomocí ``Jménotřídy."
+"new()``."
+
+msgid "Classes as resources"
+msgstr "Třídy jako zdroje"
+
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"Třídy uložené jako soubory se považují za :ref:`zdroje<class_GDScript>`. "
+"Přistupovat k nim lze po jejich načtení z disku. K tomu slouží funkce "
+"``load`` nebo ``preload`` (viz níže). Vytvoření instance třídy načteného "
+"zdroje se provádí voláním funkce ``new`` na objektu této třídy::"
+
+msgid "Exports"
+msgstr "Exporty"
+
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr "Dokumentace o exportech byla přesunuta do :ref:`doc_gdscript_exports`."
+
+msgid "Properties (setters and getters)"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Sometimes, you want a class' member variable to do more than just hold data "
+"and actually perform some validation or computation whenever its value "
+"changes. It may also be desired to encapsulate its access in some way."
+msgstr ""
+"Často je užitečné vědět, že se členská proměnná třídy z nějakého důvodu "
+"změní. Může být také žádoucí nějakým způsobem zapouzdřit (rozuměj omezit) "
+"přístup k ní."
+
+msgid ""
+"For this, GDScript provides a special syntax to define properties using the "
+"``set`` and ``get`` keywords after a variable declaration. Then you can "
+"define a code block that will be executed when the variable is accessed or "
+"assigned."
+msgstr ""
+
+msgid "Example::"
+msgstr "Příklad::"
+
+msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "Externí soubory"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "Vyplňte formulář s následujícím nastavením:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
+"Using the variable's name to set it inside its own setter or to get it "
+"inside its own getter will directly access the underlying member, so it "
+"won't generate infinite recursion and saves you from explicitly declaring "
+"another variable::"
+msgstr ""
+
+msgid "This also applies to the alternative syntax::"
+msgstr ""
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
+
+msgid "Tool mode"
+msgstr "Tool mode"
+
+#, fuzzy
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``@tool`` annotation exists and must be placed at "
+"the top of the file::"
+msgstr ""
+"Ve výchozím nastavení se skripty v editoru nespouštějí a lze měnit pouze "
+"exportované vlastnosti. V některých případech je všaj žádoucí, aby se uvnitř "
+"editoru spustily (pokud neiniciují herní kód nebo se tomu ručně vyhýbají). "
+"Pro tyto účely existuje klíčové slovo ``tool``, které musí být umístěno na "
+"začátek souboru::"
+
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr "Více informací naleznete v :ref:`doc_running_code_in_the_editor`."
+
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"Buďte opatrní při uvolňování uzlů pomocí ``queue_free()`` nebo ``free()`` ve "
+"skriptech nástrojů (zejména u vlastníka skriptu). Protože skripty nástrojů "
+"spouštějí svůj kód v editoru, může jejich nesprávné použití vést k pádu "
+"editoru."
+
+msgid "Memory management"
+msgstr "Správa paměti"
+
+msgid ""
+"Godot implements reference counting to free certain instances that are no "
+"longer used, instead of a garbage collector, or requiring purely manual "
+"management. Any instance of the :ref:`class_RefCounted` class (or any class "
+"that inherits it, such as :ref:`class_Resource`) will be freed automatically "
+"when no longer in use. For an instance of any class that is not a :ref:"
+"`class_RefCounted` (such as :ref:`class_Node` or the base :ref:"
+"`class_Object` type), it will remain in memory until it is deleted with "
+"``free()`` (or ``queue_free()`` for Nodes)."
+msgstr ""
+
+msgid ""
+"If a :ref:`class_Node` is deleted via ``free()`` or ``queue_free()``, all of "
+"its children will also recursively be deleted."
+msgstr ""
+
+msgid ""
+"To avoid reference cycles that can't be freed, a :ref:`class_WeakRef` "
+"function is provided for creating weak references, which allow access to the "
+"object without preventing a :ref:`class_RefCounted` from freeing. Here is an "
+"example:"
+msgstr ""
+
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"Pokud se nepoužívají reference, lze ke kontrole, zda byl objekt uvolněn, "
+"použít příkaz ``is_instance_valid(instance)``."
+
+msgid "Signals"
+msgstr "Signály"
+
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"Signály představují nástroj pro vyslání zprávy objektem tak, aby na ní mohly "
+"ostatní objekty reagovat. Chcete-li pro třídu vytvořit vlastní signály, "
+"použijte klíčové slovo ``signal``."
+
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"Signály představují mechanismus zpětného volání tzv. `Callback <https://en."
+"wikipedia.org/wiki/Callback_(computer_programming)>`_. Plní také roli "
+"Pozorovatelů (Observers), což je běžný návrhový vzor. Další informace "
+"naleznete v tutoriálu `Observer <https://gameprogrammingpatterns.com/"
+"observer.html>`_ v elektronické knize Návrhové vzory ve hrách ."
+
+#, fuzzy
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody3D`."
+msgstr ""
+"Tyto signály můžete spojit s metodami stejným způsobem, jakým připojujete "
+"vestavěné signály uzlů jako :ref:`class_Button` nebo :ref:`class_RigidBody`."
+
+#, fuzzy
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_character_health_depleted`` is called::"
+msgstr ""
+"V příkladu níže připojíme signál ``health_depleted`` uzlu ``Character`` k "
+"uzlu ``Game``. Když uzel ``Character`` vyšle signál, zavolá se funkce "
+"``_on_Character_health_depleted`` herního uzlu::"
+
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "Spolu se signálem můžete vyslat libovolný počet argumentů."
+
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"Zde je příklad, kdy je to užitečné. Řekněme, že chceme mít na obrazovce "
+"ukazatel života, který bude reagovat na změny zdraví pomocí animace, ale "
+"zároveň v našem stromu scén chceme udržet uzly uživatelského rozhraní a "
+"hráče oddělené."
+
+#, fuzzy
+msgid ""
+"In our ``character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Signal.emit() <class_Signal_method_emit>`, and from a "
+"``Game`` node higher up our scene tree, we connect it to the ``Lifebar`` "
+"using the :ref:`Signal.connect() <class_Signal_method_connect>` method::"
+msgstr ""
+"V našem skriptu ``Character.gd`` definujeme signál ``health_changed`` a "
+"vyšleme jej pomocí :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` a z uzlu ``Game``, který je v našem "
+"stromu scén výše, jej připojíme k ``Lifebar`` pomocí metody :ref:`Object."
+"connect() <class_Object_method_connect>`::"
+
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"V uzlu ``Game`` získáme uzly ``Character`` a ``Lifebar``, pak připojíme "
+"``Character``, který signál vysílá, k přijemci, v tomto případě k uzlu "
+"``Lifebar``."
+
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"To umožňuje uzlu \"Lifebar\" reagovat na změny stavu zdraví, aniž by byl "
+"součástí uzlu \"Character\"."
+
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr "Volitelné názvy argumentů můžete psát do závorek za definici signálu::"
+
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"Argumenty signálu se zobrazují v doku Uzel editoru a Godot je pro vás může "
+"použít k vytvoření funkcí zpětného volání. Při vlastním vysílání signálů "
+"však stále můžete vyslat signál s libovolným počtem argumentů. Je tedy na "
+"vás, abyste vyslali v dané situaci korektní hodnoty."
+
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"GDScript může navázat pole hodnot na spojení mezi signálem a metodou. Když "
+"je signál vyslán, metoda zpětného volání obdrží navázané hodnoty. Tyto "
+"svázané argumenty jsou pro každé spojení jedinečné a hodnoty zůstávají "
+"stejné."
+
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"Toto pole hodnot můžete použít k přidání dalších konstantních informací ke "
+"spojení, pokud vám samotný vysílaný signál neposkytuje ke všem potřebným "
+"údajům přístup ."
+
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"V návaznosti na výše uvedený příklad řekněme, že chceme zobrazit protokol "
+"poškození, které utrpěla každá postava na obrazovce, například ``Hráč1 "
+"utrpěl 22 poškození.``. Signál ``health_changed`` nám neposkytuje jméno "
+"poškozené postavy. Když tedy signál připojíme k herní konzoly ``BattleLog``, "
+"můžeme v argumentu připojeného pole přidat jméno postavy::"
+
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr ""
+"Náš uzel ``BattleLog`` tak obdrží v připojeném poli jako dodatečný argument "
+"jméno poškozeného prvku::"
+
+#, fuzzy
+msgid "Awaiting for signals or coroutines"
+msgstr "Vyhledání původního obsahu"
+
+msgid ""
+"The ``await`` keyword can be used to create `coroutines <https://en."
+"wikipedia.org/wiki/Coroutine>`_ which wait until a signal is emitted before "
+"continuing execution. Using the ``await`` keyword with a signal or a call to "
+"a function that is also a coroutine will immediately return the control to "
+"the caller. When the signal is emitted (or the called coroutine finishes), "
+"it will resume execution from the point on where it stopped."
+msgstr ""
+
+msgid ""
+"For example, to stop execution until the user presses a button, you can do "
+"something like this::"
+msgstr ""
+
+msgid ""
+"In this case, the ``wait_confirmation`` becomes a coroutine, which means "
+"that the caller also needs to await for it::"
+msgstr ""
+
+msgid ""
+"Note that requesting a coroutine's return value without ``await`` will "
+"trigger an error::"
+msgstr ""
+
+msgid ""
+"However, if you don't depend on the result, you can just call it "
+"asynchronously, which won't stop execution and won't make the current "
+"function a coroutine::"
+msgstr ""
+
+msgid ""
+"If you use await with an expression that isn't a signal nor a coroutine, the "
+"value will be returned immediately and the function won't give the control "
+"back to the caller::"
+msgstr ""
+
+msgid ""
+"This also means that returning a signal from a function that isn't a "
+"coroutine will make the caller await on that signal::"
+msgstr ""
+
+msgid ""
+"Unlike ``yield`` in previous Godot versions, you cannot obtain the function "
+"state object. This is done to ensure type safety. With this type safety in "
+"place, a function cannot say that it returns an ``int`` while it actually "
+"returns a function state object during runtime."
+msgstr ""
+
+msgid "Assert keyword"
+msgstr "Klíčové slovo Assert"
+
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"Klíčové slovo ``assert`` lze použít ke kontrole podmínek při ladění . Při "
+"ostatních sestaveních jsou tato tvrzení ignorována. To znamená, že výraz "
+"předaný jako argument nebude v projektu exportovaném v režimu release "
+"vyhodnocován. Z tohoto důvodu nesmí aserce **obsahovat** výrazy, které mají "
+"side effects. Jinak by se chování skriptu lišilo v závislosti na tom, zda je "
+"či není projekt sestavován pro ladění ."
+
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr ""
+"Při spuštění projektu z editoru se projekt pozastaví, pokud dojde k chybě "
+"příkazu ``assert``."
+
+msgid ""
+"You can optionally pass a custom error message to be shown if the assertion "
+"fails::"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

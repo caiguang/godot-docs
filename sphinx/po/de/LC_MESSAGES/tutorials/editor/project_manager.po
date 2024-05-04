@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using the Project Manager"
+msgstr "Verwenden des Projektmanagers"
+
+msgid ""
+"When you launch Godot, the first window you see is the Project Manager. It "
+"lets you create, remove, import, or play game projects."
+msgstr ""
+"Wenn Sie Godot starten, ist das erste Fenster, das Sie sehen, der "
+"Projektmanager. Hier können Sie Spieleprojekte erstellen, entfernen, "
+"importieren oder spielen."
+
+msgid ""
+"In the window's top-right corner, a drop-down menu allows you to change the "
+"editor's language."
+msgstr ""
+"In der oberen rechten Ecke des Fensters befindet sich ein Dropdown-Menü, mit "
+"dem Sie die Sprache des Editors ändern können."
+
+msgid "Creating and importing projects"
+msgstr "Erstellen und Importieren von Projekten"
+
+msgid "To create a new project:"
+msgstr "So erstellen Sie ein neues Projekt:"
+
+msgid "Click the **New** button on the top-left of the window."
+msgstr "Klicken Sie auf den Button **Neu** oben links im Fenster."
+
+msgid ""
+"Give the project a name, choose an empty folder on your computer to save the "
+"files, and select a rendering backend."
+msgstr ""
+"Geben Sie dem Projekt einen Namen, wählen Sie einen leeren Ordner auf Ihrem "
+"Computer zum Speichern der Dateien aus und wählen Sie ein Rendering-Backend."
+
+msgid ""
+"Click the **Create & Edit** button to create the project folder and open it "
+"in the editor."
+msgstr ""
+"Klicken Sie auf den Button **Erstellen & Bearbeiten**, um den Projektordner "
+"zu erstellen und ihn im Editor zu öffnen."
+
+msgid "Using the file browser"
+msgstr "Verwenden des Dateibrowsers"
+
+msgid ""
+"Click the **Browse** button to open Godot's file browser and pick a location "
+"or type the folder's path in the Project Path field."
+msgstr ""
+"Klicken Sie auf den **Durchsuchen**-Button, um den Dateibrowser von Godot zu "
+"öffnen, und wählen Sie einen Speicherort aus oder geben Sie den Pfad des "
+"Ordners in das Feld Projektpfad ein."
+
+msgid ""
+"When you see the green tick on the right, it means the engine detects an "
+"empty folder. You can also click the **Create Folder** button to create an "
+"empty folder based on your project's name."
+msgstr ""
+"Wenn Sie das grüne Häkchen auf der rechten Seite sehen, bedeutet dies, dass "
+"die Engine einen leeren Ordner erkannt hat. Sie können auch auf den Button "
+"**Ordner erstellen** klicken, um einen leeren Ordner basierend auf dem Namen "
+"Ihres Projekts zu erstellen."
+
+msgid "Opening and importing projects"
+msgstr "Öffnen und Importieren von Projekten"
+
+msgid ""
+"The next time you open the Project Manager, you'll see your new project in "
+"the list. Double click on it to open it in the editor."
+msgstr ""
+"Wenn Sie das nächste Mal den Projektmanager öffnen, sehen Sie Ihr neues "
+"Projekt in der Liste. Doppelklicken Sie darauf, um es im Editor zu öffnen."
+
+msgid ""
+"You can similarly import existing projects using the **Import** button. "
+"Locate the folder that contains the project or the **project.godot** file to "
+"import and edit it."
+msgstr ""
+"Sie können vorhandene Projekte auch über den **Importieren**-Button "
+"importieren. Suchen Sie den Ordner, der das Projekt oder die Datei **project."
+"godot** enthält um es zu importieren und zu bearbeiten."
+
+msgid "When the folder path is correct, you'll see a green checkmark."
+msgstr "Wenn der Ordnerpfad korrekt ist, werden Sie einen grünen Haken sehen."
+
+msgid "Downloading demos and templates"
+msgstr "Herunterladen von Demos und Templates"
+
+msgid ""
+"From the **Asset Library Projects** tab you can download open source project "
+"templates and demos from the :ref:`Asset Library <doc_what_is_assetlib>` to "
+"help you get started faster."
+msgstr ""
+"Auf dem **Asset-Bibliotheks-Projekte**-Tab können Sie Open-Source-"
+"Projektvorlagen und Demos aus der :ref:`Asset-"
+"Bibliothek<doc_what_is_assetlib>` herunterladen, um Ihnen den Einstieg zu "
+"erleichtern."
+
+msgid "To download a demo or template:"
+msgstr "Um eine Demo oder eine Vorlage herunterzuladen:"
+
+msgid "Click on its title."
+msgstr "Klicken Sie auf ihren Titel."
+
+msgid "On the page that opens, click the download button."
+msgstr "Auf der Seite die sich öffnet, klicken Sie auf den Download-Button."
+
+msgid ""
+"Once it finished downloading, click install and choose where you want to "
+"save the project."
+msgstr ""
+"Sobald der Download fertig ist, klicken Sie auf Installieren und wählen Sie "
+"einen Ort, an dem Sie das Projekt speichern möchten."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

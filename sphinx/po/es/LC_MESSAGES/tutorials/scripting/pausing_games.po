@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Pausing games and process mode"
+msgstr "Pausar juegos y el modo de procesamiento (process mode)"
+
+msgid "Introduction"
+msgstr "Introducción"
+
+msgid ""
+"In most games it is desirable to, at some point, interrupt the game to do "
+"something else, such as taking a break or changing options. Implementing a "
+"fine-grained control for what can be paused (and what cannot) is a lot of "
+"work, so a simple framework for pausing is provided in Godot."
+msgstr ""
+"En la mayoría de los juegos, es deseable interrumpir el juego en algún "
+"momento para hacer algo más, como tomar un descanso o cambiar opciones. "
+"Implementar un control detallado de qué puede pausarse (y qué no) es mucho "
+"trabajo, por lo que Godot proporciona un marco simple para pausar."
+
+msgid "How pausing works"
+msgstr "Como funciona la pausa"
+
+msgid ""
+"To pause the game the pause state must be set. This is done by assigning "
+"``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
+"property:"
+msgstr ""
+"Para pausar el juego, se debe establecer el estado de pausa. Esto se hace "
+"asignando ``true`` a la propiedad :ref:`SceneTree.paused "
+"<class_SceneTree_property_paused>`:"
+
+msgid ""
+"Doing this will cause two things. First, 2D and 3D physics will be stopped "
+"for all nodes. Second, the behavior of certain nodes will stop or start "
+"depending on their process mode."
+msgstr ""
+"Hacer esto provocará dos cosas. Primero, se detendrán las físicas 2D y 3D "
+"para todos los nodos. Segundo, el comportamiento de ciertos nodos se "
+"detendrá o se iniciará dependiendo de su modo de procesamiento (process "
+"mode)."
+
+msgid ""
+"The physics servers can be made active while the game is paused by using "
+"their ``set_active`` methods."
+msgstr ""
+"Los servidores de física pueden activarse mientras el juego está en pausa "
+"usando sus métodos ``set_active``."
+
+msgid "Process Modes"
+msgstr "Modos de procesamiento"
+
+#, fuzzy
+msgid ""
+"Each node in Godot has a \"Process Mode\" that defines when it processes. It "
+"can be found and changed under a node's :ref:`Node <class_Node>` properties "
+"in the inspector."
+msgstr ""
+"Cada nodo en Godot tiene un \"Modo de Pausa\" que define cuándo se procesa. "
+"Puede encontrarse y cambiarse en las propiedades del :ref:`Node "
+"<class_Node>`en el inspector."
+
+msgid "You can also alter the property with code:"
+msgstr "También puedes modificar la propiedad con código:"
+
+msgid "This is what each mode tells a node to do:"
+msgstr "Esto es lo que cada modo indica que un nodo debe hacer:"
+
+msgid ""
+"**Inherit**: Process depending on the state of the parent, grandparent, etc. "
+"The first parent that has a non-Inherit state."
+msgstr ""
+"**Heredado**: Se procesa en función del estado del padre, abuelo, etc. El "
+"primer padre que tenga un estado diferente a \"Heredado\" (non-Inherit)."
+
+msgid ""
+"**Pausable**: Process the node (and its children in Inherit mode) only when "
+"the game is not paused."
+msgstr ""
+
+msgid ""
+"**WhenPaused**: Process the node (and its children in Inherit mode) *only* "
+"when the game is paused."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"**Always**: Process the node (and its children in Inherit mode) no matter "
+"what. Paused or not, this node will process."
+msgstr ""
+"**Procesar**: Procesa el nodo sin importar qué (y también a los hijos en "
+"modo \"Heredado\"). En pausa o no, este nodo se procesará."
+
+msgid ""
+"**Disabled**: The node (and its children in Inherit mode) will not process "
+"at all."
+msgstr ""
+
+msgid ""
+"By default, all nodes have this property in the \"Inherit\" state. If the "
+"parent is set to \"Inherit\", then the grandparent will be checked and so "
+"on. If a state can't be found in any of the grandparents, the pause state in "
+"SceneTree is used. This means that, by default, when the game is paused "
+"every node will be paused. Several things happen when a node stops "
+"processing."
+msgstr ""
+"Por defecto, todos los nodos tienen esta propiedad en el estado "
+"\"Heredado\" (Inherit). Si el padre se establece en \"Heredado\", entonces "
+"se verificará el abuelo y así sucesivamente. Si no se encuentra un estado en "
+"ninguno de los abuelos, se usará el estado de pausa en SceneTree. Esto "
+"significa que, por defecto, cuando el juego está en pausa, todos los nodos "
+"estarán en pausa. Varias cosas suceden cuando un nodo deja de procesarse."
+
+#, fuzzy
+msgid ""
+"The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` "
+"functions will not be called. However signals still work and cause their "
+"connected function to run, even if that function's script is attached to a "
+"node that is not currently being processed."
+msgstr ""
+"Las funciones ``_process``, ``_physics_process``, ``_input`` y "
+"``_input_event`` no se llamarán. Sin embargo, las señales aún funcionarán y "
+"harán que sus funciones conectadas se ejecuten, incluso si el script de esa "
+"función está adjunto a un nodo que tiene su modo de pausa establecido en "
+"\"Detener\" (Stop)."
+
+msgid ""
+"Animation nodes will pause their current animation, audio nodes will pause "
+"their current audio stream, and particles will pause. These resume "
+"automatically when the game is no longer paused."
+msgstr ""
+"Los nodos de animación pausarán su animación actual, los nodos de audio "
+"pausarán su transmisión de audio actual y las partículas se detendrán. Estos "
+"se reanudarán automáticamente cuando el juego deje de estar en pausa."
+
+msgid ""
+"It is important to note that even if a node is processing while the game is "
+"paused physics will **NOT** work for it by default. As stated earlier this "
+"is because the physics servers are turned off. The physics servers can be "
+"made active while the game is paused by using their ``set_active`` methods."
+msgstr ""
+"Es importante tener en cuenta que incluso si un nodo está siendo procesado "
+"mientras el juego está en pausa, la física **NO** funcionará para él de "
+"forma predeterminada. Como se mencionó anteriormente, esto se debe a que los "
+"servidores de física están desactivados. Los servidores de física pueden "
+"activarse mientras el juego está en pausa mediante el uso de sus métodos "
+"``set_active``."
+
+#, fuzzy
+msgid "Pause menu example"
+msgstr "Ejemplo de Menu de Pausa"
+
+msgid "Start by creating a button that will be used to pause the game."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Create a menu containing a close button, set the **Process Mode** of the "
+"menu's root node to **When Paused**, then hide the menu. Since the process "
+"mode is set to **When Paused** on the root node, all its children and "
+"grandchildren will inherit that process mode. This way, all the nodes in the "
+"menu will start processing when the game is paused."
+msgstr ""
+"Aquí tienes un ejemplo de un menú de pausa. Crea un popup o panel con "
+"controles dentro y establece su modo de pausa en \"Procesar\" (Process), "
+"luego ocúltalo. Al establecer la raíz del popup de pausa en "
+"\"Procesar\" (Process), todos los hijos y nietos heredarán ese estado. De "
+"esta manera, esta rama del árbol de escena continuará funcionando cuando el "
+"juego esté en pausa."
+
+msgid ""
+"Attach a script to the menu's root node, connect the pause button created "
+"earlier to a new method in the script, and inside that method pause the game "
+"and show the pause menu."
+msgstr ""
+
+msgid ""
+"Finally, connect the menu's close button to a new method in the script. "
+"Inside that method, unpause the game and hide the pause menu."
+msgstr ""
+
+#, fuzzy
+msgid "You should now have a working pause menu."
+msgstr "Ahora deberías ver el grupo aparecer."
+
+msgid "Translation status"
+msgstr "Estado de traducción"

@@ -1,0 +1,649 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "CanvasItem shaders"
+msgstr "CanvasItemシェーダー"
+
+msgid ""
+"CanvasItem shaders are used to draw all 2D elements in Godot. These include "
+"all nodes that inherit from CanvasItems, and all GUI elements."
+msgstr ""
+"CanvasItemシェーダーは、Godotですべての2D要素を描画するために使用されます。こ"
+"れらには、CanvasItemsから継承するすべてのノード、およびすべてのGUI要素が含ま"
+"れます。"
+
+msgid ""
+"CanvasItem shaders contain less built-in variables and functionality than "
+"Spatial shaders, but they maintain the same basic structure with vertex, "
+"fragment, and light processor functions."
+msgstr ""
+"CanvasItemシェーダーには、Spatialシェーダーよりも少ない組み込み変数と関数が含"
+"まれていますが、頂点、フラグメント、およびライトプロセッサー関数と同じ基本構"
+"造を維持しています。"
+
+msgid "Render modes"
+msgstr "レンダリングモード"
+
+msgid "Render mode"
+msgstr "レンダリングモード"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "**blend_mix**"
+msgstr "\\ **blend_mix**"
+
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr "ミックスブレンドモード(アルファは透明度)、デフォルト。"
+
+msgid "**blend_add**"
+msgstr "\\ **blend_add**"
+
+msgid "Additive blend mode."
+msgstr "加算ブレンドモード。"
+
+msgid "**blend_sub**"
+msgstr "\\ **blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "減算ブレンドモード。"
+
+msgid "**blend_mul**"
+msgstr "\\ **blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "乗法ブレンドモード。"
+
+msgid "**blend_premul_alpha**"
+msgstr "\\ **blend_premul_alpha**"
+
+msgid "Pre-multiplied alpha blend mode."
+msgstr "事前乗算されたアルファブレンドモード。"
+
+msgid "**blend_disabled**"
+msgstr "\\ **blend_disabled**"
+
+msgid "Disable blending, values (including alpha) are written as-is."
+msgstr "ブレンドを無効にすると、値(アルファを含む)がそのまま書き込まれます。"
+
+msgid "**unshaded**"
+msgstr "\\ **unshaded**"
+
+msgid "Result is just albedo. No lighting/shading happens in material."
+msgstr ""
+"結果は単なるアルベドです。マテリアルではライティング/シェーディングは発生しま"
+"せん。"
+
+msgid "**light_only**"
+msgstr "\\ **light_only**"
+
+msgid "Only draw on light pass."
+msgstr "ライトパスでのみ描画します。"
+
+msgid "**skip_vertex_transform**"
+msgstr "\\ **skip_vertex_transform**"
+
+#, fuzzy
+msgid "VERTEX needs to be transformed manually in vertex function."
+msgstr "VERTEX/NORMAL/その他は、頂点関数で手動で変換する必要があります。"
+
+msgid "**world_vertex_coords**"
+msgstr "\\ **world_vertex_coords**"
+
+#, fuzzy
+msgid "VERTEX is modified in world coordinates instead of local."
+msgstr "頂点/法線/その他は、ローカル座標ではなくワールド座標で変更されます。"
+
+#, fuzzy
+msgid "Built-ins"
+msgstr "ビルトイン"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Values "
+"marked as \"inout\" provide a sensible default value, and can optionally be "
+"written to. Samplers are not subjects of writing and they are not marked."
+msgstr ""
+"\"in\"としてマークされた値は読み取り専用です。\"out\"とマークされた値はオプ"
+"ションの書き込み用であり、必ずしも適切な値を含むとは限りません。\"inout\"と"
+"マークされた値は、適切なデフォルト値を提供し、オプションで書き込むことができ"
+"ます。サンプラーは書込みの対象ではなく、マークされていません。"
+
+#, fuzzy
+msgid "Global built-ins"
+msgstr "フラグメント用ビルトイン"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+
+msgid "Built-in"
+msgstr "ビルトイン"
+
+msgid "in float **TIME**"
+msgstr "\\ in float **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds (always positive). It's "
+"subject to the rollover setting (which is 3,600 seconds by default). It's "
+"not affected by :ref:`time_scale<class_Engine_property_time_scale>` or "
+"pausing, but you can define a global shader uniform to add a \"scaled\" "
+"``TIME`` variable if desired."
+msgstr ""
+
+#, fuzzy
+msgid "in float **PI**"
+msgstr "\\ in float **TIME**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **TAU**"
+msgstr "\\ in float **DELTA**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "\\ in float **TIME**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+
+msgid "Vertex built-ins"
+msgstr "頂点用ビルトイン"
+
+#, fuzzy
+msgid ""
+"Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
+"relative to the Node2D's origin). If not written to, these values will not "
+"be modified and be passed through as they came."
+msgstr ""
+"頂点データ(``VERTEX``)はローカル空間(カメラに対するピクセル座標)に表示されま"
+"す。書き込まれていない場合、これらの値は変更されず、そのまま渡されます。"
+
+#, fuzzy
+msgid ""
+"The user can disable the built-in model to world transform (world to screen "
+"and projection will still happen later) and do it manually with the "
+"following code:"
+msgstr ""
+"ユーザーは組み込みのmodelview変換を無効にし(投影は後で行われます)、次のコード"
+"を使用して手動で実行できます:"
+
+msgid ""
+"Other built-ins, such as UV and COLOR, are also passed through to the "
+"fragment function if not modified."
+msgstr ""
+"UVやCOLORなどの他のビルトインも、変更されていない場合はフラグメント関数に渡さ"
+"れます。"
+
+msgid ""
+"For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
+"data. When using particles, this information is usually:"
+msgstr ""
+"インスタンス化の場合、INSTANCE_CUSTOM変数にはインスタンスのカスタムデータが含"
+"まれます。パーティクルを使用する場合、この情報は通常次のとおりです:"
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**: ラジアン単位の回転角度。"
+
+msgid "**y**: Phase during lifetime (0 to 1)."
+msgstr "**y**: ライフタイム中のフェーズ(0〜1)。"
+
+msgid "**z**: Animation frame."
+msgstr "**z**: アニメーションフレーム。"
+
+#, fuzzy
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "\\ in mat4 **WORLD_MATRIX**"
+
+msgid ""
+"Local space to world space transform. World space is the coordinates you "
+"normally use in the editor."
+msgstr ""
+
+#, fuzzy
+msgid "in mat4 **CANVAS_MATRIX**"
+msgstr "\\ in mat4 **CAMERA_MATRIX**"
+
+msgid ""
+"World space to canvas space transform. In canvas space the origin is the "
+"upper-left corner of the screen and coordinates ranging from (0, 0) to "
+"viewport size."
+msgstr ""
+
+#, fuzzy
+msgid "in mat4 **SCREEN_MATRIX**"
+msgstr "\\ in mat4 **CAMERA_MATRIX**"
+
+msgid ""
+"Canvas space to clip space. In clip space coordinates ranging from (-1, -1) "
+"to (1, 1)."
+msgstr ""
+
+#, fuzzy
+msgid "in int  **INSTANCE_ID**"
+msgstr "\\ in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "インスタンス化のためのインスタンスID。"
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "\\ in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data."
+msgstr "インスタンスのカスタムデータ。"
+
+msgid "in bool **AT_LIGHT_PASS**"
+msgstr "\\ in bool **AT_LIGHT_PASS**"
+
+#, fuzzy
+msgid "Always ``false``."
+msgstr "``if x else``"
+
+msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
+msgstr "\\ in vec2 **TEXTURE_PIXEL_SIZE**"
+
+#, fuzzy
+msgid ""
+"Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
+"of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+"デフォルトの2Dテクスチャの正規化されたピクセルサイズ。サイズが64x32pxのテクス"
+"チャを持つスプライトの場合、\\ **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, "
+"1/32)`"
+
+msgid "inout vec2 **VERTEX**"
+msgstr "\\ inout vec2 **VERTEX**"
+
+#, fuzzy
+msgid "Vertex, in local space."
+msgstr "イメージ空間内の頂点。"
+
+#, fuzzy
+msgid "in int **VERTEX_ID**"
+msgstr "\\ in int **INSTANCE_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr ""
+
+msgid "inout vec2 **UV**"
+msgstr "\\ inout vec2 **UV**"
+
+msgid "Normalized texture coordinates. Range from 0 to 1."
+msgstr ""
+
+msgid "inout vec4 **COLOR**"
+msgstr "\\ inout vec4 **COLOR**"
+
+msgid "Color from vertex primitive."
+msgstr "頂点プリミティブの色。"
+
+msgid "inout float **POINT_SIZE**"
+msgstr "\\ inout float **POINT_SIZE**"
+
+msgid "Point size for point drawing."
+msgstr "ポイント描画のポイントサイズ。"
+
+msgid "Fragment built-ins"
+msgstr "フラグメント用ビルトイン"
+
+#, fuzzy
+msgid ""
+"Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
+"texture by default. However, when a custom fragment function is attached to "
+"these nodes, the texture lookup needs to be done manually. Godot provides "
+"the texture color in the ``COLOR`` built-in variable multiplied by the "
+"node's color. To read the texture color by itself, you can use:"
+msgstr ""
+"特定のノード(たとえば、\\ :ref:`Sprites <class_Sprite>`)は、デフォルトでテク"
+"スチャを表示します。ただし、カスタムフラグメント関数がこれらのノードにアタッ"
+"チされている場合、テクスチャルックアップは手動で行う必要があります。 Godot"
+"は、組み込みの ``COLOR`` 変数にテクスチャの色を提供しません。そのようなノード"
+"のテクスチャカラーを読み取るには、次を使用します:"
+
+#, fuzzy
+msgid ""
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMALMAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
+msgstr ""
+"これは、ビルトイン法線マップの動作とは異なります。法線マップがアタッチされて"
+"いる場合、Godotはデフォルトでそれを使用し、その値を組み込みの ``NORMAL`` 変数"
+"に割り当てます。3Dで使用するための法線マップを使用している場合は、反転して表"
+"示されます。シェーダーで使用するには、\\ ``NORMALMAP`` プロパティに割り当てる"
+"必要があります。Godotは、2Dで使用するために変換し、\\ ``NORAMAL`` を上書きし"
+"ます。"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "\\ in vec4 **FRAGCOORD**"
+
+#, fuzzy
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"window. Origin is lower-left."
+msgstr ""
+"ピクセルの中心の座標。画面スペース内。\\ ``xy`` はウィンドウ内の位置を指定"
+"し、\\ ``z`` は ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。"
+"原点は左下です。"
+
+msgid "in vec2 **SCREEN_PIXEL_SIZE**"
+msgstr "\\ in vec2 **SCREEN_PIXEL_SIZE**"
+
+msgid "Size of individual pixels. Equal to inverse of resolution."
+msgstr "個々のピクセルのサイズ。解像度の逆数に等しい。"
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "\\ in vec2 **POINT_COORD**"
+
+msgid "Coordinate for drawing points."
+msgstr "描画ポイントの座標。"
+
+msgid "sampler2D **TEXTURE**"
+msgstr "\\ sampler2D **TEXTURE**"
+
+msgid "Default 2D texture."
+msgstr "デフォルトの2Dテクスチャ。"
+
+#, fuzzy
+msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
+msgstr "\\ sampler2D **SCREEN_TEXTURE**"
+
+msgid "Specular shininess texture of this object."
+msgstr ""
+
+#, fuzzy
+msgid "in vec4 **SPECULAR_SHININESS**"
+msgstr "\\ out vec3 **SPECULAR_LIGHT**"
+
+msgid "Specular shininess color, as sampled from the texture."
+msgstr ""
+
+msgid "in vec2 **UV**"
+msgstr "\\ in vec2 **UV**"
+
+msgid "UV from vertex function."
+msgstr "頂点関数からのUV。"
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "\\ in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for current pixel."
+msgstr "現在のピクセルのスクリーンUV座標。"
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "\\ sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+
+msgid "inout vec3 **NORMAL**"
+msgstr "\\ inout vec3 **NORMAL**"
+
+msgid "Normal read from **NORMAL_TEXTURE**. Writable."
+msgstr "**NORMAL_TEXTURE ** からの法線の読み込み。書き込み可能。"
+
+#, fuzzy
+msgid "sampler2D **NORMAL_TEXTURE**"
+msgstr "\\ in sampler2D **NORMAL_TEXTURE**"
+
+msgid "Default 2D normal texture."
+msgstr "デフォルトの2D法線テクスチャ。"
+
+#, fuzzy
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "\\ out vec3 **NORMALMAP**"
+
+#, fuzzy
+msgid ""
+"Configures normal maps meant for 3D for use in 2D. If used, overrides "
+"**NORMAL**."
+msgstr ""
+"2Dで使用する3D用の法線マップを構成します。使用する場合、\\ **NORMAL** を上書"
+"きします。"
+
+#, fuzzy
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "\\ out float **NORMALMAP_DEPTH**"
+
+msgid "Normalmap depth for scaling."
+msgstr "スケーリングのための法線マップの深さ。"
+
+#, fuzzy
+msgid "Pixel position in screen space."
+msgstr "ビュー空間内の法線ベクトル。"
+
+#, fuzzy
+msgid "inout vec2 **SHADOW_VERTEX**"
+msgstr "\\ inout vec2 **SHADOW_VEC**"
+
+msgid "Same as ``VERTEX`` but can be written to alter shadows."
+msgstr ""
+
+#, fuzzy
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "\\ inout vec3 **VERTEX**"
+
+msgid ""
+"Same as ``VERTEX`` but can be written to alter lighting. Z component "
+"represents height."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Color from vertex function multiplied by the **TEXTURE** color. Also output "
+"color value."
+msgstr ""
+"頂点関数の色と出力フラグメントの色。使用しない場合、\\ **TEXTURE ** 色に設定"
+"されます。"
+
+msgid "Light built-ins"
+msgstr "ライト用ビルトイン"
+
+msgid ""
+"Light processor functions work differently in Godot 4.x than they did in "
+"Godot 3.x. In Godot 4.x all lighting is done during the regular draw pass. "
+"In other words, Godot no longer draws the object again for each light."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Use render_mode ``unshaded`` if you do not want the light processor function "
+"to run. Use render_mode ``light_only`` if you only want to see the impact of "
+"lighting on an object; this can be useful when you only want the object "
+"visible where it is covered by light."
+msgstr ""
+"ライトプロセッサの機能は、2Dでの動作と3Dでの動作が異なります。 CanvasItem"
+"シェーダーでは、シェーダーは描画されるオブジェクトに対して1回呼び出され、次に"
+"シーン内のそのオブジェクトに触れる各ライトに対して1回呼び出されます。そのオブ"
+"ジェクトに対してライトパスを発生させたくない場合は、render_mode ``unshaded`` "
+"を使用します。そのオブジェクトに対してのみライトパスを発生させたい場合は、"
+"render_mode ``light_only`` を使用します。これは、光で覆われた場所にのみオブ"
+"ジェクトを表示する場合に役立ちます。"
+
+msgid ""
+"If you define a light function it will replace the built in light function, "
+"even if your light function is empty."
+msgstr ""
+
+msgid ""
+"Below is an example of a light shader that takes a CanvasItem's normal map "
+"into account:"
+msgstr ""
+
+msgid "in vec3 **NORMAL**"
+msgstr "\\ in vec3 **NORMAL**"
+
+#, fuzzy
+msgid "Input Normal."
+msgstr "入力"
+
+msgid "in vec4 **COLOR**"
+msgstr "\\ in vec4 **COLOR**"
+
+#, fuzzy
+msgid "Input Color. This is the output of the fragment function."
+msgstr ""
+"入力される色。これは、最終的な変調が適用されたフラグメント関数の出力です。"
+
+msgid "UV from vertex function, equivalent to the UV in the fragment function."
+msgstr "頂点関数からのUV。フラグメント関数のUVと同等です。"
+
+msgid "Current texture in use for CanvasItem."
+msgstr "CanvasItemに使用されている現在のテクスチャ。"
+
+#, fuzzy
+msgid ""
+"Normalized pixel size of **TEXTURE**. For a Sprite2D with a **TEXTURE** of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+"デフォルトの2Dテクスチャの正規化されたピクセルサイズ。サイズが64x32pxのテクス"
+"チャを持つスプライトの場合、\\ **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, "
+"1/32)`"
+
+msgid "UV for Point Sprite."
+msgstr "ポイントスプライトのUV。"
+
+#, fuzzy
+msgid "in vec4 **LIGHT_COLOR**"
+msgstr "\\ in vec3 **LIGHT_COLOR**"
+
+msgid "Color of Light multiplied by Light's texture."
+msgstr ""
+
+#, fuzzy
+msgid "in float **LIGHT_ENERGY**"
+msgstr "\\ inout float **LIGHT_HEIGHT**"
+
+msgid "Energy multiplier of Light."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **LIGHT_POSITION**"
+msgstr "\\ in vec3 **LIGHT_COLOR**"
+
+msgid ""
+"Position of Light in screen space. If using a ``DirectionalLight2D`` this is "
+"always ``vec3(0,0,0)``."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **LIGHT_DIRECTION**"
+msgstr "\\ in vec3 **LIGHT_COLOR**"
+
+msgid "Direction of Light in screen space."
+msgstr ""
+
+#, fuzzy
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "\\ in bool **AT_LIGHT_PASS**"
+
+#, fuzzy
+msgid "``true`` if this pass is a ``DirectionalLight2D``."
+msgstr "ライトパスの場合はこれが ``true``。"
+
+#, fuzzy
+msgid "in vec3 **LIGHT_VERTEX**"
+msgstr "\\ in vec3 **VERTEX**"
+
+#, fuzzy
+msgid "Pixel position, in screen space as modified in the fragment function."
+msgstr "``world_position`` は頂点関数またはフラグメント関数で使用できます。"
+
+msgid "inout vec4 **LIGHT**"
+msgstr "\\ inout vec4 **LIGHT**"
+
+#, fuzzy
+msgid "Output color for this Light."
+msgstr "各ピクセルの出力色。"
+
+msgid "Specular shininess, as set in the object's texture."
+msgstr ""
+
+#, fuzzy
+msgid "out vec4 **SHADOW_MODULATE**"
+msgstr "\\ out vec4 **SHADOW_COLOR**"
+
+msgid "Multiply shadows cast at this point by this color."
+msgstr ""
+
+#, fuzzy
+msgid "SDF functions"
+msgstr "関数"
+
+msgid ""
+"There are a few additional functions implemented to sample an automatically "
+"generated Signed Distance Field texture. These functions available for "
+"Fragment and Light functions of CanvasItem shaders."
+msgstr ""
+
+msgid ""
+"The signed distance field is generated from :ref:`class_LightOccluder2D` "
+"nodes present in the scene with the **SDF Collision** property enabled "
+"(which is the default). See the :ref:`2D lights and shadows "
+"<doc_2d_lights_and_shadows_setting_up_shadows>` documentation for more "
+"information."
+msgstr ""
+
+msgid "Function"
+msgstr "関数"
+
+#, fuzzy
+msgid "float **texture_sdf** (vec2 sdf_pos)"
+msgstr "\\ float **length** ( vec_type x )"
+
+#, fuzzy
+msgid "Performs an SDF texture lookup."
+msgstr "2Dテクスチャの読み取りを実行する"
+
+msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
+msgstr ""
+
+#, fuzzy
+msgid "Calculates a normal from the SDF texture."
+msgstr "デフォルトの2D法線テクスチャ。"
+
+msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+msgstr ""
+
+msgid "Converts a SDF to screen UV."
+msgstr "SDFをスクリーンUVに変換します。"
+
+#, fuzzy
+msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
+msgstr "\\ vec3 **cross** ( vec3 a, vec3 b )"
+
+#, fuzzy
+msgid "Converts screen UV to a SDF."
+msgstr "インデントをタブに変換"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

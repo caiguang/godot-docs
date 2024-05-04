@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Engine development"
+msgstr "Engine-Entwicklung"
+
+msgid ""
+"The guides below explain how to contribute to the engine's codebase. You "
+"will learn about best practices when working on solutions and features, the "
+"code style and the internal structure of the codebase, how to set up your "
+"working environment, and more."
+msgstr ""
+"Die folgenden Anleitungen erklären, wie Sie zur Codebasis der Engine "
+"beitragen können. Sie erfahren etwas über gute Praktiken bei der Arbeit an "
+"Lösungen und Features, den Code-Stil und die interne Struktur der Codebasis, "
+"wie Sie Ihre Arbeitsumgebung einrichten und vieles mehr."
+
+msgid ""
+"Be sure to also check the :ref:`workflow guidelines "
+"<doc_contributing_workflow>`, especially if you're new to using Git or "
+"GitHub."
+msgstr ""
+"Lesen Sie auch die :ref:`Workflow-Richtlinien <doc_contributing_workflow>`, "
+"insbesondere wenn Sie Git oder GitHub zum ersten Mal verwenden."
+
+msgid "Buildsystem and work environment"
+msgstr "Buildsystem und Arbeitsumgebung"
+
+msgid "Engine architecture"
+msgstr "Engine-Architektur"
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

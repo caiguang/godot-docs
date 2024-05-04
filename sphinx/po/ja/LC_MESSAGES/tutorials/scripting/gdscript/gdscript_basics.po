@@ -1,0 +1,2905 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDScript reference"
+msgstr "データ設定"
+
+#, fuzzy
+msgid ""
+":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
+"wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
+"wikipedia.org/wiki/Imperative_programming>`_, and `gradually typed <https://"
+"en.wikipedia.org/wiki/Gradual_typing>`_ programming language built for "
+"Godot. It uses an indentation-based syntax similar to languages like `Python "
+"<https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_. Its "
+"goal is to be optimized for and tightly integrated with Godot Engine, "
+"allowing great flexibility for content creation and integration."
+msgstr ""
+"*GDScript*\\ は、コンテンツの作成用に使われる高水準の動的型付けプログラミング"
+"言語です。\\ `Python <https://ja.wikipedia.org/wiki/Python>`_\\ に似た構文を"
+"採用しています (ブロックはインデントベースで、キーワードの多くは似ています)。"
+"その目的は、Godotエンジンと緊密に統合し最適化することで、コンテンツの作成と統"
+"合に大きな柔軟性を与えることです。"
+
+msgid "GDScript is entirely independent from Python and is not based on it."
+msgstr ""
+
+msgid "History"
+msgstr "履歴"
+
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"GDScriptの歴史についてのドキュメントは\\ :ref:`よくある質問 "
+"<doc_faq_what_is_gdscript>`\\ に移動しました。"
+
+msgid "Example of GDScript"
+msgstr "GDScriptの例"
+
+#, fuzzy
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's an "
+"example of how GDScript looks."
+msgstr ""
+"構文を見ることでより良く学べる人もいるので、ここではGDScriptがどのように見え"
+"るかの簡単な例を紹介します。"
+
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"C、C++、C#などの静的型付き言語の経験があるが、これまでに動的型付き言語を使用"
+"したことがない場合は、以下のチュートリアルを読むことをお勧めします。\\ :ref:"
+"`doc_gdscript_more_efficiently`。"
+
+msgid "Language"
+msgstr "言語:"
+
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"GDScriptの概要を説明していきます。配列やその他のオブジェクトで使用できるメ"
+"ソッドなどの詳細については、リンクされたクラスの説明を参照してください。"
+
+msgid "Identifiers"
+msgstr "識別子"
+
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"アルファベット文字( ``a`` から ``z`` および ``A`` から ``Z`` )、数字( ``0`` "
+"から ``9`` )、 ``_`` が識別子として修飾される文字列です。また、識別子は数字で"
+"始まってはいけません。識別子では大文字と小文字が区別されます( ``foo`` が "
+"``FOO`` と異なる)。"
+
+msgid ""
+"Identifiers may also contain most Unicode characters part of `UAX#31 "
+"<https://www.unicode.org/reports/tr31/>`__. This allows you to use "
+"identifier names written in languages other than English. Unicode characters "
+"that are considered \"confusable\" for ASCII characters and emoji are not "
+"allowed in identifiers."
+msgstr ""
+
+msgid "Keywords"
+msgstr "キーワード"
+
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"言語でサポートされているキーワードのリストを次に示します。キーワードは予約語"
+"(トークン)であるため、識別子として使用することはできません。次のセクションに"
+"示す演算子( ``in`` 、 ``not`` 、 ``and`` 、 ``or`` など)と組み込み型の名前も"
+"予約されています。"
+
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"キーワードは `GDScriptのトークナイザー <https://github.com/godotengine/godot/"
+"blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_\\ で定義されているの"
+"で、内部を調べたい場合に便利です。"
+
+msgid "Keyword"
+msgstr "キーワード"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "if"
+msgstr "\\ if"
+
+msgid "See `if/else/elif`_."
+msgstr "`if/else/elif`_ を参照して下さい。"
+
+msgid "elif"
+msgstr "\\ elif"
+
+msgid "else"
+msgstr "\\ else"
+
+msgid "for"
+msgstr "\\ for"
+
+msgid "See for_."
+msgstr "for_\\ を参照して下さい。"
+
+msgid "while"
+msgstr "\\ while"
+
+msgid "See while_."
+msgstr "while_\\ を参照して下さい。"
+
+msgid "match"
+msgstr "\\ match"
+
+msgid "See match_."
+msgstr "match_\\ を参照して下さい。"
+
+msgid "break"
+msgstr "\\ break"
+
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "現在の\\ ``for``\\ または\\ ``while``\\ ループの実行を終了します。"
+
+msgid "continue"
+msgstr "\\ continue"
+
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "``for`` または ``while`` ループの次の反復に直ちにスキップします。"
+
+msgid "pass"
+msgstr "レンダーパス"
+
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr ""
+"ステートメントが構文的には必要だが、コードの実行が望ましくない場合 (空の関数"
+"など) に使用されます。"
+
+msgid "return"
+msgstr "\\ return"
+
+msgid "Returns a value from a function."
+msgstr "関数から値を返します。"
+
+msgid "class"
+msgstr "クラス"
+
+#, fuzzy
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "別のクラスファイル内の内部クラス。"
+
+msgid "class_name"
+msgstr "\\ class_name"
+
+msgid ""
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
+msgstr ""
+
+msgid "extends"
+msgstr "\\ extends"
+
+msgid "Defines what class to extend with the current class."
+msgstr "現在のクラスで拡張するクラスを定義します。"
+
+msgid "is"
+msgstr "\\ is"
+
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr ""
+"変数が特定のクラスを拡張するのか、それとも特定の組み込み型のものかをテストし"
+"ます。"
+
+#, fuzzy
+msgid "in"
+msgstr "検索"
+
+msgid ""
+"Tests whether a value is within a string, array, range, dictionary, or node. "
+"When used with ``for``, it iterates through them instead of testing."
+msgstr ""
+
+msgid "as"
+msgstr "\\ as"
+
+msgid "Cast the value to a given type if possible."
+msgstr "可能であれば、指定した型に値をキャストします。"
+
+msgid "self"
+msgstr "\\ self"
+
+msgid "Refers to current class instance."
+msgstr "現在のクラスインスタンスを参照します。"
+
+msgid "signal"
+msgstr "シグナル"
+
+msgid "Defines a signal."
+msgstr "シグナルを定義します。"
+
+msgid "func"
+msgstr "\\ func"
+
+msgid "Defines a function."
+msgstr "関数を定義します。"
+
+msgid "static"
+msgstr "\\ static"
+
+#, fuzzy
+msgid "Defines a static function or a static member variable."
+msgstr "静的関数を定義します。静的メンバー変数は使用できません。"
+
+msgid "const"
+msgstr "\\ const"
+
+msgid "Defines a constant."
+msgstr "定数を定義します。"
+
+msgid "enum"
+msgstr "\\ enum"
+
+msgid "Defines an enum."
+msgstr "列挙型を定義します。"
+
+msgid "var"
+msgstr "\\ var"
+
+msgid "Defines a variable."
+msgstr "変数を定義します。"
+
+msgid "breakpoint"
+msgstr "\\ breakpoint"
+
+msgid ""
+"Editor helper for debugger breakpoints. Unlike breakpoints created by "
+"clicking in the gutter, ``breakpoint`` is stored in the script itself. This "
+"makes it persistent across different machines when using version control."
+msgstr ""
+
+msgid "preload"
+msgstr "\\ preload"
+
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr ""
+"クラスまたは変数をプリロードします。`Classes as resources`_ を参照してくださ"
+"い。"
+
+msgid "await"
+msgstr ""
+
+msgid ""
+"Waits for a signal or a coroutine to finish. See `Awaiting for signals or "
+"coroutines`_."
+msgstr ""
+
+msgid "yield"
+msgstr "\\ yield"
+
+msgid "Previously used for coroutines. Kept as keyword for transition."
+msgstr ""
+
+msgid "assert"
+msgstr "\\ assert"
+
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"条件を表明し、失敗時にエラーをログに記録します。 デバッグ以外のビルドでは無視"
+"されます。`Assert keyword`_ を参照してください。"
+
+#, fuzzy
+msgid "void"
+msgstr "\\ **void**"
+
+msgid "Used to represent that a function does not return any value."
+msgstr ""
+
+msgid "PI"
+msgstr "\\ PI"
+
+msgid "PI constant."
+msgstr "PI定数。"
+
+msgid "TAU"
+msgstr "\\ TAU"
+
+msgid "TAU constant."
+msgstr "TAU定数。"
+
+msgid "INF"
+msgstr "\\ INF"
+
+#, fuzzy
+msgid "Infinity constant. Used for comparisons and as result of calculations."
+msgstr "Infinity定数。比較に使用されます。"
+
+msgid "NAN"
+msgstr "\\ NAN"
+
+#, fuzzy
+msgid ""
+"NAN (not a number) constant. Used as impossible result from calculations."
+msgstr "NAN (not a number)定数。比較に使用されます。"
+
+msgid "Operators"
+msgstr "オペレーター"
+
+msgid "The following is the list of supported operators and their precedence."
+msgstr "サポートされている演算子とその優先順位を次に示します。"
+
+msgid "**Operator**"
+msgstr "**演算子**"
+
+msgid "**Description**"
+msgstr "**説明**"
+
+#, fuzzy
+msgid "``(`` ``)``"
+msgstr "``<<`` ``>>``"
+
+#, fuzzy
+msgid "Grouping (highest priority)"
+msgstr "サブスクリプション(最優先)"
+
+msgid ""
+"Parentheses are not really an operator, but allow you to explicitly specify "
+"the precedence of an operation."
+msgstr ""
+
+msgid "``x[index]``"
+msgstr "``x[index]``"
+
+#, fuzzy
+msgid "Subscription"
+msgstr "説明"
+
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+msgid "Attribute reference"
+msgstr "要素参照"
+
+msgid "``foo()``"
+msgstr "\\ ``foo()``"
+
+msgid "Function call"
+msgstr "関数呼び出し"
+
+msgid "``await x``"
+msgstr ""
+
+msgid "`Awaiting for signals or coroutines`_"
+msgstr ""
+
+#, fuzzy
+msgid "``x is Node``"
+msgstr "\\ ``node``"
+
+#, fuzzy
+msgid "Type checking"
+msgstr "型キャスト"
+
+msgid ""
+"See also :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` "
+"function."
+msgstr ""
+
+msgid "``x ** y``"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid ""
+"Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
+"<class_@GlobalScope_method_pow>` function."
+msgstr ""
+
+msgid ""
+"**Note:** In GDScript, the ``**`` operator is `left-associative <https://en."
+"wikipedia.org/wiki/Operator_associativity>`_. See a detailed note after the "
+"table."
+msgstr ""
+
+msgid "``~x``"
+msgstr ""
+
+msgid "Bitwise NOT"
+msgstr "ビット単位のNOT"
+
+msgid "``+x``"
+msgstr ""
+
+msgid "``-x``"
+msgstr "``-x``"
+
+#, fuzzy
+msgid "Identity / Negation"
+msgstr "インデント"
+
+msgid "``x * y``"
+msgstr ""
+
+msgid "``x / y``"
+msgstr ""
+
+msgid "``x % y``"
+msgstr ""
+
+msgid "Multiplication / Division / Remainder"
+msgstr "乗算/除算/剰余"
+
+msgid ""
+"The ``%`` operator is additionally used for :ref:`format strings "
+"<doc_gdscript_printf>`."
+msgstr ""
+
+msgid ""
+"**Note:** These operators have the same behavior as C++, which may be "
+"unexpected for users coming from Python, JavaScript, etc. See a detailed "
+"note after the table."
+msgstr ""
+
+msgid "``x + y``"
+msgstr ""
+
+msgid "``x - y``"
+msgstr ""
+
+#, fuzzy
+msgid "Addition (or Concatenation) / Subtraction"
+msgstr "加算 / 配列の連結"
+
+msgid "``x << y``"
+msgstr ""
+
+msgid "``x >> y``"
+msgstr ""
+
+msgid "Bit shifting"
+msgstr "ビットシフト"
+
+msgid "``x & y``"
+msgstr ""
+
+msgid "Bitwise AND"
+msgstr "ビットAND"
+
+msgid "``x ^ y``"
+msgstr ""
+
+msgid "Bitwise XOR"
+msgstr "ビットXOR"
+
+msgid "``x | y``"
+msgstr ""
+
+msgid "Bitwise OR"
+msgstr "ビットOR"
+
+msgid "``x == y``"
+msgstr ""
+
+msgid "``x != y``"
+msgstr ""
+
+msgid "``x < y``"
+msgstr ""
+
+msgid "``x > y``"
+msgstr ""
+
+msgid "``x <= y``"
+msgstr ""
+
+msgid "``x >= y``"
+msgstr ""
+
+#, fuzzy
+msgid "Comparison"
+msgstr "比較"
+
+msgid "See a detailed note after the table."
+msgstr ""
+
+msgid "``x in y``"
+msgstr ""
+
+msgid "``x not in y``"
+msgstr ""
+
+#, fuzzy
+msgid "Inclusion checking"
+msgstr "オクルージョンモード"
+
+msgid "``in`` is also used with the for_ keyword as part of the syntax."
+msgstr ""
+
+#, fuzzy
+msgid "``not x``"
+msgstr "\\ ``node``"
+
+msgid "``!x``"
+msgstr ""
+
+msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x and y``"
+msgstr ""
+
+msgid "``x && y``"
+msgstr ""
+
+msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x or y``"
+msgstr ""
+
+msgid "``x || y``"
+msgstr ""
+
+msgid "Boolean OR and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``true_expr if cond else false_expr``"
+msgstr ""
+
+msgid "Ternary if/else"
+msgstr "3項if/else"
+
+#, fuzzy
+msgid "``x as Node``"
+msgstr "\\ ``node``"
+
+#, fuzzy
+msgid "`Type casting <casting_>`_"
+msgstr "型変換とキャスト"
+
+msgid "``x = y``"
+msgstr ""
+
+msgid "``x += y``"
+msgstr ""
+
+msgid "``x -= y``"
+msgstr ""
+
+msgid "``x *= y``"
+msgstr ""
+
+msgid "``x /= y``"
+msgstr ""
+
+msgid "``x **= y``"
+msgstr ""
+
+msgid "``x %= y``"
+msgstr ""
+
+msgid "``x &= y``"
+msgstr ""
+
+msgid "``x |= y``"
+msgstr ""
+
+msgid "``x ^= y``"
+msgstr ""
+
+msgid "``x <<= y``"
+msgstr ""
+
+msgid "``x >>= y``"
+msgstr ""
+
+msgid "Assignment (lowest priority)"
+msgstr "代入、優先度最低"
+
+msgid "You cannot use an assignment operator inside an expression."
+msgstr ""
+
+msgid "The behavior of some operators may differ from what you expect:"
+msgstr ""
+
+msgid ""
+"If both operands of the ``/`` operator are :ref:`int <class_int>`, then "
+"integer division is performed instead of fractional. For example ``5 / 2 == "
+"2``, not ``2.5``. If this is not desired, use at least one :ref:`float "
+"<class_float>` literal (``x / 2.0``), cast (``float(x) / y``), or multiply "
+"by ``1.0`` (``x * 1.0 / y``)."
+msgstr ""
+
+msgid ""
+"The ``%`` operator is only available for ints, for floats use the :ref:"
+"`fmod() <class_@GlobalScope_method_fmod>` function."
+msgstr ""
+
+msgid ""
+"For negative values, the ``%`` operator and ``fmod()`` use `truncation "
+"<https://en.wikipedia.org/wiki/Truncation>`_ instead of rounding towards "
+"negative infinity. This means that the remainder has a sign. If you need the "
+"remainder in a mathematical sense, use the :ref:`posmod() "
+"<class_@GlobalScope_method_posmod>` and :ref:`fposmod() "
+"<class_@GlobalScope_method_fposmod>` functions instead."
+msgstr ""
+
+msgid ""
+"The ``**`` operator is `left-associative <https://en.wikipedia.org/wiki/"
+"Operator_associativity>`_. This means that ``2 ** 2 ** 3`` is equal to ``(2 "
+"** 2) ** 3``. Use parentheses to explicitly specify precedence you need, for "
+"example ``2 ** (2 ** 3)``."
+msgstr ""
+
+msgid ""
+"The ``==`` and ``!=`` operators sometimes allow you to compare values of "
+"different types (for example, ``1 == 1.0`` is true), but in other cases it "
+"can cause a runtime error. If you're not sure about the types of the "
+"operands, you can safely use the :ref:`is_same() "
+"<class_@GlobalScope_method_is_same>` function (but note that it is more "
+"strict about types and references). To compare floats, use the :ref:"
+"`is_equal_approx() <class_@GlobalScope_method_is_equal_approx>` and :ref:"
+"`is_zero_approx() <class_@GlobalScope_method_is_zero_approx>` functions "
+"instead."
+msgstr ""
+
+msgid "Literals"
+msgstr "リテラル"
+
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**例**"
+
+#, fuzzy
+msgid "``null``"
+msgstr "null"
+
+#, fuzzy
+msgid "Null value"
+msgstr "列挙値"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "\\ ``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "列挙値"
+
+msgid "``45``"
+msgstr "``45``"
+
+msgid "Base 10 integer"
+msgstr "10進整数"
+
+msgid "``0x8f51``"
+msgstr "``0x8f51``"
+
+msgid "Base 16 (hexadecimal) integer"
+msgstr "16進整数"
+
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+msgid "Base 2 (binary) integer"
+msgstr "2進整数"
+
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14``, ``58.1e-10``"
+
+msgid "Floating-point number (real)"
+msgstr "浮動小数点数(実数)"
+
+#, fuzzy
+msgid "``\"Hello\"``, ``'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Regular strings"
+msgstr "スペキュラー光の結果。"
+
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "\\ string"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "GDScriptフォーマット文字列"
+
+#, fuzzy
+msgid "``&\"name\"``"
+msgstr "``name``"
+
+#, fuzzy
+msgid ":ref:`StringName <class_StringName>`"
+msgstr "\\ :ref:`String <class_String>`"
+
+#, fuzzy
+msgid "``^\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr "\\ :ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**例**"
+
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "``get_node( \"NodePath\")`` の短縮形"
+
+#, fuzzy
+msgid "``%UniqueNode``"
+msgstr "\\ ``node``"
+
+#, fuzzy
+msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
+msgstr "``get_node( \"NodePath\")`` の短縮形"
+
+msgid ""
+"Integers and floats can have their numbers separated with ``_`` to make them "
+"more readable. The following ways to write numbers are all valid::"
+msgstr ""
+"Integerとfloatの数値は可読性のために ``_`` で分割することができます。以下の数"
+"値表現はすべて有効です::"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "**エスケープシーケンス**"
+
+msgid "**Expands to**"
+msgstr "**に展開します**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "改行 (line feed)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "水平タブ文字"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "リターン"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "アラート (ビープ／ベル)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "バックスペース"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "フォームフィードの改ページ"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "垂直タブ文字"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "二重引用符"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "一重引用符"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "バックスラッシュ"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "Unicodeコードポイント ``XXXX`` (16進数、大文字小文字の区別なし)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr "Unicodeコードポイント ``XXXX`` (16進数、大文字小文字の区別なし)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "証明書を取得するには2つの方法があります:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScriptは :ref:`doc_gdscript_printf` もサポートしています。"
+
+#, fuzzy
+msgid "Annotations"
+msgstr "インデント"
+
+msgid ""
+"There are some special tokens in GDScript that act like keywords but are "
+"not, they are *annotations* instead. Every annotation start with the ``@`` "
+"character and is specified by a name. A detailed description and example for "
+"each annotation can be found inside the :ref:`GDScript class reference "
+"<class_@GDScript>`."
+msgstr ""
+
+msgid ""
+"Annotations affect how the script is treated by external tools and usually "
+"don't change the behavior."
+msgstr ""
+
+msgid "For instance, you can use it to export a value to the editor::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For more information about exporting properties, read the :ref:`GDScript "
+"exports <doc_gdscript_exports>` article."
+msgstr ""
+"``Viewport`` ノードの機能の詳細については、\\ :ref:`Viewports Tutorial "
+"<doc_viewports>` を参照してください。"
+
+msgid ""
+"Any constant expression compatible with the required argument type can be "
+"passed as an annotation argument value::"
+msgstr ""
+
+msgid ""
+"Annotations can be specified one per line or all in the same line. They "
+"affect the next statement that isn't an annotation. Annotations can have "
+"arguments sent between parentheses and separated by commas."
+msgstr ""
+
+msgid "Both of these are the same::"
+msgstr ""
+
+msgid "``@onready`` annotation"
+msgstr ""
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"ノードを使用する場合、シーンの一部への参照を変数に保持することが一般的です。"
+"シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブノード"
+"は ``Node._ready()`` への呼び出しが行われた時にのみ取得できます。"
+
+#, fuzzy
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``@onready`` annotation, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"これは特にノードと外部参照が重なっている場合には少し面倒になります。このため"
+"に、GDScriptには ``onready`` キーワードがあります。これは_readyが呼び出される"
+"までメンバー変数の初期化を遅らせるものです。 上記のコードを単一行に置き換える"
+"ことができます::"
+
+msgid ""
+"Applying ``@onready`` and any ``@export`` annotation to the same variable "
+"doesn't work as you might expect. The ``@onready`` annotation will cause the "
+"default value to be set after the ``@export`` takes effect and will override "
+"it::"
+msgstr ""
+
+msgid ""
+"Therefore, the ``ONREADY_WITH_EXPORT`` warning is generated, which is "
+"treated as an error by default. We do not recommend disabling or ignoring it."
+msgstr ""
+
+msgid "Comments"
+msgstr "コメント"
+
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr "``#`` から行末までは無視され、コメントと見なされます。"
+
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "考慮事項"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "このテキストは次のとおりです:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "カスタムエフェクトの例を次に示します:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
+#, fuzzy
+msgid "Line continuation"
+msgstr "構成の実行:"
+
+msgid ""
+"A line of code in GDScript can be continued on the next line by using a "
+"backslash (``\\``). Add one at the end of a line and the code on the next "
+"line will act like it's where the backslash is. Here is an example:"
+msgstr ""
+
+msgid "A line can be continued multiple times like this:"
+msgstr ""
+
+msgid "Built-in types"
+msgstr "組み込み型"
+
+#, fuzzy
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The exceptions are ``Object``, ``Array``, ``Dictionary``, and "
+"packed arrays (such as ``PackedByteArray``), which are passed by reference "
+"so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
+"``Resource``) have a ``duplicate()`` method that allows you to make a copy."
+msgstr ""
+"組み込み型はスタック割り当て型です。これらは値として渡されます。つまり、割り"
+"当てごとに、または関数に引数として渡すときにコピーが作成されます。唯一の例外"
+"は ``Array`` と ``Dictionary`` で、これらは参照によって渡され、共有されます。"
+"( ``PoolArray``\\ s は ``PoolByteArray`` のように値として渡されるわけではあり"
+"ませんが、どちらを使用するかを決定する際にはこの点を考慮してください。)"
+
+msgid "Basic built-in types"
+msgstr "組み込み型ベース"
+
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "GDScriptの変数は、いくつかの組み込み型に割り当てることができます。"
+
+msgid "null"
+msgstr "null"
+
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr ""
+"``null`` は、情報を含まない空のデータ型であり、他の値を割り当てることはできま"
+"せん。"
+
+msgid ":ref:`bool <class_bool>`"
+msgstr "\\ :ref:`bool <class_bool>`"
+
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr ""
+"Booleanデータ型には、 ``true`` または ``false`` のみを含めることができます。"
+
+msgid ":ref:`int <class_int>`"
+msgstr "\\ :ref:`int <class_int>`"
+
+#, fuzzy
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to ``int64_t`` in C++."
+msgstr ""
+"「integer」の略で、整数(正と負)を格納します。64ビット値で格納し、C++の"
+"「int64_t」と同等です。"
+
+msgid ":ref:`float <class_float>`"
+msgstr "\\ :ref:`float <class_float>`"
+
+#, fuzzy
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to ``double`` in C++. Note: Currently, "
+"data structures such as ``Vector2``, ``Vector3``, and ``PackedFloat32Array`` "
+"store 32-bit single-precision ``float`` values."
+msgstr ""
+"浮動小数点値を使用して、小数を含む実数を格納します。 C++の \"double\" に相当"
+"する64ビット値として保存されます。注: 現在、Vector2、Vector3、PoolRealArrayな"
+"どのデータ構造には、32ビット単精度の\"float\"値が格納されています。"
+
+msgid ":ref:`String <class_String>`"
+msgstr "\\ :ref:`String <class_String>`"
+
+#, fuzzy
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
+msgstr ""
+"`Unicode形式 <https://ja.wikipedia.org/wiki/Unicode>`_\\ の文字列。文字列には"
+"下記のエスケープシーケンスも含めることができます。"
+
+msgid ""
+"An immutable string that allows only one instance of each name. They are "
+"slower to create and may result in waiting for locks when multithreading. In "
+"exchange, they're very fast to compare, which makes them good candidates for "
+"dictionary keys."
+msgstr ""
+
+msgid ""
+"A pre-parsed path to a node or a node property.  It can be easily assigned "
+"to, and from, a String. They are useful to interact with the tree to get a "
+"node, or affecting properties like with :ref:`Tweens <class_Tween>`."
+msgstr ""
+
+msgid "Vector built-in types"
+msgstr "組み込み型ベクトル"
+
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr "\\ :ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr ""
+"``x`` と ``y`` を含む2Dベクトルタイプ。配列としてアクセスすることもできます。"
+
+#, fuzzy
+msgid ":ref:`Vector2i <class_Vector2i>`"
+msgstr "\\ :ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"Same as a Vector2 but the components are integers. Useful for representing "
+"items in a 2D grid."
+msgstr ""
+
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr "\\ :ref:`Rect2 <class_Rect2>`"
+
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"``position`` と ``size`` の2つのベクトルフィールドを含む2D矩形タイプ。また"
+"は、 ``position+size`` である ``end`` フィールドを含みます。"
+
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr "\\ :ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr ""
+"``x``、 ``y`` 、 ``z`` フィールドを含む3Dベクトルタイプ。配列としてアクセスす"
+"ることもできます。"
+
+#, fuzzy
+msgid ":ref:`Vector3i <class_Vector3i>`"
+msgstr "\\ :ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"Same as Vector3 but the components are integers. Can be use for indexing "
+"items in a 3D grid."
+msgstr ""
+
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr "\\ :ref:`Transform2D <class_Transform2D>`"
+
+msgid "3×2 matrix used for 2D transforms."
+msgstr "2次元の幾何学変換に使用される3x2行列です。"
+
+msgid ":ref:`Plane <class_Plane>`"
+msgstr "\\ :ref:`Plane <class_Plane>`"
+
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr ""
+"``normal`` ベクトルフィールドと ``d`` スカラー距離を含む正規化形式の3D平面型"
+"です。"
+
+#, fuzzy
+msgid ":ref:`Quaternion <class_Quaternion>`"
+msgstr "\\ :ref:`Quat <class_Quat>`"
+
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr ""
+"四元数は3D回転を表すために使用されるデータ型です。 回転を補間するのに便利で"
+"す。"
+
+msgid ":ref:`AABB <class_AABB>`"
+msgstr "\\ :ref:`AABB <class_AABB>`"
+
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"座標軸に平行な直方体(または3Dボックス)には、 ``position`` と ``size`` の2つの"
+"ベクトルフィールドがあります。または、 ``position+size`` である ``end`` "
+"フィールドを含みます。"
+
+msgid ":ref:`Basis <class_Basis>`"
+msgstr "\\ :ref:`Basis <class_Basis>`"
+
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"3Dの回転と拡大縮小に使用される3x3の行列。これには3つのベクトルフィールド"
+"(``x``\\ 、\\ ``y``\\ 、\\ ``z``)が含まれ、3Dベクトルの配列としてアクセスする"
+"こともできます。"
+
+#, fuzzy
+msgid ":ref:`Transform3D <class_Transform3D>`"
+msgstr "\\ :ref:`Transform2D <class_Transform2D>`"
+
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3DTransformには、基底(基準軸)フィールド ``basis`` とVector3フィールド "
+"``origin`` が含まれています。"
+
+msgid "Engine built-in types"
+msgstr "エンジン組み込み型"
+
+msgid ":ref:`Color <class_Color>`"
+msgstr "\\ :ref:`Color <class_Color>`"
+
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"カラーデータ型は、 ``r`` 、 ``g`` 、 ``b``,および ``a`` フィールドを含みま"
+"す。色相/彩度/明度の ``h`` 、 ``s`` 、 ``v`` としてアクセスすることもできま"
+"す。"
+
+msgid ":ref:`RID <class_RID>`"
+msgstr "\\ :ref:`RID <class_RID>`"
+
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr ""
+"リソースID(RID)。サーバーは汎用RIDを使用して不透明なデータを参照します。"
+
+msgid ":ref:`Object <class_Object>`"
+msgstr "\\ :ref:`Object <class_Object>`"
+
+msgid "Base class for anything that is not a built-in type."
+msgstr "組み込み型でないものすべての基本クラス。"
+
+msgid "Container built-in types"
+msgstr "組み込み型コンテナ"
+
+msgid ":ref:`Array <class_Array>`"
+msgstr "\\ :ref:`配列<class_Array>`"
+
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"他の配列や辞書(下記参照)を含む、任意のオブジェクトタイプの一般的なシーケン"
+"ス、他の配列や辞書を含みます。(下を見てください)。配列のサイズは動的に変更で"
+"きます。配列にはインデックス ``0`` から始まるインデックスが付けられます。マイ"
+"ナスのインデックスは最後から数えます。"
+
+#, fuzzy
+msgid "Typed arrays"
+msgstr "\\ real array"
+
+msgid ""
+"Godot 4.0 added support for typed arrays. On write operations, Godot checks "
+"that element values match the specified type, so the array cannot contain "
+"invalid values. The GDScript static analyzer takes typed arrays into "
+"account, however array methods like ``front()`` and ``back()`` still have "
+"the ``Variant`` return type."
+msgstr ""
+
+msgid ""
+"Typed arrays have the syntax ``Array[Type]``, where ``Type`` can be any "
+"``Variant`` type, native or user class, or enum. Nested array types (like "
+"``Array[Array[int]]``) are not supported."
+msgstr ""
+
+msgid "``Array`` and ``Array[Variant]`` are the same thing."
+msgstr ""
+
+msgid ""
+"Arrays are passed by reference, so the array element type is also an "
+"attribute of the in-memory structure referenced by a variable in runtime. "
+"The static type of a variable restricts the structures that it can reference "
+"to. Therefore, you **cannot** assign an array with a different element type, "
+"even if the type is a subtype of the required type."
+msgstr ""
+
+msgid ""
+"If you want to *convert* a typed array, you can create a new array and use "
+"the :ref:`Array.assign() <class_Array_method_assign>` method::"
+msgstr ""
+
+msgid ""
+"The only exception was made for the ``Array`` (``Array[Variant]``) type, for "
+"user convenience and compatibility with old code. However, operations on "
+"untyped arrays are considered unsafe."
+msgstr ""
+
+#, fuzzy
+msgid "Packed arrays"
+msgstr "サーフェス配列"
+
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"GDScriptの配列は速度を上げるためにメモリ内で線形に割り当てられます。大規模な"
+"配列(数万要素以上)は、メモリの断片化を引き起こす可能性があります。 これが問題"
+"になる場合は、特殊なタイプの配列が利用可能です。これらは単一のデータ型のみを"
+"受け入れます。この配列はメモリの断片化を回避し、メモリの使用量も少なくなりま"
+"すが原始的であり、一般的な配列より実行速度が遅くなりがちです。 したがって、そ"
+"れらは大規模なデータセットにのみ使用することをお勧めします:"
+
+#, fuzzy
+msgid ""
+":ref:`PackedByteArray <class_PackedByteArray>`: An array of bytes (integers "
+"from 0 to 255)."
+msgstr ""
+"\\ :ref:`PoolByteArray <class_PoolByteArray>`: バイト型の配列(0～255の整数)。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt32Array <class_PackedInt32Array>`: An array of 32-bit "
+"integers."
+msgstr "\\ :ref:`PoolIntArray <class_PoolIntArray>`: 整数型の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedInt64Array <class_PackedInt64Array>`: An array of 64-bit "
+"integers."
+msgstr "\\ :ref:`PoolIntArray <class_PoolIntArray>`: 整数型の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>`: An array of 32-bit "
+"floats."
+msgstr "\\ :ref:`PoolRealArray <class_PoolRealArray>`: 浮動小数点型の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat64Array <class_PackedFloat64Array>`: An array of 64-bit "
+"floats."
+msgstr "\\ :ref:`PoolRealArray <class_PoolRealArray>`: 浮動小数点型の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedStringArray <class_PackedStringArray>`: An array of strings."
+msgstr "\\ :ref:`PoolStringArray <class_PoolStringArray>`: 文字列型の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector2Array <class_PackedVector2Array>`: An array of :ref:"
+"`Vector2 <class_Vector2>` values."
+msgstr ""
+"\\ :ref:`PoolVector2Array <class_PoolVector2Array>`: \\ :ref:`Vector2 "
+"<class_Vector2>` の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedVector3Array <class_PackedVector3Array>`: An array of :ref:"
+"`Vector3 <class_Vector3>` values."
+msgstr ""
+"\\ :ref:`PoolVector3Array <class_PoolVector3Array>`: \\ :ref:`Vector3 "
+"<class_Vector3>` の配列。"
+
+#, fuzzy
+msgid ""
+":ref:`PackedColorArray <class_PackedColorArray>`: An array of :ref:`Color "
+"<class_Color>` values."
+msgstr ""
+"\\ :ref:`PoolColorArray <class_PoolColorArray>`: \\ :ref:`Color "
+"<class_Color>` の配列。"
+
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr "\\ :ref:`Dictionary <class_Dictionary>`"
+
+msgid "Associative container which contains values referenced by unique keys."
+msgstr "一意のキーによって参照される値を含む連想コンテナです。"
+
+#, fuzzy
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier), and must be string literals."
+msgstr ""
+"Luaスタイルのテーブル構文もサポートされています。 Luaスタイルでは、 ``:`` の"
+"代わりに ``=`` を使用し、文字列のキーをマークするために引用符を使用しません"
+"(記述するのがやや少なくなります)。ただし、他のGDScript識別子と同様に、この形"
+"式で書かれたキーは数字で始めることはできません (他のGDScriptの識別子と同様)。"
+
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr ""
+"既存の辞書にキーを追加するには、既存のキーのようにアクセスして割り当てます:"
+
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"ブラケット構文は、辞書だけでなく、任意の :ref:`class_Object` のプロパティにア"
+"クセスするために使用することができます。存在しないプロパティを添え字にする"
+"と、スクリプトエラーが発生するので注意してください。これを避けるには、代わり"
+"に :ref:`Object.get() <class_Object_method_get>` や :ref:`Object.set() "
+"<class_Object_method_set>` メソッドを使用します。"
+
+#, fuzzy
+msgid ":ref:`Signal <class_Signal>`"
+msgstr "\\ :ref:`int <class_int>`"
+
+msgid ""
+"A signal is a message that can be emitted by an object to those who want to "
+"listen to it. The Signal type can be used for passing the emitter around."
+msgstr ""
+
+msgid ""
+"Signals are better used by getting them from actual objects, e.g. ``$Button."
+"button_up``."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Callable <class_Callable>`"
+msgstr "\\ :ref:`Plane <class_Plane>`"
+
+msgid ""
+"Contains an object and a function, which is useful for passing functions as "
+"values (e.g. when connecting to signals)."
+msgstr ""
+
+msgid ""
+"Getting a method as a member returns a callable. ``var x = $Sprite2D."
+"rotate`` will set the value of ``x`` to a callable with ``$Sprite2D`` as the "
+"object and ``rotate`` as the method."
+msgstr ""
+
+msgid "You can call it using the ``call`` method: ``x.call(PI)``."
+msgstr ""
+
+msgid "Data"
+msgstr "データ"
+
+msgid "Variables"
+msgstr "変数"
+
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"変数はクラスメンバーとして存在することも、関数に対してローカルに存在すること"
+"もできます。これらは ``var`` キーワードを使用して作成され、必要に応じて初期化"
+"時に値が割り当てられます。"
+
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"変数にはオプションで型指定を指定できます。型を指定すると、変数は常に同じ型を"
+"持つように強制され、互換性のない値を割り当てようとするとエラーが発生します。"
+
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr ""
+"型は、変数名の後に ``:`` (コロン)記号を使用して変数宣言内で指定され、その後に"
+"型が続きます。"
+
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr ""
+"変数が宣言内で初期化されている場合、型を推定できるため、型名を省略できます:"
+
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr ""
+"型推論が可能なのは、割り当てられた値に型が定義されている場合だけです。定義さ"
+"れていない場合は、エラーが発生します。"
+
+msgid "Valid types are:"
+msgstr "有効なタイプは以下のとおりです:"
+
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "組み込み型(Array、Vector2、int、Stringなど)。"
+
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "エンジンクラス(Node、Resource、Referenceなど)。"
+
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"スクリプトリソースを含む場合は定数名( ``const MyScript = preload(\"res://"
+"my_script.gd\")`` を宣言した場合は ``MyScript`` )。"
+
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"同じスクリプト内の他のクラス、スコープを尊重します(``InnerClass."
+"NestedClass`` もし ``class InnerClass`` 内で ``class NestedClass`` を宣言した"
+"場合は は同じスコープです)。"
+
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "``class_name`` キーワードで宣言されたスクリプトクラス。"
+
+msgid "Autoloads registered as singletons."
+msgstr ""
+
+msgid ""
+"While ``Variant`` is a valid type specification, it's not an actual type. It "
+"only means there's no set type and is equivalent to not having a static type "
+"at all. Therefore, inference is not allowed by default for ``Variant``, "
+"since it's likely a mistake."
+msgstr ""
+
+msgid ""
+"You can turn off this check, or make it only a warning, by changing it in "
+"the project settings. See :ref:`doc_gdscript_warning_system` for details."
+msgstr ""
+
+#, fuzzy
+msgid "Initialization order"
+msgstr "最小限の接続例"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "ノードを作成し、次のスクリプトをアタッチします。"
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Will print::"
+msgstr "これは次のように出力されます:"
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
+#, fuzzy
+msgid "Static variables"
+msgstr "インスタンスの編集"
+
+msgid "A class member variable can be declared static::"
+msgstr ""
+
+msgid ""
+"Static variables belong to the class, not instances. This means that static "
+"variables share values between multiple instances, unlike regular member "
+"variables."
+msgstr ""
+
+msgid ""
+"From inside a class, you can access static variables from any function, both "
+"static and non-static. From outside the class, you can access static "
+"variables using the class or an instance (the second is not recommended as "
+"it is less readable)."
+msgstr ""
+
+msgid ""
+"The ``@export`` and ``@onready`` annotations cannot be applied to a static "
+"variable. Local variables cannot be static."
+msgstr ""
+
+msgid ""
+"The following example defines a ``Person`` class with a static variable "
+"named ``max_id``. We increment the ``max_id`` in the ``_init()`` function. "
+"This makes it easy to keep track of the number of ``Person`` instances in "
+"our game."
+msgstr ""
+
+msgid ""
+"In this code, we create two instances of our ``Person`` class and check that "
+"the class and every instance have the same ``max_id`` value, because the "
+"variable is static and accessible to every instance."
+msgstr ""
+
+msgid "Static variables can have type hints, setters and getters::"
+msgstr ""
+
+msgid "A base class static variable can also be accessed via a child class::"
+msgstr ""
+
+msgid "``@static_unload`` annotation"
+msgstr ""
+
+msgid ""
+"Since GDScript classes are resources, having static variables in a script "
+"prevents it from being unloaded even if there are no more instances of that "
+"class and no other references left. This can be important if static "
+"variables store large amounts of data or hold references to other project "
+"resources, such as scenes. You should clean up this data manually, or use "
+"the :ref:`@static_unload <class_@GDScript_annotation_@static_unload>` "
+"annotation if static variables don't store important data and can be reset."
+msgstr ""
+
+msgid ""
+"Currently, due to a bug, scripts are never freed, even if ``@static_unload`` "
+"annotation is used."
+msgstr ""
+
+msgid ""
+"Note that ``@static_unload`` applies to the entire script (including inner "
+"classes) and must be placed at the top of the script, before ``class_name`` "
+"and ``extends``::"
+msgstr ""
+
+msgid "See also `Static functions`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Casting"
+msgstr "キャスト"
+
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"型付き変数に割り当てられた値は、互換性のある型を持つ必要があります。特定の"
+"型、特にオブジェクト型に対して値を強制する必要がある場合は、キャスト演算子を "
+"``as`` として使用できます。"
+
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"値が同じ型またはキャスト型のサブタイプの場合、オブジェクト型間でキャストする"
+"と同じオブジェクトになります。"
+
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr "値がサブタイプではない場合、キャスト操作は ``null`` 値になります。"
+
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr ""
+"組み込み型の場合、可能であれば強制的に変換されますが、それ以外の場合はエラー"
+"が発生します。"
+
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr ""
+"また、キャストは、シーンツリーと対話するときに、より安全な型保証変数を用意す"
+"るのにも役立ちます::"
+
+msgid "Constants"
+msgstr "定数"
+
+msgid ""
+"Constants are values you cannot change when the game is running. Their value "
+"must be known at compile-time. Using the ``const`` keyword allows you to "
+"give a constant value a name. Trying to assign a value to a constant after "
+"it's declared will give you an error."
+msgstr ""
+"定数はゲームの実行中に変更することができない値のことです。これらの値はコンパ"
+"イル時に確定している必要があります。 ``const`` キーワードを使うことで定数に名"
+"前を付けることができます。定数を宣言したよりも後に値を代入しようとすると、エ"
+"ラーが発生します。"
+
+msgid "We recommend using constants whenever a value is not meant to change."
+msgstr "値を変更するつもりがないのなら、定数を用いることを推奨します。"
+
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr ""
+"定数の型は割り当てられた値から推測されますが、明示的な型指定を追加することも"
+"可能です:"
+
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "互換性のないタイプの値を割り当てると、エラーが発生します。"
+
+msgid ""
+"You can also create constants inside a function, which is useful to name "
+"local magic values."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since objects, arrays and dictionaries are passed by reference, constants "
+"are \"flat\". This means that if you declare a constant array or dictionary, "
+"it can still be modified afterwards. They can't be reassigned with another "
+"value though."
+msgstr ""
+"配列や辞書は参照で渡されるので、定数は「フラット」です。これは、もし定数の配"
+"列や辞書を宣言したとしても、後から修正することができることを意味します。ただ"
+"し、別の値で再代入することはできません。"
+
+msgid "Enums"
+msgstr "列挙型"
+
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr ""
+"列挙型は基本的に定数の省略形であり、連続した整数をある定数に割り当てたい場合"
+"には非常に便利です。"
+
+#, fuzzy
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant :"
+"ref:`Dictionary <class_Dictionary>` of that name. This means all constant "
+"methods of a dictionary can also be used with a named enum."
+msgstr ""
+"列挙型に名前を渡すと、その名前の定数辞書内にすべてのキーが配置されます。"
+
+#, fuzzy
+msgid ""
+"Keys in a named enum are not registered as global constants. They should be "
+"accessed prefixed by the enum's name (``Name.KEY``)."
+msgstr ""
+"Godot 3.1以降は、名前の付いた列挙型のキーはグローバル定数としては登録されませ"
+"ん。アクセスするには列挙型の名前を前につける必要があります(``Name.KEY``)。下"
+"記の例を見てください。"
+
+msgid "Functions"
+msgstr "関数"
+
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"関数は常に `class <Classes_>`_\\ に属します。 変数検索のスコープ優先順位は、"
+"ローカル→クラスメンバー→グローバルです。 ``self`` 変数は常に利用可能でクラス"
+"メンバにアクセスするためのオプションとして提供されていますが、必ずしも必要で"
+"はありません(Pythonとは異なり、関数の最初の引数として送信しないでください)。"
+
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr ""
+"関数は任意の時点で ``return`` することができます。デフォルトの戻り値は"
+"``null`` です。"
+
+msgid ""
+"If a function contains only one line of code, it can be written on one line::"
+msgstr ""
+
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr ""
+"関数には、引数と戻り値の型を指定することもできます。引数の型は次のように変数"
+"に追加できます:"
+
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr "関数の引数にデフォルト値がある場合は、次のように型を推測できます:"
+
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr ""
+"関数の戻り型は、引数リストの後に矢印トークン( ``->`` )を使用して指定できます:"
+
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"戻り型を持つ関数は、適切な値を返す\\ **必要があります**\\ 。型を ``void`` に"
+"設定すると、関数は何も返しません。Void関数は ``return`` キーワードを使用して"
+"早期に戻ることができますが、値を返すことはできません。"
+
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"void関数でない場合は\\ **常に**\\ 値を返す必要があるため、コードに分岐文"
+"( ``if``/``else`` 構造など)がある場合は、考えられるすべてのパスに戻り値が必要"
+"です。たとえば、 ``if`` ブロックの内側に戻り値があってもその後に戻り値がない"
+"場合、エディタはエラーを発生させます。 ``if`` 内のブロックが実行されない場"
+"合、関数には有効な戻り値がないからです。"
+
+msgid "Referencing functions"
+msgstr "関数の参照"
+
+msgid ""
+"Functions are first-class items in terms of the :ref:`Callable "
+"<class_Callable>` object. Referencing a function by name without calling it "
+"will automatically generate the proper callable. This can be used to pass "
+"functions as arguments."
+msgstr ""
+
+msgid ""
+"Callables **must** be called with the ``call`` method. You cannot use the "
+"``()`` operator directly. This behavior is implemented to avoid performance "
+"issues on direct function calls."
+msgstr ""
+
+#, fuzzy
+msgid "Lambda functions"
+msgstr "乱数生成関数"
+
+msgid ""
+"Lambda functions allow you to declare functions that do not belong to a "
+"class. Instead a :ref:`Callable <class_Callable>` object is created and "
+"assigned to a variable directly. This can be useful to create Callables to "
+"pass around without polluting the class scope."
+msgstr ""
+
+msgid "Lambda functions can be named for debugging purposes::"
+msgstr ""
+
+msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
+
+msgid ""
+"Lambda functions capture the local environment. Local variables are passed "
+"by value, so they won't be updated in the lambda if changed in the local "
+"function::"
+msgstr ""
+
+msgid ""
+"The values of the outer scope behave like constants. Therefore, if you "
+"declare an array or dictionary, it can still be modified afterwards."
+msgstr ""
+
+msgid "Static functions"
+msgstr "静的関数"
+
+#, fuzzy
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. A static function has "
+"access to static variables. Also static functions are useful to make "
+"libraries of helper functions::"
+msgstr ""
+"関数は静的として宣言できます。静的関数は、インスタンス・メンバー変数または "
+"``self`` にアクセスできません。これは主に、ヘルパー関数のライブラリを作成する"
+"のに便利です::"
+
+msgid "Lambdas cannot be declared static."
+msgstr ""
+
+msgid "See also `Static variables`_ and `Static constructor`_."
+msgstr ""
+
+msgid "Statements and control flow"
+msgstr "ステートメントと制御フロー"
+
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"文は標準的なもので、代入、関数呼び出し、制御フロー構造などです(下記参照)。 "
+"``;`` は文の区切り文字としては完全にオプションです。"
+
+#, fuzzy
+msgid "Expressions"
+msgstr "式ノード(Expression)"
+
+msgid ""
+"Expressions are sequences of operators and their operands in orderly "
+"fashion. An expression by itself can be a statement too, though only calls "
+"are reasonable to use as statements since other expressions don't have side "
+"effects."
+msgstr ""
+
+msgid ""
+"Expressions return values that can be assigned to valid targets. Operands to "
+"some operator can be another expression. An assignment is not an expression "
+"and thus does not return any value."
+msgstr ""
+
+#, fuzzy
+msgid "Here are some examples of expressions::"
+msgstr "カスタムエフェクトの例を次に示します:"
+
+msgid ""
+"Identifiers, attributes, and subscripts are valid assignment targets. Other "
+"expressions cannot be on the left side of an assignment."
+msgstr ""
+
+msgid "if/else/elif"
+msgstr "\\ if/else/elif"
+
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"単純な条件は、 ``if``/``else``/``elif`` 構文を使用して作成します。条件をかっ"
+"こで囲むことはできますが、必須ではありません。タブベースのインデントの性質か"
+"ら、インデントのレベルを維持するために ``elif`` を ``else``/``if`` の代わりに"
+"使用できます。"
+
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "短いステートメントは、条件と同じ行に記述できます:"
+
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"場合によっては、ブール式に基づいて異なる初期値を割り当てたいことがあります。 "
+"この場合、3項式が便利です::"
+
+msgid ""
+"Ternary-if expressions can be nested to handle more than 2 cases. When "
+"nesting ternary-if expressions, it is recommended to wrap the complete "
+"expression over multiple lines to preserve readability::"
+msgstr ""
+"三項if式は、2つ以上の条件を扱うために入れ子にすることができます。三項if式を入"
+"れ子にする場合は、読みやすさを保つために、式全体を複数行に渡ってラップするこ"
+"とをお勧めします。"
+
+msgid ""
+"You may also wish to check if a value is contained within something. You can "
+"use an ``if`` statement combined with the ``in`` operator to accomplish "
+"this::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue`` (which skips to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
+msgstr ""
+"単純なループは ``while`` 構文を使用して作成されます。ループは ``break`` を"
+"使って中断することも、 ``continue`` を使って続けることもできます:"
+
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"配列やテーブルなどの範囲を反復するには、 *for* ループが使用されます。配列を反"
+"復処理する時には、現在の配列要素がループ変数に格納されます。 辞書を反復処理す"
+"るとき、 *key* はループ変数に格納されます。"
+
+msgid ""
+"If you want to assign values on an array as it is being iterated through, it "
+"is best to use ``for i in array.size()``."
+msgstr ""
+
+msgid ""
+"The loop variable is local to the for-loop and assigning to it will not "
+"change the value on the array. Objects passed by reference (such as nodes) "
+"can still be manipulated by calling methods on the loop variable."
+msgstr ""
+
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"``match`` 文はプログラムの実行を分岐するために使用されます。他の多くの言語で"
+"見られる ``switch`` 文と同等ですが、いくつかの追加機能を提供します。"
+
+msgid ""
+"``match`` is more type strict than the ``==`` operator. For example ``1`` "
+"will **not** match ``1.0``. The only exception is ``String`` vs "
+"``StringName`` matching: for example, the String ``\"hello\"`` is considered "
+"equal to the StringName ``&\"hello\"``."
+msgstr ""
+
+#, fuzzy
+msgid "Basic syntax"
+msgstr "基本の構文::"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
+msgstr ""
+"**switchステートメントに精通しているユーザー向けのクラッシュ・コース**:"
+
+msgid "Replace ``switch`` with ``match``."
+msgstr "``match`` する ``switch`` を置換します。"
+
+msgid "Remove ``case``."
+msgstr "``case`` を削除します。"
+
+#, fuzzy
+msgid "Remove any ``break``\\ s."
+msgstr "``case`` を削除します。"
+
+msgid "Change ``default`` to a single underscore."
+msgstr "``default`` をアンダースコア1つに変更します。"
+
+#, fuzzy
+msgid "Control flow"
+msgstr "**制御フロー**:"
+
+#, fuzzy
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement."
+msgstr ""
+"パターンは上から下に一致します。パターンが一致すると、対応するブロックが実行"
+"されます。その後、実行は ``match`` 文の下で続行されます。フォールスルーしたい"
+"場合は、 ``continue`` を使用して現在のブロックで実行を停止し、その下のブロッ"
+"クを確認します。"
+
+msgid ""
+"The special ``continue`` behavior in ``match`` supported in 3.x was removed "
+"in Godot 4.0."
+msgstr ""
+
+#, fuzzy
+msgid "The following pattern types are available:"
+msgstr "プレゼンテーションを実装するには、次のメソッドを使用します:"
+
+#, fuzzy
+msgid "Literal pattern"
+msgstr "配列パターン"
+
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
+
+#, fuzzy
+msgid "Expression pattern"
+msgstr "式ノード(Expression Node)"
+
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
+
+msgid "Wildcard pattern"
+msgstr "ワイルドカードパターン"
+
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr ""
+"このパターンはすべてにマッチします。 単一のアンダースコアとして書かれていま"
+"す。"
+
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr ""
+"他の言語における ``switch`` ステートメントでの ``default`` と同等のものとして"
+"使用できます::"
+
+msgid "Binding pattern"
+msgstr "バインディングパターン"
+
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"バインディング・パターンは新しい変数を導入します。ワイルドカード・パターンと"
+"同様に、すべてに一致し、その値に名前を付けます。配列や辞書のパターンで特に便"
+"利です:"
+
+msgid "Array pattern"
+msgstr "配列パターン"
+
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr ""
+"配列と一致します。 配列パターンの各要素はパターンそのものなので、それらをネス"
+"トすることができます。"
+
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr ""
+"配列の長さが最初にテストされ、それはパターンと同じサイズでなければなりませ"
+"ん、そうでなければパターンは一致しません。"
+
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr ""
+"**オープンエンド配列**: 最後のサブパターンを `` ..`` にすることで配列をパター"
+"ンよりも大きくすることができます。"
+
+msgid "Every subpattern has to be comma-separated."
+msgstr "各サブパターンはカンマで区切る必要があります。"
+
+msgid "Dictionary pattern"
+msgstr "辞書パターン"
+
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr ""
+"配列パターンと同じように機能します。 すべてのキーは定数パターンでなければなり"
+"ません。"
+
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr ""
+"辞書のサイズが最初にテストされ、それはパターンと同じサイズでなければなりませ"
+"ん、そうでなければパターンは一致しません。"
+
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr ""
+"**オープンエンド辞書**: 最後のサブパターンを `` ..`` にすることで辞書をパター"
+"ンよりも大きくすることができます。"
+
+msgid "Every subpattern has to be comma separated."
+msgstr "各サブパターンはカンマで区切る必要があります。"
+
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "値を指定しないと、キーの存在のみがチェックされます。"
+
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "値パターンは、キーパターンとは ``:`` で区別されます:。"
+
+msgid "Multiple patterns"
+msgstr "組み合わせパターン"
+
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr ""
+"複数のパターンをカンマで区切って指定することもできます。 これらのパターンに"
+"は、バインディングを含めることはできません。"
+
+#, fuzzy
+msgid "Pattern guards"
+msgstr "東マリ語 (ロシア)"
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "値を指定しないと、キーの存在のみがチェックされます。"
+
+msgid "Classes"
+msgstr "クラス"
+
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"デフォルトでは、すべてのスクリプトファイルは名前のないクラスです。この場合、"
+"相対パスまたは絶対パスを使用して、ファイルのパスを使用してのみそれらを参照で"
+"きます。 たとえば、スクリプトファイルに ``character.gd`` という名前を付けたと"
+"します::"
+
+#, fuzzy
+msgid "Registering named classes"
+msgstr "スクリプトをクラスとして登録する"
+
+#, fuzzy
+msgid ""
+"You can give your class a name to register it as a new type in Godot's "
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"代わりに、Godotのエディタで新しいタイプとして登録するためにクラスに名前を付け"
+"ることができます。それには、 'class_name' キーワードを使用します。 アイコンと"
+"して使用するために、オプションのコンマに続けて画像へのパスを追加できます。あ"
+"なたのクラスはエディタに新しいアイコンで表示されます::"
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
+
+msgid "Here's a class file example:"
+msgstr "クラスファイルの例を次に示します:"
+
+msgid ""
+"If you want to use ``extends`` too, you can keep both on the same line::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot initializes non-static variables every time you create an instance, "
+"and this includes arrays and dictionaries. This is in the spirit of thread "
+"safety, since scripts can be initialized in separate threads without the "
+"user knowing."
+msgstr ""
+"Godotのクラス構文はコンパクトで、メンバー変数または関数のみを含むことができま"
+"す。静的関数は使用できますが、静的メンバー変数は使用できません。同様に、イン"
+"スタンスを作成するたびに変数が初期化されますが、これには配列とディクショナリ"
+"が含まれます。スクリプトはユーザーが知らなくても別のスレッドで初期化できるた"
+"め、これはスレッド・セーフの精神に基づいています。"
+
+msgid "Inheritance"
+msgstr "継承"
+
+msgid "A class (stored as a file) can inherit from:"
+msgstr "クラス(ファイルとして格納されている)は以下から継承することができます:"
+
+msgid "A global class."
+msgstr "グローバルクラス。"
+
+msgid "Another class file."
+msgstr "他のクラスファイル。"
+
+msgid "An inner class inside another class file."
+msgstr "別のクラスファイル内の内部クラス。"
+
+msgid "Multiple inheritance is not allowed."
+msgstr "多重継承はできません。"
+
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "継承は ``extends`` キーワードを使用します::"
+
+msgid ""
+"If inheritance is not explicitly defined, the class will default to "
+"inheriting :ref:`class_RefCounted`."
+msgstr ""
+
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr ""
+"特定のインスタンスが特定のクラスを継承するかどうかを確認するには、 ``is`` "
+"キーワードを使用します::"
+
+#, fuzzy
+msgid ""
+"To call a function in a *super class* (i.e. one ``extend``-ed in your "
+"current class), use the ``super`` keyword::"
+msgstr ""
+"親クラスの関数(それは，現在のクラスで継承されている)を呼び出すには、 関数名の"
+"前に ``.`` を付けます::"
+
+#, fuzzy
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their super classes. If you still want to "
+"call them, you can use ``super``::"
+msgstr ""
+"子クラスの関数は親クラスの同名の関数を置き換えるため、元の親クラスの関数を呼"
+"び出すときに特に使用されます。 関数名の 前に``.`` を付けます(他の言語の "
+"``super`` キーワードのように)::"
+
+msgid ""
+"If you need to call a different function from the super class, you can "
+"specify the function name with the attribute operator::"
+msgstr ""
+
+msgid ""
+"One of the common misconceptions is trying to override *non-virtual* engine "
+"methods such as ``get_class()``, ``queue_free()``, etc. This is not "
+"supported for technical reasons."
+msgstr ""
+
+msgid ""
+"In Godot 3, you can *shadow* engine methods in GDScript, and it will work if "
+"you call this method in GDScript. However, the engine will **not** execute "
+"your code if the method is called inside the engine on some event."
+msgstr ""
+
+msgid ""
+"In Godot 4, even shadowing may not always work, as GDScript optimizes native "
+"method calls. Therefore, we added the ``NATIVE_METHOD_OVERRIDE`` warning, "
+"which is treated as an error by default. We strongly advise against "
+"disabling or ignoring the warning."
+msgstr ""
+
+msgid ""
+"Note that this does not apply to virtual methods such as ``_ready()``, "
+"``_process()`` and others (marked with the ``virtual`` qualifier in the "
+"documentation and the names start with an underscore). These methods are "
+"specifically for customizing engine behavior and can be overridden in "
+"GDScript. Signals and notifications can also be useful for these purposes."
+msgstr ""
+
+msgid "Class constructor"
+msgstr "クラスコンストラクター"
+
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. If "
+"you want to call the base class constructor, you can also use the ``super`` "
+"syntax. Note that every class has an implicit constructor that it's always "
+"called (defining the default values of class variables). ``super`` is used "
+"to call the explicit constructor::"
+msgstr ""
+
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr ""
+"これは、例を使って説明した方がわかりやすいです。次のようなシナリオがあるとし"
+"ます::"
+
+msgid "There are a few things to keep in mind here:"
+msgstr "留意すべきことがいくつかあります:"
+
+#, fuzzy
+msgid ""
+"If the inherited class (``state.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``state.gd``."
+msgstr ""
+"継承元のクラス( ``State.gd``)が ``_init`` コンストラクターを定義し、それが引"
+"数を取る場合(このケースは ``e`` )、 ``State.gd`` の継承クラス(``Idle.gd``)も "
+"``_init`` を定義し、 ``State.gd`` の ``_init`` に適切なパラメーターを渡す *必"
+"要* があります。"
+
+#, fuzzy
+msgid ""
+"``idle.gd`` can have a different number of arguments than the base class "
+"``state.gd``."
+msgstr ""
+"``Idle.gd`` は、親クラス ``State.gd`` と異なる数の引数を持つことができます。"
+
+#, fuzzy
+msgid ""
+"In the example above, ``e`` passed to the ``state.gd`` constructor is the "
+"same ``e`` passed in to ``idle.gd``."
+msgstr ""
+"上の例では、 ``State.gd`` コンストラクターに渡される ``e`` は、 ``Idle.gd`` "
+"に渡されるのと同じ ``e`` です。"
+
+#, fuzzy
+msgid ""
+"If ``idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``state.gd`` base class, even if it does nothing. "
+"This brings us to the fact that you can pass expressions to the base "
+"constructor as well, not just variables, e.g.::"
+msgstr ""
+"``Idle.gd`` の ``_init`` コンストラクターが0の引数を取る場合、何もしなくても "
+"``State.gd`` 親クラスに値を渡す必要があります。変数だけでなくリテラルもベース"
+"コンストラクターに渡すことができます。 例::"
+
+#, fuzzy
+msgid "Static constructor"
+msgstr "クラスコンストラクター"
+
+msgid ""
+"A static constructor is a static function ``_static_init`` that is called "
+"automatically when the class is loaded, after the static variables have been "
+"initialized::"
+msgstr ""
+
+msgid ""
+"A static constructor cannot take arguments and must not return any value."
+msgstr ""
+
+msgid "Inner classes"
+msgstr "内部クラス"
+
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"クラスファイルには内部クラスを含めることができます。内部クラスは、 ``class`` "
+"キーワードを使用して定義されます。 ``ClassName.new()`` 関数を使用してインスタ"
+"ンス化されます。"
+
+msgid "Classes as resources"
+msgstr "リソースとしてのクラス"
+
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"ファイルとして保存されたクラスは \\ :ref:`resources <class_GDScript>` として"
+"扱われます。他のクラスでそれらにアクセスするには、それらをディスクからロード"
+"する必要があります。 これは、 ``load`` または ``preload`` 関数を使用して行わ"
+"れます(下記参照)。ロードされたクラスリソースのインスタンス化は、クラスオブ"
+"ジェクトの新しい関数を呼び出すことによって行われます:"
+
+msgid "Exports"
+msgstr "エクスポート"
+
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr ""
+"エクスポートについてのドキュメントは :ref:`doc_gdscript_exports` に移動しまし"
+"た。"
+
+#, fuzzy
+msgid "Properties (setters and getters)"
+msgstr "プロパティ (設定/取得)"
+
+#, fuzzy
+msgid ""
+"Sometimes, you want a class' member variable to do more than just hold data "
+"and actually perform some validation or computation whenever its value "
+"changes. It may also be desired to encapsulate its access in some way."
+msgstr ""
+"クラスのメンバー変数がどのような理由で変更されたかを把握しておくと便利です。"
+"また、何らかの方法でそのアクセスをカプセル化することが望ましい場合もあるかも"
+"しれません。"
+
+msgid ""
+"For this, GDScript provides a special syntax to define properties using the "
+"``set`` and ``get`` keywords after a variable declaration. Then you can "
+"define a code block that will be executed when the variable is accessed or "
+"assigned."
+msgstr ""
+
+#, fuzzy
+msgid "Example::"
+msgstr "例:"
+
+msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "代替アプローチ"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "次のモーションを生成します:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
+"Using the variable's name to set it inside its own setter or to get it "
+"inside its own getter will directly access the underlying member, so it "
+"won't generate infinite recursion and saves you from explicitly declaring "
+"another variable::"
+msgstr ""
+
+#, fuzzy
+msgid "This also applies to the alternative syntax::"
+msgstr "まず、これは必須の構文です:"
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
+
+msgid "Tool mode"
+msgstr "ツールモード"
+
+#, fuzzy
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``@tool`` annotation exists and must be placed at "
+"the top of the file::"
+msgstr ""
+"デフォルトでは、スクリプトはエディタ内では実行されずエクスポートされたプロパ"
+"ティのみを変更できます(ゲームコードの実行あるいは手動でそのようになるのを回避"
+"しない限り)。場合によっては、エディタ内で実行することが望ましい場合がありま"
+"す。これには、 ``tool`` キーワードが存在し、ファイルの先頭に配置する必要があ"
+"ります::"
+
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr ""
+"詳細については、\\ :ref:`doc_running_code_in_the_editor` を参照してください。"
+
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"ツールスクリプトでノードを\\ ``queue_free()``\\ あるいは\\ ``free()``\\ で開"
+"放するときは注意してください(特にノードがそのスクリプトのオーナーである場"
+"合)。ツールスクリプトはエディタ内で実行されるので、間違って使うとエディタがク"
+"ラッシュするかもしれません。"
+
+msgid "Memory management"
+msgstr "メモリ管理"
+
+msgid ""
+"Godot implements reference counting to free certain instances that are no "
+"longer used, instead of a garbage collector, or requiring purely manual "
+"management. Any instance of the :ref:`class_RefCounted` class (or any class "
+"that inherits it, such as :ref:`class_Resource`) will be freed automatically "
+"when no longer in use. For an instance of any class that is not a :ref:"
+"`class_RefCounted` (such as :ref:`class_Node` or the base :ref:"
+"`class_Object` type), it will remain in memory until it is deleted with "
+"``free()`` (or ``queue_free()`` for Nodes)."
+msgstr ""
+
+msgid ""
+"If a :ref:`class_Node` is deleted via ``free()`` or ``queue_free()``, all of "
+"its children will also recursively be deleted."
+msgstr ""
+
+msgid ""
+"To avoid reference cycles that can't be freed, a :ref:`class_WeakRef` "
+"function is provided for creating weak references, which allow access to the "
+"object without preventing a :ref:`class_RefCounted` from freeing. Here is an "
+"example:"
+msgstr ""
+
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"あるいは、参照を使用しない場合は、 ``is_instance_valid(instance)`` を使用して"
+"オブジェクトが解放されたかどうかを確認できます。"
+
+msgid "Signals"
+msgstr "シグナル"
+
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"シグナルはオブジェクトから通知メッセージを送信する手段で、他のオブジェクトは"
+"それを受信することが出来ます。 クラスのカスタムシグナルを作るには``signal`` "
+"キーワードを使用します。"
+
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"シグナルは\\ `コールバック <https://ja.wikipedia.org/wiki/コールバック_(情報"
+"工学)>`_\\ 機構です。これはオブザーバーとしても振る舞う、一般的なプログラミン"
+"グパターンです。より多くの情報を得るにはGame Programming Patterns ebookの "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ をお"
+"読みください(英語)。"
+
+#, fuzzy
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody3D`."
+msgstr ""
+":ref:`class_Button` や :ref:`class_RigidBody` の様ななノードの組み込みシグナ"
+"ルを接続するのと同じ方法で、これらのシグナルをメソッドに接続できます。"
+
+#, fuzzy
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_character_health_depleted`` is called::"
+msgstr ""
+"下の例では、``Character`` ノードから ``Game`` ノードへ ``health_depleted`` シ"
+"グナルを接続します。 ``Character`` ノードがシグナルを発信したとき、gameノード"
+"の ``_on_Character_health_depleted`` が呼ばれます。"
+
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "あなたが望むシグナルと一緒に多くの引数を発信することができます。"
+
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"ここに有用な例を示します。アニメーションを伴った、体力の変化を受信するライフ"
+"バーをスクリーン上に配置しようとしますが、シーンツリー上にあるプレイヤーから"
+"はそのユーザーインターフェースを分けたいします。"
+
+#, fuzzy
+msgid ""
+"In our ``character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Signal.emit() <class_Signal_method_emit>`, and from a "
+"``Game`` node higher up our scene tree, we connect it to the ``Lifebar`` "
+"using the :ref:`Signal.connect() <class_Signal_method_connect>` method::"
+msgstr ""
+"``Character.gd`` スクリプト内で ``health_changed`` シグナルを定義し :ref:"
+"`Object.emit_signal() <class_Object_method_emit_signal>` を使って発信し、それ"
+"をシーンツリーの上層の ``Game`` ノードから、 :ref:`Object.connect() "
+"<class_Object_method_connect>` メソッドを使って ``Lifebar`` へ接続します::"
+
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"``Game`` ノード内で ``Character`` ノードと ``Lifebar`` ノードを取得し、そし"
+"て character と受信者を接続し 、 character にシグナルを受信者へ送信させます、"
+"受信者はこのケースでは ``Lifebar`` ノードです。"
+
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"これは ``Character`` ノードとのカップリングをせずに ``Lifebar`` に体力の変化"
+"を受信することを可能にします。"
+
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr "signalを定義後の括弧内に追加の引数名を書くことが出来ます::"
+
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"これらの引数はエディタのノードドックに表示され、Godot はこれらを使いコール"
+"バック関数を生成します。しかし、シグナルを発信する際に、異なる個数の引数を送"
+"信することもできます。正しい値を発信するかはあなた次第です。"
+
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"GDScriptは、シグナルとメソッド間の接続に値の配列をバインドすることができま"
+"す。シグナルが発信された時、コールバックメソッドがバインドされた値を受け取り"
+"ます。これらのバインドされた引数は、それぞれの接続に固有のもので、同じ値が維"
+"持されます。"
+
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"もし、発信されたシグナル自身が必要とするデータへのアクセスをあなたに与えな"
+"かったとしても、決まった情報を接続に追加するために値の配列を使うことが出来ま"
+"す。"
+
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"上の例に基づいて、``Player1 took 22 damage.`` のようにスクリーン上にそれぞれ"
+"のキャラクターの受けたダメージのログを表示したいとします 。"
+"``health_changed`` シグナルはダメージを受けたキャラクターの名前を我々に与えま"
+"せん。その場合、ゲーム内のコンソールにシグナルを接続する事により、バインドさ"
+"れた引数の配列にあるキャラクターの名前を追加することができます::"
+
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr ""
+"``BattleLog`` ノードはバインドされた追加の引数の配列内の要素を、送信者ごとに"
+"受け取ります。"
+
+#, fuzzy
+msgid "Awaiting for signals or coroutines"
+msgstr "コンテンツの作成"
+
+msgid ""
+"The ``await`` keyword can be used to create `coroutines <https://en."
+"wikipedia.org/wiki/Coroutine>`_ which wait until a signal is emitted before "
+"continuing execution. Using the ``await`` keyword with a signal or a call to "
+"a function that is also a coroutine will immediately return the control to "
+"the caller. When the signal is emitted (or the called coroutine finishes), "
+"it will resume execution from the point on where it stopped."
+msgstr ""
+
+msgid ""
+"For example, to stop execution until the user presses a button, you can do "
+"something like this::"
+msgstr ""
+
+msgid ""
+"In this case, the ``wait_confirmation`` becomes a coroutine, which means "
+"that the caller also needs to await for it::"
+msgstr ""
+
+msgid ""
+"Note that requesting a coroutine's return value without ``await`` will "
+"trigger an error::"
+msgstr ""
+
+msgid ""
+"However, if you don't depend on the result, you can just call it "
+"asynchronously, which won't stop execution and won't make the current "
+"function a coroutine::"
+msgstr ""
+
+msgid ""
+"If you use await with an expression that isn't a signal nor a coroutine, the "
+"value will be returned immediately and the function won't give the control "
+"back to the caller::"
+msgstr ""
+
+msgid ""
+"This also means that returning a signal from a function that isn't a "
+"coroutine will make the caller await on that signal::"
+msgstr ""
+
+msgid ""
+"Unlike ``yield`` in previous Godot versions, you cannot obtain the function "
+"state object. This is done to ensure type safety. With this type safety in "
+"place, a function cannot say that it returns an ``int`` while it actually "
+"returns a function state object during runtime."
+msgstr ""
+
+msgid "Assert keyword"
+msgstr "Assertキーワード"
+
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"``assert`` キーワードはデバックビルド内で状態をチェックする為に使う事が出来ま"
+"す。これらの assert は非デバッグビルドでは無視されます。これはリリースモード"
+"でのプロジェクトのエクスポートでは引数として渡された式が評価されない事を意味"
+"します。"
+
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr ""
+"エディタ上でプロジェクトが実行されている時に、assertion エラーが発生した場合"
+"プロジェクトは停止します。"
+
+msgid ""
+"You can optionally pass a custom error message to be shown if the assertion "
+"fails::"
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

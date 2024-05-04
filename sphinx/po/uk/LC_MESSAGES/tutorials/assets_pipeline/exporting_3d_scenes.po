@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting 3D scenes"
+msgstr "Експортування 3D сцен"
+
+msgid "Overview"
+msgstr "Огляд"
+
+#, fuzzy
+msgid ""
+"In Godot, it is possible to export 3D scenes as a glTF 2.0 file. You can "
+"export as a glTF binary (``.glb`` file) or glTF embedded with textures "
+"(``gltf`` + ``.bin`` + textures). This allows you to create scenes in Godot, "
+"such as a CSG mesh blockout for a level, export it to clean it up in a "
+"program such as Blender, and then bring it back into Godot."
+msgstr ""
+"У Godot можна експортувати 3D-сцени як файл glTF 2.0. Ви можете експортувати "
+"як двійковий файл glTF (файл ``.glb``), або glTF з вбудованими текстурами "
+"(``gltf`` + ``.bin`` + текстури). Це дозволяє створювати сцени в Godot, такі "
+"як меші блокування CSG для рівня, експортувати їх для очищення в програмі, "
+"наприклад Blender, а потім повертати в Godot."
+
+msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
+msgstr ""
+"Лише Blender 2.83 і новіші можуть імпортувати файли glTF, експортовані Godot."
+
+#, fuzzy
+msgid ""
+"To export a scene in the editor go to **Scene > Export As... > glTF 2.0 "
+"Scene...**"
+msgstr ""
+"Щоб експортувати сцену в редакторі перейдіть до **Проект > Інструменти > "
+"Експортувати GLTF...**"
+
+msgid "Limitations"
+msgstr "Обмеження"
+
+msgid "There are several limitations with glTF export."
+msgstr "Є деякі обмеження при експорті glTF."
+
+msgid ""
+"No support for exporting particles since their implementation varies across "
+"engines."
+msgstr ""
+"Нема підтримки експорту частинок, тому що їх реалізація різна в різних "
+"рушіях."
+
+msgid "ShaderMaterials cannot be exported."
+msgstr "ShaderMaterial-и не можна експортувати."
+
+msgid "No support for exporting 2D scenes."
+msgstr "Немає підтримки експортуванні 2D сцен."
+
+msgid ""
+"3D scenes can be saved at runtime using :ref:`runtime file loading and "
+"saving <doc_runtime_file_loading_and_saving_3d_scenes>`, including from an "
+"exported project."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Стан перекладу"

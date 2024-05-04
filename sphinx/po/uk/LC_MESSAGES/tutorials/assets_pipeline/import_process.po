@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Import process"
+msgstr "Процес імпорту"
+
+#, fuzzy
+msgid "Importing assets in Godot"
+msgstr "Імпорт активів (асетів) у Godot 3.0+"
+
+msgid ""
+"To import assets in Godot, place your assets (image files, scenes, audio "
+"files, fonts, etc) directly in the project folder. There are 2 ways to "
+"achieve this:"
+msgstr ""
+
+msgid ""
+"**For any file type:** Copy files manually with your operating system's file "
+"manager."
+msgstr ""
+
+msgid ""
+"**For file types that can be imported by Godot:** Drag-and-drop files from "
+"the operating system's file manager to the editor's FileSystem dock. This "
+"only works with *resource* file types (i.e. file types that Godot can "
+"import)."
+msgstr ""
+
+msgid ""
+"Godot will automatically import these files internally and keep the imported "
+"resources hidden in a ``res://.godot/imported/`` folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This means that when trying to access imported assets through code, you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`FileAccess "
+"<class_FileAccess>` class, it will work in the editor, but **it will break "
+"in the exported project**."
+msgstr ""
+"Це означає, що при спробі отримати доступ до імпортованих активів за "
+"допомогою коду потрібно використовувати :ref:`завантажувач "
+"ресурсів<class_ResourceLoader>`, оскільки він автоматично враховує, де "
+"зберігаються внутрішні файли. Якщо ви спробуєте отримати доступ до "
+"імпортованого об’єкта за допомогою класу :ref:`File <class_File>`, він буде "
+"працювати в редакторі, але експортувати проєкт не вдасться."
+
+#, fuzzy
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non-"
+"imported files. Only the :ref:`FileAccess <class_FileAccess>` class can."
+msgstr ""
+"Однак :ref:`завантажувач ресурсів<class_ResourceLoader>` не може отримати "
+"доступ до неімпортних файлів, а клас :ref:`File <class_File>` може."
+
+msgid "Changing import parameters"
+msgstr "Зміна параметрів імпорту"
+
+msgid ""
+"Import parameters are only present in *non-native* Godot resource types. "
+"This means Godot's own scene and resource file formats (``.tscn``, ``.scn``, "
+"``.tres``, ``.res``) don't have import options you can select in the Import "
+"dock."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To change the import parameters of an asset in Godot, select the relevant "
+"resource in the FileSystem dock:"
+msgstr ""
+"Зміна параметрів імпорту активів в Godot (знову ж таки, пам'ятайте, що "
+"параметри імпорту присутні лише у нерідних типах ресурсів Godot) дуже "
+"проста. Виберіть відповідний ресурс на панелі Файлова система:"
+
+msgid ""
+"After adjusting the parameters, click **Reimport**. Be careful: if you "
+"select another file in the FileSystem dock before clicking **Reimport**, "
+"changes will be discarded. After clicking **Reimport**, the chosen "
+"parameters will only be used for this asset and on future reimports."
+msgstr ""
+
+msgid ""
+"Changing the import parameters of several assets at the same time is also "
+"possible. Simply select all of them together in the resources dock and the "
+"exposed parameters will apply to all of them when reimporting."
+msgstr ""
+"Можлива зміна параметрів імпорту кількох активів одночасно. Просто виберіть "
+"їх усіх разом на панелі ресурсів, і відкриті параметри будуть застосовані до "
+"всіх при повторному імпорті."
+
+msgid "Reimporting multiple assets"
+msgstr "Повторний імпорт кількох активів"
+
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+"Під час роботи над проєктом ви можете виявити, що для кількох активів "
+"потрібно змінити однакові параметри, наприклад, увімкнення mipmaps, але ви "
+"хочете змінити лише ці конкретні параметри. Для цього виберіть усі активи, "
+"які потрібно повторно імпортувати у файлову систему. На вкладці імпорту "
+"тепер буде галочка ліворуч від кожного параметра імпорту."
+
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+"Установіть галочку серед параметрів, які потрібно змінити для імпортованих "
+"активів, а потім змініть параметри в звичайному режимі. Нарешті, натисніть "
+"кнопку повторного імпорту, і кожен вибраний актив буде повторно імпортований "
+"із зміною лише цих параметрів."
+
+msgid "Automatic reimport"
+msgstr "Автоматичний повторний імпорт"
+
+msgid ""
+"When the MD5 checksum of the source asset changes, Godot will perform an "
+"automatic reimport of it, applying the preset configured for that specific "
+"asset."
+msgstr ""
+"Коли контрольна сума MD5 вихідного ресурсу зміниться, Godot здійснить "
+"автоматичний повторний імпорт, застосувавши попередньо налаштований для "
+"цього конкретний ресурс."
+
+msgid "Files generated"
+msgstr "Згенеровані файли"
+
+msgid ""
+"Importing will add an extra ``<asset>.import`` file next to the source file, "
+"containing the import configuration."
+msgstr ""
+"Імпорт додасть додатковий файл ``<asset>.import`` до вихідного файлу, що "
+"містить конфігурацію імпорту."
+
+msgid ""
+"**Make sure to commit these files to your version control system**, as these "
+"files contain important metadata."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Additionally, extra assets will be present in the hidden ``res://.godot/"
+"imported/`` folder:"
+msgstr ""
+"Крім того, додаткові активи будуть встановлені в прихованій теці ``res://."
+"import``:"
+
+msgid ""
+"If any of the files present in this folder is erased (or the whole folder), "
+"the asset or assets will be reimported automatically. As such, committing "
+"the ``.godot/`` folder to the version control system is not recommended. "
+"While committing this folder can shorten reimporting time when checking out "
+"on another computer, it requires considerably more space and bandwidth."
+msgstr ""
+"Якщо будь-який з файлів, присутніх у цій теці, буде видалено (або всю теку), "
+"ресурс або ресурси буде імпортовано автоматично. Тому не рекомендується "
+"фіксувати теку ``.godot/`` у системі контролю версій. Хоча фіксація цієї "
+"теки може скоротити час повторного імпортування при виході з системи на "
+"іншому комп'ютері, вона вимагає значно більшого простору і пропускної "
+"здатності."
+
+msgid ""
+"The default version control metadata that can be generated on project "
+"creation will automatically ignore the ``.godot/`` folder."
+msgstr ""
+
+msgid "Changing import resource type"
+msgstr "Зміна типу ресурсу імпорту"
+
+#, fuzzy
+msgid ""
+"Some source assets can be imported as different types of resources. For "
+"this, select the relevant type of resource desired then click **Reimport**:"
+msgstr ""
+"Деякі вихідні активи можна імпортувати як різні види ресурсів. Для цього "
+"виберіть потрібний тип потрібного ресурсу та натисніть «Reimport»:"
+
+msgid "Changing default import parameters"
+msgstr "Зміна параметрів імпорту за замовчуванням"
+
+#, fuzzy
+msgid ""
+"Different types of projects might require different defaults. Changing the "
+"import options to a predefined set of options can be achieved by using the "
+"**Preset...** Menu. Besides some resource types offering presets, the "
+"default settings can be saved and cleared too:"
+msgstr ""
+"Для різних типів ігор можуть знадобитися різні параметри за замовчуванням. "
+"Їх зміна для кожного проєкту може бути досягнута за допомогою меню "
+"\"Попередньо ..\" (\"Preset..\"). Окрім деяких типів ресурсів, які "
+"пропонують свої попередні параметри, ці параметри також можна зберегти та "
+"очистити:"
+
+msgid ""
+"The default import parameters for a given resource type can be changed "
+"project-wide using the **Import Defaults** tab of the Project Settings "
+"dialog:"
+msgstr ""
+
+#, fuzzy
+msgid "Further reading"
+msgstr "Багатопотоковість"
+
+#, fuzzy
+msgid ""
+"This workflow takes a little time to get used to, but it enforces a more "
+"correct way to deal with resources."
+msgstr ""
+"Це дуже простий процес, до якого легко звикнути. Він також застосовує "
+"правильніший спосіб поводження з ресурсами."
+
+msgid ""
+"There are many types of assets available for import. Continue reading to "
+"understand how to work with all of them:"
+msgstr ""
+"Існує багато типів активів, доступних для імпорту. Продовжуйте читати, щоб "
+"зрозуміти, як працювати з ними:"
+
+#, fuzzy
+msgid ":ref:`doc_importing_images`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_audio_samples`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_3d_scenes`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_translations`"
+msgstr ":ref:`doc_exporting_basics`"
+
+msgid "Translation status"
+msgstr "Стан перекладу"

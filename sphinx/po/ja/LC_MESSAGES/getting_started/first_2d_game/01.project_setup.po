@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Setting up the project"
+msgstr "プロジェクトの設定"
+
+msgid "In this short first part, we'll set up and organize the project."
+msgstr "まずはじめに、プロジェクトのセットアップを行います。"
+
+msgid "Launch Godot and create a new project."
+msgstr "Godotを起動し、プロジェクトを新規作成します。"
+
+msgid ""
+"When creating the new project, you only need to choose a valid *Project "
+"Path*. You can leave the other default settings alone."
+msgstr ""
+"新規プロジェクトを作成する際、必要なのは有効なプロジェクトパスを選択すること"
+"だけです。他のデフォルト設定はそのままで大丈夫です。"
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid ""
+"Download `dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/"
+"godot-docs-project-starters/releases/download/latest-4.x/"
+"dodge_the_creeps_2d_assets.zip>`_. The archive contains the images and "
+"sounds you'll be using to make the game. Extract the archive and move the "
+"``art/`` and ``fonts/`` directories to your project's directory."
+msgstr ""
+"\\ :download:`dodge_assets.zip <files/dodge_assets.zip>`\\ をダウンロードして"
+"ください。これにはゲームを作るのに使う画像とサウンドが含まれています。この"
+"ファイルを解凍して出来た ``art/`` フォルダと ``fonts/`` フォルダをプロジェク"
+"トのフォルダに移動してください。"
+
+msgid "C#"
+msgstr "C#"
+
+msgid ""
+"Ensure that you have the required dependencies to use C# in Godot. You need "
+"the latest stable .NET SDK, and an editor such as VS Code. See :ref:"
+"`doc_c_sharp_setup`."
+msgstr ""
+"GodotでC#を使用するために必要な依存関係があることを確認します。最新の.NET "
+"SDK とVS Codeのようなエディターが必要です。 :ref:`doc_c_sharp_setup`\\ を参照"
+"ください。"
+
+msgid "C++"
+msgstr "C++"
+
+msgid ""
+"The C++ part of this tutorial wasn't rewritten for the new GDExtension "
+"system yet."
+msgstr ""
+"このチュートリアルのC++部分は、まだ新しいGDExtensionシステム用に書き換えられ"
+"ていません。"
+
+msgid "Your project folder should look like this."
+msgstr "あなたのプロジェクトフォルダは次のようになります。"
+
+#, fuzzy
+msgid ""
+"This game is designed for portrait mode, so we need to adjust the size of "
+"the game window. Click on *Project -> Project Settings* to open the project "
+"settings window, in the left column open the *Display -> Window* tab. There, "
+"set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``."
+msgstr ""
+"このゲームは縦向きにデザインされるので、ゲームウィンドウのサイズを調整する必"
+"要があります。「プロジェクト -> プロジェクト設定」でプロジェクト設定を開き、"
+"「 表示 -> ウィンドウ」タブの、「ビューポートの幅」 を ``480`` に、「ビュー"
+"ポートの高さ」を ``720`` にセットします。"
+
+msgid ""
+"Also, under the **Stretch** options, set **Mode** to ``canvas_items`` and "
+"**Aspect** to ``keep``. This ensures that the game scales consistently on "
+"different sized screens."
+msgstr ""
+"また、同じセクションの下部にある「ストレッチ」オプションのところで、 **モード"
+"** を ``canvas_items`` に、 **アスペクト** を ``keep`` にします。これによっ"
+"て、異なるサイズのスクリーンでも、同じようにゲームが拡大縮小されて表示されま"
+"す。"
+
+msgid "Organizing the project"
+msgstr "プロジェクトの編成"
+
+msgid ""
+"In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
+"``HUD``, which we will combine into the game's ``Main`` scene."
+msgstr ""
+"このプロジェクトでは、3つの独立したシーン（ ``Player``, ``Mob``, ``HUD`` ）を"
+"作成し、 ``Main`` シーン上に記載します。"
+
+msgid ""
+"In a larger project, it might be useful to create folders to hold the "
+"various scenes and their scripts, but for this relatively small game, you "
+"can save your scenes and scripts in the project's root folder, identified by "
+"``res://``. You can see your project folders in the FileSystem dock in the "
+"lower left corner:"
+msgstr ""
+"より大規模なプロジェクトでは、さまざまなシーンとそのスクリプトを保持するフォ"
+"ルダを作成すると便利かもしれませんが、この比較的小さなゲームでは、 ``res://"
+"`` と呼ばれるプロジェクトのルートフォルダにシーンとスクリプトを保存します。プ"
+"ロジェクトフォルダは、左下隅の[ファイルシステム] ドックで確認できます:"
+
+msgid ""
+"With the project in place, we're ready to design the player scene in the "
+"next lesson."
+msgstr ""
+"プロジェクトを配置できたら、playerシーンを作成する次のレッスンに進みましょ"
+"う。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

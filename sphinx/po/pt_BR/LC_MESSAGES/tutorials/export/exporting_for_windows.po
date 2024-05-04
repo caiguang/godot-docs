@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for Windows"
+msgstr "Exportando para Windows"
+
+msgid ""
+"This page describes how to export a Godot project to Windows. If you're "
+"looking to compile editor or export template binaries from source instead, "
+"read :ref:`doc_compiling_for_windows`."
+msgstr ""
+
+msgid ""
+"The simplest way to distribute a game for PC is to copy the executable "
+"(``godot.exe``), compress the folder and send it to someone else. However, "
+"this is often not desired."
+msgstr ""
+"A maneira mais simples de distribuir um jogo para PC é copiar o executável "
+"(``godot.exe``), comprimir a pasta e enviá-la para outra pessoa. Entretanto, "
+"muitas vezes isto não é desejado."
+
+msgid ""
+"Godot offers a more elegant approach for PC distribution when using the "
+"export system. When exporting for Windows, the exporter takes all the "
+"project files and creates a ``data.pck`` file. This file is bundled with a "
+"specially optimized binary that is smaller, faster and does not contain the "
+"editor and debugger."
+msgstr ""
+"A Godot oferece uma abordagem mais elegante para a distribuição de PCs ao "
+"utilizar o sistema de exportação. Ao exportar para Windows, o exportador "
+"pega todos os arquivos do projeto e cria um arquivo ``data.pck``. Este "
+"arquivo é empacotado com um binário especialmente otimizado que é menor, "
+"mais rápido e não contém o editor e depurador."
+
+#, fuzzy
+msgid "Code signing"
+msgstr "Habilita a assinatura de código."
+
+msgid ""
+"Godot is capable of automatic code signing on export. To do this you must "
+"have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/"
+"mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a "
+"package signing certificate, information on creating one can be found `here "
+"<https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-"
+"package-signing-certificate?redirectedfrom=MSDN>`__."
+msgstr ""
+
+msgid ""
+"If you export for Windows with embedded PCK files, you will not be able to "
+"sign the program as it will break."
+msgstr ""
+"Se você exportar para Windows com arquivos PCK embutidos, você não poderá "
+"assinar o programa pois ele irá quebrar."
+
+msgid ""
+"On Windows, PCK embedding is also known to cause false positives in "
+"antivirus programs. Therefore, it's recommended to avoid using it unless "
+"you're distributing your project via Steam as it bypasses code signing and "
+"antivirus checks."
+msgstr ""
+"No Windows, a incorporação do PCK também é conhecida por causar falsos "
+"positivos em programas antivírus. Portanto, é recomendável evitar usá-lo a "
+"menos que você esteja distribuindo seu projeto via Steam, pois ele ignora a "
+"assinatura de código e as verificações de antivírus."
+
+msgid "Setup"
+msgstr "Configurar"
+
+msgid ""
+"Settings need to be changed in two places. First, in the editor settings, "
+"under **Export > Windows**. Click on the folder next to the ``Sign Tool`` "
+"setting, if you're using Windows navigate to and select ``SignTool.exe``, if "
+"you're on a different OS select ``osslsigncode``."
+msgstr ""
+
+msgid ""
+"The second location is the Windows export preset, which can be found in "
+"**Project > Export...**. Add a windows desktop preset if you haven't "
+"already. Under options there is a code signing category."
+msgstr ""
+
+msgid ""
+"``Enabled`` must be set to true, and ``Identity`` must be set to the signing "
+"certificate. The other settings can be adjusted as needed. Once this is Done "
+"Godot will sign your project on export."
+msgstr ""
+
+msgid "Environment variables"
+msgstr "Variáveis de ambiente"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+#, fuzzy
+msgid "Windows export environment variables"
+msgstr "Variáveis de ambiente"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Opções de exportação"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variáveis de ambiente"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr ""
+
+msgid "Options / Codesign / Identity Type"
+msgstr ""
+
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
+
+msgid "Options / Codesign / Identity"
+msgstr ""
+
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
+
+msgid "Options / Codesign / Password"
+msgstr ""
+
+msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Your first 2D game"
+msgstr "最初の2Dゲーム"
+
+msgid ""
+"In this step-by-step tutorial series, you will create your first complete 2D "
+"game with Godot. By the end of the series, you will have a simple yet "
+"complete game of your own, like the image below."
+msgstr ""
+"このステップバイステップチュートリアルシリーズの中では、初めての2Dゲームを作"
+"成します。このシリーズの最後には、以下のようなシンプルですが完成されたあなた"
+"自身によるゲームが完成します。"
+
+msgid "|image0|"
+msgstr "\\ |image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"You will learn how the Godot editor works, how to structure a project, and "
+"build a 2D game."
+msgstr ""
+"このチュートリアルではエディタの使い方、プロジェクトの構成方法、2Dゲームの作"
+"りかたを学びます。"
+
+msgid ""
+"This project is an introduction to the Godot engine. It assumes that you "
+"have some programming experience already. If you're new to programming "
+"entirely, you should start here: :ref:`doc_scripting`."
+msgstr ""
+"このプロジェクトはGodotエンジンへの入門用です。これは、あなたがすでにプログラ"
+"ミングの経験があるものとして書かれています。もし、まったくプログラミングの経"
+"験がなければ、 :ref:`doc_scripting` から開始してください。"
+
+msgid ""
+"The game is called \"Dodge the Creeps!\". Your character must move and avoid "
+"the enemies for as long as possible."
+msgstr ""
+"このゲームの名前は「クリープをよけろ！」です。あなたのキャラクターはできるだ"
+"け長く動いて敵を避けなければなりません。"
+
+msgid "You will learn to:"
+msgstr "次の事を学びます:"
+
+msgid "Create a complete 2D game with the Godot editor."
+msgstr "Godotエディタを利用した2Dゲームの完成方法。"
+
+msgid "Structure a simple game project."
+msgstr "シンプルなゲームプロジェクトの組み立て。"
+
+msgid "Move the player character and change its sprite."
+msgstr "プレイヤーの移動及び画像の変更。"
+
+msgid "Spawn random enemies."
+msgstr "ランダムに敵を生成。"
+
+msgid "Count the score."
+msgstr "スコアのカウント。"
+
+msgid "And more."
+msgstr "もっと。"
+
+msgid ""
+"You'll find another series where you'll create a similar game but in 3D. We "
+"recommend you to start with this one, though."
+msgstr ""
+"3Dでも似たようなゲームを作成するチュートリアルはありますが、このチュートリア"
+"ルから始めることを推奨します。"
+
+msgid "**Why start with 2D?**"
+msgstr "**なぜ2Dから開始したほうがよいのでしょうか?**"
+
+msgid ""
+"If you are new to game development or unfamiliar with Godot, we recommend "
+"starting with 2D games. This will allow you to become comfortable with both "
+"before tackling 3D games, which tend to be more complicated."
+msgstr ""
+"ゲーム開発初心者やGodotに慣れていない方は、2Dゲームから始めることをお勧めしま"
+"す。これにより、より複雑になりがちな3Dゲームに取り組む前に、両方に慣れること"
+"ができます。"
+
+msgid "You can find a completed version of this project at this location:"
+msgstr "このプロジェクトの完成バージョンは、次の場所にあります:"
+
+#, fuzzy
+msgid ""
+"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"dodge_the_creeps"
+msgstr "\\ https://github.com/godotengine/godot-demo-projects"
+
+msgid "Prerequisites"
+msgstr "前提条件"
+
+msgid ""
+"This step-by-step tutorial is intended for beginners who followed the "
+"complete :ref:`Getting Started <toc-learn-step_by_step>`."
+msgstr ""
+"このステップバイステップのチュートリアルは、:ref:`はじめに <toc-learn-"
+"step_by_step>`.を終えた初心者に向けて作成されています。"
+
+#, fuzzy
+msgid ""
+"If you're an experienced programmer, you can find the complete demo's source "
+"code here: `Dodge the Creeps source code <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/2d/dodge_the_creeps>`__."
+msgstr ""
+"もし経験のあるプログラマであるならば\\ `デモのソースコード <https://github."
+"com/godotengine/godot-demo-projects>`_\\ を見てみることもできます。"
+
+msgid ""
+"We prepared some game assets you'll need to download so we can jump straight "
+"to the code."
+msgstr ""
+"ゲームアセットはダウンロードできるようになっているため、ゲーム作成から始める"
+"ことができます。"
+
+msgid "You can download them by clicking the link below."
+msgstr "以下のリンクよりアセットのダウンロードが可能です。"
+
+msgid ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_."
+msgstr ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_"
+
+msgid "Contents"
+msgstr "コンテンツ"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

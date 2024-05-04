@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using SoftBody"
+msgstr "使用 SoftBody"
+
+msgid ""
+"Soft bodies (or *soft-body dynamics*) simulate movement, changing shape and "
+"other physical properties of deformable objects. This can for example be "
+"used to simulate cloth or to create more realistic characters."
+msgstr ""
+"柔体（或\\ *柔体动力学*\\ ）模拟可变形物体的运动，改变形状和其他物理特性。例"
+"如，这可以用于模拟布料或创建更逼真的角色。"
+
+msgid "Basic set-up"
+msgstr "基本设置"
+
+#, fuzzy
+msgid ""
+"A :ref:`SoftBody3D <class_SoftBody3D>` node is used for soft body "
+"simulations."
+msgstr "用一个 :ref:`SoftBody <class_SoftBody>` 节点来做柔体模拟。"
+
+msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
+msgstr "我们将创建一个弹性立方体来演示柔体的设置。"
+
+#, fuzzy
+msgid ""
+"Create a new scene with a ``Node3D`` node as root. Then, create a "
+"``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
+"in the inspector and increase the subdivision of the mesh for simulation."
+msgstr ""
+"创建一个以 ``Spatial`` 节点为根节点的新场景。然后再创建一个 ``Softbody`` 节"
+"点。之后在 ``Softbody`` 节点的检查器面板中的 ``mesh`` 中添加 ``CubeMesh`` 并"
+"增加网格的细分以进行模拟。"
+
+msgid ""
+"Set the parameters to obtain the type of soft body you aim for. Try to keep "
+"the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
+msgstr ""
+"设置参数以获得你想要的柔体类型。尽量保持 ``Simulation Precision``\\ （模拟精"
+"度）的数值高于 5，否则该柔体结构可能会瓦解。"
+
+msgid ""
+"Handle some parameters with care, as some value can lead to strange results. "
+"For example, if the shape is not completely closed and you set pressure to "
+"more than 0, the softbody will fly around like a plastic bag under strong "
+"wind."
+msgstr ""
+"小心处理一些参数，因为改动某些数值会导致奇怪的结果。例如，如果形状未完全封闭"
+"并且你将压力设置为大于 0，则柔体将如同在强风下的塑料袋一样飞舞。"
+
+msgid "Play the scene to view the simulation."
+msgstr "播放该场景以查看模拟结果。"
+
+msgid ""
+"To improve the simulation's result, increase the ``Simulation Precision``, "
+"this will give significant improvement at the cost of performance."
+msgstr ""
+"要改善模拟结果，可以增大 ``Simulation Precision``\\ ，但同时会大幅度增加性能"
+"成本。"
+
+msgid "Cloak simulation"
+msgstr "斗篷模拟"
+
+msgid "Let's make a cloak in the Platformer3D demo."
+msgstr "我们将在 Platformer3D 演示中制作一个斗篷。"
+
+msgid ""
+"You can download the Platformer3D demo on `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or `the Asset "
+"Library <https://godotengine.org/asset-library/asset/125>`_."
+msgstr ""
+"你可以在 `GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/3d/platformer>`_ 或\\ `资产库 <https://godotengine.org/asset-library/"
+"asset/125>`_\\ 上下载 Platformer3D 演示。"
+
+msgid ""
+"Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
+"``PlaneMesh`` to it."
+msgstr ""
+"打开 ``Player`` 场景，添加一个 ``SoftBody`` 节点并为其指定一个 "
+"``PlaneMesh``\\ 。"
+
+msgid ""
+"Open the ``PlaneMesh`` properties and set the size(x: 0.5 y: 1) then set "
+"``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
+"position. You should end up with something like this:"
+msgstr ""
+"打开 ``PlaneMesh`` 属性并设置大小（x:0.5 y:1），然后将 ``Subdivide Width``\\ "
+"（宽度细分）和 ``Subdivide Depth``\\ （深度细分）设置为 5。调整 ``SoftBody`` "
+"的位置。你应该看到如下所示："
+
+msgid "Subdivision generates a more tessellated mesh for better simulations."
+msgstr "细分会生成更细密的网格，以便更好地进行模拟。"
+
+#, fuzzy
+msgid ""
+"Add a :ref:`BoneAttachment3D <class_BoneAttachment3D>` node under the "
+"skeleton node and select the Neck bone to attach the cloak to the character "
+"skeleton."
+msgstr ""
+"在骨架节点下添加 :ref:`BoneAttachment <class_BoneAttachment>` 节点，然后选择 "
+"Neck（颈部）骨骼，将斗篷附加到角色骨架。"
+
+#, fuzzy
+msgid ""
+"``BoneAttachment3D`` node is to attach objects to a bone of a armature. The "
+"attached object will follow the bone's movement, weapon of a character can "
+"be attached this way."
+msgstr ""
+"``BoneAttachment`` 节点的作用是将物体附着到骨架的某根骨骼上。附着的物体会随着"
+"骨骼运动，角色的武器可以通过这种方式附加。"
+
+msgid ""
+"To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
+msgstr "要创建固定的关节，选择 ``SoftBody`` 节点上方的顶点："
+
+msgid ""
+"The pinned joints can be found in ``SoftBody``'s ``Attachments`` property, "
+"choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
+"joints, the pinned joints are now attached to the neck."
+msgstr ""
+"在 ``SoftBody`` 的 ``Attachments`` 属性中可以找到图钉关节，为每个被图钉关节选"
+"择 ``BoneAttachment`` 作为 ``SpatialAttachment``\\ ，被图钉关节连接到颈部。"
+
+msgid ""
+"Last step is to avoid clipping by adding the Kinematic Body `Player` to "
+"``Parent Collision Ignore`` of the ``SoftBody``."
+msgstr ""
+"最后一步，通过在 ``SoftBody`` 的 ``Parent Collision Ignore`` 中添加动力学物"
+"体 `Player` 来避免裁切。"
+
+msgid "Play the scene and the cloak should simulate correctly."
+msgstr "播放场景，应该已经正确模拟了斗篷。"
+
+msgid ""
+"This covers the basic settings of softbody, experiment with the parameters "
+"to achieve the effect you are aiming for when making your game."
+msgstr ""
+"这涵盖了柔体的基本设置，当你制作游戏时，尝试这些参数来达到你想要的效果。"
+
+msgid "Translation status"
+msgstr "翻译状态"

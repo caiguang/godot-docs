@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Pausing games and process mode"
+msgstr "Pousser les modifications sur un dépôt distant"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+#, fuzzy
+msgid ""
+"In most games it is desirable to, at some point, interrupt the game to do "
+"something else, such as taking a break or changing options. Implementing a "
+"fine-grained control for what can be paused (and what cannot) is a lot of "
+"work, so a simple framework for pausing is provided in Godot."
+msgstr ""
+"La mise en place d'un contrôle fin de ce qui peut être mis en pause (et de "
+"ce qui ne peut pas l'être) représente beaucoup de travail, c'est pourquoi "
+"Godot fournit un framework simple pour la mise en pause."
+
+msgid "How pausing works"
+msgstr "Comment fonctionne la pause"
+
+#, fuzzy
+msgid ""
+"To pause the game the pause state must be set. This is done by assigning "
+"``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
+"property:"
+msgstr ""
+"Pour activer le mode pause, l'état de pause doit être défini. Cela se fait "
+"en assignant ``true`` à la propriété :ref:`SceneTree.paused "
+"<class_SceneTree_property_paused>` :"
+
+msgid ""
+"Doing this will cause two things. First, 2D and 3D physics will be stopped "
+"for all nodes. Second, the behavior of certain nodes will stop or start "
+"depending on their process mode."
+msgstr ""
+
+msgid ""
+"The physics servers can be made active while the game is paused by using "
+"their ``set_active`` methods."
+msgstr ""
+
+#, fuzzy
+msgid "Process Modes"
+msgstr "Ordre de traitement"
+
+msgid ""
+"Each node in Godot has a \"Process Mode\" that defines when it processes. It "
+"can be found and changed under a node's :ref:`Node <class_Node>` properties "
+"in the inspector."
+msgstr ""
+
+#, fuzzy
+msgid "You can also alter the property with code:"
+msgstr "Vous pouvez obtenir le même résultat dans le code :"
+
+msgid "This is what each mode tells a node to do:"
+msgstr "Voici ce que chaque mode indique à un nœud :"
+
+#, fuzzy
+msgid ""
+"**Inherit**: Process depending on the state of the parent, grandparent, etc. "
+"The first parent that has a non-Inherit state."
+msgstr ""
+"**Inherit** : L'exécution dépend de l'état du parent, du grand-parent, etc. "
+"Le premier parent qui a un état n'étant pas Inherit."
+
+msgid ""
+"**Pausable**: Process the node (and its children in Inherit mode) only when "
+"the game is not paused."
+msgstr ""
+
+msgid ""
+"**WhenPaused**: Process the node (and its children in Inherit mode) *only* "
+"when the game is paused."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"**Always**: Process the node (and its children in Inherit mode) no matter "
+"what. Paused or not, this node will process."
+msgstr ""
+"**Processus** : Exécute le nœud quoi qu'il arrive (et ses enfants en mode "
+"Inherit). En pause ou non, ce nœud sera exécuté."
+
+msgid ""
+"**Disabled**: The node (and its children in Inherit mode) will not process "
+"at all."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"By default, all nodes have this property in the \"Inherit\" state. If the "
+"parent is set to \"Inherit\", then the grandparent will be checked and so "
+"on. If a state can't be found in any of the grandparents, the pause state in "
+"SceneTree is used. This means that, by default, when the game is paused "
+"every node will be paused. Several things happen when a node stops "
+"processing."
+msgstr ""
+"Par défaut, tous les nœuds ont cette propriété avec l'état \"Inherit\". Cela "
+"signifie qu'ils ne s’exécuteront (ou non) qu'en fonction de cette même "
+"propriété définie dans le nœud parent. Si le parent est défini sur "
+"\"Inherit\", alors le grand-parent sera vérifié, et ainsi de suite. En fin "
+"de compte, si un état ne peut être trouvé dans aucun des grands-parents, "
+"l'état de pause dans SceneTree est utilisé. Cela signifie que, par défaut, "
+"lorsque le jeu est mis en pause, chaque nœud sera mis en pause."
+
+msgid ""
+"The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` "
+"functions will not be called. However signals still work and cause their "
+"connected function to run, even if that function's script is attached to a "
+"node that is not currently being processed."
+msgstr ""
+
+msgid ""
+"Animation nodes will pause their current animation, audio nodes will pause "
+"their current audio stream, and particles will pause. These resume "
+"automatically when the game is no longer paused."
+msgstr ""
+
+msgid ""
+"It is important to note that even if a node is processing while the game is "
+"paused physics will **NOT** work for it by default. As stated earlier this "
+"is because the physics servers are turned off. The physics servers can be "
+"made active while the game is paused by using their ``set_active`` methods."
+msgstr ""
+
+#, fuzzy
+msgid "Pause menu example"
+msgstr "Mettre en pause la scène"
+
+msgid "Start by creating a button that will be used to pause the game."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Create a menu containing a close button, set the **Process Mode** of the "
+"menu's root node to **When Paused**, then hide the menu. Since the process "
+"mode is set to **When Paused** on the root node, all its children and "
+"grandchildren will inherit that process mode. This way, all the nodes in the "
+"menu will start processing when the game is paused."
+msgstr ""
+"Il suffit de régler la racine du popup de pause sur \"Process\" pour que "
+"tous ses enfants et petits-enfants héritent de cet état. Ainsi, cette "
+"branche de l'arbre des scènes continuera à fonctionner lorsqu'elle sera en "
+"pause."
+
+msgid ""
+"Attach a script to the menu's root node, connect the pause button created "
+"earlier to a new method in the script, and inside that method pause the game "
+"and show the pause menu."
+msgstr ""
+
+msgid ""
+"Finally, connect the menu's close button to a new method in the script. "
+"Inside that method, unpause the game and hide the pause menu."
+msgstr ""
+
+#, fuzzy
+msgid "You should now have a working pause menu."
+msgstr "Vous devriez voir maintenant le groupe apparaitre."
+
+msgid "Translation status"
+msgstr "État de la traduction"

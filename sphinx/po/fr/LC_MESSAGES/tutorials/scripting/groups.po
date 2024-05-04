@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Groups"
+msgstr "Groupes"
+
+msgid ""
+"Groups in Godot work like tags in other software. You can add a node to as "
+"many groups as you want. Then, in code, you can use the SceneTree to:"
+msgstr ""
+"Les groupes dans Godot fonctionnent comme des balises dans d'autres "
+"logiciels. Vous pouvez ajouter un nœud à autant de groupes que vous le "
+"souhaitez. Ensuite, dans le code, vous pouvez utiliser le SceneTree pour :"
+
+msgid "Get a list of nodes in a group."
+msgstr "Obtenir la liste des nœuds d'un groupe."
+
+msgid "Call a method on all nodes in a group."
+msgstr "Appeler une méthode sur tous les nœuds d'un groupe."
+
+msgid "Send a notification to all nodes in a group."
+msgstr "Envoyer une notification à tous les nœuds d'un groupe."
+
+msgid "This is a useful feature to organize large scenes and decouple code."
+msgstr ""
+"Il s'agit d'une fonctionnalité utile pour organiser les grandes scènes et "
+"découpler le code."
+
+msgid "Managing groups"
+msgstr "Gestion des groupes"
+
+msgid ""
+"Groups are created by adding a node to a new group name, and likewise they "
+"are removed by removing all nodes from a given group."
+msgstr ""
+"Les groupes sont créés en ajoutant un nœud à un nouveau nom de groupe, et de "
+"même manière, ils sont supprimés en enlevant tous les nœuds du groupe."
+
+msgid "There are two ways to add/remove nodes to groups:"
+msgstr "Il existe deux façons d’ajouter/retirer des nœuds à des groupes :"
+
+msgid "During design, by using the Node dock in the editor."
+msgstr "Durant le design, en utilisant le dock Nœud dans l'éditeur."
+
+msgid ""
+"During execution, by calling :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
+msgstr ""
+"Durant l'exécution, en appelant :ref:`Node.add_to_group() "
+"<class_Node_method_add_to_group>` ou :ref:`Node.remove_from_group() "
+"<class_Node_method_remove_from_group>`."
+
+msgid "Using the Node dock"
+msgstr "En utilisant le dock Node"
+
+msgid ""
+"You can add nodes in the current scene to groups using the Groups tab in the "
+"Node dock."
+msgstr ""
+"Vous pouvez ajouter des nœuds de la scène actuelle à des groupes à l'aide de "
+"l'onglet Groupes dans le dock des nœuds."
+
+msgid ""
+"Select one or more nodes in the Scene dock and write the group name in the "
+"field, then click Add."
+msgstr ""
+"Sélectionnez un ou plusieurs nœuds dans le dock Scène et écrivez le nom du "
+"groupe dans le champ, puis cliquez sur Ajouter."
+
+msgid "You should now see the group appear."
+msgstr "Vous devriez voir maintenant le groupe apparaitre."
+
+msgid ""
+"In a complex project, you may end up with many groups or large scenes with "
+"many nodes. You can add or remove any node to groups using the Group Editor "
+"window. To access it, click the Manage Groups button."
+msgstr ""
+"Dans un projet complexe, vous pouvez vous retrouver avec de nombreux groupes "
+"ou de grandes scènes comportant de nombreux nœuds. Vous pouvez ajouter ou "
+"supprimer n'importe quel nœud à des groupes à l'aide de la fenêtre Éditeur "
+"de groupe. Pour y accéder, cliquez sur le bouton Gérer les groupes."
+
+msgid ""
+"The Group Editor window appears. Here's a screenshot from a complex project "
+"to illustrate the tool's purpose."
+msgstr ""
+"La fenêtre de l'éditeur de groupe apparaît. Voici une capture d'écran d'un "
+"projet complexe pour illustrer l'utilité de l'outil."
+
+msgid "It has three columns:"
+msgstr "Il y a trois colonnes :"
+
+msgid "A list of groups used by nodes in the current scene."
+msgstr "Une liste des groupes utilisés par les noeuds dans la scène actuelle."
+
+msgid "A list of nodes that are not part of the selected group."
+msgstr "Une liste de nœuds qui ne font pas partie du groupe sélectionné."
+
+msgid "A list of nodes in the group."
+msgstr "Une liste des nœuds dans le groupe."
+
+msgid ""
+"The fields at the bottom allow you to add new groups or filter nodes in the "
+"second and third columns."
+msgstr ""
+"Les champs en bas de la page vous permettent d'ajouter de nouveaux groupes "
+"ou de filtrer les nœuds dans les deuxième et troisième colonnes."
+
+msgid ""
+"Any node name that's greyed out means the node was added to the group in a "
+"different scene and you cannot edit it here. This happens on scene instances "
+"in particular."
+msgstr ""
+"Tout nom de nœud qui est grisé signifie que le nœud a été ajouté au groupe "
+"dans une scène différente et que vous ne pouvez pas le modifier ici. Cela se "
+"produit en particulier sur les instances de scène."
+
+msgid "Using code"
+msgstr "En utilisant le code"
+
+msgid ""
+"You can also manage groups from scripts. The following code adds the node to "
+"which you attach the script to the ``guards`` group as soon as it enters the "
+"scene tree."
+msgstr ""
+"Vous pouvez également gérer des groupes à partir de scripts. Le code suivant "
+"ajoute le nœud auquel vous attachez le script au groupe ``guards`` dès qu'il "
+"entre dans l'arbre de scène."
+
+msgid ""
+"Imagine you're creating an infiltration game. When an enemy spots the "
+"player, you want all guards and robots to be on alert."
+msgstr ""
+"Imaginez que vous créez un jeu d'infiltration. Lorsqu'un ennemi repère le "
+"joueur, vous voulez que tous les gardes et les robots soient en alerte."
+
+msgid ""
+"In the fictional example below, we use ``SceneTree.call_group()`` to alert "
+"all enemies that the player was spotted."
+msgstr ""
+"Dans l'exemple fictif ci-dessous, nous utilisons ``SceneTree.call_group()`` "
+"pour alerter tous les ennemis que le joueur a été repéré."
+
+msgid ""
+"The above code calls the function ``enter_alert_mode`` on every member of "
+"the group ``guards``."
+msgstr ""
+"Le code ci-dessus appelle la fonction ``enter_alert_mode`` sur chaque membre "
+"du groupe ``guards``."
+
+msgid ""
+"To get the full list of nodes in the ``guards`` group as an array, you can "
+"call :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
+msgstr ""
+"Pour obtenir la liste complète des nœuds du groupe ``guards`` sous forme de "
+"tableau, vous pouvez appeler :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>` :"
+
+msgid ""
+"The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
+"methods to interact with scenes, their node hierarchy, and groups. It allows "
+"you to switch scenes easily or reload them, quit the game or pause and "
+"unpause it. It also provides useful signals."
+msgstr ""
+"La classe :ref:`SceneTree <class_SceneTree>` fournit de nombreuses autres "
+"méthodes utiles pour interagir avec les scènes, leur hiérarchie de nœuds et "
+"les groupes. Elle permet de changer facilement de scène ou de les recharger, "
+"de quitter le jeu ou de le mettre en pause et de le remettre en pause. Elle "
+"fournit également des signaux utiles."
+
+msgid "Translation status"
+msgstr "État de la traduction"

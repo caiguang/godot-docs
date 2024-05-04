@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "First look at Godot's editor"
+msgstr "初识 Godot 编辑器"
+
+msgid ""
+"This page will give you a brief overview of Godot's interface. We're going "
+"to look at the different main screens and docks to help you situate yourself."
+msgstr ""
+"本页将向你简要介绍 Godot 的界面。我们将看看不同的主屏幕和面板，以帮助你确定自"
+"己的位置。"
+
+msgid ""
+"For a comprehensive breakdown of the editor's interface and how to use it, "
+"see the :ref:`Editor manual <toc-learn-editor>`."
+msgstr ""
+"关于编辑器的界面和使用方法的全面介绍，请参见\\ :ref:`编辑器手册 <toc-learn-"
+"editor>`。"
+
+msgid "The Project Manager"
+msgstr "项目管理器"
+
+msgid ""
+"When you launch Godot, the first window you see is the Project Manager. In "
+"the default tab **Local Projects**, you can manage existing projects, import "
+"or create new ones, and more."
+msgstr ""
+"启动 Godot 后，你会首先看到项目管理器窗口。在默认的选项卡“本地项目”中，你可以"
+"进行对已有项目进行管理、导入或者创建新项目等操作。"
+
+msgid ""
+"At the top of the window, there is another tab named \"Asset Library "
+"Projects\". You can search for demo projects in the open source asset "
+"library, which includes many projects developed by the community."
+msgstr ""
+"窗口顶部还有另一个名为“资产库项目”的选项卡。你可以在开源资产库中搜索演示项"
+"目，其中包括了许多社区开发的项目。"
+
+msgid ""
+"To learn the Project Manager's ins and outs, read :ref:`doc_project_manager`."
+msgstr "要进一步了解项目管理器，请阅读 :ref:`doc_project_manager` 。"
+
+msgid ""
+"You can also change the editor's language using the drop-down menu to the "
+"right of the engine's version in the window's top-right corner. By default, "
+"it is in English (EN)."
+msgstr ""
+"你还可以使用窗口右上角的下拉菜单更改编辑器的语言，就在引擎的版本号右边。默认"
+"语言是英语（EN）。"
+
+msgid ""
+"When you open a new or an existing project, the editor's interface appears. "
+"Let's look at its main areas."
+msgstr "打开新建项目或者已有项目，就会出现编辑器界面。我们来看看它的主要区域。"
+
+msgid ""
+"By default, it features **menus**, **main screens**, and playtest buttons "
+"along the window's top edge."
+msgstr ""
+"默认情况下，窗口顶部分布着\\ **菜单**\\ 、\\ **主屏幕**\\ 、游玩测试按钮。"
+
+msgid ""
+"In the center is the **viewport** with its **toolbar** at the top, where "
+"you'll find tools to move, scale, or lock the scene's nodes."
+msgstr ""
+"中央是\\ **视口**\\ 及其顶部\\ **工具栏**\\ ，可以在工具栏上找到用来移动、缩"
+"放、锁定场景中节点的工具。"
+
+msgid ""
+"On either side of the viewport sit the **docks**. And at the bottom of the "
+"window lies the **bottom panel**."
+msgstr "视口的两边是\\ **停靠面板**\\ 。窗口底部则是\\ **底部面板**\\ 。"
+
+msgid ""
+"The toolbar changes based on the context and selected node. Here is the 2D "
+"toolbar."
+msgstr "工具栏会随着上下文和所选节点改变。这里展示的是 2D 工具栏。"
+
+msgid "Below is the 3D one."
+msgstr "下面这个是 3D 的。"
+
+msgid ""
+"Let's look at the docks. The **FileSystem** dock lists your project files, "
+"including scripts, images, audio samples, and more."
+msgstr ""
+"我们来看看停靠面板。\\ **文件系统**\\ 面板会列出项目中的文件，包括脚本、图"
+"片、音频采样等。"
+
+msgid "The **Scene** dock lists the active scene's nodes."
+msgstr "**场景**\\ 面板会列出活动场景中的节点。"
+
+msgid "The **Inspector** allows you to edit the properties of a selected node."
+msgstr "你可以在\\ **检查器**\\ 中编辑所选节点的属性。"
+
+msgid ""
+"The **bottom panel**, situated below the viewport, is the host for the debug "
+"console, the animation editor, the audio mixer, and more. They can take "
+"precious space, that's why they're folded by default."
+msgstr ""
+"视口底部的\\ **底部面板**\\ 中包含了调试控制台、动画编辑器、混音器等。它们所"
+"占的空间非常宝贵，所以默认都是折叠状态。"
+
+msgid ""
+"When you click on one, it expands vertically. Below, you can see the "
+"animation editor opened."
+msgstr "点击某一个就会在垂直方向展开。下面展示的是打开的动画编辑器。"
+
+msgid "The four main screens"
+msgstr "四个主屏幕"
+
+msgid ""
+"There are four main screen buttons centered at the top of the editor: 2D, "
+"3D, Script, and AssetLib."
+msgstr "编辑器顶部的中央有四个主屏幕按钮：2D、3D、Script、AssetLib。"
+
+msgid ""
+"You'll use the **2D screen** for all types of games. In addition to 2D "
+"games, the 2D screen is where you'll build your interfaces."
+msgstr ""
+"**2D 屏幕**\\ 可以用于任何类型的游戏。除了 2D 游戏，2D 屏幕也会用于界面的构"
+"建。"
+
+msgid ""
+"In the **3D screen**, you can work with meshes, lights, and design levels "
+"for 3D games."
+msgstr "在\\ **3D 屏幕**\\ 中，你可以操作网格、灯光、设计 3D 游戏的关卡。"
+
+msgid ""
+"Notice the perspective button under the toolbar. Clicking on it opens a list "
+"of options related to the 3D view."
+msgstr "请注意工具栏下方的“透视”按钮。点击后会打开 3D 视图相关的选项列表。"
+
+msgid ""
+"Read :ref:`doc_introduction_to_3d` for more detail about the **3D main "
+"screen**."
+msgstr ""
+"更多关于\\ **3D 主屏幕**\\ 的细节请查看 :ref:`doc_introduction_to_3d`\\ 。"
+
+msgid ""
+"The **Script screen** is a complete code editor with a debugger, rich auto-"
+"completion, and built-in code reference."
+msgstr ""
+"**Script 屏幕**\\ 是一个完整的代码编辑器，包含调试器、丰富的自动补全、内置代"
+"码参考手册。"
+
+msgid ""
+"Finally, the **AssetLib** is a library of free and open source add-ons, "
+"scripts, and assets to use in your projects."
+msgstr ""
+"最后，\\ **AssetLib** 是插件、脚本、资产的仓库，这些内容是自由开源的，可以在"
+"你的项目中使用。"
+
+msgid ""
+"You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
+msgstr "你可以在 :ref:`doc_what_is_assetlib` 中了解更多关于资产库的内容。"
+
+msgid "Integrated class reference"
+msgstr "内置类参考手册"
+
+msgid "Godot comes with a built-in class reference."
+msgstr "Godot 自带内置的类参考手册。"
+
+msgid ""
+"You can search for information about a class, method, property, constant, or "
+"signal by any one of the following methods:"
+msgstr "要搜索类、方法、属性、常量、信号相关的信息，可以使用以下任意方法："
+
+msgid ""
+"Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS, or :kbd:`fn + F1` for "
+"laptops with a :kbd:`fn` key) anywhere in the editor."
+msgstr ""
+"在编辑器中的任何位置按下 :kbd:`F1`\\ （macOS 上则是 :kbd:`Alt + Space`\\，或"
+"者在有 :kbd:`fn` 键的笔记本电脑上按 :kbd:`fn + F1` ）。"
+
+msgid ""
+"Clicking the \"Search Help\" button in the top-right of the Script main "
+"screen."
+msgstr "点击 Script 主屏幕右上角的“搜索帮助”按钮。"
+
+msgid "Clicking on the Help menu and Search Help."
+msgstr "点击“帮助”菜单的“搜索帮助”。"
+
+msgid ""
+"Clicking while pressing the :kbd:`Ctrl` key on a class name, function name, "
+"or built-in variable in the script editor."
+msgstr "在脚本编辑器中，按住 :kbd:`Ctrl` 键点击类名、函数名、内置变量。"
+
+msgid ""
+"When you do any of these, a window pops up. Type to search for any item. You "
+"can also use it to browse available objects and methods."
+msgstr ""
+"执行其中的任意操作都会弹出一个窗口。通过输入进行搜索。你也可以用它来查看所有"
+"对象和方法。"
+
+msgid ""
+"Double-click on an item to open the corresponding page in the script main "
+"screen."
+msgstr "在条目上双击就会在脚本主屏幕中打开对应的页面。"
+
+msgid "Translation status"
+msgstr "翻译状态"

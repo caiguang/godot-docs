@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Fog shaders"
+msgstr "Fog-Shader"
+
+msgid ""
+"Fog shaders are used to define how fog is added (or subtracted) from a scene "
+"in a given area. Fog shaders are always used together with :ref:`FogVolumes "
+"<class_FogVolume>` and volumetric fog. Fog shaders only have one processing "
+"function, the ``fog()`` function."
+msgstr ""
+"Fog-Shader werden verwendet, um zu definieren, wie Nebel in einem bestimmten "
+"Bereich einer Szene hinzugefügt (oder abgezogen) wird. Fog-Shader werden "
+"immer zusammen mit :ref:`FogVolumes <class_FogVolume>` und volumetrischem "
+"Nebel verwendet. Fog-Shader haben nur eine Verarbeitungsfunktion, die "
+"``fog()`` Funktion."
+
+msgid ""
+"The resolution of the fog shaders depends on the resolution of the "
+"volumetric fog froxel grid. Accordingly, the level of detail that a fog "
+"shader can add depends on how close the :ref:`FogVolume <class_FogVolume>` "
+"is to the camera."
+msgstr ""
+"Die Auflösung der Fog-Shader hängt von der Auflösung des volumetrischen "
+"Nebel-Froxel-Rasters ab. Dementsprechend hängt der Detailgrad, den ein Fog-"
+"Shader hinzufügen kann, davon ab, wie nah das :ref:`FogVolume "
+"<class_FogVolume>` an der Kamera ist."
+
+msgid ""
+"Fog shaders are a special form of compute shader that is called once for "
+"every froxel that is touched by an axis aligned bounding box of the "
+"associated :ref:`FogVolume <class_FogVolume>`. This means that froxels that "
+"just barely touch a given :ref:`FogVolume <class_FogVolume>` will still be "
+"used."
+msgstr ""
+"Fog-Shader sind eine spezielle Form von Compute-Shadern, die für jedes "
+"Froxel, das von einer achsparallelen Bounding-Box des zugehörigen :ref:"
+"`FogVolume <class_FogVolume>` berührt wird, einmal aufgerufen wird. Das "
+"bedeutet, dass Froxel, die ein bestimmtes :ref:`FogVolume <class_FogVolume>` "
+"nur knapp berühren, trotzdem verwendet werden."
+
+msgid "Built-ins"
+msgstr "Built-ins"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Samplers "
+"cannot be written to so they are not marked."
+msgstr ""
+"Die als \"in\" gekennzeichneten Werte sind schreibgeschützt. Mit \"out\" "
+"gekennzeichnete Werte sind zum optionalen Schreiben vorgesehen und enthalten "
+"nicht unbedingt sinnvolle Werte. Sampler können nicht beschrieben werden, "
+"daher sind sie nicht markiert."
+
+msgid "Global built-ins"
+msgstr "Globale Built-ins"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"Globale Built-ins sind überall verfügbar, auch in benutzerdefinierten "
+"Funktionen."
+
+msgid "Built-in"
+msgstr "Built-in"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid "Global time, in seconds."
+msgstr "Globale Zeit in Sekunden."
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+"Eine ``PI``-Konstante (``3,141592``). Das Verhältnis des Umfangs eines "
+"Kreises zu seinem Durchmesser und die Anzahl der Bogenmaßeinheiten in einer "
+"halben Umdrehung."
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+"Eine ``TAU``-Konstante (``6.283185``). Ein Äquivalent von ``PI * 2`` und die "
+"Anzahl der Bogenmaßeinheiten in einer vollen Umdrehung."
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+"Eine ``E``-Konstante (``2,718281``). Eulersche Zahl und eine Basis des "
+"natürlichen Logarithmus."
+
+msgid "Fog built-ins"
+msgstr "Fog-Built-ins"
+
+msgid ""
+"All of the output values of fog volumes overlap one another. This allows :"
+"ref:`FogVolumes <class_FogVolume>` to be rendered efficiently as they can "
+"all be drawn at once."
+msgstr ""
+"Alle Ausgabewerte von Nebelvolumina überlagern sich gegenseitig. Dadurch "
+"können :ref:`FogVolumes <class_FogVolume>` effizient gerendert werden, da "
+"sie alle auf einmal gezeichnet werden können."
+
+msgid "in vec3 **WORLD_POSITION**"
+msgstr "in vec3 **WORLD_POSITION**"
+
+msgid "Position of current froxel cell in world space."
+msgstr "Position der aktuellen Froxel-Zelle im World-Space."
+
+msgid "in vec3 **OBJECT_POSITION**"
+msgstr "in vec3 **OBJECT_POSITION**"
+
+msgid ""
+"Position of the center of the current :ref:`FogVolume <class_FogVolume>` in "
+"world space."
+msgstr ""
+"Position des Zentrums des aktuellen :ref:`FogVolume <class_FogVolume>` im "
+"World-Space."
+
+msgid "in vec3 **UVW**"
+msgstr "in vec3 **UVW**"
+
+msgid ""
+"3-dimensional uv, used to map a 3D texture to the current :ref:`FogVolume "
+"<class_FogVolume>`."
+msgstr ""
+"3-dimensionale UV, die verwendet wird, um eine 3D-Textur auf das aktuelle :"
+"ref:`FogVolume <class_FogVolume>` abzubilden."
+
+msgid "in vec3 **SIZE**"
+msgstr "in vec3 **SIZE**"
+
+msgid ""
+"Size of the current :ref:`FogVolume <class_FogVolume>` when its :ref:"
+"`shape<class_FogVolume_property_shape>` has a size."
+msgstr ""
+"Größe des aktuellen :ref:`FogVolume <class_FogVolume>`, wenn sein :ref:"
+"`shape<class_FogVolume_property_shape>` eine Größe hat."
+
+msgid "in vec3 **SDF**"
+msgstr "in vec3 **SDF**"
+
+msgid ""
+"Signed distance field to the surface of the :ref:`FogVolume "
+"<class_FogVolume>`. Negative if inside volume, positive otherwise."
+msgstr ""
+"Signed Distance Field zur Oberfläche des :ref:`FogVolume <class_FogVolume>`. "
+"Negativ, wenn innerhalb des Volumens, sonst positiv."
+
+msgid "out vec3 **ALBEDO**"
+msgstr "out vec3 **ALBEDO**"
+
+msgid ""
+"Output base color value, interacts with light to produce final color. Only "
+"written to fog volume if used."
+msgstr ""
+"Ausgabe-Basisfarbwert, interagiert mit dem Licht, um die endgültige Farbe zu "
+"erzeugen. Wird nur in das Fog Volume geschrieben, wenn es verwendet wird."
+
+msgid "out float **DENSITY**"
+msgstr "out float **DENSITY**"
+
+msgid ""
+"Output density value. Can be negative to allow subtracting one volume from "
+"another. Density must be used for fog shader to write anything at all."
+msgstr ""
+"Ausgabe-Dichtewert. Kann negativ sein, damit ein Volumen von einem anderen "
+"subtrahiert werden kann. Die Dichte muss verwendet werden, damit der Fog-"
+"Shader überhaupt etwas schreiben kann."
+
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **EMISSION**"
+
+msgid ""
+"Output emission color value, added to color during light pass to produce "
+"final color. Only written to fog volume if used."
+msgstr ""
+"Ausgabe -Emissionsfarbwert, der während des Lichtdurchlaufs zur Farbe "
+"addiert wird, um die endgültige Farbe zu erzeugen. Wird nur in das "
+"Nebelvolumen geschrieben, wenn es verwendet wird."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

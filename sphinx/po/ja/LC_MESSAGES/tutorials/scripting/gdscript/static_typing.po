@@ -1,0 +1,634 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Static typing in GDScript"
+msgstr "静的型付けGDScript"
+
+msgid "In this guide, you will learn:"
+msgstr "このガイドでは、次の内容について学習します:"
+
+#, fuzzy
+msgid "how to use static typing in GDScript;"
+msgstr "静的型付けGDScript"
+
+#, fuzzy
+msgid "that static types can help you avoid bugs;"
+msgstr "静的型は\\ **バグの回避に役立ちます**"
+
+msgid "that static typing improves your experience with the editor."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Where and how you use this language feature is entirely up to you: you can "
+"use it only in some sensitive GDScript files, use it everywhere, or don't "
+"use it at all."
+msgstr "この新しい言語機能をどこで、どのように使うかは完全にあなた次第です！"
+
+msgid ""
+"Static types can be used on variables, constants, functions, parameters, and "
+"return types."
+msgstr "静的型は、変数、定数、関数、パラメーター、戻り値の型に使用できます。"
+
+msgid "A brief look at static typing"
+msgstr "静的型付けの概要"
+
+#, fuzzy
+msgid ""
+"With static typing, GDScript can detect more errors without even running the "
+"code. Also type hints give you and your teammates more information as you're "
+"working, as the arguments' types show up when you call a method. Static "
+"typing improves editor autocompletion and :ref:`documentation "
+"<doc_gdscript_documentation_comments>` of your scripts."
+msgstr ""
+"型付きのGDScriptを使うことで、Godotはさらに多くのエラーを、あなたの書いたコー"
+"ドから検出することができます。メソッドを呼び出すと引数の型が表示されるため、"
+"あなたとチームメイトは作業中により多くの情報が得られます。"
+
+#, fuzzy
+msgid ""
+"Imagine you're programming an inventory system. You code an ``Item`` class, "
+"then an ``Inventory``. To add items to the inventory, the people who work "
+"with your code should always pass an ``Item`` to the ``Inventory.add()`` "
+"method. With types, you can enforce this::"
+msgstr ""
+"あなたが在庫管理システムをプログラミングしていると想像してください。 "
+"``Item`` ノード、次に ``Inventory`` をコーディングします。アイテムをインベン"
+"トリに追加するには、あなたのコードを操作する人々は常に ``Item`` を "
+"``Inventory.add`` メソッドに渡すべきだとします。型を設定すれば、これを強制で"
+"きます:"
+
+#, fuzzy
+msgid ""
+"Static types also give you better code completion options. Below, you can "
+"see the difference between a dynamic and a static typed completion options."
+msgstr ""
+"静的型を使用すると、コード補完も改善されます。以下に、 ``PlayerController`` "
+"というクラスを例に動的な型と静的な型の補完の違いを示します。"
+
+msgid ""
+"You've probably encountered a lack of autocomplete suggestions after a dot:"
+msgstr ""
+
+#, fuzzy
+msgid "Completion options for dynamic typed code."
+msgstr "強制的に完了(オプション)"
+
+#, fuzzy
+msgid ""
+"This is due to dynamic code. Godot cannot know what value type you're "
+"passing to the function. If you write the type explicitly however, you will "
+"get all methods, properties, constants, etc. from the value:"
+msgstr ""
+"これは動的コードによるものです。Godotは、関数に渡されているノードまたは値の型"
+"を認識できません。ただし型を明示的に記述すると、すべてのpublicメソッドと変数"
+"がノードから取得されます:"
+
+#, fuzzy
+msgid "Completion options for static typed code."
+msgstr "強制的に完了(オプション)"
+
+msgid ""
+"If you prefer static typing, we recommend enabling the **Text Editor > "
+"Completion > Add Type Hints** editor setting. Also consider enabling `some "
+"warnings <Warning system_>`_ that are disabled by default."
+msgstr ""
+
+msgid ""
+"Also, typed GDScript improves performance by using optimized opcodes when "
+"operand/argument types are known at compile time. More GDScript "
+"optimizations are planned in the future, such as JIT/AOT compilation."
+msgstr ""
+
+msgid ""
+"Overall, typed programming gives you a more structured experience. It helps "
+"prevent errors and improves the self-documenting aspect of your scripts. "
+"This is especially helpful when you're working in a team or on a long-term "
+"project: studies have shown that developers spend most of their time reading "
+"other people's code, or scripts they wrote in the past and forgot about. The "
+"clearer and the more structured the code, the faster it is to understand, "
+"the faster you can move forward."
+msgstr ""
+"概して、型付きプログラミングはより構造化された経験をあなたに与えます。それは"
+"エラーを防ぎ、あなたのスクリプトを自己文書化の面で改善するのを助けます。これ"
+"はチームや長期的なプロジェクトで作業している場合に特に役立ちます:調査によると"
+"他の人が書いたコードを読んだり、過去に自分が書いたスクリプトの内容を忘れてい"
+"る事に、開発者が大半の時間を費やしています。コードが明確で構造化されているほ"
+"ど、速く理解ができ、速く前に進むことができます。"
+
+msgid "How to use static typing"
+msgstr "静的型付けの使用方法"
+
+#, fuzzy
+msgid ""
+"To define the type of a variable, parameter, or constant, write a colon "
+"after the name, followed by its type. E.g. ``var health: int``. This forces "
+"the variable's type to always stay the same::"
+msgstr ""
+"変数または定数の型を定義するには、変数の名前の後にコロンを書き、その後に指定"
+"する型を書きます。例: ``var health: int``。 これにより、変数の型は常に保持さ"
+"れます:"
+
+#, fuzzy
+msgid ""
+"Godot will try to infer types if you write a colon, but you omit the type::"
+msgstr "コロンを書いて型を省略すると、Godotは型を推測しようとします:"
+
+#, fuzzy
+msgid "There is no difference between ``=`` and ``:=`` for constants."
+msgstr ""
+"エクスポートでは、バッファシャドウとレイシャドウの間に違いはありません。"
+
+#, fuzzy
+msgid ""
+"You don't need to write type hints for constants, as Godot sets it "
+"automatically from the assigned value. But you can still do so to make the "
+"intent of your code clearer. Also, this is useful for typed arrays (like "
+"``const A: Array[int] = [1, 2, 3]``), since untyped arrays are used by "
+"default."
+msgstr ""
+"Godotは割り当てられた値から自動的に型を設定するので、定数の型ヒントを書く必要"
+"はありません。ただしコードの意図をより明確にするために、これを自分で行うこと"
+"もできます。"
+
+#, fuzzy
+msgid "What can be a type hint"
+msgstr "このエンジンで出来ることは？"
+
+#, fuzzy
+msgid "Here is a complete list of what can be used as a type hint:"
+msgstr "これらのガイドラインに基づいた完全なクラスの例を次に示します:"
+
+msgid ""
+"``Variant``. Any type. In most cases this is not much different from an "
+"untyped declaration, but increases readability. As a return type, forces the "
+"function to explicitly return some value."
+msgstr ""
+
+msgid ""
+"*(Only return type)* ``void``. Indicates that the function does not return "
+"any value."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Built-in types <doc_gdscript_builtin_types>`."
+msgstr ":ref:`組み込み型 <doc_gdscript_builtin_types>`"
+
+#, fuzzy
+msgid "Native classes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
+msgstr ""
+"コアクラスとノード ( ``Object`` 、 ``Node`` 、 ``Area2D`` 、 ``Camera2D`` な"
+"ど)"
+
+#, fuzzy
+msgid ":ref:`Global classes <doc_gdscript_basics_class_name>`."
+msgstr ":ref:`スクリプトクラス<doc_scripting_continued_class_name>`"
+
+#, fuzzy
+msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
+msgstr ":ref:`スクリプトクラス<doc_scripting_continued_class_name>`"
+
+msgid ""
+"Global, native and custom named enums. Note that an enum type is just an "
+"``int``, there is no guarantee that the value belongs to the set of enum "
+"values."
+msgstr ""
+
+msgid ""
+"Constants (including local ones) if they contain a preloaded class or enum."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can use any class, including your custom classes, as types. There are "
+"two ways to use them in scripts. The first method is to preload the script "
+"you want to use as a type in a constant::"
+msgstr ""
+"カスタムクラスを含む任意のクラスを型として使用できます。スクリプトで使用する"
+"方法は2つあります。最初の方法は、定数の型として使用するスクリプトをプリロード"
+"することです:"
+
+#, fuzzy
+msgid ""
+"The second method is to use the ``class_name`` keyword when you create. For "
+"the example above, your ``rifle.gd`` would look like this::"
+msgstr ""
+"2番目の方法は、作成時に ``class_name`` キーワードを使用することです。上記の例"
+"では、Rifle.gdは次のようになります:"
+
+#, fuzzy
+msgid ""
+"If you use ``class_name``, Godot registers the ``Rifle`` type globally in "
+"the editor, and you can use it anywhere, without having to preload it into a "
+"constant::"
+msgstr ""
+"``class_name`` を使用する場合、GodotはRifle型をグローバルにエディタに登録しま"
+"す。定数にプリロードすることなく、どこでも使用できます:"
+
+#, fuzzy
+msgid "Specify the return type of a function with the arrow ``->``"
+msgstr "アロー(->)による関数の戻り値の定義"
+
+#, fuzzy
+msgid ""
+"To define the return type of a function, write a dash and a right angle "
+"bracket ``->`` after its declaration, followed by the return type::"
+msgstr ""
+"関数の戻り値の型を定義するには、宣言の後に ``->`` を記述し、その後に戻り値の"
+"型を記述します:"
+
+#, fuzzy
+msgid ""
+"The type ``void`` means the function does not return anything. You can use "
+"any type, as with variables::"
+msgstr ""
+"``void`` 型は、関数が何も返さないことを意味します。変数と同様に、任意の型を使"
+"用できます:"
+
+#, fuzzy
+msgid "You can also use your own classes as return types::"
+msgstr "独自のノードを戻り値の型として使用することもできます:"
+
+msgid "Covariance and contravariance"
+msgstr ""
+
+msgid ""
+"When inheriting base class methods, you should follow the `Liskov "
+"substitution principle <https://en.wikipedia.org/wiki/"
+"Liskov_substitution_principle>`__."
+msgstr ""
+
+msgid ""
+"**Covariance:** When you inherit a method, you can specify a return type "
+"that is more specific (**subtype**) than the parent method."
+msgstr ""
+
+msgid ""
+"**Contravariance:** When you inherit a method, you can specify a parameter "
+"type that is less specific (**supertype**) than the parent method."
+msgstr ""
+
+#, fuzzy
+msgid "Example::"
+msgstr "例:"
+
+#, fuzzy
+msgid "Specify the element type of an ``Array``"
+msgstr "アロー(->)による関数の戻り値の定義"
+
+msgid "To define the type of an ``Array``, enclose the type name in ``[]``."
+msgstr ""
+
+msgid ""
+"An array's type applies to ``for`` loop variables, as well as some operators "
+"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
+"other operators (such as ``==``) are still untyped. Built-in types, native "
+"and custom classes, and enums may be used as element types. Nested array "
+"types are not supported."
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you can also specify a type for the loop variable in a "
+"``for`` loop. For instance, you can write::"
+msgstr ""
+
+msgid ""
+"The array will remain untyped, but the ``name`` variable within the ``for`` "
+"loop will always be of ``String`` type."
+msgstr ""
+
+#, fuzzy
+msgid "Type casting"
+msgstr "型キャスト"
+
+#, fuzzy
+msgid ""
+"Type casting is an important concept in typed languages. Casting is the "
+"conversion of a value from one type to another."
+msgstr ""
+"型キャストは型付き言語の重要な概念です。キャストは、ある型から別の型への値の"
+"変換です。"
+
+#, fuzzy
+msgid ""
+"Imagine an ``Enemy`` in your game, that ``extends Area2D``. You want it to "
+"collide with the ``Player``, a ``CharacterBody2D`` with a script called "
+"``PlayerController`` attached to it. You use the ``body_entered`` signal to "
+"detect the collision. With typed code, the body you detect is going to be a "
+"generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
+"``_on_body_entered`` callback."
+msgstr ""
+"``extends Area2D`` であなたのゲームに敵がいると仮定してください。あなたはそれ"
+"を ``PlayerController`` と呼ばれるスクリプトが付いている ``KinematicBody2D`` "
+"と衝突させたいのです。衝突を検出するには ``on_body_entered`` シグナルを使用し"
+"ます。型付きコードでは、 ``_on_body_entered`` コールバックでは、検出したボ"
+"ディは一般的な ``PhysicsBody2D`` になり、 ``PlayerController`` にはなりませ"
+"ん。"
+
+#, fuzzy
+msgid ""
+"You can check if this ``PhysicsBody2D`` is your ``Player`` with the ``as`` "
+"keyword, and using the colon ``:`` again to force the variable to use this "
+"type. This forces the variable to stick to the ``PlayerController`` type::"
+msgstr ""
+"この ``PhysicsBody2D`` がプレイヤーであるかどうかを確認するには、 ``as`` キャ"
+"ストキーワードを使用し、再度コロン ``:`` を使用して変数にこの型を使用させま"
+"す。これにより、変数は ``PlayerController`` タイプに固定されます:"
+
+#, fuzzy
+msgid ""
+"As we're dealing with a custom type, if the ``body`` doesn't extend "
+"``PlayerController``, the ``player`` variable will be set to ``null``. We "
+"can use this to check if the body is the player or not. We will also get "
+"full autocompletion on the player variable thanks to that cast."
+msgstr ""
+"ここではカスタムされた型を扱っているため、 ``body`` が ``PlayerController`` "
+"を継承しない場合、 ``player`` 変数は ``null`` に設定されます。これを使って、"
+"bodyがplayerかどうかを確認できます。このキャストのおかげで、player変数の完全"
+"なオートコンプリートもできるようになります。"
+
+msgid ""
+"The ``as`` keyword silently casts the variable to ``null`` in case of a type "
+"mismatch at runtime, without an error/warning. While this may be convenient "
+"in some cases, it can also lead to bugs. Use the ``as`` keyword only if this "
+"behavior is intended. A safer alternative is to use the ``is`` keyword::"
+msgstr ""
+
+msgid "or ``assert()`` statement::"
+msgstr ""
+
+msgid ""
+"If you try to cast with a built-in type and it fails, Godot will throw an "
+"error."
+msgstr ""
+"組み込み型でキャストしようとして失敗すると、Godotはエラーをスローします。"
+
+msgid "Safe lines"
+msgstr "セーフ・ライン"
+
+#, fuzzy
+msgid ""
+"You can also use casting to ensure safe lines. Safe lines are a tool to tell "
+"you when ambiguous lines of code are type-safe. As you can mix and match "
+"typed and dynamic code, at times, Godot doesn't have enough information to "
+"know if an instruction will trigger an error or not at runtime."
+msgstr ""
+"セーフ・ラインを確保するためにキャストを使用することもできます。セーフ・ライ"
+"ンは、はGodot 3.1の新しいツールで、あいまいなコード行(ライン)が安全(セーフ)な"
+"型であることを教えてくれます。型指定されたコードと動的なコードを混在させる"
+"と、Godotは実行時に命令がエラーを引き起こすかどうかを知るための十分な情報が得"
+"られない場合があります。"
+
+msgid ""
+"This happens when you get a child node. Let's take a timer for example: with "
+"dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
+"typing <https://stackoverflow.com/a/4205163/8125343>`__, so even if your "
+"timer is of type ``Timer``, it is also a ``Node`` and an ``Object``, two "
+"classes it extends. With dynamic GDScript, you also don't care about the "
+"node's type as long as it has the methods you need to call."
+msgstr ""
+"これは子ノードを取得したときに起こります。たとえばタイマーを考えてみましょ"
+"う。動的コードでは、\\ ``$Timer`` でノードを取得できます。GDScriptは `ダッ"
+"ク・タイピング <https://stackoverflow.com/a/4205163/8125343>`_ をサポートして"
+"いるので、あなたのタイマーが ``Timer`` 型であっても、それは ``Node`` であり "
+"``Object`` でもあり、その2つのクラスを継承しています。動的GDScriptでは、ノー"
+"ドが呼び出す必要のあるメソッドを持っている場合、その型については気にする必要"
+"はありません。"
+
+#, fuzzy
+msgid ""
+"You can use casting to tell Godot the type you expect when you get a node: "
+"``($Timer as Timer)``, ``($Player as CharacterBody2D)``, etc. Godot will "
+"ensure the type works and if so, the line number will turn green at the left "
+"of the script editor."
+msgstr ""
+"ノードを取得したときに期待される型をGodotに伝えるためにキャストを使用できま"
+"す: ``($Timer as Timer)`` 、 ``($Player as KinematicBody2D)`` など。Godotは、"
+"そのタイプが機能することを確認し、機能する場合は、行番号がスクリプトエディタ"
+"の左側で緑に変わります。"
+
+msgid "Unsafe vs Safe Line"
+msgstr ""
+
+msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
+msgstr "セーフ・ラインではない行(line 7)とセーフ・ライン (line 6 とline 8)"
+
+msgid ""
+"Safe lines do not always mean better or more reliable code. See the note "
+"above about the ``as`` keyword. For example::"
+msgstr ""
+
+msgid ""
+"Even though ``node_2`` declaration is marked as an unsafe line, it is more "
+"reliable than ``node_1`` declaration. Because if you change the node type in "
+"the scene and accidentally forget to change it in the script, the error will "
+"be detected immediately when the scene is loaded. Unlike ``node_1``, which "
+"will be silently cast to ``null`` and the error will be detected later."
+msgstr ""
+
+msgid ""
+"You can turn off safe lines or change their color in the editor settings."
+msgstr ""
+"セーフ･ラインの色分けをオフにしたり、エディタ設定でカラーを変更することができ"
+"ます。"
+
+msgid "Typed or dynamic: stick to one style"
+msgstr "静的と動的: どちらかのみを利用する"
+
+msgid ""
+"Typed GDScript and dynamic GDScript can coexist in the same project. But "
+"it's recommended to stick to either style for consistency in your codebase, "
+"and for your peers. It's easier for everyone to work together if you follow "
+"the same guidelines, and faster to read and understand other people's code."
+msgstr ""
+"型付きGDScriptと動的GDScriptは、同じプロジェクト内に共存できます。しかし、"
+"コードベースの一貫性のためにも、仲間のためにも、どちらかスタイルに統一するこ"
+"とをお勧めします。同じガイドラインに従うことで全員が協力しやすくなり、他の人"
+"が書いたコードを素早く読んで理解できるようになります。"
+
+#, fuzzy
+msgid ""
+"Typed code takes a little more writing, but you get the benefits we "
+"discussed above. Here's an example of the same, empty script, in a dynamic "
+"style::"
+msgstr ""
+"型付けされたコードはもう少し記述が必要ですが、上で説明したような利点がありま"
+"す。次に、同じ空のスクリプトを例にあげます。動的なスタイルでは:"
+
+#, fuzzy
+msgid "And with static typing::"
+msgstr "そして静的型付けでは:"
+
+#, fuzzy
+msgid ""
+"As you can see, you can also use types with the engine's virtual methods. "
+"Signal callbacks, like any methods, can also use types. Here's a "
+"``body_entered`` signal in a dynamic style::"
+msgstr ""
+"このように、エンジンの仮想メソッドで型を使用することもできます。シグナルの"
+"コールバックも、他のメソッドと同様に、型を使用できます。動的スタイルの "
+"``body_entered`` シグナルは次のとおりです:"
+
+#, fuzzy
+msgid "And the same callback, with type hints::"
+msgstr "同じコールバックをタイプヒントとともに使用します:"
+
+msgid "Warning system"
+msgstr "警告システム"
+
+#, fuzzy
+msgid ""
+"Detailed documentation about the GDScript warning system has been moved to :"
+"ref:`doc_gdscript_warning_system`."
+msgstr ""
+"GDScriptの警告システムについてのドキュメントは :ref:"
+"`doc_gdscript_warning_system` に移動しました。"
+
+#, fuzzy
+msgid ""
+"From version 3.1, Godot gives you warnings about your code as you write it: "
+"the engine identifies sections of your code that may lead to issues at "
+"runtime, but lets you decide whether or not you want to leave the code as it "
+"is."
+msgstr ""
+"型付きGDScriptのもう1つの重要な利点は、新しい\\ **警告システム**\\ です。バー"
+"ジョン3.1以降のGodotではコードを記述する際に警告が表示されます: 実行時に問題"
+"を引き起こす可能性のあるコードのセクションが識別されますが、コードをそのまま"
+"にしておくかどうかを決めることができます。これについては後で説明します。"
+
+msgid ""
+"We have a number of warnings aimed specifically at users of typed GDScript. "
+"By default, these warnings are disabled, you can enable them in Project "
+"Settings (**Debug > GDScript**, make sure **Advanced Settings** is enabled)."
+msgstr ""
+
+msgid ""
+"You can enable the ``UNTYPED_DECLARATION`` warning if you want to always use "
+"static types. Additionally, you can enable the ``INFERRED_DECLARATION`` "
+"warning if you prefer a more readable and reliable, but more verbose syntax."
+msgstr ""
+
+msgid ""
+"``UNSAFE_*`` warnings make unsafe operations more noticeable, than unsafe "
+"lines. Currently, ``UNSAFE_*`` warnings do not cover all cases that unsafe "
+"lines cover."
+msgstr ""
+
+msgid "Common unsafe operations and their safe counterparts"
+msgstr ""
+
+msgid "``UNSAFE_PROPERTY_ACCESS`` and ``UNSAFE_METHOD_ACCESS`` warnings"
+msgstr ""
+
+msgid ""
+"In this example, we aim to set a property and call a method on an object "
+"that has a script attached with ``class_name MyScript`` and that ``extends "
+"Node2D``. If we have a reference to the object as a ``Node2D`` (for "
+"instance, as it was passed to us by the physics system), we can first check "
+"if the property and method exist and then set and call them if they do::"
+msgstr ""
+
+msgid ""
+"However, this code will produce ``UNSAFE_PROPERTY_ACCESS`` and "
+"``UNSAFE_METHOD_ACCESS`` warnings as the property and method are not present "
+"in the referenced type - in this case a ``Node2D``. To make these operations "
+"safe, you can first check if the object is of type ``MyScript`` using the "
+"``is`` keyword and then declare a variable with the type ``MyScript`` on "
+"which you can set its properties and call its methods::"
+msgstr ""
+
+msgid ""
+"Alternatively, you can declare a variable and use the ``as`` operator to try "
+"to cast the object. You'll then want to check whether the cast was "
+"successful by confirming that the variable was assigned::"
+msgstr ""
+
+msgid "``UNSAFE_CAST`` warning"
+msgstr ""
+
+msgid ""
+"In this example, we would like the label connected to an object entering our "
+"collision area to show the area's name. Once the object enters the collision "
+"area, the physics system sends a signal with a ``Node2D`` object, and the "
+"most straightforward (but not statically typed) solution to do what we want "
+"could be achieved like this::"
+msgstr ""
+
+msgid ""
+"This piece of code produces an ``UNSAFE_PROPERTY_ACCESS`` warning because "
+"``label`` is not defined in ``Node2D``. To solve this, we could first check "
+"if the ``label`` property exist and cast it to type ``Label`` before "
+"settings its text property like so::"
+msgstr ""
+
+msgid ""
+"However, this produces an ``UNSAFE_CAST`` warning because ``body.label`` is "
+"of a ``Variant`` type. To safely get the property in the type you want, you "
+"can use the ``Object.get()`` method which returns the object as a "
+"``Variant`` value or returns ``null`` if the property doesn't exist. You can "
+"then determine whether the property contains an object of the right type "
+"using the ``is`` keyword, and finally declare a statically typed variable "
+"with the object::"
+msgstr ""
+
+#, fuzzy
+msgid "Cases where you can't specify types"
+msgstr "型の指定ができない場合"
+
+#, fuzzy
+msgid ""
+"To wrap up this introduction, let's mention cases where you can't use type "
+"hints. This will trigger a **syntax error**."
+msgstr ""
+"この紹介の締めくくりに、タイプヒントを使用できないいくつかのケースを取り上げ"
+"ましょう。 以下の例はすべて\\ **エラーを引き起こすでしょう**\\ 。"
+
+#, fuzzy
+msgid ""
+"You can't specify the type of individual elements in an array or a "
+"dictionary::"
+msgstr ""
+"配列の個々のメンバの型を指定することはできません。これにより、エラーが発生し"
+"ます:"
+
+#, fuzzy
+msgid "Nested types are not currently supported::"
+msgstr "**モバイルブラウザは、現在はまだサポートされていません。**"
+
+#, fuzzy
+msgid "Typed dictionaries are not currently supported::"
+msgstr "**モバイルブラウザは、現在はまだサポートされていません。**"
+
+msgid "Summary"
+msgstr "概要"
+
+#, fuzzy
+msgid ""
+"Typed GDScript is a powerful tool. It helps you write more structured code, "
+"avoid common errors, and create scalable and reliable systems. Static types "
+"improve GDScript performance and more optimizations are planned for the "
+"future."
+msgstr ""
+"型付きGDScriptは強力なツールです。Godotのバージョン3.1から利用できるようにな"
+"り、より構造化されたコードの記述、一般的なエラーの回避、スケーラブルシステム"
+"の作成に役立ちます。将来的には、コンパイラーの最適化によって静的型のパフォー"
+"マンスも大幅に向上するでしょう。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

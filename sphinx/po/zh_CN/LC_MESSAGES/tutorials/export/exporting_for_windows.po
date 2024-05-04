@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for Windows"
+msgstr "为 Windows 导出"
+
+msgid ""
+"This page describes how to export a Godot project to Windows. If you're "
+"looking to compile editor or export template binaries from source instead, "
+"read :ref:`doc_compiling_for_windows`."
+msgstr ""
+"这个页面描述的是如何将 Godot 项目导出到 Windows。如果你想要找的是从源码编译编"
+"辑器或导出模板二进制文件，请阅读 :ref:`doc_compiling_for_windows`\\ 。"
+
+msgid ""
+"The simplest way to distribute a game for PC is to copy the executable "
+"(``godot.exe``), compress the folder and send it to someone else. However, "
+"this is often not desired."
+msgstr ""
+"在 PC 上分发游戏的最简单方法是复制可执行文件（\\ ``godot.exe``\\ ），将文件夹"
+"压缩，然后发送给别人。然而，这样一般并不理想。"
+
+msgid ""
+"Godot offers a more elegant approach for PC distribution when using the "
+"export system. When exporting for Windows, the exporter takes all the "
+"project files and creates a ``data.pck`` file. This file is bundled with a "
+"specially optimized binary that is smaller, faster and does not contain the "
+"editor and debugger."
+msgstr ""
+"Godot 在使用导出系统时，为 PC 分发提供了一种更为优雅的方法。为 Windows 导出"
+"时，导出器将提取所有项目文件并创建一个 ``data.pck`` 文件。该文件与特别优化的"
+"二进制文件捆绑在一起，更小、更快，并且不包含编辑器和调试器。"
+
+msgid "Code signing"
+msgstr "启用代码签名"
+
+msgid ""
+"Godot is capable of automatic code signing on export. To do this you must "
+"have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/"
+"mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a "
+"package signing certificate, information on creating one can be found `here "
+"<https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-"
+"package-signing-certificate?redirectedfrom=MSDN>`__."
+msgstr ""
+
+msgid ""
+"If you export for Windows with embedded PCK files, you will not be able to "
+"sign the program as it will break."
+msgstr "如果你用内嵌的PCK文件导出到Windows, 你将无法签名程序, 因为它会崩溃."
+
+msgid ""
+"On Windows, PCK embedding is also known to cause false positives in "
+"antivirus programs. Therefore, it's recommended to avoid using it unless "
+"you're distributing your project via Steam as it bypasses code signing and "
+"antivirus checks."
+msgstr ""
+"在Windows上,PCK嵌入也会在杀毒软件中造成误报. 因此, 建议避免使用它, 除非你的项"
+"目通过Steam发布, 因为这样就绕过了代码签名和防病毒检查."
+
+msgid "Setup"
+msgstr "场景布置"
+
+msgid ""
+"Settings need to be changed in two places. First, in the editor settings, "
+"under **Export > Windows**. Click on the folder next to the ``Sign Tool`` "
+"setting, if you're using Windows navigate to and select ``SignTool.exe``, if "
+"you're on a different OS select ``osslsigncode``."
+msgstr ""
+
+msgid ""
+"The second location is the Windows export preset, which can be found in "
+"**Project > Export...**. Add a windows desktop preset if you haven't "
+"already. Under options there is a code signing category."
+msgstr ""
+
+msgid ""
+"``Enabled`` must be set to true, and ``Identity`` must be set to the signing "
+"certificate. The other settings can be adjusted as needed. Once this is Done "
+"Godot will sign your project on export."
+msgstr ""
+
+msgid "Environment variables"
+msgstr "环境变量"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+"你可以使用以下环境变量在编辑器外部设置导出选项。在导出过程中，这些值会覆盖你"
+"在导出菜单中设置的值。"
+
+msgid "Windows export environment variables"
+msgstr "Windows 导出环境变量"
+
+msgid "Export option"
+msgstr "导出选项"
+
+msgid "Environment variable"
+msgstr "环境变量"
+
+msgid "Encryption / Encryption Key"
+msgstr "加密 / 密钥"
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+
+msgid "Options / Codesign / Identity Type"
+msgstr "选项 / 代码签名 / 身份类型"
+
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+
+msgid "Options / Codesign / Identity"
+msgstr "选项 / 代码签名 / 身份"
+
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+
+msgid "Options / Codesign / Password"
+msgstr "选项 / 代码签名 / 密码"
+
+msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+msgstr "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+
+msgid "Translation status"
+msgstr "翻译状态"

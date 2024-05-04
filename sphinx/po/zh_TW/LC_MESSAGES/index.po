@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "About"
+msgstr "關於"
+
+msgid "Getting started"
+msgstr "入門"
+
+msgid "Manual"
+msgstr "手冊"
+
+msgid "Contributing"
+msgstr "參與貢獻"
+
+msgid "Community"
+msgstr "社群"
+
+msgid "Class reference"
+msgstr "類別參照手冊"
+
+#, fuzzy
+msgid "Godot Docs – *4.2* branch"
+msgstr "Godot 文件 – *master* 分支"
+
+msgid ""
+"Godot's documentation is available in various languages and versions. Expand "
+"the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
+msgstr ""
+"Godot 的文件有多種不同語言的版本。展開側欄底部的 [閱讀說明文件] 面板可瀏覽完"
+"整列表。"
+
+msgid ""
+"This documentation is translated from the `original English one <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+msgstr ""
+"這份文件是由社群成員在 `Weblate <https://hosted.weblate.org/projects/godot-"
+"engine/godot-docs>`_ 上翻譯自 `原始英文文件 <https://docs.godotengine.org/en/"
+"stable>`_ 。"
+
+msgid ""
+"Depending on the translation effort's completion level, you may find "
+"paragraphs or whole pages which are still in English. You can help the "
+"community by providing new translations or reviewing existing ones on "
+"Weblate."
+msgstr ""
+"根據翻譯的完成度，有些段落或整個頁面可能依然是英語。歡迎你通過 Weblate 提供新"
+"的翻譯或校正現有的翻譯來協助社群。"
+
+msgid ""
+"For the time being, localized translations are only available for the "
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
+msgstr ""
+"目前，本地化翻譯只適用於 **穩定** 分支，您仍然可以使用側邊欄底部的“閱讀文"
+"件”面板查看其他引擎版本的英文文件。"
+
+msgid ""
+"Welcome to the official documentation of `Godot Engine <https://godotengine."
+"org>`__, the free and open source community-driven 2D and 3D game engine! If "
+"you are new to this documentation, we recommend that you read the :ref:"
+"`introduction page <doc_about_intro>` to get an overview of what this "
+"documentation has to offer."
+msgstr ""
+"歡迎來到 Godot 的官方文件， `Godot Engine <https://godotengine.org>`__ 是一款"
+"免費、由開源社區所驅動的 2D/3D 遊戲引擎！若你是第一次閱讀此文件，建議先閲讀 :"
+"ref:`簡介 <doc_about_intro>` 以便大致瞭解本文件所提供之內容。"
+
+msgid ""
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
+msgstr ""
+"下方的目錄以及側邊欄能讓你在文件中輕鬆找到感興趣的主題，亦可以利用左上角的搜"
+"尋功能。"
+
+msgid "Get involved"
+msgstr "參與其中"
+
+msgid ""
+"Godot Engine is an open source project developed by a community of "
+"volunteers. The documentation team can always use your feedback and help to "
+"improve the tutorials and class reference. If you don't understand "
+"something, or cannot find what you are looking for in the docs, help us make "
+"the documentation better by letting us know!"
+msgstr ""
+"Godot Engine 是由志願者社群所開發的開放原始碼專案。為改進這份教學與類別參照文"
+"件，文件團隊成員隨時都願意接受意見回饋。若有任何不瞭解的地方或文件中缺少了什"
+"麼，歡迎告訴我們來讓這份文件變得更好！"
+
+msgid ""
+"Submit an issue or pull request on the `GitHub repository <https://github."
+"com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ into your language, or "
+"talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
+"<https://chat.godotengine.org/>`_!"
+msgstr ""
+"您可以在 `GitHub Repository <https://github.com/godotengine/godot-docs/"
+"issues>`_ 上送出 Issue 或 Pull Request、幫我們替您的語言 `翻譯這份文件 "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ 、也可以在 `Godot "
+"Contributors Chat <https://chat.godotengine.org/>`_ 上的 ``#documentation`` "
+"頻道上與我們交流！"
+
+msgid "weblate_widget"
+msgstr "weblate_widget"
+
+msgid "Translation status"
+msgstr "翻譯狀態"
+
+msgid "Offline documentation"
+msgstr "離線文件"
+
+msgid ""
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+"要離線瀏覽文件，您可以使用在 DevDocs <https://devdocs.io/godot/> 上托管的文件"
+"的鏡像。要在DevDocs上啟用離線瀏覽，您需要："
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr "點擊左上角的三個點，選擇 偏好設定。"
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr "在側邊欄中，勾選您所需的Godot文件版本以啟用它。"
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr "點擊左上角的三個點，選擇 離線資料。"
+
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "點擊**安裝**在Godot說明文件旁邊的連結。"
+
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"你也可以 `下載一個HTML複本 <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ 離線閱讀"
+"(每周一更新)。解壓縮 ZIP檔案，然後在瀏覽器開啟最上層的 ``index.html`` 。"
+
+msgid ""
+"For mobile devices or e-readers, you can also `download an ePub copy "
+"<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"
+"master/godot-docs-epub-master.zip>`__ for offline reading (updated every "
+"Monday). Extract the ZIP archive then open the ``GodotEngine.epub`` file in "
+"an e-book reader application."
+msgstr ""
+"你也可以 `下載一個HTML複本 <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ 離線閱讀"
+"(每周一更新)。解壓縮 ZIP檔案，然後在瀏覽器開啟最上層的 ``index.html`` 。"

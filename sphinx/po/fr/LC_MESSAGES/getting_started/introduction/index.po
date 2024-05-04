@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+msgid ""
+"This series will introduce you to Godot and give you an overview of its "
+"features."
+msgstr ""
+"Cette série vous introduira à Godot et vous donnera un aperçu de ses "
+"fonctionnalités."
+
+msgid ""
+"In the following pages, you will get answers to questions such as \"Is Godot "
+"for me?\" or \"What can I do with Godot?\". We will then introduce the "
+"engine's most essential concepts, run you through the editor's interface, "
+"and give you tips to make the most of your time learning it."
+msgstr ""
+"Dans les pages qui suivent, vous obtiendrez des réponses aux questions "
+"telles que \"Est-ce que Godot est pour moi?\" ou \"Que puis-je faire avec "
+"Godot?\". Nous vous introduirons aux concepts essentiels du moteur, vous "
+"guiderons à travers l'interface de l'éditeur, et vous donnerons quelques "
+"astuces pour tirer le meilleur parti de votre temps d'apprentissage."
+
+msgid "Translation status"
+msgstr "État de la traduction"

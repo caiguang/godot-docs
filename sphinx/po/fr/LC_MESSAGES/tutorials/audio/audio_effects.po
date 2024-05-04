@@ -1,0 +1,400 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Audio effects"
+msgstr "Ajouter des effets"
+
+msgid ""
+"Godot includes several audio effects that can be added to an audio bus to "
+"alter every sound file that goes through that bus."
+msgstr ""
+
+msgid ""
+"Try them all out to get a sense of how they alter sound. Here follows a "
+"short description of the available effects:"
+msgstr ""
+"Essayez-les tous pour avoir une idée de la façon dont ils modifient le son. "
+"Voici une brève description des effets disponibles :"
+
+msgid "Amplify"
+msgstr "Amplifier (Amplify)"
+
+#, fuzzy
+msgid ""
+"Amplify changes the volume of the signal. Some care needs to be taken, "
+"though: setting the level too high can make the sound digitally clip, which "
+"can produce unpleasant crackles and pops."
+msgstr ""
+"Amplifier change l'amplitude du signal. Mais il faut faire attention, régler "
+"le niveau trop haut peut créer un écrêtage, ce qui n'est généralement pas "
+"souhaitable."
+
+msgid "BandLimit and BandPass"
+msgstr "Limite de Bande et Passe-Bande (BandLimit and BandPass)"
+
+msgid ""
+"These are resonant filters which block frequencies around the *Cutoff* "
+"point. BandPass can be used to simulate sound passing through an old "
+"telephone line or megaphone. Modulating the BandPass frequency can simulate "
+"the sound of a wah-wah guitar pedal, think of the guitar in Jimi Hendrix's "
+"*Voodoo Child (Slight Return)*."
+msgstr ""
+"Ce sont des filtres résonants qui bloquent les fréquences autour du *point "
+"de coupure*. BandPass peut être utilisé pour simuler le son passant par une "
+"ancienne ligne téléphonique ou un mégaphone. Moduler la fréquence du filtre "
+"BandPass peut simuler le son d'une pédale de guitare wah-wah, comme la "
+"guitare dans *Voodoo Child (Slight Return)* de Jimi Hendrix."
+
+msgid "Capture"
+msgstr "Capturer"
+
+msgid ""
+"The Capture effect copies the audio frames of the audio bus that it is on "
+"into an internal buffer. This can be used to capture data from the "
+"microphone or to transmit audio over the network in real-time."
+msgstr ""
+"L'effet Capture copie les trames audio du bus audio sur lequel il se trouve "
+"dans un tampon interne. Cela peut être utilisé pour capturer des données à "
+"partir du microphone ou pour transmettre de l'audio sur le réseau en temps "
+"réel."
+
+msgid "Chorus"
+msgstr "Chœur (Chorus)"
+
+msgid ""
+"As the name of the effect implies, the Chorus effect makes a single audio "
+"sample sound like an entire chorus. It does this by duplicating a signal and "
+"very slightly altering the timing and pitch of each duplicate, and varying "
+"that over time via an LFO (low frequency oscillator). The duplicate(s) are "
+"then mixed back together with the original signal, producing a lush, wide, "
+"and large sound. Although chorus is traditionally used for voices, it can be "
+"desirable with almost any type of sound."
+msgstr ""
+
+msgid "Compressor"
+msgstr "Compresseur (Compressor)"
+
+#, fuzzy
+msgid ""
+"A dynamic range compressor automatically attenuates (ducks) the level of the "
+"incoming signal when its amplitude exceeds a certain threshold. The level of "
+"attenuation applied is proportional to how far the incoming audio exceeds "
+"the threshold. The compressor's Ratio parameter controls the degree of "
+"attenuation. One of the main uses of a compressor is to reduce the dynamic "
+"range of signals with very loud and quiet parts. Reducing the dynamic range "
+"of a signal can make it fit more comfortably in a mix."
+msgstr ""
+"Un compresseur à gamme dynamique atténue automatiquement le niveau du signal "
+"entrant lorsque son amplitude dépasse un certain seuil. Le niveau "
+"d'atténuation appliqué est proportionnel au niveau de dépassement de ce "
+"seuil. Le paramètre Ratio du compresseur contrôle le degré d'atténuation. "
+"L'une des principales utilisations d'un compresseur est de réduire la plage "
+"dynamique des signaux ayant des parties très bruyantes et d'autres "
+"silencieuses. Réduire la plage dynamique d'un signal peut faciliter le "
+"mixage."
+
+msgid "The compressor has many uses. For example:"
+msgstr "Le compresseur a de nombreuses utilisations. Par exemple :"
+
+msgid ""
+"It can be used in the Master bus to compress the whole output prior to being "
+"hit by a limiter, making the effect of the limiter much more subtle."
+msgstr ""
+
+msgid ""
+"It can be used in voice channels to ensure they sound as even as possible."
+msgstr ""
+"Il peut être utilisé sur les canaux vocaux pour s'assurer qu'ils sont aussi "
+"uniformes que possible."
+
+#, fuzzy
+msgid ""
+"It can be *sidechained* by another sound source. This means it can reduce "
+"the sound level of one signal using the level of another audio bus for "
+"threshold detection. This technique is very common in video game mixing to "
+"\"duck\" the level of music or sound effects when in-game or multiplayer "
+"voices need to be fully audible."
+msgstr ""
+"Il peut être mis en *sidechained*. Cela signifie qu'il peut réduire le "
+"niveau sonore d'un signal en utilisant le niveau d'un autre bus audio pour "
+"la détection de seuil. Cette technique est très courante dans le mixage "
+"audio des jeux vidéo pour \"baisser\" le son de la musique ou des effets "
+"sonores lorsque des voix doivent être entendues."
+
+msgid ""
+"It can accentuate transients by using a slower attack. This can make sound "
+"effects more punchy."
+msgstr ""
+"Il peut accentuer les transitoires en utilisant une attaque plus lente. Cela "
+"peut rendre les effets sonores plus percutants."
+
+#, fuzzy
+msgid ""
+"If your goal is to prevent a signal from exceeding a given amplitude "
+"altogether, rather than to reduce the dynamic range of the signal, a :ref:"
+"`limiter <doc_audio_buses_limiter>` is likely a better choice than a "
+"compressor for this purpose. However, applying compression before a limiter "
+"is still good practice."
+msgstr ""
+"Si votre but est d'éviter qu'un signal ne dépasse complètement une amplitude "
+"donnée, plutôt que de réduire la plage dynamique du signal, un :ref:`limiter "
+"<doc_audio_buses_limiter>` est probablement un meilleur choix qu'un "
+"compresseur."
+
+msgid "Delay"
+msgstr "Délai"
+
+msgid ""
+"Digital delay essentially duplicates a signal and repeats it at a specified "
+"speed with a volume level that decays for each repeat. Delay is great for "
+"simulating the acoustic space of a canyon or large room, where sound bounces "
+"have a lot of *delay* between their repeats. This is in contrast to reverb, "
+"which has a more natural and blurred sound to it. Using this in conjunction "
+"with reverb can create very natural sounding environments!"
+msgstr ""
+
+msgid "Distortion"
+msgstr "Distorsion (Distortion)"
+
+msgid "Makes the sound distorted. Godot offers several types of distortion:"
+msgstr ""
+
+msgid ""
+"*Overdrive* sounds like a guitar distortion pedal or megaphone. Sounds "
+"distorted with this sound like they're coming through a low-quality speaker "
+"or device."
+msgstr ""
+
+msgid "*Tan* sounds like another interesting flavor of overdrive."
+msgstr ""
+
+msgid ""
+"*Bit crushing* clamps the amplitude of the signal, making it sound flat and "
+"crunchy."
+msgstr ""
+
+msgid ""
+"All three types of distortion can add higher frequency sounds to an original "
+"sound, making it stand out better in a mix."
+msgstr ""
+
+msgid "EQ"
+msgstr "EQ"
+
+#, fuzzy
+msgid ""
+"EQ is what all other equalizers inherit from. It can be extended with Custom "
+"scripts to create an equalizer with a custom number of bands."
+msgstr ""
+"EQ est ce dont héritent tous les autres égaliseurs. Il peut être étendu avec "
+"des scripts personnalisés pour créer un égaliseur avec un nombre "
+"personnalisé de bandes."
+
+msgid "EQ6, EQ10, EQ21"
+msgstr "EQ6, EQ10, EQ21"
+
+#, fuzzy
+msgid ""
+"Godot provides three equalizers with different numbers of bands, which are "
+"represented in the title (6, 10, and 21 bands, respectively). An equalizer "
+"on the Master bus can be useful for cutting low and high frequencies that "
+"the device's speakers can't reproduce well. For example, phone or tablet "
+"speakers usually don't reproduce low frequency sounds well, and could make a "
+"limiter or compressor attenuate sounds that aren't even audible to the user "
+"anyway."
+msgstr ""
+"Godot fournit trois égaliseurs avec différents nombres de bandes. Un "
+"égaliseur sur le bus maître peut être utile pour couper les fréquences que "
+"les haut-parleurs de l'appareil ne peuvent pas bien reproduire (par exemple, "
+"les haut-parleurs d'un téléphone mobile ne reproduiront pas bien le contenu "
+"des basses). L'effet d'égalisation peut être désactivé lorsque le casque est "
+"branché."
+
+msgid ""
+"Note: The equalizer effect can be disabled when headphones are plugged in, "
+"giving the user the best of both worlds."
+msgstr ""
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid ""
+"Filter is what all other filters inherit from and should not be used "
+"directly."
+msgstr ""
+"Filter (filtre) est ce dont héritent tous les autres filtres et ne doit pas "
+"être utilisé directement."
+
+msgid "HighPassFilter"
+msgstr "HighPassFilter"
+
+msgid ""
+"Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
+"to reduce the bass content of a signal."
+msgstr ""
+"Coupe les fréquences en dessous d'une fréquence spécifique *Cutoff*. Le "
+"HighPassFilter est utilisé pour réduire le contenu en basses fréquences d'un "
+"signal."
+
+msgid "HighShelfFilter"
+msgstr "HighShelfFilter"
+
+msgid "Reduces all frequencies above a specific *Cutoff* frequency."
+msgstr ""
+"Réduit toutes les fréquences au-dessus d'une fréquence spécifique *Cutoff*."
+
+msgid "Limiter"
+msgstr "Limiteur (Limiter)"
+
+#, fuzzy
+msgid ""
+"A limiter is similar to a compressor, but it's less flexible and designed to "
+"prevent a signal's amplitude exceeding a given dB threshold. Adding a "
+"limiter to the final point of the Master bus is good practice, as it offers "
+"an easy safeguard against clipping."
+msgstr ""
+"Un limiteur est similaire à un compresseur, mais il est moins flexible et "
+"conçu pour empêcher l'amplitude d'un signal de dépasser un seuil donné en "
+"dB. L'ajout d'un limiteur au bus maître est une protection contre l'écrêtage."
+
+msgid "LowPassFilter"
+msgstr "LowPassFilter"
+
+msgid ""
+"Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
+"(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
+"used to simulate \"muffled\" sound. For instance, underwater sounds, sounds "
+"blocked by walls, or distant sounds."
+msgstr ""
+"Coupe les fréquences au-dessus d'une fréquence *Cutoff* spécifique et peut "
+"également résonner (amplifie les fréquences proches de la fréquence "
+"*Cutoff*). Des filtres passe-bas peuvent être utilisés pour simuler un son "
+"\"étouffé\". Par exemple, les sons sous-marins, les sons bloqués par les "
+"murs ou les sons éloignés."
+
+msgid "LowShelfFilter"
+msgstr "LowShelfFilter"
+
+msgid "Reduces all frequencies below a specific *Cutoff* frequency."
+msgstr ""
+"Réduit toutes les fréquences en dessous d'une fréquence spécifique *Cutoff*."
+
+msgid "NotchFilter"
+msgstr "Filtre coupe-bande (NotchFilter)"
+
+msgid ""
+"The opposite of the BandPassFilter, it removes a band of sound from the "
+"frequency spectrum at a given *Cutoff* frequency."
+msgstr ""
+"À l'opposé du BandPassFilter, il supprime une bande de son du spectre de "
+"fréquences à une fréquence de *coupure* donnée."
+
+msgid "Panner"
+msgstr "Panner"
+
+#, fuzzy
+msgid ""
+"The Panner allows the stereo balance of a signal to be adjusted between the "
+"left and right channels. Headphones are recommended when configuring in this "
+"effect."
+msgstr ""
+"Le Panner permet de régler l'équilibre stéréo d'un signal entre les canaux "
+"gauche et droit (portez un casque pour entendre cet effet)."
+
+msgid "Phaser"
+msgstr "Phaser"
+
+msgid ""
+"This effect is formed by de-phasing two duplicates of the same sound so they "
+"cancel each other out in an interesting way. Phaser produces a pleasant "
+"whooshing sound that moves back and forth through the audio spectrum, and "
+"can be a great way to create sci-fi effects or Darth Vader-like voices."
+msgstr ""
+
+msgid "PitchShift"
+msgstr "Changement de hauteur (PitchShift)"
+
+#, fuzzy
+msgid ""
+"This effect allows the adjustment of the signal's pitch independently of its "
+"speed. All frequencies can be increased/decreased with minimal effect on "
+"transients. PitchShift can be useful to create unusually high or deep "
+"voices. Do note that altering pitch can sound unnatural when pushed outside "
+"of a narrow window."
+msgstr ""
+"Cet effet permet de régler la hauteur du signal indépendamment de sa "
+"vitesse. Toutes les fréquences peuvent être augmentées/diminuées avec un "
+"effet minimal sur les transitoires. *PitchShift* peut être utile pour créer "
+"des voix exceptionnellement hautes ou graves."
+
+msgid "Record"
+msgstr "Enregistrer (Record)"
+
+msgid "The Record effect allows the user to record sound from a microphone."
+msgstr ""
+"L'effet Enregistrer permet à l'utilisateur d'enregistrer l'audio provenant "
+"d'un microphone."
+
+msgid "Reverb"
+msgstr "Réverbération (Reverb)"
+
+#, fuzzy
+msgid ""
+"Reverb simulates rooms of different sizes. It has adjustable parameters that "
+"can be tweaked to obtain the sound of a specific room. Reverb is commonly "
+"outputted from :ref:`Area3Ds <class_Area3D>` (see :ref:`Reverb buses "
+"<doc_audio_streams_reverb_buses>`), or to apply a \"chamber\" feel to all "
+"sounds."
+msgstr ""
+"Reverb simule des pièces de différentes tailles. Il possède des paramètres "
+"réglables qui peuvent être ajustés pour obtenir le son d'une pièce "
+"spécifique. La réverbération est généralement émise à partir de :ref:`Areas "
+"<class_Area>` (voir :ref:`Reverb bus <doc_audio_streams_reverb_buses>`), ou "
+"pour appliquer un effet \"chambre\" à tous les sons."
+
+msgid "SpectrumAnalyzer"
+msgstr "SpectrumAnalyzer"
+
+#, fuzzy
+msgid ""
+"This effect doesn't alter audio, instead, you add this effect to buses you "
+"want a spectrum analysis of. This would typically be used for audio "
+"visualization. Visualizing voices can be a great way to draw attention to "
+"them without just increasing their volume. A demo project using this can be "
+"found `here <https://github.com/godotengine/godot-demo-projects/tree/master/"
+"audio/spectrum>`__."
+msgstr ""
+"Cet effet n'altère pas l'audio, au lieu de cela, vous ajoutez cet effet aux "
+"bus dont vous voulez une analyse de spectre. Ceci serait typiquement utilisé "
+"pour la visualisation audio. Un projet de démonstration l'utilisant peut "
+"être trouvé `ici <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/audio/spectrum>`__."
+
+msgid "StereoEnhance"
+msgstr "Amélioration Stéréo (StereoEnhance)"
+
+#, fuzzy
+msgid "This effect uses a few algorithms to enhance a signal's stereo width."
+msgstr ""
+"Cet effet utilise quelques algorithmes pour améliorer le spectre stéréo d'un "
+"signal."
+
+msgid "Translation status"
+msgstr "État de la traduction"

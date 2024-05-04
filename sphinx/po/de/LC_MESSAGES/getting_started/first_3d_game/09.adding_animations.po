@@ -1,0 +1,567 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Character animation"
+msgstr "Die Animation des Charakters"
+
+msgid ""
+"In this final lesson, we'll use Godot's built-in animation tools to make our "
+"characters float and flap. You'll learn to design animations in the editor "
+"and use code to make your game feel alive."
+msgstr ""
+"In dieser letzten Lektion, werden wir Godots integrierte Animations-Tools "
+"verwenden um unseren Charakter scheben und schlenkern zu lassen. Sie werden "
+"lernen, Animationen im Editor zu entwerfen und Code zu verwenden, um das "
+"Spiel lebendiger wirken zu lassen."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid "We'll start with an introduction to using the animation editor."
+msgstr ""
+"Wir beginnen mit einer Einführung in die Verwendung des Animations-Editors."
+
+msgid "Using the animation editor"
+msgstr "Verwendung des Animations-Editors"
+
+msgid ""
+"The engine comes with tools to author animations in the editor. You can then "
+"use the code to play and control them at runtime."
+msgstr ""
+"Die Engine verfügt über Tools zur Erstellung von Animationen im Editor. Sie "
+"können dann Code verwenden, um diese während des Spiels abzuspielen und zu "
+"steuern."
+
+msgid ""
+"Open the player scene, select the ``Player`` node, and add an :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` node."
+msgstr ""
+"Öffnen Sie die Player-Szene, wählen Sie den ``Player``-Node und fügen Sie "
+"einen :ref:`AnimationPlayer <class_AnimationPlayer>`-Node hinzu."
+
+msgid "The *Animation* dock appears in the bottom panel."
+msgstr "Das *Animation*-Dock erscheint in dem Unteren Bedienfeld."
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid "image1"
+msgstr "image1"
+
+msgid ""
+"It features a toolbar and the animation drop-down menu at the top, a track "
+"editor in the middle that's currently empty, and filter, snap, and zoom "
+"options at the bottom."
+msgstr ""
+"Es enthält eine Toolbar und das Dropdown-Menü für Animationen im oberen "
+"Bereich, in der Mitte einen Track-Editor, der derzeit leer ist und darunter "
+"Filter-, Einrast- und Zoomoptionen."
+
+msgid "Let's create an animation. Click on *Animation -> New*."
+msgstr ""
+"Lassen Sie uns nun eine Animation erstellen. Klicken Sie auf *Animation -> "
+"Neu*."
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "image2"
+msgstr "image2"
+
+msgid "Name the animation \"float\"."
+msgstr "Nennen Sie die Animation \"float\"."
+
+msgid "|image3|"
+msgstr "|image3|"
+
+msgid "image3"
+msgstr "image3"
+
+msgid ""
+"Once you've created the animation, the timeline appears with numbers "
+"representing time in seconds."
+msgstr ""
+"Sobald Sie die Animation erstellt haben, erscheint die Zeitleiste mit "
+"Zahlen, in der die Zeit in Sekunden dargestellt wird."
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "image4"
+msgstr "image4"
+
+msgid ""
+"We want the animation to start playback automatically at the start of the "
+"game. Also, it should loop."
+msgstr ""
+"Wir wollen, dass die Animation automatisch zu Beginn des Spiels startet. "
+"Außerdem soll sie in einer Schleife laufen."
+
+msgid ""
+"To do so, you can click the button with an \"A+\" icon in the animation "
+"toolbar and the looping arrows, respectively."
+msgstr ""
+"Klicken Sie dazu jeweils ein Mal auf den Button mit dem \"A+\" Icon in der "
+"Animations-Toolbar und auf den mit den Schleifenpfeilen."
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid "image5"
+msgstr "image5"
+
+msgid ""
+"You can also pin the animation editor by clicking the pin icon in the top-"
+"right. This prevents it from folding when you click on the viewport and "
+"deselect the nodes."
+msgstr ""
+"Sie können den Animations-Editor auch anheften, indem Sie auf das Stecknadel-"
+"Icon in der oberen rechten Ecke klicken. Dies verhindert dass er sich "
+"zusammenklappt, wenn Sie auf den Viewport klicken und die Auswahl der Nodes "
+"aufheben."
+
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "|image6|"
+
+msgid ""
+"Set the animation duration to ``1.2`` seconds in the top-right of the dock."
+msgstr ""
+"Legen Sie die Animationsdauer auf ``1.2`` Sekunden in der oberen rechten "
+"Ecke des Docks fest."
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
+msgstr "|image7|"
+
+msgid ""
+"You should see the gray ribbon widen a bit. It shows you the start and end "
+"of your animation and the vertical blue line is your time cursor."
+msgstr ""
+"Sie sollten sehen, dass das graue Band etwas erweitert wird. Es zeigt Ihnen "
+"den Anfang und das Ende ihrer Animation, und die vertikale blaue Linie ist "
+"Ihr Zeitcursor."
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
+msgstr "|image8|"
+
+msgid ""
+"You can click and drag the slider in the bottom-right to zoom in and out of "
+"the timeline."
+msgstr ""
+"Durch das Bewegen des Schiebereglers oben rechts kann in der Zeitachse "
+"gezoomt werden."
+
+msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
+msgstr "|image9|"
+
+msgid "The float animation"
+msgstr "Die Schwebe-Animation"
+
+msgid ""
+"With the animation player node, you can animate most properties on as many "
+"nodes as you need. Notice the key icon next to properties in the "
+"*Inspector*. You can click any of them to create a keyframe, a time and "
+"value pair for the corresponding property. The keyframe gets inserted where "
+"your time cursor is in the timeline."
+msgstr ""
+"Mit dem Animationsplayer-Node, können Sie fast alle Eigenschaften von "
+"beliebig vielen Nodes animieren. Beachten Sie das Schlüssel-Icon neben den "
+"Eigenschaften im *Inspektor*. Sie können auf ein beliebiges dieser Icons "
+"klicken, um ein Keyframe zu erstellen, ein Zeit- und Wertepaar für die "
+"entsprechende Eigenschaft. Das Keyframe wird dort eingefügt wo sich Ihr "
+"Zeitcursor in dem Zeitstrahl befindet."
+
+msgid ""
+"Let's insert our first keys. Here, we will animate both the position and the "
+"rotation of the ``Character`` node."
+msgstr ""
+"Fügen wir unsere ersten Keys ein. Hier werden wir sowohl die Position als "
+"auch die Drehung des ``Character``-Nodes animieren."
+
+msgid ""
+"Select the ``Character`` and in the *Inspector* expand the *Transform* "
+"section. Click the key icon next to *Position*, and *Rotation*."
+msgstr ""
+"Wählen Sie die ``Character`` aus und erweitern Sie im *Inspektor* den "
+"Abschnitt *Transformation*. Klicken Sie auf das Schlüssel-Icon neben "
+"*Position*, und *Rotation*."
+
+msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
+msgstr "|image10|"
+
+msgid ""
+"For this tutorial, just create RESET Track(s) which is the default choice"
+msgstr ""
+"Für dieses Tutorial erstellen Sie einfach RESET-Track(s), was die Default-"
+"Einstellung darstellt"
+
+msgid ""
+"Two tracks appear in the editor with a diamond icon representing each "
+"keyframe."
+msgstr ""
+"Im Editor erscheinen zwei Tracks mit einem Rauten-Icon für jedes Keyframe."
+
+msgid "|image11|"
+msgstr "|image11|"
+
+msgid "image11"
+msgstr "|image11|"
+
+msgid ""
+"You can click and drag on the diamonds to move them in time. Move the "
+"position key to ``0.3`` seconds and the rotation key to ``0.1`` seconds."
+msgstr ""
+"Sie können die Rauten per Drag&Drop in der Zeit verschieben. Stellen Sie den "
+"Positions-Key auf ``0,3`` Sekunden und den Rotations-Key auf ``0,1`` "
+"Sekunden."
+
+msgid "|image12|"
+msgstr "|image12|"
+
+msgid "image12"
+msgstr "|image12|"
+
+msgid ""
+"Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
+"timeline."
+msgstr ""
+"Bewegen Sie den Zeitcursor auf ``0,5`` Sekunden, indem Sie auf die graue "
+"Zeitleiste klicken und sie ziehen."
+
+msgid ""
+"In the *Inspector*, set the *Position*'s *Y* axis to ``0.65`` meters and the "
+"*Rotation*' *X* axis to ``8``."
+msgstr ""
+"Setzen Sie im *Inspektor* die *Y*-Achse der *Position* auf ``0,65`` Meter "
+"und die *X*-Achse der *Rotation* auf ``8``."
+
+msgid "|image13|"
+msgstr "|image13|"
+
+msgid "image13"
+msgstr "|image13|"
+
+msgid "Create a keyframe for both properties"
+msgstr "Erstellen Sie einen Keyframe für beide Eigenschaften"
+
+msgid ""
+"Now, move the position keyframe to ``0.7`` seconds by dragging it on the "
+"timeline."
+msgstr ""
+"Verschieben Sie nun den Positions-Keyframe auf ``0,7`` Sekunden, indem Sie "
+"ihn auf der Zeitachse ziehen."
+
+msgid "|image14|"
+msgstr "|image14|"
+
+msgid "image14"
+msgstr "|image14|"
+
+msgid ""
+"A lecture on the principles of animation is beyond the scope of this "
+"tutorial. Just note that you don't want to time and space everything evenly. "
+"Instead, animators play with timing and spacing, two core animation "
+"principles. You want to offset and contrast in your character's motion to "
+"make them feel alive."
+msgstr ""
+"Eine Lektion über die Prinzipien der Animation sprengt leider den Rahmen "
+"dieses Tutorials. Merken Sie sich einfach, dass Sie nicht unbedingt alles "
+"gleichmäßig räumlich und zeitlich verteilen wollen. Stattdessen spielen "
+"Animatoren mit Timing und Abständen, zwei zentralen Animationsprinzipien. "
+"Sie wollen die Bewegungen Ihres Charakters versetzen und kontrastieren, "
+"damit er sich lebendig anfühlt."
+
+msgid ""
+"Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
+"the Y position to about ``0.35`` and the X rotation to ``-9`` degrees. Once "
+"again, create a key for both properties."
+msgstr ""
+"Bewegen Sie den Zeitcursor an das Ende der Animation, bei ``1,2`` Sekunden. "
+"Setzen Sie die Y-Position auf etwa ``0.35`` und die X-Rotation auf ``-9`` "
+"Grad. Erstellen Sie auch hier einen Key für beide Eigenschaften."
+
+msgid ""
+"You can preview the result by clicking the play button or pressing :kbd:"
+"`Shift + D`. Click the stop button or press :kbd:`S` to stop playback."
+msgstr ""
+"Sie können eine Vorschau des Ergebnisses anzeigen, indem Sie auf den "
+"Wiedergabe-Button klicken oder :kbd:`Umschalt + D` drücken. Klicken Sie auf "
+"den Stopp-Button oder drücken Sie :kbd:`S`, um die Wiedergabe zu beenden."
+
+msgid "|image15|"
+msgstr "|image15|"
+
+msgid "image15"
+msgstr "|image15|"
+
+msgid ""
+"You can see that the engine interpolates between your keyframes to produce a "
+"continuous animation. At the moment, though, the motion feels very robotic. "
+"This is because the default interpolation is linear, causing constant "
+"transitions, unlike how living things move in the real world."
+msgstr ""
+"Wie Sie sehen können, interpoliert die Engine zwischen den Werten der "
+"Keyframes um eine kontinuierliche Animation zu erzeugen. Im Moment wirkt die "
+"Bewegung allerdings sehr roboterhaft. Das liegt daran dass die Default-"
+"Interpolation linear ist, was zu konstanten Übergängen führt, anders als bei "
+"lebendigen Dingen in der realen Welt."
+
+msgid "We can control the transition between keyframes using easing curves."
+msgstr ""
+"Wir können die Übergänge zwischen Keyframes mit Hilfe von Easing-Kurven "
+"steueren."
+
+msgid ""
+"Click and drag around the first two keys in the timeline to box select them."
+msgstr ""
+"Klicken und ziehen Sie, um die ersten beiden Keyframes in dem Zeitstrahl um "
+"sie auszuwählen."
+
+msgid "|image16|"
+msgstr "|image16|"
+
+msgid "image16"
+msgstr "|image16|"
+
+msgid ""
+"You can edit the properties of both keys simultaneously in the *Inspector*, "
+"where you can see an *Easing* property."
+msgstr ""
+"Sie können die Eigenschaften beider Keyframes gleichzeitig im *Inspektor* "
+"bearbeiten, wo Sie die Eigenschaft *Easing* sehen können."
+
+msgid "|image17|"
+msgstr "|image17|"
+
+msgid "image17"
+msgstr "|image17|"
+
+msgid ""
+"Click and drag on the curve, pulling it towards the left. This will make it "
+"ease-out, that is to say, transition fast initially and slow down as the "
+"time cursor reaches the next keyframe."
+msgstr ""
+"Klicken und ziehen Sie die Kurve nach links. Dadurch ergibt sich ein \"Ease-"
+"out\", d. h. der Übergang ist anfangs schnell und wird langsamer, wenn der "
+"Zeitcursor das nächste Keyframe erreicht."
+
+msgid "|image18|"
+msgstr "|image18|"
+
+msgid "image18"
+msgstr "|image18|"
+
+msgid ""
+"Play the animation again to see the difference. The first half should "
+"already feel a bit bouncier."
+msgstr ""
+"Spielen Sie die Animation erneut ab um den Unterschied zu sehen. Die erste "
+"Hälfte er Animation sollte etwas schwungvoller sein."
+
+msgid "Apply an ease-out to the second keyframe in the rotation track."
+msgstr ""
+"Wenden Sie auf das zweite Keyframe in dem Rotations-Track einen Ease-Out an."
+
+msgid "|image19|"
+msgstr "|image19|"
+
+msgid "image19"
+msgstr "image19"
+
+msgid ""
+"Do the opposite for the second position keyframe, dragging it to the right."
+msgstr ""
+"Ziehen Sie das Keyframe für die zweite Position anders als vorher nach "
+"rechts."
+
+msgid "|image20|"
+msgstr "|image20|"
+
+msgid "image20"
+msgstr "image20"
+
+msgid "Your animation should look something like this."
+msgstr "Ihre fertige Animation sollte ungefähr so aussehen."
+
+msgid "|image21|"
+msgstr "|image21|"
+
+msgid "image21"
+msgstr "image21"
+
+msgid ""
+"Animations update the properties of the animated nodes every frame, "
+"overriding initial values. If we directly animated the *Player* node, it "
+"would prevent us from moving it in code. This is where the *Pivot* node "
+"comes in handy: even though we animated the *Character*, we can still move "
+"and rotate the *Pivot* and layer changes on top of the animation in a script."
+msgstr ""
+"Animationen aktualisieren die Eigenschaften der animierten Nodes bei jedem "
+"Bild und überschreiben die Anfangswerte. Wenn wir den *Player*-Node direkt "
+"animieren würden, könnten wir ihn im Code nicht verschieben. Hier kommt der "
+"*Pivot*-Node ins Spiel: Auch wenn wir den *Charakter* animiert haben, können "
+"wir den *Pivot* bewegen und drehen und Änderungen in einem Skript über die "
+"Animation legen."
+
+msgid "If you play the game, the player's creature will now float!"
+msgstr "Wenn Sie jetzt das Spiel spielen, wird der Spieler Charakter schweben!"
+
+msgid ""
+"If the creature is a little too close to the floor, you can move the "
+"``Pivot`` up to offset it."
+msgstr ""
+"Wenn die Kreatur ein wenig zu nahe am Boden ist, können Sie den ``Pivot`` "
+"nach oben bewegen, um das auszugleichen."
+
+msgid "Controlling the animation in code"
+msgstr "Steuerung der Animation im Code"
+
+msgid ""
+"We can use code to control the animation playback based on the player's "
+"input. Let's change the animation speed when the character is moving."
+msgstr ""
+"Wir können Code verwenden um die Wiedergabe der Animation mit den Eingaben "
+"des Spielers zu steuern. Ändern wir die Geschwindigkeit der Animation, wenn "
+"der Charakter sich bewegt."
+
+msgid "Open the ``Player``'s script by clicking the script icon next to it."
+msgstr ""
+"Öffnen Sie das ``Player``-Skript, indem Sie auf das Skript-Icon neben dem "
+"Node klicken."
+
+msgid "|image22|"
+msgstr "|image22|"
+
+msgid "image22"
+msgstr "image22"
+
+msgid ""
+"In ``_physics_process()``, after the line where we check the ``direction`` "
+"vector, add the following code."
+msgstr ""
+"Fügen Sie in ``_physics_process()`` nach der Zeile, in der wir den Vektor "
+"``direction`` überprüfen, folgenden Code ein."
+
+msgid ""
+"This code makes it so when the player moves, we multiply the playback speed "
+"by ``4``. When they stop, we reset it to normal."
+msgstr ""
+"Dieser Code sorgt dafür, dass, die Wiedergabegeschwindigkeit mit ``4`` "
+"multipliziert wird, wenn der Spieler sich bewegt. Wenn er anhält, setzen wir "
+"sie auf den Standardwert zurück."
+
+msgid ""
+"We mentioned that the ``Pivot`` could layer transforms on top of the "
+"animation. We can make the character arc when jumping using the following "
+"line of code. Add it at the end of ``_physics_process()``."
+msgstr ""
+"Wir haben bereits erwähnt, dass der ``Pivot`` Transformationen über die "
+"Animation legen kann. Mit der folgenden Codezeile können wir den Character "
+"beim Springen einen Bogen machen lassen. Fügen Sie sie am Ende von "
+"``_physics_process()`` ein."
+
+msgid "Animating the mobs"
+msgstr "Die Mobs animieren"
+
+msgid ""
+"Here's another nice trick with animations in Godot: as long as you use a "
+"similar node structure, you can copy them to different scenes."
+msgstr ""
+"Hier ist ein weiterer netter Trick für Animationen in Godot: Solange Sie "
+"eine ähnliche Nodestruktur verwenden, können Sie dieselbe Animation in "
+"verschiedene Szenen kopieren."
+
+msgid ""
+"For example, both the ``Mob`` and the ``Player`` scenes have a ``Pivot`` and "
+"a ``Character`` node, so we can reuse animations between them."
+msgstr ""
+"Zum Beispiel haben sowohl die ``Mob``- als auch die ``Player``-Szene einen "
+"``Pivot``- und einen ``Character``-Node, so daß wir Animationen zwischen "
+"ihnen wiederverwenden können."
+
+msgid ""
+"Open the *Player* scene, select the AnimationPlayer node and open the "
+"\"float\" animation. Next, click on **Animation > Copy**. Then open ``mob."
+"tscn``, create an AnimationPlayer child node and select it. Click "
+"**Animation > Paste** and make sure that the button with an \"A+\" icon "
+"(Autoplay on Load) and the looping arrows (Animation looping) are also "
+"turned on in the animation editor in the bottom panel. That's it; all "
+"monsters will now play the float animation."
+msgstr ""
+"Öffnen Sie die *Player*-Szene, wählen Sie den AnimationPlayer-Node und "
+"öffnen Sie die Animation \"float\". Dann klicken Sie auf **Animation > "
+"Kopieren**. Öffnen Sie dann ``mob.tscn``, erstellen Sie einen "
+"AnimationPlayer-Child-Node und wählen Sie ihn aus. Klicken Sie auf "
+"**Animation > Einfügen** und vergewissern Sie sich, dass der Button mit dem "
+"\"A+\"-Icon (Beim Laden automatisch abspielen) und die Schleifenpfeile "
+"(Animationswiederholung) auch im Animations-Editor im Unteren Bedienfeld "
+"aktiviert sind. Das war's: Alle Monster spielen jetzt die Schwebeanimation "
+"ab."
+
+msgid ""
+"We can change the playback speed based on the creature's ``random_speed``. "
+"Open the *Mob*'s script and at the end of the ``initialize()`` function, add "
+"the following line."
+msgstr ""
+"Wir können die Wiedergabegeschwindigkeit basierend auf der ``random_speed`` "
+"Eigenschaft der Mobs verändern. Öffnen Sie das Skript des *Mobs* und fügen "
+"Sie am Ende der ``initialize()`` Funktion die folgende Zeile ein."
+
+msgid "And with that, you finished coding your first complete 3D game."
+msgstr ""
+"Und damit haben Sie ihr erstes komplettes 3D-Spiel fertig programmiert."
+
+msgid "**Congratulations**!"
+msgstr "**Herzlichen Glückwunsch**!"
+
+msgid ""
+"In the next part, we'll quickly recap what you learned and give you some "
+"links to keep learning more. But for now, here are the complete ``Player."
+"gd`` and ``Mob.gd`` so you can check your code against them."
+msgstr ""
+"Im nächsten Teil werden wir das Gelernte noch einmal kurz zusammenfassen und "
+"Ihnen einige Links geben, wenn Sie noch mehr lernen möchten. Aber erstmal "
+"sind hier nochmal die vollständigen ``Player.gd`` und ``Mob.gd`` Skripte, "
+"damit Sie Ihren Code damit vergleichen können."
+
+msgid "Here's the *Player* script."
+msgstr "Hier ist das *Player*-Skript."
+
+msgid "And the *Mob*'s script."
+msgstr "Und hier das *Mob*-Skript."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for Linux"
+msgstr "Exportando para Linux"
+
+#, fuzzy
+msgid ""
+"This page describes how to export a Godot project to Linux. If you're "
+"looking to compile editor or export template binaries from source instead, "
+"read :ref:`doc_compiling_for_linuxbsd`."
+msgstr ""
+"Esta página describe cómo exportar un proyecto de Godot a Linux. Si estás "
+"buscando compilar binarios del editor o plantillas de exportación desde el "
+"código fuente, lee :ref:`doc_compiling_for_x11`."
+
+msgid ""
+"The simplest way to distribute a game for PC is to copy the executable "
+"(``godot``), compress the folder and send it to someone else. However, this "
+"is often not desired."
+msgstr ""
+"La forma más sencilla de distribuir un juego para PC es copiar el ejecutable "
+"(``godot``), comprimir la carpeta y enviarla a otra persona. Sin embargo, "
+"esto a menudo no es lo deseado."
+
+msgid ""
+"Godot offers a more elegant approach for PC distribution when using the "
+"export system. When exporting for Linux, the exporter takes all the project "
+"files and creates a ``data.pck`` file. This file is bundled with a specially "
+"optimized binary that is smaller, faster and does not contain the editor and "
+"debugger."
+msgstr ""
+"Godot ofrece un enfoque más elegante para la distribución en PC cuando se "
+"utiliza el sistema de exportación. Al exportar para Linux, el exportador "
+"toma todos los archivos del proyecto y crea un archivo llamado ``data.pck``. "
+"Este archivo se empaqueta con un binario especialmente optimizado que es más "
+"pequeño, más rápido y no contiene el editor ni el depurador."
+
+msgid "Environment variables"
+msgstr "Variables de entorno"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+#, fuzzy
+msgid "Linux export environment variables"
+msgstr "Variables de entorno"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Opciones de exportación"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variables de entorno"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Estado de traducción"

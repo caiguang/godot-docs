@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript warning system"
+msgstr "Sistema de advertencias de GDScript"
+
+msgid ""
+"The GDScript warning system complements :ref:`static typing "
+"<doc_gdscript_static_typing>` (but it can work without static typing too). "
+"It's here to help you avoid mistakes that are hard to spot during "
+"development, and that may lead to runtime errors."
+msgstr ""
+"El sistema de advertencias complementa el :ref:`tipado estático "
+"<doc_gdscript_static_typing>` (pero puede funcionar también sin tipado "
+"estático). Está allí para ayudar a evitar errores que son difíciles de ver "
+"durante el desarrollo y que pueden llevar a errores en tiempo de ejecución."
+
+#, fuzzy
+msgid ""
+"You can configure warnings in the Project Settings under the section called "
+"**GDScript**:"
+msgstr ""
+"Puedes configurar las advertencias (warnings) en los ajustes de proyecto en "
+"la sección llamada **GDScript**:"
+
+msgid ""
+"You must enable **Advanced Settings** in order to see the GDScript section "
+"in the sidebar. You can also search for \"GDScript\" when Advanced Settings "
+"is off."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can find a list of warnings for the active GDScript file in the script "
+"editor's status bar. The example below has 2 warnings:"
+msgstr ""
+"Encontrarás una lista de advertencias para el archivo GDScript actual en la "
+"barra de estado del editor de script. El siguiente ejemplo tiene 3 "
+"advertencias:"
+
+#, fuzzy
+msgid ""
+"To ignore specific warnings in one file, insert an annotation of the form "
+"``@warning_ignore(\"warning-id\")``, or click on the ignore link to the left "
+"of the warning's description. Godot will add an annotation above the "
+"corresponding line and the code won't trigger the corresponding warning "
+"anymore:"
+msgstr ""
+"Para ignorar advertencias específicas en un archivo, inserta un comentario "
+"especial en el formulario ``#warning-ignore:warning-id``, o haz clic en el "
+"enlace ignorar a la derecha de la descripción de la advertencia. Godot "
+"añadirá un comentario sobre la línea correspondiente y el código ya no "
+"activará la advertencia correspondiente:"
+
+#, fuzzy
+msgid ""
+"Warnings won't prevent the game from running, but you can turn them into "
+"errors if you'd like. This way your game won't compile unless you fix all "
+"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
+"on this option to the warning that you want. Here's the same file as the "
+"previous example with the warning ``unused_variable`` as an error turned on:"
+msgstr ""
+"Las advertencias no van a prevenir que se ejecute el juego, pero las puedes "
+"convertir en errores si quieres. De este modo tu juego no compilará hasta "
+"que las hayas corregido a todas. Dirígete a la sección ``GDScript`` de los "
+"Ajustes de Proyecto para habilitar esta opción. Aquí está el mismo ejemplo "
+"anterior con advertencias convertidas a errores:"
+
+msgid "Translation status"
+msgstr "Estado de traducción"

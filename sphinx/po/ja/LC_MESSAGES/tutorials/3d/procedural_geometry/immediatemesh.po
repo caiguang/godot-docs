@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using ImmediateMesh"
+msgstr "ImmediateGeometryの使用"
+
+msgid ""
+"The :ref:`ImmediateMesh <class_ImmediateMesh>` is a convenient tool to "
+"create dynamic geometry using an OpenGL 1.x-style API. Which makes it both "
+"approachable to use and efficient for meshes which need to be updated every "
+"frame."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Generating complex geometry (several thousand vertices) with this tool is "
+"inefficient, even if it's done only once. Instead, it is designed to "
+"generate simple geometry that changes every frame."
+msgstr ""
+"このノードを使用して複雑なジオメトリ(数千個の頂点)を生成することは、1 回だけ"
+"実行された場合でも非効率的です。代わりに、すべてのフレームを変更する単純なジ"
+"オメトリを生成するように設計されています。"
+
+msgid ""
+"First, you need to create a :ref:`MeshInstance3D <class_meshinstance3d>` and "
+"add an :ref:`ImmediateMesh <class_ImmediateMesh>` to it in the Inspector."
+msgstr ""
+
+msgid ""
+"Next, add a script to the MeshInstance3D. The code for the ImmediateMesh "
+"should go in the ``_process()`` function if you want it to update each "
+"frame, or in the ``_ready()`` function if you want to create the mesh once "
+"and not update it. If you only generate a surface once, the ImmediateMesh is "
+"just as efficient as any other kind of mesh as the generated mesh is cached "
+"and reused."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To begin generating geometry you must call ``surface_begin()``. "
+"``surface_begin()`` takes a ``PrimitiveType`` as an argument. "
+"``PrimitiveType`` instructs the GPU how to arrange the primitive based on "
+"the vertices given whether it is triangles, lines, points, etc. A complete "
+"list can be found under the :ref:`Mesh <class_mesh>` class reference page."
+msgstr ""
+"ジオメトリの生成を開始するには、\\ ``begin()`` を呼び出す必要があります。\\ "
+"``begin()`` は ``PrimitiveType`` を引数として取ります。\\ ``PrimitiveType`` "
+"はOpenGLの概念で、三角形、線、点などの頂点に基づいてプリミティブを配置する方"
+"法をGPUに指示します。完全なリストは :ref:`Mesh <class_mesh>` のクラスリファレ"
+"ンスページにあります。"
+
+#, fuzzy
+msgid ""
+"Once you have called ``surface_begin()`` you are ready to start adding "
+"vertices. You add vertices one at a time. First you add vertex specific "
+"attributes such as normals or UVs using ``surface_set_****()`` (e.g. "
+"``surface_set_normal()``). Then you call ``surface_add_vertex()`` to add a "
+"vertex with those attributes. For example:"
+msgstr ""
+"`` begin()`` を呼び出したら、頂点の追加を開始する準備ができています。頂点を1"
+"つずつ追加します。まず、\\ ``set _ ****()`` を使用して、法線やUVなどの頂点固"
+"有の属性を追加します(例: ``set_normal()``)。次に、\\ ``add_vertex()`` を呼び"
+"出して、これらの属性を持つ頂点を追加します。例えば:"
+
+#, fuzzy
+msgid ""
+"Only attributes added before the call to ``surface_add_vertex()`` will be "
+"included in that vertex. If you add an attribute twice before calling "
+"``surface_add_vertex()``, only the second call will be used."
+msgstr ""
+"``add_vertex()`` の呼び出しの前に追加された属性のみがその頂点に含まれます。"
+
+#, fuzzy
+msgid ""
+"Finally, once you have added all your vertices call ``surface_end()`` to "
+"signal that you have finished generating the surface. You can call "
+"``surface_begin()`` and ``surface_end()`` multiple times to generate "
+"multiple surfaces for the mesh."
+msgstr ""
+"最後に、頂点をすべて追加したら ``end()`` を呼び出して、メッシュの生成が終了し"
+"たことを知らせます。"
+
+#, fuzzy
+msgid ""
+"The example code below draws a single triangle in the ``_ready()`` function."
+msgstr "以下のサンプルコードは、単一の三角形を描画します。"
+
+msgid ""
+"The ImmediateMesh can also be used across frames. Each time you call "
+"``surface_begin()`` and ``surface_end()``, you are adding a new surface to "
+"the ImmediateMesh. If you want to recreate the mesh from scratch each frame, "
+"call ``surface_clear()`` before calling ``surface_begin()``."
+msgstr ""
+
+msgid ""
+"The above code will dynamically create and draw a single surface each frame."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

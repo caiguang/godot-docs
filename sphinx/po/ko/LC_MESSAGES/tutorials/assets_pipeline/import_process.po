@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Import process"
+msgstr "가져오기 과정"
+
+#, fuzzy
+msgid "Importing assets in Godot"
+msgstr "Godot 3.0+에서 애셋 가져오기"
+
+msgid ""
+"To import assets in Godot, place your assets (image files, scenes, audio "
+"files, fonts, etc) directly in the project folder. There are 2 ways to "
+"achieve this:"
+msgstr ""
+
+msgid ""
+"**For any file type:** Copy files manually with your operating system's file "
+"manager."
+msgstr ""
+
+msgid ""
+"**For file types that can be imported by Godot:** Drag-and-drop files from "
+"the operating system's file manager to the editor's FileSystem dock. This "
+"only works with *resource* file types (i.e. file types that Godot can "
+"import)."
+msgstr ""
+
+msgid ""
+"Godot will automatically import these files internally and keep the imported "
+"resources hidden in a ``res://.godot/imported/`` folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This means that when trying to access imported assets through code, you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`FileAccess "
+"<class_FileAccess>` class, it will work in the editor, but **it will break "
+"in the exported project**."
+msgstr ""
+"따라서 가져온 애셋에 액세스하려면 저장된 내부 파일의 위치를 고려하도록 :ref:"
+"`Resource Loader<class_ResourceLoader>` 를 사용해야 합니다. 만약 :ref:`File "
+"<class_File>` 클래스로 가져온 애셋에 액세스 한다면 에디터에서는 작동하겠지만 "
+"내보낸 프로젝트에서는 작동하지 않습니다."
+
+#, fuzzy
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non-"
+"imported files. Only the :ref:`FileAccess <class_FileAccess>` class can."
+msgstr ""
+"반면 :ref:`Resource Loader<class_ResourceLoader>`는 가져오지 않은 파일에는 액"
+"세스 할 수 없으므로 이 경우에는 :ref:`File <class_File>`클래스를 사용해야 합"
+"니다."
+
+msgid "Changing import parameters"
+msgstr "가져오기의 매개변수 변경하기"
+
+msgid ""
+"Import parameters are only present in *non-native* Godot resource types. "
+"This means Godot's own scene and resource file formats (``.tscn``, ``.scn``, "
+"``.tres``, ``.res``) don't have import options you can select in the Import "
+"dock."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To change the import parameters of an asset in Godot, select the relevant "
+"resource in the FileSystem dock:"
+msgstr ""
+"Godot에서 애셋의 가져오기 매개변수를 변경하는 것은 쉽습니다(다시 말하지만, 가"
+"져오기 매개변수는 오직 네이티브가 아닌 Godot 리소스 타입에만 있습니다). 파일 "
+"시스템 독에서 관련된 리소스를 선택합니다:"
+
+msgid ""
+"After adjusting the parameters, click **Reimport**. Be careful: if you "
+"select another file in the FileSystem dock before clicking **Reimport**, "
+"changes will be discarded. After clicking **Reimport**, the chosen "
+"parameters will only be used for this asset and on future reimports."
+msgstr ""
+
+msgid ""
+"Changing the import parameters of several assets at the same time is also "
+"possible. Simply select all of them together in the resources dock and the "
+"exposed parameters will apply to all of them when reimporting."
+msgstr ""
+"여러 애셋 가져오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
+"에서 모두를 선택하고 다시 가져올 때 가져온 매개변수를 적용합니다."
+
+msgid "Reimporting multiple assets"
+msgstr "여러 애셋들을 다시 가져오기"
+
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+"프로젝트에서 작업할 때 밉맵을 활성화 하는 등 여러 애셋이 같은 매개변수를 변경"
+"해야 하는 경우를 볼 수 있을 겁니다. 하지만 특정 매개변수만을 변경하고 싶은 경"
+"우, 파일시스템에서 다시 가져오고 싶은 파일을 모두 선택하십시오. 그러면 가져오"
+"기 탭의 모든 가져온 매개변수 좌측에 체크박스가 보일겁니다."
+
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+"가져온 애셋에서 바꾸고 싶은 매개변수의 체크박스에 체크한 후 평상시처럼 매개변"
+"수를 변경하십시오. 이후 다시 가져오기 버튼을 누르면 선택된 애셋들이 체크된 매"
+"개변수의 값만 변경된 채 다시 가져와집니다."
+
+msgid "Automatic reimport"
+msgstr "자동으로 다시 가져오기"
+
+msgid ""
+"When the MD5 checksum of the source asset changes, Godot will perform an "
+"automatic reimport of it, applying the preset configured for that specific "
+"asset."
+msgstr ""
+"원본 애셋의 MD5 체크섬이 바꿀 때, Godot는 튿정 애셋을 위해 구성된 프리셋을 적"
+"용하면서, 그것에 자동 다시 내보내기를 실행할 것입니다."
+
+msgid "Files generated"
+msgstr "생성된 파일"
+
+msgid ""
+"Importing will add an extra ``<asset>.import`` file next to the source file, "
+"containing the import configuration."
+msgstr ""
+"가져오기는 추가로 ``<asset>.import`` 파일을 생성하는데, 가져오기 구성이 거기"
+"에 들어있습니다. 이것을 버전 제어 시스템에 커밋하도록 하세요."
+
+msgid ""
+"**Make sure to commit these files to your version control system**, as these "
+"files contain important metadata."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Additionally, extra assets will be present in the hidden ``res://.godot/"
+"imported/`` folder:"
+msgstr ""
+"또한, 추가 애셋은 숨겨진 res://.import 폴더에 프리셋이 되어 있을 것입니다:"
+
+msgid ""
+"If any of the files present in this folder is erased (or the whole folder), "
+"the asset or assets will be reimported automatically. As such, committing "
+"the ``.godot/`` folder to the version control system is not recommended. "
+"While committing this folder can shorten reimporting time when checking out "
+"on another computer, it requires considerably more space and bandwidth."
+msgstr ""
+"이 폴더에 있는 파일이 (혹은 폴더 전체가) 지워진다면, 애셋은 자동으로 다시 가"
+"져올 것입니다. 따라서, 이 폴더를 버전 제어 시스템에 커밋하는 것은 선택적입니"
+"다. 다른 컴퓨터에서 확인할 때 다시 가져오는 시간이 짧을 수 있지만, 상당히 많"
+"은 시간과 공간을 잡아먹습니다. 오십보백보입니다."
+
+msgid ""
+"The default version control metadata that can be generated on project "
+"creation will automatically ignore the ``.godot/`` folder."
+msgstr ""
+
+msgid "Changing import resource type"
+msgstr "가져오기 리소스 타입 변경하기"
+
+#, fuzzy
+msgid ""
+"Some source assets can be imported as different types of resources. For "
+"this, select the relevant type of resource desired then click **Reimport**:"
+msgstr ""
+"일부 원본 애셋은 리소스의 다른 타입으로 가져올 수 있습니다. 이를 위해, 원하"
+"는 리소스의 관련된 타입을 선택하고 \"다시 가져오기\"를 누르세요:"
+
+msgid "Changing default import parameters"
+msgstr "디폴트 가져오기 매개변수 변경하기"
+
+#, fuzzy
+msgid ""
+"Different types of projects might require different defaults. Changing the "
+"import options to a predefined set of options can be achieved by using the "
+"**Preset...** Menu. Besides some resource types offering presets, the "
+"default settings can be saved and cleared too:"
+msgstr ""
+"다른 타입의 게임에는 다른 기본 값이 필요할 것입니다. 프로젝트마다 기본 값을 "
+"바꾸려면 \"Preset..\" 메뉴를 사용할 수 있습니다. 프리셋을 제공하는 일부 리소"
+"스 타입 밖에도, 기본 값 설정을 저장하고 지울 수도 있습니다:"
+
+msgid ""
+"The default import parameters for a given resource type can be changed "
+"project-wide using the **Import Defaults** tab of the Project Settings "
+"dialog:"
+msgstr ""
+
+#, fuzzy
+msgid "Further reading"
+msgstr "멀티 스레딩(Multi-threading)"
+
+#, fuzzy
+msgid ""
+"This workflow takes a little time to get used to, but it enforces a more "
+"correct way to deal with resources."
+msgstr ""
+"이것은 매우 간단한 워크플로로 익숙해지는데 얼마 안 걸릴 것입니다. 그리고 리소"
+"스를 다루는데 더 정확한 방법을 유도합니다."
+
+msgid ""
+"There are many types of assets available for import. Continue reading to "
+"understand how to work with all of them:"
+msgstr ""
+"많은 타입의 애셋을 가져오기로 이용할 수 있습니다, 따라서 이 모든 것들을 가지"
+"고 작업하는 방법을 이해하기 위해 계속 읽어주세요:"
+
+#, fuzzy
+msgid ":ref:`doc_importing_images`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_audio_samples`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_3d_scenes`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_translations`"
+msgstr ":ref:`doc_exporting_basics`"
+
+msgid "Translation status"
+msgstr "번역 상태"

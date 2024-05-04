@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Canvas layers"
+msgstr "キャンバス・レイヤー"
+
+msgid "Viewport and Canvas items"
+msgstr "Viewportとキャンバス・アイテム"
+
+#, fuzzy
+msgid ""
+":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
+"regular 2D nodes, such as :ref:`Node2D <class_Node2D>`, or :ref:`Control "
+"<class_Control>`. Both inherit from :ref:`CanvasItem <class_CanvasItem>`. "
+"You can arrange canvas items in trees. Each item will inherit its parent's "
+"transform: when the parent moves, its children move too."
+msgstr ""
+"\\ :ref:`Node2D <class_Node2D>` や\\ :ref:`Control <class_Control>` などの通"
+"常の2Dノードは、すべての2Dノードのベースである \\ :ref:`CanvasItem "
+"<class_CanvasItem>` から両方とも継承されます。CanvasItemはツリーに配置でき、"
+"その幾何学変換を継承します。つまり、親を移動すると、子も移動します。"
+
+#, fuzzy
+msgid ""
+"CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
+"children of a :ref:`Viewport <class_Viewport>`, that displays them."
+msgstr ""
+"これらのノードは \\ :ref:`Viewport <class_Viewport>` の直接または間接の子とし"
+"て配置され、Viewportを通して表示されます。"
+
+#, fuzzy
+msgid ""
+"The Viewport's property :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
+"`Transform2D <class_Transform2D>` transform to the CanvasItem hierarchy it "
+"contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
+"that transform."
+msgstr ""
+"Viewportには \\ :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>` プロパティがあります。これによ"
+"り、カスタム \\ :ref:`Transform2D <class_Transform2D>` 幾何学変換によってすべ"
+"てのCanvasItem階層を変換できます。 \\ :ref:`Camera2D <class_Camera2D>` などの"
+"ノードは、その変換を変更することで機能します。"
+
+#, fuzzy
+msgid ""
+"To achieve effects like scrolling, manipulating the canvas transform "
+"property is more efficient than moving the root canvas item and the entire "
+"scene with it."
+msgstr ""
+"スクロールのような効果を得るには、キャンバスのtransformプロパティを操作しま"
+"す。この方法は、ルートキャンバス項目(シーン全体が)を移動するよりも効率的で"
+"す。"
+
+#, fuzzy
+msgid ""
+"Usually though, we don't want *everything* in the game or app to be subject "
+"to the canvas transform. For example:"
+msgstr ""
+"しかし通常は、ゲームやアプリケーションの\\ *すべて*\\ をキャンバス変換の対象"
+"にすることは望ましくありません。 この例は次のとおりです:"
+
+msgid ""
+"**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
+"stage."
+msgstr "**パララックス背景**:ステージの他の部分よりもゆっくり移動する背景。"
+
+#, fuzzy
+msgid ""
+"**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
+"on our view of the game world. We want a life counter, score display and "
+"other elements to retain their screen positions even when our view of the "
+"game world changes."
+msgstr ""
+"**UI**: ヘッドアップディスプレイ、またはユーザーインターフェイス。 背景が動い"
+"ても、ライフカウンターやスコアなどは移動しないはずです。"
+
+msgid ""
+"**Transitions**: We may want visual effects used for transitions (fades, "
+"blends) to remain at a fixed screen location."
+msgstr ""
+"**トランジション**: \\ トランジション(フェード、ブレンド)に使用されるエフェク"
+"トでも、固定された場所に留めておくことが望ましい場合があります。"
+
+#, fuzzy
+msgid "How to solve these problems in a single scene tree?"
+msgstr "単一のシーンツリーでこれらの問題をどのように解決できるでしょうか？"
+
+msgid "CanvasLayers"
+msgstr "キャンバス・レイヤー"
+
+msgid ""
+"The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
+"adds a separate 2D rendering layer for all its children and grand-children. "
+"Viewport children will draw by default at layer \"0\", while a CanvasLayer "
+"will draw at any numeric layer. Layers with a greater number will be drawn "
+"above those with a smaller number. CanvasLayers also have their own "
+"transform and do not depend on the transform of other layers. This allows "
+"the UI to be fixed in screen-space while our view on the game world changes."
+msgstr ""
+"その答えは \\ :ref:`CanvasLayer <class_CanvasLayer>` です。これは、そのすべて"
+"の子と孫のために別々の2Dレンダリングレイヤを追加するノードです。CanvasLayerは"
+"任意の数値レイヤで描画しますが、Viewportの子はデフォルトでレイヤー \"0\" で描"
+"画します。大きい番号のレイヤーは小さい番号のレイヤーの上に描画されます。"
+"CanvasLayersにも独自の幾何学変換があり、他のレイヤーの幾何学変換には依存しま"
+"せん。これにより、UIをスクリーンスペースに固定しながら、ゲームのワールドに対"
+"するビューを変更できます。"
+
+msgid ""
+"An example of this is creating a parallax background. This can be done with "
+"a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
+"pause button can also be created at layer \"1\"."
+msgstr ""
+"この一例は、パララックスの背景を作成することです。 これはCanvasLayerの "
+"\"-1\" レイヤーで行うことができます。ポイント、ライフカウンター、ポーズ・ボタ"
+"ンを含む画面もレイヤー \"1\" で作成できます。"
+
+msgid "Here's a diagram of how it looks:"
+msgstr "外観は次のとおりです:"
+
+msgid ""
+"CanvasLayers are independent of tree order, and they only depend on their "
+"layer number, so they can be instantiated when needed."
+msgstr ""
+"キャンバス・レイヤーはツリーの順序に依存せず、レイヤ番号のみに依存するため、"
+"必要に応じてインスタンス化できます。"
+
+#, fuzzy
+msgid ""
+"CanvasLayers aren't necessary to control the drawing order of nodes. The "
+"standard way to ensuring that a node is correctly drawn 'in front' or "
+"'behind' others is to manipulate the order of the nodes in the scene panel. "
+"Perhaps counterintuitively, the topmost nodes in the scene panel are drawn "
+"on *behind* lower ones in the viewport. 2D nodes also have the :ref:"
+"`CanvasItem.z_index <class_CanvasItem_property_z_index>` property for "
+"controlling their drawing order."
+msgstr ""
+"キャンバス・レイヤーはノードの描画順序を制御する必要はありません。 ノードが他"
+"のノードの「前面」または「背面」に正しく描画されるようにするための標準的な方"
+"法は、シーンパネル内のノードの順序を操作することです。 おそらく直感に反して、"
+"シーンパネルの一番上のノードはViewportの下のノードの*後ろ*に描かれています。 "
+"2dノードは描画順を制御するためのプロパティも持っています( \\ :ref:`Node2D."
+"z_index <class_Node2D_property_z_index>` を参照してください)。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

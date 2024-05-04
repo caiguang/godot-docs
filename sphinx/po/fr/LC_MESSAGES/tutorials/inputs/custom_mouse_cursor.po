@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Customizing the mouse cursor"
+msgstr "Personnalisation du curseur de la souris"
+
+msgid ""
+"You might want to change the appearance of the mouse cursor in your game in "
+"order to suit the overall design. There are two ways to customize the mouse "
+"cursor:"
+msgstr ""
+"Vous pourriez vouloir changer l'apparence du curseur de la souris dans votre "
+"jeu afin de l'adapter au design général. Il y a deux façons de personnaliser "
+"le curseur de la souris :"
+
+msgid "Using project settings"
+msgstr "Utilisation des paramètres du projet"
+
+msgid "Using a script"
+msgstr "Utilisation d'un script"
+
+msgid ""
+"Using project settings is a simpler (but more limited) way to customize the "
+"mouse cursor. The second way is more customizable, but involves scripting:"
+msgstr ""
+"L'utilisation des paramètres du projet est un moyen plus simple (mais plus "
+"limité) de personnaliser le curseur de la souris. La deuxième méthode est "
+"plus personnalisable, mais implique des scripts :"
+
+#, fuzzy
+msgid ""
+"You could display a \"software\" mouse cursor by hiding the mouse cursor and "
+"moving a Sprite2D to the cursor position in a ``_process()`` method, but "
+"this will add at least one frame of latency compared to an \"hardware\" "
+"mouse cursor. Therefore, it's recommended to use the approach described here "
+"whenever possible."
+msgstr ""
+"Vous pouvez afficher un curseur de souris \"logiciel\" en cachant le curseur "
+"de souris et en déplaçant un Sprite à la position du curseur dans une "
+"méthode ``_process``, mais cela ajoutera au moins une frame de latence par "
+"rapport à un curseur de souris \"matériel\". Par conséquent, il est "
+"recommandé d’utiliser l’approche décrite ici chaque fois que possible."
+
+msgid ""
+"If you have to use the \"software\" approach, consider adding an "
+"extrapolation step to better display the actual mouse input."
+msgstr ""
+"Si vous devez utiliser l'approche \"logiciel\", envisagez d'ajouter une "
+"étape d'extrapolation pour mieux afficher l'entrée réelle de la souris."
+
+#, fuzzy
+msgid ""
+"Open project settings, go to Display>Mouse Cursor. You will see Custom "
+"Image, Custom Image Hotspot and Tooltip Position Offset."
+msgstr ""
+"Ouvrez les paramètres du projet, allez dans Display>Mouse Cursor. Vous "
+"verrez Custom Image et Custom Image Hotspot."
+
+msgid ""
+"Custom Image is the desired image that you would like to set as the mouse "
+"cursor. Custom Hotspot is the point in the image that you would like to use "
+"as the cursor's detection point."
+msgstr ""
+"Custom Image est l'image souhaitée que vous souhaitez définir comme curseur "
+"de la souris. Custom Hotspot est le point de l'image que vous souhaitez "
+"utiliser comme point de détection du curseur."
+
+msgid ""
+"The custom image **must** be 256×256 pixels at most. To avoid rendering "
+"issues, sizes lower than or equal to 128×128 are recommended."
+msgstr ""
+
+msgid "On the web platform, the maximum allowed cursor image size is 128×128."
+msgstr ""
+
+msgid "Create a Node and attach the following script."
+msgstr "Créez un nœud et attachez lui le script suivant."
+
+#, fuzzy
+msgid ""
+"Check :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>`'s documentation for more "
+"information on usage and platform-specific caveats."
+msgstr ""
+"Vérifiez :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>`."
+
+msgid "Cursor list"
+msgstr "Liste de curseurs"
+
+msgid ""
+"As documented in the :ref:`Input <class_Input>` class (see the "
+"**CursorShape** enum), there are multiple mouse cursors you can define. "
+"Which ones you want to use depends on your use case."
+msgstr ""
+"Comme documenté dans la classe :ref:`Input <class_Input>` (voir "
+"l'énumération **CursorShape**), il y a plusieurs curseurs de souris que vous "
+"pouvez définir. Le choix de ceux que vous voulez utiliser dépend de votre "
+"cas d'utilisation."
+
+msgid "Translation status"
+msgstr "État de la traduction"

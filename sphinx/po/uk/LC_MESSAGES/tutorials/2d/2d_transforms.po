@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Viewport and canvas transforms"
+msgstr "Перетворення вікна перегляду та полотна"
+
+msgid "Introduction"
+msgstr "Вступ"
+
+msgid ""
+"This is an overview of the 2D transforms going on for nodes from the moment "
+"they draw their content locally to the time they are drawn onto the screen. "
+"This overview discusses very low level details of the engine."
+msgstr ""
+"Це огляд 2D-перетворень, що відбуваються з вузлами від моменту, коли вони "
+"малюють свій вміст локально, до того часу, коли вони потрапляють на екран. У "
+"цьому огляді розглядаються деталі движка на дуже низькому рівні."
+
+msgid ""
+"The goal of this tutorial is to teach a way for feeding input events to the "
+"Input with a position in the correct coordinate system."
+msgstr ""
+
+msgid ""
+"A more extensive description of all coordinate systems and 2d transforms is "
+"available in :ref:`doc_2d_coordinate_systems`."
+msgstr ""
+
+msgid "Canvas transform"
+msgstr "Перетворення полотна"
+
+msgid ""
+"As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
+"CanvasItem node (remember that Node2D and Control based nodes use CanvasItem "
+"as their common root) will reside in a *Canvas Layer*. Every canvas layer "
+"has a transform (translation, rotation, scale, etc.) that can be accessed as "
+"a :ref:`Transform2D <class_Transform2D>`."
+msgstr ""
+"Як уже згадувалося в попередньому посібнику :ref:`doc_canvas_layers`, кожен "
+"вузол CanvasItem (пам’ятайте, що вузли на основі Node2D та Control "
+"використовують CanvasItem як загальний корінь) буде знаходитись у *Шарі "
+"Полотна*. Кожен шар полотна має перетворення (переміщення, обертання, "
+"масштаб тощо), до якого можна отримати доступ як :ref:`Transform2D "
+"<class_Transform2D>`."
+
+msgid ""
+"Also covered in the previous tutorial, nodes are drawn by default in Layer "
+"0, in the built-in canvas. To put nodes in a different layer, a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node can be used."
+msgstr ""
+"Також в попередньому посібнику говорилося, що вузли за замовчуванням "
+"малюються на рівні 0 на вбудованому полотні. Щоб розмістити вузли в іншому "
+"шарі, можна використовувати вузол :ref:`CanvasLayer (Полотняні "
+"Шари)<class_CanvasLayer>`."
+
+msgid "Global canvas transform"
+msgstr "Глобальне перетворення полотна"
+
+#, fuzzy
+msgid ""
+"Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
+"<class_Transform2D>`). This is the master transform and affects all "
+"individual *Canvas Layer* transforms. Generally, this is primarily used in "
+"Godot's CanvasItem Editor."
+msgstr ""
+"Оглядові вікна також мають перетворення Global Canvas (також :ref:"
+"`Transform2D <class_Transform2D>`). Це головне перетворення і впливає на всі "
+"окремі перетворення *Шару полотна*. Як правило, це перетворення не надто "
+"корисне, але використовується в Редакторі CanvasItem у Godot."
+
+msgid "Stretch transform"
+msgstr "Перетворення розтягування"
+
+msgid ""
+"Finally, viewports have a *Stretch Transform*, which is used when resizing "
+"or stretching the screen. This transform is used internally (as described "
+"in :ref:`doc_multiple_resolutions`), but can also be manually set on each "
+"viewport."
+msgstr ""
+"Нарешті, у вікна перегляду є *Перетворення Розтягування*, яке "
+"використовується при зміні розміру або розтягуванні екрана. Це перетворення "
+"використовується внутрішньо (як описано в розділі :ref:"
+"`doc_multiple_resolutions`), але його також можна встановити вручну для "
+"кожного вікна перегляду."
+
+#, fuzzy
+msgid ""
+"Input events are multiplied by this transform but lack the ones above. To "
+"convert InputEvent coordinates to local CanvasItem coordinates, the :ref:"
+"`CanvasItem.make_input_local() <class_CanvasItem_method_make_input_local>` "
+"function was added for convenience."
+msgstr ""
+"Вхідні події, отримані у зворотному виклику :ref:`MainLoop._input_event() "
+"<class_MainLoop_method__input_event>` помножуються на це перетворення, але "
+"не мають зазначених вище. Для перетворення координат InputEvent в локальні "
+"координати CanvasItem, для зручності була додана функція :ref:`CanvasItem."
+"make_input_local() <class_CanvasItem_method_make_input_local>`."
+
+#, fuzzy
+msgid "Window transform"
+msgstr "3д перетворення"
+
+msgid ""
+"The root viewport is a :ref:`Window <class_Window>`. In order to scale and "
+"position the *Window's* content as described in :ref:"
+"`doc_multiple_resolutions`, each :ref:`Window <class_Window>` contains a "
+"*window transform*. It is for example responsible for the black bars at the "
+"*Window's* sides so that the *Viewport* is displayed with a fixed aspect "
+"ratio."
+msgstr ""
+
+msgid "Transform order"
+msgstr "Порядок перетворень"
+
+#, fuzzy
+msgid ""
+"To convert a CanvasItem local coordinate to an actual screen coordinate, the "
+"following chain of transforms must be applied:"
+msgstr ""
+"Щоб координата в локальних властивостях CanvasItem стала фактичною "
+"координатою екрана, необхідно застосувати такий ланцюжок перетворень:"
+
+msgid "Transform functions"
+msgstr "Функції перетворення"
+
+msgid ""
+"The above graphic shows some available transform functions. All transforms "
+"are directed from right to left, this means multiplying a transform with a "
+"coordinate results in a coordinate system further to the left, multiplying "
+"the :ref:`affine inverse <class_Transform2D_method_affine_inverse>` of a "
+"transform results in a coordinate system further to the right:"
+msgstr ""
+
+msgid ""
+"Finally, then, to convert a CanvasItem local coordinates to screen "
+"coordinates, just multiply in the following order:"
+msgstr ""
+"Нарешті, щоб перетворити локальні координати CanvasItem на екранні "
+"координати, просто помножте їх у наступному порядку:"
+
+msgid ""
+"Keep in mind, however, that it is generally not desired to work with screen "
+"coordinates. The recommended approach is to simply work in Canvas "
+"coordinates (``CanvasItem.get_global_transform()``), to allow automatic "
+"screen resolution resizing to work properly."
+msgstr ""
+"Однак майте на увазі, що, як правило, не бажано працювати з координатами "
+"екрану. Рекомендований підхід полягає в тому, щоб просто працювати в "
+"координатах Полотна (``CanvasItem.get_global_transform()``), щоб дозволити "
+"автоматичній зміні розміру роздільної здатності екрана працювати належним "
+"чином."
+
+msgid "Feeding custom input events"
+msgstr "Подача власних подій введення"
+
+#, fuzzy
+msgid ""
+"It is often desired to feed custom input events to the game. With the above "
+"knowledge, to correctly do this in the focused window, it must be done the "
+"following way:"
+msgstr ""
+"Часто бажано подавати власні події введення до дерева сцен. Маючи "
+"вищезазначені знання, щоб правильно це зробити, це потрібно зробити "
+"наступним чином:"
+
+msgid "Translation status"
+msgstr "Стан перекладу"

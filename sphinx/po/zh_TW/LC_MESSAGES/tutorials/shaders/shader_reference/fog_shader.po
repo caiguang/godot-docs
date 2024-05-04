@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Fog shaders"
+msgstr "著色器"
+
+msgid ""
+"Fog shaders are used to define how fog is added (or subtracted) from a scene "
+"in a given area. Fog shaders are always used together with :ref:`FogVolumes "
+"<class_FogVolume>` and volumetric fog. Fog shaders only have one processing "
+"function, the ``fog()`` function."
+msgstr ""
+"霧著色器用於定義如何從給定區域的場景中新增（或減去）霧。霧著色器始終與 "
+"FogVolumes <class_FogVolume>` 和體積霧一起使用。霧著色器只有一個處理函式，即"
+"「fog()」函式。"
+
+msgid ""
+"The resolution of the fog shaders depends on the resolution of the "
+"volumetric fog froxel grid. Accordingly, the level of detail that a fog "
+"shader can add depends on how close the :ref:`FogVolume <class_FogVolume>` "
+"is to the camera."
+msgstr ""
+"霧著色器的解析度取決於體積霧 froxel 網格的解析度。因此，霧著色器可以新增的細"
+"節程度取決於 FogVolume <class_FogVolume> 與相機的距離。"
+
+msgid ""
+"Fog shaders are a special form of compute shader that is called once for "
+"every froxel that is touched by an axis aligned bounding box of the "
+"associated :ref:`FogVolume <class_FogVolume>`. This means that froxels that "
+"just barely touch a given :ref:`FogVolume <class_FogVolume>` will still be "
+"used."
+msgstr ""
+"霧著色器是計算著色器的一種特殊形式，對於由關聯的 FogVolume "
+"<class_FogVolume>` 的軸對齊邊界框所觸及的每個 froxel 呼叫一次。這表示僅接觸給"
+"定 FogVolume <class_FogVolume>` 的速像素仍將被使用。"
+
+msgid "Built-ins"
+msgstr "內建"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Samplers "
+"cannot be written to so they are not marked."
+msgstr ""
+"標記為 \"in\" 的值是唯讀的. 標記為 \"out\" 的值是可以選擇寫入的, 不一定包含合"
+"理的值. 標記為 \"inout\" 的值提供一個合理的預設值, 並且可以選擇寫入. 取樣器不"
+"是寫入的物件, 它們沒有被標記."
+
+msgid "Global built-ins"
+msgstr "定數"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "全域內建的功能隨處可見, 包括自訂功能."
+
+msgid "Built-in"
+msgstr "內建"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid "Global time, in seconds."
+msgstr "全球時間, 以秒為單位."
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr "一個“PI”常數（“3.141592”）。圓的周長與其直徑的比率以及半圈的弧度數。"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr "一個“TAU”常數（“6.283185”）。相當於“PI * 2”和完整的弧度數。"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr "一個“E”常數（“2.718281”）。歐拉數和自然對數的底數。"
+
+msgid "Fog built-ins"
+msgstr "定數"
+
+msgid ""
+"All of the output values of fog volumes overlap one another. This allows :"
+"ref:`FogVolumes <class_FogVolume>` to be rendered efficiently as they can "
+"all be drawn at once."
+msgstr ""
+"霧量的所有輸出值都會相互重疊。這使得 FogVolumes <class_FogVolume>` 能夠有效率"
+"地算繪，因為它們可以同時繪製。"
+
+msgid "in vec3 **WORLD_POSITION**"
+msgstr "in vec3 **WORLD_POSITION**"
+
+msgid "Position of current froxel cell in world space."
+msgstr "目前片段體素單元在世界空間中的位置。"
+
+msgid "in vec3 **OBJECT_POSITION**"
+msgstr "in vec3 **OBJECT_POSITION**"
+
+msgid ""
+"Position of the center of the current :ref:`FogVolume <class_FogVolume>` in "
+"world space."
+msgstr "目前 FogVolume <class_FogVolume>` 在世界空間中的中心位置。"
+
+msgid "in vec3 **UVW**"
+msgstr "in vec3 **UVW**"
+
+msgid ""
+"3-dimensional uv, used to map a 3D texture to the current :ref:`FogVolume "
+"<class_FogVolume>`."
+msgstr ""
+"三維 UV，用於將 3D 紋理對應到目前的 :ref:`FogVolume <class_FogVolume>` 中。"
+
+msgid "in vec3 **SIZE**"
+msgstr "in vec3 **SIZE**"
+
+msgid ""
+"Size of the current :ref:`FogVolume <class_FogVolume>` when its :ref:"
+"`shape<class_FogVolume_property_shape>` has a size."
+msgstr ""
+"目前 FogVolume <class_FogVolume>` 的大小（當其 "
+"shape<class_FogVolume_property_shape>` 具有大小時）。"
+
+msgid "in vec3 **SDF**"
+msgstr "in vec3 **SDF**"
+
+msgid ""
+"Signed distance field to the surface of the :ref:`FogVolume "
+"<class_FogVolume>`. Negative if inside volume, positive otherwise."
+msgstr ""
+"到 FogVolume <class_FogVolume>` 表面的有符號距離場。若內部成交量為負，否則為"
+"正。"
+
+msgid "out vec3 **ALBEDO**"
+msgstr "out vec3 **ALBEDO**"
+
+msgid ""
+"Output base color value, interacts with light to produce final color. Only "
+"written to fog volume if used."
+msgstr "輸出基色值，與光相互作用產生最終色。僅在使用時寫入霧量。"
+
+msgid "out float **DENSITY**"
+msgstr "out float **DENSITY**"
+
+msgid ""
+"Output density value. Can be negative to allow subtracting one volume from "
+"another. Density must be used for fog shader to write anything at all."
+msgstr ""
+"輸出密度值。可以是負數，以允許從一個體積中減去另一個體積。霧著色器必須使用密"
+"度才能寫入任何內容。"
+
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **EMISSION**"
+
+msgid ""
+"Output emission color value, added to color during light pass to produce "
+"final color. Only written to fog volume if used."
+msgstr ""
+"輸出發射顏色值，在光通過期間新增到顏色以產生最終顏色。僅在使用時寫入霧量。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

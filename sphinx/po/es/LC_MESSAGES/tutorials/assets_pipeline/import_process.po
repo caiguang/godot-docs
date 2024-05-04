@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Import process"
+msgstr "Proceso de importación"
+
+#, fuzzy
+msgid "Importing assets in Godot"
+msgstr "Importando recursos en Godot 3.0+"
+
+msgid ""
+"To import assets in Godot, place your assets (image files, scenes, audio "
+"files, fonts, etc) directly in the project folder. There are 2 ways to "
+"achieve this:"
+msgstr ""
+
+msgid ""
+"**For any file type:** Copy files manually with your operating system's file "
+"manager."
+msgstr ""
+
+msgid ""
+"**For file types that can be imported by Godot:** Drag-and-drop files from "
+"the operating system's file manager to the editor's FileSystem dock. This "
+"only works with *resource* file types (i.e. file types that Godot can "
+"import)."
+msgstr ""
+
+msgid ""
+"Godot will automatically import these files internally and keep the imported "
+"resources hidden in a ``res://.godot/imported/`` folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This means that when trying to access imported assets through code, you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`FileAccess "
+"<class_FileAccess>` class, it will work in the editor, but **it will break "
+"in the exported project**."
+msgstr ""
+"Esto significa que cuando se intenta acceder a los activos importados a "
+"través del código, es necesario utilizar el :ref:`Resource "
+"Loader<class_ResourceLoader>` ya que tendrá en cuenta automáticamente dónde "
+"se guardan los archivos internos. Si intentas acceder a un activo importado "
+"mediante la clase :ref:`File <class_File>` funcionará en el editor, pero se "
+"romperá en el proyecto exportado."
+
+#, fuzzy
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non-"
+"imported files. Only the :ref:`FileAccess <class_FileAccess>` class can."
+msgstr ""
+"Sin embargo, el :ref:`Resource Loader<class_ResourceLoader>` no puede "
+"acceder a los archivos no importados, sólo la clase :ref:`File <class_File>` "
+"puede."
+
+msgid "Changing import parameters"
+msgstr "Cambiando parámetros de importación"
+
+msgid ""
+"Import parameters are only present in *non-native* Godot resource types. "
+"This means Godot's own scene and resource file formats (``.tscn``, ``.scn``, "
+"``.tres``, ``.res``) don't have import options you can select in the Import "
+"dock."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To change the import parameters of an asset in Godot, select the relevant "
+"resource in the FileSystem dock:"
+msgstr ""
+"Para cambiar los parámetros de importación de un activo en Godot "
+"(nuevamente, tenga en cuenta que los parámetros de importación solo están "
+"presentes en los tipos de recursos de Godot no nativos), seleccione el "
+"recurso relevante en la base del sistema de archivos:"
+
+msgid ""
+"After adjusting the parameters, click **Reimport**. Be careful: if you "
+"select another file in the FileSystem dock before clicking **Reimport**, "
+"changes will be discarded. After clicking **Reimport**, the chosen "
+"parameters will only be used for this asset and on future reimports."
+msgstr ""
+
+msgid ""
+"Changing the import parameters of several assets at the same time is also "
+"possible. Simply select all of them together in the resources dock and the "
+"exposed parameters will apply to all of them when reimporting."
+msgstr ""
+"También es posible modificar los parámetros de importación de varios "
+"recursos al mismo tiempo. Simplemente selecciónalos a todos en el panel de "
+"recursos y los parámetros indicados se aplicarán a todos al reimportar."
+
+msgid "Reimporting multiple assets"
+msgstr "Reimportar varios activos"
+
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+"Mientras se trabaja en un proyecto, es posible que se encuentre con que "
+"varios recursos necesitan que se cambien los mismos parámetros, como la "
+"habilitación de mipmaps, pero sólo se desea que se cambien esos parámetros "
+"específicos. Para ello, seleccione cada activo que desee reimportar en el "
+"sistema de archivos. En la pestaña de importación habrá ahora una casilla de "
+"verificación a la izquierda de cada parámetro de importación."
+
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+"Seleccione la casilla de verificación de los parámetros que desea modificar "
+"en sus activos importados, y luego cambie los parámetros normalmente. "
+"Finalmente, haga clic en el botón de reimportación y cada activo "
+"seleccionado será reimportado con sólo esos parámetros cambiados."
+
+msgid "Automatic reimport"
+msgstr "Reimportación automática"
+
+msgid ""
+"When the MD5 checksum of the source asset changes, Godot will perform an "
+"automatic reimport of it, applying the preset configured for that specific "
+"asset."
+msgstr ""
+"Cuando el checksum MD5 de un recurso de origen cambia, Godot realizará una "
+"reimportación automática del mismo, aplicando el preset configurado para ese "
+"recurso específico."
+
+msgid "Files generated"
+msgstr "Archivos generados"
+
+msgid ""
+"Importing will add an extra ``<asset>.import`` file next to the source file, "
+"containing the import configuration."
+msgstr ""
+"Al importar se agregará, junto al archivo original, un archivo adicional "
+"``<asset>.import`` conteniendo la configuración de importación."
+
+msgid ""
+"**Make sure to commit these files to your version control system**, as these "
+"files contain important metadata."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Additionally, extra assets will be present in the hidden ``res://.godot/"
+"imported/`` folder:"
+msgstr ""
+"Además, Los activos adicionales estarán preestablecidos en la carpeta oculta "
+"``res: //. import``:"
+
+msgid ""
+"If any of the files present in this folder is erased (or the whole folder), "
+"the asset or assets will be reimported automatically. As such, committing "
+"the ``.godot/`` folder to the version control system is not recommended. "
+"While committing this folder can shorten reimporting time when checking out "
+"on another computer, it requires considerably more space and bandwidth."
+msgstr ""
+"Si alguno de los archivos presentes en esta carpeta (o toda la carpeta) es "
+"borrado, el recurso o recursos se reimportarán automáticamente. Por ende, la "
+"agregar la carpeta ``.godot/`` al sistema de control de versiones no es "
+"recomendable. Agregar esta carpeta ahorrar tiempo en la reimportación al "
+"realizar el proceso en otra computadora, pero ocupa mucho más espacio y y "
+"ancho de banda."
+
+msgid ""
+"The default version control metadata that can be generated on project "
+"creation will automatically ignore the ``.godot/`` folder."
+msgstr ""
+
+msgid "Changing import resource type"
+msgstr "Cambiar el tipo de recurso importado"
+
+#, fuzzy
+msgid ""
+"Some source assets can be imported as different types of resources. For "
+"this, select the relevant type of resource desired then click **Reimport**:"
+msgstr ""
+"Algunos recursos de origen pueden importarse como diferentes tipos de "
+"recursos. Para ello, selecciona el tipo de recurso deseado y pulsa "
+"\"Reimportar\":"
+
+msgid "Changing default import parameters"
+msgstr "Cambiar los parámetros de importación por defecto"
+
+#, fuzzy
+msgid ""
+"Different types of projects might require different defaults. Changing the "
+"import options to a predefined set of options can be achieved by using the "
+"**Preset...** Menu. Besides some resource types offering presets, the "
+"default settings can be saved and cleared too:"
+msgstr ""
+"Diferentes tipos de juegos pueden requerir diferentes valores "
+"predeterminados. El cambio de los valores predeterminados por proyecto se "
+"puede lograr utilizando el botón \"Preset...\" del menú. Además hay algunos "
+"tipos de recursos que ofrecen configuraciones preestablecidas, la "
+"configuración por defecto también se puede guardar y borrar:"
+
+msgid ""
+"The default import parameters for a given resource type can be changed "
+"project-wide using the **Import Defaults** tab of the Project Settings "
+"dialog:"
+msgstr ""
+
+#, fuzzy
+msgid "Further reading"
+msgstr "Multihilo (Multi-threading)"
+
+#, fuzzy
+msgid ""
+"This workflow takes a little time to get used to, but it enforces a more "
+"correct way to deal with resources."
+msgstr ""
+"Esto es un flujo de trabajo simple el cual tomará poco tiempo en "
+"acostumbrarse. También fuerza un modo mejor para tratar con recursos."
+
+msgid ""
+"There are many types of assets available for import. Continue reading to "
+"understand how to work with all of them:"
+msgstr ""
+"Existen muchos tipos de recursos disponibles para importar.Continúa leyendo "
+"para entender cómo trabajar con todos ellos:"
+
+#, fuzzy
+msgid ":ref:`doc_importing_images`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_audio_samples`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_3d_scenes`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_translations`"
+msgstr ":ref:`doc_exporting_basics`"
+
+msgid "Translation status"
+msgstr "Estado de traducción"

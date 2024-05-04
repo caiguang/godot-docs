@@ -1,0 +1,515 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Jumping and squashing monsters"
+msgstr "Стрибання і розчавлювання монстрів"
+
+#, fuzzy
+msgid ""
+"In this part, we'll add the ability to jump and squash the monsters. In the "
+"next lesson, we'll make the player die when a monster hits them on the "
+"ground."
+msgstr ""
+"У цій частині ми додамо можливість стрибати і розчавлювати монстрів. А в "
+"наступній змусимо гравця померти, коли монстр вдарить їх на землі."
+
+msgid ""
+"First, we have to change a few settings related to physics interactions. "
+"Enter the world of :ref:`physics layers "
+"<doc_physics_introduction_collision_layers_and_masks>`."
+msgstr ""
+"Спершу ми повинні змінити кілька налаштувань, пов'язаних з фізичними "
+"взаємодіями. Вступ до світу :ref:`фізичних шарів "
+"<doc_physics_introduction_collision_layers_and_masks>`."
+
+msgid "Controlling physics interactions"
+msgstr "Контроль фізичних взаємодій"
+
+msgid ""
+"Physics bodies have access to two complementary properties: layers and "
+"masks. Layers define on which physics layer(s) an object is."
+msgstr ""
+"Фізичні тіла мають доступ до двох додаткових властивостей: шарів і масок. "
+"Шари визначають, на яких фізичних шарах (шарі) знаходиться об'єкт."
+
+msgid ""
+"Masks control the layers that a body will listen to and detect. This affects "
+"collision detection. When you want two bodies to interact, you need at least "
+"one to have a mask corresponding to the other."
+msgstr ""
+"Маски контролюють шари, які тіло буде слухати і виявляти. Маски впливають на "
+"виявлення зіткнень. Коли ви хочете, щоб два тіла взаємодіяли, вам потрібно "
+"принаймні одне з маскою, відповідною іншому."
+
+msgid "If that's confusing, don't worry, we'll see three examples in a second."
+msgstr ""
+"Якщо ви заплуталися, не хвилюйтеся, ми побачимо три приклади за секунду."
+
+msgid ""
+"The important point is that you can use layers and masks to filter physics "
+"interactions, control performance, and remove the need for extra conditions "
+"in your code."
+msgstr ""
+"Важливим моментом є те, що ви можете використовувати шари та маски для "
+"фільтрації взаємодій фізики, контролю продуктивності та усунення "
+"необхідності додаткових умов у вашому коді."
+
+#, fuzzy
+msgid ""
+"By default, all physics bodies and areas are set to both layer and mask "
+"``1``. This means they all collide with each other."
+msgstr ""
+"За замовчуванням для всіх фізичних тіл і областей встановлено як шар, так і "
+"маску, ``0``. Це означає, що всі вони стикаються один з одним."
+
+msgid ""
+"Physics layers are represented by numbers, but we can give them names to "
+"keep track of what's what."
+msgstr ""
+"Шари фізики представлені числами, але ми можемо дати їм імена, щоб "
+"відстежувати їх вміст."
+
+msgid "Setting layer names"
+msgstr "Встановлення назв шарів"
+
+msgid ""
+"Let's give our physics layers a name. Go to *Project -> Project Settings*."
+msgstr ""
+"Давайте дамо нашим фізичним шарам назву. Перейдіть до *Проект -> Параметри "
+"проекту*."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"In the left menu, navigate down to *Layer Names -> 3D Physics*. You can see "
+"a list of layers with a field next to each of them on the right. You can set "
+"their names there. Name the first three layers *player*, *enemies*, and "
+"*world*, respectively."
+msgstr ""
+"У лівому меню перейдіть до розділу *Layer Names -> 3D Physics*. Праворуч ви "
+"можете побачити список шарів з полем поруч з кожним з них. В цьому полі ви "
+"можете встановити їхні імена. Назвіть перші три шари *player*, *enemies*, і "
+"*world* відповідно."
+
+msgid "|image1|"
+msgstr "|image1|"
+
+msgid "image1"
+msgstr "image1"
+
+msgid "Now, we can assign them to our physics nodes."
+msgstr "Тепер ми можемо призначити їх нашим фізичним вузлам."
+
+msgid "Assigning layers and masks"
+msgstr "Призначення шарів і масок"
+
+#, fuzzy
+msgid ""
+"In the *Main* scene, select the ``Ground`` node. In the *Inspector*, expand "
+"the *Collision* section. There, you can see the node's layers and masks as a "
+"grid of buttons."
+msgstr ""
+"На головній сцені *Main* виберіть вузол землі *Ground*. У розділі "
+"*Інспектор* розгорніть розділ *Collision (Зіткнення)*. Там ви можете "
+"побачити шари вузла та маски у вигляді сітки кнопок."
+
+msgid "|image2|"
+msgstr "|image2|"
+
+msgid "image2"
+msgstr "image2"
+
+#, fuzzy
+msgid ""
+"The ground is part of the world, so we want it to be part of the third "
+"layer. Click the lit button to toggle **off** the first *Layer* and toggle "
+"**on** the third one. Then, toggle **off** the *Mask* by clicking on it."
+msgstr ""
+"Земля є частиною світу, тому ми хочемо, щоб вона була частиною третього "
+"шару. Натисніть підсвічену кнопку *Layer* , щоб вимкнути перший шар і "
+"увімкнути третій. Потім вимкніть маску *Mask*, натиснувши таку ж кнопку."
+
+msgid "|image3|"
+msgstr "|image3|"
+
+msgid "image3"
+msgstr "image3"
+
+#, fuzzy
+msgid ""
+"As mentioned before, the *Mask* property allows a node to listen to "
+"interaction with other physics objects, but we don't need it to have "
+"collisions. ``Ground`` doesn't need to listen to anything; it's just there "
+"to prevent creatures from falling."
+msgstr ""
+"Як я вже згадував вище, властивість *Mask* дозволяє вузлу виявляти взаємодію "
+"з іншими фізичними об'єктами, але вона не потрібна для того, щоб бути "
+"предметом для зіткнення. Земля не повинна нічого виявляти; вона всього лише "
+"запобігає падінню істот."
+
+msgid ""
+"Note that you can click the \"...\" button on the right side of the "
+"properties to see a list of named checkboxes."
+msgstr ""
+"Зверніть увагу, що ви можете натиснути кнопку \"...\" у правій частині "
+"властивостей, щоб переглянути список іменованих галочок."
+
+msgid "|image4|"
+msgstr "|image4|"
+
+msgid "image4"
+msgstr "image4"
+
+#, fuzzy
+msgid ""
+"Next up are the ``Player`` and the ``Mob``. Open ``player.tscn`` by double-"
+"clicking the file in the *FileSystem* dock."
+msgstr ""
+"Далі йдуть *Player* і *Mob*. Відкрийте ``Player.tscn``, двічі клацнувши файл "
+"на панелі *Файлова система*."
+
+#, fuzzy
+msgid ""
+"Select the *Player* node and set its *Collision -> Mask* to both \"enemies\" "
+"and \"world\". You can leave the default *Layer* property as it is, because "
+"the first layer is the \"player\" layer."
+msgstr ""
+"Виберіть вузол гравця *Player* та встановіть йому маску зіткнення *Collision "
+"-> Mask* як для \"enemies\", так і для \"world\". Ви можете залишити "
+"властивість *Layer* за замовчуванням, оскільки перший шар є \"player\"."
+
+msgid "|image5|"
+msgstr "|image5|"
+
+msgid "image5"
+msgstr "image5"
+
+#, fuzzy
+msgid ""
+"Then, open the *Mob* scene by double-clicking on ``mob.tscn`` and select the "
+"``Mob`` node."
+msgstr ""
+"Потім відкрийте сцену *Mob*, двічі клацнувши по ``Mob.tscn`` і вибравши "
+"вузол *Mob*."
+
+msgid ""
+"Set its *Collision -> Layer* to \"enemies\" and unset its *Collision -> "
+"Mask*, leaving the mask empty."
+msgstr ""
+"Встановіть йому *Collision -> Layer* на \"enemies\", а маску зіткнення "
+"*Collision -> Mask*, залишіть порожньою."
+
+msgid "|image6|"
+msgstr "Зображення"
+
+msgid "image6"
+msgstr "image6"
+
+#, fuzzy
+msgid ""
+"These settings mean the monsters will move through one another. If you want "
+"the monsters to collide with and slide against each other, turn **on** the "
+"\"enemies\" mask."
+msgstr ""
+"Ці налаштування означають, що монстри будуть рухатися один крізь одного. "
+"Якщо ви хочете, щоб монстри між собою, увімкніть маску \"enemies\"."
+
+msgid ""
+"The mobs don't need to mask the \"world\" layer because they only move on "
+"the XZ plane. We don't apply any gravity to them by design."
+msgstr ""
+"Мобам не потрібна маска \"world\", тому що вони рухаються тільки на площині "
+"XZ. Ми не застосовуємо до них ніякої гравітації."
+
+msgid "Jumping"
+msgstr "Стрибки"
+
+msgid ""
+"The jumping mechanic itself requires only two lines of code. Open the "
+"*Player* script. We need a value to control the jump's strength and update "
+"``_physics_process()`` to code the jump."
+msgstr ""
+"Сам механізм стрибка вимагає всього двох рядків коду. Відкрийте скрипт "
+"гравця *Player*. Нам потрібно значення, щоб контролювати силу стрибка і "
+"оновлення ``_physics_process()``, щоб закодувати стрибок."
+
+msgid ""
+"After the line that defines ``fall_acceleration``, at the top of the script, "
+"add the ``jump_impulse``."
+msgstr ""
+"Після рядка, який визначає ``fall_acceleration``, у верхній частині скрипту, "
+"додайте ``jump_impulse``."
+
+#, fuzzy
+msgid ""
+"Inside ``_physics_process()``, add the following code before the "
+"``move_and_slide()`` codeblock."
+msgstr ""
+"Усередині ``_physics_process()`` додайте наступний код перед рядком, де ми "
+"викликаємо ``move_and_slide()``."
+
+msgid "That's all you need to jump!"
+msgstr "Це все, що вам потрібно, для стрибка!"
+
+#, fuzzy
+msgid ""
+"The ``is_on_floor()`` method is a tool from the ``CharacterBody3D`` class. "
+"It returns ``true`` if the body collided with the floor in this frame. "
+"That's why we apply gravity to the *Player*: so we collide with the floor "
+"instead of floating over it like the monsters."
+msgstr ""
+"Метод ``is_on_floor()`` є інструментом з класу ``KinematicBody``. Він "
+"повертає ``true``, якщо тіло зіткнулося з підлогою в цьому кадрі. Ось чому "
+"ми застосовуємо гравітацію до гравця: ми стикаємося з підлогою, а не пливемо "
+"над нею, як монстри."
+
+#, fuzzy
+msgid ""
+"If the character is on the floor and the player presses \"jump\", we "
+"instantly give them a lot of vertical speed. In games, you really want "
+"controls to be responsive and giving instant speed boosts like these, while "
+"unrealistic, feels great."
+msgstr ""
+"Якщо персонаж знаходиться на підлозі і гравець натискає \"jump\", ми "
+"моментально даємо йому велику вертикальну швидкість. В іграх ви дійсно "
+"хочете, щоб елементи керування реагували і давали миттєві підвищення "
+"швидкості, як ці, при своїй нереалістичності, вони себе чудово проявляють."
+
+#, fuzzy
+msgid ""
+"Notice that the Y axis is positive upwards. That's unlike 2D, where the Y "
+"axis is positive downwards."
+msgstr ""
+"Запримітьте, що вісь Y позитивна вгору. На відміну від 2D, де вісь Y "
+"позитивна вниз."
+
+msgid "Squashing monsters"
+msgstr "Розчавлення монстрів"
+
+msgid ""
+"Let's add the squash mechanic next. We're going to make the character bounce "
+"over monsters and kill them at the same time."
+msgstr ""
+"Давайте додамо далі механізм розчавлення. Ми збираємося змусити персонажа "
+"відскакувати від монстрів і вбивати їх одночасно."
+
+msgid ""
+"We need to detect collisions with a monster and to differentiate them from "
+"collisions with the floor. To do so, we can use Godot's :ref:`group "
+"<doc_groups>` tagging feature."
+msgstr ""
+"Нам потрібно виявити зіткнення з монстром і відрізнити їх від зіткнень з "
+"підлогою. Для цього ми можемо використовувати функцію тегування :ref:`груп "
+"<doc_groups>` Godot."
+
+#, fuzzy
+msgid ""
+"Open the scene ``mob.tscn`` again and select the *Mob* node. Go to the "
+"*Node* dock on the right to see a list of signals. The *Node* dock has two "
+"tabs: *Signals*, which you've already used, and *Groups*, which allows you "
+"to assign tags to nodes."
+msgstr ""
+"Відкрийте сцену ``Mob.tscn`` ще раз і виберіть вузол *Mob*. Перейдіть до "
+"панелі *Вузол* справа, щоб побачити список сигналів. Панель *Вузол* має дві "
+"вкладки: *Сигнали*, які ви вже використовували, і *Групи*, що дозволяє "
+"призначати вузлам теги."
+
+msgid ""
+"Click on it to reveal a field where you can write a tag name. Enter \"mob\" "
+"in the field and click the *Add* button."
+msgstr ""
+"Натисніть на поле введення, щоб написати ім'я тега. Введіть в поле \"mob\" і "
+"натисніть кнопку *Додати*."
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
+msgstr "image7"
+
+msgid ""
+"An icon appears in the *Scene* dock to indicate the node is part of at least "
+"one group."
+msgstr ""
+"У панелі *Сцена* з'являється значок, який вказує на те, що вузол є частиною "
+"принаймні однієї групи."
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
+msgstr "image8"
+
+msgid ""
+"We can now use the group from the code to distinguish collisions with "
+"monsters from collisions with the floor."
+msgstr ""
+"Тепер ми можемо використовувати групу в коді, щоб відрізнити зіткнення з "
+"монстрами від зіткнень з підлогою."
+
+msgid "Coding the squash mechanic"
+msgstr "Кодування механізму розчавлення"
+
+msgid "Head back to the *Player* script to code the squash and bounce."
+msgstr "Поверніться до скрипта гравця *Player*, щоб закодувати розчавлення."
+
+msgid ""
+"At the top of the script, we need another property, ``bounce_impulse``. When "
+"squashing an enemy, we don't necessarily want the character to go as high up "
+"as when jumping."
+msgstr ""
+"У верхній частині скрипту нам потрібна інша властивість, ``bounce_impulse``. "
+"Нам не потрібно, щоб при розчавленні ворога персонаж піднімався так високо, "
+"як при стрибках."
+
+#, fuzzy
+msgid ""
+"Then, after the **Jumping** codeblock we added above in "
+"``_physics_process()``, add the following loop. With ``move_and_slide()``, "
+"Godot makes the body move sometimes multiple times in a row to smooth out "
+"the character's motion. So we have to loop over all collisions that may have "
+"happened."
+msgstr ""
+"Потім у нижній частині ``_physics_process()`` додайте наступний цикл. За "
+"допомогою ``move_and_slide()``, Godot змушує тіло рухатися іноді кілька "
+"разів поспіль, щоб згладити рух персонажа. Отже, ми повинні опрацювати всі "
+"зіткнення, які могли статися."
+
+msgid ""
+"In every iteration of the loop, we check if we landed on a mob. If so, we "
+"kill it and bounce."
+msgstr ""
+"У кожній ітерації петлі ми перевіряємо, чи приземлилися ми на монстра. Якщо "
+"так, то ми вбиваємо його і відскакуємо."
+
+msgid ""
+"With this code, if no collisions occurred on a given frame, the loop won't "
+"run."
+msgstr ""
+"За допомогою цього коду, якщо на даному кадрі не сталося зіткнень, цикл не "
+"буде запущений."
+
+msgid "That's a lot of new functions. Here's some more information about them."
+msgstr "Тут багато нових функцій. Ось ще трохи інформації про них."
+
+#, fuzzy
+msgid ""
+"The functions ``get_slide_collision_count()`` and ``get_slide_collision()`` "
+"both come from the :ref:`CharacterBody3D <class_CharacterBody3D>` class and "
+"are related to ``move_and_slide()``."
+msgstr ""
+"Функції ``get_slide_count()`` та ``get_slide_collision()`` походять з класу :"
+"ref:`KinematicBody<class_KinematicBody>` і пов'язані з ``move_and_slide()``."
+
+#, fuzzy
+msgid ""
+"``get_slide_collision()`` returns a :ref:"
+"`KinematicCollision3D<class_KinematicCollision3D>` object that holds "
+"information about where and how the collision occurred. For example, we use "
+"its ``get_collider`` property to check if we collided with a \"mob\" by "
+"calling ``is_in_group()`` on it: ``collision.get_collider()."
+"is_in_group(\"mob\")``."
+msgstr ""
+"``get_slide_collision()`` повертає об'єкт :ref:"
+"`KinematicCollision<class_KinematicCollision>`, який містить інформацію про "
+"те, де і як сталося зіткнення. Наприклад, ми використовуємо його властивість "
+"``collider``, щоб перевірити, чи зіткнулися ми з \"mob\", викликаючи з неї "
+"``is_in_group()``: ``collision.collider.is_in_group(\"mob\")``."
+
+msgid ""
+"The method ``is_in_group()`` is available on every :ref:`Node<class_Node>`."
+msgstr "Метод ``is_in_group()`` доступний на кожному :ref:`вузлі<class_Node>`."
+
+#, fuzzy
+msgid ""
+"To check that we are landing on the monster, we use the vector dot product: "
+"``Vector3.UP.dot(collision.get_normal()) > 0.1``. The collision normal is a "
+"3D vector that is perpendicular to the plane where the collision occurred. "
+"The dot product allows us to compare it to the up direction."
+msgstr ""
+"Щоб перевірити, чи ми приземляємося на монстра, ми використовуємо векторний "
+"точковий добуток: ``Vector3.UP.dot(collision.normal) > 0.1``. Нормальне "
+"зіткнення - це 3D-вектор, який перпендикулярний площині, де сталося "
+"зіткнення. Точковий добуток дозволяє порівняти його з напрямком вгору."
+
+msgid ""
+"With dot products, when the result is greater than ``0``, the two vectors "
+"are at an angle of fewer than 90 degrees. A value higher than ``0.1`` tells "
+"us that we are roughly above the monster."
+msgstr ""
+"З точковими добутками, коли результат більший ``0``, два вектори знаходяться "
+"під кутом менше 90 градусів. Вище ``0.1`` говорить нам, що ми приблизно вище "
+"монстра."
+
+msgid ""
+"After handling the squash and bounce logic, we terminate the loop early via "
+"the ``break`` statement to prevent further duplicate calls to ``mob."
+"squash()``, which may otherwise result in unintended bugs such as counting "
+"the score multiple times for one kill."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"We are calling one undefined function, ``mob.squash()``, so we have to add "
+"it to the Mob class."
+msgstr ""
+"Ми викликаємо ще одну невизначену функцію, ``mob.squash()``. Ми повинні "
+"додати її до класу Mob."
+
+msgid ""
+"Open the script ``Mob.gd`` by double-clicking on it in the *FileSystem* "
+"dock. At the top of the script, we want to define a new signal named "
+"``squashed``. And at the bottom, you can add the squash function, where we "
+"emit the signal and destroy the mob."
+msgstr ""
+"Відкрийте скрипт ``Mob.gd``, двічі клацнувши по ньому на панелі *Файлова "
+"система*. У верхній частині скрипту ми хочемо визначити новий сигнал з "
+"назвою ``squashed``. А внизу можна додати функцію розчавлення, де ми "
+"випромінюємо сигнал і руйнуємо монстра."
+
+msgid ""
+"When using C#, Godot will create the appropriate events automatically for "
+"all Signals ending with `EventHandler`, see :ref:`C# Signals "
+"<doc_c_sharp_signals>`."
+msgstr ""
+
+msgid "We will use the signal to add points to the score in the next lesson."
+msgstr ""
+"Ми будемо використовувати сигнал, щоб додати бали до рахунку на наступному "
+"уроці."
+
+#, fuzzy
+msgid ""
+"With that, you should be able to kill monsters by jumping on them. You can "
+"press :kbd:`F5` to try the game and set ``main.tscn`` as your project's main "
+"scene."
+msgstr ""
+"З цим, ви повинні бути в змозі вбивати монстрів, стрибаючи на них. Ви можете "
+"натиснути :kbd:`F5`, щоб спробувати гру і встановити ``Main.tscn`` в якості "
+"головної сцени вашого проекту."
+
+msgid "However, the player won't die yet. We'll work on that in the next part."
+msgstr "Однак гравець безсмертний. Ми поправимо це у наступній частині."
+
+msgid "Translation status"
+msgstr "Стан перекладу"

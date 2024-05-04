@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript warning system"
+msgstr "GDScript 警告系統"
+
+msgid ""
+"The GDScript warning system complements :ref:`static typing "
+"<doc_gdscript_static_typing>` (but it can work without static typing too). "
+"It's here to help you avoid mistakes that are hard to spot during "
+"development, and that may lead to runtime errors."
+msgstr ""
+"GDScript 警告系統可與 :ref:`靜態型別 <doc_gdscript_static_typing>` 互補 (但即"
+"使不用靜態型別也能使用警告系統)。警告系統能幫助開發者避免一些在開發時期難以找"
+"出的問題，這些問題隨後可能會在執行時產生錯誤。"
+
+msgid ""
+"You can configure warnings in the Project Settings under the section called "
+"**GDScript**:"
+msgstr "可以在「專案設定」的 **Gdscript** 分類下設定警告："
+
+msgid ""
+"You must enable **Advanced Settings** in order to see the GDScript section "
+"in the sidebar. You can also search for \"GDScript\" when Advanced Settings "
+"is off."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can find a list of warnings for the active GDScript file in the script "
+"editor's status bar. The example below has 2 warnings:"
+msgstr ""
+"在腳本編輯器的狀態列上列出了目前開啟中 GDScript 檔案的警告。下方的範例中有三"
+"個警告："
+
+#, fuzzy
+msgid ""
+"To ignore specific warnings in one file, insert an annotation of the form "
+"``@warning_ignore(\"warning-id\")``, or click on the ignore link to the left "
+"of the warning's description. Godot will add an annotation above the "
+"corresponding line and the code won't trigger the corresponding warning "
+"anymore:"
+msgstr ""
+"如果要在檔案中忽略特定的警告，可以插入使用 ``#warning-ignore:警告ID`` 這種格"
+"式的註解，或是點擊警告說明右邊的 [忽略] 連接。Godot 會自動將註解插入對應行，"
+"而該程式碼即不會再觸發警告："
+
+#, fuzzy
+msgid ""
+"Warnings won't prevent the game from running, but you can turn them into "
+"errors if you'd like. This way your game won't compile unless you fix all "
+"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
+"on this option to the warning that you want. Here's the same file as the "
+"previous example with the warning ``unused_variable`` as an error turned on:"
+msgstr ""
+"出現警告並不會讓遊戲無法執行，但若有需要可以將警告設定為錯誤。設定為錯誤後，"
+"除非修正所有警告，否則遊戲將無法正確編譯。在專案設定中找到 ``GDScript`` 分"
+"類，然後打開該選項。下列範例為相同的檔案，但將警告顯示為錯誤："
+
+msgid "Translation status"
+msgstr "翻譯狀態"

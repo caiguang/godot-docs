@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Your first 2D game"
+msgstr "Tu primer juego 2D"
+
+msgid ""
+"In this step-by-step tutorial series, you will create your first complete 2D "
+"game with Godot. By the end of the series, you will have a simple yet "
+"complete game of your own, like the image below."
+msgstr ""
+"En esta serie de tutoriales paso a paso, crearás tu primer juego 2D completo "
+"con Godot. Al final de la serie, tendrás un juego propio simple pero "
+"completo, como la imagen de abajo."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"You will learn how the Godot editor works, how to structure a project, and "
+"build a 2D game."
+msgstr ""
+"Aprenderá cómo funciona el editor Godot, cómo estructurar un proyecto y "
+"construir un juego 2D."
+
+msgid ""
+"This project is an introduction to the Godot engine. It assumes that you "
+"have some programming experience already. If you're new to programming "
+"entirely, you should start here: :ref:`doc_scripting`."
+msgstr ""
+"Este proyecto es una introducción al motor Godot. Se supone que ya tienes "
+"algo de experiencia en programación. Si eres completamente nuevo en la "
+"programación, debe comenzar aquí: :ref:`doc_scripting`."
+
+msgid ""
+"The game is called \"Dodge the Creeps!\". Your character must move and avoid "
+"the enemies for as long as possible."
+msgstr ""
+"El juego se llama \"Dodge the Creeps!\". Tu personaje debe moverse y "
+"esquivar a los enemigos el mayor tiempo posible."
+
+msgid "You will learn to:"
+msgstr "Aprenderás a:"
+
+msgid "Create a complete 2D game with the Godot editor."
+msgstr "Crea un juego 2D completo con el editor de Godot."
+
+msgid "Structure a simple game project."
+msgstr "Estructurar un proyecto de juego sencillo."
+
+msgid "Move the player character and change its sprite."
+msgstr "Mueve el jugador y cambia su sprite."
+
+msgid "Spawn random enemies."
+msgstr "Crea enemigos aleatorios."
+
+msgid "Count the score."
+msgstr "Cuenta la puntuación."
+
+msgid "And more."
+msgstr "Y más."
+
+msgid ""
+"You'll find another series where you'll create a similar game but in 3D. We "
+"recommend you to start with this one, though."
+msgstr ""
+"Encontrarás otra serie donde crearás un juego similar pero en 3D. Sin "
+"embargo, le recomendamos que comience con este."
+
+msgid "**Why start with 2D?**"
+msgstr "**¿Por qué empezar con 2D?**"
+
+msgid ""
+"If you are new to game development or unfamiliar with Godot, we recommend "
+"starting with 2D games. This will allow you to become comfortable with both "
+"before tackling 3D games, which tend to be more complicated."
+msgstr ""
+"Si eres nuevo en el desarrollo de videojuegos o no estás familiarizado con "
+"Godot, te recomendamos que empieces con juegos 2D. Te facilitará la entrada "
+"y a acostumbrarte los conceptos básicos antes de sumergirte en juegos 3D, "
+"que suelen ser más complicados."
+
+msgid "You can find a completed version of this project at this location:"
+msgstr ""
+"Encontrarás una versión completa de este proyecto en el siguiente enlace:"
+
+#, fuzzy
+msgid ""
+"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"dodge_the_creeps"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "Prerequisites"
+msgstr "Pre-requisitos"
+
+msgid ""
+"This step-by-step tutorial is intended for beginners who followed the "
+"complete :ref:`Getting Started <toc-learn-step_by_step>`."
+msgstr ""
+"Este tutorial paso a paso está destinado a principiantes que siguieron el :"
+"ref:`Getting Started <toc-learn-step_by_step>` completo."
+
+#, fuzzy
+msgid ""
+"If you're an experienced programmer, you can find the complete demo's source "
+"code here: `Dodge the Creeps source code <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/2d/dodge_the_creeps>`__."
+msgstr ""
+"Si eres un programador experimentado, puedes encontrar el código fuente "
+"completo de la demo aquí: `Proyectos de demostración de Godot <https://"
+"github.com/godotengine/godot-demo-projects>`__."
+
+msgid ""
+"We prepared some game assets you'll need to download so we can jump straight "
+"to the code."
+msgstr ""
+"Preparamos algunos assets del juego que necesitarás descargar para que "
+"podamos pasar directamente al código."
+
+msgid "You can download them by clicking the link below."
+msgstr "Puede descargarlos haciendo clic en el siguiente enlace."
+
+msgid ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_."
+msgstr ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_."
+
+msgid "Contents"
+msgstr "Contenido"
+
+msgid "Translation status"
+msgstr "Estado de traducción"

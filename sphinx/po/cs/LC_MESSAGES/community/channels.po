@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Community channels"
+msgstr "Komunitní kanály"
+
+msgid ""
+"So, where is the Godot community and where can you ask questions and get "
+"help?"
+msgstr "Kde se nachází Godot komunita a kde můžete požádat o pomoc?"
+
+msgid ""
+"Note that some of these channels are run and moderated by members of the "
+"Godot community or third parties."
+msgstr ""
+
+msgid ""
+"A brief overview over these and other channels is also available on the "
+"`Godot website <https://godotengine.org/community>`_."
+msgstr ""
+
+#, fuzzy
+msgid "Forums"
+msgstr "Fórum"
+
+#, fuzzy
+msgid "`Official Godot Forum <https://forum.godotengine.org/>`_"
+msgstr "`Oficiální Godot Otázky a odpovědi <https://godotengine.org/qa/>`_"
+
+#, fuzzy
+msgid "`Community Forum <https://godotforums.org/>`_"
+msgstr "`Godot Fóra <https://godotforums.org/>`_"
+
+msgid "Chats"
+msgstr ""
+
+msgid "`Godot Contributors Chat <https://chat.godotengine.org/>`_"
+msgstr "`Přispěvatelský chat Godot <https://chat.godotengine.org/>`_"
+
+msgid "`Discord <https://discord.gg/4JBkykG>`_"
+msgstr "`Discord <https://discord.gg/4JBkykG>`_"
+
+msgid ""
+"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"`IRC (#godotengine on Libera.Chat) <https://web.libera.chat/?"
+"channels=#godotengine>`_"
+msgstr "`Přispěvatelský chat Godot <https://chat.godotengine.org/>`_"
+
+msgid ""
+"As of January 2021, core developer chat has moved to the Godot Contributors "
+"Chat platform listed above. IRC is less active. Please stick around to get "
+"an answer, as it may take several hours for someone to see and answer your "
+"questions."
+msgstr ""
+
+#, fuzzy
+msgid "Social networks and other sites"
+msgstr "Sociální sítě"
+
+msgid "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
+msgstr "`Facebook skupina <https://www.facebook.com/groups/godotengine/>`_"
+
+msgid ""
+"`Twitter <https://twitter.com/godotengine>`_ (see also the `#GodotEngine "
+"<https://twitter.com/hashtag/GodotEngine>`_ hashtag)"
+msgstr ""
+
+msgid "`Reddit <https://www.reddit.com/r/godot>`_"
+msgstr "`Reddit <https://www.reddit.com/r/godot>`_"
+
+msgid "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
+msgstr "`YouTube Kanál <https://www.youtube.com/c/GodotEngineOfficial>`_"
+
+msgid "`Steam <https://steamcommunity.com/app/404790>`_"
+msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
+
+#, fuzzy
+msgid "`itch.io <https://godotengine.itch.io/godot>`_"
+msgstr "`D <https://github.com/godot-d/godot-d>`__"
+
+#, fuzzy
+msgid "`linkin.bio <https://linkin.bio/godot>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid "Language-based communities"
+msgstr ""
+
+msgid ""
+"See the `User groups <https://godotengine.org/community/user-groups>`_ page "
+"of the website for a list of local communities."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

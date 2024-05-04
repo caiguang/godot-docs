@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The Inspector"
+msgstr "Der Inspektor"
+
+msgid ""
+"This page explains how the Inspector dock works in-depth. You will learn how "
+"to edit properties, fold and unfold areas, use the search bar, and more."
+msgstr ""
+"Auf dieser Seite wird die Funktionsweise des Inspektor-Docks eingehend "
+"erläutert. Sie erfahren, wie Sie Propertys bearbeiten, Bereiche ein- und "
+"ausklappen, die Suchleiste verwenden und vieles mehr."
+
+msgid "This page is a work-in-progress."
+msgstr "Diese Seite ist noch in Arbeit."
+
+msgid "Overview of the interface"
+msgstr "Überblick über die Benutzeroberfläche"
+
+msgid "Let's start by looking at the dock's main parts."
+msgstr "Schauen wir uns zunächst die Hauptbestandteile des Docks an."
+
+msgid "At the top are the file and navigation buttons."
+msgstr "Oben befinden sich die Datei- und Navigationsschaltflächen."
+
+msgid ""
+"Below it, you can find the selected node's name, its type, and the tools "
+"menu on the right side."
+msgstr ""
+"Darunter finden Sie den Namen des ausgewählten Nodes, seinen Typ und das "
+"Tool-Menü auf der rechten Seite."
+
+msgid ""
+"If you click the tool menu icon, a drop-down menu offers some view and edit "
+"options."
+msgstr ""
+"Wenn Sie auf das Icon für das Tool-Menü klicken, bietet ein Dropdown-Menü "
+"einige Anzeige- und Bearbeitungsoptionen."
+
+msgid ""
+"Then comes the search bar. Type anything in it to filter displayed "
+"properties. Delete the text to clear the search."
+msgstr ""
+"Dann kommt die Suchleiste. Geben Sie hier etwas ein, um die angezeigten "
+"Propertys zu filtern. Löschen Sie den Text, um die Suche zurückzusetzen."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

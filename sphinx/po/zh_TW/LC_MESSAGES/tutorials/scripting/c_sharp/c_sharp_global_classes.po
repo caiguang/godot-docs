@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# global classes"
+msgstr "全域類別。"
+
+msgid ""
+"Global classes (also known as named scripts) are types registered in Godot's "
+"editor so they can be used more conveniently. These classes show up in the "
+"*Add Node* and *Create Resource* dialogs, and :ref:`exported properties "
+"<doc_c_sharp_exports>` are restricted to instances of the global class or "
+"derived classes. Global classes are registered with the ``[GlobalClass]`` "
+"attribute."
+msgstr ""
+"全域類別（也稱為命名腳本）是在 Godot 編輯器中註冊的型別，因此可以更方便地使用"
+"它們。這些類別顯示在 *新增節點* 和 *建立資源* 對話方塊中，且匯出屬性 "
+"<doc_c_sharp_exports>` 僅限於全域類別或衍生類別的實例。全域類別使"
+"用“[GlobalClass]”屬性註冊。"
+
+msgid ""
+"The ``MyNode`` type will be registered as a global class with the same name "
+"as the type's name."
+msgstr "``MyNode`` 型別將註冊為全域類，其名稱與型別名稱相同。"
+
+msgid ""
+"The ``[Icon]`` attribute also allows to provide the path to an icon so it "
+"can be used as the class' icon in the editor."
+msgstr ""
+"``[Icon]`` 屬性也允許提供圖示的路徑，以便它可以用作編輯器中的類別圖示。"
+
+msgid ""
+"The ``Stats`` class is a custom resource registered as a global class. :ref:"
+"`Exporting properties <doc_c_sharp_exports>` of the type ``Stats`` will only "
+"allow instances of this resource type to be assigned, and the inspector will "
+"let you create and load instances of this type easily."
+msgstr ""
+"「Stats」類別是註冊為全域類別的自訂資源。 :ref:`匯出 ``Stats`` 型別的屬性 "
+"<doc_c_sharp_exports>` 將只允許指派此資源型別的實例，並且屬性面板將允許您輕鬆"
+"建立和載入此型別的實例。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

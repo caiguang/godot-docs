@@ -1,0 +1,375 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Player scene and input actions"
+msgstr "プレイヤーシーンと入力アクション"
+
+msgid ""
+"In the next two lessons, we will design the player scene, register custom "
+"input actions, and code player movement. By the end, you'll have a playable "
+"character that moves in eight directions."
+msgstr ""
+"次の2つのレッスンでは、プレイヤーのシーンをデザインし、カスタム入力アクション"
+"を登録し、プレイヤーの動きをコーディングします。最後には、8方向に動くプレイ可"
+"能なキャラクターが完成します。"
+
+#, fuzzy
+msgid ""
+"Create a new scene by going to the Scene menu in the top-left and clicking "
+"*New Scene*."
+msgstr "メニューの「シーン -> 新規シーン」で、新しいシーンを作成します。"
+
+msgid "|image0|"
+msgstr "\\ |image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"Create a :ref:`CharacterBody3D <class_CharacterBody3D>` node as the root"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Name the :ref:`CharacterBody3D <class_CharacterBody3D>` to ``Player``. "
+"Character bodies are complementary to the area and rigid bodies used in the "
+"2D game tutorial. Like rigid bodies, they can move and collide with the "
+"environment, but instead of being controlled by the physics engine, **you** "
+"dictate their movement. You will see how we use the node's unique features "
+"when we code the jump and squash mechanics."
+msgstr ""
+"キネマティックボディは、2D ゲームのチュートリアルで使用したエリアとリジッドボ"
+"ディを補完するものです。リジッドボディと同じように、移動して環境と衝突するこ"
+"とができますが、物理エンジンによって制御されるのではなく、あなたがその動きを"
+"指示します。このノードのユニークな機能を、ジャンプとスクワッシュの動作のコー"
+"ディングで見ていきます。"
+
+msgid ""
+"To learn more about the different physics node types, see the :ref:"
+"`doc_physics_introduction`."
+msgstr ""
+"さまざまな物理ノードの種類についての詳細は、 :ref:`doc_physics_introduction` "
+"を参照してください。"
+
+msgid ""
+"For now, we're going to create a basic rig for our character's 3D model. "
+"This will allow us to rotate the model later via code while it plays an "
+"animation."
+msgstr ""
+"とりあえず、キャラクタの3D モデルに対して基本的なリグを作成します。これによっ"
+"て、後でアニメーションを再生しながら、コードを使用してモデルを回転させること"
+"ができます。"
+
+msgid ""
+"Add a :ref:`Node3D <class_Node3D>` node as a child of ``Player`` and name it "
+"``Pivot``"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Then, in the FileSystem dock, expand the ``art/`` folder by double-clicking "
+"it and drag and drop ``player.glb`` onto ``Pivot``."
+msgstr ""
+"\\ *Spatial*\\ ノードを \\ *Player*\\ の子として追加し、\\ *Pivot*\\ という名"
+"前に変更します。次に、ファイルシステム(FileSystem) ドックで、\\ ``art/``\\ "
+"フォルダをダブルクリックして展開し、\\ ``player.glb``\\ を\\ *Pivot*\\ ノード"
+"にドラッグ アンド ドロップしてください。"
+
+msgid "|image1|"
+msgstr "\\ |image1|"
+
+msgid "image1"
+msgstr "image1"
+
+#, fuzzy
+msgid ""
+"This should instantiate the model as a child of ``Pivot``. You can rename it "
+"to ``Character``."
+msgstr ""
+"これで、\\ *Pivot*\\ の子としてモデルがインスタンス化されるはずです。これを"
+"\\ *Character*\\ にリネームすることができます。"
+
+msgid "|image2|"
+msgstr "\\ |image2|"
+
+msgid "image2"
+msgstr "image2"
+
+#, fuzzy
+msgid ""
+"The ``.glb`` files contain 3D scene data based on the open source GLTF 2.0 "
+"specification. They're a modern and powerful alternative to a proprietary "
+"format like FBX, which Godot also supports. To produce these files, we "
+"designed the model in `Blender 3D <https://www.blender.org/>`__ and exported "
+"it to GLTF."
+msgstr ""
+"\\ ``.glb``\\ ファイルは、オープンソースの GLTF 2.0 仕様に基づく 3D シーン "
+"データを含んでいます。これは、FBX のような独自のフォーマットに代わる、現代的"
+"で強力なフォーマットで、Godot もこれをサポートしています。これらのファイルを"
+"作成するために、\\ `Blender 3D <https://www.blender.org/>`__\\ でモデルを設計"
+"し、それを GLTF にエクスポートしました。"
+
+#, fuzzy
+msgid ""
+"As with all kinds of physics nodes, we need a collision shape for our "
+"character to collide with the environment. Select the ``Player`` node again "
+"and add a child node :ref:`CollisionShape3D <class_CollisionShape3D>`. In "
+"the *Inspector*, on the *Shape* property, add a new :ref:`SphereShape3D "
+"<class_SphereShape3D>`."
+msgstr ""
+"あらゆる種類の物理ノードと同様に、キャラクターが環境と衝突するためのコリジョ"
+"ン形状が必要です。\\ *Player*\\ ノードを再度選択し、\\ *CollisionShape*\\ を"
+"追加してください。\\ *インスペクター*\\ (Inspector)で、\\ *SphereShape*\\ を"
+"\\ *Shape*\\ のプロパティに代入します。球体のワイヤーフレームが、キャラクター"
+"の下に表示されます。"
+
+msgid "The sphere's wireframe appears below the character."
+msgstr ""
+
+msgid "|image3|"
+msgstr "\\ |image3|"
+
+msgid "image3"
+msgstr "image3"
+
+msgid ""
+"It will be the shape the physics engine uses to collide with the "
+"environment, so we want it to better fit the 3D model. Shrink it a bit by "
+"dragging the orange dot in the viewport. My sphere has a radius of about "
+"``0.8`` meters."
+msgstr ""
+"これは、物理エンジンが環境と衝突するときに使用する形状になります。なので、3D "
+"モデルにうまくフィットするようにします。ビューポートでオレンジ色のドットをド"
+"ラッグして、少し縮小してください。私の球体の半径は、\\ ``0.8``\\ メートルほど"
+"です。"
+
+msgid ""
+"Then, move the shape up so its bottom roughly aligns with the grid's plane."
+msgstr ""
+"次に、この形状を上に移動して、その底がグリッドの平面とほぼ一致するようにしま"
+"す。"
+
+msgid "|image4|"
+msgstr "\\ |image4|"
+
+msgid "image4"
+msgstr "image4"
+
+#, fuzzy
+msgid ""
+"You can toggle the model's visibility by clicking the eye icon next to the "
+"``Character`` or the ``Pivot`` nodes."
+msgstr ""
+"モデルの可視性を切り替えるには、\\ *Character*\\ ノードまたは\\ *Pivot*\\ "
+"ノードの横にある目のアイコンをクリックします。"
+
+msgid "|image5|"
+msgstr "\\ |image5|"
+
+msgid "image5"
+msgstr "image5"
+
+#, fuzzy
+msgid "Save the scene as ``player.tscn``"
+msgstr "\\ ``Player.tscn``\\ という名前でシーンを保存します。"
+
+msgid ""
+"With the nodes ready, we can almost get coding. But first, we need to define "
+"some input actions."
+msgstr ""
+"ノードの準備ができたので、ほとんどコーディングできるようになりました。しかし"
+"その前に、いくつかの入力アクションを定義する必要があります。"
+
+msgid "Creating input actions"
+msgstr "入力アクションの作成"
+
+msgid ""
+"To move the character, we will listen to the player's input, like pressing "
+"the arrow keys. In Godot, while we could write all the key bindings in code, "
+"there's a powerful system that allows you to assign a label to a set of keys "
+"and buttons. This simplifies our scripts and makes them more readable."
+msgstr ""
+"キャラクターを動かすために、矢印キーを押した、などのようなプレイヤーの入力操"
+"作を認識する必要があります。Godotでは、全てのキーバインドをコードで書くことも"
+"できますが、キーやボタンのセットに操作のラベルを割り当てられる便利な機能があ"
+"ります。この機能により、スクリプトをよりシンプルで読みやすくすることができま"
+"す。"
+
+#, fuzzy
+msgid ""
+"This system is the Input Map. To access its editor, head to the *Project* "
+"menu and select *Project Settings*."
+msgstr ""
+"このシステムが「インプットマップ」です。そのエディターにアクセスするには、\\ "
+"*プロジェクト*\\ (Project)メニューから、\\ *プロジェクト設定...*\\ (Project "
+"Settings...)を選択してください。"
+
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "\\ image6"
+
+msgid ""
+"At the top, there are multiple tabs. Click on *Input Map*. This window "
+"allows you to add new actions at the top; they are your labels. In the "
+"bottom part, you can bind keys to these actions."
+msgstr ""
+"上部に、複数のタブがあります。\\ *インプットマップ*\\ (Input Map)をクリックし"
+"ます。このウィンドウでは、上部で新しいアクションを追加することができます。そ"
+"れらはあなたのラベルです。下部では、これらのアクションにキーをバインドするこ"
+"とができます。"
+
+msgid "|image7|"
+msgstr "\\ |image7|"
+
+msgid "image7"
+msgstr "\\ image7"
+
+msgid ""
+"Godot projects come with some predefined actions designed for user interface "
+"design, which we could use here. But we're defining our own to support "
+"gamepads."
+msgstr ""
+"Godotプロジェクトは、ユーザーインターフェイス設計のために設計された定義済みの"
+"アクションがいくつか用意されており、ここでそれを使うこともできます。しかし、"
+"ゲームパッドをサポートするために、私たちは独自のアクションを定義しています。"
+
+msgid ""
+"We're going to name our actions ``move_left``, ``move_right``, "
+"``move_forward``, ``move_back``, and ``jump``."
+msgstr ""
+"私たちはアクションに、\\ ``move_left``\\ 、\\ ``move_right``\\ 、\\ "
+"``move_forward``\\ 、\\ ``move_back``\\ 、 そして \\ ``jump``\\ という名前を"
+"つけたいと思います。"
+
+msgid "To add an action, write its name in the bar at the top and press Enter."
+msgstr ""
+"アクションを追加するには、上部のバーに名前を記入して、Enterキーを押します。"
+
+msgid "|image8|"
+msgstr "\\ |image8|"
+
+msgid "image8"
+msgstr "\\ image8"
+
+#, fuzzy
+msgid "Create the following five actions:"
+msgstr "次の注意事項があります:"
+
+msgid "|image9|"
+msgstr "\\ |image9|"
+
+msgid "image9"
+msgstr "\\ image9"
+
+#, fuzzy
+msgid ""
+"To bind a key or button to an action, click the \"+\" button to its right. "
+"Do this for ``move_left``. Press the left arrow key and click *OK*."
+msgstr ""
+"キーやボタンをアクションに紐づけるには、その右側にある \"+\" ボタンをクリック"
+"します。\\ ``move_left``\\ に対してこの操作を行い、ドロップダウンメニューで"
+"\\ *キー*\\ (Key)をクリックします。"
+
+msgid "Bind also the :kbd:`A` key, onto the action ``move_left``."
+msgstr ""
+
+msgid "|image12|"
+msgstr "\\ |image12|"
+
+msgid "image12"
+msgstr "\\ image12"
+
+#, fuzzy
+msgid ""
+"Let's now add support for a gamepad's left joystick. Click the \"+\" button "
+"again but this time, select *Manual Selection -> Joypad Axes*."
+msgstr ""
+"次に、ゲームパッドの左ジョイスティックのサポートを追加しましょう。もう一度 "
+"\"+\" ボタンをクリックしますが、今度は \\ *ゲームパッドの方向キー/スティック"
+"*\\ (Joy Axis)を選択します。"
+
+msgid "Select the negative X axis of the left joystick."
+msgstr ""
+
+msgid "Leave the other values as default and press *OK*"
+msgstr ""
+
+msgid ""
+"If you want controllers to have different input actions, you should use the "
+"Devices option in Additional Options. Device 0 corresponds to the first "
+"plugged gamepad, Device 1 corresponds to the second plugged gamepad, and so "
+"on."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Do the same for the other input actions. For example, bind the right arrow, "
+"D, and the left joystick's positive axis to ``move_right``. After binding "
+"all keys, your interface should look like this."
+msgstr ""
+"他の入力アクションも同じようにします。たとえば、右矢印、D、左ジョイスティック"
+"の右軸を \\ ``move_right``\\ にバインドします。すべてのキーをバインドすると、"
+"インターフェイスは次のようになります。"
+
+msgid "|image15|"
+msgstr "\\ |image15|"
+
+msgid "image15"
+msgstr "\\ image15"
+
+msgid ""
+"The final action to set up is the ``jump`` action. Bind the Space key and "
+"the gamepad's A button."
+msgstr ""
+
+msgid "|image16|"
+msgstr "\\ |image16|"
+
+msgid "image16"
+msgstr "\\ image16"
+
+msgid "Your jump input action should look like this."
+msgstr "ジャンプ入力のアクションはこのようになるはずです。"
+
+msgid "|image18|"
+msgstr "\\ |image18|"
+
+msgid "image18"
+msgstr "image18"
+
+msgid ""
+"That's all the actions we need for this game. You can use this menu to label "
+"any groups of keys and buttons in your projects."
+msgstr ""
+"これで、このゲームに必要なアクションが用意できました。このメニューを使って、"
+"プロジェクト内のキーやボタンのグループにラベルを付けることができます。"
+
+msgid "In the next part, we'll code and test the player's movement."
+msgstr "次のパートでは、プレーヤーの動きをコーディングしてテストしていきます。"
+
+msgid "image11"
+msgstr "\\ image11"
+
+msgid "image17"
+msgstr "\\ image17"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

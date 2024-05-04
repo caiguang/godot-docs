@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Community channels"
+msgstr "커뮤니티"
+
+msgid ""
+"So, where is the Godot community and where can you ask questions and get "
+"help?"
+msgstr ""
+
+msgid ""
+"Note that some of these channels are run and moderated by members of the "
+"Godot community or third parties."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"A brief overview over these and other channels is also available on the "
+"`Godot website <https://godotengine.org/community>`_."
+msgstr ""
+"같은 `Godot 웹사이트 <https://godotengine.org/contact>`_ 페이지에서 참고하세"
+"요."
+
+#, fuzzy
+msgid "Forums"
+msgstr "포럼"
+
+#, fuzzy
+msgid "`Official Godot Forum <https://forum.godotengine.org/>`_"
+msgstr ""
+"`여기 <https://godotengine.org/download>`_\\ 에서 Godot 엔진을 다운로드할 수 "
+"있습니다."
+
+#, fuzzy
+msgid "`Community Forum <https://godotforums.org/>`_"
+msgstr ""
+"`여기 <https://godotengine.org/download>`_\\ 에서 Godot 엔진을 다운로드할 수 "
+"있습니다."
+
+msgid "Chats"
+msgstr ""
+
+#, fuzzy
+msgid "`Godot Contributors Chat <https://chat.godotengine.org/>`_"
+msgstr ""
+"`여기 <https://godotengine.org/download>`_\\ 에서 Godot 엔진을 다운로드할 수 "
+"있습니다."
+
+msgid "`Discord <https://discord.gg/4JBkykG>`_"
+msgstr ""
+
+msgid ""
+"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"`IRC (#godotengine on Libera.Chat) <https://web.libera.chat/?"
+"channels=#godotengine>`_"
+msgstr ""
+"`여기 <https://godotengine.org/download>`_\\ 에서 Godot 엔진을 다운로드할 수 "
+"있습니다."
+
+msgid ""
+"As of January 2021, core developer chat has moved to the Godot Contributors "
+"Chat platform listed above. IRC is less active. Please stick around to get "
+"an answer, as it may take several hours for someone to see and answer your "
+"questions."
+msgstr ""
+
+#, fuzzy
+msgid "Social networks and other sites"
+msgstr "벽 및 기타 장애물"
+
+msgid "`GitHub <https://github.com/godotengine/>`_"
+msgstr ""
+
+msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
+msgstr ""
+
+msgid ""
+"`Twitter <https://twitter.com/godotengine>`_ (see also the `#GodotEngine "
+"<https://twitter.com/hashtag/GodotEngine>`_ hashtag)"
+msgstr ""
+
+msgid "`Reddit <https://www.reddit.com/r/godot>`_"
+msgstr ""
+
+msgid "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
+msgstr ""
+
+msgid "`Steam <https://steamcommunity.com/app/404790>`_"
+msgstr ""
+
+#, fuzzy
+msgid "`itch.io <https://godotengine.itch.io/godot>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "`linkin.bio <https://linkin.bio/godot>`_"
+msgstr ""
+
+msgid "Language-based communities"
+msgstr "언어별 커뮤니티"
+
+msgid ""
+"See the `User groups <https://godotengine.org/community/user-groups>`_ page "
+"of the website for a list of local communities."
+msgstr ""
+
+msgid "Translation status"
+msgstr "번역 상태"

@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Customizing the mouse cursor"
+msgstr "マウスカーソルのカスタマイズ"
+
+msgid ""
+"You might want to change the appearance of the mouse cursor in your game in "
+"order to suit the overall design. There are two ways to customize the mouse "
+"cursor:"
+msgstr ""
+"全体的なデザインに合うように、ゲームのマウスカーソルの外観を変更することがで"
+"きます。マウスカーソルをカスタマイズするには2つの方法があります:"
+
+msgid "Using project settings"
+msgstr "プロジェクト設定を使用する"
+
+msgid "Using a script"
+msgstr "スクリプトを使用する"
+
+#, fuzzy
+msgid ""
+"Using project settings is a simpler (but more limited) way to customize the "
+"mouse cursor. The second way is more customizable, but involves scripting:"
+msgstr ""
+"プロジェクト設定の使用は、マウスカーソルをカスタマイズするためのより簡単な(た"
+"だしより制限された)方法です。 2番目の方法はよりカスタマイズ可能ですが、スクリ"
+"プトを使用します。"
+
+msgid ""
+"You could display a \"software\" mouse cursor by hiding the mouse cursor and "
+"moving a Sprite2D to the cursor position in a ``_process()`` method, but "
+"this will add at least one frame of latency compared to an \"hardware\" "
+"mouse cursor. Therefore, it's recommended to use the approach described here "
+"whenever possible."
+msgstr ""
+
+msgid ""
+"If you have to use the \"software\" approach, consider adding an "
+"extrapolation step to better display the actual mouse input."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Open project settings, go to Display>Mouse Cursor. You will see Custom "
+"Image, Custom Image Hotspot and Tooltip Position Offset."
+msgstr ""
+"プロジェクト設定を開き、[Display] -> [Mouse Cursor]に移動します。\"Custom "
+"Image\" と \"Custom Image Hotspot\" が表示されます。"
+
+msgid ""
+"Custom Image is the desired image that you would like to set as the mouse "
+"cursor. Custom Hotspot is the point in the image that you would like to use "
+"as the cursor's detection point."
+msgstr ""
+"カスタムイメージ(Custom Image)は、マウスカーソルとして設定する目的のイメージ"
+"です。カスタムホットスポット(Custom Hotspot)は、カーソルの検出ポイントとして"
+"使用する画像内のポイントです。"
+
+msgid ""
+"The custom image **must** be 256×256 pixels at most. To avoid rendering "
+"issues, sizes lower than or equal to 128×128 are recommended."
+msgstr ""
+
+msgid "On the web platform, the maximum allowed cursor image size is 128×128."
+msgstr ""
+
+msgid "Create a Node and attach the following script."
+msgstr "ノードを作成し、次のスクリプトをアタッチします。"
+
+#, fuzzy
+msgid ""
+"Check :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>`'s documentation for more "
+"information on usage and platform-specific caveats."
+msgstr ""
+":ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>` を確認してください。"
+
+msgid "Cursor list"
+msgstr "カーソルリスト"
+
+msgid ""
+"As documented in the :ref:`Input <class_Input>` class (see the "
+"**CursorShape** enum), there are multiple mouse cursors you can define. "
+"Which ones you want to use depends on your use case."
+msgstr ""
+":ref:`Input <class_Input>` クラス(**CursorShape** 列挙型を参照)で文書化されて"
+"いるように、定義できるマウスカーソルは複数あります。どちらを使用するかは、"
+"ユースケースによって異なります。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"
